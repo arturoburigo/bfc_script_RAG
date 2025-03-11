@@ -1,0 +1,9 @@
+{
+    "document": "API_soap",
+    "section": "Base64",
+    "subsection": "Contornando a limitação cumulativa",
+    "content": "1. xml = Arquivo.novo('teste.xml', 'xml', [indentar:'S'])\n2.\n3. xml.escreverInicioDocumento(\"UTF-8\")\n4. xml.escreverInicioElemento('root')\n5.\n6. xml.escreverComentario('Nomes dos colaboradores sem setor')\n7. xml.escreverInicioElemento('nome')\n8. xml.escreverAtributo('completo', 'N')\n9. xml.escreverAtributo('composto', 'S')\n10. xml.escreverTexto('Marcos da Silva')\n11. xml.escreverFimElemento()\n12.\n13. xml.escreverInicioElemento('nome')\n14. xml.escreverAtributo('completo', 'S')",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    }
+}

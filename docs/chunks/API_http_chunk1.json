@@ -1,0 +1,9 @@
+{
+    "document": "API_http",
+    "section": "Resposta",
+    "subsection": "json()",
+    "content": "Retorna o resultado de uma serviço JSON como Mapa/Lista de mapa.\n\n1. resposta = Http.servico('https://www.betha.com.br/users/5').GET()\n2.\n3. json = resposta.json()\n4.\n5. imprimir json.id\n6. imprimir json.nome\n7.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    }
+}

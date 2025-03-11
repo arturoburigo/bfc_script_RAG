@@ -1,0 +1,9 @@
+{
+    "document": "API_mensagens",
+    "section": "Mensagem",
+    "subsection": "enviar()",
+    "content": "1. Mensagens.erro('Mensagem de erro')\n2. Mensagens.aviso('Mensagem de aviso')\n3. Mensagens.info('Mensagem de informação')\n4. Mensagens.sucesso('Mensagem de sucesso')\n\n\n\nÉ possível ainda adicionar mensagens parametrizadas:\n\n1. Mensagens.erro('Mensagem de %s %s', 'erro', 'parametrizada')",
+    "metadata": {
+        "source": "docs/BFC Doc/API_mensagens.md"
+    }
+}

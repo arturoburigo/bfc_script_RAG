@@ -1,0 +1,9 @@
+{
+    "document": "API_email",
+    "section": "Exemplos",
+    "subsection": "Envio de e-mail com anexos",
+    "content": "12.      .copiaOcultaPara(destinatario)\n13.      .responderPara(destinatario, 'Nome para Resposta')\n14.      .assunto('Teste de e-mail')\n15.      .mensagemHtml('Este é um teste de e-mail. <br/><br/>' +\n16.                       'Att, <br/><br/>' +\n17.                       'Betha Sistemas <p/><p/>' +\n18.                       '<img src=\"cid:logo.png\" width=\"319\" height=\"51\" />')\n19.      .anexar(imagemAssinatura)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    }
+}

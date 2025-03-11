@@ -1,0 +1,9 @@
+{
+    "document": "API_padrao",
+    "section": "API Padrão",
+    "subsection": "formatar",
+    "content": "Letra  | Descrição  | Exemplos\n---|---|---\ny  | Ano  | 2009; 09\nM  | Mês do ano  | Julho; Jul; 07\nw  | Semana no ano  | 27\nW  | Semana no mês  | 2\nD  | Dia no ano  | 189\nd  | Dia no mês  | 10\nF  | Dia da semana no mês  | 2\nE  | Nome do dia da semana  | Segunda-feira, Seg\nu  | Número do dia da semana (1=Segunda.7=Domingo)  | 1\na  | Indicador de AM/PM  | AM\nH  | Hora no dia (0-23)  | 0\nk  | Hora no dia (1-24)  | 24\nK  | Hora no dia (0-11)  | 0\nh  | Hora no dia (1-12)  | 12",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "document": "API_mensagens",
+    "section": "Mensagem",
+    "subsection": "enviar()",
+    "content": "Realiza o envio da notificação aos destinatários.\n\n\n\n\n\n1. Notificacao.nova('Seja bem vindo!')\n2.            .para('usuario.betha', 'suite.betha')\n3.            .enviar()\n\n\n\n1. Notificacao.nova()\n2.            .para('suite.betha')\n3.            .mensagem('Obrigado!')\n4.            .enviar()\n\n\n\n\n\n## API de Mensagens",
+    "metadata": {
+        "source": "docs/BFC Doc/API_mensagens.md"
+    }
+}

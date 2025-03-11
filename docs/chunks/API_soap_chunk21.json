@@ -1,0 +1,9 @@
+{
+    "document": "API_soap",
+    "section": "Base64",
+    "subsection": "Contornando a limitação cumulativa",
+    "content": "16.\n17. elemMensagem.adicionarElemento('dadosConsultaPreviaLocalizacao')\n18.             .adicionarElementoTexto('co_protocolo', 'PRP1512623548')\n19.             .elementoAnterior()\n20.             .adicionarElementoTexto('dt_evento', '2016-05-23 12:00:00')\n21.             .elementoAnterior()\n22.             .adicionarElementoTexto('is_indeferido', 'false')\n23.\n24. resposta = mensagem.executar()\n25.\n26. email = Email.novo()\n27.              .de('remetente@betha.com.br')",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "document": "API_criterio",
+    "section": "Delimitador nas operações contidoEm/naoContidoEm",
+    "subsection": "Com formatação e delimitador",
+    "content": "1. dataNascimento = 2018-02-05T09:37:09.009\n\n\n\nCaso queira submeter a data no filtro utilizando outros formatos, as seguintes opções estão disponíveis:",
+    "metadata": {
+        "source": "docs/BFC Doc/API_criterio.md"
+    }
+}

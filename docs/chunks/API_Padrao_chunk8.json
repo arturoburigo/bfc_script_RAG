@@ -1,0 +1,9 @@
+{
+    "document": "API_padrao",
+    "section": "API Padrão",
+    "subsection": "repetir",
+    "content": "22.\n23.\n24.   arquivo.escrever(item.nome)\n25.   arquivo.escrever(Caracteres.repetir(\" \", 100 - item.nome.tamanho()))\n26.   //Aqui é utilizado o recurso da função de preenchimento dos espaços - formatarNumero(a,b)\n27.   arquivo.escrever(formatarNumero(item.id,10))\n28.   arquivo.escrever('-ABCDE')\n29.   arquivo.novaLinha()\n30. }\n31.\n32. Resultado.arquivo(arquivo)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    }
+}

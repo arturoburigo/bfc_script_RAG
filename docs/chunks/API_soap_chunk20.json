@@ -1,0 +1,9 @@
+{
+    "document": "API_soap",
+    "section": "Base64",
+    "subsection": "Contornando a limitação cumulativa",
+    "content": "7.\n8. elemMensagem.adicionarElemento('controle')\n9.             .adicionarElementoTexto('hash', '6cd61adb859800aa565d97290f798e01')\n10.             .elementoAnterior()\n11.             .adicionarElementoTexto('categMens', 'dadosConsultaPreviaLocalizacao')\n12.             .elementoAnterior()\n13.             .adicionarElementoTexto('data', '2015-10-28 09:54:44')\n14.             .elementoAnterior()\n15.             .adicionarElementoTexto('versao', '1.0')\n16.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    }
+}

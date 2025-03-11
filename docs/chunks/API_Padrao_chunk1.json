@@ -1,0 +1,9 @@
+{
+    "document": "API_padrao",
+    "section": "API Padrão",
+    "subsection": "escrever",
+    "content": "Converte um objeto em json\n\n1. json = JSON.escrever([nome: \"João da Silva\"])\n2. imprimir json // imprimie {\"nome\":\"João da Silva\"}",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    }
+}

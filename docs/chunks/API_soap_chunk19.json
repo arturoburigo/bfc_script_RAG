@@ -1,0 +1,9 @@
+{
+    "document": "API_soap",
+    "section": "Base64",
+    "subsection": "Contornando a limitação cumulativa",
+    "content": "1. servico = Soap.servico('https://demo.voxtecnologia.com.br/servicos/ws-consulta-previa-localizacao',\n2.                        'https://demo.voxtecnologia.com.br/servicos/ws-consulta-previa-localizacao', 'ws')\n3.\n4. mensagem = servico.mensagem()\n5. elemDadosConsulta = mensagem.corpo().adicionarElemento('dadosConsultaPreviaLocalizacao')\n6. elemMensagem = elemDadosConsulta.adicionarElemento('mensagem')\n7.\n8. elemMensagem.adicionarElemento('controle')",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    }
+}

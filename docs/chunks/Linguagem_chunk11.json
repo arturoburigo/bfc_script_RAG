@@ -1,0 +1,9 @@
+{
+    "document": "Linguagem",
+    "section": "Linguagem",
+    "subsection": "percorrer",
+    "content": "A saída do script será:\n\n1. p1: 1 // primeiro item da lista de números do percorrer 'p1'\n2. p2: 1 // primeiro índice do segundo percorrer\n3.       // Ao passar pelo segundo ídice o comando continuar 'p1' foi execuado parando a execução do percorrer atual e avançando o item do\n4.       // percorrer 'p1' para a próxima iteração, neste caso o número 2\n5. p1: 2\n6. p2: 1\n7. p1: 3\n8. p2: 1",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    }
+}

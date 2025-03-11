@@ -1,0 +1,9 @@
+{
+    "document": "API_scripts",
+    "section": "Componentes",
+    "subsection": "Exemplos de utilização:",
+    "content": "12. imprimir \"Zerado: \" + contador.zerar()\n13.\n14. //------------------------------------------------\n15. log = importar \"ped.log\"\n16.\n17. log.info(\"Iniciando execução\")\n18.\n19. percorrer(ate: 5) {\n20.   log.info(\"Executando passo #$indice\")\n21. }\n22.\n23. log.erro(\"Erro na conversão dos valores\")\n24. log.salvar()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    }
+}

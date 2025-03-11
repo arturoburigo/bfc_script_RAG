@@ -1,0 +1,9 @@
+{
+    "document": "API_soap",
+    "section": "Base64",
+    "subsection": "Contornando a limitação cumulativa",
+    "content": "Caso seja necessário codificar ou decodificar diversos conteúdos e esteja sendo esbarrado no limite cumulativo, pode-se utilizar métodos que não retornam como o resposta o conteúdo (não alocando no contexto global), e sim disponibilizam ele dentro de uma closure, que acaba liberando a memória alocada mais rapidamente:",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    }
+}

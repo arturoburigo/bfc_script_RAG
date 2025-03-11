@@ -1,0 +1,9 @@
+{
+    "document": "API_arquivos",
+    "section": "Arquivos ZIP (zip)",
+    "subsection": "Leitura",
+    "content": "15.     arquivo = item.arquivo;\n16.\n17.     //Pode ser utilizado outras apis para trabalhar no arquivo descompactado...\n18.     Arquivo.ler(arquivo, 'txt');\n19. }",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    }
+}

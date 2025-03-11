@@ -1,0 +1,9 @@
+{
+    "document": "API_scripts",
+    "section": "Componentes",
+    "subsection": "Exemplos de utilização:",
+    "content": "1. add = { p1, p2 ->\n2.   p1 + p2\n3. }\n4.\n5. sub = { p1, p2 ->\n6.   p1 - p2\n7. }\n8.\n9. mul = { p1, p2 ->\n10.   p1 * p2\n11. }\n12.\n13. div = { p1, p2 ->\n14.   p1 / p2\n15. }\n16.\n17. exportar(\n18.   somar: add,\n19.   subtrair: sub,\n20.   multiplicar: mul,\n21.   dividir: div\n22. )\n\n\n\n_Componente 2: identificador ped.contador_",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    }
+}

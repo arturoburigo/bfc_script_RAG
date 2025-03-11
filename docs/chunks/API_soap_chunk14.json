@@ -1,0 +1,9 @@
+{
+    "document": "API_soap",
+    "section": "Base64",
+    "subsection": "Contornando a limitação cumulativa",
+    "content": "12.\n13. se(xml.valor() == 'true'){\n14.   imprimir 'O endereço ' + parametros.email.valor + ' é um e-mail válido!'\n15. } senao {\n16.   imprimir 'O endereço ' + parametros.email.valor + ' é inválido!'\n17. }",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    }
+}

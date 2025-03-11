@@ -1,0 +1,9 @@
+{
+    "document": "API_soap",
+    "section": "Base64",
+    "subsection": "Contornando a limitação cumulativa",
+    "content": "Quando utilizado um arquivo, não é possível definir o charset para codificação, o charset utilizado é o do arquivo:\n\n1. zip = Arquivo.novo('arquivos.zip', 'zip');\n2.\n3. zip.adicionar(parametros.arquivo.valor, 'teste.xml');\n4.\n5. imprimir Hash.padraoSHA512().codifica(zip).texto()\n\n\n\n**padraoHex()**\n\n1. hexadecimal = Hash.padraoHex().codifica(\"qualquer texto\").texto()\n\n\n\nQuando utilizado um texto, é possível definir o charset para codificação (o charset padrão é UTF-8):",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    }
+}

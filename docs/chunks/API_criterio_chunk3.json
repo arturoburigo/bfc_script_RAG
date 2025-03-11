@@ -1,0 +1,9 @@
+{
+    "document": "API_criterio",
+    "section": "Delimitador nas operações contidoEm/naoContidoEm",
+    "subsection": "Com formatação e delimitador",
+    "content": "1. a = 12 e (b = 24 or c = 30)\n\n\n\n\n\n\n\nAtualmente a engine de scripts tem suporte a **datas** através de seu formato completo (data e hora), e no critério ela é representada através do formato [ISO 8601](https://pt.wikipedia.org/wiki/ISO_8601)\n\n1. Criterio.onde('dataNascimento').igual(Datas.hoje());\n\n\n\nO critério acima, gera um filtro parecido com:\n\n1. dataNascimento = 2018-02-05T09:37:09.009",
+    "metadata": {
+        "source": "docs/BFC Doc/API_criterio.md"
+    }
+}

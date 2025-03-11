@@ -1,0 +1,9 @@
+{
+    "document": "API_scripts",
+    "section": "Componentes",
+    "subsection": "Exemplos de utilização:",
+    "content": "1. calculadora = importar \"ped.calculadora\"\n2. contador = importar \"ped.contador\"\n3.\n4. imprimir \"2 + 2 = ${calculadora.somar(2, 2)}\"\n5. imprimir \"2 - 2 = ${calculadora.subtrair(2, 2)}\"\n6. imprimir \"2 * 2 = ${calculadora.multiplicar(2, 2)}\"\n7. imprimir \"2 / 2 = ${calculadora.dividir(2, 2)}\"\n8.\n9. imprimir \"Inicio: \" + contador.atual()\n10. imprimir \"+1: \" + contador.incrementar()\n11. imprimir \"+10: \" + contador.incrementarEm(calculadora.somar(5, 5))\n12. imprimir \"Zerado: \" + contador.zerar()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    }
+}

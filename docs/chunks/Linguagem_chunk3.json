@@ -1,0 +1,9 @@
+{
+    "document": "Linguagem",
+    "section": "Linguagem",
+    "subsection": "Valores nulos",
+    "content": "1.     valorCusto = nulo\n2.\n3.     // Forma 1\n4.     se (valorCusto != nulo){\n5.         imprimir (\"A variável valorCusto não está nula.\")\n6.     }\n7.\n8.     // Forma 2\n9.     se (valorCusto){\n10.         imprimir (\"A variável valorCusto não está nula.\")\n11.     }\n12.\n13.     se (!valorCusto){\n14.         imprimir (\"A variável valorCusto está nula.\")\n15.     }\n16.\n17.     se (valorCusto && funcionario.agenciaBancaria){",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    }
+}
