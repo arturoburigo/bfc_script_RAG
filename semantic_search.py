@@ -26,14 +26,6 @@ def search(query, top_k=5):
     results = [document_chunks[idx] for idx in indices[0]]
     return results
 
-# Teste da busca
-query = "Como usar o comando percorrer?"
-results = search(query)
-
-for r in results:
-    print(f"Documento: {r['document']} - Seção: {r['section']}")
-    print(f"Trecho: {r['content']}\n")
-
 
 client = OpenAI(api_key="OPENAI_API_KEY")
 
@@ -68,4 +60,12 @@ def rag_response(query):
 # Teste da resposta gerada
 #query = "Como fazer uma requisicao para uma api?"
 query = "Como calcular a diferenca de dias entre duas datas?"
+
+results = search(query)
+
+for r in results:
+    print(f"Documento: {r['document']} - Seção: {r['section']}")
+    print(f"Trecho: {r['content']}\n")
+    
+    
 print(rag_response(query))
