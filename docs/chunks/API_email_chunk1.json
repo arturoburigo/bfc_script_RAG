@@ -1,0 +1,9 @@
+{
+    "document": "API_email",
+    "section": "Exemplos",
+    "subsection": "Enviar arquivos dos parâmetros do script e API de Arquivos",
+    "content": "1. csv = Arquivo.novo('teste.csv', 'csv')\n2. csv.escrever('Valor')\n3.\n4. anexoCsv = Email.criarAnexoArquivo(csv, 'teste.csv')\n5.\n6. Email.novo()\n7.      .de('betha@betha.com.br','Betha Sistemas')\n8.      .para('destinatario@betha.com.br', 'Destinatário')\n9.      .assunto('Teste de e-mail')\n10.      .mensagem('Novo arquivo enviado.')\n11.      .anexar(anexoCsv)\n12.      .anexarArquivo(parametros.arquivo.valor, 'Arquivo.xml')\n13.      .enviar()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "document": "Linguagem",
+    "section": "Linguagem",
+    "subsection": "Valores nulos",
+    "content": "1.     nomeFuncionario = funcionario.agenciaBancaria?.municipio?.nome\n2.\n3.     imprimir(nomeFuncionario?:'Sem nome')\n4.\n\n\n\nNo exemplo acima, quando o valor da variável `nomeFuncionario` for nulo, o valor retornado será `Sem nome`.\n\nPoderiamos usar esta expressão diretamente, conforme o exemplo abaixo:\n\n1.     nomeFuncionario = funcionario.agenciaBancaria?.municipio?.nome?:'Sem nome'\n2.\n3.     imprimir(nomeFuncionario)",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    }
+}

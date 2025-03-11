@@ -1,0 +1,9 @@
+{
+    "document": "API_arquivos",
+    "section": "Arquivos ZIP (zip)",
+    "subsection": "Leitura",
+    "content": "**Obs:** Caso durante a geração do zip, seja utilizado um encoding diferente do UTF-8, o valor deve ser informado. Por exemplo:\n\n1. zip = Arquivo.ler('arquivo.zip', 'zip', [encoding: 'CP437'])",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    }
+}

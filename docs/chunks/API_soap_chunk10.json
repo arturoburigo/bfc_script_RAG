@@ -1,0 +1,9 @@
+{
+    "document": "API_soap",
+    "section": "Base64",
+    "subsection": "Contornando a limitação cumulativa",
+    "content": "1. zip = Arquivo.novo('arquivos.zip', 'zip');\n2.\n3. zip.adicionar(parametros.arquivo.valor, 'teste.xml');\n4.\n5. imprimir Hash.padraoSHA256().codifica(zip).texto()\n6.\n\n\n\n**padraoSHA512()**\n\n1. hashSHA512 = Hash.padraoSHA512().codifica(\"qualquer texto\").texto()\n\n\n\nQuando utilizado um texto, é possível definir o charset para codificação (o charset padrão é UTF-8):\n\n1. hashSHA512 = Hash.padraoSHA512().codifica(\"ë\", \"iso-8859-1\").texto()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    }
+}

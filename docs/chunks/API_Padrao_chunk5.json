@@ -1,0 +1,9 @@
+{
+    "document": "API_padrao",
+    "section": "API Padrão",
+    "subsection": "Caractere de escape",
+    "content": "10.           .expressao(~/[Í]/).substituirPor(\"I\")\n11.           .expressao(~/[õ|ó|ô]/).substituirPor(\"o\")\n12.           .expressao(~/[Õ|Ó|Ô]/).substituirPor(\"O\")\n13.           .expressao(~/[ü|ú]/).substituirPor(\"u\")\n14.           .expressao(~/[Ú|Ü]/).substituirPor(\"U\")\n15.           .expressao(~/[ç]/).substituirPor(\"c\")\n16.           .expressao(~/[Ç]/).substituirPor(\"C\")\n17.           .expressao(~/  /).substituirPor(\" \")",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    }
+}

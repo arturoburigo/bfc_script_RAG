@@ -1,0 +1,9 @@
+{
+    "document": "API_http",
+    "section": "Requisição",
+    "subsection": "Formulario Multipart",
+    "content": "###### METODO(método, Mapa[marcadores])\n\n\nEnvia o formulário utilizando como tipo de método um valor personalizado.\n\n1. resposta  = servico.criarFormularioMultipart().METODO('POST')\n\n\n\n\n\n\n\nUma chamada à um serviço web quando executada tem como retorno uma representação de resposta. Esta resposta pode ser processada/lida de maneiras distintas conforme necessidade.\n\nAs opções disponíveis são:",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    }
+}

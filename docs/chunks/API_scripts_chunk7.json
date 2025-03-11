@@ -1,0 +1,9 @@
+{
+    "document": "API_scripts",
+    "section": "Componentes",
+    "subsection": "Exemplos de utilização:",
+    "content": "1. api = importar \"restapi\"\n\n\n\n**Exemplo 2:** Este exemplo trata de múltiplos componentes para um único Script Pai:\n\nExistem 3 componentes:\n\n* Que simula uma calculadora;\n* Que executa um contador;\n* Que gera um log;\n_Componente 1: identificador ped.calculadora_",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    }
+}

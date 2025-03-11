@@ -1,0 +1,9 @@
+{
+    "document": "API_scripts",
+    "section": "Componentes",
+    "subsection": "Exemplos de utilização:",
+    "content": "**Exemplo 1:** Este exemplo demonstra um componente que abstrai uma API REST.\n\nSegue o código de um **componente** cujo identificador foi denominado _restapi_ e que será chamado pelo **script pai** :",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    }
+}

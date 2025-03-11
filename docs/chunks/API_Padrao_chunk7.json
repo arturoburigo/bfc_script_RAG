@@ -1,0 +1,9 @@
+{
+    "document": "API_padrao",
+    "section": "API Padrão",
+    "subsection": "repetir",
+    "content": "11. }\n12.\n13. arquivo = Arquivo.novo('arq.txt', 'txt', [encoding: 'iso-8859-1']);\n14.\n15. dadosFuncionarios = Dados.dubai.v1.funcionarios\n16.\n17. percorrer(dadosFuncionarios.busca()){\n18.   idString = \"$item.id\"\n19.   //Aqui os números são preenchidos com os caracteres desejados sem utilizar a função formatarNumero()\n20.   imprimir item.nome + Caracteres.repetir(\" \", 100 - item.nome.tamanho()) +\n21.     Caracteres.repetir(\"X\", 10 - idString.tamanho()) + item.id + '-ABCDE'\n22.\n23.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    }
+}

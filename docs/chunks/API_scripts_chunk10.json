@@ -1,0 +1,9 @@
+{
+    "document": "API_scripts",
+    "section": "Componentes",
+    "subsection": "Exemplos de utilização:",
+    "content": "_Componente 3: identificador ped.log_\n\n1. logFile = Arquivo.novo('log.txt')\n2.\n3. logInfo = { text ->\n4.   logFile.escrever(\"INFO: $text\")\n5.   logFile.novaLinha()\n6. }\n7.\n8. logError = { text ->\n9.   logFile.escrever(\"ERROR: $text\")\n10.   logFile.novaLinha()\n11. }\n12.\n13. commit = {\n14.   imprimir \"Adicionado log no resultado\"\n15.   Resultado.arquivo(logFile, 'log.txt')\n16. }\n17.\n18. exportar(\n19.   info: logInfo,\n20.   erro: logError,\n21.   salvar: commit\n22. )",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    }
+}

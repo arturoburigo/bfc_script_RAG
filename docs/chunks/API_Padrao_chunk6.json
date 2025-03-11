@@ -1,0 +1,9 @@
+{
+    "document": "API_padrao",
+    "section": "API Padrão",
+    "subsection": "Caractere de escape",
+    "content": "18.           .expressao(~/[,|~\\\\n~\\|~\\/~\\|-|_|*|.|!|@|#|$|%|¨|&|*|^|´|.|~|:|;|)|(|%|~\\-|]/).substituirPor(\"\")\n19.\n20. //Resultado:\n21. Caracteres Especiais foram removidos",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    }
+}

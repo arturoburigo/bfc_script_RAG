@@ -1,0 +1,9 @@
+{
+    "document": "API_soap",
+    "section": "Base64",
+    "subsection": "Contornando a limitação cumulativa",
+    "content": "**Exemplo 4:**\n\nArmazenar o retorno em formato de anexo de um serviço.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    }
+}

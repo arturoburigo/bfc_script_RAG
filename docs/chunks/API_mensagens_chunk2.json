@@ -1,0 +1,9 @@
+{
+    "document": "API_mensagens",
+    "section": "Mensagem",
+    "subsection": "enviar()",
+    "content": "## API de Mensagens\n\n\nO bfc-script disponibiliza uma API para envio de mensagens aos usuários do sistema. Essas funções estarão disponíveis ao usuário final apenas através da **Ferramenta de Eventos** , e serão absorvidas plenamente conforme a utilização.\n\nA API possibilita o envio de quatro tipos de mensagens: erro, aviso, informação e sucesso, conforme o exemplo abaixo::",
+    "metadata": {
+        "source": "docs/BFC Doc/API_mensagens.md"
+    }
+}
