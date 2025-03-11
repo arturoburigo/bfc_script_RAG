@@ -8,7 +8,7 @@ O BFC Script é um framework desenvolvido pela [Betha Sistemas](https://www.beth
 
 Este projeto é uma iniciativa acadêmica desenvolvida na SATC (Associação Beneficente da Indústria Carbonífera de Santa Catarina) que visa implementar um assistente de IA baseado em RAG (Retrieval-Augmented Generation) para o BFC Script, auxiliando assim os desenvolvedores da Betha sistemas, economizando tempo e melhorando a eficiência.
 
-![RAG Assistant](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40drjulija%2Fwhat-is-retrieval-augmented-generation-rag-938e4f6e03d1&psig=AOvVaw3uswcZ1wpssZ6dWEqevXJv&ust=1741745779981000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKjvs-X6gIwDFQAAAAAdAAAAABAE)
+![RAG Assistant](https://miro.medium.com/v2/resize:fit:1400/1*J7vyY3EjY46AlduMvr9FbQ.png)
 
 
 
