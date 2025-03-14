@@ -1,0 +1,24 @@
+{
+  "descricao": "Fonte de dados do Folha",
+  "hostExterno": "https://folha-dados-v2.betha.cloud/folha/dados",
+  "id": "60268bb86e156000ef732243",
+  "identificador": "folha",
+  "versao": 2
+}
+
+{
+  "descricao": "Fonte de dados dos sistemas Folha, RH e Ponto",
+  "hostExterno": null,
+  "id": "5c35ffd389ae9c0102a9476d",
+  "identificador": "pessoal",
+  "versao": 1
+}
+
+{
+  "descricao": "Fonte de dados do Folha e Minha Folha",
+  "hostExterno": null,
+  "id": "60268bbed8dbec00efbf24e1",
+  "identificador": "folha-minhafolha",
+  "versao": 2
+}
+
