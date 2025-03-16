@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**metodo(operacao, namespace, prefixo)**  \nCria um novo método utilizando a operação, namespace e prefixo informados nos parâmetros.  \n**metodo(operacao,[namespace](index.html#apiSoapServicoCriarNamespace))**",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

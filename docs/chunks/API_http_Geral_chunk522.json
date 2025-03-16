@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "###### parametro (Mapa[nome:valor])  \n###### parametro (Mapa[nome:valor])  \nAdiciona um ou mais parâmetro(s) ao formulário atual. Este parâmetro pode conter um tipo de mídia diferente ao do formulário.  \n```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com/posts')\nservico.cookie('Usuario', 'João da Silva')\nservico.cookie('Usuario', 'João da Silva', '/usuarios', 'betha.com.br', 1)\nservico.cookie([ Usuario: 'João da Silva', Accesso: 'sim' ])\n```9  \n###### POST()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.capitaliza\n```37  \n##### resto  \nRetorna o resto da divisão realizada entre o dividendo e o divisor, que são passados porparâmetro.  \n```bfc-script\ntexto.capitaliza\n```38  \n##### seno  \nCalcula o seno de um ângulo.  \n```bfc-script\ntexto.capitaliza\n```39  \n##### seZero",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

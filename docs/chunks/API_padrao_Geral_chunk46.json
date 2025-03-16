@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### equivalente()  \nVerifica se o texto é totalmente equivalente a expressão.  \n```bfc-script\nCaracteres.equivalente(texto, expressao)\n```2  \n##### totalGrupos()  \nRetorna o total de [grupos](http://aurelio.net/regex/guia/grupo.html#2_4_3) da expressão regular.  \n```bfc-script\nCaracteres.equivalente(texto, expressao)\n```3",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

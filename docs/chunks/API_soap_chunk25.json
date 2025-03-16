@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "8. \t </tip:documento>\n9. \t \t<tip:documento idDocumento=\"28\" tipoDocumento=\"14\" mimetype=\"application/pdf\" descricao=\"Petição Inicial\" tipoDocumentoLocal=\"14\">\n10. \t \t<int:conteudo></int:conteudo>\n11.  \t\t</tip:documento>\n12.          <tip:dataEnvio></tip:dataEnvio>\n13.       </ser:entregarManifestacaoProcessual>\n14. \"\"\";\n15.\n16. imprimir xml;\n17.\n18. servico = Soap.servico(\"https://eproc1ghml.tjsc.jus.br/homologa1g/ws/controlador_ws.php?srv=intercomunicacao2.2\",",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

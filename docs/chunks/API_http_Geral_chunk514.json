@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "como tipo de mídia o valor Http.FORMULARIO (application/x-www-form-urlencoded). A mídia pode ser alterada informando no parâmetro da função o tipo de mídia desejada.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": false
+}

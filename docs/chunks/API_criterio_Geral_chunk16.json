@@ -1,0 +1,11 @@
+{
+    "document": "API_criterio",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "O critério acima, gera o seguinte filtro:  \n```bfc-script\nCriterio.onde('nome').igual('João');\n```6  \n### Agrupamento  \nO critério tem suporte a **grupos** , através da seguinte chamada:  \n```bfc-script\nCriterio.onde('nome').igual('João');\n```7  \nO critério acima, gera o seguinte filtro:  \n```bfc-script\nCriterio.onde('nome').igual('João');\n```8  \n### Datas",
+    "metadata": {
+        "source": "docs/BFC Doc/API_criterio.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Por padrão a API de arquivos não disponibiliza para download os arquivos criados pelas implementações. Para que os mesmos sejam incluídos no arquivo zip de resultado da execução de um script através da **Ferramenta de Scripts** é necessário",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "## API de HTTP  \nO bfc-script disponibiliza uma API para consumo de serviços web HTTP. Essas funções estarão disponíveis ao usuário final apenas através da **Ferramenta de Scripts** , e serão absorvidas plenamente conforme a utilização.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": false
+}

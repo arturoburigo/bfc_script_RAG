@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Escreve um novo atributo no elemento atual informando também o namespace.  \n##### escreverCData(data)  \nEscreve uma área com conteúdo CDATA no documento XML.  \n##### escreverTexto(texto)  \nEscreve texto no item atual.  \n```bfc-script\narquivo = Arquivo.ler(arquivo, 'txt')\n```5",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": true
+}

@@ -1,9 +1,0 @@
-{
-    "document": "Linguagem",
-    "section": "Linguagem",
-    "subsection": "Valores nulos",
-    "content": "O acesso à referências nulas gera erros durante a execução de um script. No exemplo abaixo, suponhamos que a agência bancária do funcionário esteja nula:\n\n1.     nomeFuncionario = funcionario.agenciaBancaria.nome\n2.\n\n\n\nAo tentar obter o nome de uma agência bancária nula, recebemos um erro de execução: A propriedade `nome` não é acessível em um elemento nulo. Para evitar este comportamento, podemos utilizar o operador de navegação segura (?):",
-    "metadata": {
-        "source": "docs/BFC Doc/Linguagem.md"
-    }
-}

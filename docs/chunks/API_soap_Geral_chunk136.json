@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### namespace(namespace, prefixo)  \nAdiciona um namespace a mensagem. Este namespace será adicionado ao envelope SOAP da mensagem e poderá ser utilizado na declaração dos [elementos](index.html#apiSoapMensagemElemento).",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

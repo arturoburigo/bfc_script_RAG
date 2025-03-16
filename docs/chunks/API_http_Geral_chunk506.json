@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com/posts/{ano}/{id}')\n```8  \n#### PATCH (dados)  \n#### PATCH (dados, Mapa[marcadores])  \n#### PATCH (dados, Tipo de mídia)  \n#### PATCH (dados, Tipo de mídia, Mapa[marcadores])  \n#### PATCH (formulário)  \n#### PATCH (formulário, Mapa[marcadores]",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

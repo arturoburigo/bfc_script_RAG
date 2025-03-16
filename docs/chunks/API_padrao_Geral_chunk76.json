@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Calcula a diferença em dias entre duas datas.  \n```bfc-script\nCaracteres.maiusculo(texto)\n```5  \n_Alternativa_  \n```bfc-script\nCaracteres.maiusculo(texto)\n```6  \n##### diferencaHoras  \nCalcula a diferença em horas entre duas datas.  \n```bfc-script\nCaracteres.maiusculo(texto)\n```7  \n_Alternativa_  \n```bfc-script\nCaracteres.maiusculo(texto)\n```8  \n##### diferencaMeses",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Uma função de hash pode ser utilizada para verificar a integridade de arquivos, uma vez que uma hash é gerada com base em um texto ou arquivo, não existe uma maneira de fazer o caminho contrário. Uma abordagem muito comum, inclusive praticada por",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

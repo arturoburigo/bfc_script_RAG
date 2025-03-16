@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\ntexto.esquerda(quantidade)\n```  \n##### maisculo  \nConverte todos os caracteres de um texto em maiúsculo.  \n```bfc-script\nCaracteres.maiusculo(texto)\n```  \n_Alternativa_  \n```bfc-script\ntexto.maiusculo\n```  \n##### minusculo  \nConverte todos os caracteres de um texto em minusculo.  \n```bfc-script\ntexto.capitaliza\n```0",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

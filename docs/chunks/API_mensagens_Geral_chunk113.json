@@ -1,0 +1,11 @@
+{
+    "document": "API_mensagens",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nNotificacao.nova('Seja bem vindo!')\n.para(usuario.id, 'joao.silva', 'maria.silva')\n.enviar()\n```  \n#### mensagem(mensagem)  \nDefine a mensagem a ser enviada pela notificação  \n#### link(href)  \nDefine o link a ser enviado pela notificação  \n#### link(href, titulo)  \nDefine o link com título a ser enviado pela notificação",
+    "metadata": {
+        "source": "docs/BFC Doc/API_mensagens.md"
+    },
+    "contains_code": true
+}

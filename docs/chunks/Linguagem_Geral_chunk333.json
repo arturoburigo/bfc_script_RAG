@@ -1,0 +1,11 @@
+{
+    "document": "Linguagem",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Em programação de computadores, null é um valor especial para um ponteiro (ou qualquer outro tipo de referência) que indica que este ponteiro, intencionalmente, não se refere a um objeto (ponteiro nulo) -",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    },
+    "contains_code": false
+}

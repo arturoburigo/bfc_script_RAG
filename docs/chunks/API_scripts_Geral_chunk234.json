@@ -1,0 +1,11 @@
+{
+    "document": "API_scripts",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nparametros = [ p1 : 100, p2 : 200]\n2.\nScripts.somar.executar(parametros)\n```0  \n#### variavel(nome)  \nRecupera o valor de uma variável declarada no script invocado.  \n```bfc-script\nparametros = [ p1 : 100, p2 : 200]\n2.\nScripts.somar.executar(parametros)\n```1  \nNote que a variável _log_ foi declarada no conteúdo do script somar:  \n```bfc-script\nparametros = [ p1 : 100, p2 : 200]\n2.\nScripts.somar.executar(parametros)\n```2  \n#### retornar",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    },
+    "contains_code": true
+}

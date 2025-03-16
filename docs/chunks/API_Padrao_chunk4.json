@@ -1,9 +1,0 @@
-{
-    "document": "API_padrao",
-    "section": "API Padrão",
-    "subsection": "Caractere de escape",
-    "content": "1. //O código abaixo remove caracteres especiais\n2. caracteres = \"Caráctéres\\$  Es\\$,pêc-i_a*i/s. fôrám removídós\\$: !@#¨&*^´()\\n\"\n3.\n4. caracteres.expressao(~/[à|á|ã]/).substituirPor(\"a\")\n5.           .expressao(~/[Á|Ã|À]/).substituirPor(\"A\")\n6.           .expressao(~/[é|ê]/).substituirPor(\"e\")\n7.           .expressao(~/[É|É]/).substituirPor(\"E\")\n8.           .expressao(~/[É|É]/).substituirPor(\"\")\n9.           .expressao(~/[í]/).substituirPor(\"i\")",
-    "metadata": {
-        "source": "docs/BFC Doc/API_padrao.md"
-    }
-}

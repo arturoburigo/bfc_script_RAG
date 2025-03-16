@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico = Soap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx')\nservico.cabecalho('Authorization','Bearer 239e3d8e-1e93-4f2b-beff-c430103b9287')\n```1  \nA função BaseCodec está disponível ao usuário final apenas através da **Ferramenta de Scripts**.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": true
+}

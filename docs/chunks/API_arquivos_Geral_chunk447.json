@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Adiciona um arquivo em um determinado diretório do arquivo zip utilizando o nome informado como parâmetro. Caso o diretório não exista no arquivo zip o mesmo será criado.  \n```bfc-script\npercorrer(enquanto: { arquivo.contemProximaLinha() }) {\nimprimir arquivo.lerLinha()\n}\n```8  \n```bfc-script\npercorrer(enquanto: { arquivo.contemProximaLinha() }) {\nimprimir arquivo.lerLinha()\n}\n```9",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": true
+}

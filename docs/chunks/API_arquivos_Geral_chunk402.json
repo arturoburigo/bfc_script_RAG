@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Itera no documento passando a leitura para o próximo elemento cujo nome e namespace sejam iguais aos valores informados nos parâmetros. Tem como retorno um valor booleano indicando se a leitura do elemento foi realizada ou se o documento chegou ao",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

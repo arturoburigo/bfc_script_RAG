@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "1. hexadecimal = Hash.padraoHex().codifica(\"ë\", \"iso-8859-1\").texto()\n\n\n\nQuando utilizado um arquivo, não é possível definir o charset para codificação, o charset utilizado é o do arquivo:\n\n1. zip = Arquivo.novo('arquivos.zip', 'zip');\n2.\n3. zip.adicionar(parametros.arquivo.valor, 'teste.xml');\n4.\n5. imprimir Hash.padraoHex().codifica(zip).texto()\n6.\n\n\n\n\n\n\n\n**Exemplo 1:**",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

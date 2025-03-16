@@ -1,0 +1,11 @@
+{
+    "document": "API_email",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A criação de anexos pode ser realizada através de funções específicas da API ou de forma simplificada pela mensagem. Anexos criados pelas funções da API devem ser manualmente adicionados à mensagem. Por motivo de performance, caso o mesmo anexo do",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    },
+    "contains_code": false
+}

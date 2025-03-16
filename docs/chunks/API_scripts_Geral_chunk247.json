@@ -1,0 +1,11 @@
+{
+    "document": "API_scripts",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "O comando **exportar** é utilizado para definir quais recursos serão expostos pelo componente. Repare que as declarações que não foram exportadas permanecem privadas ao componente, permitindo assim uma modelagem mais robusta de funcionalidades",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    },
+    "contains_code": false
+}

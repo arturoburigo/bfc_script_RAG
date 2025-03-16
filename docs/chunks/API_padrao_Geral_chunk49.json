@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### substituirPrimeiroPor(valor)  \nRealiza a substituição do primeiro valor da expressão encontrado no texto pelo valor informado no parâmetro.  \n```bfc-script\nCaracteres.equivalente(texto, expressao)\n```6  \n##### encontrouPadrao()  \nIndica se o padrão da expressão foi encontrado no texto.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico.cabecalho('Authorization', 'Basic ABCF5065FGC==')\nservico.cabecalho('User', ['murphy', 'luiz.silva'])\nservico.cabecalho([ User: 'alex.o.leao'])\n```3  \n### Resposta  \nUma chamada à um serviço web quando executada tem como retorno uma representação de resposta. Esta resposta pode ser processada/lida de maneiras distintas conforme necessidade.  \nAs opções disponíveis são:",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

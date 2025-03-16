@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Soap.servico(url)  \nCria um novo servico com base na URL informada por parâmetro.  \n```bfc-script\nservico = Soap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx')\n```  \n#### Soap.servico(url, namespace, prefixo)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": true
+}

@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "14. xml.escreverAtributo('completo', 'S')\n15. xml.escreverTexto('Maria Joana Amaral')\n16. xml.escreverFimElemento()\n17.\n18. xml.escreverInicioElemento('setor')\n19. xml.escreverAtributo('nome', 'Desenvolvimento')\n20. xml.escreverInicioElemento('pessoas')\n21. xml.escreverElementoTexto('nome', 'Javanildo Soares')\n22. xml.escreverFimElemento()\n23. xml.escreverFimElemento()\n24.\n25. xml.escreverFimElemento()\n26. xml.escreverFimDocumento()\n27.\n28. hashMD5 = Hash.padraoMD5().codifica(xml).texto()",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

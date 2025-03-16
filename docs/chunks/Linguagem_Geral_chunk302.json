@@ -1,0 +1,11 @@
+{
+    "document": "Linguagem",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```0  \nA saída do script será:  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```1  \n##### retornar  \nPermite submeter dados como retorno de um script.  \nConforme podemos observar, a variável valor é submetida como retorno do script utilizando o comando retornar.",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    },
+    "contains_code": true
+}

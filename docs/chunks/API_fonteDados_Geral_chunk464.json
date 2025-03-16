@@ -1,0 +1,11 @@
+{
+    "document": "API_fonteDados",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* **consolidado** : Utilizado para informar se os valores retornados devem ser consolidados de acordo com o cadastro de contextos compartilhados. Caso seja passado true, será executado uma consulta na fonte de dados para cada entidade e database",
+    "metadata": {
+        "source": "docs/BFC Doc/API_fonteDados.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_cache",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Cache.adicionar(chave, valor, expirarEm)  \nAdiciona um novo valor no cache, com a chave informada e o tempo de expiração (opicional).  \n```bfc-script\nCache.adicionar('meu-token', 'aaabbbccc', 2.horas)\n```  \n#### Cache.recuperar(chave, valorPadrao)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_cache.md"
+    },
+    "contains_code": true
+}

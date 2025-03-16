@@ -1,9 +1,0 @@
-{
-    "document": "API_arquivos",
-    "section": "Arquivos ZIP (zip)",
-    "subsection": "comentario(Comentário)",
-    "content": "Adiciona um comentário às informações do arquivo zip\n\n1. Arquivo.novo('relatorios.zip', 'zip').comentario('Arquivo contendo os relatórios')",
-    "metadata": {
-        "source": "docs/BFC Doc/API_arquivos.md"
-    }
-}

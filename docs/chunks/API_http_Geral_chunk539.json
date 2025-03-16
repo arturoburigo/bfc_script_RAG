@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com')\n2.\n//Gera uma chamada GET ao endereço https://jsonplaceholder.typicode.com/posts?id=5\nservico.caminho('posts')\n.parametro('id', 5)\n.GET()\n7.\n//Gera uma chamada GET ao endereço https://jsonplaceholder.typicode.com/users/admins?id=5\nservico.caminho('users')\n.caminho('admins')\n.parametro('id', 2)\n.GET()\n13.\n//Caso se deseje alterar a requisição original basta associar a cópia ao serviço original, desta forma\n//todas as requisições criadas à partir deste serviço utilizaram estes caminhos\nservico = servico.caminho('users')\n.caminho('admins')\n18.\n//Gera uma chamada GET ao endereço https://jsonplaceholder.typicode.com/users/admins/ativos?id=5\nservico.caminho('ativos')\n.parametro('id', 5)\n.GET()\n```1  \n#### cookie(nome)  \nRetorna o cookie (caso definido)  \n```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com')\n2.\n//Gera uma chamada GET ao endereço https://jsonplaceholder.typicode.com/posts?id=5\nservico.caminho('posts')\n.parametro('id', 5)\n.GET()\n7.\n//Gera uma chamada GET ao endereço https://jsonplaceholder.typicode.com/users/admins?id=5\nservico.caminho('users')\n.caminho('admins')\n.parametro('id', 2)\n.GET()\n13.\n//Caso se deseje alterar a requisição original basta associar a cópia ao serviço original, desta forma\n//todas as requisições criadas à partir deste serviço utilizaram estes caminhos\nservico = servico.caminho('users')\n.caminho('admins')\n18.\n//Gera uma chamada GET ao endereço https://jsonplaceholder.typicode.com/users/admins/ativos?id=5\nservico.caminho('ativos')\n.parametro('id', 5)\n.GET()\n```2  \n#### imprimir()  \nImprime o conteúdo da resposta no console do editor de scripts.  \n#### conteudo()  \nRetorna o conteúdo da resposta no formato de caracteres.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

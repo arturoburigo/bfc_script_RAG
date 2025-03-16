@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.esquerda(quantidade)\n```3  \n_Alternativa_  \n```bfc-script\ntexto.esquerda(quantidade)\n```4  \n##### data  \nGera uma data sem hora de acordo com o dia, mês e ano passados por parâmetro  \n```bfc-script\ntexto.esquerda(quantidade)\n```5  \n_Alternativa_  \n```bfc-script\ntexto.esquerda(quantidade)\n```6  \n##### dataHora",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

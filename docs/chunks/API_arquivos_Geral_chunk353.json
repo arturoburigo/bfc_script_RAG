@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* Arquivo.novo(_nome do arquivo, tipo do arquivo, parametros_): Cria um novo arquivo utilizando a implementação própria para o tipo de arquivo informado permitindo a passagem de parâmetros específicos da implementação.\nExemplo de utilização:",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

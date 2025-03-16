@@ -1,0 +1,11 @@
+{
+    "document": "API_email",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### responderPara(email)  \nAdiciona um email no qual a mensagem deverá ser respondia pelos destinatários  \n#### responderPara(email, nome)  \nAdiciona um email e nome no qual a mensagem deverá ser respondia pelos destinatários",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    },
+    "contains_code": false
+}

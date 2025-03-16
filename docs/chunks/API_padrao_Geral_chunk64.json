@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nCaracteres.esquerda(texto, quantidade)\n```2  \n##### concatenarValoresGrupos(separador)  \nRetorna os valores dos grupos da expressão concatenados com o separador informado no parâmetro.  \n```bfc-script\nCaracteres.esquerda(texto, quantidade)\n```3  \n#### Datas  \n##### adicionaDias",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

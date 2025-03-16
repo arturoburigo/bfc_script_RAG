@@ -1,0 +1,11 @@
+{
+    "document": "Linguagem",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```1\nA variável item e indice podem ser atribuídas à outras variáveis com nomes personalizados utilizando a seguinte sintaxe do comando percorrer:  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```2",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    },
+    "contains_code": true
+}

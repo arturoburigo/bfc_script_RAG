@@ -1,9 +1,0 @@
-{
-    "document": "API_execucao",
-    "section": "Geral",
-    "subsection": "Consultar se a execução foi cancelada pelo usuário",
-    "content": "1. Execucao.atual.foiCancelada\n\n\n\n\n\n\n\nMonitorar o cancelamento e interromper a execução:\n\n1. percorrer(...) {\n2.\n3.   // processamento da aplicação\n4.\n5.   // verifica e interompe caso a execução atual foi cancelada\n6.   se(Execucao.atual.foiCancelada){\n7.     interomper 'Execucao cancelada'\n8.   }\n9.\n10. }",
-    "metadata": {
-        "source": "docs/BFC Doc/API_execucao.md"
-    }
-}

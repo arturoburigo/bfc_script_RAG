@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "[elementos](index.html#apiSoapMensagemElemento). Esta estrutura de árvore é baseada no padrão XML e é através dela que os parâmetros de entrada da funcionalidade do webservice são informados. Em resumo, uma mensagem destina-se à execução de um",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nCaracteres.esquerda(texto, quantidade)\n```3  \n#### Datas  \n##### adicionaDias  \nAdiciona uma quantidade especificada de dias à uma data.  \n```bfc-script\nCaracteres.esquerda(texto, quantidade)\n```4  \n_Alternativa_  \n```bfc-script\nCaracteres.esquerda(texto, quantidade)\n```5  \n##### adicionaHoras  \nAdiciona uma quantidade especificada de horas em uma data/hora.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

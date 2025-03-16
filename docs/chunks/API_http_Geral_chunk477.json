@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "cada interação com esse serviço é realizado através dos métodos/verbos padrões do HTTP. O produto desta interação quando executada é uma **Resposta** , essa resposta pode ser transformada em vários tipos e saídas, sendo elas um JSON no formato de",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Verifica se um texto é uma data válida.  \n```bfc-script\ntexto.maiusculo\n```5  \n_Alternativa_  \n```bfc-script\ntexto.maiusculo\n```6  \n##### extenso  \nObtem a data por extenso.  \n```bfc-script\ntexto.maiusculo\n```7  \n_Alternativa_  \n```bfc-script\ntexto.maiusculo\n```8  \n##### hoje  \nObtem a data e hora do sistema operacional.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

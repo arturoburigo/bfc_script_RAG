@@ -1,0 +1,11 @@
+{
+    "document": "API_email",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### incorporado()  \nDefine o anexo como incorporado. Esta opção irá gerar um CID com base no nome do anexo e poderá ser utilizado no corpo da mensagem para referenciar o anexo.  \n##### naoIncorporado()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    },
+    "contains_code": false
+}

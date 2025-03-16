@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Obtem o tamanho de um texto.  \n```bfc-script\ntexto.direita(quantidade)\n```4  \n_Alternativa_  \n```bfc-script\ntexto.direita(quantidade)\n```5  \n##### vazio  \nVerifica se uma palavra esta vazia.  \n```bfc-script\ntexto.direita(quantidade)\n```6  \n_Alternativa_  \n```bfc-script\ntexto.direita(quantidade)\n```7  \n##### dividir",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

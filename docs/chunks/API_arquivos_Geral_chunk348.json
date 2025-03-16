@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* Arquivo.ler(_arquivo ou conteúdo, tipo do arquivo, parametros_): Realiza a leitura de arquivo utilizando a implementação própria para o tipo do arquivo informado permitindo a passagem de parâmetros específicos da implementação.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

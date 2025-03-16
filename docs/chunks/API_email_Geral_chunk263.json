@@ -1,0 +1,11 @@
+{
+    "document": "API_email",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Adiciona um cabecalho no e-mail  \n#### autenticacao([usuario, senha, porta, host])  \nAutentica o envio do email. Exemplo de uso:  \n.autenticacao([ usuario: joao, senha: joao, porta: 587, host: smtp.live.com])  \n#### enviar()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    },
+    "contains_code": false
+}

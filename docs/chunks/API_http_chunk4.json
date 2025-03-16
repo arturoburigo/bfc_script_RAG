@@ -1,9 +1,0 @@
-{
-    "document": "API_http",
-    "section": "Requisição",
-    "subsection": "Formulario Multipart",
-    "content": "1. resposta  = servico.criarFormularioMultipart().POST()\n\n\n\n\n\n###### PUT()\n\n\n\n\n###### PUT(Mapa[marcadores])\n\n\nEnvia o formulário utilizando como tipo de método o verbo PUT.\n\n1. resposta  = servico.criarFormularioMultipart().PUT()\n\n\n\n\n\n###### PATCH()\n\n\n\n\n###### PATCH(Mapa[marcadores])\n\n\nEnvia o formulário utilizando como tipo de método o verbo PATCH.\n\n1. resposta  = servico.criarFormularioMultipart().PATCH()\n\n\n\n\n\n###### METODO(método)\n\n\n\n\n###### METODO(método, Mapa[marcadores])",
-    "metadata": {
-        "source": "docs/BFC Doc/API_http.md"
-    }
-}

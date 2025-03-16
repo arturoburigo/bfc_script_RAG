@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### ehNulo()  \nRetorna um valor booleano indicando se o item atual é nulo  \n##### texto()  \nRetorna o valor do item atual como texto  \n##### numero()  \nRetorna o valor do item atual como número  \n##### booleano()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

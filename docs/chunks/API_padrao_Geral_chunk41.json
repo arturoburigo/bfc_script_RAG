@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\ntexto.direita(quantidade)\n```1  \n##### subTexto  \nObtém um número específico de caracteres de uma posição especifica de um texto.  \n```bfc-script\ntexto.direita(quantidade)\n```2  \n_Alternativa_  \n```bfc-script\ntexto.direita(quantidade)\n```3  \n##### tamanho  \nObtem o tamanho de um texto.  \n```bfc-script\ntexto.direita(quantidade)\n```4",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

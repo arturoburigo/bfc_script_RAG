@@ -1,0 +1,11 @@
+{
+    "document": "API_criterio",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nCriterio.onde('nome').igual('João');\n```  \n###### Configurando o critério  \nConfiguração de parâmetro obrigatório:  \n```bfc-script\nCriterio.novo( [ parametros: Criterio.obrigatorio() ] );\n```  \nConfiguração padrão:  \n```bfc-script\nCriterio.novo( [ parametros: Criterio.opcional() ] );\n```",
+    "metadata": {
+        "source": "docs/BFC Doc/API_criterio.md"
+    },
+    "contains_code": true
+}

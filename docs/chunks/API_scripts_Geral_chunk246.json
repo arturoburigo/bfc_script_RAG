@@ -1,0 +1,11 @@
+{
+    "document": "API_scripts",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Segue o código de um **componente** cujo identificador foi denominado _restapi_ e que será chamado pelo **script pai** :  \n```bfc-script\nparametros = [ p1 : 100, p2 : 200]\n2.\nScripts.somar.executar(parametros)\n```6",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    },
+    "contains_code": true
+}

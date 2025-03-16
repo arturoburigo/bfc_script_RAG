@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(enquanto: { arquivo.contemProximaLinha() }) {\nimprimir arquivo.lerLinha()\n}\n```5  \n##### adicionar(Arquivo, Nome do arquivo no zip)  \nAdiciona um arquivo no diretório raiz do arquivo zip utilizando o nome informado no segundo parâmetro  \n```bfc-script\npercorrer(enquanto: { arquivo.contemProximaLinha() }) {\nimprimir arquivo.lerLinha()\n}\n```6  \n```bfc-script\npercorrer(enquanto: { arquivo.contemProximaLinha() }) {\nimprimir arquivo.lerLinha()\n}\n```7",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": true
+}

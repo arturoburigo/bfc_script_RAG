@@ -1,0 +1,11 @@
+{
+    "document": "API_mensagens",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "### Mensagem  \n#### para(usuarios)  \nAdiciona um usuário como destinatário da notificação. É possível adicionar vários usuários:  \n```bfc-script\nNotificacao.nova('Seja bem vindo!')\n.para('joao.silva', 'maria.silva')\n.enviar()\n```",
+    "metadata": {
+        "source": "docs/BFC Doc/API_mensagens.md"
+    },
+    "contains_code": true
+}

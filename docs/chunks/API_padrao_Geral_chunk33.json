@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.capitaliza\n```7  \n##### removeEspacos  \nRemover o excesso de espaços de um texto.  \n```bfc-script\ntexto.capitaliza\n```8  \n_Alternativa_  \n```bfc-script\ntexto.capitaliza\n```9  \n##### removeEspacosDireita  \nRemove o excesso de espaços de um texto à esquerda.  \n```bfc-script\nCaracteres.direita(texto, quantidade)\n```0  \n_Alternativa_",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

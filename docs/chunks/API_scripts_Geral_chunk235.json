@@ -1,0 +1,11 @@
+{
+    "document": "API_scripts",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nparametros = [ p1 : 100, p2 : 200]\n2.\nScripts.somar.executar(parametros)\n```2  \n#### retornar  \nO retorno de um script é realizado utilizando o comando _**retornar**_:  \n```bfc-script\nparametros = [ p1 : 100, p2 : 200]\n2.\nScripts.somar.executar(parametros)\n```3  \n```bfc-script\nparametros = [ p1 : 100, p2 : 200]\n2.\nScripts.somar.executar(parametros)\n```4  \n### Executando scripts em lote",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    },
+    "contains_code": true
+}

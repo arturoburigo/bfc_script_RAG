@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(enquanto: { arquivo.contemProximaLinha() }) {\nimprimir arquivo.lerLinha()\n}\n```  \n#### Escrita  \n```bfc-script\narquivo = Arquivo.novo('FendaDoBiquine.txt')\n```  \nCriando um novo arquivo com um Encoding específico (Por padrão utiliza UTF-8):  \n```bfc-script\narquivo = Arquivo.novo('FendaDoBiquine.txt', 'txt', [ encoding: 'iso-8859-1' ]);\n```  \n##### escrever(texto)  \nRealiza a escrita de um conteúdo no arquivo  \n```bfc-script\narquivo.escrever('Jonathan Peters')\n```  \n##### novaLinha()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": true
+}

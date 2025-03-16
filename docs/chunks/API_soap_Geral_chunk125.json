@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Soap.criarNamespace(namespace, prefixo)  \nCria uma representação de um namespace e prefixo para ser reutilizado nas funções da API, desta forma não é necessário informar namespace e prefixo a cada função.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "Linguagem",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```3  \n#### Mapas  \nÉ possível criar mapas simplificados e acessar seu valores de forma explicita.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```4  \nObserve o exemplo abaixo, usando uma **lista de mapas** :  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```5  \n#### Intervalos",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    },
+    "contains_code": true
+}

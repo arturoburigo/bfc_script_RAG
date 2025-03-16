@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.maiusculo\n```1  \n_Alternativa_  \n```bfc-script\ntexto.maiusculo\n```2  \n##### diferencaSegundos  \nCalcula a diferença em segundos entre duas datas/hora  \n```bfc-script\ntexto.maiusculo\n```3  \n_Alternativa_  \n```bfc-script\ntexto.maiusculo\n```4  \n##### ehData  \nVerifica se um texto é uma data válida.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

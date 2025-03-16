@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com/posts/{ano}/{id}')\n```0  \n#### tempoLimite(valor)  \nDefine o tempo limite para requisições executadas a partir do serviço. O valor deve ser informado em milissegundos.  \n```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com/posts/{ano}/{id}')\n```1  \n#### GET (Mapa[marcadores])",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

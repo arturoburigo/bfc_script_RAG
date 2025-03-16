@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico.cabecalho('Authorization', 'Basic ABCF5065FGC==')\nservico.cabecalho('User', ['murphy', 'luiz.silva'])\nservico.cabecalho([ User: 'alex.o.leao'])\n```9  \n#### cabecalho(nome)  \nRecupera um cabeçalho(Header) da resposta com base no nome. Um cabeçalho poder conter as seguintes informações:  \n* **nome()** : Nome do cabeçalho",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

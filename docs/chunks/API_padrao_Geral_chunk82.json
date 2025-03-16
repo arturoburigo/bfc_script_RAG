@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.capitaliza\n```05  \n_Alternativa_  \n```bfc-script\ntexto.capitaliza\n```06  \n##### nomeDiaSemana  \nObtem o nome do dia da semana.  \n```bfc-script\ntexto.capitaliza\n```07  \n_Alternativa_  \n```bfc-script\ntexto.capitaliza\n```08  \n##### nomeMes  \nObtem o nome do mês de uma data.  \n```bfc-script\ntexto.capitaliza\n```09  \n_Alternativa_",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

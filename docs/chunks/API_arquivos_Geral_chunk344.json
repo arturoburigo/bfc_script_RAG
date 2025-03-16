@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A leitura de arquivos está disponível através da função _Arquivo.ler()_. Esta função irá retornar uma implementação específica com operações distintas para realizar a leitura do arquivo conforme tipo. Esta função contém algumas variações para",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

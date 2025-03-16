@@ -1,0 +1,11 @@
+{
+    "document": "Linguagem",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Às vezes, a execução de uma ação pode acarretar em uma exceção. Quando isto ocorre, é possível que seja realizado um tratamento para que o script continue sua execução realizando alguma outra ação, como por exemplo, notificar outros usuários, tratar",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    },
+    "contains_code": false
+}

@@ -1,9 +1,0 @@
-{
-    "document": "API_scripts",
-    "section": "Componentes",
-    "subsection": "Exemplos de utilização:",
-    "content": "17. }\n18.\n19. getComments = { idPost ->\n20.   extractContent(api.caminho(\"posts/$idPost/comments\").GET())\n21. }\n22.\n23. Scripts.exportar(\n24.   buscarPublicacao: getPost,\n25.   buscarComentarios: getComments\n26. )",
-    "metadata": {
-        "source": "docs/BFC Doc/API_scripts.md"
-    }
-}

@@ -1,0 +1,11 @@
+{
+    "document": "Linguagem",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Intervalos permitem que você crie uma lista de valores sequenciais podendo serem utilizados como listas. A notação .. define um intervalo, do primeiro item até o último. Intervalos definidos com a notação ..< incluem o primeiro valor, mas não o",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    },
+    "contains_code": false
+}

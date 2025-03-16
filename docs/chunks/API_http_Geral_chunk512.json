@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com/posts')\nservico.cookie('Usuario', 'João da Silva')\nservico.cookie('Usuario', 'João da Silva', '/usuarios', 'betha.com.br', 1)\nservico.cookie([ Usuario: 'João da Silva', Accesso: 'sim' ])\n```0  \n#### Formulários  \nPara permitir o uso de serviços web onde os dados são recebidos no formato de formulários (form), a API conta com os seguintes facilitadores:  \n##### Formulario",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

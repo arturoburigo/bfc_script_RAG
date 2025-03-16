@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Executa uma chamada do tipo POST ao serviço retornando uma representação de resposta. Os dados/formulário da requisição são enviados conforme tipo de mídia informado no parâmetro sendo Http.JSON (_application/json_) o valor padrão.  \n```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com/posts/{ano}/{id}')\n```7",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\ntexto.esquerda(quantidade)\n```6  \n##### dataHora  \nGera uma data com a hora de acordo com o dia, mês, ano, hora e minuto passados por parâmetro  \n```bfc-script\ntexto.esquerda(quantidade)\n```7  \n_Alternativa_  \n```bfc-script\ntexto.esquerda(quantidade)\n```8  \n##### dia",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

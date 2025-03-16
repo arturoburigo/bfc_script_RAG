@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\ntexto.equivalente(expressao)\n```  \n##### esquerda  \nObtem uma quantidade específica de caracteres iniciados da esquerda para direita.  \n```bfc-script\nCaracteres.esquerda(texto, quantidade)\n```  \n_Alternativa_  \n```bfc-script\ntexto.esquerda(quantidade)\n```  \n##### maisculo",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

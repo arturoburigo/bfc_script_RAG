@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "13.\n14. Notificacao.nova()\n15.            .mensagem(notificacao)\n16.            .para('usuario')\n17.            .enviar()",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

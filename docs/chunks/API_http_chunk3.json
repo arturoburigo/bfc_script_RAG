@@ -1,9 +1,0 @@
-{
-    "document": "API_http",
-    "section": "Resposta",
-    "subsection": "cookie(nome)",
-    "content": "* **expira()** : Data de expiração do cookie\n* **ehSeguro()** : Indica se é seguro\n* **ehSomenteHttp()** : Indica se é somente HTTP\n1. usaEnterComoTab = resposta.cookie('UsaEnterComoTab')\n2. imprimir 'O usuário utiliza enter como TAB: ' + usaEnterComoTab.valor()",
-    "metadata": {
-        "source": "docs/BFC Doc/API_http.md"
-    }
-}

@@ -1,0 +1,11 @@
+{
+    "document": "API_email",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nmsg = Email.novo()\n```  \nUma mensagem contem diversas caracteristicas que serão apresentadas a seguir, uma vez configurada a mensagem, o envio é realizado através da função **enviar()** da mensagem.  \n```bfc-script\nmsg = Email.novo()\n//configurações da mensagem\nmsg.enviar()\n```  \n### Mensagem  \n#### de(email)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    },
+    "contains_code": true
+}

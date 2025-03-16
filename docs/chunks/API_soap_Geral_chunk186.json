@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Cria um novo método utilizando a operação e [namespaces](index.html#apiSoapServicoCriarNamespace) informados nos parâmetros.  \n**Exemplo:**  \n```bfc-script\nnamespace = Soap.criarNamespace('http://ws.cdyne.com/', 'ws')\nservico = Soap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx', namespacePadrao)\n3.\nimprimir namespace.namespace()\nimprimir namespace.prefixo()\n```0  \n**_As funções disponíveis na representação de métodos são:_**",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": true
+}

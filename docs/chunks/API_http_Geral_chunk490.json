@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### parametro(Mapa[nome, valor])  \nCria uma cópia da requisição atual adicionando um ou mais parâmetros de query na requisição com base no mapa informado no parâmetro.  \n```bfc-script\nservico.parametro('id', '1') //posts?id=1\nservico.parametro('id', ['1', '2', '5']) //posts?id=1&id=2&id=5\nservico.parametro([ id: '5', nome: 'joao']) //posts?id=1&nome=joao\n```  \n```bfc-script\nservico = Http.servico(...)\nservico.parametro('id', 1)\nservico.parametro('id', 2)\n4.\nimprimir servico.parametros() //[] - Vazio pois como cria uma cópia o serviço original não é alterado\nservico = servico.parametro('id', 1)\n.parametro('id', 2)\n8.\nimprimir servico.parametros() //[id : [1,2]] - pois atribuímos a cópia o serviço original\n```  \n#### caminho(caminho)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

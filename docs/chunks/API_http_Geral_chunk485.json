@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico.cabecalho('Authorization', 'Basic ABCF5065FGC==')\nservico.cabecalho('User', ['murphy', 'luiz.silva'])\nservico.cabecalho([ User: 'alex.o.leao'])\n```  \n**Parâmetros e caminhos**",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

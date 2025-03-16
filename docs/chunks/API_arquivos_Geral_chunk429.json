@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### ehNomeCampo()  \nRetorna um valor booleano indicando se o item atual é o nome de um campo  \n##### ehTexto()  \nRetorna um valor booleano indicando se o item atual é um texto  \n##### ehNumero()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "1. servico = Soap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx',\n2.                        'http://ws.cdyne.com/', 'ws')\n3.\n4. resposta = servico.mensagem()\n5.                   .metodo('VerifyEmail')\n6.                   .parametro('email', parametros.email.valor)\n7.                   .parametro('LicenseKey', '123')\n8.                   .executar()\n9.\n10. xml = resposta.xml()\n11. xml.proximoElemento('GoodEmail')\n12.\n13. se(xml.valor() == 'true'){",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

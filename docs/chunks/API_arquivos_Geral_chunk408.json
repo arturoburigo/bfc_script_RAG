@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Escreve texto no item atual.  \n```bfc-script\narquivo = Arquivo.ler(arquivo, 'txt')\n```5  \n##### escreverComentario(comentario)  \nEscreve um comentário no documento XML.  \n```bfc-script\narquivo = Arquivo.ler(arquivo, 'txt')\n```6  \n##### escreverNamespace(namespace)  \nEscreve um namespace no elemento atual.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": true
+}

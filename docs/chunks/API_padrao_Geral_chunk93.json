@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.capitaliza\n```23  \n##### decimal  \nConverte o valor de um texto em um número decimal de alta precisão.  \n```bfc-script\ntexto.capitaliza\n```24  \n##### ehNumero  \nVerifica se um texto é um número válido.  \n```bfc-script\ntexto.capitaliza\n```25  \n##### exponencial",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

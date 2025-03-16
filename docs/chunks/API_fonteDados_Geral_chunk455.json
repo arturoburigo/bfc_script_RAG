@@ -1,0 +1,11 @@
+{
+    "document": "API_fonteDados",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "### Ativo  \nUm Ativo pode ser considerado como a fonte/origem das informações. É nele que as operações de busca e manipulação de dados serão executadas.  \n### Tema",
+    "metadata": {
+        "source": "docs/BFC Doc/API_fonteDados.md"
+    },
+    "contains_code": false
+}

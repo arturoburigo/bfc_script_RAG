@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "1. xml = \"\"\"\n2.       <ser:entregarManifestacaoProcessual>\n3.          <tip:idManifestante></tip:idManifestante>\n4.          <tip:senhaManifestante></tip:senhaManifestante>\n5.          <tip:numeroProcesso></tip:numeroProcesso>\n6. \t <tip:documento idDocumento=\"27\" tipoDocumento=\"13\" mimetype=\"application/pdf\" descricao=\"Petição Inicial\" tipoDocumentoLocal=\"14\">\n7. \t \t<int:conteudo></int:conteudo>\n8. \t </tip:documento>",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

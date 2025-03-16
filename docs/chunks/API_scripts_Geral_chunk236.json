@@ -1,0 +1,11 @@
+{
+    "document": "API_scripts",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A execução de scripts em lote pode ser realizada através da criação de um script centralizador. Este script será responsável por orquestrar a execução dos demais scripts obedecendo a ordem cronológica de execução. Exemplo:  \n```bfc-script\nparametros = [ p1 : 100, p2 : 200]\n2.\nScripts.somar.executar(parametros)\n```5",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    },
+    "contains_code": true
+}

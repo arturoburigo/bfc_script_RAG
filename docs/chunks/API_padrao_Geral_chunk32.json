@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.capitaliza\n```5  \n##### posicaoFinal  \nObtem a posição final de uma [expressão regular](http://guia-er.sourceforge.net/metacaracteres.html#2) em uma texto.  \n```bfc-script\ntexto.capitaliza\n```6  \n_Alternativa_  \n```bfc-script\ntexto.capitaliza\n```7  \n##### removeEspacos",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

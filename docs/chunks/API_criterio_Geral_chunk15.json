@@ -1,0 +1,11 @@
+{
+    "document": "API_criterio",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nCriterio.onde('nome').igual('João');\n```3  \nO critério acima, gera o seguinte filtro:  \n```bfc-script\nCriterio.onde('nome').igual('João');\n```4  \n### Filtros compostos  \nOs filtros podem ser utilizados de forma composta, fazendo uso do **e** ou do **ou** :  \n```bfc-script\nCriterio.onde('nome').igual('João');\n```5  \nO critério acima, gera o seguinte filtro:",
+    "metadata": {
+        "source": "docs/BFC Doc/API_criterio.md"
+    },
+    "contains_code": true
+}

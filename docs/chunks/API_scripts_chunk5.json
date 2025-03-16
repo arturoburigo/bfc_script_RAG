@@ -1,9 +1,0 @@
-{
-    "document": "API_scripts",
-    "section": "Componentes",
-    "subsection": "Exemplos de utilização:",
-    "content": "1. api = Scripts.restapi.importar()\n2.\n3. publicacao = api.buscarPublicacao(1)\n4.\n5. se (publicacao != -1) {\n6.   imprimir \"Publicacao: \" + publicacao\n7. }\n8.\n9. comentarios = api.buscarComentarios(1)\n10.\n11. se (comentarios != -1) {\n12.   imprimir \"Comentarios: \" + comentarios\n13. }",
-    "metadata": {
-        "source": "docs/BFC Doc/API_scripts.md"
-    }
-}

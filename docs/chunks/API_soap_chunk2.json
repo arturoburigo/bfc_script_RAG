@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "1. input = 'Meu texto'; //poderia ser um arquivo\n2. BaseCodec.padrao64().codifica(input) { conteudo ->\n3.    imprimir conteudo.texto();\n4. }\n5.\n6. inputEncoded = 'YWJjZGVmZ2hp'; //poderia ser um arquivo\n7. BaseCodec.padrao64().decodifica(inputEncoded) { conteudo ->\n8.    imprimir conteudo.texto();\n9. }\n\n\n\nFazendo o uso dessas chamadas, o limite passa a ser de 30mb de forma individual e não descontando do limite cumulativo global.",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

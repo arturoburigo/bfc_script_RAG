@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "Uma função de hash pode ser utilizada para verificar a integridade de arquivos, uma vez que uma hash é gerada com base em um texto ou arquivo, não existe uma maneira de fazer o caminho contrário. Uma abordagem muito comum, inclusive praticada por alguns tribunais de contas, é o uso de verificações de integridade de arquivos binários enviados em webservices SOAP.\n\nExistem alguns algoritmos popularmente utilizados para gerar uma hash de algo, são eles MD5, SHA-1, SHA-256 e SHA-512:",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

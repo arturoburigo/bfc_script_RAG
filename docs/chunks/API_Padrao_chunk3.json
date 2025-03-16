@@ -1,9 +1,0 @@
-{
-    "document": "API_padrao",
-    "section": "API Padrão",
-    "subsection": "formatar",
-    "content": "h  | Hora no dia (1-12)  | 12\nm  | Minuto na hora  | 55\ns  | Segundos no minuto  | 30\nS  | Milissegundo  | 978",
-    "metadata": {
-        "source": "docs/BFC Doc/API_padrao.md"
-    }
-}

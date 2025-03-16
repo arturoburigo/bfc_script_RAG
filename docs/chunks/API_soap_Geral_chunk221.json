@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico = Soap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx')\nservico.cookie('nome', 'valor', 'path')\n```9  \n**Exemplo 3:**  \n```bfc-script\nservico.mensagem().corpo('<ws:VerifyEmail><ws:email>teste@test.com</ws:email><ws:LicenseKey>example</ws:LicenseKey></ws:VerifyEmail>')\n```0  \n**Exemplo 4:**  \nArmazenar o retorno em formato de anexo de um serviço.  \n```bfc-script\nservico.mensagem().corpo('<ws:VerifyEmail><ws:email>teste@test.com</ws:email><ws:LicenseKey>example</ws:LicenseKey></ws:VerifyEmail>')\n```1",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": true
+}

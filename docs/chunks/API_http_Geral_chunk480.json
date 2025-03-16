@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "![Fluxo da API de HTTP](images/fluxo-api-http.png)  \n### Requisição  \nPara criar uma nova requisição HTTP deve-se utilizar a função Http.**servico** , a função recebe como parâmetro a URL do serviço a ser consumido:  \n```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com/posts')\n```",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

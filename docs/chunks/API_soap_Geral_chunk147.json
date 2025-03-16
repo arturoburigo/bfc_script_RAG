@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### executar()  \nExecuta a chamada ao método/função do serviço SOAP e retorna uma representação da [resposta](index.html#apiSoapResposta).  \n#### executar(operacao)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

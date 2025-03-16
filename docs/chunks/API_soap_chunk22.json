@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "27.              .de('remetente@betha.com.br')\n28.              .para('destinatario@betha.com.br')\n29.              .assunto('Arquivo de resposta do webservice!')\n30.              .mensagem('Segue arquivo em anexo do retorno do webservice')\n31.              .anexarArquivo(mensagem.requisicao().arquivo(), 'envio.xml')\n32.              .anexarArquivo(resposta.arquivo(), 'resposta.xml')\n33.              .enviar()",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

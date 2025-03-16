@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**padraoMD5()**  \n```bfc-script\nservico = Soap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx')\nservico.cabecalho('Authorization','Bearer 239e3d8e-1e93-4f2b-beff-c430103b9287')\n```3  \nQuando utilizado um texto, é possível definir o charset para codificação (o charset padrão é UTF-8):  \n```bfc-script\nservico = Soap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx')\nservico.cabecalho('Authorization','Bearer 239e3d8e-1e93-4f2b-beff-c430103b9287')\n```4",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": true
+}

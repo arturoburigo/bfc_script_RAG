@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**adicionarAtributo(nome, valor)**  \nAdiciona um novo atributo ao elemento atual. O retorno desta função é a representação do novo elemento criado e poderá ser utilizado para adicionar elementos filhos caso necessário.  \n```bfc-script\nSoap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx',\n'http://ws.cdyne.com/',\n'ws')\n```5  \nproduzirá:",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": true
+}

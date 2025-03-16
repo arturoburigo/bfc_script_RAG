@@ -1,0 +1,11 @@
+{
+    "document": "API_fonteDados",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ndadosFuncionarios = Dados.dubai.v1.funcionarios\n2.\ntelefone = [\ntelefone: '488817858'\n]\n6.\ntelefoneAlterado = dadosFuncionarios.telefones.atualiza(parametros: [codigoFuncionario: 12, codigoTelefone: 15], conteudo: telefone)\n```  \n### Operação de exclusão  \nA operação de exclusão padrão conta com os seguintes parâmetros:",
+    "metadata": {
+        "source": "docs/BFC Doc/API_fonteDados.md"
+    },
+    "contains_code": true
+}

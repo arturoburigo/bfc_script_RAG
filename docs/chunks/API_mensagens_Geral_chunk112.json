@@ -1,0 +1,11 @@
+{
+    "document": "API_mensagens",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nNotificacao.nova('Seja bem vindo!')\n.para('joao.silva', 'maria.silva')\n.enviar()\n```  \nTambém é possível adicionar o usuário logado como destinatário da notificação usando o identificador `usuario.id`:  \n```bfc-script\nNotificacao.nova('Seja bem vindo!')\n.para(usuario.id)\n.enviar()\n```  \nMais um exemplo, usando o usuário logado e outros usuários:  \n```bfc-script\nNotificacao.nova('Seja bem vindo!')\n.para(usuario.id, 'joao.silva', 'maria.silva')\n.enviar()\n```  \n#### mensagem(mensagem)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_mensagens.md"
+    },
+    "contains_code": true
+}

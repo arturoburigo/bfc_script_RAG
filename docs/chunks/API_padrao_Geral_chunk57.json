@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.equivalente(expressao)\n```4  \nVeja abaixo um exemplo usando caractere de escape. Repare que, dentro do último comando \"expressao\", há uma solcitiação de substituir uma barra por uma string vazia.  \n```bfc-script\ntexto.equivalente(expressao)\n```5  \n#### Múltiplas ocorrências e grupos",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

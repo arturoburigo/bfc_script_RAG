@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.capitaliza\n```28  \n##### logaritmo  \nInforma o logaritmo natural de um número.  \n```bfc-script\ntexto.capitaliza\n```29  \n##### logaritmo10  \nInforma logaritmo de base 10 de um número.  \n```bfc-script\ntexto.capitaliza\n```30  \n##### maximo  \nObtem o maior valor entre dois números.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

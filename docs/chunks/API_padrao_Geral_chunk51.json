@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### concatenarValoresEncontrados(separador)  \nRetorna todos os valores encontrados no texto pela expressão concatenados com o separador informado no parâmetro.  \n```bfc-script\nCaracteres.equivalente(texto, expressao)\n```9  \n##### Caractere de escape",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

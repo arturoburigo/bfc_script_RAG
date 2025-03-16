@@ -1,0 +1,11 @@
+{
+    "document": "Linguagem",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```3  \n##### se  \nPermite criar expressões condicionais.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```4  \n##### tentar/tratar/finalizar",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    },
+    "contains_code": true
+}

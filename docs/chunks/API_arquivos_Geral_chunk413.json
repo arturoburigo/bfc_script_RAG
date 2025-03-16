@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### escreverInicioDocumento(encoding)  \nEscreve a declaração de um documento XML informando o encoding.  \n##### escreverInicioDocumento(encoding, versao)  \nEscreve a declaração de um documento XML informando o encoding e versão.  \n```bfc-script\narquivo = Arquivo.ler(arquivo, 'txt')\n```8",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": true
+}

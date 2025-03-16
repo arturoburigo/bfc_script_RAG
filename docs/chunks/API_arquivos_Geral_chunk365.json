@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\narquivoTxt = Arquivo.novo('Jones.txt')\narquivoCsv = Arquivo.novo('Spencer.csv', 'csv', [entreAspas: 'N'])\n```6  \n##### contemProximoValor()  \nIndica se existe um próximo valor a ser lido no arquivo atual.  \n```bfc-script\narquivoTxt = Arquivo.novo('Jones.txt')\narquivoCsv = Arquivo.novo('Spencer.csv', 'csv', [entreAspas: 'N'])\n```7  \n#### Escrita  \n```bfc-script\narquivoTxt = Arquivo.novo('Jones.txt')\narquivoCsv = Arquivo.novo('Spencer.csv', 'csv', [entreAspas: 'N'])\n```8  \nCriando um novo arquivo com um Encoding específico (Por padrão utiliza UTF-8):",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_execucao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nExecucao.atual.foiCancelada\n```  \n### Exemplos  \nMonitorar o cancelamento e interromper a execução:  \n```bfc-script\npercorrer(...) {\n2.\n// processamento da aplicação\n4.\n// verifica e interompe caso a execução atual foi cancelada\nse(Execucao.atual.foiCancelada){\ninteromper 'Execucao cancelada'\n}\n9.\n}\n```",
+    "metadata": {
+        "source": "docs/BFC Doc/API_execucao.md"
+    },
+    "contains_code": true
+}

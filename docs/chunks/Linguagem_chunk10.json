@@ -1,9 +1,0 @@
-{
-    "document": "Linguagem",
-    "section": "Linguagem",
-    "subsection": "percorrer",
-    "content": "1. numeros = [1,2,3]\n2. percorrer(itens: numeros, nome: 'p1'){\n3.   imprimir 'p1: ' + item\n4.   percorrer(de: 1, ate: 5, nome: 'p2'){\n5.     se (indice == 2){\n6.       continuar 'p1'\n7.     }\n8.     imprimir 'p2: ' + indice\n9.   }\n10. }\n\n\n\nA saída do script será:",
-    "metadata": {
-        "source": "docs/BFC Doc/Linguagem.md"
-    }
-}

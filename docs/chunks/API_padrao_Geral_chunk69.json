@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nCaracteres.esquerda(texto, quantidade)\n```7  \n_Alternativa_  \n```bfc-script\nCaracteres.esquerda(texto, quantidade)\n```8  \n##### adicionaMinutos  \nAdiciona uma quantidade especificada de minutos em uma data/hora.  \n```bfc-script\nCaracteres.esquerda(texto, quantidade)\n```9  \n_Alternativa_  \n```bfc-script\ntexto.esquerda(quantidade)\n```0  \n##### adicionaSegundos",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

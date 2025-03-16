@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.capitaliza\n```43  \n#### JSON  \n##### ler  \nConverte um json em um mapa  \n```bfc-script\ntexto.capitaliza\n```44  \n##### escrever  \nConverte um objeto em json  \n```bfc-script\ntexto.capitaliza\n```45",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

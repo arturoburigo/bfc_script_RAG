@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\nCaracteres.direita(texto, quantidade)\n```3  \n##### repetir  \nRepete um texto especificado de acordo com uma quantidade definida.  \n```bfc-script\nCaracteres.direita(texto, quantidade)\n```4  \n_Alternativa_  \n```bfc-script\nCaracteres.direita(texto, quantidade)\n```5",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

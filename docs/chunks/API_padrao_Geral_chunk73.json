@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\ntexto.esquerda(quantidade)\n```8  \n##### dia  \nObtem o dia em que se encontra uma determinada data.  \n```bfc-script\ntexto.esquerda(quantidade)\n```9  \n_Alternativa_  \n```bfc-script\nCaracteres.maiusculo(texto)\n```0  \n##### diaSemana",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

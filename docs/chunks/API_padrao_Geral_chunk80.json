@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Obtem a data e hora do sistema operacional.  \n```bfc-script\ntexto.maiusculo\n```9  \n_Alternativa_  \n```bfc-script\ntexto.capitaliza\n```00  \n##### hora  \nObtem a hora em que se encontra uma determinada data/hora.  \n```bfc-script\ntexto.capitaliza\n```01  \n_Alternativa_  \n```bfc-script\ntexto.capitaliza\n```02  \n##### mes",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

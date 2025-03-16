@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### escrever(texto)  \nRealiza a escrita de um conteúdo no arquivo utilizando o delimitador parametrizado.  \n```bfc-script\narquivo.escrever('Jonathan Peters')\n```  \n##### novaLinha()  \nRealiza a escrita de uma quebra de linha no arquivo  \n```bfc-script\narquivoTxt = Arquivo.novo('Jones.txt')\narquivoCsv = Arquivo.novo('Spencer.csv', 'csv', [entreAspas: 'N'])\n```0  \n### Arquivos XML (xml)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": true
+}

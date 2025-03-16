@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "###### PUT()  \n###### PUT(Mapa[marcadores])  \nEnvia o formulário utilizando como tipo de método o verbo PUT.  \n```bfc-script\nservico.cabecalho('Authorization', 'Basic ABCF5065FGC==')\nservico.cabecalho('User', ['murphy', 'luiz.silva'])\nservico.cabecalho([ User: 'alex.o.leao'])\n```1  \n###### PATCH()  \n###### PATCH(Mapa[marcadores])  \nEnvia o formulário utilizando como tipo de método o verbo PATCH.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

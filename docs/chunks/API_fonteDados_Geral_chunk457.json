@@ -1,0 +1,11 @@
+{
+    "document": "API_fonteDados",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Operações são funções de busca/manipulação de dados disponibilizadas através de um Tema. Considerando o exemplo do tema funcionário do ativo folha, teriamos como possíveis operações a criação de um funcionário, busca dos registros, cálculo da folha,",
+    "metadata": {
+        "source": "docs/BFC Doc/API_fonteDados.md"
+    },
+    "contains_code": false
+}

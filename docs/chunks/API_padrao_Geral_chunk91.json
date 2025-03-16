@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "H  | Hora no dia (0-23)  | 0\nk  | Hora no dia (1-24)  | 24\nK  | Hora no dia (0-11)  | 0\nh  | Hora no dia (1-12)  | 12\nm  | Minuto na hora  | 55\ns  | Segundos no minuto  | 30\nS  | Milissegundo  | 978  \n#### Numeros  \n##### absoluto",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": false
+}

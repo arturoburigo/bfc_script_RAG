@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.capitaliza\n```20  \nPadrões para formatação:  \nLetra  | Descrição  | Exemplos\n---|---|---\ny  | Ano  | 2009; 09\nM  | Mês do ano  | Julho; Jul; 07\nw  | Semana no ano  | 27\nW  | Semana no mês  | 2\nD  | Dia no ano  | 189\nd  | Dia no mês  | 10",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

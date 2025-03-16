@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**É recomendado que não se atríbua essa variável interna para um contexto maior, permitindo assim que a memória alocada seja liberada**  \n### Hash",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

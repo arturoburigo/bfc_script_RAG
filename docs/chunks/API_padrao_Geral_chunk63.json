@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nCaracteres.esquerda(texto, quantidade)\n```0  \n##### valorEncontrado()  \nRetorna o conteúdo do texto encontrado de acordo com a expressão/grupo utilizado.  \n```bfc-script\nCaracteres.esquerda(texto, quantidade)\n```1  \n##### concatenarValoresGrupos()  \nRetorna os valores dos grupos da expressão concatenados.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

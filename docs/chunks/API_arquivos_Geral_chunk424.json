@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### escreverEspacoIgnoravel(conteudo)  \nEscreve um item texto do [tipo](index.html#apiArquivosImplementacoesXmlTipos) ESPACO ignorável.  \n### Arquivos JSON (json)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

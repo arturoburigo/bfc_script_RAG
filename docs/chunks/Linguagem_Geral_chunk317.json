@@ -1,0 +1,11 @@
+{
+    "document": "Linguagem",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```7  \nÉ possível informar o intervalo de tempo utilizando a forma simplificada de tempo/datas da engine:  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```8",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    },
+    "contains_code": true
+}

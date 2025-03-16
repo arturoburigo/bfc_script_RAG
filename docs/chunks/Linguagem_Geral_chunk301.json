@@ -1,0 +1,11 @@
+{
+    "document": "Linguagem",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nnumeros = [1,2,3,4]\npercorrer(itens: numeros, nome: 'p1'){\nimprimir 'p1: ' + item\npercorrer(de: 1, ate: 5){\nse (indice == 3){\nparar 'p1'\n}\nimprimir 'p2: ' + indice\n}\n}\n```  \nA saída do script será:  \n```bfc-script\np1: 1 // primeiro item da lista de números do percorrer 'p1'\np2: 1 // primeiro índice do segundo percorrer\np2: 2 // ...\np2: 3 // ...\np2: 4 // No índice 4 o comando parar 'p1' foi executado interrompendo a execução de todos os comandos percorrer até o 'p1'\n```  \nA mesma regra se aplica ao comando **_continuar()_** , porém ao invés de interromper a execução do comando percorrer irá avançar para o próximo índice/item.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```0",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    },
+    "contains_code": true
+}

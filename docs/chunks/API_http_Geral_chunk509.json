@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### METODO (método, dados, tipo de mídia)  \n#### METODO (método, dados, tipo de mídia, Mapa[marcadores])  \n#### METODO (formulário)  \n#### METODO (formulário, Mapa[marcadores]",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": false
+}

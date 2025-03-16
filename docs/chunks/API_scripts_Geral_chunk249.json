@@ -1,0 +1,11 @@
+{
+    "document": "API_scripts",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Segue o código do **script pai** que chama o componente acima:  \n```bfc-script\nparametros = [ p1 : 100, p2 : 200]\n2.\nScripts.somar.executar(parametros)\n```7",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    },
+    "contains_code": true
+}

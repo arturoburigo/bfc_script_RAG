@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(enquanto: { arquivo.contemProximaLinha() }) {\nimprimir arquivo.lerLinha()\n}\n```8  \n```bfc-script\npercorrer(enquanto: { arquivo.contemProximaLinha() }) {\nimprimir arquivo.lerLinha()\n}\n```9  \nÉ possível criar subdiretórios utilizando o separador **/** no nome do diretório:  \n```bfc-script\narquivo = Arquivo.novo('FendaDoBiquine.txt')\n```0  \n```bfc-script\narquivo = Arquivo.novo('FendaDoBiquine.txt')\n```1  \n##### adicionar(Lista de arquivos)  \nAdiciona um ou mais arquivos no diretório raiz do arquivo zip.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico.cabecalho('Authorization', 'Basic ABCF5065FGC==')\nservico.cabecalho('User', ['murphy', 'luiz.silva'])\nservico.cabecalho([ User: 'alex.o.leao'])\n```6  \n#### sucesso()  \nIndica se o código resposta é considerado como sucesso segundo o padrão HTTP.  \n```bfc-script\nservico.cabecalho('Authorization', 'Basic ABCF5065FGC==')\nservico.cabecalho('User', ['murphy', 'luiz.silva'])\nservico.cabecalho([ User: 'alex.o.leao'])\n```7  \n#### tamanho()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

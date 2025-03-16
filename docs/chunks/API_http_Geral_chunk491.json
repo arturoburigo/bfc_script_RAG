@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico = Http.servico(...)\nservico.parametro('id', 1)\nservico.parametro('id', 2)\n4.\nimprimir servico.parametros() //[] - Vazio pois como cria uma cópia o serviço original não é alterado\nservico = servico.parametro('id', 1)\n.parametro('id', 2)\n8.\nimprimir servico.parametros() //[id : [1,2]] - pois atribuímos a cópia o serviço original\n```  \n#### caminho(caminho)  \nCria uma cópia da requisição atual adicionando um caminho/path na URL corrente.  \n```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com')\n2.\nservico.caminho('posts')\n.caminho('listar') //URL: https://jsonplaceholder.typicode.com/posts/listar\n```  \n#### aceitarTipoMidia(midias)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

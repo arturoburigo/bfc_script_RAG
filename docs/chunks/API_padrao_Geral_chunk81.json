@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\ntexto.capitaliza\n```02  \n##### mes  \nObtem o mês em que se encontra uma determinada data.  \n```bfc-script\ntexto.capitaliza\n```03  \n_Alternativa_  \n```bfc-script\ntexto.capitaliza\n```04  \n##### minuto  \nObtem os minutos referentes a uma determinada data/hora  \n```bfc-script\ntexto.capitaliza\n```05",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

@@ -1,9 +1,0 @@
-{
-    "document": "API_criterio",
-    "section": "Delimitador nas operações contidoEm/naoContidoEm",
-    "subsection": "Com formatação e delimitador",
-    "content": "O critério acima, gera o seguinte filtro:\n\n1. 'idade = 40 and nome = \"João\" ou bairro = \"Centro\"'\n\n\n\n\n\n\n\nO critério tem suporte a **grupos** , através da seguinte chamada:\n\n1. Criterio.grupo(CriterioInterno);\n2. Criterio.onde('a').igual(12).e(Criterio.grupo(Criterio.onde('b').igual(24).ou('c').igual(30)));\n\n\n\nO critério acima, gera o seguinte filtro:\n\n1. a = 12 e (b = 24 or c = 30)",
-    "metadata": {
-        "source": "docs/BFC Doc/API_criterio.md"
-    }
-}

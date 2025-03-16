@@ -1,9 +1,0 @@
-{
-    "document": "Linguagem",
-    "section": "Linguagem",
-    "subsection": "Valores nulos",
-    "content": "No exemplo acima, caso não utilizassemos o operador (?) no município (municipio?.nome), receberiamos um erro durante a execução, devido ao fato de que a agenciaBancária esta nula. Como resultado final o valor da variável `nomeFuncionario` é nula.\n\nEm algumas ocasiões, gostariamos de considerar um valor padrão onde o resultado seria nulo. Para este propósito utilizamos a expressão ternária (?:), como podemos observar abaixo:",
-    "metadata": {
-        "source": "docs/BFC Doc/Linguagem.md"
-    }
-}

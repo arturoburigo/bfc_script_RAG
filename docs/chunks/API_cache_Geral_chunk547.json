@@ -1,0 +1,11 @@
+{
+    "document": "API_cache",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Cache.recuperar(chave, valorPadrao)  \nRecupera um valor colocado previamente no cache, ou retorna o valor padrão.  \n```bfc-script\nCache.recuperar('meu-token', '')\n```  \n#### Cache.contem(chave)  \nVerifica se o cache ontem algum valor para a chave informada.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_cache.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.direita(quantidade)\n```9  \n#### Expressões regulares  \nA API de Caracteres suporta o uso de [expressões regulares](http://aurelio.net/regex/guia/) para realizar diversas operações baseadas em um padrão em textos.  \n```bfc-script\nCaracteres.equivalente(texto, expressao)\n```0",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

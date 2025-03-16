@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "###### PUT()  \n###### PUT(Mapa[marcadores])  \nEnvia o formulário utilizando como tipo de método o verbo POST.  \n```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com/posts')\nservico.cookie('Usuario', 'João da Silva')\nservico.cookie('Usuario', 'João da Silva', '/usuarios', 'betha.com.br', 1)\nservico.cookie([ Usuario: 'João da Silva', Accesso: 'sim' ])\n```5  \n###### PATCH()  \n###### PATCH(Mapa[marcadores])  \nEnvia o formulário utilizando como tipo de método o verbo POST.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

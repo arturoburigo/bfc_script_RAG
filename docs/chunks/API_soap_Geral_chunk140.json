@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### corpo()  \nRetorna o [elemento](index.html#apiSoapMensagemElemento) do corpo da mensagem.  \n#### corpo(conteudo)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

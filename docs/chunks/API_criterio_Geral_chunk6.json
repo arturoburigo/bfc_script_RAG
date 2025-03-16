@@ -1,0 +1,11 @@
+{
+    "document": "API_criterio",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\n'nome = \"João\"'\n```  \n### Operações  \nApós a criação do critério, é possível fazer uso um conjunto de operações de comparação.  \n###### Operações de comparação  \n* igual(valor)\n* diferenteDe(valor)\n* maiorQue(valor)\n* maiorOuIgualQue(valor)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_criterio.md"
+    },
+    "contains_code": true
+}

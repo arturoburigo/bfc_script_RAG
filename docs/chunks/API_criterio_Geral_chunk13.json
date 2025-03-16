@@ -1,0 +1,11 @@
+{
+    "document": "API_criterio",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "### Delimitador nas operações contidoEm/naoContidoEm  \nPara as operações **contidoEm** e **naoContidoEm** pode ser informado um delimitador para os valores que não são String.  \n#### Com delimitador  \n```bfc-script\nnumero = [1,2,5]\ncriterio = Criterio.onde('idade').contidoEm(numero, [delimitador: '\"']);\n```",
+    "metadata": {
+        "source": "docs/BFC Doc/API_criterio.md"
+    },
+    "contains_code": true
+}

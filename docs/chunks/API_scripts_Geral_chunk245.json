@@ -1,0 +1,11 @@
+{
+    "document": "API_scripts",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* Reutilização de código: Pode ser utilizado o mesmo componente em mais de um script;\n#### Exemplos de utilização:  \n**Exemplo 1:** Este exemplo demonstra um componente que abstrai uma API REST.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.direita(quantidade)\n```  \n##### equivalente  \nVerifica se uma expressão esta contida em um texto. Mais sobre [expressões regulares](http://guia-er.sourceforge.net/metacaracteres.html#2)  \n```bfc-script\nCaracteres.equivalente(texto, expressao)\n```  \n_Alternativa_  \n```bfc-script\ntexto.equivalente(expressao)\n```  \n##### esquerda",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

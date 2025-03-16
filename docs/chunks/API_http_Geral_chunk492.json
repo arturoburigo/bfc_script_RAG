@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico = Http.servico('https://jsonplaceholder.typicode.com')\n2.\nservico.caminho('posts')\n.caminho('listar') //URL: https://jsonplaceholder.typicode.com/posts/listar\n```  \n#### aceitarTipoMidia(midias)  \nInforma qual tipo de mídia é aceito pela requisição. O valor padrão é Http.TODOS.  \n```bfc-script\nservico.aceitarTipoMidia('application/json')\n```  \nA API conta com algumas constantes para os tipos de mídia comuns:  \n* Http.JSON: _application/json_",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

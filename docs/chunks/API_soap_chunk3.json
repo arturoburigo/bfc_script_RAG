@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "**É recomendado que não se atríbua essa variável interna para um contexto maior, permitindo assim que a memória alocada seja liberada**",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

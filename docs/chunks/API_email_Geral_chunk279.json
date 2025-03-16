@@ -1,0 +1,11 @@
+{
+    "document": "API_email",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### anexarArquivo(anexoArquivo)  \nAdiciona um anexo criado a partir da função Email.criarAnexoArquivo à mensagem  \n##### anexarUrl(url)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    },
+    "contains_code": false
+}

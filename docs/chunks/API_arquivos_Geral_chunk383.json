@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### atributo(nome)  \nRetorna o [atributo](index.html#apiArquivosImplementacoesXmlTiposAtributo) do elemento com base no nome informado no parâmetro. Tipos suportados: _INICIO_ELEMENTO_ , _ATRIBUTO_  \n##### atributo(nome, namespace)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

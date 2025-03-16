@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\narquivo.escrever('Jonathan Peters')\n```  \n##### novaLinha()  \nRealiza a escrita de uma quebra de linha no arquivo  \n```bfc-script\narquivoTxt = Arquivo.novo('Jones.txt')\narquivoCsv = Arquivo.novo('Spencer.csv', 'csv', [entreAspas: 'N'])\n```0  \n### Arquivos CSV (csv)  \n#### Leitura  \n```bfc-script\narquivoTxt = Arquivo.novo('Jones.txt')\narquivoCsv = Arquivo.novo('Spencer.csv', 'csv', [entreAspas: 'N'])\n```1  \nLendo um arquivo com um Encoding específico (Por padrão utiliza UTF-8):  \n```bfc-script\narquivo = Arquivo.ler(arquivo, 'txt', [ encoding: 'iso-8859-1' ]);\n```",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": true
+}

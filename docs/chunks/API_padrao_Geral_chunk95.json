@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.capitaliza\n```27  \n##### inteiro  \nConverte o valor de um texto em um número inteiro. Caso o texto represente um número decimal, este será truncado para um inteiro, ou seja, a parte decimal será descartada.  \n```bfc-script\ntexto.capitaliza\n```28  \n##### logaritmo",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

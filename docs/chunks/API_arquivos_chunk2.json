@@ -1,9 +1,0 @@
-{
-    "document": "API_arquivos",
-    "section": "Arquivos ZIP (zip)",
-    "subsection": "adicionar(Arquivo, Nome do arquivo no zip, Diretório)",
-    "content": "1. arquivo = Arquivo.novo('relatorios.zip', 'zip')\n2. arquivo.adicionar(parametros.arquivo.valor, 'despesas.pdf', '2016/Despesas')\n\n\n\n1. relatorios.zip\n2. └─ 2016\n3.     └─ Despesas\n4.         └─ despesas.pdf",
-    "metadata": {
-        "source": "docs/BFC Doc/API_arquivos.md"
-    }
-}

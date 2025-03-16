@@ -1,0 +1,11 @@
+{
+    "document": "API_email",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### mensagem(mensagem)  \nDefine o conteúdo da mensagem  \n#### mensagemHtml(mensagem)  \nDefine o conteúdo da mensagem como HTML  \n#### assunto(assunto)  \nDefine o assunto da mensagem  \n#### cabecalho(nome, valor)  \nAdiciona um cabecalho no e-mail",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    },
+    "contains_code": false
+}

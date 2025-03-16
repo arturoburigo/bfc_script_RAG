@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### contemAtributo(nome, namespace, prefixo)  \nIndica se o elemento atual contém um atributo com o prefixo, nome e namespace informado no parâmetro. Tipos suportados: _INICIO_ELEMENTO_ , _ATRIBUTO_  \n##### atributo(nome)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "1. servico = Soap.servico('https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS',\n2.                        'http://publico.ws.casosdeuso.sgs.pec.bcb.gov.br', 'ws')\n3.\n4. resposta = servico.mensagem()\n5.                   .metodo('getUltimoValorVO')\n6.                   .parametro('in0', '1')\n7.                   .executar()\n8.\n9. xml = resposta.xml()\n10. xml.proximoElemento('svalor')\n11.\n12. notificacao = 'A cotação do dolar para hoje é de R$ ' + Caracteres.substituir(xml.valor(), '.', ',')",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

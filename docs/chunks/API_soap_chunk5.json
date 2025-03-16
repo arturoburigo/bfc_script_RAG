@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "**padraoMD5()**\n\n1. hashMD5 = Hash.padraoMD5().codifica(\"qualquer texto\").texto()\n\n\n\nQuando utilizado um texto, é possível definir o charset para codificação (o charset padrão é UTF-8):\n\n1. hashMD5 = Hash.padraoMD5().codifica(\"ë\", \"iso-8859-1\").texto()\n\n\n\nQuando utilizado um arquivo, não é possível definir o charset para codificação, o charset utilizado é o do arquivo:",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Executa a chamada ao método/função do serviço SOAP e retorna uma representação da [resposta](index.html#apiSoapResposta). Esta opção permite que o a operação à ser executada seja informada diretamente pela função executar() sem a necessidade de",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

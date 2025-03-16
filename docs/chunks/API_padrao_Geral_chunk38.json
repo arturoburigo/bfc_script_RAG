@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Segue um exemplo de preenchimento de um campo do tipo String:  \n```bfc-script\nCaracteres.direita(texto, quantidade)\n```6  \nSegue um outro exemplo, utilizando o mesmo leiaute bancário, de preenchimento com zeros à esquerda para um determinado campo do tipo numérico:  \n```bfc-script\nCaracteres.direita(texto, quantidade)\n```7",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

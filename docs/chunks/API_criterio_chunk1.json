@@ -1,9 +1,0 @@
-{
-    "document": "API_criterio",
-    "section": "Datas",
-    "subsection": "​Informar uma ​formatação customizada",
-    "content": "1. ​​Criterio.onde('dataNascimento').igual(Datas.hoje(), [ formatacao: 'dd/MM/yyyy']);",
-    "metadata": {
-        "source": "docs/BFC Doc/API_criterio.md"
-    }
-}

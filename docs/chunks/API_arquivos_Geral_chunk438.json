@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### escreverCampoNulo(nome)  \nEscreve o nome e o valor de campo nulo  \n##### escreverCampoNumero(nome, numero)  \nEscreve o nome e o valor de campo do tipo numero  \n##### escreverCampoInicioMatriz(nome)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

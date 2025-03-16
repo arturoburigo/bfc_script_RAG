@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**contemProximoElemento()**  \nIndica se o elemento atual possui um elemento anterior.  \n```bfc-script\nSoap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx',\n'http://ws.cdyne.com/',\n'ws')\n```9  \n#### Métodos",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": true
+}

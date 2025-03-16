@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(enquanto: { arquivo.contemProximaLinha() }) {\nimprimir arquivo.lerLinha()\n}\n```0  \n**Obs:** Caso durante a geração do zip, seja utilizado um encoding diferente do UTF-8, o valor deve ser informado. Por exemplo:  \n```bfc-script\npercorrer(enquanto: { arquivo.contemProximaLinha() }) {\nimprimir arquivo.lerLinha()\n}\n```1  \n#### Escrita  \n```bfc-script\npercorrer(enquanto: { arquivo.contemProximaLinha() }) {\nimprimir arquivo.lerLinha()\n}\n```2  \n##### criarDiretorio",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": true
+}

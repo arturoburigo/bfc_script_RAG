@@ -1,0 +1,11 @@
+{
+    "document": "API_fonteDados",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* **parametros** : Utilizado para informar os valores dos parâmetros da operação. O nome dos parâmetros pode variar conforme ativo, tema e operação utilizada.\n* **conteudo** : Dados do registro a ser criado.\n```bfc-script\ndadosFuncionarios = Dados.dubai.v1.funcionarios\n2.\ntelefone = [\nsequencial: 10,\ntelefone: '488817858',\ntipo: 'OUTRO',\ntipoNumero: 'CELULAR',\ndescricao: \"Outro Celular\"\n]\n10.\ntelefoneCriado = dadosFuncionarios.telefones.cria(parametros: [codigoFuncionario:12], conteudo: telefone)\n```",
+    "metadata": {
+        "source": "docs/BFC Doc/API_fonteDados.md"
+    },
+    "contains_code": true
+}

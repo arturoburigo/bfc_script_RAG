@@ -1,0 +1,11 @@
+{
+    "document": "API_criterio",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nCriterio.onde('nome').igual('João');\n```9  \nO critério acima, gera um filtro parecido com:  \n```bfc-script\nCriterio.novo( [ parametros: Criterio.obrigatorio() ] );\n```0  \nCaso queira submeter a data no filtro utilizando outros formatos, as seguintes opções estão disponíveis:",
+    "metadata": {
+        "source": "docs/BFC Doc/API_criterio.md"
+    },
+    "contains_code": true
+}

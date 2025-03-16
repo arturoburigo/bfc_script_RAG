@@ -1,9 +1,0 @@
-{
-    "document": "API_scripts",
-    "section": "Componentes",
-    "subsection": "Exemplos de utilização:",
-    "content": "1. // variável local e privada ao componente\n2. api = Http.servico('https://jsonplaceholder.typicode.com')\n3.\n4. // closure privada ao componente\n5. extractContent = { response ->\n6.   conteudo = -1\n7.\n8.   se (response.sucesso() && response.contemResultado()) {\n9.     conteudo = response.conteudo()\n10.   }\n11.\n12.   retornar conteudo\n13. }\n14.\n15. getPost = { id ->\n16.   extractContent(api.caminho(\"posts/$id\").GET())\n17. }\n18.\n19. getComments = { idPost ->",
-    "metadata": {
-        "source": "docs/BFC Doc/API_scripts.md"
-    }
-}

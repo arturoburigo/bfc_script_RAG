@@ -1,0 +1,11 @@
+{
+    "document": "API_email",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### anexarUrl(url, nome)  \nAdiciona um anexo à mensagem com base em uma URL. O download do anexo será realizado e um anexo com o nome parametrizado será adicionado.  \n```bfc-script\nmsg.anexarUrl('http://cnd.fgv.br/sites/cnd.fgv.br/files/teste_2.pdf', 'Nome do arquivo.pdf')\n```  \n##### anexarUrl(anexoUrl)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    },
+    "contains_code": true
+}

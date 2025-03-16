@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nservico.mensagem().corpo('<ws:VerifyEmail><ws:email>teste@test.com</ws:email><ws:LicenseKey>example</ws:LicenseKey></ws:VerifyEmail>')\n```  \n#### corpo(arquivo)  \nEscreve o conteúdo XML no corpo da mensagem com base em uma fonte de arquivo. É importante lembrar que o conteúdo do arquivo deverá ser um XML válido e utilizar os namespaces declarados na mensagem/corpo.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nCaracteres.maiusculo(texto)\n```8  \n##### diferencaMeses  \nCalcula a diferença em meses entre duas datas.  \n```bfc-script\nCaracteres.maiusculo(texto)\n```9  \n_Alternativa_  \n```bfc-script\ntexto.maiusculo\n```0  \n##### diferencaMinutos  \nCalcula a diferença em minutos entre duas datas/hora.  \n```bfc-script\ntexto.maiusculo\n```1  \n_Alternativa_",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

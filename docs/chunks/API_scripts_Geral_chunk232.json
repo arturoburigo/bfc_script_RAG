@@ -1,0 +1,11 @@
+{
+    "document": "API_scripts",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "### Retorno dos scripts  \nA execução de um script através da API sempre irá produzir um resultado, Este resultado é representado da seguinte forma:  \n```bfc-script\nresultado = Scripts.somar.executar([ p1 : 100, p2 : 200])\n```  \nAs opções disponíveis em um resultado são:  \n#### valor",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    },
+    "contains_code": true
+}

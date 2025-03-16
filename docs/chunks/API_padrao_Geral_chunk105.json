@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.capitaliza\n```41  \n##### teto  \nObtem o menor número que é maior ou igual ao número espedificado, sendo este número inteiro.  \n```bfc-script\ntexto.capitaliza\n```42  \n##### trunca  \nTrunca um valor de acordo com o número de casas decimais especificadas.  \n```bfc-script\ntexto.capitaliza\n```43",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

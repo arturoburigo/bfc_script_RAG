@@ -1,0 +1,11 @@
+{
+    "document": "API_criterio",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Informar uma das formatações pré-definidas (data e hora)  \n```bfc-script\nCriterio.novo( [ parametros: Criterio.obrigatorio() ] );\n```1  \nOs critérios acima, geram os seguintes filtros:  \n```bfc-script\nCriterio.novo( [ parametros: Criterio.obrigatorio() ] );\n```2  \n#### Informar uma formatação customizada  \n```bfc-script\nCriterio.novo( [ parametros: Criterio.obrigatorio() ] );\n```3",
+    "metadata": {
+        "source": "docs/BFC Doc/API_criterio.md"
+    },
+    "contains_code": true
+}

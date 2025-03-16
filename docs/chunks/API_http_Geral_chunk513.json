@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Para criar um novo formulário de dados deve-se utilizar as funções **criarFormulario()** ou **criarFormulario(tipo de mídia formulário)**. Estas funções criam um novo formulário utilizando como tipo de mídia o valor Http.FORMULARIO",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": false
+}

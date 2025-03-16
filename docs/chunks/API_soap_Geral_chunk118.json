@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A API conta com algumas representações básicas de funcionamento sendo elas o **Serviço** , a **Mensagem** e a **Resposta**. O **Serviço** trata-se de um webservice SOAP a ser consumido, cada interação com esse webservice é realizado através de uma",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

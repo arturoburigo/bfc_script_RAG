@@ -1,0 +1,11 @@
+{
+    "document": "API_email",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Por motivo de performance, caso o mesmo anexo do tipo Arquivo tenha que ser enviado para vários destinatários em mensagens diferentes, este deverá ser criado pela API uma única vez no processo.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    },
+    "contains_code": false
+}

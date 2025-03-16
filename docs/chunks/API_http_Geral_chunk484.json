@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### cabecalho(nome, lista de valores)  \nAdiciona um cabeçalho/header com vários valores na requisição HTTP.  \n#### cabecalho(Mapa[nome, valor])  \nAdiciona um ou vários cabeçalhos/headers (nome/valor) na requisição HTTP com base em uma mapa.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": false
+}

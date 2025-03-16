@@ -1,0 +1,11 @@
+{
+    "document": "API_email",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Envio de e-mail com anexos  \n```bfc-script\nemail = Email.novo()\n2.\nimagemAssinatura = Email.criarAnexoUrl('http://www.betha.com.br/site/images/betha-2.png', 'logo.png')\n.dispostoParaVisualizacao()\n.incorporado()\n6.\ndestinatario = 'destinatario@betha.com.br'\n8.\nemail.de('betha@betha.com.br','Betha Sistemas')\n.para(destinatario, 'Destinatário')\n.copiaPara(destinatario, 'Destinatário de cópia')\n.copiaOcultaPara(destinatario)\n.responderPara(destinatario, 'Nome para Resposta')\n.assunto('Teste de e-mail')\n.mensagemHtml('Este é um teste de e-mail. <br/><br/>' +\n'Att, <br/><br/>' +\n'Betha Sistemas <p/><p/>' +\n'<img src=\"cid:logo.png\" width=\"319\" height=\"51\" />')\n.anexar(imagemAssinatura)\n.anexarUrl('http://cnd.fgv.br/sites/cnd.fgv.br/files/teste_2.pdf', 'Nome do arquivo.pdf')\n.enviar()\n22.\n23.\nimprimir 'E-mail enviado com sucesso!'\n```  \n#### Enviar arquivos dos parâmetros do script e API de Arquivos  \n```bfc-script\ncsv = Arquivo.novo('teste.csv', 'csv')\ncsv.escrever('Valor')\n3.\nanexoCsv = Email.criarAnexoArquivo(csv, 'teste.csv')\n5.\nEmail.novo()\n.de('betha@betha.com.br','Betha Sistemas')\n.para('destinatario@betha.com.br', 'Destinatário')\n.assunto('Teste de e-mail')\n.mensagem('Novo arquivo enviado.')\n.anexar(anexoCsv)\n.anexarArquivo(parametros.arquivo.valor, 'Arquivo.xml')\n.enviar()\n```",
+    "metadata": {
+        "source": "docs/BFC Doc/API_email.md"
+    },
+    "contains_code": true
+}

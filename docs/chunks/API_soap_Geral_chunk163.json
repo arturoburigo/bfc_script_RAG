@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nSoap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx',\n'http://ws.cdyne.com/',\n'ws')\n```3  \nproduzirá:  \n```bfc-script\nSoap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx',\n'http://ws.cdyne.com/',\n'ws')\n```2  \n**adicionarElementoTexto(nome, texto, namespace, prefixo)**",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": true
+}

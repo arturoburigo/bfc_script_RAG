@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Soap.servico(url, namespace, prefixo)  \nCria um novo serviço com base na URL informada por parâmetro. O namespace e prefixo (target namespace) informados serão utilizados como padrão na montagem da mensagem e manipulação dos elementos.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

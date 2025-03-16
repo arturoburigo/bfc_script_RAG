@@ -1,9 +1,0 @@
-{
-    "document": "API_http",
-    "section": "Resposta",
-    "subsection": "arquivo()",
-    "content": "1. resposta = Http.servico('https://www.betha.com.br/users').GET()\n2.\n3. //Utilizando com a API de arquivos\n4. texto = Arquivo.ler(resposta.arquivo(), 'txt')\n5.\n6. //Utilizando o retorno como anexo da API de Email\n7. Email.novo()\n8.      .de('webservice@betha.com.br')\n9.      .para('usuarios@betha.com.br')\n10.      .assunto('Arquivo de resposta do webservice!')\n11.      .anexarArquivo(resposta.arquivo(), 'resposta.txt')\n12.      .enviar()",
-    "metadata": {
-        "source": "docs/BFC Doc/API_http.md"
-    }
-}

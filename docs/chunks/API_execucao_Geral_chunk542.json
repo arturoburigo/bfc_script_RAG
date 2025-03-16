@@ -1,0 +1,11 @@
+{
+    "document": "API_execucao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "## API de Execução  \nO bfc-script disponibiliza uma API para a consulta das informações relacionadas a execução.  \n#### Consultar o protocolo da execução  \n```bfc-script\nExecucao.atual.protocolo\n```  \n#### Consultar se a execução foi cancelada pelo usuário  \n```bfc-script\nExecucao.atual.foiCancelada\n```",
+    "metadata": {
+        "source": "docs/BFC Doc/API_execucao.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "As opções disponíveis para manipulação dos elementos são:  \n**nome()**  \nRetorna o nome do elemento.  \n**namespace()**  \nRetorna o [namespace](index.html#apiSoapServicoCriarNamespace) do elemento.  \n**adicionarElemento(nome)**",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": false
+}

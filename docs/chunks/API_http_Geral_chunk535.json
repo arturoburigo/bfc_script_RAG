@@ -1,0 +1,11 @@
+{
+    "document": "API_http",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* **ehSomenteHttp()** : Indica se é somente HTTP\n```bfc-script\nservico.cabecalho('Authorization', 'Basic ABCF5065FGC==')\nservico.cabecalho('User', ['murphy', 'luiz.silva'])\nservico.cabecalho([ User: 'alex.o.leao'])\n```8  \n#### contemCookie(nome)  \nIndica se a resposta contém um cookie com o nome informado no parâmetro.  \n#### cookies()  \nRecupera uma lista contendo os cookies retornados na resposta.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_http.md"
+    },
+    "contains_code": true
+}

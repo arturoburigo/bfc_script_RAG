@@ -1,9 +1,0 @@
-{
-    "document": "Linguagem",
-    "section": "Linguagem",
-    "subsection": "Valores nulos",
-    "content": "1.     nomeFuncionario = funcionario.agenciaBancaria?.nome\n2.\n\n\n\nO operador deve ser utilizado em diversos níveis de uma referência, caso seja apropriado:\n\n1.     nomeFuncionario = funcionario.agenciaBancaria?.municipio?.nome\n2.\n3.     // valor impresso 'null'\n4.     imprimir(nomeFuncionario)\n5.",
-    "metadata": {
-        "source": "docs/BFC Doc/Linguagem.md"
-    }
-}

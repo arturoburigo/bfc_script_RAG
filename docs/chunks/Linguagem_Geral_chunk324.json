@@ -1,0 +1,11 @@
+{
+    "document": "Linguagem",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```2  \nObtendo e atribuindo valores em posições **específicas** da lista. A primeira posição da lista tem o índice **0 (zero)** , a segunda posição tem o índice **1** , e assim por diante. Os dados são acessados assim: **lista[indice]**",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nCaracteres.direita(texto, quantidade)\n```9  \n##### substituir  \nSubstitui as ocorrências de uma expressão localizada em um texto por outra expressão.  \n```bfc-script\ntexto.direita(quantidade)\n```0  \n_Alternativa_  \n```bfc-script\ntexto.direita(quantidade)\n```1  \n##### subTexto",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

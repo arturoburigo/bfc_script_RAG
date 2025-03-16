@@ -1,9 +1,0 @@
-{
-    "document": "API_scripts",
-    "section": "Componentes",
-    "subsection": "Exemplos de utilização:",
-    "content": "_Componente 2: identificador ped.contador_\n\n1. current = 0\n2.\n3. inc = { amount = 1 -> current += amount }\n4. dec = { amount = 1 -> current -= amount }\n5. reset = { current = 0 }\n6. get = { current }\n7.\n8. Scripts.exportar(\n9.         incrementar: { inc(1) },\n10.         incrementarEm: inc,\n11.         decrementar: { dec(1) },\n12.         decrementarEm: dec,\n13.         zerar: reset,\n14.         atual: get\n15. )\n\n\n\n_Componente 3: identificador ped.log_",
-    "metadata": {
-        "source": "docs/BFC Doc/API_scripts.md"
-    }
-}

@@ -3,6 +3,7 @@ from sentence_transformers import SentenceTransformer
 import faiss
 import os
 from openai import OpenAI
+import gradio as gr
 
 # Configurar o ambiente para evitar warning do tokenizer
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -26,46 +27,56 @@ def search(query, top_k=5):
     results = [document_chunks[idx] for idx in indices[0]]
     return results
 
-
-client = OpenAI(api_key="OPENAI_API_KEY")
+client = OpenAI(api_key="")
 
 def rag_response(query):
     results = search(query)
-
     context = "\n".join([r["content"] for r in results])
 
     prompt = f"""
-    Você é um assistente que responde perguntas com base no contexto fornecido. Você ira se basear na linguagem de programacao bfc-script, fornecida no contexto.
-    
-    Sempre procure por exemplos de codigo, funcoes, e documentacao no contexto fornecido.
-    
-    As respostas e os codigos de exemplos devem ser bem explicados sempre se baseado no contexto fornecido. Caso nao entenda a pergunta, responda de forma simples e direta.
-    
-    Baseando-se no seguinte contexto, responda à pergunta:
+    Consulte exclusivamente a documentação do BFC-Script fornecida abaixo para responder à pergunta do usuário.
 
-    Contexto:
+    INSTRUÇÕES ESPECÍFICAS:
+    1. Analise cuidadosamente toda a documentação fornecida no contexto
+    2. Identifique seções relevantes, funções, exemplos de código e explicações técnicas
+    3. Cite diretamente trechos relevantes da documentação ao responder
+    4. Forneça exemplos de código específicos encontrados na documentação
+    5. Se a documentação não contiver informações para responder completamente, indique claramente o que está faltando
+    6. funções não utilizam acentos
+
+    DOCUMENTAÇÃO (contexto recuperado):
     {context}
 
-    Pergunta: {query}
+    PERGUNTA DO USUÁRIO: {query}
+
+    Responda de forma detalhada usando APENAS as informações encontradas na documentação acima.
     """
 
     response = client.chat.completions.create(
         model="gpt-4o-mini",
-        messages=[{"role": "system", "content": "Você é um assistente que responde perguntas com base no contexto fornecido, qualquer pergunta voce primeiramente vai se basear no contexto e depois vai responder a pergunta. Você ira se basear na linguagem de programacao bfc-script, pesquisar por toda a documentacao, funcoes, e exemplos fornecida no contexto."},
+        messages=[{"role": "system", "content": "Você é um especialista em BFC-Script e sua função é responder perguntas consultando exclusivamente a documentação oficial fornecida no contexto. Priorize sempre encontrar e citar informações técnicas precisas da documentação, incluindo funções, sintaxe, exemplos de código e melhores práticas. Quando não encontrar a informação exata na documentação, indique claramente esta limitação e forneça a resposta mais próxima baseada apenas no material disponível. Nunca invente informações ou exemplos que não estejam presentes no contexto fornecido."},
                   {"role": "user", "content": prompt}]
     )
 
     return response.choices[0].message.content
 
-# Teste da resposta gerada
-#query = "Como fazer uma requisicao para uma api?"
-query = "Como calcular a diferenca de dias entre duas datas?"
+# Função para a interface de chat
+def chat_interface(message, history):
+    response = rag_response(message)
+    return response
 
-results = search(query)
+# Criar interface Gradio
+demo = gr.ChatInterface(
+    fn=chat_interface,
+    title="BFC-Script Assistant",
+    description="Faça perguntas sobre BFC-Script e obtenha respostas baseadas na documentação",
+    theme="soft",
+    examples=["Como fazer loop em BFC-Script?", 
+              "Como trabalhar com arquivos?", 
+              "Como mandar um email?",
+              "Como calcular a diferença de dias entre duas datas?"]
+)
 
-for r in results:
-    print(f"Documento: {r['document']} - Seção: {r['section']}")
-    print(f"Trecho: {r['content']}\n")
-    
-    
-print(rag_response(query))
+# Iniciar a interface
+if __name__ == "__main__":
+    demo.launch(share=True)  # share=True cria uma URL pública temporária

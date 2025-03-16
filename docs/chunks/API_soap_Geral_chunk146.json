@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nxml = Arquivo.novo('msg.xml', 'xml')\nxml.fechar()\n3.\nservico.mensagem().cabecalho(xml)\n```  \n#### operacao(operacao)  \nDefine a operação/método/função a ser executada no webservice. Este valor será informado no cabeçalho HTTP SOAPAction da mensagem.  \n#### executar()",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": true
+}

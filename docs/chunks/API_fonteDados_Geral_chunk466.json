@@ -1,0 +1,11 @@
+{
+    "document": "API_fonteDados",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nativo.telefones.busca(consolidado:true)\n```  \n**Exemplo:**  \n```bfc-script\ndadosFuncionarios = Dados.dubai.v1.funcionarios\n2.\npercorrer(dadosFuncionarios.busca(ordenacao:\"rg desc\", campos:\"nome, rg, id, dataAdmissao, dataNascimento\")){\nimprimir \"##Funcionario\"\nimprimir item.dataNascimento\nimprimir item\n7.\nimprimir \"##Telefones: \"\npercorrer(dadosFuncionarios.telefones.busca(parametros:[codigoFuncionario:item.id])){\nimprimir item\n}\n}\n```  \nPara retornar um único item, deve-se utilziar o parâmetro primeiro:true na operação de busca.  \n```bfc-script\ndadosFuncionarios.busca(ordenacao:\"rg desc\", campos:\"nome, rg, id, dataAdmissao, dataNascimento\", primeiro:true)\n```",
+    "metadata": {
+        "source": "docs/BFC Doc/API_fonteDados.md"
+    },
+    "contains_code": true
+}

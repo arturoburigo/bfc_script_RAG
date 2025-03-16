@@ -1,9 +1,0 @@
-{
-    "document": "API_soap",
-    "section": "Base64",
-    "subsection": "Contornando a limitação cumulativa",
-    "content": "**padraoSHA256()**\n\n1. hashSHA256 = Hash.padraoSHA256().codifica(\"qualquer texto\").texto()\n\n\n\nQuando utilizado um texto, é possível definir o charset para codificação (o charset padrão é UTF-8):\n\n1. hashSHA256 = Hash.padraoSHA256().codifica(\"ë\", \"iso-8859-1\").texto()\n\n\n\nQuando utilizado um arquivo, não é possível definir o charset para codificação, o charset utilizado é o do arquivo:",
-    "metadata": {
-        "source": "docs/BFC Doc/API_soap.md"
-    }
-}

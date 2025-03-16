@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nCaracteres.direita(texto, quantidade)\n```0  \n_Alternativa_  \n```bfc-script\nCaracteres.direita(texto, quantidade)\n```1  \n##### removeEspacosEsquerda  \nRemove o excesso de espaços de um texto à direita.  \n```bfc-script\nCaracteres.direita(texto, quantidade)\n```2  \n_Alternativa_  \n```bfc-script\nCaracteres.direita(texto, quantidade)\n```3  \n##### repetir",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* _entreAspas_ : Indica se os valores escritos no arquivo deverão estar entre aspas duplas. Utilizar _S_ para Sim e _N_ para Não.\n* _encoding_ : Determina o encoding a ser usado na criação do arquivo. Por padrão utiliza UTF-8.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

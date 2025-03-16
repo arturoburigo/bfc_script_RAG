@@ -1,0 +1,11 @@
+{
+    "document": "API_cache",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Cache.remover(chave)  \nRemove o valor para chave informada.",
+    "metadata": {
+        "source": "docs/BFC Doc/API_cache.md"
+    },
+    "contains_code": false
+}

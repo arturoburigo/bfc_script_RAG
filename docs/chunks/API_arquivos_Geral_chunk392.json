@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### ehTipoAtributo  \nIndica se o [tipo](index.html#apiArquivosImplementacoesXmlTipos) do item atual é igual a ATRIBUTO  \n##### ehTipoNamespace  \nIndica se o [tipo](index.html#apiArquivosImplementacoesXmlTipos) do item atual é igual a NAMESPACE",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

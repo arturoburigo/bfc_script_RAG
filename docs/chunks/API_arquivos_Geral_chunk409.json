@@ -1,0 +1,11 @@
+{
+    "document": "API_arquivos",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Escreve um namespace no elemento atual.  \n##### escreverNamespace(namespace, prefixo)  \nEscreve um namespace com prefixo no elemento atual.  \n##### escreverDTD(dtd)",
+    "metadata": {
+        "source": "docs/BFC Doc/API_arquivos.md"
+    },
+    "contains_code": false
+}

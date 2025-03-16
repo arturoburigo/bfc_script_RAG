@@ -1,9 +1,0 @@
-{
-    "document": "Linguagem",
-    "section": "Linguagem",
-    "subsection": "Valores nulos",
-    "content": "A palavra reservada `nulo` representa o valor para este comportamento, de modo que no exemplo abaixo estamos dizendo que a variável `valorCusto` é igual a nulo ou em outras palavras, que seu valor é vazio.\n\n1.     valorCusto = nulo\n2.\n\n\n\nUm script pode receber variáveis com valores nulo, onde em certas ocasiões é necessário checar se o valor da variável é nulo ou não. Podemos realizar as checagens de duas formas:",
-    "metadata": {
-        "source": "docs/BFC Doc/Linguagem.md"
-    }
-}

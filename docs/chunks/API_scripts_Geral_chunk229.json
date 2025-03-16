@@ -1,0 +1,11 @@
+{
+    "document": "API_scripts",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\narquivos = [arquivo1: parametros.arquivo.valor, arquivo2: parametros.arquivo2.valor, val3:'teste teste 123']\n2.\nScripts.scriptb.variaveis(arquivos).executar();\n```  \nNo script que recebe as variáveis, os valores estão disponíveis da seguinte maneira:  \n```bfc-script\nResultado.arquivo(variaveis.arquivo1)\nResultado.arquivo(variaveis.arquivo2)\n3.\nimprimir variaveis.val3\n```  \nO scriptb não precisa ter nenhum parâmetro para receber as variáveis e qualquer tipo pode ser passado por variaveis().",
+    "metadata": {
+        "source": "docs/BFC Doc/API_scripts.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "API_soap",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nnamespace = Soap.criarNamespace('http://ws.cdyne.com/', 'ws')\nservico = Soap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx', namespacePadrao)\n3.\nimprimir namespace.namespace()\nimprimir namespace.prefixo()\n```9  \nÉ possível ainda definir o encoding para codificação e/ou decodificação (o encoding padrão é UTF-8):  \n```bfc-script\nservico = Soap.servico('http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx')\nservico.cabecalho('Authorization','Bearer 239e3d8e-1e93-4f2b-beff-c430103b9287')\n```0  \nTambém é possível decodificar para um arquivo de forma que o mesmo possa ser utilizado na API de Arquivos:",
+    "metadata": {
+        "source": "docs/BFC Doc/API_soap.md"
+    },
+    "contains_code": true
+}

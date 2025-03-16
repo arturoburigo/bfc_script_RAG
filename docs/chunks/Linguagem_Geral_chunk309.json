@@ -1,0 +1,11 @@
+{
+    "document": "Linguagem",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Dentro do bloco _tratar_ deve ser especificado o código que será executado em caso de erro dentro do bloco tentar. Nele, existe uma variável chamada excecao que é uma representação do erro ocorrido. Ela possui os seguintes atributos:",
+    "metadata": {
+        "source": "docs/BFC Doc/Linguagem.md"
+    },
+    "contains_code": false
+}

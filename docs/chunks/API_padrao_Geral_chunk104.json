@@ -1,0 +1,11 @@
+{
+    "document": "API_padrao",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\ntexto.capitaliza\n```39  \n##### seZero  \nTesta os valores passados como parâmetro e retorna o primeiro diferente de zero.  \n```bfc-script\ntexto.capitaliza\n```40  \n##### tangente  \nCalcula a tangente de um ângulo.  \n```bfc-script\ntexto.capitaliza\n```41  \n##### teto",
+    "metadata": {
+        "source": "docs/BFC Doc/API_padrao.md"
+    },
+    "contains_code": true
+}

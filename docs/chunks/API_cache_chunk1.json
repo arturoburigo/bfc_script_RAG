@@ -1,9 +1,0 @@
-{
-    "document": "API_cache",
-    "section": "Geral",
-    "subsection": "Cache.remover(chave)",
-    "content": "Remove o valor para chave informada.",
-    "metadata": {
-        "source": "docs/BFC Doc/API_cache.md"
-    }
-}
