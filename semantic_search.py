@@ -9,7 +9,7 @@ from openai import OpenAI
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 # Use a mesma chave API para todo o aplicativo
-OPENAI_API_KEY = ""
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def search(query, top_k=8):
     try:
@@ -191,7 +191,7 @@ demo = gr.ChatInterface(
     description="Faça perguntas sobre BFC-Script e obtenha respostas baseadas na documentação. Para funcionalidades não documentadas, fornecerei soluções em BFC-Script e Groovy.",
     theme="soft",
     examples=[
-        "Como fazer loop em BFC-Script?", 
+        "Como fazer loop imprimindo apenas numeros pares ?", 
         "Como trabalhar com arquivos?", 
         "Como mandar um email?",
         "Como calcular a diferença de dias entre duas datas?",
