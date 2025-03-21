@@ -2,3 +2,4 @@ fonte_dados/
 index/
 docs/
 .env
+.gradio
