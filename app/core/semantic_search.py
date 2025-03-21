@@ -3,6 +3,9 @@ import os
 import faiss
 import numpy as np
 from openai import OpenAI
+from pathlib import Path
+
+
 
 class SemanticSearch:
     def __init__(self, api_key=None):
@@ -12,8 +15,10 @@ class SemanticSearch:
             raise ValueError("OpenAI API key is required. Set OPENAI_API_KEY environment variable or pass it to the constructor.")
         
         self.client = OpenAI(api_key=self.api_key)
+        
+        
         self.index_path = "index/faiss_index.bin"
-        self.chunks_path = "docs/chunks_embedded/documentation_chunks_with_embeddings.json"
+        self.chunks_path = "docs/documentation_chunks_with_embeddings.json"
         
         # Configurar o ambiente para evitar warning do tokenizer
         os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -67,83 +72,21 @@ class SemanticSearch:
         except Exception as e:
             print(f"Erro na busca: {str(e)}")
             return []
-    
-    def extract_syntax_patterns(self, context):
+
+    def get_document_context(self, query, top_k=8):
         """
-        Extrai padrões sintáticos comuns do BFC-Script do contexto.
-        
-        Args:
-            context (str): Documentation context
-            
-        Returns:
-            str: Extracted syntax patterns
-        """
-        try:
-            from app.utils.prompts import SYNTAX_EXTRACTION_PROMPT
-            
-            syntax_prompt = SYNTAX_EXTRACTION_PROMPT.format(context=context)
-            
-            response = self.client.chat.completions.create(
-                model="gpt-4o-mini",
-                messages=[
-                    {"role": "system", "content": "Você é um analisador sintático técnico que extrai padrões de código de documentação."},
-                    {"role": "user", "content": syntax_prompt}
-                ]
-            )
-            
-            return response.choices[0].message.content
-        except Exception as e:
-            print(f"Erro ao extrair padrões sintáticos: {str(e)}")
-            return ""
-    
-    def generate_response(self, query, history=None):
-        """
-        Generate a response for the user query using RAG.
+        Get context from documents based on the query.
         
         Args:
             query (str): The user's query
-            history (list): Chat history
+            top_k (int): Number of top results to retrieve
             
         Returns:
-            str: Generated response
+            str: Concatenated context from search results
         """
-        try:
-            from app.utils.prompts import RAG_SYSTEM_PROMPT, RAG_USER_PROMPT
-            
-            # Incorporate chat history context for better continuity
-            history_context = ""
-            if history and len(history) > 0:
-                last_exchanges = history[-3:] if len(history) > 3 else history
-                history_context = "\n".join([f"Usuário: {q}\nAssistente: {a}" for q, a in last_exchanges])
-            
-            # Buscar documentação relevante
-            results = self.search(query)
-            
-            if not results:
-                return "Não foi possível realizar a busca semântica. Verifique os logs para mais detalhes."
-                
-            context = "\n".join([r["content"] for r in results])
-            
-            # Extrair padrões sintáticos para uso em respostas não documentadas
-            syntax_patterns = self.extract_syntax_patterns(context)
-            
-            # Montar o prompt completo
-            prompt = RAG_USER_PROMPT.format(
-                context=context,
-                syntax_patterns=syntax_patterns,
-                history_context=history_context,
-                query=query
-            )
-            
-            response = self.client.chat.completions.create(
-                model="gpt-4o-mini",
-                messages=[
-                    {"role": "system", "content": RAG_SYSTEM_PROMPT},
-                    {"role": "user", "content": prompt}
-                ]
-            )
-
-            return response.choices[0].message.content
-        except Exception as e:
-            print(f"Erro ao gerar resposta: {str(e)}")
-            return f"Ocorreu um erro ao processar sua consulta: {str(e)}"
+        results = self.search(query, top_k)
+        if not results:
+            return ""
+        
+        context = "\n".join([r["content"] for r in results])
+        return context, results
