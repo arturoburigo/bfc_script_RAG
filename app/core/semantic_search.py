@@ -3,21 +3,19 @@ import os
 import faiss
 import numpy as np
 from openai import OpenAI
-from pathlib import Path
 
 
 
 class SemanticSearch:
     def __init__(self, api_key=None):
-        # Use environment variable if no key is provided
+     
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         if not self.api_key:
             raise ValueError("OpenAI API key is required. Set OPENAI_API_KEY environment variable or pass it to the constructor.")
         
+        
         self.client = OpenAI(api_key=self.api_key)
-        
-        
-        self.index_path = "index/faiss_index.bin"
+        self.index_path = "./index/faiss_index.bin"
         self.chunks_path = "docs/documentation_chunks_with_embeddings.json"
         
         # Configurar o ambiente para evitar warning do tokenizer
@@ -44,17 +42,10 @@ class SemanticSearch:
                 input=expanded_query
             )
             query_embedding = query_embedding_response.data[0].embedding
-            
-            # Converter para o formato numpy necessário para FAISS
             query_embedding_np = np.array(query_embedding).astype("float32").reshape(1, -1)
-            
-            # Carregar o índice FAISS
             index = faiss.read_index(self.index_path)
             
-            # Buscar os k resultados mais próximos
             distances, indices = index.search(query_embedding_np, top_k)
-            
-            # Carregar os chunks para retornar os textos
             with open(self.chunks_path, "r", encoding="utf-8") as file:
                 document_chunks = json.load(file)
             
