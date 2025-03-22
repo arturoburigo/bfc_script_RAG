@@ -3,3 +3,5 @@ index/
 docs/
 .env
 .gradio
+__pycache__/
+*.pyc

@@ -1,14 +1,19 @@
 import gradio as gr
+from core.semantic_search import SemanticSearch
+from core.response_generator import ResponseGenerator
 
 class BFCScriptUI:
-    def __init__(self, search_engine):
+    def __init__(self, search_engine=None, response_generator=None):
         """
         Initialize the Gradio UI for BFC-Script Assistant.
         
         Args:
-            search_engine: An instance of SemanticSearch
+            search_engine: An instance of SemanticSearch (optional)
+            response_generator: An instance of ResponseGenerator (optional)
         """
-        self.search_engine = search_engine
+        # Criar instâncias se não forem fornecidas
+        self.search_engine = search_engine or SemanticSearch()
+        self.response_generator = response_generator or ResponseGenerator()
         
         # Sample examples for the interface
         self.examples = [
@@ -33,7 +38,12 @@ class BFCScriptUI:
         Returns:
             str: Assistant response
         """
-        return self.search_engine.generate_response(message, history)
+        # Obter o contexto da documentação
+        context, _ = self.search_engine.get_document_context(message)
+        
+        # Gerar resposta
+        response = self.response_generator.generate_response(message, context, history)
+        return response
     
     def create_interface(self):
         """
