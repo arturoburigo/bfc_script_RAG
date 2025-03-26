@@ -5,19 +5,21 @@ import numpy as np
 from openai import OpenAI
 
 
-
 class SemanticSearch:
     def __init__(self, api_key=None):
-     
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         if not self.api_key:
             raise ValueError("OpenAI API key is required. Set OPENAI_API_KEY environment variable or pass it to the constructor.")
         
-        
         self.client = OpenAI(api_key=self.api_key)
-        self.index_path = "./index/faiss_index.bin"
-        self.chunks_path = "docs/documentation_chunks_with_embeddings.json"
-        
+
+        # Obtém o diretório base do arquivo semantic_search.py
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+
+        # Define caminhos absolutos para evitar problemas
+        self.index_path = os.path.join(base_dir, "index", "faiss_index.bin")
+        self.chunks_path = os.path.join(base_dir, "docs", "documentation_chunks_with_embeddings.json")
+
         # Configurar o ambiente para evitar warning do tokenizer
         os.environ["TOKENIZERS_PARALLELISM"] = "false"
     
@@ -43,6 +45,11 @@ class SemanticSearch:
             )
             query_embedding = query_embedding_response.data[0].embedding
             query_embedding_np = np.array(query_embedding).astype("float32").reshape(1, -1)
+
+            # Verificar se o arquivo do índice FAISS existe
+            if not os.path.exists(self.index_path):
+                raise FileNotFoundError(f"Arquivo do índice FAISS não encontrado: {self.index_path}")
+            
             index = faiss.read_index(self.index_path)
             
             distances, indices = index.search(query_embedding_np, top_k)

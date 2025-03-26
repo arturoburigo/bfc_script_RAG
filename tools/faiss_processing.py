@@ -3,7 +3,7 @@ import faiss
 import numpy as np
 
 # Carregar os chunks com embeddings
-with open("./app/core/docs/documentation_chunks_with_embeddings.json", "r", encoding="utf-8") as file:
+with open("../app/core/docs/documentation_chunks_with_embeddings.json", "r", encoding="utf-8") as file:
     document_chunks = json.load(file)
 
 # Criar a matriz de embeddings
@@ -14,6 +14,6 @@ index = faiss.IndexFlatL2(embeddings.shape[1])
 index.add(embeddings)
 
 # Salvar o índice
-faiss.write_index(index, "./app/core/index/faiss_index.bin")
+faiss.write_index(index, "../app/core/index/faiss_index.bin")
 
 print("Indexação concluída!")
