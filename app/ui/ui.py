@@ -15,34 +15,29 @@ class BFCScriptUI:
         self.search_engine = search_engine or SemanticSearch()
         self.response_generator = response_generator or ResponseGenerator()
         
-        # Sample examples for the interface
-        self.examples = [
-            "Como fazer loop imprimindo apenas numeros pares ?", 
-            "Como trabalhar com arquivos?", 
-            "Como mandar um email?",
-            "Como calcular a diferença de dias entre duas datas?",
-            "Como separar números pares e ímpares em um array?",
-            "Como converter temperatura de Fahrenheit para Celsius?",
-            "Qual a sintaxe correta para declarar funções em BFC-Script?",
-            "Como realizar operações matemáticas básicas em BFC-Script?"
-        ]
-    
-    def chat_handler(self, message, history):
+        # Categorias disponíveis
+        self.categories = ["Geral", "Service Layer", "Fonte de Dados", "Relatório"]
+        
+    def chat_handler(self, message, history, category):
         """
         Handle incoming chat messages and generate responses.
         
         Args:
             message (str): User message
             history (list): Chat history
+            category (str): Selected category
             
         Returns:
             str: Assistant response
         """
+        # Adicionar contexto da categoria selecionada à mensagem
+        context_message = f"[Categoria: {category}] {message}"
+        
         # Obter o contexto da documentação
-        context, _ = self.search_engine.get_document_context(message)
+        context, _ = self.search_engine.get_document_context(context_message)
         
         # Gerar resposta
-        response = self.response_generator.generate_response(message, context, history)
+        response = self.response_generator.generate_response(context_message, context, history)
         return response
     
     def create_interface(self):
@@ -52,13 +47,25 @@ class BFCScriptUI:
         Returns:
             gr.ChatInterface: The configured Gradio interface
         """
-        demo = gr.ChatInterface(
-            fn=self.chat_handler,
-            title="BFC-Script Assistant",
-            description="Faça perguntas sobre BFC-Script e obtenha respostas baseadas na documentação. Para funcionalidades não documentadas, fornecerei soluções em BFC-Script e Groovy.",
-            theme="soft",
-            examples=self.examples
-        )
+        with gr.Blocks(theme="soft") as demo:
+            gr.Markdown("# BFC-Script Assistant")
+            gr.Markdown("Faça perguntas sobre BFC-Script e obtenha respostas baseadas na documentação. Para funcionalidades não documentadas, fornecerei soluções em BFC-Script e Groovy.")
+            
+            # Adicionar radio buttons para categorias
+            category = gr.Radio(
+                choices=self.categories,
+                value="Geral",  # Valor padrão
+                label="Selecione a categoria",
+                info="Escolha a categoria da sua pergunta"
+            )
+            
+            # Criar o chat interface
+            chat = gr.ChatInterface(
+                fn=self.chat_handler,
+                additional_inputs=[category],
+                type="messages"  # Usar o novo formato de mensagens
+            )
+            
         return demo
     
     def launch(self, share=True):

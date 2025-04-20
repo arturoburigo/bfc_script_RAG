@@ -2,30 +2,34 @@ import os
 from core.semantic_search import SemanticSearch
 from core.response_generator import ResponseGenerator
 from ui.ui import BFCScriptUI
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 def main():
     """
-    Ponto de entrada principal da aplicação BFC-Script Assistant.
+    Main entry point for the BFC-Script Assistant application.
     """
-    # Verificar se a chave API está configurada
+    # Check if API key is configured
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
-        print("AVISO: OPENAI_API_KEY não está definida no ambiente. Por favor, defina-a antes de executar o aplicativo.")
+        print("WARNING: OPENAI_API_KEY is not set in the environment. Please set it before running the application.")
         return
     
     # Configurar ambiente para evitar warning do tokenizer
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     
     try:
-        # Inicializar componentes principais
+        # Initialize main components
         search_engine = SemanticSearch(api_key=api_key)
         response_generator = ResponseGenerator(api_key=api_key)
         
-        # Criar e lançar a interface do usuário
+        # Create and launch the user interface
         bfc_ui = BFCScriptUI(search_engine, response_generator)
         bfc_ui.launch(share=True)
     except Exception as e:
-        print(f"Erro ao iniciar o BFC-Script Assistant: {str(e)}")
+        print(f"Error starting BFC-Script Assistant: {str(e)}")
 
 if __name__ == "__main__":
     main()

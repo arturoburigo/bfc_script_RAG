@@ -5,3 +5,4 @@ docs/
 .gradio
 __pycache__/
 *.pyc
+chroma_db/

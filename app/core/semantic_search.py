@@ -1,7 +1,6 @@
-import json
 import os
-import faiss
-import numpy as np
+import chromadb
+from chromadb.config import Settings
 from openai import OpenAI
 
 
@@ -12,63 +11,107 @@ class SemanticSearch:
             raise ValueError("OpenAI API key is required. Set OPENAI_API_KEY environment variable or pass it to the constructor.")
         
         self.client = OpenAI(api_key=self.api_key)
-
-        # Obtém o diretório base do arquivo semantic_search.py
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-
-        # Define caminhos absolutos para evitar problemas
-        self.index_path = os.path.join(base_dir, "index", "faiss_index.bin")
-        self.chunks_path = os.path.join(base_dir, "docs", "documentation_chunks_with_embeddings.json")
-
-        # Configurar o ambiente para evitar warning do tokenizer
-        os.environ["TOKENIZERS_PARALLELISM"] = "false"
+        
+        # Initialize ChromaDB client with specific embedding function
+        self.chroma_client = chromadb.PersistentClient(
+            path="./chroma_db",
+            settings=Settings(
+                anonymized_telemetry=False
+            )
+        )
+        
+        # Get collections
+        try:
+            self.docs_collection = self.chroma_client.get_collection("docs")
+            self.enums_collection = self.chroma_client.get_collection("enums")
+            self.folha_collection = self.chroma_client.get_collection("folha")
+            self.pessoal_collection = self.chroma_client.get_collection("pessoal")
+        except Exception as e:
+            print(f"Error loading collections: {str(e)}")
+            raise
     
-    def search(self, query, top_k=8):
+    def get_embedding(self, text):
         """
-        Perform semantic search on the documentation based on the query.
+        Get embedding for text using the correct model.
+        
+        Args:
+            text (str): Text to get embedding for
+            
+        Returns:
+            list: Embedding vector
+        """
+        try:
+            response = self.client.embeddings.create(
+                model="text-embedding-3-large",  # Using the same model as used for collection creation
+                input=text
+            )
+            return response.data[0].embedding
+        except Exception as e:
+            print(f"Error getting embedding: {str(e)}")
+            raise
+    
+    def search(self, query, category="Geral", top_k=8):
+        """
+        Perform semantic search on the documentation based on the query and category.
         
         Args:
             query (str): The user's query
+            category (str): The selected category (Geral, Service Layer, Fonte de Dados, Relatório)
             top_k (int): Number of top results to retrieve
             
         Returns:
             list: Filtered search results
         """
         try:
-            # Criar embeddings expandidos para melhorar a busca semântica
+            # Expand query for better semantic search
             expanded_query = f"{query} BFC-Script documentação exemplos código sintaxe"
             
-            # Criar o embedding da pergunta usando text-embedding-3-large
-            query_embedding_response = self.client.embeddings.create(
-                model="text-embedding-3-large",
-                input=expanded_query
-            )
-            query_embedding = query_embedding_response.data[0].embedding
-            query_embedding_np = np.array(query_embedding).astype("float32").reshape(1, -1)
-
-            # Verificar se o arquivo do índice FAISS existe
-            if not os.path.exists(self.index_path):
-                raise FileNotFoundError(f"Arquivo do índice FAISS não encontrado: {self.index_path}")
+            # Get embedding for the query
+            query_embedding = self.get_embedding(expanded_query)
             
-            index = faiss.read_index(self.index_path)
-            
-            distances, indices = index.search(query_embedding_np, top_k)
-            with open(self.chunks_path, "r", encoding="utf-8") as file:
-                document_chunks = json.load(file)
-            
-            # Filtrar resultados por relevância usando um threshold
-            filtered_results = []
-            for i, idx in enumerate(indices[0]):
-                if distances[0][i] < 1.0:  # Ajuste este threshold conforme necessário
-                    filtered_results.append(document_chunks[idx])
-            
-            # Se não houver resultados relevantes, retornar alguns para contexto geral
-            if not filtered_results and len(indices[0]) > 0:
-                filtered_results = [document_chunks[idx] for idx in indices[0][:3]]
+            # Search in the appropriate collection based on category
+            if category == "Geral":
+                # Search across all collections
+                all_results = []
+                for collection in [self.docs_collection, self.enums_collection, self.folha_collection, self.pessoal_collection]:
+                    try:
+                        collection_results = collection.query(
+                            query_embeddings=[query_embedding],
+                            n_results=top_k
+                        )
+                        if collection_results and 'documents' in collection_results:
+                            for i in range(len(collection_results['documents'][0])):
+                                all_results.append({
+                                    "content": collection_results['documents'][0][i],
+                                    "metadata": collection_results['metadatas'][0][i] if 'metadatas' in collection_results else {}
+                                })
+                    except Exception as e:
+                        print(f"Error searching in collection {collection.name}: {str(e)}")
+                        continue
                 
-            return filtered_results
+                # Sort and limit results
+                all_results = all_results[:top_k]
+                return all_results
+            else:
+                # Search in specific collection based on category
+                collection = self.docs_collection  # Default to docs collection
+                results = collection.query(
+                    query_embeddings=[query_embedding],
+                    n_results=top_k
+                )
+                
+                # Format results
+                formatted_results = []
+                if results and 'documents' in results:
+                    for i in range(len(results['documents'][0])):
+                        formatted_results.append({
+                            "content": results['documents'][0][i],
+                            "metadata": results['metadatas'][0][i] if 'metadatas' in results else {}
+                        })
+                
+                return formatted_results
         except Exception as e:
-            print(f"Erro na busca: {str(e)}")
+            print(f"Error in search: {str(e)}")
             return []
 
     def get_document_context(self, query, top_k=8):
@@ -80,11 +123,21 @@ class SemanticSearch:
             top_k (int): Number of top results to retrieve
             
         Returns:
-            str: Concatenated context from search results
+            tuple: (context string, search results list)
         """
-        results = self.search(query, top_k)
-        if not results:
-            return ""
-        
-        context = "\n".join([r["content"] for r in results])
-        return context, results
+        try:
+            # Extract category from query if present
+            category = "Geral"
+            if "[Categoria:" in query:
+                category = query.split("[Categoria:")[1].split("]")[0].strip()
+                query = query.split("]")[1].strip()
+            
+            results = self.search(query, category, top_k)
+            if not results:
+                return "", []
+            
+            context = "\n".join([r["content"] for r in results])
+            return context, results
+        except Exception as e:
+            print(f"Error getting document context: {str(e)}")
+            return "", []
