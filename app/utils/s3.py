@@ -19,9 +19,8 @@ def download_s3_file(bucket_name, object_key, folder_path):
     
     file_name = os.path.basename(object_key)
     
-    # Garantir que o diretório passado já exista
     if not os.path.isdir(folder_path):
-        raise FileNotFoundError(f"O diretório de destino não existe: {folder_path}")
+        raise FileNotFoundError(f"Destination directory does not exist: {folder_path}")
     
     local_path = os.path.join(folder_path, file_name)
 
@@ -31,14 +30,14 @@ def download_s3_file(bucket_name, object_key, folder_path):
     except botocore.exceptions.ClientError as e:
         error_code = e.response.get('Error', {}).get('Code', 'Unknown')
         if error_code == '403':
-            print(f"Erro: Permissão negada (403 Forbidden). Verifique suas permissões IAM e as políticas do bucket.")
+            print(f"Error: Permission denied (403 Forbidden). Please check your IAM permissions and bucket policies.")
         elif error_code == '404':
-            print(f"Erro: Objeto não encontrado (404). Verifique se o bucket e o caminho do objeto estão corretos.")
+            print(f"Error: Object not found (404). Please verify the bucket and object path.")
         else:
-            print(f"Erro ao baixar arquivo: {e}")
+            print(f"Error downloading file: {e}")
         return False, None
     except Exception as e:
-        print(f"Erro inesperado: {e}")
+        print(f"Unexpected error: {e}")
         return False, None
 
 def batch_download_s3_files(bucket_name, file_mappings):
@@ -57,27 +56,26 @@ def batch_download_s3_files(bucket_name, file_mappings):
     
     return results
 
-# 🔥 **Ponto de entrada**
 if __name__ == "__main__":
-    # Caminho absoluto para 'bfc_script_RAG/app/core/docs'
+    # Absolute path to 'bfc_script_RAG/app/core/docs'
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "core", "docs"))
 
     if not os.path.isdir(base_dir):
-        raise FileNotFoundError(f"O diretório esperado não existe: {base_dir}")
+        raise FileNotFoundError(f"Expected directory does not exist: {base_dir}")
 
     bucket_name = "bfc-scripts-docs"
     file_mappings = [
         {
             'object_key': "chunks_embedded/documentation_chunks_with_embeddings.json",
-            'folder_path': base_dir  # Diretório correto sem criar subpastas novas
+            'folder_path': base_dir  # Correct directory without creating new subfolders
         },
     ]
 
     results = batch_download_s3_files(bucket_name, file_mappings)
 
-    print("\nResumo dos downloads:")
+    print("\nDownload Summary:")
     for object_key, result in results.items():
-        status = "Sucesso" if result['success'] else "Falha"
+        status = "Success" if result['success'] else "Failed"
         print(f"{object_key}: {status}")
         if result['success']:
-            print(f"  → Salvo em: {result['file_path']}")
+            print(f"  → Saved at: {result['file_path']}")
