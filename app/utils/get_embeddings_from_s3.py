@@ -57,18 +57,32 @@ def batch_download_s3_files(bucket_name, file_mappings):
     return results
 
 if __name__ == "__main__":
-    # Absolute path to 'bfc_script_RAG/app/core/docs'
-    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "core", "docs"))
-
-    if not os.path.isdir(base_dir):
-        raise FileNotFoundError(f"Expected directory does not exist: {base_dir}")
-
+    # Create docs folder in the root directory if it doesn't exist
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    docs_dir = os.path.join(root_dir, "docs")
+    
+    if not os.path.isdir(docs_dir):
+        print(f"Creating docs directory at: {docs_dir}")
+        os.makedirs(docs_dir)
+    
     bucket_name = "bfc-scripts-docs"
     file_mappings = [
         {
-            'object_key': "chunks_embedded/documentation_chunks_with_embeddings.json",
-            'folder_path': base_dir  # Correct directory without creating new subfolders
+            'object_key': "embeddings_contents/enums_pessoal_and_folha_with_embeddings.json",
+            'folder_path': docs_dir
         },
+        {
+            'object_key': "embeddings_contents/bfc_documentation_embeddings_v2.json",
+            'folder_path': docs_dir
+        },
+        {
+            'object_key': "embeddings_contents/folha_with_embeddings.json",
+            'folder_path': docs_dir
+        },
+        {
+            'object_key': "embeddings_contents/pessoal_with_embeddings.json",
+            'folder_path': docs_dir
+        }
     ]
 
     results = batch_download_s3_files(bucket_name, file_mappings)

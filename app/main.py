@@ -1,35 +1,64 @@
 import os
+import logging
+from pathlib import Path
+from dotenv import load_dotenv
 from core.semantic_search import SemanticSearch
 from core.response_generator import ResponseGenerator
-from ui.ui import BFCScriptUI
-from dotenv import load_dotenv
+from core.initialize_chroma_db import initialize_chroma_db
 
-# Load environment variables
-load_dotenv()
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("app.log"),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
 
 def main():
     """
     Main entry point for the BFC-Script Assistant application.
     """
-    # Check if API key is configured
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        print("WARNING: OPENAI_API_KEY is not set in the environment. Please set it before running the application.")
-        return
-    
-    # Configurar ambiente para evitar warning do tokenizer
-    os.environ["TOKENIZERS_PARALLELISM"] = "false"
-    
     try:
+        # Load environment variables
+        load_dotenv()
+        
+        # Check if API key is configured
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            logger.error("OPENAI_API_KEY is not set in the environment. Please set it before running the application.")
+            return
+        
+        # Configure environment to avoid tokenizer warning
+        os.environ["TOKENIZERS_PARALLELISM"] = "false"
+        
+        # Initialize ChromaDB
+        logger.info("Initializing ChromaDB...")
+        try:
+            initialize_chroma_db(reset_collections=False)  # Set to True if you want to reset collections
+            logger.info("ChromaDB initialization completed successfully")
+        except Exception as e:
+            logger.error(f"Error initializing ChromaDB: {str(e)}")
+            return
+        
         # Initialize main components
+        logger.info("Initializing semantic search...")
         search_engine = SemanticSearch(api_key=api_key)
+        
+        logger.info("Initializing response generator...")
         response_generator = ResponseGenerator(api_key=api_key)
         
         # Create and launch the user interface
+        logger.info("Launching user interface...")
+        from ui.ui import BFCScriptUI
         bfc_ui = BFCScriptUI(search_engine, response_generator)
         bfc_ui.launch(share=True)
+        
     except Exception as e:
-        print(f"Error starting BFC-Script Assistant: {str(e)}")
+        logger.error(f"Error starting BFC-Script Assistant: {str(e)}")
+        raise
 
 if __name__ == "__main__":
     main()

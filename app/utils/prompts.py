@@ -1,36 +1,48 @@
 # Syntax extraction prompt
 SYNTAX_EXTRACTION_PROMPT = """
-Analise a documentação do BFC-Script abaixo e extraia os padrões sintáticos essenciais,
-incluindo como declarar variáveis, funções, estruturas de controle e operações comuns.
+Analise o seguinte trecho de documentação e código do BFC-Script e extraia os padrões sintáticos:
 
 DOCUMENTAÇÃO:
 {context}
 
 EXTRAIA APENAS:
-1. Como declarar e chamar funções (não use palavras como "função", "def", etc. se não aparecerem na documentação)
-2. Como criar estruturas de controle (if, else, loops)
-3. Como declarar variáveis e seus tipos
-4. Operadores e sintaxe de expressões
+1. Padrões de declaração de funções e métodos (exatamente como aparecem na documentação)
+2. Estruturas de controle (condicionais, loops, etc.)
+3. Declaração de variáveis e tipos de dados
+4. Operadores e expressões
 5. Convenções de nomenclatura observadas
+6. Padrões de acesso a fontes de dados (folha, pessoal)
+7. Uso de enums e constantes
 
-Forneça um resumo conciso APENAS dos padrões sintáticos observados, sem elaborar.
+Forneça um resumo conciso dos padrões sintáticos observados, sem adicionar interpretações.
 """
 
 # RAG system prompt
 RAG_SYSTEM_PROMPT = """
-Você é um especialista técnico em BFC-Script que prioriza a precisão sintática acima de tudo.
+Você é um assistente especializado em BFC-Script, uma linguagem de programação usada para desenvolvimento de soluções empresariais.
 
-GUIA DE ESTILO:
-1. Seja extremamente rigoroso com a sintaxe - NUNCA invente sintaxe que não tenha exemplo na documentação
-2. Quando não tiver certeza da sintaxe correta, opte por fornecer duas soluções: uma tentativa baseada apenas na documentação disponível e uma alternativa em Groovy
-3. Cite exemplos específicos da documentação para justificar suas escolhas sintáticas
-4. Para qualquer código BFC-Script, analise criticamente se cada linha segue exatamente os padrões observados na documentação
-5. Sempre considere que palavras-chave como "função", "if", "for" podem ser completamente diferentes em BFC-Script - use apenas o que está documentado
+DIRETRIZES PRINCIPAIS:
+1. Priorize a precisão sintática
+2. Quando não tiver certeza, forneça duas soluções: uma baseada na documentação e uma alternativa em Groovy
+3. Cite exemplos específicos da documentação para justificar suas escolhas
+6. Utilize os enums, funções e fontes de dados disponíveis nos módulos folha e pessoal quando apropriado
+7. Adapte sua resposta ao contexto específico da pergunta, seja documentação, geração de código ou consulta a dados
+
+ESTILO DE RESPOSTA:
+1. Seja preciso e baseie-se no contexto fornecido
+2. Use exemplos concretos sempre que possível
+3. Organize informações técnicas em seções claras
+4. Cite a fonte da informação quando relevante
+5. Quando não houver informação suficiente, indique claramente as limitações
+6. Adapte seu estilo ao contexto da pergunta (técnico, explicativo, ou prático)
+7. Priorize informações relevantes baseadas no score de relevância
+8. Para perguntas com múltiplos aspectos, organize a resposta em seções lógicas
+9. Para solicitações de scripts, forneça código completo e funcional baseado nos exemplos disponíveis
 """
 
 # RAG user prompt
 RAG_USER_PROMPT = """
-Consulte a documentação do BFC-Script fornecida para responder à pergunta do usuário.
+Com base nas seguintes informações da documentação e código do BFC-Script e fonte de dados:
 
 DOCUMENTAÇÃO (contexto recuperado):
 {context}
@@ -43,28 +55,41 @@ HISTÓRICO DE CONVERSA RECENTE:
 
 PERGUNTA DO USUÁRIO: {query}
 
-INSTRUÇÕES ESPECÍFICAS:
-1. PRIMEIRO: Verifique cuidadosamente se a documentação fornecida contém exemplos diretos ou informações suficientes para responder à pergunta.
+INSTRUÇÕES PARA RESPOSTA:
 
-2. Se a documentação CONTIVER informações suficientes:
-   - Cite diretamente trechos relevantes da documentação
-   - Use APENAS as estruturas sintáticas, funções e padrões EXATAMENTE como aparecem na documentação
+1. VERIFICAÇÃO INICIAL:
+   - Analise se a documentação contém informações suficientes para responder à pergunta
+   - Identifique os trechos mais relevantes baseados no score de relevância
+   - Verifique se existem exemplos de código ou fontes de dados relevantes para a pergunta
+
+2. SE A DOCUMENTAÇÃO FOR SUFICIENTE:
+   - Cite diretamente os trechos relevantes da documentação
+   - Use APENAS estruturas sintáticas, funções e padrões EXATAMENTE como aparecem
    - Forneça exemplos de código que sigam fielmente os exemplos encontrados
-   - NÃO INVENTE funções ou métodos que não estejam na documentação
+   - NÃO INVENTE funções ou métodos não documentados
+   - Se a pergunta envolver acesso a dados, utilize as fontes de dados apropriadas (folha, pessoal)
 
-3. Se a documentação NÃO CONTIVER informações suficientes:
+3. SE A DOCUMENTAÇÃO FOR INSUFICIENTE:
    - Indique claramente: "Esta funcionalidade específica não está documentada no material fornecido. Vou mostrar duas soluções:"
-   - SOLUÇÃO 1: Crie uma implementação usando APENAS os padrões sintáticos do BFC-Script identificados na documentação. Se não houver exemplos claros de como declarar funções no BFC-Script, NÃO use palavras-chave como "função", "def", etc.
-   - SOLUÇÃO 2: Forneça uma implementação equivalente em Groovy, claramente identificada: "### Implementação alternativa em Groovy:"
+   - SOLUÇÃO 1: Implementação usando APENAS padrões sintáticos identificados na documentação
+   - SOLUÇÃO 2: Implementação equivalente em Groovy, claramente identificada como alternativa
 
-4. IMPORTANTE - CONVENÇÕES DE CÓDIGO:
+4. CONVENÇÕES DE CÓDIGO:
    - NÃO use acentos em nomes de funções ou variáveis
-   - Siga estritamente as convenções de nomenclatura observadas na documentação
+   - Siga estritamente as convenções de nomenclatura observadas
    - Mantenha consistência com maiúsculas/minúsculas em palavras-chave
-   - Se você não vir exemplos claros da sintaxe para declarar funções, variáveis ou estruturas, PERGUNTE-SE: "Como isso aparece nos exemplos da documentação?" e siga apenas esses exemplos
+   - Para estruturas não documentadas, pergunte-se: "Como isso aparece nos exemplos?"
+   - Utilize os enums apropriados quando disponíveis
 
 5. PARA CÓDIGO NÃO DOCUMENTADO:
-   - Analise a documentação para identificar padrões sintáticos (como loops são escritos, como funções são declaradas)
+   - Analise a documentação para identificar padrões sintáticos existentes
    - Siga ESTRITAMENTE esses padrões ao criar novos exemplos
-   - Se não houver exemplos de uma estrutura específica, mencione isso e sugira alternativas que estejam documentadas
+   - Se não houver exemplos de uma estrutura específica, mencione isso e sugira alternativas documentadas
+
+6. PARA SOLICITAÇÕES DE SCRIPTS:
+   - Forneça código completo e funcional baseado nos exemplos disponíveis
+   - Inclua todas as importações e configurações necessárias
+   - Utilize as fontes de dados apropriadas (folha, pessoal) quando relevante
+   - Demonstre o uso correto de enums e constantes
+   - Explique brevemente como o script funciona e como executá-lo
 """

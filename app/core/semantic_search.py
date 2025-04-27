@@ -1,143 +1,327 @@
+# semantic_search.py
 import os
+import time
 import chromadb
 from chromadb.config import Settings
 from openai import OpenAI
+import numpy as np
+from typing import List, Dict, Any, Optional, Tuple
+import logging
 
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("semantic_search.log"),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
 
 class SemanticSearch:
-    def __init__(self, api_key=None):
+    def __init__(self, api_key=None, chroma_path="./chroma_db"):
+        """
+        Initialize SemanticSearch with OpenAI API key and ChromaDB client.
+        
+        Args:
+            api_key: OpenAI API key
+            chroma_path: Path to ChromaDB
+        """
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         if not self.api_key:
             raise ValueError("OpenAI API key is required. Set OPENAI_API_KEY environment variable or pass it to the constructor.")
         
         self.client = OpenAI(api_key=self.api_key)
+        self.chroma_path = chroma_path
         
-        # Initialize ChromaDB client with specific embedding function
+        # Initialize ChromaDB client
         self.chroma_client = chromadb.PersistentClient(
-            path="./chroma_db",
+            path=chroma_path,
             settings=Settings(
                 anonymized_telemetry=False
             )
         )
         
-        # Get collections
-        try:
-            self.docs_collection = self.chroma_client.get_collection("docs")
-            self.enums_collection = self.chroma_client.get_collection("enums")
-            self.folha_collection = self.chroma_client.get_collection("folha")
-            self.pessoal_collection = self.chroma_client.get_collection("pessoal")
-        except Exception as e:
-            print(f"Error loading collections: {str(e)}")
-            raise
+        # Load collections
+        self._load_collections()
+        
+        # Configure search parameters
+        self.max_results_per_collection = 10  # Increased from 5 to get more results
+        self.min_relevance_score = 0.3  # Lowered from 0.5 to include more results
     
-    def get_embedding(self, text):
+    def _load_collections(self):
         """
-        Get embedding for text using the correct model.
+        Load collections from ChromaDB.
+        """
+        try:
+            # Get all collections
+            collections = self.chroma_client.list_collections()
+            
+            # Initialize collections dictionary
+            self.collections = {}
+            
+            # Load each collection
+            for collection in collections:
+                collection_name = collection.name
+                self.collections[collection_name] = collection
+                logger.info(f"Loaded collection: {collection_name}")
+            
+            # Check if we have the expected collections
+            expected_collections = ["docs", "enums", "folha", "pessoal"]
+            for collection_name in expected_collections:
+                if collection_name not in self.collections:
+                    logger.warning(f"Expected collection {collection_name} not found")
+            
+            logger.info(f"Loaded {len(self.collections)} collections")
+        except Exception as e:
+            logger.error(f"Error loading collections: {str(e)}")
+            self.collections = {}
+    
+    def get_embedding(self, text: str) -> List[float]:
+        """
+        Get embedding for text using OpenAI API.
         
         Args:
-            text (str): Text to get embedding for
+            text: Text to embed
             
         Returns:
-            list: Embedding vector
+            Embedding vector
         """
         try:
+            # Truncate text if too long
+            max_tokens = 8000
+            if len(text) > max_tokens:
+                text = text[:max_tokens]
+            
+            # Get embedding
             response = self.client.embeddings.create(
-                model="text-embedding-3-large",  # Using the same model as used for collection creation
+                model="text-embedding-3-large",
                 input=text
             )
+            
             return response.data[0].embedding
         except Exception as e:
-            print(f"Error getting embedding: {str(e)}")
-            raise
+            logger.error(f"Error getting embedding: {str(e)}")
+            # Return a random embedding as fallback
+            return np.random.rand(1536).tolist()
     
-    def search(self, query, category="Geral", top_k=8):
+    def search_collection(self, collection_name: str, query_embedding: List[float], top_k: int = 10, 
+                         filters: Optional[Dict] = None) -> List[Dict]:
         """
-        Perform semantic search on the documentation based on the query and category.
+        Search in a specific collection.
         
         Args:
-            query (str): The user's query
-            category (str): The selected category (Geral, Service Layer, Fonte de Dados, Relatório)
-            top_k (int): Number of top results to retrieve
+            collection_name: Name of the collection
+            query_embedding: Query embedding vector
+            top_k: Number of results to return
+            filters: Optional filters for the query
             
         Returns:
-            list: Filtered search results
+            List of search results
         """
+        collection = self.collections.get(collection_name)
+        if not collection:
+            logger.warning(f"Collection {collection_name} not available")
+            return []
+        
         try:
-            # Expand query for better semantic search
-            expanded_query = f"{query} BFC-Script documentação exemplos código sintaxe"
+            # Prepare query parameters
+            query_params = {
+                "query_embeddings": [query_embedding],
+                "n_results": top_k
+            }
             
-            # Get embedding for the query
-            query_embedding = self.get_embedding(expanded_query)
+            if filters:
+                query_params["where"] = filters
             
-            # Search in the appropriate collection based on category
-            if category == "Geral":
-                # Search across all collections
-                all_results = []
-                for collection in [self.docs_collection, self.enums_collection, self.folha_collection, self.pessoal_collection]:
-                    try:
-                        collection_results = collection.query(
-                            query_embeddings=[query_embedding],
-                            n_results=top_k
-                        )
-                        if collection_results and 'documents' in collection_results:
-                            for i in range(len(collection_results['documents'][0])):
-                                all_results.append({
-                                    "content": collection_results['documents'][0][i],
-                                    "metadata": collection_results['metadatas'][0][i] if 'metadatas' in collection_results else {}
-                                })
-                    except Exception as e:
-                        print(f"Error searching in collection {collection.name}: {str(e)}")
-                        continue
-                
-                # Sort and limit results
-                all_results = all_results[:top_k]
-                return all_results
-            else:
-                # Search in specific collection based on category
-                collection = self.docs_collection  # Default to docs collection
-                results = collection.query(
-                    query_embeddings=[query_embedding],
-                    n_results=top_k
-                )
-                
-                # Format results
-                formatted_results = []
-                if results and 'documents' in results:
-                    for i in range(len(results['documents'][0])):
+            # Execute query
+            results = collection.query(**query_params)
+            
+            # Format results
+            formatted_results = []
+            if results and 'documents' in results and results['documents']:
+                for i in range(len(results['documents'][0])):
+                    # Only include results with high relevance
+                    distance = results['distances'][0][i] if 'distances' in results and results['distances'] else 1.0
+                    relevance_score = 1.0 - distance  # Convert distance to relevance score
+                    
+                    if relevance_score >= self.min_relevance_score:
                         formatted_results.append({
                             "content": results['documents'][0][i],
-                            "metadata": results['metadatas'][0][i] if 'metadatas' in results else {}
+                            "metadata": results['metadatas'][0][i] if 'metadatas' in results and results['metadatas'] else {},
+                            "distance": distance,
+                            "collection": collection_name,
+                            "relevance_score": relevance_score
                         })
-                
-                return formatted_results
+            
+            return formatted_results
         except Exception as e:
-            print(f"Error in search: {str(e)}")
+            logger.error(f"Error searching in collection {collection_name}: {str(e)}")
             return []
-
-    def get_document_context(self, query, top_k=8):
+    
+    def merge_and_rank_results(self, results_by_collection: Dict[str, List[Dict]], top_k: int = 10) -> List[Dict]:
+        """
+        Merge and rank results from multiple collections.
+        
+        Args:
+            results_by_collection: Dictionary of results by collection
+            top_k: Number of results to return
+            
+        Returns:
+            Merged and ranked results
+        """
+        # Flatten results
+        all_results = []
+        for collection_name, results in results_by_collection.items():
+            all_results.extend(results)
+        
+        # Sort by relevance score
+        all_results.sort(key=lambda x: x.get("relevance_score", 0), reverse=True)
+        
+        # Return top k results
+        return all_results[:top_k]
+    
+    def extract_keywords(self, query: str) -> List[str]:
+        """
+        Extract keywords from the query to improve search.
+        
+        Args:
+            query: User query
+            
+        Returns:
+            List of keywords
+        """
+        # Common BFC-Script keywords related to data sources and functions
+        bfc_keywords = [
+            "cargo", "funcionario", "folha", "pessoal", "salario", "contrato", 
+            "evento", "rubrica", "lancamento", "historico", "movimento", 
+            "filtro", "campos", "ordenacao", "percorrer", "dados", "fonte"
+        ]
+        
+        # Extract keywords from query
+        keywords = []
+        query_lower = query.lower()
+        
+        for keyword in bfc_keywords:
+            if keyword in query_lower:
+                keywords.append(keyword)
+        
+        return keywords
+    
+    def search(self, query: str, top_k: int = 10) -> List[Dict]:
+        """
+        Perform semantic search across all collections.
+        
+        Args:
+            query: User query
+            top_k: Number of results to return
+            
+        Returns:
+            Search results
+        """
+        try:
+            # Extract keywords from query
+            keywords = self.extract_keywords(query)
+            
+            # Clean query and expand for better semantic search
+            expanded_query = f"{query} BFC-Script documentação exemplos código sintaxe"
+            
+            # Add keywords to expanded query
+            if keywords:
+                expanded_query += " " + " ".join(keywords)
+            
+            # Get embedding for query
+            query_embedding = self.get_embedding(expanded_query)
+            
+            # Search in all collections
+            results_by_collection = {}
+            for collection_name in self.collections:
+                if self.collections[collection_name]:
+                    collection_results = self.search_collection(
+                        collection_name, 
+                        query_embedding, 
+                        top_k=self.max_results_per_collection
+                    )
+                    results_by_collection[collection_name] = collection_results
+            
+            # If no results found, try with just the keywords
+            if not any(results for results in results_by_collection.values()) and keywords:
+                logger.info(f"No results found with full query, trying with keywords: {keywords}")
+                keyword_query = " ".join(keywords)
+                keyword_embedding = self.get_embedding(keyword_query)
+                
+                for collection_name in self.collections:
+                    if self.collections[collection_name]:
+                        collection_results = self.search_collection(
+                            collection_name, 
+                            keyword_embedding, 
+                            top_k=self.max_results_per_collection
+                        )
+                        results_by_collection[collection_name] = collection_results
+            
+            # Merge and rank results
+            merged_results = self.merge_and_rank_results(results_by_collection, top_k)
+            
+            # Add search metadata
+            for result in merged_results:
+                result["query"] = query
+            
+            # Log search results
+            logger.info(f"Search for '{query}' returned {len(merged_results)} results")
+            
+            return merged_results
+        except Exception as e:
+            logger.error(f"Error in search: {str(e)}")
+            return []
+    
+    def get_document_context(self, query: str, top_k: int = 10) -> Tuple[str, List[Dict]]:
         """
         Get context from documents based on the query.
         
         Args:
-            query (str): The user's query
-            top_k (int): Number of top results to retrieve
+            query: User query
+            top_k: Number of results to return
             
         Returns:
-            tuple: (context string, search results list)
+            Context string and search results
         """
         try:
-            # Extract category from query if present
-            category = "Geral"
-            if "[Categoria:" in query:
-                category = query.split("[Categoria:")[1].split("]")[0].strip()
-                query = query.split("]")[1].strip()
-            
-            results = self.search(query, category, top_k)
+            # Get search results
+            results = self.search(query, top_k)
             if not results:
+                logger.warning(f"No results found for query: {query}")
                 return "", []
             
-            context = "\n".join([r["content"] for r in results])
+            # Build context with source information
+            context_parts = []
+            for i, r in enumerate(results):
+                metadata = r.get("metadata", {})
+                source_info = []
+                
+                # Add collection-specific metadata
+                if r.get("collection") == "docs":
+                    if metadata.get("document"):
+                        source_info.append(f"Documento: {metadata['document']}")
+                    if metadata.get("section"):
+                        source_info.append(f"Seção: {metadata['section']}")
+                elif r.get("collection") == "enums":
+                    if metadata.get("enum_name"):
+                        source_info.append(f"Enum: {metadata['enum_name']}")
+                elif r.get("collection") in ["folha", "pessoal"]:
+                    if metadata.get("function_name"):
+                        source_info.append(f"Função: {metadata['function_name']}")
+                    if metadata.get("filename"):
+                        source_info.append(f"Arquivo: {metadata['filename']}")
+                
+                # Build context entry with relevance score
+                source_str = " | ".join(source_info)
+                relevance = r.get("relevance_score", 0.0)
+                context_parts.append(f"[{i+1}] Relevância: {relevance:.2f}\n{r['content']}\nFonte: {source_str}\n")
+            
+            context = "\n".join(context_parts)
+            logger.info(f"Generated context with {len(results)} results for query: {query}")
             return context, results
         except Exception as e:
-            print(f"Error getting document context: {str(e)}")
+            logger.error(f"Error getting document context: {str(e)}")
             return "", []

@@ -1,8 +1,30 @@
+# response_generator.py
 from openai import OpenAI
 import os
+import json
+import logging
+from typing import List, Dict, Any, Optional, Tuple
+import tiktoken
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("response_generator.log"),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
 
 class ResponseGenerator:
     def __init__(self, api_key=None):
+        """
+        Initialize ResponseGenerator with OpenAI API key.
+        
+        Args:
+            api_key: OpenAI API key
+        """
         # Use environment variable if no key is provided
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         if not self.api_key:
@@ -10,128 +32,408 @@ class ResponseGenerator:
         
         self.client = OpenAI(api_key=self.api_key)
         
-        # Define specific prompts for each category
-        self.category_prompts = {
-            "Service Layer": """Você é um especialista em Service Layer do BFC-Script. 
-            Suas respostas devem focar em:
-            - Criação e implementação de serviços
-            - Boas práticas de arquitetura em camadas
-            - Padrões de design para serviços
-            - Integração entre camadas
-            - Tratamento de erros em serviços
-            - Performance e otimização de serviços""",
+        # Load prompts from prompts.py
+        self.prompts = self._load_prompts()
+        
+        # Set system prompt from loaded prompts
+        self.system_prompt = self.prompts.get("RAG_SYSTEM_PROMPT", "")
+        
+        # Initialize tokenizer
+        self.tokenizer = tiktoken.encoding_for_model("gpt-4o-mini")
+        
+        # Set maximum context length (leaving room for response)
+        self.max_context_tokens = 6000  # Conservative limit to leave room for response
+        
+        # Configure token limits for different components
+        self.max_syntax_patterns_tokens = 1000  # Limit for syntax patterns extraction
+        self.max_history_tokens = 500  # Limit for conversation history
+        
+        # Load common BFC-Script patterns
+        self.bfc_patterns = self._load_bfc_patterns()
+        
+    def count_tokens(self, text: str) -> int:
+        """
+        Count the number of tokens in a text.
+        
+        Args:
+            text: Text to count tokens for
             
-            "Fonte de Dados": """Você é um especialista em Fontes de Dados do BFC-Script.
-            Suas respostas devem focar em:
-            - Conexão com diferentes tipos de bancos de dados
-            - Queries e manipulação de dados
-            - Otimização de consultas
-            - Tratamento de transações
-            - Cache e performance
-            - Segurança e proteção de dados""",
+        Returns:
+            Number of tokens
+        """
+        return len(self.tokenizer.encode(text))
+    
+    def truncate_context(self, context: str, max_tokens: int) -> str:
+        """
+        Truncate context to fit within token limit while preserving structure.
+        
+        Args:
+            context: Original context
+            max_tokens: Maximum number of tokens allowed
             
-            "Relatório": """Você é um especialista em Geração de Relatórios do BFC-Script.
-            Suas respostas devem focar em:
-            - Criação de relatórios
-            - Formatação e layout
-            - Agregação de dados
-            - Gráficos e visualizações
-            - Exportação em diferentes formatos
-            - Personalização e templates"""
+        Returns:
+            Truncated context
+        """
+        # Split context into sections (assuming sections are separated by newlines)
+        sections = context.split('\n\n')
+        truncated_sections = []
+        current_tokens = 0
+        
+        for section in sections:
+            section_tokens = self.count_tokens(section)
+            if current_tokens + section_tokens <= max_tokens:
+                truncated_sections.append(section)
+                current_tokens += section_tokens
+            else:
+                # If a single section is too long, truncate it
+                if section_tokens > max_tokens:
+                    # Try to preserve the first part of the section
+                    words = section.split()
+                    truncated_text = ""
+                    for word in words:
+                        if self.count_tokens(truncated_text + " " + word) <= max_tokens:
+                            truncated_text += " " + word if truncated_text else word
+                        else:
+                            break
+                    if truncated_text:
+                        truncated_sections.append(truncated_text + "...")
+                break
+        
+        return "\n\n".join(truncated_sections)
+    
+    def _load_prompts(self) -> Dict[str, str]:
+        """
+        Load prompts from prompts.py.
+        
+        Returns:
+            Dictionary of prompts
+        """
+        try:
+            # Import prompts from prompts.py
+            from utils.prompts import (
+                RAG_SYSTEM_PROMPT,
+                RAG_USER_PROMPT,
+                SYNTAX_EXTRACTION_PROMPT
+            )
+            
+            # Create dictionary with prompts
+            prompts = {
+                "RAG_SYSTEM_PROMPT": RAG_SYSTEM_PROMPT,
+                "RAG_USER_PROMPT": RAG_USER_PROMPT,
+                "SYNTAX_EXTRACTION_PROMPT": SYNTAX_EXTRACTION_PROMPT
+            }
+            
+            logger.info("Loaded prompts from prompts.py")
+            return prompts
+            
+        except Exception as e:
+            logger.error(f"Error loading prompts from prompts.py: {str(e)}")
+            
+            # Fallback to default prompts if import fails
+            return {
+                "RAG_SYSTEM_PROMPT": """Você é um assistente especializado em códigos BFC-Script.
+                Você deve responder às perguntas do usuário com precisão e clareza, baseando-se no contexto fornecido.
+                Quando o usuário pedir para criar um script, você deve gerar código BFC-Script completo e funcional.
+                Use os exemplos de código fornecidos no contexto como referência para a sintaxe correta.
+                Sempre inclua a fonte de dados correta (Dados.folha.v2, Dados.pessoal.v2, etc.) e os campos solicitados.
+                Use a sintaxe de percorrer para iterar sobre os resultados quando necessário.""",
+                
+                "RAG_USER_PROMPT": """Com base nas seguintes informações da documentação e código do BFC-Script e fonte de dados:
+
+                {context}
+                
+                PADRÕES SINTÁTICOS DO BFC-SCRIPT:
+                {syntax_patterns}
+                
+                HISTÓRICO DE CONVERSA RECENTE:
+                {history_context}
+                
+                PERGUNTA DO USUÁRIO: {query}""",
+                
+                "SYNTAX_EXTRACTION_PROMPT": """Analise o seguinte trecho de documentação e código do BFC-Script e extraia os padrões sintáticos:
+
+                DOCUMENTAÇÃO:
+                {context}
+
+                EXTRAIA APENAS:
+                1. Padrões de declaração de funções e métodos (exatamente como aparecem na documentação)
+                2. Estruturas de controle (condicionais, loops, etc.)
+                3. Declaração de variáveis e tipos de dados
+                4. Operadores e expressões
+                5. Convenções de nomenclatura observadas
+                6. Padrões de acesso a fontes de dados (folha, pessoal)
+                7. Uso de enums e constantes
+
+                Forneça um resumo conciso dos padrões sintáticos observados, sem adicionar interpretações."""
+            }
+    
+    def _load_bfc_patterns(self) -> Dict[str, Any]:
+        """
+        Load common BFC-Script patterns for better code generation.
+        
+        Returns:
+            Dictionary of BFC-Script patterns
+        """
+        return {
+            "data_sources": {
+                "folha": {
+                    "cargo": "Dados.folha.v2.cargo",
+                    "funcionario": "Dados.folha.v2.funcionario",
+                    "contrato": "Dados.folha.v2.contrato",
+                    "evento": "Dados.folha.v2.evento",
+                    "rubrica": "Dados.folha.v2.rubrica",
+                    "lancamento": "Dados.folha.v2.lancamento",
+                    "historico": "Dados.folha.v2.historico",
+                    "movimento": "Dados.folha.v2.movimento"
+                },
+                "pessoal": {
+                    "funcionario": "Dados.pessoal.v2.funcionario",
+                    "contrato": "Dados.pessoal.v2.contrato",
+                    "cargo": "Dados.pessoal.v2.cargo",
+                    "departamento": "Dados.pessoal.v2.departamento",
+                    "centro_custo": "Dados.pessoal.v2.centroCusto"
+                }
+            },
+            "common_functions": {
+                "busca": "busca(campos: string, filtros: object, ordenacao: string)",
+                "percorrer": "percorrer(colecao) { item -> ... }",
+                "filtro": "filtro(campo, operador, valor)",
+                "ordenacao": "ordenacao(campo, direcao)"
+            }
         }
     
-    def extract_syntax_patterns(self, context):
+    def extract_syntax_patterns(self, context: str) -> str:
         """
         Extract common BFC-Script syntax patterns from context.
         
         Args:
-            context (str): Documentation context
+            context: Documentation context
             
         Returns:
-            str: Extracted syntax patterns
+            Extracted syntax patterns
         """
         try:
-            from utils.prompts import SYNTAX_EXTRACTION_PROMPT
+            # Truncate context for syntax extraction to avoid token limit
+            truncated_context = self.truncate_context(context, self.max_syntax_patterns_tokens)
             
-            syntax_prompt = SYNTAX_EXTRACTION_PROMPT.format(context=context)
+            # Use loaded prompt or default
+            syntax_prompt = self.prompts.get("SYNTAX_EXTRACTION_PROMPT").format(context=truncated_context)
             
             response = self.client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": "Você é um analisador sintático técnico que extrai padrões de código de documentação."},
                     {"role": "user", "content": syntax_prompt}
-                ]
+                ],
+                temperature=0.3  # Lower temperature for more consistent pattern extraction
             )
             
             return response.choices[0].message.content
         except Exception as e:
-            print(f"Erro ao extrair padrões sintáticos: {str(e)}")
-            return ""
+            logger.error(f"Erro ao extrair padrões sintáticos: {str(e)}")
+            return "Não foi possível extrair padrões sintáticos."
     
-    def get_category_from_query(self, query):
+    def format_history(self, history: List[Tuple[str, str]], max_entries: int = 2) -> str:
         """
-        Extract category from query.
+        Format conversation history for inclusion in prompt.
         
         Args:
-            query (str): User query
+            history: List of (query, response) tuples
+            max_entries: Maximum number of history entries to include
             
         Returns:
-            str: Category name
+            Formatted history string
         """
-        if "[Categoria:" in query:
-            return query.split("[Categoria:")[1].split("]")[0].strip()
-        return "Geral"
+        if not history:
+            return ""
+            
+        # Take the most recent entries
+        last_exchanges = history[-max_entries:] if len(history) > max_entries else history
+        
+        # Format as conversation
+        history_parts = []
+        for i, (q, a) in enumerate(last_exchanges):
+            history_parts.append(f"[Conversa {i+1}]\nUsuário: {q}\nAssistente: {a}")
+        
+        history_text = "\n\n".join(history_parts)
+        
+        # Truncate history if too long
+        if self.count_tokens(history_text) > self.max_history_tokens:
+            history_text = self.truncate_context(history_text, self.max_history_tokens)
+        
+        return history_text
     
-    def generate_response(self, query, context, history=None):
+    def extract_function_requirements(self, query: str) -> Dict[str, Any]:
+        """
+        Extract function requirements from the query.
+        
+        Args:
+            query: User query
+            
+        Returns:
+            Dictionary of function requirements
+        """
+        requirements = {
+            "entity": None,
+            "fields": [],
+            "filters": [],
+            "ordering": None
+        }
+        
+        # Common entity keywords
+        entity_keywords = {
+            "cargo": ["cargo", "cargos", "cbo"],
+            "funcionario": ["funcionario", "funcionários", "colaborador", "colaboradores"],
+            "contrato": ["contrato", "contratos"],
+            "evento": ["evento", "eventos"],
+            "rubrica": ["rubrica", "rubricas"],
+            "lancamento": ["lancamento", "lançamentos"],
+            "historico": ["historico", "histórico"],
+            "movimento": ["movimento", "movimentos"],
+            "departamento": ["departamento", "departamentos"],
+            "centro_custo": ["centro de custo", "centro de custos", "centro_custo", "centro_custos"]
+        }
+        
+        # Detect entity
+        query_lower = query.lower()
+        for entity, keywords in entity_keywords.items():
+            for keyword in keywords:
+                if keyword in query_lower:
+                    requirements["entity"] = entity
+                    break
+            if requirements["entity"]:
+                break
+        
+        # Extract fields
+        if "campos" in query_lower:
+            # Try to extract fields from the query
+            # This is a simple approach and might need improvement
+            field_keywords = ["cbo", "id", "descricao", "tipo", "codigo", "nome", "data", "valor"]
+            for keyword in field_keywords:
+                if keyword in query_lower:
+                    requirements["fields"].append(keyword)
+        
+        # If no fields were detected, add some defaults based on entity
+        if not requirements["fields"] and requirements["entity"]:
+            if requirements["entity"] == "cargo":
+                requirements["fields"] = ["id", "descricao"]
+            elif requirements["entity"] == "funcionario":
+                requirements["fields"] = ["id", "nome"]
+            elif requirements["entity"] == "contrato":
+                requirements["fields"] = ["id", "dataInicio", "dataFim"]
+        
+        return requirements
+    
+    def generate_response(self, query: str, context: str, history: Optional[List[Tuple[str, str]]] = None) -> str:
         """
         Generate a response for the user query using RAG.
         
         Args:
-            query (str): The user's query
-            context (str): Documentation context retrieved from search
-            history (list): Chat history
+            query: The user's query
+            context: Documentation context retrieved from search
+            history: Chat history as list of (query, response) tuples
             
         Returns:
-            str: Generated response
+            Generated response
         """
         try:
-            from utils.prompts import RAG_SYSTEM_PROMPT, RAG_USER_PROMPT
+            # Extract function requirements if this is a code generation query
+            is_code_query = any(keyword in query.lower() for keyword in ["criar", "crie", "script", "código", "codigo", "função", "funcao"])
+            function_requirements = None
             
-            # Extract category from query
-            category = self.get_category_from_query(query)
+            if is_code_query:
+                function_requirements = self.extract_function_requirements(query)
+                logger.info(f"Extracted function requirements: {function_requirements}")
             
-            # Select category-specific prompt
-            category_prompt = self.category_prompts.get(category, RAG_SYSTEM_PROMPT)
-            
-            # Incorporate chat history context for better continuity
-            history_context = ""
-            if history and len(history) > 0:
-                last_exchanges = history[-3:] if len(history) > 3 else history
-                history_context = "\n".join([f"Usuário: {q}\nAssistente: {a}" for q, a in last_exchanges])
-            
+            # If context is empty, try to generate a response anyway
             if not context:
-                return "Não foi possível realizar a busca semântica. Verifique os logs para mais detalhes."
+                logger.warning(f"Empty context for query: {query}")
+                
+                # For code generation queries, use the function requirements
+                if is_code_query and function_requirements:
+                    # Create a minimal context with the function requirements
+                    entity = function_requirements["entity"]
+                    fields = function_requirements["fields"]
+                    
+                    if entity and fields:
+                        # Get the data source from our patterns
+                        data_source = None
+                        for source_type, sources in self.bfc_patterns["data_sources"].items():
+                            if entity in sources:
+                                data_source = sources[entity]
+                                break
+                        
+                        if data_source:
+                            # Create a minimal context with the data source and fields
+                            context = f"Fonte de dados: {data_source}\nCampos disponíveis: {', '.join(fields)}"
+                            logger.info(f"Created minimal context: {context}")
+                        else:
+                            context = "Não há documentação específica disponível para esta consulta. Por favor, forneça uma resposta baseada no seu conhecimento geral sobre BFC-Script."
+                    else:
+                        context = "Não há documentação específica disponível para esta consulta. Por favor, forneça uma resposta baseada no seu conhecimento geral sobre BFC-Script."
+                else:
+                    context = "Não há documentação específica disponível para esta consulta. Por favor, forneça uma resposta baseada no seu conhecimento geral sobre BFC-Script."
+            
+            # Format history if available
+            history_context = self.format_history(history) if history else ""
             
             # Extract syntax patterns for undocumented responses
             syntax_patterns = self.extract_syntax_patterns(context)
             
-            # Build complete prompt
-            prompt = RAG_USER_PROMPT.format(
+            # Add common BFC-Script patterns to syntax patterns
+            if self.bfc_patterns:
+                syntax_patterns += "\n\nPadrões comuns do BFC-Script:\n"
+                
+                # Add data sources
+                syntax_patterns += "\nFontes de dados:\n"
+                for source_type, sources in self.bfc_patterns["data_sources"].items():
+                    syntax_patterns += f"- {source_type}:\n"
+                    for entity, source in sources.items():
+                        syntax_patterns += f"  - {entity}: {source}\n"
+                
+                # Add common functions
+                syntax_patterns += "\nFunções comuns:\n"
+                for func, signature in self.bfc_patterns["common_functions"].items():
+                    syntax_patterns += f"- {func}: {signature}\n"
+            
+            # Build user prompt with all necessary context
+            user_prompt = self.prompts.get("RAG_USER_PROMPT").format(
                 context=context,
                 syntax_patterns=syntax_patterns,
                 history_context=history_context,
                 query=query
             )
             
+            # Count tokens and truncate if necessary
+            total_tokens = (
+                self.count_tokens(self.system_prompt) +
+                self.count_tokens(user_prompt)
+            )
+            
+            if total_tokens > self.max_context_tokens:
+                logger.warning(f"Context too long ({total_tokens} tokens), truncating...")
+                # Truncate context while preserving structure
+                truncated_context = self.truncate_context(context, self.max_context_tokens)
+                user_prompt = self.prompts.get("RAG_USER_PROMPT").format(
+                    context=truncated_context,
+                    syntax_patterns=syntax_patterns,
+                    history_context=history_context,
+                    query=query
+                )
+            
+            # Generate response with appropriate model
             response = self.client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-4o-mini",
                 messages=[
-                    {"role": "system", "content": category_prompt},
-                    {"role": "user", "content": prompt}
-                ]
+                    {"role": "system", "content": self.system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                temperature=0.3,  # Lower temperature for more consistent responses
+                max_tokens=2000  # Adjust based on expected response length
             )
 
             return response.choices[0].message.content
+        
         except Exception as e:
-            print(f"Erro ao gerar resposta: {str(e)}")
-            return f"Ocorreu um erro ao processar sua consulta: {str(e)}"
+            logger.error(f"Erro ao gerar resposta: {str(e)}")
+            return f"Desculpe, ocorreu um erro ao processar sua consulta. Por favor, tente novamente ou reformule sua pergunta."

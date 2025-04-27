@@ -7,3 +7,4 @@ __pycache__/
 *.pyc
 chroma_db/
 .venv/
+*.log

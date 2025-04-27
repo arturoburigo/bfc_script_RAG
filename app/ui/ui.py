@@ -11,33 +11,26 @@ class BFCScriptUI:
             search_engine: An instance of SemanticSearch (optional)
             response_generator: An instance of ResponseGenerator (optional)
         """
-        # Criar instâncias se não forem fornecidas
+        # Create instances if not provided
         self.search_engine = search_engine or SemanticSearch()
         self.response_generator = response_generator or ResponseGenerator()
-        
-        # Categorias disponíveis
-        self.categories = ["Geral", "Service Layer", "Fonte de Dados", "Relatório"]
-        
-    def chat_handler(self, message, history, category):
+    
+    def chat_handler(self, message, history):
         """
         Handle incoming chat messages and generate responses.
         
         Args:
             message (str): User message
             history (list): Chat history
-            category (str): Selected category
             
         Returns:
             str: Assistant response
         """
-        # Adicionar contexto da categoria selecionada à mensagem
-        context_message = f"[Categoria: {category}] {message}"
+        # Get document context
+        context, _ = self.search_engine.get_document_context(message)
         
-        # Obter o contexto da documentação
-        context, _ = self.search_engine.get_document_context(context_message)
-        
-        # Gerar resposta
-        response = self.response_generator.generate_response(context_message, context, history)
+        # Generate response
+        response = self.response_generator.generate_response(message, context, history)
         return response
     
     def create_interface(self):
@@ -49,21 +42,31 @@ class BFCScriptUI:
         """
         with gr.Blocks(theme="soft") as demo:
             gr.Markdown("# BFC-Script Assistant")
-            gr.Markdown("Faça perguntas sobre BFC-Script e obtenha respostas baseadas na documentação. Para funcionalidades não documentadas, fornecerei soluções em BFC-Script e Groovy.")
+            gr.Markdown("""
+            Bem-vindo ao BFC-Script Assistant! 
             
-            # Adicionar radio buttons para categorias
-            category = gr.Radio(
-                choices=self.categories,
-                value="Geral",  # Valor padrão
-                label="Selecione a categoria",
-                info="Escolha a categoria da sua pergunta"
-            )
+            Este assistente utiliza a documentação do BFC-Script para responder suas perguntas e gerar código.
+            Você pode perguntar sobre:
+            - Sintaxe e funcionalidades do BFC-Script
+            - Exemplos de código e implementações
+            - Enums e funções disponíveis
+            - Boas práticas e padrões de desenvolvimento
             
-            # Criar o chat interface
+            O assistente irá automaticamente buscar as informações mais relevantes em toda a base de conhecimento.
+            """)
+            
+            # Create the chat interface
             chat = gr.ChatInterface(
                 fn=self.chat_handler,
-                additional_inputs=[category],
-                type="messages"  # Usar o novo formato de mensagens
+                title="Chat",
+                description="Faça suas perguntas sobre BFC-Script",
+                examples=[
+                    "Como criar uma função no BFC-Script?",
+                    "Quais são os tipos de dados suportados?",
+                    "Como fazer um loop em BFC-Script?",
+                    "Mostre um exemplo de uso de enums"
+                ],
+                theme="soft"
             )
             
         return demo
