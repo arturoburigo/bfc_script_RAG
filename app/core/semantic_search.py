@@ -7,17 +7,10 @@ from openai import OpenAI
 import numpy as np
 from typing import List, Dict, Any, Optional, Tuple
 import logging
+from .config import setup_logging, is_dev_mode, log_debug, log_function_call, log_function_return
 
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("semantic_search.log"),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logger = setup_logging(__name__, "logs/semantic_search.log")
 
 class SemanticSearch:
     def __init__(self, api_key=None, chroma_path="./chroma_db"):
@@ -225,7 +218,7 @@ class SemanticSearch:
             keywords = self.extract_keywords(query)
             
             # Clean query and expand for better semantic search
-            expanded_query = f"{query} BFC-Script documentação exemplos código sintaxe"
+            expanded_query = f"{query} documentação exemplos código sintaxe"
             
             # Add keywords to expanded query
             if keywords:

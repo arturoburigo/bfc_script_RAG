@@ -1,21 +1,17 @@
 # response_generator.py
-from openai import OpenAI
 import os
 import json
-import logging
+import openai
 from typing import List, Dict, Any, Optional, Tuple
+import logging
+from .config import setup_logging, is_dev_mode, log_debug, log_function_call, log_function_return
 import tiktoken
 
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("response_generator.log"),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logger = setup_logging(__name__, "logs/response_generator.log")
+
+# Set OpenAI API key
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 class ResponseGenerator:
     def __init__(self, api_key=None):
@@ -30,7 +26,7 @@ class ResponseGenerator:
         if not self.api_key:
             raise ValueError("OpenAI API key is required. Set OPENAI_API_KEY environment variable or pass it to the constructor.")
         
-        self.client = OpenAI(api_key=self.api_key)
+        self.client = openai.OpenAI(api_key=self.api_key)
         
         # Load prompts from prompts.py
         self.prompts = self._load_prompts()

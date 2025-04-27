@@ -9,26 +9,23 @@ import logging
 import ijson
 from typing import List, Dict, Any, Optional, Set, Generator
 import uuid
+from .config import setup_logging, is_dev_mode, log_debug, log_function_call, log_function_return
 
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("chroma_initialization.log"),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logger = setup_logging(__name__, "logs/chroma_initialization.log")
 
 def safe_metadata_value(value, default=""):
     """
     Convert a value to a safe metadata value that ChromaDB accepts.
     Returns default value for None values.
     """
+    log_function_call(logger, "safe_metadata_value", args=(value, default))
     if value is None:
-        return default
-    return str(value)
+        result = default
+    else:
+        result = str(value)
+    log_function_return(logger, "safe_metadata_value", result)
+    return result
 
 def validate_embedding(embedding: List[float]) -> bool:
     """
@@ -40,11 +37,21 @@ def validate_embedding(embedding: List[float]) -> bool:
     Returns:
         bool: True if valid, False otherwise
     """
+    log_function_call(logger, "validate_embedding", args=(embedding,))
+    
     if not isinstance(embedding, list):
-        return False
-    if len(embedding) == 0:
-        return False
-    return all(isinstance(x, (int, float)) for x in embedding)
+        log_debug(logger, f"Embedding is not a list: {type(embedding)}")
+        result = False
+    elif len(embedding) == 0:
+        log_debug(logger, "Embedding is empty")
+        result = False
+    else:
+        result = all(isinstance(x, (int, float)) for x in embedding)
+        if not result:
+            log_debug(logger, f"Embedding contains non-numeric values: {[type(x) for x in embedding[:5]]}")
+    
+    log_function_return(logger, "validate_embedding", result)
+    return result
 
 def process_batch(collection, documents, embeddings, metadatas, ids):
     """
@@ -60,7 +67,16 @@ def process_batch(collection, documents, embeddings, metadatas, ids):
     Returns:
         int: Number of documents added
     """
+    log_function_call(logger, "process_batch", kwargs={
+        "collection": collection.name if hasattr(collection, 'name') else str(collection),
+        "documents_count": len(documents),
+        "embeddings_count": len(embeddings),
+        "metadatas_count": len(metadatas),
+        "ids_count": len(ids)
+    })
+    
     if not documents:
+        log_debug(logger, "No documents to process")
         return 0
     
     try:
@@ -70,7 +86,10 @@ def process_batch(collection, documents, embeddings, metadatas, ids):
             metadatas=metadatas,
             ids=ids
         )
-        return len(documents)
+        result = len(documents)
+        log_debug(logger, f"Successfully added {result} documents to collection")
+        log_function_return(logger, "process_batch", result)
+        return result
     except Exception as e:
         logger.error(f"Error adding batch to collection: {str(e)}")
         # Try adding documents one by one to identify problematic entries
@@ -86,6 +105,11 @@ def process_batch(collection, documents, embeddings, metadatas, ids):
                 added += 1
             except Exception as inner_e:
                 logger.error(f"Error adding document {ids[i]}: {str(inner_e)}")
+                if is_dev_mode():
+                    logger.debug(f"Document content: {documents[i][:100]}...")
+                    logger.debug(f"Metadata: {metadatas[i]}")
+        
+        log_function_return(logger, "process_batch", added)
         return added
 
 def get_existing_ids(collection) -> Set[str]:
@@ -98,10 +122,18 @@ def get_existing_ids(collection) -> Set[str]:
     Returns:
         Set of existing IDs
     """
+    log_function_call(logger, "get_existing_ids", kwargs={
+        "collection": collection.name if hasattr(collection, 'name') else str(collection)
+    })
+    
     try:
-        return set(collection.get()['ids'])
+        result = set(collection.get()['ids'])
+        log_debug(logger, f"Found {len(result)} existing IDs in collection")
+        log_function_return(logger, "get_existing_ids", result)
+        return result
     except Exception as e:
         logger.warning(f"Error getting existing IDs: {str(e)}")
+        log_function_return(logger, "get_existing_ids", set())
         return set()
 
 def extract_code_example(content: str) -> str:
@@ -114,7 +146,10 @@ def extract_code_example(content: str) -> str:
     Returns:
         Extracted code example or empty string if none found
     """
+    log_function_call(logger, "extract_code_example", kwargs={"content_length": len(content) if content else 0})
+    
     if not content:
+        log_function_return(logger, "extract_code_example", "")
         return ""
     
     # Look for code blocks in markdown format with "Code Example:" prefix
@@ -126,23 +161,33 @@ def extract_code_example(content: str) -> str:
             if "```" in code_part:
                 code_blocks = code_part.split("```")
                 if len(code_blocks) > 1:
-                    return code_blocks[1].strip()
+                    result = code_blocks[1].strip()
+                    log_debug(logger, f"Found code example with 'Code Example:' prefix, length: {len(result)}")
+                    log_function_return(logger, "extract_code_example", result)
+                    return result
     
     # Look for code blocks in markdown format
     if "```" in content:
         code_blocks = content.split("```")
         if len(code_blocks) > 1:
-            return code_blocks[1].strip()
+            result = code_blocks[1].strip()
+            log_debug(logger, f"Found code example with markdown format, length: {len(result)}")
+            log_function_return(logger, "extract_code_example", result)
+            return result
     
     # Look for code blocks in JSON format
     if '"code_example":' in content:
         try:
             data = json.loads(content)
             if isinstance(data, dict) and "code_example" in data:
-                return data["code_example"]
+                result = data["code_example"]
+                log_debug(logger, f"Found code example in JSON format, length: {len(result)}")
+                log_function_return(logger, "extract_code_example", result)
+                return result
         except json.JSONDecodeError:
-            pass
+            log_debug(logger, "Failed to parse JSON content")
     
+    log_function_return(logger, "extract_code_example", "")
     return ""
 
 def stream_json_data(file_path: str, collection_name: str) -> Generator[Dict[str, Any], None, None]:
@@ -156,9 +201,13 @@ def stream_json_data(file_path: str, collection_name: str) -> Generator[Dict[str
     Yields:
         Dict containing document data and metadata
     """
+    log_function_call(logger, "stream_json_data", args=(file_path, collection_name))
+    
     with open(file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
         
+    log_debug(logger, f"Loaded JSON data from {file_path}, type: {type(data)}")
+    
     for chunk in data:
         # Extract content from chunk
         content = chunk.get('content', '')
@@ -182,11 +231,14 @@ def stream_json_data(file_path: str, collection_name: str) -> Generator[Dict[str
         # Generate unique ID
         doc_id = f"{collection_name}_{hash(content)}"
         
-        yield {
+        result = {
             'id': doc_id,
             'content': content,
             'metadata': metadata
         }
+        
+        log_debug(logger, f"Yielding document with ID: {doc_id}")
+        yield result
 
 def initialize_chroma_db(reset_collections=False):
     """
@@ -195,6 +247,8 @@ def initialize_chroma_db(reset_collections=False):
     Args:
         reset_collections: If True, delete existing collections before initializing
     """
+    log_function_call(logger, "initialize_chroma_db", kwargs={"reset_collections": reset_collections})
+    
     # Initialize ChromaDB client with persistent storage
     client = chromadb.PersistentClient(
         path="./chroma_db",
@@ -203,6 +257,8 @@ def initialize_chroma_db(reset_collections=False):
         )
     )
     
+    log_debug(logger, f"Initialized ChromaDB client with path: ./chroma_db")
+    
     # Define the JSON files to load for each collection
     collection_files = {
         "docs": "docs/bfc_documentation_embeddings_v2.json",
@@ -210,6 +266,8 @@ def initialize_chroma_db(reset_collections=False):
         "folha": "docs/folha_with_embeddings.json",
         "pessoal": "docs/pessoal_with_embeddings.json"
     }
+    
+    log_debug(logger, f"Collection files: {collection_files}")
     
     # Process each collection
     for collection_name, file_path in collection_files.items():
@@ -234,6 +292,8 @@ def initialize_chroma_db(reset_collections=False):
             # Load data from JSON file
             with open(file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
+            
+            log_debug(logger, f"Loaded data from {file_path}, type: {type(data)}")
             
             # Process data based on collection type
             documents = []
@@ -266,6 +326,9 @@ def initialize_chroma_db(reset_collections=False):
                         embeddings.append(embedding)
                         metadatas.append(metadata)
                         ids.append(doc_id)
+                        
+                        if is_dev_mode() and i % 100 == 0:
+                            log_debug(logger, f"Processed {i} documents for collection {collection_name}")
             
             elif collection_name == "enums":
                 # Process enums data - it's a dictionary with enum names as keys
@@ -315,6 +378,8 @@ def initialize_chroma_db(reset_collections=False):
                             metadatas.append(metadata)
                             ids.append(doc_id)
             
+            log_debug(logger, f"Processed {len(documents)} documents for collection {collection_name}")
+            
             # Add documents to collection in batches
             if documents:
                 batch_size = 100
@@ -324,6 +389,8 @@ def initialize_chroma_db(reset_collections=False):
                     batch_embeddings = embeddings[i:batch_end]
                     batch_metadatas = metadatas[i:batch_end]
                     batch_ids = ids[i:batch_end]
+                    
+                    log_debug(logger, f"Adding batch {i//batch_size + 1} to collection {collection_name} ({len(batch_docs)} documents)")
                     
                     collection.add(
                         ids=batch_ids,
@@ -348,6 +415,7 @@ def initialize_chroma_db(reset_collections=False):
                     logger.error(f"Document with duplicate ID: {metadatas[idx]}")
     
     logger.info("ChromaDB initialization completed successfully!")
+    log_function_return(logger, "initialize_chroma_db", None)
 
 if __name__ == "__main__":
     import argparse

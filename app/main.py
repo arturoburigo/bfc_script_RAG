@@ -5,17 +5,10 @@ from dotenv import load_dotenv
 from core.semantic_search import SemanticSearch
 from core.response_generator import ResponseGenerator
 from core.initialize_chroma_db import initialize_chroma_db
+from core.config import setup_logging, is_dev_mode, log_debug, log_function_call, log_function_return
 
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("app.log"),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logger = setup_logging(__name__, "logs/main.log")
 
 def main():
     """
