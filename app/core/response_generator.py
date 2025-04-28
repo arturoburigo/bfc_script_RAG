@@ -41,8 +41,8 @@ class ResponseGenerator:
         self.max_context_tokens = 6000  # Conservative limit to leave room for response
         
         # Configure token limits for different components
-        self.max_syntax_patterns_tokens = 1000  # Limit for syntax patterns extraction
-        self.max_history_tokens = 500  # Limit for conversation history
+        self.max_syntax_patterns_tokens = 3000 # Limit for syntax patterns extraction
+        self.max_history_tokens = 1000  # Limit for conversation history
         
         # Load common BFC-Script patterns
         self.bfc_patterns = self._load_bfc_patterns()
@@ -59,17 +59,25 @@ class ResponseGenerator:
         """
         return len(self.tokenizer.encode(text))
     
-    def truncate_context(self, context: str, max_tokens: int) -> str:
+    def truncate_context(self, context: str | List[str] | List[Dict], max_tokens: int) -> str:
         """
         Truncate context to fit within token limit while preserving structure.
         
         Args:
-            context: Original context
+            context: Original context (string, list of strings, or list of dictionaries)
             max_tokens: Maximum number of tokens allowed
             
         Returns:
-            Truncated context
+            Truncated context as string
         """
+        # Convert list of dicts to string if necessary
+        if isinstance(context, list):
+            if context and isinstance(context[0], dict):
+                # Extract content from dictionaries
+                context = "\n\n".join(str(item.get('content', '')) for item in context)
+            else:
+                context = "\n\n".join(str(item) for item in context)
+        
         # Split context into sections (assuming sections are separated by newlines)
         sections = context.split('\n\n')
         truncated_sections = []
@@ -106,7 +114,7 @@ class ResponseGenerator:
         """
         try:
             # Import prompts from prompts.py
-            from utils.prompts import (
+            from app.utils.prompts import (
                 RAG_SYSTEM_PROMPT,
                 RAG_USER_PROMPT,
                 SYNTAX_EXTRACTION_PROMPT
@@ -124,44 +132,7 @@ class ResponseGenerator:
             
         except Exception as e:
             logger.error(f"Error loading prompts from prompts.py: {str(e)}")
-            
-            # Fallback to default prompts if import fails
-            return {
-                "RAG_SYSTEM_PROMPT": """Você é um assistente especializado em códigos BFC-Script.
-                Você deve responder às perguntas do usuário com precisão e clareza, baseando-se no contexto fornecido.
-                Quando o usuário pedir para criar um script, você deve gerar código BFC-Script completo e funcional.
-                Use os exemplos de código fornecidos no contexto como referência para a sintaxe correta.
-                Sempre inclua a fonte de dados correta (Dados.folha.v2, Dados.pessoal.v2, etc.) e os campos solicitados.
-                Use a sintaxe de percorrer para iterar sobre os resultados quando necessário.""",
-                
-                "RAG_USER_PROMPT": """Com base nas seguintes informações da documentação e código do BFC-Script e fonte de dados:
-
-                {context}
-                
-                PADRÕES SINTÁTICOS DO BFC-SCRIPT:
-                {syntax_patterns}
-                
-                HISTÓRICO DE CONVERSA RECENTE:
-                {history_context}
-                
-                PERGUNTA DO USUÁRIO: {query}""",
-                
-                "SYNTAX_EXTRACTION_PROMPT": """Analise o seguinte trecho de documentação e código do BFC-Script e extraia os padrões sintáticos:
-
-                DOCUMENTAÇÃO:
-                {context}
-
-                EXTRAIA APENAS:
-                1. Padrões de declaração de funções e métodos (exatamente como aparecem na documentação)
-                2. Estruturas de controle (condicionais, loops, etc.)
-                3. Declaração de variáveis e tipos de dados
-                4. Operadores e expressões
-                5. Convenções de nomenclatura observadas
-                6. Padrões de acesso a fontes de dados (folha, pessoal)
-                7. Uso de enums e constantes
-
-                Forneça um resumo conciso dos padrões sintáticos observados, sem adicionar interpretações."""
-            }
+                  
     
     def _load_bfc_patterns(self) -> Dict[str, Any]:
         """
@@ -212,8 +183,13 @@ class ResponseGenerator:
             # Truncate context for syntax extraction to avoid token limit
             truncated_context = self.truncate_context(context, self.max_syntax_patterns_tokens)
             
-            # Use loaded prompt or default
-            syntax_prompt = self.prompts.get("SYNTAX_EXTRACTION_PROMPT").format(context=truncated_context)
+            # Get the prompt template and ensure it's a string
+            prompt_template = self.prompts.get("SYNTAX_EXTRACTION_PROMPT", "")
+            if isinstance(prompt_template, list):
+                prompt_template = "\n".join(prompt_template)
+            
+            # Format the prompt with the context
+            syntax_prompt = prompt_template.format(context=truncated_context)
             
             response = self.client.chat.completions.create(
                 model="gpt-4o-mini",
@@ -320,19 +296,27 @@ class ResponseGenerator:
         
         return requirements
     
-    def generate_response(self, query: str, context: str, history: Optional[List[Tuple[str, str]]] = None) -> str:
+    def generate_response(self, query: str, context: str | List[str] | List[Dict], history: Optional[List[Tuple[str, str]]] = None) -> str:
         """
         Generate a response for the user query using RAG.
         
         Args:
             query: The user's query
-            context: Documentation context retrieved from search
+            context: Documentation context retrieved from search (string, list of strings, or list of dictionaries)
             history: Chat history as list of (query, response) tuples
             
         Returns:
             Generated response
         """
         try:
+            # Convert context to string if it's a list
+            if isinstance(context, list):
+                if context and isinstance(context[0], dict):
+                    # Extract content from dictionaries
+                    context = "\n\n".join(str(item.get('content', '')) for item in context)
+                else:
+                    context = "\n\n".join(str(item) for item in context)
+            
             # Extract function requirements if this is a code generation query
             is_code_query = any(keyword in query.lower() for keyword in ["criar", "crie", "script", "código", "codigo", "função", "funcao"])
             function_requirements = None

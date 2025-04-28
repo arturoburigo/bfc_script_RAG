@@ -2,10 +2,10 @@ import os
 import logging
 from pathlib import Path
 from dotenv import load_dotenv
-from core.semantic_search import SemanticSearch
-from core.response_generator import ResponseGenerator
-from core.initialize_chroma_db import initialize_chroma_db
-from core.config import setup_logging, is_dev_mode, log_debug, log_function_call, log_function_return
+from app.core.semantic_search import SemanticSearch
+from app.core.response_generator import ResponseGenerator
+from app.core.initialize_chroma_db import initialize_chroma_db
+from app.core.config import setup_logging, is_dev_mode, log_debug, log_function_call, log_function_return
 
 # Configure logging
 logger = setup_logging(__name__, "logs/main.log")
@@ -45,9 +45,9 @@ def main():
         
         # Create and launch the user interface
         logger.info("Launching user interface...")
-        from ui.ui import BFCScriptUI
+        from app.ui.ui import BFCScriptUI
         bfc_ui = BFCScriptUI(search_engine, response_generator)
-        bfc_ui.launch(share=True)
+        bfc_ui.run(share=True)
         
     except Exception as e:
         logger.error(f"Error starting BFC-Script Assistant: {str(e)}")

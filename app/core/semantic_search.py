@@ -129,7 +129,9 @@ class SemanticSearch:
                 query_params["where"] = filters
             
             # Execute query
+            print(query_params)
             results = collection.query(**query_params)
+            print(results)
             
             # Format results
             formatted_results = []
@@ -218,7 +220,7 @@ class SemanticSearch:
             keywords = self.extract_keywords(query)
             
             # Clean query and expand for better semantic search
-            expanded_query = f"{query} documentação exemplos código sintaxe"
+            expanded_query = f"{query}, procure em todas as collections"
             
             # Add keywords to expanded query
             if keywords:
