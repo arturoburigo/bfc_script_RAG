@@ -8,3 +8,4 @@ __pycache__/
 chroma_db/
 .venv/
 *.log
+.DS_Store
