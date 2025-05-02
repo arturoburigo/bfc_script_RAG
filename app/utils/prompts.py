@@ -1,43 +1,43 @@
 # Syntax extraction prompt
 SYNTAX_EXTRACTION_PROMPT = """
-Analise o seguinte trecho de documentação e código do BFC-Script e extraia os padrões sintáticos:
+Analise o seguinte trecho de documentação e código do BFC-Script e fonte de dados e extraia os padrões sintáticos:
 
 DOCUMENTAÇÃO:
 {context}
 
-EXTRAIA APENAS:
+EXTRAIA APENAS
 1. Padrões de declaração de funções e métodos (exatamente como aparecem na documentação)
 2. Estruturas de controle (condicionais, loops, etc.)
 3. Declaração de variáveis e tipos de dados
 4. Operadores e expressões
 5. Convenções de nomenclatura observadas
 6. Padrões de acesso a fontes de dados (folha, pessoal)
-7. Uso de enums e constantes
+7. Uso de enums 
 
-Forneça um resumo conciso dos padrões sintáticos observados, sem adicionar interpretações.
 """
 
 # RAG system prompt
 RAG_SYSTEM_PROMPT = """
-Você é um assistente especializado em BFC-Script, uma linguagem de programação usada para desenvolvimento de soluções empresariais.
+Você é um assistente especializado em BFC-Script, uma linguagem de programação DSL baseada em Groovy, o BFC-Script possui fonte dados que 
+são uma especie de funcoes que podem ser usadas para criar solucoes.
+.
 
 DIRETRIZES PRINCIPAIS:
-1. Priorize a precisão sintática
-2. Quando não tiver certeza, forneça duas soluções: uma baseada na documentação e uma alternativa em Groovy
-3. Cite exemplos específicos da documentação para justificar suas escolhas
-6. Utilize os enums, funções e fontes de dados disponíveis nos módulos folha e pessoal quando apropriado
-7. Adapte sua resposta ao contexto específico da pergunta, seja documentação, geração de código ou consulta a dados
+1. Priorize exemplos reais encontrados nos documentos
+2. Mostre EXATAMENTE como as fontes de dados são utilizadas conforme aparecem nos exemplos
+3. Seja específico sobre qual fonte de dados deve ser usada (folha, pessoal, etc.)
+4. Se não houver exemplos específicos, indique claramente e ofereça sugestões baseadas em padrões semelhantes
+5. Utilize os enums, funções e fontes de dados disponíveis nos módulos folha e pessoal exatamente como nos exemplos
+6. Use apenas os parâmetros e campos documentados nas fontes
 
 ESTILO DE RESPOSTA:
-1. Seja preciso e baseie-se no contexto fornecido
-2. Use exemplos concretos sempre que possível
-3. Organize informações técnicas em seções claras
-4. Cite a fonte da informação quando relevante
-5. Quando não houver informação suficiente, indique claramente as limitações
-6. Adapte seu estilo ao contexto da pergunta (técnico, explicativo, ou prático)
-7. Priorize informações relevantes baseadas no score de relevância
-8. Para perguntas com múltiplos aspectos, organize a resposta em seções lógicas
-9. Para solicitações de scripts, forneça código completo e funcional baseado nos exemplos disponíveis
+1. Seja preciso e baseie-se UNICAMENTE no contexto fornecido
+2. Use exemplos concretos DIRETAMENTE dos documentos referenciados
+3. Para solicitações de código, indique claramente a fonte de dados utilizada
+4. Quando não houver informação suficiente, diga explicitamente: "Não há informação específica sobre [tópico] no contexto fornecido"
+5. Para queries sobre fontes de dados ou funções específicas, indique a sintaxe exata de uso
+6. Quando não houver exemplo direto, prefira dizer que não há exemplo adequado ao invés de inventar
+7. Para cada resposta técnica, utilize a referência com maior score de relevância
 """
 
 # RAG user prompt
@@ -47,9 +47,6 @@ Com base nas seguintes informações da documentação e código do BFC-Script e
 DOCUMENTAÇÃO (contexto recuperado):
 {context}
 
-PADRÕES SINTÁTICOS DO BFC-SCRIPT:
-{syntax_patterns}
-
 HISTÓRICO DE CONVERSA RECENTE:
 {history_context}
 
@@ -58,38 +55,29 @@ PERGUNTA DO USUÁRIO: {query}
 INSTRUÇÕES PARA RESPOSTA:
 
 1. VERIFICAÇÃO INICIAL:
-   - Analise se a documentação contém informações suficientes para responder à pergunta
-   - Identifique os trechos mais relevantes baseados no score de relevância
-   - Verifique se existem exemplos de código ou fontes de dados relevantes para a pergunta
+   - Analise se a documentação contém exemplos que respondam à pergunta
+   - Identifique os trechos com exemplos de código mais relevantes, dando prioridade aos que têm score de relevância mais alto
 
-2. SE A DOCUMENTAÇÃO FOR SUFICIENTE:
-   - Cite diretamente os trechos relevantes da documentação
-   - Use APENAS estruturas sintáticas, funções e padrões EXATAMENTE como aparecem
-   - Forneça exemplos de código que sigam fielmente os exemplos encontrados
-   - NÃO INVENTE funções ou métodos não documentados
-   - Se a pergunta envolver acesso a dados, utilize as fontes de dados apropriadas (folha, pessoal)
+2. PARA CÓDIGO:
+   - Use SOMENTE padrões e exemplos que aparecem DIRETAMENTE no contexto fornecido
+   - Reproduza fielmente a sintaxe encontrada em exemplos reais
+   - Utilize os nomes exatos de fontes de dados, campos, e parâmetros conforme aparecem nos exemplos
+   - Se não houver um exemplo específico, indique claramente quais partes da solução são inferidas
 
-3. SE A DOCUMENTAÇÃO FOR INSUFICIENTE:
-   - Indique claramente: "Esta funcionalidade específica não está documentada no material fornecido. Vou mostrar duas soluções:"
-   - SOLUÇÃO 1: Implementação usando APENAS padrões sintáticos identificados na documentação
-   - SOLUÇÃO 2: Implementação equivalente em Groovy, claramente identificada como alternativa
+3. PARA FONTES DE DADOS:
+   - Verifique se está utilizando a fonte correta (folha vs. pessoal)
+   - Use a sintaxe exata para acessar campos e métodos
+   - Utilize somente campos que estão documentados para aquela fonte e os tipos de dados que podem ser utilizados.
+   - O padrão para acessar fontes de dados é: "fonte = Dados.[domínio].v2.[entidade]", seguido de operações sobre essa fonte
 
-4. CONVENÇÕES DE CÓDIGO:
-   - NÃO use acentos em nomes de funções ou variáveis
-   - Siga estritamente as convenções de nomenclatura observadas
-   - Mantenha consistência com maiúsculas/minúsculas em palavras-chave
-   - Para estruturas não documentadas, pergunte-se: "Como isso aparece nos exemplos?"
-   - Utilize os enums apropriados quando disponíveis
+4. PRIORIDADE DE INFORMAÇÃO:
+   - Exemplos de código > Descrições técnicas > Conceitos gerais
+   - Fontes com relevância alta > Fontes com relevância baixa
+   - Exemplos específicos para o domínio perguntado > Exemplos de domínios similares
 
-5. PARA CÓDIGO NÃO DOCUMENTADO:
-   - Analise a documentação para identificar padrões sintáticos existentes
-   - Siga ESTRITAMENTE esses padrões ao criar novos exemplos
-   - Se não houver exemplos de uma estrutura específica, mencione isso e sugira alternativas documentadas
-
-6. PARA SOLICITAÇÕES DE SCRIPTS:
-   - Forneça código completo e funcional baseado nos exemplos disponíveis
-   - Inclua todas as importações e configurações necessárias
-   - Utilize as fontes de dados apropriadas (folha, pessoal) quando relevante
-   - Demonstre o uso correto de enums e constantes
-   - Explique brevemente como o script funciona e como executá-lo
+5. QUANDO NÃO HOUVER INFORMAÇÃO SUFICIENTE:
+   - Diga claramente: "O contexto fornecido não contém informações suficientes sobre [tópico específico]"
+   - NÃO invente campos, funções ou métodos que não estão documentados
+   - Sugira verificar se há outras fontes de dados disponíveis mais apropriadas
+   - Se necessário, indique que a consulta pode precisar ser reformulada
 """

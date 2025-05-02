@@ -48,7 +48,7 @@ class BFCScriptUI:
             gr.Markdown("Ask questions about BFC Script programming.")
             
             chatbot = gr.Chatbot(
-                height=600,
+                height=400,
                 show_copy_button=True,
                 bubble_full_width=False
             )

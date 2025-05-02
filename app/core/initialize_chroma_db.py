@@ -39,10 +39,7 @@ def validate_embedding(embedding: List[float]) -> bool:
     """
     log_function_call(logger, "validate_embedding", args=(embedding,))
     
-    if not isinstance(embedding, list):
-        log_debug(logger, f"Embedding is not a list: {type(embedding)}")
-        result = False
-    elif len(embedding) == 0:
+    if len(embedding) == 0:
         log_debug(logger, "Embedding is empty")
         result = False
     else:
@@ -310,12 +307,9 @@ def initialize_chroma_db(reset_collections=False):
                     if content and embedding:
                         # Create metadata
                         metadata = {
-                            'source': file_path,
                             'collection': collection_name,
                             'document': chunk.get("document", ""),
                             'section': chunk.get("section", ""),
-                            'subsection': chunk.get("subsection", ""),
-                            'subsubsection': chunk.get("subsubsection", ""),
                             'contains_code': chunk.get("contains_code", False)
                         }
                         
@@ -340,11 +334,15 @@ def initialize_chroma_db(reset_collections=False):
                         if content and embedding:
                             # Create metadata
                             metadata = {
-                                'source': file_path,
                                 'collection': collection_name,
                                 'enum_name': enum_name,
-                                'chunk_key': chunk.get("chunk_key", "")
+                                'chunk_key': chunk.get("chunk_key", ""),
                             }
+                            
+                            # Só adiciona part_number se não for None
+                            part_number = chunk.get("part_number")
+                            if part_number is not None:
+                                metadata['part_number'] = part_number
                             
                             # Generate unique ID
                             doc_id = f"{collection_name}_{enum_name}_{hash(content)}"
@@ -364,10 +362,8 @@ def initialize_chroma_db(reset_collections=False):
                         if content and embedding:
                             # Create metadata
                             metadata = {
-                                'source': file_path,
                                 'collection': collection_name,
                                 'function_name': function_name,
-                                'filename': chunk.get("filename", "")
                             }
                             
                             # Generate unique ID

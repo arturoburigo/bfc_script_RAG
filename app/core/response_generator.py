@@ -6,6 +6,7 @@ from typing import List, Dict, Any, Optional, Tuple
 import logging
 from .config import setup_logging, is_dev_mode, log_debug, log_function_call, log_function_return
 import tiktoken
+import re
 
 # Configure logging
 logger = setup_logging(__name__, "logs/response_generator.log")
@@ -44,9 +45,20 @@ class ResponseGenerator:
         self.max_syntax_patterns_tokens = 3000 # Limit for syntax patterns extraction
         self.max_history_tokens = 1000  # Limit for conversation history
         
-        # Load common BFC-Script patterns
-        self.bfc_patterns = self._load_bfc_patterns()
+        # Common data sources and patterns to check in context
+        self.data_sources = {
+            "folha": ["Dados.folha.v2"],
+            "pessoal": ["Dados.pessoal.v2"]
+        }
         
+        # Core entity patterns
+        self.entity_patterns = {
+            "funcionario": ["funcionario", "matriculas", "matricula"],
+            "matricula": ["funcionario", "matriculas", "matricula"],
+            "evento": ["evento", "eventos", "rubrica", "rubricas",],
+            "rubrica": ["rubrica", "rubricas", "evento", "eventos"],
+        }
+
     def count_tokens(self, text: str) -> int:
         """
         Count the number of tokens in a text.
@@ -132,43 +144,8 @@ class ResponseGenerator:
             
         except Exception as e:
             logger.error(f"Error loading prompts from prompts.py: {str(e)}")
+            return {}
                   
-    
-    def _load_bfc_patterns(self) -> Dict[str, Any]:
-        """
-        Load common BFC-Script patterns for better code generation.
-        
-        Returns:
-            Dictionary of BFC-Script patterns
-        """
-        return {
-            "data_sources": {
-                "folha": {
-                    "cargo": "Dados.folha.v2.cargo",
-                    "funcionario": "Dados.folha.v2.funcionario",
-                    "contrato": "Dados.folha.v2.contrato",
-                    "evento": "Dados.folha.v2.evento",
-                    "rubrica": "Dados.folha.v2.rubrica",
-                    "lancamento": "Dados.folha.v2.lancamento",
-                    "historico": "Dados.folha.v2.historico",
-                    "movimento": "Dados.folha.v2.movimento"
-                },
-                "pessoal": {
-                    "funcionario": "Dados.pessoal.v2.funcionario",
-                    "contrato": "Dados.pessoal.v2.contrato",
-                    "cargo": "Dados.pessoal.v2.cargo",
-                    "departamento": "Dados.pessoal.v2.departamento",
-                    "centro_custo": "Dados.pessoal.v2.centroCusto"
-                }
-            },
-            "common_functions": {
-                "busca": "busca(campos: string, filtros: object, ordenacao: string)",
-                "percorrer": "percorrer(colecao) { item -> ... }",
-                "filtro": "filtro(campo, operador, valor)",
-                "ordenacao": "ordenacao(campo, direcao)"
-            }
-        }
-    
     def extract_syntax_patterns(self, context: str) -> str:
         """
         Extract common BFC-Script syntax patterns from context.
@@ -235,65 +212,239 @@ class ResponseGenerator:
         
         return history_text
     
-    def extract_function_requirements(self, query: str) -> Dict[str, Any]:
+    def _extract_code_examples_from_context(self, context: str) -> List[Dict]:
         """
-        Extract function requirements from the query.
+        Extract code examples and their context from the documentation.
+        
+        Args:
+            context: Documentation context
+            
+        Returns:
+            List of extracted examples with their full context
+        """
+        code_examples = []
+        
+        # Se o contexto começa com # ou ## provavelmente é uma documentação completa
+        if context.strip().startswith('#'):
+            # Extrai o título/nome da API
+            title = context.split('\n')[0].strip('# ')
+            
+            # Procura por blocos de código (entre ```)
+            code_blocks = re.findall(r'```\n(.*?)```', context, re.DOTALL)
+            
+            if code_blocks:
+                # Adiciona o contexto completo com o código
+                code_examples.append({
+                    "title": title,
+                    "full_content": context,  # Documento completo
+                    "code": code_blocks[0].strip(),  # Código extraído
+                    "index": 1
+                })
+        
+        return code_examples
+    
+    def _find_data_sources_in_context(self, context: str) -> Dict[str, List[str]]:
+        """
+        Find data sources mentioned in the context.
+        
+        Args:
+            context: Documentation context
+            
+        Returns:
+            Dictionary of domain -> sources
+        """
+        found_sources = {
+            "folha": [],
+            "pessoal": []
+        }
+        
+        # Look for data source patterns like Dados.folha.v2.X or Dados.pessoal.v2.Y
+        folha_sources = re.findall(r'Dados\.folha\.v2\.([a-zA-Z0-9_]+)', context)
+        pessoal_sources = re.findall(r'Dados\.pessoal\.v2\.([a-zA-Z0-9_]+)', context)
+        
+        # Deduplicate
+        found_sources["folha"] = list(set(folha_sources))
+        found_sources["pessoal"] = list(set(pessoal_sources))
+        
+        return found_sources
+    
+    def _find_enums_in_context(self, context: str) -> List[Dict[str, Any]]:
+        """
+        Find enum types mentioned in the context with their values and descriptions.
+        
+        Args:
+            context: Documentation context
+            
+        Returns:
+            List of dictionaries containing enum information:
+            {
+                "name": str,            # Nome do enum
+                "values": List[Dict]    # Lista de valores do enum
+            }
+        """
+        found_enums = []
+        
+        # Procura por padrões de enum no formato dos embeddings
+        # Exemplo: # ClassificacaoRais\nEnum: ClassificacaoRais
+        enum_blocks = re.finditer(r'#\s*(\w+)\s*\nEnum:\s*\1\n((?:[-\d]+[^\n]+\(Key:[^\n]+\n?)*)', context)
+        
+        for match in enum_blocks:
+            enum_name = match.group(1)
+            values_block = match.group(2)
+            
+            # Extrai os valores do enum
+            # Exemplo: 10 - Rescisão... (Key: RESCISAO_...)
+            values = []
+            for value_match in re.finditer(r'(\d+)\s*-\s*([^(]+)\(Key:\s*(\w+)\)', values_block):
+                values.append({
+                    "description": value_match.group(2).strip(),  # Descrição
+                    "key": value_match.group(3).strip()     # Chave do enum
+                })
+            
+            if values:  # Só adiciona se encontrou valores
+                found_enums.append({
+                    "name": enum_name,
+                    "values": values
+                })
+        
+        return found_enums
+    
+    def extract_function_requirements(self, query: str, context: Optional[str] = None) -> Dict[str, Any]:
+        """
+        Extract function requirements from the query including domain-specific entities, 
+        fields, data sources, and domain-specific information. Uses context when available.
         
         Args:
             query: User query
+            context: Optional search context to extract more accurate requirements
             
         Returns:
             Dictionary of function requirements
         """
         requirements = {
             "entity": None,
+            "entity_type": None,
             "fields": [],
             "filters": [],
-            "ordering": None
+            "ordering": None,
+            "data_source": None,
+            "version": "v2",  # Default version
+            "enum_type": None,
+            "is_script_query": False,
+            "code_examples": [],
+            "specific_operations": []
         }
         
-        # Common entity keywords
-        entity_keywords = {
-            "cargo": ["cargo", "cargos", "cbo"],
-            "funcionario": ["funcionario", "funcionários", "colaborador", "colaboradores"],
-            "contrato": ["contrato", "contratos"],
-            "evento": ["evento", "eventos"],
-            "rubrica": ["rubrica", "rubricas"],
-            "lancamento": ["lancamento", "lançamentos"],
-            "historico": ["historico", "histórico"],
-            "movimento": ["movimento", "movimentos"],
-            "departamento": ["departamento", "departamentos"],
-            "centro_custo": ["centro de custo", "centro de custos", "centro_custo", "centro_custos"]
-        }
-        
-        # Detect entity
+        # Check if this is a script generation query
+        script_keywords = ["criar", "crie", "gere", "gerar", "script", "código", "codigo", 
+                          "função", "funcao", "buscar", "busque", "consultar", "consulte", 
+                          "implementar", "implementação", "exemplo", "explique", "crie um script"]
         query_lower = query.lower()
-        for entity, keywords in entity_keywords.items():
-            for keyword in keywords:
-                if keyword in query_lower:
-                    requirements["entity"] = entity
-                    break
-            if requirements["entity"]:
+        
+        requirements["is_script_query"] = any(keyword in query_lower for keyword in script_keywords)
+        
+        # Extract code examples from context if available
+        if context and requirements["is_script_query"]:
+            code_examples = self._extract_code_examples_from_context(context)
+            if code_examples:
+                requirements["code_examples"] = code_examples
+                logger.info(f"Found {len(code_examples)} code examples in context")
+        
+        # For data source related queries
+        for entity, patterns in self.entity_patterns.items():
+            if any(pattern in query_lower for pattern in patterns):
+                requirements["entity"] = entity
+                logger.info(f"Detected entity: {entity}")
+                
+                # Determine likely domain (folha or pessoal)
+                if "folha" in query_lower:
+                    requirements["data_source"] = "Dados.folha.v2"
+                    requirements["entity_type"] = "folha"
+                elif "pessoal" in query_lower or entity in ["funcionario", "cargo", "contrato"]:
+                    requirements["data_source"] = "Dados.pessoal.v2"
+                    requirements["entity_type"] = "pessoal"
+                
+                # Use context to refine the data source if available
+                if context:
+                    data_sources = self._find_data_sources_in_context(context)
+                    
+                    # Find sources that match the entity
+                    if requirements["entity_type"] == "folha" and entity in data_sources["folha"]:
+                        requirements["data_source"] = f"Dados.folha.v2.{entity}"
+                    elif requirements["entity_type"] == "pessoal" and entity in data_sources["pessoal"]:
+                        requirements["data_source"] = f"Dados.pessoal.v2.{entity}"
+                    elif entity in data_sources["folha"]:
+                        requirements["data_source"] = f"Dados.folha.v2.{entity}"
+                        requirements["entity_type"] = "folha"
+                    elif entity in data_sources["pessoal"]:
+                        requirements["data_source"] = f"Dados.pessoal.v2.{entity}"
+                        requirements["entity_type"] = "pessoal"
                 break
         
-        # Extract fields
-        if "campos" in query_lower:
-            # Try to extract fields from the query
-            # This is a simple approach and might need improvement
-            field_keywords = ["cbo", "id", "descricao", "tipo", "codigo", "nome", "data", "valor"]
-            for keyword in field_keywords:
-                if keyword in query_lower:
-                    requirements["fields"].append(keyword)
+        # Extract field names mentioned in the query
+        field_names = []
         
-        # If no fields were detected, add some defaults based on entity
-        if not requirements["fields"] and requirements["entity"]:
-            if requirements["entity"] == "cargo":
-                requirements["fields"] = ["id", "descricao"]
-            elif requirements["entity"] == "funcionario":
-                requirements["fields"] = ["id", "nome"]
-            elif requirements["entity"] == "contrato":
-                requirements["fields"] = ["id", "dataInicio", "dataFim"]
+        # If "campos" is in the query, it's likely referring to specific fields
+        if "campos" in query_lower or "campo" in query_lower:
+            # Clear default fields to only use explicitly mentioned ones
+            requirements["fields"] = []
+            for field in field_names:
+                if field in query_lower:
+                    requirements["fields"].append(field)
         
+        # Extract filter information
+        filter_keywords = ["filtro", "filtros", "expression", "expressions", "expressao", "condicao", "condição", "criterio", "critério"]
+        if any(keyword in query_lower for keyword in filter_keywords):
+            filter_info = {}
+            
+            # Look for operators
+            operators = ["=", ">", "<", ">=", "<=", "!=", "contem", "contém", "inicio", "início", "fim", "maior", "menor", "igual", "diferente"]
+            for operator in operators:
+                if operator in query_lower:
+                    filter_info["operator"] = operator
+                    break
+                
+            # Look for filter fields
+            for field in field_names:
+                if field in query_lower and any(kw in query_lower.split(field)[0][-15:] for kw in filter_keywords):
+                    filter_info["field"] = field
+                    break
+                
+            if filter_info:
+                requirements["filters"].append(filter_info)
+                
+            # Add a general operation for filtering
+            requirements["specific_operations"].append("filtro")
+        
+        # Extract ordering information
+        order_keywords = ["ordenar", "ordenacao", "ordenação", "sort", "order"]
+        if any(keyword in query_lower for keyword in order_keywords):
+            # Common ordering directions
+            directions = ["asc", "desc", "crescente", "decrescente"]
+            for direction in directions:
+                if direction in query_lower:
+                    requirements["ordering"] = direction
+                    break
+            
+            # Add a general operation for ordering
+            requirements["specific_operations"].append("ordenacao")
+        
+        # Detect specific operations being requested
+        operation_keywords = {
+            "busca": ["busca", "buscar", "consulta", "consultar", "query"],
+            "percorrer": ["percorrer", "iterar", "loop", "para cada"],
+            "imprimir": ["imprimir", "mostrar", "exibir", "imprime", "print"],
+            "mapear": ["mapear", "transformar", "converter"],
+            "filtrar": ["filtrar", "filter", "onde", "where"],
+            "agrupar": ["agrupar", "agrupar por", "group by", "group"]
+        }
+        
+        for operation, keywords in operation_keywords.items():
+            if any(keyword in query_lower for keyword in keywords):
+                if operation not in requirements["specific_operations"]:
+                    requirements["specific_operations"].append(operation)
+        
+        logger.info(f"Extracted function requirements: {requirements}")
         return requirements
     
     def generate_response(self, query: str, context: str | List[str] | List[Dict], history: Optional[List[Tuple[str, str]]] = None) -> str:
@@ -317,64 +468,23 @@ class ResponseGenerator:
                 else:
                     context = "\n\n".join(str(item) for item in context)
             
-            # Extract function requirements if this is a code generation query
-            is_code_query = any(keyword in query.lower() for keyword in ["criar", "crie", "script", "código", "codigo", "função", "funcao"])
-            function_requirements = None
+            # Extract function requirements for code generation queries
+            function_requirements = self.extract_function_requirements(query, context)
+            is_code_query = function_requirements["is_script_query"]
             
             if is_code_query:
-                function_requirements = self.extract_function_requirements(query)
                 logger.info(f"Extracted function requirements: {function_requirements}")
             
-            # If context is empty, try to generate a response anyway
-            if not context:
-                logger.warning(f"Empty context for query: {query}")
-                
-                # For code generation queries, use the function requirements
-                if is_code_query and function_requirements:
-                    # Create a minimal context with the function requirements
-                    entity = function_requirements["entity"]
-                    fields = function_requirements["fields"]
-                    
-                    if entity and fields:
-                        # Get the data source from our patterns
-                        data_source = None
-                        for source_type, sources in self.bfc_patterns["data_sources"].items():
-                            if entity in sources:
-                                data_source = sources[entity]
-                                break
-                        
-                        if data_source:
-                            # Create a minimal context with the data source and fields
-                            context = f"Fonte de dados: {data_source}\nCampos disponíveis: {', '.join(fields)}"
-                            logger.info(f"Created minimal context: {context}")
-                        else:
-                            context = "Não há documentação específica disponível para esta consulta. Por favor, forneça uma resposta baseada no seu conhecimento geral sobre BFC-Script."
-                    else:
-                        context = "Não há documentação específica disponível para esta consulta. Por favor, forneça uma resposta baseada no seu conhecimento geral sobre BFC-Script."
-                else:
-                    context = "Não há documentação específica disponível para esta consulta. Por favor, forneça uma resposta baseada no seu conhecimento geral sobre BFC-Script."
+            # Check if context is empty or minimal
+            if not context.strip():
+                logger.warning(f"Empty or minimal context for query: {query}")
+                context = "No documentation context found for your query. Generating a response based on general understanding."
             
             # Format history if available
             history_context = self.format_history(history) if history else ""
             
             # Extract syntax patterns for undocumented responses
             syntax_patterns = self.extract_syntax_patterns(context)
-            
-            # Add common BFC-Script patterns to syntax patterns
-            if self.bfc_patterns:
-                syntax_patterns += "\n\nPadrões comuns do BFC-Script:\n"
-                
-                # Add data sources
-                syntax_patterns += "\nFontes de dados:\n"
-                for source_type, sources in self.bfc_patterns["data_sources"].items():
-                    syntax_patterns += f"- {source_type}:\n"
-                    for entity, source in sources.items():
-                        syntax_patterns += f"  - {entity}: {source}\n"
-                
-                # Add common functions
-                syntax_patterns += "\nFunções comuns:\n"
-                for func, signature in self.bfc_patterns["common_functions"].items():
-                    syntax_patterns += f"- {func}: {signature}\n"
             
             # Build user prompt with all necessary context
             user_prompt = self.prompts.get("RAG_USER_PROMPT").format(
@@ -408,7 +518,7 @@ class ResponseGenerator:
                     {"role": "system", "content": self.system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                temperature=0.3,  # Lower temperature for more consistent responses
+                temperature=0.2,  # Lower temperature for more consistent responses
                 max_tokens=2000  # Adjust based on expected response length
             )
 
