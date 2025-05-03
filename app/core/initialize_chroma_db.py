@@ -258,10 +258,10 @@ def initialize_chroma_db(reset_collections=False):
     
     # Define the JSON files to load for each collection
     collection_files = {
-        "docs": "docs/bfc_documentation_embeddings_v2.json",
-        "enums": "docs/enums_pessoal_and_folha_with_embeddings.json",
-        "folha": "docs/folha_with_embeddings.json",
-        "pessoal": "docs/pessoal_with_embeddings.json"
+        "docs": os.path.join(os.getcwd(), "docs", "bfc_documentation_embeddings_v2.json"),
+        "enums": os.path.join(os.getcwd(), "docs", "enums_pessoal_and_folha_with_embeddings.json"),
+        "folha": os.path.join(os.getcwd(), "docs", "folha_with_embeddings.json"),
+        "pessoal": os.path.join(os.getcwd(), "docs", "pessoal_with_embeddings.json")
     }
     
     log_debug(logger, f"Collection files: {collection_files}")

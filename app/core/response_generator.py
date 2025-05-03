@@ -7,6 +7,7 @@ import logging
 from .config import setup_logging, is_dev_mode, log_debug, log_function_call, log_function_return
 import tiktoken
 import re
+from app.utils.token_logger import TokenLogger
 
 # Configure logging
 logger = setup_logging(__name__, "logs/response_generator.log")
@@ -39,11 +40,14 @@ class ResponseGenerator:
         self.tokenizer = tiktoken.encoding_for_model("gpt-4o-mini")
         
         # Set maximum context length (leaving room for response)
-        self.max_context_tokens = 6000  # Conservative limit to leave room for response
+        self.max_context_tokens = 12000  # Aumento do limite para deixar mais espaço para contexto
         
         # Configure token limits for different components
         self.max_syntax_patterns_tokens = 3000 # Limit for syntax patterns extraction
         self.max_history_tokens = 1000  # Limit for conversation history
+        
+        # Initialize token logger
+        self.token_logger = TokenLogger()
         
         # Common data sources and patterns to check in context
         self.data_sources = {
@@ -447,14 +451,151 @@ class ResponseGenerator:
         logger.info(f"Extracted function requirements: {requirements}")
         return requirements
     
-    def generate_response(self, query: str, context: str | List[str] | List[Dict], history: Optional[List[Tuple[str, str]]] = None) -> str:
+    def _log_context_details(self, query: str, context: str, function_requirements: Dict[str, Any], syntax_patterns: str, history_context: str) -> None:
         """
-        Generate a response for the user query using RAG.
+        Log detailed information about the context being used for response generation.
         
         Args:
-            query: The user's query
-            context: Documentation context retrieved from search (string, list of strings, or list of dictionaries)
-            history: Chat history as list of (query, response) tuples
+            query: User query
+            context: Documentation context
+            function_requirements: Extracted function requirements
+            syntax_patterns: Extracted syntax patterns
+            history_context: Conversation history context
+        """
+        logger.info("----- CONTEXT DETAILS FOR RESPONSE GENERATION -----")
+        logger.info(f"Query: {query}")
+        logger.info(f"Context Length: {len(context)} characters")
+        logger.info(f"Context Token Count: {self.count_tokens(context)} tokens")
+        
+        # Log function requirements
+        logger.info("Function Requirements:")
+        for key, value in function_requirements.items():
+            if value:  # Only log non-empty values
+                logger.info(f"  {key}: {value}")
+        
+        # Log syntax patterns
+        if syntax_patterns:
+            logger.info(f"Syntax Patterns Length: {len(syntax_patterns)} characters")
+            logger.info(f"Syntax Patterns Token Count: {self.count_tokens(syntax_patterns)} tokens")
+        
+        # Log history context
+        if history_context:
+            logger.info(f"History Context Length: {len(history_context)} characters")
+            logger.info(f"History Context Token Count: {self.count_tokens(history_context)} tokens")
+        
+        # Log complete context
+        logger.info("Complete Context:")
+        logger.info(context)
+        
+        logger.info("------------------------------------------------")
+
+    def _preprocess_context(self, context: str, query: str, function_requirements: Dict[str, Any]) -> str:
+        """
+        Pré-processa o contexto para eliminar redundâncias e organizar as informações
+        de forma mais estruturada antes de enviá-las ao modelo.
+        
+        Args:
+            context: Contexto original
+            query: Consulta do usuário
+            function_requirements: Requisitos extraídos da consulta
+            
+        Returns:
+            Contexto processado
+        """
+        # Se o contexto estiver vazio, retornar
+        if not context.strip():
+            return context
+            
+        # Separar o contexto em blocos
+        blocks = context.split('#')
+        processed_blocks = []
+        
+        # Coletar hashes de blocos para identificar duplicatas
+        block_hashes = set()
+        
+        # Termos relevantes da consulta para classificação
+        query_terms = query.lower().split()
+        
+        # Identificar a fonte específica mencionada na consulta
+        source_mentioned = None
+        if "fonte" in query.lower():
+            for term in query_terms:
+                if "fonte" in term:
+                    source_mentioned = term
+                    break
+        
+        # Processar cada bloco
+        for block in blocks:
+            # Ignorar blocos vazios
+            if not block.strip():
+                continue
+                
+            # Adicionar o # de volta
+            block = '#' + block
+            
+            # Calcular um hash simplificado do bloco (primeiro parágrafo)
+            first_paragraph = block.split('\n\n')[0] if '\n\n' in block else block
+            block_hash = hash(first_paragraph[:100])
+            
+            # Se o bloco já foi processado, pular
+            if block_hash in block_hashes:
+                continue
+                
+            block_hashes.add(block_hash)
+            
+            # Calcular relevância do bloco para a consulta
+            relevance_score = 0
+            block_lower = block.lower()
+            
+            # Verificar se contém a fonte mencionada na consulta
+            if source_mentioned and source_mentioned in block_lower:
+                relevance_score += 20  # Máxima prioridade para a fonte mencionada
+                
+                # Se o bloco contém a fonte mencionada, dar prioridade máxima para:
+                # 1. Seção de campos (Types)
+                if "Types:" in block:
+                    relevance_score += 30  # Prioridade máxima para campos da fonte
+                    
+                # 2. Seção de filtros/ordenações (Expressions)
+                if "Expressions:" in block:
+                    relevance_score += 30  # Prioridade máxima para filtros/ordenações
+                    
+            # Verificar se contém dados da fonte mencionada na consulta
+            for term in query_terms:
+                if term in block_lower:
+                    relevance_score += 1
+                    
+            # Dar prioridade a blocos que mencionam "busca" se a consulta menciona busca
+            if "busca" in query.lower() and "busca" in block_lower:
+                relevance_score += 3
+                
+            # Dar prioridade a blocos com código de exemplo se a consulta é sobre implementação
+            if any(term in query.lower() for term in ["implement", "criar", "código", "exemplo"]):
+                if "```" in block or "Code Example:" in block:
+                    relevance_score += 3
+            
+            # Armazenar o bloco com sua pontuação de relevância
+            processed_blocks.append((block, relevance_score))
+        
+        # Ordenar blocos por relevância
+        processed_blocks.sort(key=lambda x: x[1], reverse=True)
+        
+        # Reunir blocos processados e ordenados
+        context_processed = "\n\n".join([block for block, _ in processed_blocks])
+        
+        # Registrar o pré-processamento no log
+        log_debug(logger, f"Contexto processado: reduziu de {len(blocks)} para {len(processed_blocks)} blocos")
+        
+        return context_processed
+
+    def generate_response(self, query: str, context: str | List[str] | List[Dict], history: Optional[List[Tuple[str, str]]] = None) -> str:
+        """
+        Generate a response using the provided context and history.
+        
+        Args:
+            query: User query
+            context: Documentation context
+            history: Conversation history
             
         Returns:
             Generated response
@@ -463,67 +604,57 @@ class ResponseGenerator:
             # Convert context to string if it's a list
             if isinstance(context, list):
                 if context and isinstance(context[0], dict):
-                    # Extract content from dictionaries
                     context = "\n\n".join(str(item.get('content', '')) for item in context)
                 else:
                     context = "\n\n".join(str(item) for item in context)
             
-            # Extract function requirements for code generation queries
+            # Extract function requirements from query
             function_requirements = self.extract_function_requirements(query, context)
-            is_code_query = function_requirements["is_script_query"]
             
-            if is_code_query:
-                logger.info(f"Extracted function requirements: {function_requirements}")
+            # Preprocess context
+            processed_context = self._preprocess_context(context, query, function_requirements)
             
-            # Check if context is empty or minimal
-            if not context.strip():
-                logger.warning(f"Empty or minimal context for query: {query}")
-                context = "No documentation context found for your query. Generating a response based on general understanding."
+            # Extract syntax patterns
+            syntax_patterns = self.extract_syntax_patterns(processed_context)
             
-            # Format history if available
-            history_context = self.format_history(history) if history else ""
+            # Format history
+            history_context = self.format_history(history or [])
             
-            # Extract syntax patterns for undocumented responses
-            syntax_patterns = self.extract_syntax_patterns(context)
+            # Log context details in development mode
+            if is_dev_mode():
+                self._log_context_details(query, processed_context, function_requirements, syntax_patterns, history_context)
             
-            # Build user prompt with all necessary context
-            user_prompt = self.prompts.get("RAG_USER_PROMPT").format(
-                context=context,
-                syntax_patterns=syntax_patterns,
-                history_context=history_context,
+            # Log token usage
+            self.token_logger.log_token_usage(
+                max_context_tokens=self.max_context_tokens,
+                max_syntax_patterns_tokens=self.max_syntax_patterns_tokens,
+                max_history_tokens=self.max_history_tokens,
+                actual_context_tokens=self.count_tokens(processed_context),
+                actual_syntax_patterns_tokens=self.count_tokens(syntax_patterns),
+                actual_history_tokens=self.count_tokens(history_context),
                 query=query
             )
             
-            # Count tokens and truncate if necessary
-            total_tokens = (
-                self.count_tokens(self.system_prompt) +
-                self.count_tokens(user_prompt)
+            # Format the prompt with the context
+            user_prompt = self.prompts.get("RAG_USER_PROMPT", "").format(
+                query=query,
+                context=processed_context,
+                syntax_patterns=syntax_patterns,
+                history_context=history_context
             )
             
-            if total_tokens > self.max_context_tokens:
-                logger.warning(f"Context too long ({total_tokens} tokens), truncating...")
-                # Truncate context while preserving structure
-                truncated_context = self.truncate_context(context, self.max_context_tokens)
-                user_prompt = self.prompts.get("RAG_USER_PROMPT").format(
-                    context=truncated_context,
-                    syntax_patterns=syntax_patterns,
-                    history_context=history_context,
-                    query=query
-                )
-            
-            # Generate response with appropriate model
+            # Generate response using OpenAI API
             response = self.client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": self.system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                temperature=0.2,  # Lower temperature for more consistent responses
-                max_tokens=2000  # Adjust based on expected response length
+                temperature=0.7
             )
-
+            
             return response.choices[0].message.content
-        
+            
         except Exception as e:
-            logger.error(f"Erro ao gerar resposta: {str(e)}")
-            return f"Desculpe, ocorreu um erro ao processar sua consulta. Por favor, tente novamente ou reformule sua pergunta."
+            logger.error(f"Error generating response: {str(e)}")
+            return "Desculpe, ocorreu um erro ao gerar a resposta. Por favor, tente novamente."
