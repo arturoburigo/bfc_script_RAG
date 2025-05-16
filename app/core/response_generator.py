@@ -133,14 +133,16 @@ class ResponseGenerator:
             from app.utils.prompts import (
                 RAG_SYSTEM_PROMPT,
                 RAG_USER_PROMPT,
-                SYNTAX_EXTRACTION_PROMPT
+                SYNTAX_EXTRACTION_PROMPT,
+                REPORT_GENERATION_PROMPT
             )
             
             # Create dictionary with prompts
             prompts = {
                 "RAG_SYSTEM_PROMPT": RAG_SYSTEM_PROMPT,
                 "RAG_USER_PROMPT": RAG_USER_PROMPT,
-                "SYNTAX_EXTRACTION_PROMPT": SYNTAX_EXTRACTION_PROMPT
+                "SYNTAX_EXTRACTION_PROMPT": SYNTAX_EXTRACTION_PROMPT,
+                "REPORT_GENERATION_PROMPT": REPORT_GENERATION_PROMPT
             }
             
             logger.info("Loaded prompts from prompts.py")
@@ -588,6 +590,30 @@ class ResponseGenerator:
         
         return context_processed
 
+    def _validate_report_structure(self, response: str) -> bool:
+        """
+        Validate if the response follows the report structure defined in REPORT_GENERATION_PROMPT.
+        
+        Args:
+            response: Generated response
+            
+        Returns:
+            True if response follows the structure, False otherwise
+        """
+        required_elements = [
+            "esquema = [",
+            "fonte = Dados.dinamico.v2.novo(esquema)",
+            "parametros.",
+            "fonteDados = Dados.",
+            "filtro =",
+            "dados = fonteDados.busca",
+            "percorrer (dados)",
+            "fonte.inserirLinha",
+            "retornar fonte"
+        ]
+        
+        return all(element in response for element in required_elements)
+
     def generate_response(self, query: str, context: str | List[str] | List[Dict], history: Optional[List[Tuple[str, str]]] = None) -> str:
         """
         Generate a response using the provided context and history.
@@ -610,6 +636,9 @@ class ResponseGenerator:
             
             # Extract function requirements from query
             function_requirements = self.extract_function_requirements(query, context)
+            
+            # Check if this is a report-related query
+            is_report_query = any(word in query.lower() for word in ["relatório", "relatorios", "relatorio"])
             
             # Preprocess context
             processed_context = self._preprocess_context(context, query, function_requirements)
@@ -635,6 +664,9 @@ class ResponseGenerator:
                 query=query
             )
             
+            # Choose the appropriate system prompt based on query type
+            system_prompt = self.prompts.get("REPORT_GENERATION_PROMPT", "") if is_report_query else self.system_prompt
+            
             # Format the prompt with the context
             user_prompt = self.prompts.get("RAG_USER_PROMPT", "").format(
                 query=query,
@@ -647,13 +679,33 @@ class ResponseGenerator:
             response = self.client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
-                    {"role": "system", "content": self.system_prompt},
+                    {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
                 temperature=0.7
             )
             
-            return response.choices[0].message.content
+            response_content = response.choices[0].message.content
+            
+            # If this is a report query, validate the structure
+            if is_report_query and not self._validate_report_structure(response_content):
+                logger.warning("Generated response does not follow report structure. Regenerating with stronger guidance...")
+                
+                # Add explicit instruction to follow the structure
+                enhanced_prompt = f"{user_prompt}\n\nIMPORTANTE: Siga EXATAMENTE a estrutura de relatório definida no prompt do sistema, incluindo a definição do esquema, criação da fonte dinâmica, parâmetros, busca e processamento dos dados."
+                
+                # Regenerate response with enhanced prompt
+                response = self.client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": enhanced_prompt}
+                    ],
+                    temperature=0.4  # Lower temperature for more consistent structure
+                )
+                response_content = response.choices[0].message.content
+            
+            return response_content
             
         except Exception as e:
             logger.error(f"Error generating response: {str(e)}")

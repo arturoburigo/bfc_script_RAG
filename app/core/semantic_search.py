@@ -48,8 +48,8 @@ class SemanticSearch:
         self.collection_weights = {
             "docs": 0.7,
             "enums": 0.7,
-            "folha": 1.0,  # Increased importance of domain entities
-            "pessoal": 1.0  # Increased importance of domain entities
+            "folha": 1.0,
+            "pessoal": 1.0
         }
         
         # Define domain-specific patterns to recognize in queries
@@ -85,6 +85,15 @@ class SemanticSearch:
                 r"classificacao",
                 r"tipo",
             ]
+        }
+        
+        # Define source type weights
+        self.source_type_weights = {
+            "matriculas": 1.2,
+            "folha": 1.2,
+            "pessoal": 1.2,
+            "historico": 0.8,
+            "relatorio": 0.8
         }
     
     def _load_collections(self):
@@ -179,34 +188,34 @@ class SemanticSearch:
         weights = self.collection_weights.copy()
         
         # Adjust weights based on query content
-        if any(term in query_lower for term in ["código", "script", "busca", "implementar", "criar", "crie um script"]):
+        if any(term in query_lower for term in ["código", "script", "busca", "implementar", "criar"]):
             # For code-related queries, prioritize collections with examples
-            weights["folha"] = 1.1
-            weights["pessoal"] = 1.1
-            weights["enums"] = 0.9
-            weights["docs"] = 0.8
+            weights["folha"] *= 1.1
+            weights["pessoal"] *= 1.1
+            weights["enums"] *= 0.9
+            weights["docs"] *= 0.8
             
         elif any(term in query_lower for term in ["enum", "enums", "tipo"]):
             # For enum-related queries
-            weights["enums"] = 1.2
-            weights["docs"] = 0.9
-            weights["folha"] = 0.8
-            weights["pessoal"] = 0.8
+            weights["enums"] *= 1.2
+            weights["docs"] *= 0.9
+            weights["folha"] *= 0.8
+            weights["pessoal"] *= 0.8
             
         elif any(term in query_lower for term in ["documentação", "conceito", "o que é"]):
             # For documentation/concept queries
-            weights["docs"] = 1.2
-            weights["enums"] = 0.9
-            weights["folha"] = 0.7
-            weights["pessoal"] = 0.7
+            weights["docs"] *= 1.2
+            weights["enums"] *= 0.9
+            weights["folha"] *= 0.7
+            weights["pessoal"] *= 0.7
         
         # Source-specific weights
         if "folha" in query_lower:
-            weights["folha"] = 1.2
-            weights["pessoal"] = 0.6
+            weights["folha"] *= self.source_type_weights["folha"]
+            weights["pessoal"] *= 0.6
         elif "pessoal" in query_lower:
-            weights["pessoal"] = 1.2
-            weights["folha"] = 0.6
+            weights["pessoal"] *= self.source_type_weights["pessoal"]
+            weights["folha"] *= 0.6
             
         logger.info(f"Content type detection weights: {weights}")
         return weights
@@ -287,10 +296,6 @@ class SemanticSearch:
                     # Check for specific data source mentions and boost if relevant
                     if any(source in content for source in ["Dados.folha", "Dados.pessoal"]):
                         relevance_score *= 1.3  # Boost data source references
-                        
-                    # Check for fields and parameters documentation
-                    #if "fields:" in content.lower() or "parameters:" in content.lower():
-                    #    relevance_score *= 1.15  # Boost API field documentation
                     
                     result = {
                         "content": content,
@@ -489,7 +494,7 @@ class SemanticSearch:
                 
                 for code_block in code_blocks:
                     # Get metadata from result
-                    metadata = result.get("metadata", {}).copy()
+                    metadata = result.get("metadata", {})
                     metadata["source"] = result.get("collection", "")
                     metadata["relevance_score"] = result.get("relevance_score", 0.0)
                     
