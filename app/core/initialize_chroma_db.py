@@ -280,6 +280,10 @@ def initialize_chroma_db(reset_collections=False):
         
         collection = client.get_or_create_collection(collection_name)
         
+        # Get existing IDs to avoid duplicates
+        existing_ids = get_existing_ids(collection)
+        logger.info(f"Found {len(existing_ids)} existing documents in collection {collection_name}")
+        
         # Check if file exists
         if not os.path.exists(file_path):
             logger.warning(f"File not found: {file_path}")
@@ -316,6 +320,10 @@ def initialize_chroma_db(reset_collections=False):
                         # Generate unique ID using document, section, and index
                         doc_id = f"{collection_name}_{chunk.get('document', '')}_{chunk.get('section', '')}_{i}"
                         
+                        # Skip if document already exists
+                        if doc_id in existing_ids:
+                            continue
+                        
                         documents.append(content)
                         embeddings.append(embedding)
                         metadatas.append(metadata)
@@ -347,6 +355,10 @@ def initialize_chroma_db(reset_collections=False):
                             # Generate unique ID
                             doc_id = f"{collection_name}_{enum_name}_{hash(content)}"
                             
+                            # Skip if document already exists
+                            if doc_id in existing_ids:
+                                continue
+                            
                             documents.append(content)
                             embeddings.append(embedding)
                             metadatas.append(metadata)
@@ -369,12 +381,16 @@ def initialize_chroma_db(reset_collections=False):
                             # Generate unique ID
                             doc_id = f"{collection_name}_{function_name}_{hash(content)}"
                             
+                            # Skip if document already exists
+                            if doc_id in existing_ids:
+                                continue
+                            
                             documents.append(content)
                             embeddings.append(embedding)
                             metadatas.append(metadata)
                             ids.append(doc_id)
             
-            log_debug(logger, f"Processed {len(documents)} documents for collection {collection_name}")
+            log_debug(logger, f"Found {len(documents)} new documents to add to collection {collection_name}")
             
             # Add documents to collection in batches
             if documents:
@@ -395,9 +411,9 @@ def initialize_chroma_db(reset_collections=False):
                         metadatas=batch_metadatas
                     )
                 
-                logger.info(f"Added {len(documents)} documents to collection {collection_name}")
+                logger.info(f"Added {len(documents)} new documents to collection {collection_name}")
             else:
-                logger.warning(f"No documents found in {file_path}")
+                logger.info(f"No new documents to add to collection {collection_name}")
                 
         except Exception as e:
             logger.error(f"Error processing {file_path}: {str(e)}")

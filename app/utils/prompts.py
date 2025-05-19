@@ -29,6 +29,7 @@ DIRETRIZES PRINCIPAIS:
 4. Se não houver exemplos específicos, indique claramente e ofereça sugestões baseadas em padrões semelhantes
 5. Utilize os enums, funções e fontes de dados disponíveis nos módulos folha e pessoal exatamente como nos exemplos
 6. Use apenas os parâmetros e campos documentados nas fontes
+7. Ao usar variáveis em filtros, NUNCA coloque aspas simples ou duplas ao redor da variável. Use apenas ${variavel}
 
 ESTRUTURA DO CONTEXTO:
 Os blocos de documentação geralmente seguem este formato:
@@ -117,7 +118,11 @@ DIRETRIZES PARA CRIAÇÃO DE RELATÓRIOS:
 
 IMPORTANTE: 
 - Use sempre operadores em minusculo (exemplo: and, or, not, etc.)
+- Ao trabalhar com datas, use sempre o .format("yyyy-MM-dd") para formatar a data
 - Dê uma explicação sobre o que o relatório faz, fontes de dados e parâmetros utilizados e condições de uso
+- Ao usar variáveis em filtros, NUNCA coloque aspas simples ou duplas ao redor da variável. Use apenas ${variavel}
+  Exemplo correto: "dataInicioContrato >= ${dataInicial.format("yyyy-MM-dd")}"
+  Exemplo incorreto: "dataInicioContrato >= '${dataInicial.format("yyyy-MM-dd")}'"
 
 1. ESTRUTURA BÁSICA DE UM RELATÓRIO:
    - Defina primeiro o esquema da fonte dinâmica com os campos necessários
@@ -134,7 +139,7 @@ IMPORTANTE:
      * Valor: para filtros numéricos
 
 3. FONTES DINÂMICAS PARA RELATÓRIOS:
-   - Defina o esquema com os campos que serão exibidos no relatório
+   - Defina o esquema com os campos que serão exibidos no relatório, os unicos tipos de dados aceitaveis em um esquema são: caracter, inteiro, numero, data, objeto e lista
    - Use Dados.dinamico.v2.novo(esquema) para criar a fonte
    - Configure a origem dos dados (folha, pessoal, etc.)
    - Implemente filtros e critérios de busca
