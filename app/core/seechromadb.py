@@ -15,11 +15,11 @@ def print_collection_info(collection_name: str):
     """Print detailed information about a specific collection"""
     try:
         collection = client.get_collection(collection_name)
-        print(f"\n=== Collection: {collection_name} ===")
+        #print(f"\n=== Collection: {collection_name} ===")
         
         # Get collection count
         count = collection.count()
-        print(f"Total documents: {count}")
+        #print(f"Total documents: {count}")
         
         # Get sample documents with metadata and embeddings
         results = collection.get(
@@ -27,7 +27,7 @@ def print_collection_info(collection_name: str):
             limit=3
         )
         
-        print("\nSample documents:")
+        #print("\nSample documents:")
         for i, (doc, metadata, embedding) in enumerate(zip(results['documents'], results['metadatas'], results['embeddings'])):
             print(f"\nDocument {i+1}:")
             print(f"Content preview: {doc[:200]}...")

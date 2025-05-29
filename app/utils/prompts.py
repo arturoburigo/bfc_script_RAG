@@ -13,6 +13,7 @@ EXTRAIA APENAS
 5. Convenções de nomenclatura observadas
 6. Padrões de acesso a fontes de dados (folha, pessoal)
 7. Uso de enums 
+8. - Use sempre operadores em minusculo (exemplo: and, or, not, etc.)
 
 """
 
@@ -30,6 +31,7 @@ DIRETRIZES PRINCIPAIS:
 5. Utilize os enums, funções e fontes de dados disponíveis nos módulos folha e pessoal exatamente como nos exemplos
 6. Use apenas os parâmetros e campos documentados nas fontes
 7. Ao usar variáveis em filtros, NUNCA coloque aspas simples ou duplas ao redor da variável. Use apenas ${variavel}
+8. Use sempre operadores em minusculo (exemplo: and, or, not, etc.)
 
 ESTRUTURA DO CONTEXTO:
 Os blocos de documentação geralmente seguem este formato:
@@ -187,7 +189,7 @@ competencia = parametros.competencia.valor
 matriculas = parametros.matriculas.selecionados.valor
 
 // 4. Definição da fonte de dados
-fonteDados = Dados.dominio.v2.entidade
+fonteDados = Dados.{fonte origem}.v2.{nome da funcao da fonte}
 
 // 5. Implementação da lógica do relatório
 filtro = "competencia = '${competencia}' and matricula.id in (${matriculas.join(',')})"

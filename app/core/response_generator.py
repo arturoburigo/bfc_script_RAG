@@ -8,6 +8,7 @@ from .config import setup_logging, is_dev_mode, log_debug, log_function_call, lo
 import tiktoken
 import re
 from app.utils.token_logger import TokenLogger
+from ..utils.logging_utils import log_context_details
 
 # Configure logging
 logger = setup_logging(__name__, "logs/response_generator.log")
@@ -44,7 +45,7 @@ class ResponseGenerator:
         
         # Configure token limits for different components
         self.max_syntax_patterns_tokens = 3000 # Limit for syntax patterns extraction
-        self.max_history_tokens = 1000  # Limit for conversation history
+        self.max_history_tokens = 2000  # Increased limit for conversation history
         
         # Initialize token logger
         self.token_logger = TokenLogger()
@@ -188,7 +189,7 @@ class ResponseGenerator:
             logger.error(f"Erro ao extrair padrões sintáticos: {str(e)}")
             return "Não foi possível extrair padrões sintáticos."
     
-    def format_history(self, history: List[Tuple[str, str]], max_entries: int = 2) -> str:
+    def format_history(self, history: List[Tuple[str, str]], max_entries: int = 5) -> str:
         """
         Format conversation history for inclusion in prompt.
         
@@ -205,16 +206,28 @@ class ResponseGenerator:
         # Take the most recent entries
         last_exchanges = history[-max_entries:] if len(history) > max_entries else history
         
-        # Format as conversation
+        # Format as conversation with clear separation
         history_parts = []
         for i, (q, a) in enumerate(last_exchanges):
-            history_parts.append(f"[Conversa {i+1}]\nUsuário: {q}\nAssistente: {a}")
+            history_parts.append(f"[Conversa {i+1}]")
+            history_parts.append(f"Usuário: {q}")
+            history_parts.append(f"Assistente: {a}")
+            history_parts.append("-" * 40)  # Add separator between exchanges
         
-        history_text = "\n\n".join(history_parts)
+        history_text = "\n".join(history_parts)
         
-        # Truncate history if too long
+        # Increase history token limit
         if self.count_tokens(history_text) > self.max_history_tokens:
-            history_text = self.truncate_context(history_text, self.max_history_tokens)
+            # Instead of truncating, try to keep more recent exchanges
+            while self.count_tokens(history_text) > self.max_history_tokens and len(last_exchanges) > 1:
+                last_exchanges = last_exchanges[1:]  # Remove oldest exchange
+                history_parts = []
+                for i, (q, a) in enumerate(last_exchanges):
+                    history_parts.append(f"[Conversa {i+1}]")
+                    history_parts.append(f"Usuário: {q}")
+                    history_parts.append(f"Assistente: {a}")
+                    history_parts.append("-" * 40)
+                history_text = "\n".join(history_parts)
         
         return history_text
     
@@ -486,8 +499,8 @@ class ResponseGenerator:
             logger.info(f"History Context Token Count: {self.count_tokens(history_context)} tokens")
         
         # Log complete context
-        logger.info("Complete Context:")
-        logger.info(context)
+        #logger.info("Complete Context:")
+        #logger.info(context)
         
         logger.info("------------------------------------------------")
 
@@ -649,9 +662,8 @@ class ResponseGenerator:
             # Format history
             history_context = self.format_history(history or [])
             
-            # Log context details in development mode
-            if is_dev_mode():
-                self._log_context_details(query, processed_context, function_requirements, syntax_patterns, history_context)
+            # Log context details
+            log_context_details(query, processed_context, function_requirements, syntax_patterns, history_context)
             
             # Log token usage
             self.token_logger.log_token_usage(
@@ -682,7 +694,7 @@ class ResponseGenerator:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                temperature=0.7
+                temperature=0.4
             )
             
             response_content = response.choices[0].message.content

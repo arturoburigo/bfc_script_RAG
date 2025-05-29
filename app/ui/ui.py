@@ -72,9 +72,12 @@ class BFCScriptUI:
                 search_results = self.search_engine.search(history[-1][0])
                 
                 # Generate a response using the response generator
-                response = self.response_generator.generate_response(history[-1][0], search_results)
+                response = self.response_generator.generate_response(history[-1][0], search_results, history[:-1])
                 history[-1][1] = response
                 yield history
+            
+            def clear_history():
+                return []
             
             submit.click(
                 user,
@@ -98,7 +101,7 @@ class BFCScriptUI:
                 chatbot
             )
             
-            clear.click(lambda: None, None, chatbot, queue=False)
+            clear.click(clear_history, None, chatbot, queue=False)
         
         log_function_return(logger, "BFCScriptUI.create_interface", result=interface)
         return interface

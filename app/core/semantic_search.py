@@ -89,7 +89,6 @@ class SemanticSearch:
         
         # Define source type weights
         self.source_type_weights = {
-            "matriculas": 1.2,
             "folha": 1.2,
             "pessoal": 1.2,
             "historico": 0.8,
@@ -156,7 +155,6 @@ class SemanticSearch:
                 
         if "codigo_exemplo" in query_intents:
             enhancements.append("Code Example")
-            enhancements.append("bfc-script")
             
         if "filtros" in query_intents:
             enhancements.append("filtros, busca expressions")
