@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "O bfc-script disponibiliza uma API para consumo das fonte de dados registradas pelas aplicações no catálogo de dados da Betha Sistemas. Essas funções estarão disponíveis ao usuário final apenas através da **Ferramenta de Scripts** , e serão",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

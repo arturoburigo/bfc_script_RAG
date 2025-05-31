@@ -1,0 +1,4 @@
+# SituacaoGrauInstrucao
+Enum: SituacaoGrauInstrucao
+- Completo (Key: COMPLETO, Value: 1)
+- Incompleto (Key: INCOMPLETO, Value: 2)

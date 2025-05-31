@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* Organização de código: Por meio da fragmentação de código orientada ao objetivo fim do componente;",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

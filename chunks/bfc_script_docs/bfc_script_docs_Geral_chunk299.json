@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "### Serviço  \nPara criar um novo serviço SOAP à ser consumido deve-se utilizar a função Soap.**servico** , as opções disponíveis para criação e configurações dos serviços são:  \n#### Soap.servico(url)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

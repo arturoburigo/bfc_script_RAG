@@ -23,9 +23,9 @@ def get_embedding(text):
     for attempt in range(max_retries):
         try:
             response = openai.embeddings.create(
-                model="text-embedding-3-large",
+                model="text-embedding-3-small",
                 input=text,
-                dimensions=3072  # The full dimensionality of the model
+                dimensions=512  # Match the semantic search configuration
             )
             return response.data[0].embedding
         except openai.RateLimitError:

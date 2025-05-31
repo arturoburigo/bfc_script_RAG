@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "As aplicações possuem apenas uma instância de uma determinada engine. Isso possibilita compartilhar scripts carregados e já compilados em outras execuções, diminuindo o custo de execução dos scripts utilizados por outros processos. Porem é",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

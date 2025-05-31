@@ -1,0 +1,18 @@
+# ClassificacaoSefip
+Enum: ClassificacaoSefip
+- H - Rescisão, com justa causa, por iniciativa do empregador (Key: RESCISAO_COM_JUSTA_CAUSA_INICIATIVA_EMPREGADOR, Value: 1)
+- I1 - Rescisão sem justa causa, por iniciativa do empregador, inclusive rescisão antecipada do contrato a termo (Key: RESCISAO_SEM_JUSTA_CAUSA_EMPREGADOR_INCLUSIVE_ANTECIPADA, Value: 2)
+- I2 - Rescisão por culpa recíproca ou força maior (Key: RESCISAO_CULPA_RECIPROCA_OU_FORCA_MAIOR, Value: 3)
+- I3 - Rescisão por término do contrato a termo (Key: RESCISAO_TERMINO_CONTRATO, Value: 4)
+- I4 - Rescisão sem justa causa do contrato de trabalho do empregado doméstico, por iniciativa do empregador (Key: RESCISAO_SEM_JUSTA_CAUSA_EMPREGADO_DOMESTICO_INICIATIVA_EMPREGADOR, Value: 5)
+- J - Rescisão do contrato de trabalho por iniciativa do empregado (Key: RESCISAO_CONTRATO_INICIATIVA_EMPREGADO, Value: 6)
+- K - Rescisão a pedido do empregado ou por iniciativa do empregador, com justa causa, no caso de empregado não optante, com menos de um ano de serviço (Key: RESCISAO_PEDIDO_EMPREGADO_OU_EMPREGADOR_COM_JUSTA_CAUSA_MENOS_UM_ANO_SERVICO, Value: 7)
+- L - Outros motivos de rescisão do contrato de trabalho (Key: OUTROS_MOTIVOS_RESCISAO, Value: 8)
+- M - Mudança de regime estatutário (Key: MUDANCA_REGIME_ESTATUTARIO, Value: 9)
+- N1 - Transferência de empregado para outro estabelecimento da mesma empresa (Key: TRANSFERENCIA_MESMA_EMPRESA, Value: 10)
+- N2 - Transferência de empregado para outra empresa que tenha assumido os encargos trabalhistas, sem que tenha havido rescisão de contrato de trabalho (Key: TRANSFERENCIA_OUTRA_EMPRESA, Value: 12)
+- N3 - Empregado proveniente de transferência de outro estabelecimento da mesma empresa ou de outra empresa, sem rescisão de contrato de trabalho (Key: PROVENIENTE_TRANSFERENCIA_MESMA_OU_OUTRA_EMPRESA, Value: 13)
+- S2 - Falecimento (Key: FALECIMENTO, Value: 14)
+- S3 - Falecimento motivado por acidente de trabalho (Key: FALECIMENTO_ACIDENTE_TRABALHO, Value: 15)
+- U1 - Aposentadoria (Key: APOSENTADORIA, Value: 16)
+- U3 - Aposentadoria por invalidez (Key: APOSENTADORIA_INVALIDEZ, Value: 17)

@@ -1,0 +1,5 @@
+# SubTipoProcessamento
+Enum: SubTipoProcessamento
+- Adiantamento (Key: ADIANTAMENTO, Value: 1)
+- Integral (Key: INTEGRAL, Value: 2)
+- Complementar (Key: COMPLEMENTAR, Value: 3)

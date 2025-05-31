@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "É indicado que a aplicação possua uma tabela para armazenamento de scripts independente do caso de uso, onde esta se relacionará com a tabela que representa o caso de uso.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

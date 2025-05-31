@@ -1,0 +1,99 @@
+# lotacaoFisica_busca
+Description: Lotações físicas
+Method: busca (GET)
+Method Description: Listagem de lotações físicas
+Representation Type: LotacaoFisica
+Expressions:
+- inicioVigencia: Início da vigência (Type: LocalDateTime)
+- numero: Número da lotação física (Type: String)
+- profissional.id: Identificador de profissional (Type: Long)
+- profissional.nome: Nome do profissional (Type: String)
+- id: Identificador (Type: Long)
+- nivel: Nível da lotação física (Type: Integer)
+- configuracao.emUso: Lotação física em uso (Type: Boolean)
+- localAmbiente: Tipo de estabelecimento (Type: )
+- descricao: Descrição da lotação física (Type: String)
+Types:
+## EmpresaResponsavelLotacaoFisica
+- id: Identificador (Type: Long)
+## ConfiguracaoLotacaoFisicaFonteDados
+- id: Identificador (Type: Long)
+- emUso: Configuração está em uso? (Type: Boolean)
+## ProfissionalLocatacaoFisica
+- id: Identificador (Type: Long)
+- nome: Nome (Type: String)
+## ResponsavelLotacaoFisica
+- id: Identificador (Type: Long)
+- profissional: Profissional (Type: ProfissionalLocatacaoFisica)
+- dataInicio: Data inicial (Type: LocalDate)
+- dataTermino: Data final (Type: LocalDate)
+- substituto: É substituto (Type: Boolean)
+## TelefonesLotacaoFisica
+- id: Identificador (Type: Long)
+- descricao: Descrição (Type: String)
+- tipo: Tipo (Type: )
+- numero: Número (Type: String)
+- observacao: Observação (Type: String)
+## LogradouroLotacaoFisica
+- id: Identificador (Type: Long)
+- descricao: Descrição do Logradouro (Type: String)
+## PaisLotacaoFisica
+- id: Identificador (Type: Long)
+- nome: Nome do país (Type: String)
+## EstadoLotacaoFisica
+- id: Identificador (Type: Long)
+- nome: Nome do estado (Type: String)
+- uf: UF (Type: String)
+- pais: País (Type: PaisLotacaoFisica)
+## MunicipioLotacaoFisica
+- id: Identificador (Type: Long)
+- nome: Nome do município (Type: String)
+- estado: Estado (Type: EstadoLotacaoFisica)
+## BairroLotacaoFisica
+- id: Identificador (Type: Long)
+- nome: Nome do bairro (Type: String)
+- municipio: Município (Type: MunicipioLotacaoFisica)
+## EnderecoLotacaoFisica
+- id: Identificador (Type: Long)
+- cep: CEP (Type: String)
+- logradouro: Logradouro (Type: LogradouroLotacaoFisica)
+- bairro: Bairro (Type: BairroLotacaoFisica)
+- descricao: Descrição (Type: String)
+- complemento: Complemento (Type: String)
+## LotacaoFisica
+- id: Identificador (Type: Long)
+- numero: Número da lotação física (Type: String)
+- descricao: Descrição da lotação física (Type: String)
+- inicioVigencia: Início da vigência (Type: LocalDateTime)
+- utilizaEpc: Utilização EPC (Type: )
+- localAmbiente: Tipo de estabelecimento (Type: )
+- nivel: Nível da lotação física (Type: Integer)
+- representaLocalTrabalho: Representa local de trabalho (Type: Boolean)
+- tipoLocal: Representa o tipo de local (Type: )
+- empresaTerceiro: Representa a empresa terceira (Type: EmpresaResponsavelLotacaoFisica)
+- configuracao: Configuração lotação física (Type: ConfiguracaoLotacaoFisicaFonteDados)
+- camposAdicionais: Campo adicional (Type: CamposAdicionais)
+- responsaveis: Responsáveis da lotação física (Type: ResponsavelLotacaoFisica)
+- telefones: Telefones da lotação física (Type: TelefonesLotacaoFisica)
+- enderecos: Endereços da lotação física (Type: EnderecoLotacaoFisica)
+## NiveisConfiguracaoLotacaoFisica
+- id: Identificador (Type: Long)
+- nivel: Nível (Type: Integer)
+- descricao: Descrição (Type: String)
+- quantidadeDigitos: Quantidade de dígitos (Type: Integer)
+- separador: Separador (Type: )
+## ConfiguracaoLotacaoFisica
+- id: Identificador (Type: Long)
+- emUso: Configuração está em uso? (Type: Boolean)
+- descricao: Descrição (Type: String)
+- niveis: Níveis (Type: NiveisConfiguracaoLotacaoFisica)
+Code Example:
+```
+fonteLotacaoFisica = Dados.pessoal.v2.lotacaoFisica;
+
+dadosLotacaoFisica = fonteLotacaoFisica.busca(campos: "responsaveis(profissional(id, nome), id, dataInicio, dataTermino, substituto), numero, id, descricao, inicioVigencia")
+
+percorrer (dadosLotacaoFisica) { itemLotacaoFisica ->
+
+}
+```

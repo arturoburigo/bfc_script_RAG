@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### ehTipoEspaco  \nIndica se o [tipo](index.html#apiArquivosImplementacoesXmlTipos) do item atual é igual a ESPACO  \n##### ehTipoCData  \nIndica se o [tipo](index.html#apiArquivosImplementacoesXmlTipos) do item atual é igual a CDATA",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

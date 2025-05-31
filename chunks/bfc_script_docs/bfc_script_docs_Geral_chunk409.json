@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* **ordernacao** : Parâmetro utilizado para informar a ordem do resultado da busca. o valor deste parâmetro deve ser preenchido com o nome dos campos separados por virgula seguido da orientação (asc - Ascendente, desc - Descendente).",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

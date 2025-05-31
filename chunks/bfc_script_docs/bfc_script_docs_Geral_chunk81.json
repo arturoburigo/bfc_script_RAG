@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Obtem o tamanho de um texto.  \n```bfc-script\nnumeros = [1,2,3,4]\npercorrer(numeros){\nse(item == 3){\ncontinuar()\n}\nimprimir item\n}\n```0  \n_Alternativa_  \n```bfc-script\nnumeros = [1,2,3,4]\npercorrer(numeros){\nse(item == 3){\ncontinuar()\n}\nimprimir item\n}\n```1  \n##### vazio  \nVerifica se uma palavra esta vazia.  \n```bfc-script\nnumeros = [1,2,3,4]\npercorrer(numeros){\nse(item == 3){\ncontinuar()\n}\nimprimir item\n}\n```2  \n_Alternativa_  \n```bfc-script\nnumeros = [1,2,3,4]\npercorrer(numeros){\nse(item == 3){\ncontinuar()\n}\nimprimir item\n}\n```3  \n##### dividir",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

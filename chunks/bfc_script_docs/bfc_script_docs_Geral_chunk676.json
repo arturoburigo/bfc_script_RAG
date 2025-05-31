@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "### Linguagens de domínio especifico  \nArtigo no formato de perguntas e repostas formulado por [Martin Fowler](http://martinfowler.com/).  \n**O que é uma Domain Specific Language? (ou linguagem de domínio especifico, ou ainda DSL)**",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

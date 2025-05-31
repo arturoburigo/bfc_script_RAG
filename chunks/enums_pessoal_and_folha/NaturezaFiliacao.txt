@@ -1,0 +1,4 @@
+# NaturezaFiliacao
+Enum: NaturezaFiliacao
+- Biológica (Key: BIOLOGICA, Value: 1)
+- Sócioafetiva (Key: SOCIOAFETIVA, Value: 2)

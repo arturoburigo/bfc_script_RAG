@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* Melhor performance na execução do script: Por conta do recurso Exportar e Importar e também porque os componentes são executados exclusivamente a partir de um script que o invoca;",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

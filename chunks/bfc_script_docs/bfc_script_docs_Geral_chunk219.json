@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```20  \n##### escreverInicioDocumento(encoding, versao, standalone)  \nEscreve a declaração de um documento XML informando o encoding, versão e standalone.  \n##### escreverFimDocumento()  \nEscreve o fim do documento XML.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

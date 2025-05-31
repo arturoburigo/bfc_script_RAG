@@ -1,0 +1,6 @@
+# TipoInscricaoProcessoTrabalhista
+Enum: TipoInscricaoProcessoTrabalhista
+- CPF (Key: CPF, Value: 1)
+- CNPJ (Key: CNPJ, Value: 2)
+- CGC (Key: CGC, Value: 5)
+- CEI (Key: CEI, Value: 6)

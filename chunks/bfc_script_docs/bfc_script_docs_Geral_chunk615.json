@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Todo script executado gera um retorno. Este tipo de retorno precisa ser previamente reconhecido pelo executor do script, pois será necessário fazer um cast para obtermos o valor de retorno. Para o exemplo acima, o retorno é obtido através de um",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

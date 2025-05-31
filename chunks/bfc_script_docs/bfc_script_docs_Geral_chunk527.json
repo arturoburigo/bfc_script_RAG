@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "###### assinar(arquivo, opcoes)  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```11  \n### Múltiplos assinantes  \nExemplo de script de assinatura de um documento PDF com múltiplos assinantes:",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

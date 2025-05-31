@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A linguagem e a JVM, no entanto, têm caminhado cada vez mais em direções opostas. A linguagem tornou-se mais complexa, enquanto a JVM se tornou uma das plataformas de execução mais rápida e eficiente disponível. Em muitos benchmarks, Java iguala o",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,27 @@
+# tipoBase_busca
+Description: TipoBase
+Method: busca (GET)
+Method Description: Listagem de tipos de bases
+Representation Type: Base
+Expressions:
+- classificacao: Classificação (Type: )
+- id: Identificador (Type: Long)
+- descricao:  (Type: String)
+Types:
+## Base
+- id: Identificador (Type: Long)
+- sigla: Sigla (Type: String)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+Code Example:
+```
+fonteTipoBase = Dados.folha.v2.tipoBase;
+
+filtroTipoBase = "id = null"
+
+dadosTipoBase = fonteTipoBase.busca(criterio: filtroTipoBase,campos: "id, sigla, descricao, classificacao",ordenacao: "id asc")
+
+percorrer (dadosTipoBase) { itemTipoBase ->
+
+}
+```

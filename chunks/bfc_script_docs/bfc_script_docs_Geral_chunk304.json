@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Os valores podem ser acessados através das funções: **namespace()** e **prefixo()** da representação criada.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```79  \n#### cabecalho(nome, valor)  \nAdiciona um cabeçalho(header) HTTP na requisição SOAP do serviço.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```80",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

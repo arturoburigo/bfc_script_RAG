@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "No exemplo acima estamos utilizando a variável injetada **valorSalarioHora** para fazermos um suposto calculo salarial. Criamos a variável **nomeFuncionario** , e atribuímos o nome para o funcionário e utilizamos o comando retornar para submetermos",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,43 @@
+# configuracaoTransparencia_busca
+Description: ConfiguracaoTransparencia
+Method: busca (GET)
+Method Description: Betha Transparência
+Representation Type: ConfiguracaoTransparencia
+Expressions:
+- enviaQuadroSocialCargaInicial: Se envia quadro social (Type: Boolean)
+- emailRetorno: Email para retorno (Type: String)
+- ativo: Define se o fly está ativo (Type: Boolean)
+- enviaDadosCadastrais: Se envia dados cadastrais (Type: Boolean)
+- competenciaIncialDados: Competência inicial para envio de dados (Type: YearMonth)
+- competenciaIncialMovimentos: Competência inicial para envio de movimentos (Type: YearMonth)
+- enviaCalculosFolha: Se envia dados do cálculo de folha (Type: Boolean)
+- enviaTotalFolhaCargaInicial: Se envia total folha de pagamento (Type: Boolean)
+- chave: Chave de acesso ao transparência (Type: String)
+- enviaDemaisDadosPessoalCargaInicial: Se envia dados de pessoal (Type: Boolean)
+- enviaMatriculasAtivasCargaInicial: Se envia matrículas ativas (Type: Boolean)
+Types:
+## ConfiguracaoTransparencia
+- id: id (Type: Long)
+- chave: Chave de acesso ao transparência (Type: String)
+- competenciaIncialDados: Competência inicial para envio de dados (Type: YearMonth)
+- competenciaIncialMovimentos: Competência inicial para envio de movimentos (Type: YearMonth)
+- enviaCalculosFolha: Se envia dados do cálculo de folha (Type: Boolean)
+- enviaDadosCadastrais: Se envia dados cadastrais (Type: Boolean)
+- emailRetorno: Email para retorno (Type: String)
+- enviaDemaisDadosPessoalCargaInicial: Se envia dados de pessoal (Type: Boolean)
+- enviaQuadroSocialCargaInicial: Se envia quadro social (Type: Boolean)
+- enviaMatriculasAtivasCargaInicial: Se envia matrículas ativas (Type: Boolean)
+- enviaTotalFolhaCargaInicial: Se envia total folha de pagamento (Type: Boolean)
+- ativo: Define se o fly está ativo (Type: Boolean)
+Code Example:
+```
+fonteConfiguracaoTransparencia = Dados.folha.v2.configuracaoTransparencia;
+
+filtroConfiguracaoTransparencia = "emailRetorno = null"
+
+dadosConfiguracaoTransparencia = fonteConfiguracaoTransparencia.busca(criterio: filtroConfiguracaoTransparencia,campos: "id, chave, emailRetorno, enviaCalculosFolha, enviaDadosCadastrais",ordenacao: "chave asc")
+
+percorrer (dadosConfiguracaoTransparencia) { itemConfiguracaoTransparencia ->
+
+}
+```

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### DELETE (dados, Mapa[marcadores])  \n#### DELETE (dados, Tipo de mídia)  \n#### DELETE (dados, Tipo de mídia, Mapa[marcadores])",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

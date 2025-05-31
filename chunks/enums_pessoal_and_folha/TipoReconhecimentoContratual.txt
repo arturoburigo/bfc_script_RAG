@@ -1,0 +1,5 @@
+# TipoReconhecimentoContratual
+Enum: TipoReconhecimentoContratual
+- Categoria do trabalhador (Key: CATEGORIA_TRABALHADOR, Value: 1)
+- Natureza da atividade (Key: NATUREZA_ATIVIDADE, Value: 2)
+- Ambos (Key: AMBOS, Value: 3)

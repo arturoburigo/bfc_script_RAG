@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Adiciona/cria um novo elemento informando também o namespace e prefixo de declaração do elemento. É importante lembrar que o namespace utilizado deve estar declarado na mensagem ou elemento pai. O retorno desta função é a representação do novo",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,6 @@
+# TipoEvento
+Enum: TipoEvento
+- Vencimento, provento ou pensão (Key: VENCIMENTO, Value: 1)
+- Desconto (Key: DESCONTO, Value: 2)
+- Informativo(+) (Key: INFORMATIVO_MAIS, Value: 3)
+- Informativo(-) (Key: INFORMATIVO_MENOS, Value: 4)

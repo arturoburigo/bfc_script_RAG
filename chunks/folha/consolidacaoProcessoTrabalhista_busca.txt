@@ -1,0 +1,55 @@
+# consolidacaoProcessoTrabalhista_busca
+Description: Consolidação processo trabalhista
+Method: busca (GET)
+Method Description: Listagem de consolidações de processos trabalhistas
+Representation Type: ConsolidacaoProcessoTrabalhistaFonteDados
+Expressions:
+- numeroProcesso:  (Type: String)
+- competenciaPagamento:  (Type: YearMonth)
+- id:  (Type: Long)
+Types:
+## FonteDadosAssociacao
+- id: Id (Type: Long)
+- nome: Nome (Type: String)
+## FonteDadosConsolidacaoProcessoTrabalhistaAssociacao
+- id: Id (Type: Long)
+- tipo: Tipo de matrícula (Type: )
+- dataInicioContrato: Data de admissão (Type: LocalDate)
+- eSocial: eSocial (Type: String)
+- situacao: Situação (Type: )
+- inicioVigencia: Início da vigência (Type: LocalDateTime)
+- pessoa: Pessoa (Type: FonteDadosAssociacao)
+## PessoaFisicaAssociacao
+- id: Id (Type: Long)
+- nome: Nome (Type: String)
+- cpf: CPF (Type: String)
+- dataNascimento: Data de nascimento (Type: LocalDate)
+## ProcessoTrabalhistaAssociacao
+- id: Identificador (Type: Long)
+- tipoProcesso: Tipo do processo (Type: )
+- dataProcesso: Data do processo (Type: LocalDate)
+- numeroProcesso: Número do processo (Type: String)
+- matricula: Matrícula (Type: FonteDadosConsolidacaoProcessoTrabalhistaAssociacao)
+- pessoaFisica: Pessoa física (Type: PessoaFisicaAssociacao)
+## DadosTributacaoAssociacao
+- id: Identificador (Type: Long)
+- competenciaInicial: Competência inicial (Type: YearMonth)
+- competenciaFinal: Competência final (Type: YearMonth)
+- sequencial: Sequencial (Type: Integer)
+- processoTrabalhista:  (Type: ProcessoTrabalhistaAssociacao)
+## ConsolidacaoProcessoTrabalhistaFonteDados
+- id: Identificador (Type: Long)
+- numeroProcesso: Número do processo trabalhista (Type: String)
+- competenciaPagamento: Competência de pagamentos dos encargos (Type: YearMonth)
+- quantidade: Quantidade de consolidações de processos trabalhistas (Type: Integer)
+- encargosConsolidados: Encargos consolidados (Type: DadosTributacaoAssociacao)
+Code Example:
+```
+fonteConsolidacaoProcessoTrabalhista = Dados.folha.v2.consolidacaoProcessoTrabalhista;
+
+dadosConsolidacaoProcessoTrabalhista = fonteConsolidacaoProcessoTrabalhista.busca(campos: "encargosConsolidados(id, processoTrabalhista(matricula(id, tipo, dataInicioContrato, eSocial, situacao, inicioVigencia), numeroProcesso)), id, numeroProcesso",ordenacao: "id,competenciaPagamento asc")
+
+percorrer (dadosConsolidacaoProcessoTrabalhista) { itemConsolidacaoProcessoTrabalhista ->
+
+}
+```

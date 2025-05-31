@@ -10,8 +10,6 @@ Este projeto é uma iniciativa acadêmica desenvolvida na SATC (Associação Ben
 
 ![RAG Assistant](https://miro.medium.com/v2/resize:fit:1400/1*J7vyY3EjY46AlduMvr9FbQ.png)
 
-
-
 ### Principais Características
 
 - **Integração com Editor**: Assistente de IA integrado diretamente no editor de scripts
@@ -26,6 +24,43 @@ O assistente funciona de forma similar à IA do Notion, onde os desenvolvedores 
 1. Ativar o modo chat através de um comando específico
 2. Fazer perguntas ou solicitar geração de código em linguagem natural
 3. Receber respostas contextualizadas e código funcional baseado na documentação do BFC Script
+
+## Instalação e Configuração
+
+### Pré-requisitos
+
+- Python 3.9 ou superior
+- Poetry (gerenciador de dependências)
+
+### Instalação do Poetry
+
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+### Configuração do Projeto
+
+1. Clone o repositório:
+```bash
+git clone [URL_DO_REPOSITÓRIO]
+cd bfc_script_RAG
+```
+
+2. Instale as dependências usando Poetry:
+```bash
+poetry install
+```
+
+3. Configure as variáveis de ambiente:
+```bash
+cp .env_example .env
+# Edite o arquivo .env com suas configurações
+```
+
+4. Execute o projeto:
+```bash
+poetry run python run.py
+```
 
 ## Documentação
 

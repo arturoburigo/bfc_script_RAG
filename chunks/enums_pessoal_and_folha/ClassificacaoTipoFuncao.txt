@@ -1,0 +1,6 @@
+# ClassificacaoTipoFuncao
+Enum: ClassificacaoTipoFuncao
+- Função gratificada (Key: FUNCAO_GRATIFICADA, Value: 1)
+- Membro da CIPA (Key: MEMBRO_CIPA, Value: 2)
+- Fiscal de prova (Key: FISCAL_PROVA, Value: 3)
+- Comissão de avaliação (Key: COMISSAO_AVALIACAO, Value: 4)

@@ -1,0 +1,16 @@
+# CampoDirf
+# Part 3
+# This is a continuation of the CampoDirf enum
+Enum: CampoDirf
+- 5.3.2 - Outros sobre 13º salário - Médico residente (Key: REND_SUJ_TRIB_EXCLUSIVA_OUTROS_13_SALARIO_MEDICO_RESIDENTE, Value: 42)
+- 5.3 - Outros (especificar) (Key: REND_SUJ_TRIB_EXCLUSIVA_OUTROS_GERAL, Value: 40)
+- 5 - Rendimentos sujeitos à tributação exclusiva (rendimento líquido) (Key: REND_SUJ_TRIBUTACAO_EXCLUSIVA, Value: 29)
+- 6.1 - RRA - Total de rendimentos tributáveis (inclusive férias e décimo terceiro salário) (Key: RRA_TOTAL_RENDIMENTOS_TRIBUTAVEIS, Value: 44)
+- 6.2 - RRA - Exclusão: Despesas com a ação judicial (Key: RRA_EXCLUSAO_DESP_ACAO_JUDICIAL, Value: 45)
+- 6.3 - RRA - Dedução: Contribuição previdenciária oficial (Key: RRA_DEDUCAO_CONTRIB_PREV_OFICIAL, Value: 46)
+- 6.4 - RRA - Dedução: Pensão Alimentícia (preencher também o quadro 7) (Key: RRA_DEDUCAO_PENSAO_ALIMENTICIA, Value: 47)
+- 6.5 - RRA - Imposto sobre a renda retido na fonte (Key: RRA_IRRF, Value: 48)
+- 6.6 - RRA - Rendimentos isentos de pensão, proventos de aposentadoria ou reforma por moléstia grave ou aposentadoria ou reforma por acidente em serviço (Key: RRA_RENDIMENTOS_ISENTOS, Value: 49)
+- 6 - Rendimentos recebidos acumuladamente (Key: REND_REC_ACUMULADAMENTE, Value: 43)
+- 7 - Informações complementares (Key: INFORMACOES_COMPLEMENTARES, Value: 50)
+- Abono Pecuniário (Key: ABONO_PECUNIARIO, Value: 51)

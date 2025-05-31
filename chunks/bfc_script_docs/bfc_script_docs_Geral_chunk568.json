@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A tabela CRITICAS_USUARIOS representa possíveis critérios de validação configurados pelo usuário final. As criticas podem ser definidas para diversos cadastros, onde para cada crítica há um script. Esta tabela é aplicavel para o caso de uso críticas",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

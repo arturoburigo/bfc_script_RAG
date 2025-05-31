@@ -1,0 +1,36 @@
+# configuracoes-organogramas_buscaNiveisEmUso
+Description: Configurações de organogramas
+Method: buscaNiveisEmUso (GET)
+Method Description: Listagem de nível em uso da configuração de organograma
+Representation Type: ConfiguracaoNivelOrganograma
+Expressions:
+- responsavelControleVagas: É responsável pelo controle de vagas? (Type: Boolean)
+- quantidadeDigitos: Quantidade de dígitos (Type: Integer)
+- id: Id (Type: Long)
+- separador: Separador de nível (Type: )
+- nivel: Nível (Type: Integer)
+- configuracao.emUso: Configuração do organograma em uso (Type: Boolean)
+- descricao: Descrição (Type: String)
+Types:
+## ConfiguracaoNivelOrganograma
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- nivel: Nível (Type: Integer)
+- quantidadeDigitos: Quantidade de dígitos (Type: Integer)
+- separador: Separador de nível (Type: )
+- responsavelControleVagas: É responsável pelo controle de vagas? (Type: Boolean)
+## ConfiguracaoOrganograma
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- emUso: Configuração está em uso? (Type: Boolean)
+- niveis: Níveis (Type: ConfiguracaoNivelOrganograma)
+Code Example:
+```
+fonteConfiguracoes-organogramas = Dados.pessoal.v2.configuracoes-organogramas;
+
+dadosConfiguracoes-organogramas = fonteConfiguracoes-organogramas.buscaNiveisEmUso(campos: "id, descricao",ordenacao: "id asc")
+
+percorrer (dadosConfiguracoes-organogramas) { itemConfiguracoes-organogramas ->
+
+}
+```

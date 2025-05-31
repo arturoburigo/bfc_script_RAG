@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Exemplo:  \n```bfc-script\npercorrer(de:3, ate:5){ idPrincipal ->\nimprimir idPrincipal\npercorrer(de:6, ate:8){ idSecundario ->\nimprimir 'ID princial: ' + idPrincipal\nimprimir 'ID secundário: ' + idSecundario\n}\n}\n```67  \n#### parametro(nome, valor)  \nCria uma cópia da requisição atual adicionando um parâmetro de query.  \n#### parametro(nome, lista de valores)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* terminaCom(valor) `nome like \" %P\"`\n* naoTerminaCom(valor) `nome not like \" %P\"`\n* contem(valor) `nome like \"%João%\"`\n* naoContem(valor) `nome not like \"%João%\"`\n* contidoEm(valores) `nome in (\"João\", \"Maria\")`",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

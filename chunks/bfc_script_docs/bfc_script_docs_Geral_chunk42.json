@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```0  \nEste comando está disponível apenas na **Ferramenta de Scripts**.  \n#### Listas  \nTambém conhecida como Arrays, podemos trabalhar com listas de maneira bem simplificada.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```1",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

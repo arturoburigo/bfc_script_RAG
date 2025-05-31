@@ -1,0 +1,7 @@
+# SituacaoOperacao
+Enum: SituacaoOperacao
+- Em andamento (Key: EM_ANDAMENTO, Value: 0)
+- Cancelado (Key: CANCELADO, Value: 3)
+- Concluído com problemas (Key: CONCLUIDO_COM_PROBLEMA, Value: 2)
+- Concluído (Key: CONCLUIDO, Value: 1)
+- Reajuste não aplicado (Key: REAJUSTE_NAO_APLICADO, Value: 4)

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**operacao()**  \nRetorna a operação do método atual.  \n**namespace()**  \nRetorna o namespace do método atual.  \n**elemento()**  \nRetorna o [elemento](index.html#apiSoapMensagemElemento) que representa o método atual.  \n**requisicao()**",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

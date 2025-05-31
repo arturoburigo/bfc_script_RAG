@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\nletras = ['A','B','C']\npercorrer(de:2, ate:3, itens: letras){\nimprimir item\n}\n// Irá imprimir as letras B e C, ou seja, do índice 2 até o índice 3\n```9  \n##### repetir  \nRepete um texto especificado de acordo com uma quantidade definida.  \n```bfc-script\nnumeros = [1,2,3,4]\npercorrer(numeros){\nse(item == 3){\nparar()\n}\nimprimir item\n}\n8.\n//As instruções fora do comando percorrer serão executadas normalmente, somente o comando percorrer\n//será interrompido e não todo o script\nimprimir 'Ok'\n```0  \n_Alternativa_  \n```bfc-script\nnumeros = [1,2,3,4]\npercorrer(numeros){\nse(item == 3){\nparar()\n}\nimprimir item\n}\n8.\n//As instruções fora do comando percorrer serão executadas normalmente, somente o comando percorrer\n//será interrompido e não todo o script\nimprimir 'Ok'\n```1",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,75 @@
+# jornadasTrabalho_busca
+Description: Jornadas de trabalho
+Method: busca (GET)
+Method Description: Listagem de jornada de trabalho
+Representation Type: JornadaTrabalhoFonteDadosCompleta
+Expressions:
+- tipo: Tipo da jornada (Type: )
+- inicioVigencia: Início da vigência (Type: LocalDateTime)
+- enviarESocial: tipo de valor que sera enviado ao eSocial (Type: )
+- id: Id (Type: Long)
+Types:
+## HorarioMarcacao
+- id: Identificador (Type: Long)
+- hora: Horário (Type: LocalTime)
+## HorarioIntervalo
+- id: Identificador (Type: Long)
+- entrada: Horário de entrada (Type: LocalTime)
+- saida: Horário de saída (Type: LocalTime)
+## Horario
+- id: Identificador (Type: Long)
+- codigo: Código (Type: String)
+- entrada:  (Type: LocalTime)
+- saida:  (Type: LocalTime)
+- cargaHoraria: Carga horária (Type: BigDecimal)
+- marcacoes: Marcações (Type: HorarioMarcacao)
+- intervalos:  (Type: HorarioIntervalo)
+## PeriodoJornadaTrabalho
+- id: Identificador (Type: Long)
+- dia: Dia (Type: Integer)
+- horario: Horário (Type: Horario)
+- classificacao: Classificação (Type: )
+## JornadaTrabalhoFonteDadosAssociacao
+- id: Identificador (Type: Long)
+- cargaHorariaSemanal: Carga horária semanal (Type: Duration)
+- periodos: Períodos (Type: PeriodoJornadaTrabalho)
+## JornadaTrabalhoEscala
+- id: Id (Type: Long)
+- sequencia: Sequência (Type: Long)
+- jornadaTrabalho: Jornada de trabalho (Type: JornadaTrabalhoFonteDadosAssociacao)
+- cor: Cor (Type: String)
+## Escala
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- tipo: Tipo da escala (Type: )
+- jornadaTrabalhoEscalas: Jornadas (Type: JornadaTrabalhoEscala)
+## JornadaTrabalhoFonteDadosCompleta
+- id: Id (Type: Long)
+- codigo: Código (Type: String)
+- descricao: Descrição (Type: String)
+- inicioVigencia: Início da vigência (Type: LocalDateTime)
+- tipo: Tipo da jornada (Type: )
+- enviarESocial: tipo de valor que sera enviado ao eSocial (Type: )
+- horarioNoturno: Horario noturno (Type: Boolean)
+- tipoCompensacao: Compensação (Type: )
+- cargaHorariaSemanal: Carga horária semanal (Type: String)
+- desativado: Desativado (Type: Boolean)
+- periodos: Períodos (Type: PeriodoJornadaTrabalho)
+- revezamento: Revezamento (Type: Boolean)
+- tipoDeRevezamento: Tipo de revezamento (Type: )
+- escala: Escala (Type: Escala)
+- inicioRevezamento: Data de início do revezamento (Type: LocalDate)
+- horasDSR: Representa a quatidade de horas DSR (Type: LocalTime)
+- camposAdicionais: Campo adicional (Type: CamposAdicionais)
+Code Example:
+```
+fonteJornadasTrabalho = Dados.pessoal.v2.jornadasTrabalho;
+
+filtroJornadasTrabalho = "inicioVigencia >= 2015-09-09"
+
+dadosJornadasTrabalho = fonteJornadasTrabalho.busca(criterio: filtroJornadasTrabalho,campos: "id, codigo, descricao, inicioVigencia, tipo, enviarESocial, tipoCompensacao",ordenacao: "inicioVigencia asc")
+
+percorrer (dadosJornadasTrabalho) { itemJornadasTrabalho ->
+
+}
+```

@@ -1,0 +1,4 @@
+# TipoTributacao
+Enum: TipoTributacao
+- IRRF (Key: IRRF, Value: 0)
+- Contribuição social (Key: CONTRIBUICAO_SOCIAL, Value: 1)

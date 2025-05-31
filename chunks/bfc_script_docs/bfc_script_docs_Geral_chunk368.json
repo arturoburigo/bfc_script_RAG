@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**executar()**  \nExecuta a chamada do método atual e retorna uma representação da [resposta](index.html#apiSoapResposta).  \n**mensagem()**  \nRetorna a representação da mensagem em que o método foi criado.  \n**Exemplo:**  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```98",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

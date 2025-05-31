@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Foi estudado a viabilidade de se implementar uma engine de execução para o bfc-script, porém, foi constatado que existem diversas engines disponíveis para JVM, algumas amplamente utilizadas pela comunidade. Após uma primeira avaliação, foram",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```3  \n##### maisculo  \nConverte todos os caracteres de um texto em maiúsculo.  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```4  \n_Alternativa_  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```5  \n##### minusculo  \nConverte todos os caracteres de um texto em minusculo.  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```6",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

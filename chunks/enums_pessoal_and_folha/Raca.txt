@@ -1,0 +1,7 @@
+# Raca
+Enum: Raca
+- Amarela (Key: AMARELA, Value: 0)
+- Branca (Key: BRANCA, Value: 1)
+- Indígena (Key: INDIGENA, Value: 2)
+- Parda (Key: PARDA, Value: 3)
+- Preta (Key: PRETA, Value: 4)

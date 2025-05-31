@@ -1,0 +1,47 @@
+# vinculoEmpregaticio_buscaCategoriasTrabalhador
+Description: VinculoEmpregaticio
+Method: buscaCategoriasTrabalhador (GET)
+Method Description: Listagem de categorias do trabalhador
+Representation Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados
+Expressions:
+- grupoTrabalhador: Grupo de trabalhador (Type: )
+- codigoESocial: Código do eSocial (Type: String)
+- id: Id (Type: Long)
+- descricao: descricao (Type: String)
+Types:
+## VinculoEmpregaticioCategoriaTrabalhadorFonteDados
+- id: Id (Type: Long)
+- descricao: descricao (Type: String)
+- grupoTrabalhador: Grupo de trabalhador (Type: )
+- codigoESocial: Código do eSocial (Type: String)
+## VinculoEmpregaticioMotivoRescisaoFonteDados
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- tipo: Tipo (Type: )
+- classificacao: Classificação (Type: )
+## VinculoEmpregaticioFonteDados
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- tipo: Tipo do regime trabalhista (Type: )
+- descricaoRegimePrevidenciario: Regime previdenciário (Type: String)
+- codigoSefip: Código da SEFIF (Type: String)
+- geraRais: Gera RAIS? (Type: Boolean)
+- codigoRais: Código da RAIS (Type: String)
+- descricaoRais: Código da RAIS (Type: String)
+- vinculoTemporario: Vínculo temporário? (Type: Boolean)
+- dataFinalObrigatoria: Data final obrigatória (Type: Boolean)
+- geraCaged: Gera CAGED? (Type: Boolean)
+- geraLicencaPremio: Gera liçenca-prêmio? (Type: Boolean)
+- categoriaTrabalhador: Categoria do trabalhador (Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados)
+- motivoRescisao: Motivo de rescisão (Type: VinculoEmpregaticioMotivoRescisaoFonteDados)
+- camposAdicionais: Campo adicional (Type: CamposAdicionais)
+Code Example:
+```
+fonteVinculoEmpregaticio = Dados.pessoal.v2.vinculoEmpregaticio;
+
+dadosVinculoEmpregaticio = fonteVinculoEmpregaticio.buscaCategoriasTrabalhador(campos: "id, descricao, grupoTrabalhador, codigoESocial",ordenacao: "grupoTrabalhador asc")
+
+percorrer (dadosVinculoEmpregaticio) { itemVinculoEmpregaticio ->
+
+}
+```

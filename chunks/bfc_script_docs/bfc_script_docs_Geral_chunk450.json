@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A importação dos recursos de um componente é realizada utilizando a palavra reservada **Scripts** , seguido do identificador e o método de importação. O resultado é atribuído a uma variável, a partir da qual os recursos importados podem ser",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

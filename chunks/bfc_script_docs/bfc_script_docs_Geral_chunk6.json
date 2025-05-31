@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "sensitive, etc. Para simplificar os scripts, não é necessário usar ponto e vírgula no final de cada instrução e os comandos foram desenvolvidos no idioma português, para simplificar o seu uso à usuários sem experiência em linguagens de programação.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

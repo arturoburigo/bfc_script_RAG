@@ -1,0 +1,42 @@
+# tabelaAuxiliarValor_busca
+Description: Tabela auxíliar valor
+Method: busca (GET)
+Method Description: Listagem de valores das tabelas auxíliares
+Representation Type: TabelaAuxiliarValorSemRegistro
+Expressions:
+- id: Id (Type: Long)
+Types:
+## TabelaAuxiliarCampoSemValores
+- id: Id (Type: Long)
+- identificador: Identificador do campo (Type: String)
+- descricao: Descrição do campo (Type: String)
+- tipo: Tipo do campo (Type: )
+- exibir: Deve exibir o campo? (Type: Boolean)
+- tamanho: Tamanho do campo (Type: Integer)
+## TabelaAuxiliarRegistroSemValores
+- id: Id (Type: Long)
+- identificador: Identificador do registro (Type: Long)
+## TabelaAuxiliarValorSemRegistro
+- id: Id (Type: Long)
+- campo: Informações do campo (Type: TabelaAuxiliarCampoSemValores)
+- registro: Registro (Type: TabelaAuxiliarRegistroSemValores)
+- valor: Valor do campo (Type: String)
+## TabelaAuxiliarCampoAssociacao
+- id: Id (Type: Long)
+## TabelaAuxiliarRegistroAssociacao
+- id: Id (Type: Long)
+## TabelaAuxiliarValorImportacao
+- id: Id (Type: Long)
+- campo: Informações do campo (Type: TabelaAuxiliarCampoAssociacao)
+- registro: Registro (Type: TabelaAuxiliarRegistroAssociacao)
+- valor: Valor do campo (Type: String)
+Code Example:
+```
+fonteTabelaAuxiliarValor = Dados.folha.v2.tabelaAuxiliarValor;
+
+dadosTabelaAuxiliarValor = fonteTabelaAuxiliarValor.busca(campos: "campo(id, identificador, descricao, tipo, exibir, tamanho), registro(id, identificador), id, valor")
+
+percorrer (dadosTabelaAuxiliarValor) { itemTabelaAuxiliarValor ->
+
+}
+```

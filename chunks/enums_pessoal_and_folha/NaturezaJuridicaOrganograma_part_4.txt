@@ -1,0 +1,24 @@
+# NaturezaJuridicaOrganograma
+# Part 4
+# This is a continuation of the NaturezaJuridicaOrganograma enum
+Enum: NaturezaJuridicaOrganograma
+- 303-4 - Serviço Notarial e Registral (Cartório) (Key: SERVICO_NOTARIAL_REGISTRAL, Value: 61)
+- 306-9 - Fundação Privada (Key: FUNDACAO_PRIVADA, Value: 62)
+- 307-7 - Serviço Social Autônomo (Key: SERVICO_SOCIAL_AUTONOMO, Value: 63)
+- 308-5 - Condomínio Edilício (Key: CONDOMINIO_EDILICIO, Value: 64)
+- 310-7 - Comissão de Conciliação Prévia (Key: COMISSAO_CONCILIACAO_PREVIA, Value: 65)
+- 311-5 - Entidade de Mediação e Arbitragem (Key: ENTIDADE_MEDIACAO_ARBITRAGEM, Value: 66)
+- 313-1 - Entidade Sindical (Key: ENTIDADE_SINDICAL, Value: 67)
+- 320-4 - Estabelecimento, no Brasil, de Fundação ou Associação Estrangeiras (Key: ESTABELECIMENTO_FUNDACAO_ASSOCIACAO_ESTRANGEIRA, Value: 68)
+- 321-2 - Fundação ou Associação Domiciliada no Exterior (Key: FUNDACAO_ASSOCIACAO_DOMICILIADA_EXTERIOR, Value: 69)
+- 322-0 - Organização Religiosa (Key: ORGANIZACAO_RELIGIOSA, Value: 70)
+- 323-9 - Comunidade Indígena (Key: COMUNIDADE_INDIGENA, Value: 71)
+- 324-7 - Fundo Privado (Key: FUNDO_PRIVADO, Value: 72)
+- 325-5 - Órgão de Direção Nacional de Partido Político (Key: ORGAO_DIRECAO_NACIONAL_PARTIDO_POLITICO, Value: 73)
+- 326-3 - Órgão de Direção Regional de Partido Político (Key: ORGAO_DIRECAO_REGIONAL_PARTIDO_POLITICO, Value: 74)
+- 327-1 - Órgão de Direção Local de Partido Político (Key: ORGAO_DIRECAO_LOCAL_PARTIDO_POLITICO, Value: 75)
+- 330-1 - Organização Social (OS) (Key: ORGANIZACAO_SOCIAL, Value: 76)
+- 399-9 - Associação Privada (Key: ASSOCIACAO_PRIVADA, Value: 77)
+- 401-4 - Empresa Individual Imobiliária (Key: EMPRESA_INDIVIDUAL_IMOBILIARIA, Value: 78)
+- 409-0 - Candidato a Cargo Político Eletivo (Key: CANDIDATO_CARGO_POLITICO_ELETIVO, Value: 79)
+- 412-0 - Produtor Rural (Pessoa Física) (Key: PRODUTOR_RURAL, Value: 80)

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "propriedade dentro de um JavaBean estiver nula, mesmo que este bean esteja dentro de uma coleção, este atributo assumira um valor padrão:",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

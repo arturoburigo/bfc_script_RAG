@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* maiorQue(valor)\n* maiorOuIgualQue(valor)\n* menorQue(valor)\n* menorOuIgualQue(valor)\n* ehNulo() `nome is null`\n* naoEhNulo() `nome is not null`\n* ehVerdadeiro() `responsavel is true`\n* ehFalso() `responsavel is false`",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

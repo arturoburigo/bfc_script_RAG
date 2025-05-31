@@ -1,0 +1,42 @@
+# cagedMatricula_importa
+Description: CAGED matrícula
+Method: importa (POST)
+Representation Type: CagedMatriculaDto
+Types:
+## CagedMatriculaDto
+- codigoMatricula: Código da matrícula (Type: Long)
+- codigoCaged: Código do caged (Type: Long)
+- situacaoMatricula: Situação da matrícula (Type: )
+- situacaoEnvioMatricula: Situação do envio da matrícula (Type: )
+## EstadoMunicipioCaged
+- id: Id (Type: Long)
+- nome: Nome (Type: String)
+- uf: UF (Type: String)
+## MunicipioCaged
+- id: Id (Type: Long)
+- nome: Nome (Type: String)
+- estado: Estado (Type: EstadoMunicipioCaged)
+## MatriculaMatricula
+- id: Código matrícula (Type: Long)
+## CagedMatricula
+- id: Identificador (Type: Long)
+- matricula: Matrícula (Type: MatriculaMatricula)
+- situacaoMatricula: Situação da matrícula (Type: )
+- situacaoEnvioMatricula: Situação do envio da matrícula (Type: )
+## Caged
+- id: Código do caged (Type: Long)
+- dataEnvio: Competência (Type: LocalDate)
+- situacaoEnvioMatricula: Situação do CAGED (Type: )
+- entidade: Entidade (Type: Long)
+- municipio: Município (Type: MunicipioCaged)
+- cagedMatriculas: CAGED matrícula (Type: CagedMatricula)
+Code Example:
+```
+fonteCagedMatricula = Dados.folha.v2.cagedMatricula;
+
+dadosCagedMatricula = fonteCagedMatricula.importa(campos: "codigoMatricula, codigoCaged, situacaoMatricula, situacaoEnvioMatricula")
+
+percorrer (dadosCagedMatricula) { itemCagedMatricula ->
+
+}
+```

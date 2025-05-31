@@ -1,0 +1,8 @@
+# NaturezaRubrica
+# Part 11
+# This is a continuation of the NaturezaRubrica enum
+Enum: NaturezaRubrica
+- 1016 - Férias (Key: FERIAS, Value: 1016)
+- 1017 - Terço constitucional de férias (Key: TERCO_CONSTITUCIONAL_FERIAS, Value: 1017)
+- 1018 - Férias - Abono ou gratificação de férias superior a 20 dias (Key: FERIAS_ABONO_GRATIFICACAO_FERIAS_SUPERIOR_20_DIAS, Value: 1018)
+- 1019 - Terço constitucional de férias - Abono ou gratificação de férias superior a 20 dias (Key: TERCO_CONSTITUCIONAL_FERIAS_ABONO_GRATIFICACAO_FERIAS_SUPERIOR_20_DIAS, Value: 1019)

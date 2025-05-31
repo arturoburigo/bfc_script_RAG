@@ -1,0 +1,5 @@
+# TipoAcaoAlterarFolhaParaPendente
+Enum: TipoAcaoAlterarFolhaParaPendente
+- Sempre alterar (Key: SEMPRE_ALTERAR, Value: 1)
+- Nunca alterar (Key: NUNCA_ALTERAR, Value: 2)
+- Perguntar sempre (Key: PERGUNTAR_SEMPRE, Value: 3)

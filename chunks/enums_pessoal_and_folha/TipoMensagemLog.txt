@@ -1,0 +1,6 @@
+# TipoMensagemLog
+Enum: TipoMensagemLog
+- Erro (Key: ERRO, Value: 1)
+- Advertência (Key: ADVERTENCIA, Value: 2)
+- Informação (Key: INFORMACAO, Value: 3)
+- Alerta (Key: ALERTA, Value: 4)

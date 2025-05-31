@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nnumeros = [1,2,3,4]\npercorrer(numeros){\nse(item == 3){\nparar()\n}\nimprimir item\n}\n8.\n//As instruções fora do comando percorrer serão executadas normalmente, somente o comando percorrer\n//será interrompido e não todo o script\nimprimir 'Ok'\n```5  \n##### substituir  \nSubstitui as ocorrências de uma expressão localizada em um texto por outra expressão.  \n```bfc-script\nnumeros = [1,2,3,4]\npercorrer(numeros){\nse(item == 3){\nparar()\n}\nimprimir item\n}\n8.\n//As instruções fora do comando percorrer serão executadas normalmente, somente o comando percorrer\n//será interrompido e não todo o script\nimprimir 'Ok'\n```6  \n_Alternativa_  \n```bfc-script\nnumeros = [1,2,3,4]\npercorrer(numeros){\nse(item == 3){\nparar()\n}\nimprimir item\n}\n8.\n//As instruções fora do comando percorrer serão executadas normalmente, somente o comando percorrer\n//será interrompido e não todo o script\nimprimir 'Ok'\n```7  \n##### subTexto",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,6 @@
+# RegimePrevidencia
+Enum: RegimePrevidencia
+- Regime próprio dos servidores civis (Key: REGIME_PROPRIO_SERVIDORES_CIVIS, Value: 1)
+- Regime próprio dos militares (Key: REGIME_PROPRIO_MILITARES, Value: 2)
+- Regime geral de previdência social (Key: REGIME_GERAL_PREVIDENCIA_SOCIAL, Value: 3)
+- Previdência complementar (Key: PREVIDENCIA_COMPLEMENTAR, Value: 4)

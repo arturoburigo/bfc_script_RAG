@@ -1,0 +1,4 @@
+# AbrangenciaConfiguracaoMediaVantagemEvento
+Enum: AbrangenciaConfiguracaoMediaVantagemEvento
+- Todos os meses do período (Key: TODOS_MESES, Value: 1)
+- Meses com movimento no período (Key: MESES_MOVIMENTO, Value: 2)

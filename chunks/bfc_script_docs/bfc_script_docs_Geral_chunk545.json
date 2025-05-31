@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Com delimitador  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```22  \nO critério acima, gera o seguinte filtro:  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```23  \n#### Sem delimitador  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```24  \nO critério acima, gera o seguinte filtro:  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```25  \n#### Com formatação e delimitador",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

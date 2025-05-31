@@ -1,0 +1,20 @@
+# regiao_busca
+Description: Regiões
+Method: busca (GET)
+Method Description: Listagem de região
+Representation Type: Regiao
+Types:
+## Regiao
+- id: Identificador (Type: Long)
+- descricao: Descrição (Type: String)
+- campoAdicional:  (Type: CampoAdicionalDto)
+Code Example:
+```
+fonteRegiao = Dados.folha.v2.regiao;
+
+dadosRegiao = fonteRegiao.busca(campos: "id, descricao, campoAdicional")
+
+percorrer (dadosRegiao) { itemRegiao ->
+
+}
+```

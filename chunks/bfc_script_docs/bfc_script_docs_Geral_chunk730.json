@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "VOs constituem o modelo da aplicação e estão suscetíveis a mudanças extremas. Medir o impacto da alteração de um VO por si só já é altamente complexo, se estes VOs forem utilizados em scripts, pode inviabilizar a alteração do modelo e prejudicar a",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

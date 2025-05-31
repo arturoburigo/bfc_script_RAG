@@ -1,0 +1,7 @@
+# TipoConta
+Enum: TipoConta
+- Corrente (Key: CORRENTE, Value: C)
+- Poupança (Key: POUPANCA, Value: P)
+- Salário (Key: SALARIO, Value: S)
+- Eletrônica (Key: ELETRONICA, Value: E)
+- NSGD (Key: NSGD, Value: D)

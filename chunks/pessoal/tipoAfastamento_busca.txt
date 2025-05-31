@@ -1,0 +1,45 @@
+# tipoAfastamento_busca
+Description: TipoAfastamento
+Method: busca (GET)
+Method Description: Listagem de tipos de afastamentos
+Representation Type: TipoAfastamentoFonteDados
+Expressions:
+- reduz13Salario: Reduz 13º salário? (Type: Boolean)
+- perdeTempoServico: Perde tempo de serviço? (Type: Boolean)
+- consideraVencimento: Considera vencimentos? (Type: Boolean)
+- reduzFgts: Reduz FGTS? (Type: Boolean)
+- reduzFerias: Reduz férias? (Type: Boolean)
+- tipoMovimentacaoPessoal.id: Id do tipo de movimentação pessoal (Type: Long)
+- classificacao: Classificação (Type: )
+- id: Identificador (Type: Long)
+- tipoMovimentacaoPessoal.descricao: Descrição do tipo de movimentação pessoal (Type: String)
+- diasPrevistos: Dias previstos (Type: Integer)
+- tipoMovimentacaoPessoal.classificacao: Classificação do tipo de movimentação pessoal (Type: )
+- descricao: Descrição (Type: String)
+Types:
+## TipoMovimentacaoPessoalTipoAfastamento
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+## TipoAfastamentoFonteDados
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+- tipoMovimentacaoPessoal: Tipo de movimentação pessoal (Type: TipoMovimentacaoPessoalTipoAfastamento)
+- diasPrevistos: Dias previstos (Type: Integer)
+- consideraVencimento: Considera vencimentos? (Type: Boolean)
+- perdeTempoServico: Perde tempo de serviço? (Type: Boolean)
+- reduz13Salario: Reduz 13º salário? (Type: Boolean)
+- reduzFerias: Reduz férias? (Type: Boolean)
+- reduzFgts: Reduz FGTS? (Type: Boolean)
+- camposAdicionais: Campos Adicionais (Type: CamposAdicionais)
+Code Example:
+```
+fonteTipoAfastamento = Dados.pessoal.v2.tipoAfastamento;
+
+dadosTipoAfastamento = fonteTipoAfastamento.busca(campos: "descricao, classificacao, diasPrevistos, consideraVencimento, perdeTempoServico, reduz13Salario, reduzFerias, reduzFgts, id, tipoMovimentacaoPessoal(id, descricao, classificacao)",ordenacao: "classificacao asc")
+
+percorrer (dadosTipoAfastamento) { itemTipoAfastamento ->
+
+}
+```

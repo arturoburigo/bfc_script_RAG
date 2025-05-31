@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "###### $nullSafe  \nÉ possível setar uma variável para desabilitar o comportamento NullSafeProxy para um contexto por setar uma variável boleana atribuída à chave $nullSafe.  \nengineContext.setVariable($nullSafe, false);",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

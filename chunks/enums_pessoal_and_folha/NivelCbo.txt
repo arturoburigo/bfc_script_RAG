@@ -1,0 +1,8 @@
+# NivelCbo
+Enum: NivelCbo
+- Grande Grupo (Key: GRANDE_GRUPO, Value: 0)
+- Subgrupo Principal (Key: SUBGRUPO_PRINCIPAL, Value: 1)
+- Subgrupo (Key: SUBGRUPO, Value: 2)
+- Família (Key: FAMILIA, Value: 3)
+- Ocupação (Key: OCUPACAO, Value: 4)
+- Sinônimo (Key: SINONIMO, Value: 5)

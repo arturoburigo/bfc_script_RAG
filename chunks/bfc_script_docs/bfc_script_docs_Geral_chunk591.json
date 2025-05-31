@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A engine encapsula os objetos complexos passados como variáveis em um nullsafeProxy. Este proxy atua recursivamente para qualquer possível atributo de tipo complexo, encapsulando este também como um nullsafeProxy. É importante que classes dos",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

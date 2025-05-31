@@ -1,0 +1,6 @@
+# SituacaoProgramacaoFerias
+Enum: SituacaoProgramacaoFerias
+- Programação agendada (Key: AGENDADA, Value: 1)
+- Programação com problemas (Key: ALERTA, Value: 2)
+- Programação com sucesso (Key: CALCULADA, Value: 3)
+- Programação com erros (Key: ERRO, Value: 4)

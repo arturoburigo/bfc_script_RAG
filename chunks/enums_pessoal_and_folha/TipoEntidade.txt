@@ -1,0 +1,4 @@
+# TipoEntidade
+Enum: TipoEntidade
+- Unidade Gestora de Orçamento (Key: UNIDADE_GESTORA_ORCAMENTO, Value: 1)
+- Unidade Dependente do Orçamento da EFR (Key: UNIDADE_DEPENDENTE_ORCAMENTO_EFR, Value: 2)

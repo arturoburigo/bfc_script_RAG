@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Não totalmente. DSLs tem sido usadas extensamente nos círculos de usuários do Unix desde os primórdios desse sistema. A comunidade Lisp discute a criação de DSLs em Lisp e então usa a DSL para implementar a lógica. A maioria dos projetos de TI usam",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

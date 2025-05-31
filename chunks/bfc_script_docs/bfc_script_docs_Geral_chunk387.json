@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "abordagem muito comum, inclusive praticada por alguns tribunais de contas, é o uso de verificações de integridade de arquivos binários enviados em webservices SOAP.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

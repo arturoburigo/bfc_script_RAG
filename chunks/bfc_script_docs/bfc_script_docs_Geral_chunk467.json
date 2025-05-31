@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Para permitir que um mesmo serviço atenda as mais diversas situações encontradas em APIs HTTP, as funções caminho() e parametro() possuem um comportamento diferenciado das demais. Estas funções quando executadas criam uma cópia da requisição atual",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

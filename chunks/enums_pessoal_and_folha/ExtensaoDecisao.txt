@@ -1,0 +1,4 @@
+# ExtensaoDecisao
+Enum: ExtensaoDecisao
+- 1 - Contribuição Previdenciária Patronal (Key: CONTRIBUICAO_PREVIDENCIARIA_PATRONAL, Value: 1)
+- 2 - Contribuição Previdenciária Patronal + Descontada dos Segurados (Key: CONTRIBUICAO_PREVIDENCIARIA_PATRONAL_DESCONTADA_SEGURADOS, Value: 2)

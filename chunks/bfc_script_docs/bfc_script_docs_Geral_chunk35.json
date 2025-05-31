@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### suspender  \nPermite suspender a execução de um script com uma exceção.  \n* se(codigo != 10){\n*    suspender \"O código $codigo é inválido\"\n* }\n##### esperar",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

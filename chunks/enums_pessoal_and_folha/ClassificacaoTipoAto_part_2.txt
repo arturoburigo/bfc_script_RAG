@@ -1,0 +1,24 @@
+# ClassificacaoTipoAto
+# Part 2
+# This is a continuation of the ClassificacaoTipoAto enum
+Enum: ClassificacaoTipoAto
+- Emenda constitucional (Key: EMENDA_CONSTITUCIONAL, Value: 21)
+- Emenda modificativa (Key: EMENDA_MODIFICATIVA, Value: 22)
+- Estatuto social (Key: ESTATUTO_SOCIAL, Value: 23)
+- Imagem do exemplar de publicação no órgão oficial (Key: IMAGEM_EXEMPLAR_PUBLICA_ORGAO_OFICIAL, Value: 24)
+- Instrução (Key: INSTRUCAO, Value: 25)
+- Justificativa para cancelamento ou cadastro indevido de intervenção (Key: JUSTIFICATIVA_CANCELAMENTO_INTERVENCAO, Value: 26)
+- Lei (Key: LEI, Value: 27)
+- Lei autorizativa (Key: LEI_AUTORIZATIVA, Value: 28)
+- Lei complementar (Key: LEI_COMPLEMENTAR, Value: 29)
+- Lei de criação (Key: LEI_CRIACAO, Value: 30)
+- Lei municipal (Key: LEI_MUNICIPAL, Value: 31)
+- Lei ordinária (Key: LEI_ORDINARIA, Value: 32)
+- Lei orgânica (Key: LEI_ORGANICA, Value: 33)
+- Medição (Key: MEDICAO, Value: 34)
+- Medida provisória (Key: MEDIDA_PROVISORIA, Value: 35)
+- Memorando (Key: MEMORANDO, Value: 36)
+- Multimídia (Key: MULTIMIDIA, Value: 37)
+- Ofício (Key: OFICIO, Value: 38)
+- Orçamento (Key: ORCAMENTO, Value: 39)
+- Orçamento base (execução direta) ou do edital (execução indireta) (Key: ORCAMENTO_BASE, Value: 40)

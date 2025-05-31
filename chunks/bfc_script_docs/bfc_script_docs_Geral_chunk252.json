@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Adiciona um arquivo em um determinado diretório do arquivo zip utilizando o nome informado como parâmetro. Caso o diretório não exista no arquivo zip o mesmo será criado.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```50  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```51",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

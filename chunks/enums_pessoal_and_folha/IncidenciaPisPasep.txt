@@ -1,0 +1,7 @@
+# IncidenciaPisPasep
+Enum: IncidenciaPisPasep
+- 00 - Não é base de cálculo (Key: NAO_E_BASE_DE_CALCULO, Value: 1)
+- 11 - Base de cálculo do PIS/PASEP mensal (Key: BASE_CALCULO_PIS_PASEP_MENSAL, Value: 2)
+- 12 - Base de cálculo do PIS/PASEP 13° salário (Key: BASE_CALCULO_PIS_PASEP_DECIMO_TERCEIRO_SALARIO, Value: 3)
+- 91 - Incidência suspensa em decorrência de decisão judicial - PIS/PASEP mensal (Key: SUSPENSAO_DE_INCIDENCIA_EM_DECORRENCIA_DE_DECISAO_JUDICIAL_MENSAL, Value: 4)
+- 92 - Incidência suspensa em decorrência de decisão judicial - PIS/PASEP 13º salário (Key: SUSPENSAO_DE_INCIDENCIA_EM_DECORRENCIA_DE_DECISAO_JUDICIAL_13_SALARIO, Value: 5)

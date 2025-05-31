@@ -1,0 +1,6 @@
+# ResponsabilidadePagamento
+Enum: ResponsabilidadePagamento
+- 1 - Pagamento exclusivamente pelo cedente/origem (Key: PAGAMENTO_EXCLUSIVAMENTE_PELO_CEDENTE_ORIGEM, Value: 1)
+- 2 - Pagamento exclusivamente pelo cessionário/destino (Key: PAGAMENTO_EXCLUSIVAMENTE_PELO_CESSIONARIO_DESTINO, Value: 2)
+- 3 - Pagamento pelo cedente/origem e pelo cessionário/destino (Key: PAGAMENTO_PELO_CEDENTE_ORIGEM_E_PELO_CESSIONARIO_DESTINO, Value: 3)
+- 4 - Pagamento pelo cedente/origem com ressarcimento pelo cessionário/destino (Key: PAGAMENTO_PELO_CEDENTE_ORIGEM_COM_RESSARCIMENTO_PELO_CESSIONARIO_DESTINO, Value: 4)

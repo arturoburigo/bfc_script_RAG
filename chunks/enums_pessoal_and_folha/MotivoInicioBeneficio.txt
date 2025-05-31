@@ -1,0 +1,5 @@
+# MotivoInicioBeneficio
+Enum: MotivoInicioBeneficio
+- Morte presumida (Key: MORTE_PRESUMIDA, Value: 2)
+- Óbito do servidor (Key: OBITO_SERVIDOR, Value: 3)
+- Outros (Key: OUTROS, Value: 4)

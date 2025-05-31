@@ -1,0 +1,24 @@
+# NaturezaJuridica
+# Part 4
+# This is a continuation of the NaturezaJuridica enum
+Enum: NaturezaJuridica
+- 313-1 - Entidade Sindical (Key: ENTIDADE_SINDICAL, Value: 61)
+- 320-4 - Estabelecimento, no Brasil, de Fundação ou Associação Estrangeiras (Key: ESTABELECIMENTO_FUNDACAO_ASSOCIACAO_ESTRANGEIRA, Value: 62)
+- 321-2 - Fundação ou Associação Domiciliada no Exterior (Key: FUNDACAO_ASSOCIACAO_DOMICILIADA_EXTERIOR, Value: 63)
+- 322-0 - Organização Religiosa (Key: ORGANIZACAO_RELIGIOSA, Value: 64)
+- 323-9 - Comunidade Indígena (Key: COMUNIDADE_INDIGENA, Value: 65)
+- 324-7 - Fundo Privado (Key: FUNDO_PRIVADO, Value: 66)
+- 325-5 - Órgão de Direção Nacional de Partido Político (Key: ORGAO_DIRECAO_NACIONAL_PARTIDO_POLITICO, Value: 67)
+- 326-3 - Órgão de Direção Regional de Partido Político (Key: ORGAO_DIRECAO_REGIONAL_PARTIDO_POLITICO, Value: 68)
+- 327-1 - Órgão de Direção Local de Partido Político (Key: ORGAO_DIRECAO_LOCAL_PARTIDO_POLITICO, Value: 69)
+- 328-0 - Comitê Financeiro de Partido Político (Key: COMITE_FINANCEIRO_PARTIDO_POLITICO, Value: 70)
+- 329-8 - Frente Plebiscitária ou Referendária (Key: FRENTE_PLEBISCITARIA_REFERENDARIA, Value: 71)
+- 330-1 - Organização Social (OS) (Key: ORGANIZACAO_SOCIAL, Value: 72)
+- 331-0 - Demais Condomínios (Key: DEMAIS_CONDOMINIOS, Value: 73)
+- 399-9 - Associação Privada (Key: ASSOCIACAO_PRIVADA, Value: 74)
+- 401-4 - Empresa Individual Imobiliária (Key: EMPRESA_INDIVIDUAL_IMOBILIARIA, Value: 75)
+- 402-2 - Segurado Especial (Key: SEGURADO_ESPECIAL, Value: 76)
+- 408-1 - Contribuinte individual (Key: CONTRIBUINTE_INDIVIDUAL, Value: 77)
+- 409-0 - Candidato a Cargo Político Eletivo (Key: CANDIDATO_CARGO_POLITICO_ELETIVO, Value: 78)
+- 411-1 - Leiloeiro (Key: LEILOEIRO, Value: 79)
+- 412-0 - Produtor Rural (Pessoa Física) (Key: PRODUTOR_RURAL, Value: 80)

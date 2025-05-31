@@ -1,0 +1,10 @@
+# Part 4
+# This is a continuation of the matriculas_buscaMatriculaMinhaFolha section
+filtroMatriculas = "situacao = TRABALHANDO"
+
+dadosMatriculas = fonteMatriculas.buscaMatriculaMinhaFolha(criterio: filtroMatriculas,campos: "id, tipo, situacao, dataInicioContrato, inicioVigencia, rendimentoMensal, pessoa(id), codigoMatricula(numero, contrato, digitoVerificador), rescisao(motivoRescisao(id), id, data)",ordenacao: "pessoa.cpf asc")
+
+percorrer (dadosMatriculas) { itemMatriculas ->
+
+}
+```

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "## API de Cache  \nO bfc-script disponibiliza uma API para armazenar valores pequenos em cache (máximo de 10kb), como dados de autenticação de serviços externos. O valor é armazenado usando o contexto de sistema, database e entidade.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

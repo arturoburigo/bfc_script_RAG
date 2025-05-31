@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "### Por quê não utilizar uma linguagem baseada em SQL assim como o Tributos?  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```68  \n### Por quê a API padrão não fornece métodos para consultar uma tabela no banco de dados?",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

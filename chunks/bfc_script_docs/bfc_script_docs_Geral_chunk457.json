@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A API conta com algumas representações básicas de funcionamento sendo elas a **Requisição** e a **Resposta**. A **Requisição** trata-se da definição de uma ou várias chamadas à um serviço HTTP comum, cada interação com esse serviço é realizado",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

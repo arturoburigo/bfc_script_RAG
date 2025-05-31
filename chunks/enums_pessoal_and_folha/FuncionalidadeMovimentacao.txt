@@ -1,0 +1,14 @@
+# FuncionalidadeMovimentacao
+Enum: FuncionalidadeMovimentacao
+- Prorrogação de contrato temporário (Key: PRORROGACAO_CONTRATO_TEMPORARIO, Value: 1)
+- Cadastro de afastamento (Key: CADASTRO_AFASTAMENTO, Value: 2)
+- Cadastro de ocorrência disciplinar (Key: CADASTRO_OCORRENCIA_DISCIPLINAR, Value: 3)
+- Cadastro de processo de aposentadoria e pensão (Key: CADASTRO_APOSENTADORIA_PENSAO, Value: 4)
+- Processo de rescisão de contrato (Key: PROCESSO_RESCISAO, Value: 5)
+- Cadastro de estagiário (Key: CADASTRO_ESTAGIARIO, Value: 6)
+- Cadastro de pensionista (Key: CADASTRO_PENSIONISTA, Value: 7)
+- Cadastro de funcionário (Key: CADASTRO_FUNCIONARIO, Value: 8)
+- Cadastro de função gratificada (Key: CADASTRO_FUNCAO_GRATIFICADA, Value: 9)
+- Cadastro de aposentado (Key: CADASTRO_APOSENTADO, Value: 10)
+- Cadastro de licença prêmio (Key: CADASTRO_LICENCA_PREMIO, Value: 11)
+- Manutenção de Averbações (Key: MANUTENCAO_AVERBACOES, Value: 12)

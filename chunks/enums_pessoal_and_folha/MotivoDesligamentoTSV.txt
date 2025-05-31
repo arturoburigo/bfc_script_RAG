@@ -1,0 +1,9 @@
+# MotivoDesligamentoTSV
+Enum: MotivoDesligamentoTSV
+- 01 - Exoneração do diretor não empregado sem justa causa, por deliberação da assembleia, dos sócios cotistas ou da autoridade competente (Key: EXONERACAO_DO_DIRETOR_NAO_EMPREGADO_SEM_JUSTA_CAUSA_POR_DELIBERACAO_DA_ASSEMBLEIA_DOS_SOCIOS_COTISTAS_OU_DA_AUTORIDADE_COMPETENTE, Value: 1)
+- 02 - Término de mandato do diretor não empregado que não tenha sido reconduzido ao cargo (Key: TERMINO_DE_MANDATO_DO_DIRETOR_NAO_EMPREGADO_QUE_NAO_TENHA_SIDO_RECONDUZIDO_AO_CARGO, Value: 2)
+- 03 - Exoneração a pedido de diretor não empregado (Key: EXONERACAO_A_PEDIDO_DE_DIRETOR_NAO_EMPREGADO, Value: 3)
+- 04 - Exoneração do diretor não empregado por culpa recíproca ou força maior (Key: EXONERACAO_DO_DIRETOR_NAO_EMPREGADO_POR_CULPA_RECIPROCA_OU_FORCA_MAIOR, Value: 4)
+- 05 - Morte do diretor não empregado (Key: MORTE_DO_DIRETOR_NAO_EMPREGADO, Value: 5)
+- 06 - Exoneração do diretor não empregado por falência, encerramento ou supressão de parte da empresa (Key: EXONERACAO_DO_DIRETOR_NAO_EMPREGADO_POR_FALENCIA_ENCERRAMENTO_OU_SUPRESSAO_DE_PARTE_DA_EMPRESA, Value: 6)
+- 99 - Outros (Key: OUTROS, Value: 99)

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Cria uma nova mensagem (envelope) à ser enviado ao serviço sobrescrevendo o namespace e prefixo padrão informados na criação do serviço. Esta opção deve ser utilizada com namespaces criados com a função",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

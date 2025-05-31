@@ -1,0 +1,5 @@
+# Modalidade
+Enum: Modalidade
+- Branco - Recolhimento ao FGTS e Declaração para a Previdência (Key: BRANCO, Value: 1)
+- 1 - Declaração ao FGTS e à Previdência (Key: DECLARACAO_FGTS_PREVIDENCIA, Value: 2)
+- 9 - Confirmação/Retificação de informações anteriores – Recolhimento ao FGTS e Declaração à Previdência/Declaração ao FGTS e à Previdência (Key: CONFIRMACAO_RETIFICACAO_INFORMACOES_ANTERIORES, Value: 3)

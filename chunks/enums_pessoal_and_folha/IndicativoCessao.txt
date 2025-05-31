@@ -1,0 +1,5 @@
+# IndicativoCessao
+Enum: IndicativoCessao
+- 1 - Cessão (Key: CESSAO, Value: 1)
+- 2 - Servidor em mandato eletivo (Key: AGENTE_PUBLICO_A_DISPOSICAO_DA_JUSTICA_ELEITORAL, Value: 2)
+- 3 - Servidor em mandato sindical (Key: EXERCICIO_EM_OUTRO_ORGAO_EM_CASO_DIFERENTE_DE_CESSAO, Value: 3)

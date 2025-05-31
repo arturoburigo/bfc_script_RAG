@@ -1,0 +1,15 @@
+# GrauDependencia
+Enum: GrauDependencia
+- Filho (Key: FILHO, Value: 1)
+- Cônjuge (Key: CONJUGE, Value: 2)
+- Pai/Mãe (Key: PAI_MAE, Value: 3)
+- Irmão(ã) (Key: IRMAO, Value: 4)
+- Avô(ó) (Key: AVO, Value: 5)
+- Neto(a) (Key: NETO, Value: 6)
+- Enteado(a) (Key: ENTEADO, Value: 7)
+- Menor tutelado (Key: MENOR_TUTELADO, Value: 8)
+- Companheiro(a) (Key: COMPANHEIRO, Value: 9)
+- Bisneto(a) (Key: BISNETO, Value: 10)
+- Bisavô(ó) (Key: BISAVO, Value: 11)
+- Ex-cônjuge (Key: EX_CONJUGE, Value: 12)
+- Outros (Key: OUTROS, Value: 13)

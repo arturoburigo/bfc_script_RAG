@@ -1,0 +1,5 @@
+# TipoTelefone
+Enum: TipoTelefone
+- Fixo (Key: FIXO, Value: 0)
+- Celular (Key: CELULAR, Value: 1)
+- Fax (Key: FAX, Value: 2)

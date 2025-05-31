@@ -23,14 +23,14 @@ class Chunk:
     chunk_index: Optional[int] = None
     parent_section: Optional[str] = None
 
-# Maximum tokens for text-embedding-3-large model
+# Maximum tokens for text-embedding-3-small model
 MAX_TOKENS = 7500  # Setting slightly below the 8192 limit for safety
 
 def count_tokens(text: str) -> int:
     """
     Count the number of tokens in a text using the tiktoken library
     """
-    encoding = tiktoken.encoding_for_model("text-embedding-3-large")
+    encoding = tiktoken.encoding_for_model("text-embedding-3-small")
     return len(encoding.encode(text))
 
 def load_json_data(file_path: str) -> Dict[str, Any]:
@@ -157,7 +157,7 @@ def split_text_by_tokens(text: str, max_tokens: int = MAX_TOKENS) -> List[str]:
                 if sentence_tokens > max_tokens:
                     print(f"Warning: Found a very large sentence ({sentence_tokens} tokens). Forcing split.")
                     # Force split by tokens using the encoding directly
-                    encoding = tiktoken.encoding_for_model("text-embedding-3-large")
+                    encoding = tiktoken.encoding_for_model("text-embedding-3-small")
                     sentence_tokens_list = encoding.encode(sentence)
                     
                     # Split tokens into smaller chunks
@@ -197,7 +197,7 @@ def split_text_by_tokens(text: str, max_tokens: int = MAX_TOKENS) -> List[str]:
         if chunk_tokens > max_tokens:
             print(f"Warning: Chunk still has {chunk_tokens} tokens after splitting. Forcing hard split.")
             # Force split using token encoding as a last resort
-            encoding = tiktoken.encoding_for_model("text-embedding-3-large")
+            encoding = tiktoken.encoding_for_model("text-embedding-3-small")
             chunk_tokens_list = encoding.encode(chunk)
             for i in range(0, len(chunk_tokens_list), max_tokens - 100):  # 100 token buffer
                 sub_chunk_tokens = chunk_tokens_list[i:i + max_tokens - 100]
@@ -340,8 +340,8 @@ def save_chunks(chunks: List[Chunk], output_dir: str):
 def main():
     # Define paths
     current_dir = Path(__file__).parent.parent.parent
-    input_file = current_dir / "docs" / "folha.json"
-    output_dir = current_dir / "chunks" / "folha"
+    input_file = current_dir / "pessoal.json"
+    output_dir = current_dir / "chunks" / "pessoal"
     
     print(f"Reading content from: {input_file}")
     

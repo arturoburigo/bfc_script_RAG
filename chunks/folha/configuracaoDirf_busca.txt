@@ -1,0 +1,43 @@
+# configuracaoDirf_busca
+Description: ConfiguracaoDirf
+Method: busca (GET)
+Method Description: Configuração DIRF
+Representation Type: ConfiguracaoDirfFonteDados
+Expressions:
+- campoDirf: Campos (Type: )
+Types:
+## ConfiguracaoDirfConfiguracaoEvento
+- id: Id (Type: Long)
+- codigo: Código (Type: Long)
+- descricao: Descrição (Type: String)
+- inicioVigencia: Competência (Type: LocalDateTime)
+- tipo: Tipo (Type: )
+- naturezaRubrica: Natureza da Rubrica (Type: )
+- classificacao: Classificação (Type: )
+- classificacaoBaixaProvisao: Baixa da provisão (Type: )
+- unidade: Unidade (Type: )
+- taxa: Taxa (Type: BigDecimal)
+- enviaTransparencia: Envia ao transparência (Type: Boolean)
+- enviaEsocial: Envia ao eSocial (Type: Boolean)
+- codigoEsocial: Código para o eSocial (Type: String)
+- compoemHorasMes: Compõem horas do mês (Type: Boolean)
+- incideDsr: Incide DSR (Type: Boolean)
+- desabilitado: Registro Desativado (Type: Boolean)
+- tiposPrevidencia: Tipos de previdência (Type: )
+## ConfiguracaoDirfEventoFonteDados
+- id: Id (Type: Long)
+- configuracaoEvento: Configuração de evento (Type: ConfiguracaoDirfConfiguracaoEvento)
+## ConfiguracaoDirfFonteDados
+- id: Id (Type: Long)
+- campoDirf: Campos (Type: )
+- eventos: Eventos configurado (Type: ConfiguracaoDirfEventoFonteDados)
+Code Example:
+```
+fonteConfiguracaoDirf = Dados.folha.v2.configuracaoDirf;
+
+dadosConfiguracaoDirf = fonteConfiguracaoDirf.busca(campos: "eventos(configuracaoEvento(id, codigo, enviaEsocial)), id, campoDirf")
+
+percorrer (dadosConfiguracaoDirf) { itemConfiguracaoDirf ->
+
+}
+```

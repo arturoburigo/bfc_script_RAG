@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Em projetos que possuem explicitamente o uso do cglib, ou alguma dependência que o utiliza, é necessário remove-la do projeto, para não gerar conflito com o bfc-script.  \n### Executando um script",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

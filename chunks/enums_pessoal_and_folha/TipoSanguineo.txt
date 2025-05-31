@@ -1,0 +1,10 @@
+# TipoSanguineo
+Enum: TipoSanguineo
+- Ap (Key: AP, Value: A+)
+- An (Key: AN, Value: A-)
+- Bp (Key: BP, Value: B+)
+- Bn (Key: BN, Value: B-)
+- Abp (Key: ABP, Value: AB+)
+- Abn (Key: ABN, Value: AB-)
+- Op (Key: OP, Value: O+)
+- On (Key: ON, Value: O-)

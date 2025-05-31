@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "disponível. Em muitos benchmarks, Java iguala o desempenho do código binário gerado por linguagens compiladas como C e C + +. A crescente complexidade da linguagem e do notável desempenho, portabilidade e escalabilidade da JVM criaram uma abertura",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+# CampoRais
+Enum: CampoRais
+- 53 - Valor das férias recebidas na rescisão de contratos de trabalho, tanto as vencidas quanto as proporcionais (férias indenizadas) (Key: VALOR_FERIAS_VENCIDAS_E_PROPORCIONAIS_RECEBIDO_RESCISAO, Value: 53)
+- 56 - Acréscimo salarial negociado na data-base da categoria a que pertence o empregado, tendo sido pago somente na rescisão do contrato de trabalho (dissídio coletivo) (Key: ACRESCIMO_NEGOCIADO_DATA_BASE_PAGO_RESCISAO, Value: 56)
+- 58 - Valor total decorrente de gratificações que não foram pagas durante o contrato de trabalho (Key: VALOR_DECORRENTE_GRATIFICACOES_NAO_PAGAS, Value: 58)
+- 62 - Valor total acumulado no ano-base e repassado a título de contribuição associativa pela empresa para a entidade sindical do empregado (primeira ocorrência) (Key: VALOR_ACUMULADO_ANO_BASE_REPASSADO_PRIMEIRA_OCORRENCIA, Value: 62)
+- 64 - Valor total acumulado no ano-base e repassado a título de contribuição associativa pela empresa para a entidade sindical do empregado (segunda ocorrência) (Key: VALOR_ACUMULADO_ANO_BASE_REPASSADO_SEGUNDA_OCORRENCIA, Value: 64)
+- 66 - Valor total acumulado no ano-base e repassado a título de contribuição sindical pela empresa para e entidade sindical do empregado (Key: VALOR_ACUMULADO_ANO_BASE_REPASSADO_SINDICAL, Value: 66)
+- 68 - Valor total acumulado no ano-base e repassado a título de contribuição prevista na negociação coletiva (assistencial) pela empresa para e entidade sindical do empregado (Key: VALOR_ACUMULADO_ANO_BASE_REPASSADO_NEGOCIACAO_COLETIVA_ASSISTENCIAL, Value: 68)
+- 70 - Valor total acumulado no ano-base e repassado a título de contribuição prevista na negociação coletiva (confederativa) pela empresa para e entidade sindical do empregado (Key: VALOR_ACUMULADO_ANO_BASE_REPASSADO_NEGOCIACAO_COLETIVA_CONFEDERATIVA, Value: 70)
+- 72 a 83 - Horas extras trabalhadas (Key: HORAS_EXTRAS_TRABALHADAS, Value: 72)

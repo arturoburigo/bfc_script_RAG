@@ -1,0 +1,5 @@
+# AcidenteTransito
+Enum: AcidenteTransito
+- Atropelamento (Key: ATROPELAMENTO, Value: 1)
+- Colisão (Key: COLISAO, Value: 2)
+- Outros (Key: OUTROS, Value: 3)

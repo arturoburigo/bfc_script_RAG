@@ -1,0 +1,11 @@
+# ClassificacaoTipoMovimentacaoPessoal
+# Part 2
+# This is a continuation of the ClassificacaoTipoMovimentacaoPessoal enum
+Enum: ClassificacaoTipoMovimentacaoPessoal
+- Reintegração (Key: REINTEGRACAO, Value: 21)
+- Reversão de aposentadoria (Key: REVISAO_APOSENTADORIA, Value: 22)
+- Saída do cargo (Key: SAIDA_CARGO, Value: 23)
+- Suspensão (Key: SUSPENSAO, Value: 24)
+- Transferência (recebido) (Key: TRANSFERENCIA_RECEBIDO, Value: 25)
+- Transferência (cedido) (Key: TRANSFERENCIA_CEDIDO, Value: 26)
+- Usufruto licença-prêmio (Key: USUFRUTO_LICENCA_PREMIO, Value: 27)

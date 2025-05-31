@@ -1,0 +1,5 @@
+# ClassificacaoTributaria
+Enum: ClassificacaoTributaria
+- Entidade Beneficente/Isenta (Key: ENTIDADE_BENEFICENTE, Value: 80)
+- Ente Federativo, Autarquias e Fundações Públicas (Key: ENTE_FEDERATIVO_AUTARQUIAS_FUNDACOES_PUBLICAS, Value: 85)
+- Pessoas Jurídicas em Geral (Key: PESSOAS_JURIDICAS_GERAL, Value: 99)

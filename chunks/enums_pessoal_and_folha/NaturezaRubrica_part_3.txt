@@ -1,0 +1,24 @@
+# NaturezaRubrica
+# Part 3
+# This is a continuation of the NaturezaRubrica enum
+Enum: NaturezaRubrica
+- 1404 - Auxílio babá (Key: AUXILIO_BABA, Value: 40)
+- 1405 - Reembolso de assistência médica (Key: REEMBOLSO_ASSISTENCIA_MEDICA, Value: 41)
+- 1406 - Auxílio creche (Key: AUXILIO_CRECHE, Value: 42)
+- 1407 - Auxílio educação (Key: AUXILIO_EDUCACAO, Value: 43)
+- 1409 - Salário família (Key: SALARIO_FAMILIA, Value: 44)
+- 1410 - Auxílio - Locais difícil acesso (Key: AUXILIO_LOCAIS_DIFCIL_ACESSO, Value: 45)
+- 1601 - Ajuda de custo - Aeronauta (Key: AJUDA_CUSTO_AERONAUTA, Value: 46)
+- 1602 - Ajuda de custo de transferência (Key: AJUDA_CUSTO_TRANSFERENCIA, Value: 47)
+- 1620 - Ressarcimento despesas de veículo empregado (Key: RESSARCIMENTO_DESPESAS_VEICULO_EMPREGADO, Value: 48)
+- 1621 - Ressarcimento despesas de viagens (Key: RESSARCIMENTO_DESPESAS_VIAGENS, Value: 49)
+- 1629 - Ressarcimento de outras despesas (Key: RESSARCIMENTO_OUTRAS_DESPESAS, Value: 50)
+- 9989 - Outros valores informativos (Key: OUTROS_VALORES_INFORMATIVOS, Value: 51)
+- 1050 - Remuneração de dias de afastamento (Key: REMUNERACAO_DIAS_AFASTAMENTO, Value: 52)
+- 1802 - Etapas (marítimos) (Key: ETAPAS_MARITIMAS, Value: 54)
+- 1805 - Moradia (Key: MORADIA, Value: 55)
+- 1810 - Transporte (Key: TRANSPORTE, Value: 56)
+- 2501 - Prêmios (Key: PREMIOS, Value: 57)
+- 2510 - Direito autorais e intelectuais (Key: DIREITO_AUTORAIS_INTELECTUAIS, Value: 58)
+- 2901 - Empréstimos (Key: EMPRESTIMOS, Value: 59)
+- 2903 - Vestuário e equipamentos (Key: VESTUARIO_EQUIPAMENTOS, Value: 60)

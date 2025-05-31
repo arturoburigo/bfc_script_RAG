@@ -1,0 +1,4 @@
+# PeriodoApuracaoProcessoTrabalhista
+Enum: PeriodoApuracaoProcessoTrabalhista
+- 1 - Mensal (Key: MENSAL, Value: 1)
+- 2 - Anual (13º salário) (Key: ANUAL, Value: 2)

@@ -1,0 +1,5 @@
+# DesoneracaoFolha
+Enum: DesoneracaoFolha
+- 0 - Não aplicável (Key: NAO_APLICAVEL, Value: 0)
+- 1 - Empresa enquadrada nos critérios da legislação vigente (Key: EMPRESA_ENQUADRA_LEGISLACAO_VIGENTE, Value: 1)
+- 2 - Município enquadrado nos critérios da legislação vigente (Key: EMPRESA_NAO_ENQUADRA_LEGISLACAO_VIGENTE, Value: 2)

@@ -1,0 +1,36 @@
+# servicoAutonomo_busca
+Description: ServicoAutonomo
+Method: busca (GET)
+Method Description: Listagem de serviços de autônomos
+Representation Type: ServicoAutonomoFonteDados
+Expressions:
+- matriculaId: Id da matrícula (Type: Long)
+- valor: Valor (Type: BigDecimal)
+- id: Id (Type: Long)
+- dataLancamento: Data de lançamento (Type: LocalDate)
+- descricao: Descrição (Type: String)
+Types:
+## Cbo
+- id: Id (Type: Long)
+- codigoClassificacao: Código de classificação (Type: String)
+- descricao: Descrição (Type: String)
+- nivel: Tipo/Nível (Type: )
+## ServicoAutonomoFonteDados
+- id: Id (Type: Long)
+- matriculaId: Id da matrícula (Type: Long)
+- descricao: Descrição (Type: String)
+- dataLancamento: Data de lançamento (Type: LocalDate)
+- numeroDocumento: Número do documento (Type: String)
+- cbo: Cbo (Type: Cbo)
+- valor: Valor (Type: BigDecimal)
+- competencia: Competência (Type: YearMonth)
+Code Example:
+```
+fonteServicoAutonomo = Dados.folha.v2.servicoAutonomo;
+
+dadosServicoAutonomo = fonteServicoAutonomo.busca(campos: "cbo(id, codigoClassificacao, descricao, nivel), id, matriculaId, descricao, dataLancamento, valor",ordenacao: "matriculaId asc")
+
+percorrer (dadosServicoAutonomo) { itemServicoAutonomo ->
+
+}
+```

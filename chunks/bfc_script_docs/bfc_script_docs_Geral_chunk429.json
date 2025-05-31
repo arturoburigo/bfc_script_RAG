@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){ idPrincipal ->\nimprimir idPrincipal\npercorrer(de:6, ate:8){ idSecundario ->\nimprimir 'ID princial: ' + idPrincipal\nimprimir 'ID secundário: ' + idSecundario\n}\n}\n```42  \nNo script que recebe as variáveis, os valores estão disponíveis da seguinte maneira:  \n```bfc-script\npercorrer(de:3, ate:5){ idPrincipal ->\nimprimir idPrincipal\npercorrer(de:6, ate:8){ idSecundario ->\nimprimir 'ID princial: ' + idPrincipal\nimprimir 'ID secundário: ' + idSecundario\n}\n}\n```43  \nO scriptb não precisa ter nenhum parâmetro para receber as variáveis e qualquer tipo pode ser passado por variaveis().",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

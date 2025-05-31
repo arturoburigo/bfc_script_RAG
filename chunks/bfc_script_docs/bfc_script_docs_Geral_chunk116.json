@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Calcula a diferença em meses entre duas datas.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```25  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```26  \n##### diferencaMinutos  \nCalcula a diferença em minutos entre duas datas/hora.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```27  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```28",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,50 @@
+# selecaoAvancada_buscaSelecaoAvancada
+Description: SelecaoAvancada
+Method: buscaSelecaoAvancada (GET)
+Method Description: Listagem de seleção avançada
+Representation Type: MatriculaFiltroSelecaoAvancadaFonteDados
+Expressions:
+- id: Id seleção avançada (Type: Long)
+- descricao: Descrição seleção avançada (Type: String)
+Types:
+## EntidadeFiltravelSelecaoDtoAssociacao
+- id:  (Type: Long)
+## CargoSelecaoAvacanda
+- id: Identificador (Type: Long)
+- descricao: Descrição (Type: String)
+## MatriculaFiltroSelecaoAvancadaFonteDados
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- tipoSelecaoMatricula:  (Type: )
+- inicioFaixaMatricula:  (Type: Integer)
+- fimFaixaMatricula:  (Type: Integer)
+- inicioAdmissao:  (Type: LocalDate)
+- fimAdmissao:  (Type: LocalDate)
+- criterioGrupoFuncional:  (Type: )
+- criterioMatricula:  (Type: )
+- criterioLotacaoFisica:  (Type: )
+- criterioTipoAfastamento:  (Type: )
+- criterioCargo:  (Type: )
+- criterioOrganograma:  (Type: )
+- criterioVinculoEmpregaticio:  (Type: )
+- classificacoesTipoAfastamento:  (Type: )
+- tiposContrato:  (Type: )
+- situacoes:  (Type: )
+- matriculas:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)
+- gruposFuncional:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)
+- vinculosEmpregaticio:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)
+- cargos:  (Type: CargoSelecaoAvacanda)
+- organogramas:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)
+- lotacoesFisica:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)
+Code Example:
+```
+fonteSelecaoAvancada = Dados.pessoal.v2.selecaoAvancada;
+
+filtroSelecaoAvancada = "id = null"
+
+dadosSelecaoAvancada = fonteSelecaoAvancada.buscaSelecaoAvancada(criterio: filtroSelecaoAvancada,campos: "cargos(id, descricao), tipoSelecaoMatricula, descricao, id, criterioCargo, criterioOrganograma, criterioVinculoEmpregaticio, classificacoesTipoAfastamento, matriculas(id), situacoes",ordenacao: "id asc")
+
+percorrer (dadosSelecaoAvancada) { itemSelecaoAvancada ->
+
+}
+```

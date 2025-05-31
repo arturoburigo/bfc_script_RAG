@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){ idPrincipal ->\nimprimir idPrincipal\npercorrer(de:6, ate:8){ idSecundario ->\nimprimir 'ID princial: ' + idPrincipal\nimprimir 'ID secundário: ' + idSecundario\n}\n}\n```95  \n###### METODO(método)  \n###### METODO(método, Mapa[marcadores])  \nEnvia o formulário utilizando como tipo de método um valor personalizado.  \n```bfc-script\npercorrer(de:3, ate:5){ idPrincipal ->\nimprimir idPrincipal\npercorrer(de:6, ate:8){ idSecundario ->\nimprimir 'ID princial: ' + idPrincipal\nimprimir 'ID secundário: ' + idSecundario\n}\n}\n```96  \n### Resposta",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

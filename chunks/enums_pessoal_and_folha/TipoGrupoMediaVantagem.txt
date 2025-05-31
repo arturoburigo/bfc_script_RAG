@@ -1,0 +1,9 @@
+# TipoGrupoMediaVantagem
+Enum: TipoGrupoMediaVantagem
+- Abono (Key: ABONO, Value: 1)
+- Aviso Prévio (Key: AVISO_PREVIO, Value: 2)
+- 13° Salário (Key: DECIMO_TERCEIRO, Value: 3)
+- Férias (Key: FERIAS, Value: 4)
+- Férias Proporcionais (Key: FERIAS_PROPORCIONAIS, Value: 5)
+- Férias Vencidas (Key: FERIAS_VENCIADAS, Value: 6)
+- Outros (Key: OUTROS, Value: 7)

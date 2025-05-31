@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Uma Domain Specific Language (DSL) é uma linguagem de programação de expressividade limitada, focada num domínio particular. A maioria das linguagens que você conhece são linguagens de propósito geral (General Purpose Languages), que podem lhe dar",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

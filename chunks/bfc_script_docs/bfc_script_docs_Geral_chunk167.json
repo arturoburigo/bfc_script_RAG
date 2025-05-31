@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### lerLinha()  \nRealiza a leitura de uma linha do arquivo e retorna o conteúdo lido.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```87  \n##### contemProximaLinha()  \nVerificar se o arquivo sendo lido contém uma próxima linha  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```88  \n##### pularLinhas(int linhas)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

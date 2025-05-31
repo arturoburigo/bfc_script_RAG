@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Propriedades dos anexos  \n##### nome(nome)  \nNome do anexo  \n##### descricao(descricao)  \nDescrição do anexo  \n##### dispostoParaVisualizacao()  \nDefine a disposição do anexo para visualização INLINE no corpo do e-mail.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

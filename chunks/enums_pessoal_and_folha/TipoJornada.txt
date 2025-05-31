@@ -1,0 +1,4 @@
+# TipoJornada
+Enum: TipoJornada
+- Semanal (Key: SEMANAL, Value: 1)
+- Turno corrido (Key: TURNO_CORRIDO, Value: 2)

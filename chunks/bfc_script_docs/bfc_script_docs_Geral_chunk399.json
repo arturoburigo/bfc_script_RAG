@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){ idPrincipal ->\nimprimir idPrincipal\npercorrer(de:6, ate:8){ idSecundario ->\nimprimir 'ID princial: ' + idPrincipal\nimprimir 'ID secundário: ' + idSecundario\n}\n}\n```26  \n**Exemplo 3:**  \n```bfc-script\npercorrer(de:3, ate:5){ idPrincipal ->\nimprimir idPrincipal\npercorrer(de:6, ate:8){ idSecundario ->\nimprimir 'ID princial: ' + idPrincipal\nimprimir 'ID secundário: ' + idSecundario\n}\n}\n```27  \n**Exemplo 4:**  \nArmazenar o retorno em formato de anexo de um serviço.  \n```bfc-script\npercorrer(de:3, ate:5){ idPrincipal ->\nimprimir idPrincipal\npercorrer(de:6, ate:8){ idSecundario ->\nimprimir 'ID princial: ' + idPrincipal\nimprimir 'ID secundário: ' + idSecundario\n}\n}\n```28  \n## API de Fonte de Dados",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

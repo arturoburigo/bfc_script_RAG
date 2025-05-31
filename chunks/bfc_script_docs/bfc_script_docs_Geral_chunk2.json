@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "O bfc-script é um framework que possibilita a integração de scripts com aplicações. O framework oferece um ambiente de desenvolvimento, compilação e execução de scripts, bem como uma linguagem amigável para usuários não técnicos e APIs utilitárias.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

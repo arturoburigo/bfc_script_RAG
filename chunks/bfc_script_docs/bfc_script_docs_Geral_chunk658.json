@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Java. Groovy é uma destas linguagens, talvez a mais conhecida. É um projeto de Software Livre hospedado na Codehaus responsável por outros projetos como XStream, Pico/Nano Container, AspectWerkz, ActiveMQ, JMock, Drools e tantos outros. A linguagem",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

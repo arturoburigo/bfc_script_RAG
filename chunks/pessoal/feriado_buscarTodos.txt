@@ -1,0 +1,34 @@
+# feriado_buscarTodos
+Description: feriado
+Method: buscarTodos (GET)
+Method Description: Listagem de Feriados
+Representation Type: FeriadoDadosRepresentation
+Expressions:
+- tipo: Tipo do Feriado (Type: )
+- gerarHorasExtras: Gera horas extras (Type: Boolean)
+- pontoFacultativo: Ponto Facultativo (Type: Boolean)
+- gerarMarcacaoAutomatica: Gera marcação automática (Type: Boolean)
+- abrangencia: Abrangência (Type: )
+- dataFeriado: Data do Feriado (Type: LocalDate)
+- descricao: Descrição do Feriado (Type: String)
+Types:
+## FeriadoDadosRepresentation
+- id: Id (Type: Long)
+- descricao: Descrição do Feriado (Type: String)
+- tipo: Tipo do Feriado (Type: )
+- dataFeriado: Data do Feriado (Type: LocalDate)
+- abrangencia: Abrangência (Type: )
+- pontoFacultativo: Ponto Facultativo (Type: Boolean)
+- camposAdicionais: Campo adicional (Type: CamposAdicionais)
+- gerarMarcacaoAutomatica: Gera marcação automática (Type: Boolean)
+- gerarHorasExtras: Gera horas extras (Type: Boolean)
+Code Example:
+```
+fonteEstados = Dados.pessoal.v2.estados;
+
+dadosEstados = fonteEstados.busca(campos: "id, nome",ordenacao: "nome asc")
+
+percorrer (dadosEstados) { itemEstados ->
+
+}
+```

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```14  \n##### dia  \nObtem o dia em que se encontra uma determinada data.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```15  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```16  \n##### diaSemana",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

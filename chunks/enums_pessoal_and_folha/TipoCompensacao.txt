@@ -1,0 +1,6 @@
+# TipoCompensacao
+Enum: TipoCompensacao
+- Dia (Key: DIA, Value: 1)
+- Semana (Key: SEMANA, Value: 2)
+- Mês (Key: MES, Value: 3)
+- Nenhuma (Key: NENHUMA, Value: 4)

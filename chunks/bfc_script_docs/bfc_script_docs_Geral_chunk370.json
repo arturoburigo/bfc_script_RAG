@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "As opções de processamento disponíveis são:  \n#### imprimir()  \nImprime o conteúdo XML da resposta no console do editor de scripts.  \n#### conteudo()  \nRetorna o conteúdo XML da resposta no formato caracter.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```99  \n#### arquivo()",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

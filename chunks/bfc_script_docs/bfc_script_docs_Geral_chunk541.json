@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* contidoEm(valores) `nome in (\"João\", \"Maria\")`\n* naoContidoEm(valores) `nome not in (\"João\", \"Maria\")`\nExemplo de utilização:  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```20  \n#### Obrigatoriedade dos valores",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

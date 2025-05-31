@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "e utilizamos o comando retornar para submetermos estes dados como valor de retorno para o script, atribuindo uma chave para cada valor. Estes valores serão resgatados através de uma java.util.Map como veremos abaixo.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```78  \n#### Soap.servico(url, namespace, prefixo, usuario, senha)  \nEsta opção dá suporte a criação de serviços que utilizem mecanismos de autenticação HTTP básico permitindo informar também o usuário e senha de conexão como parâmetros.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

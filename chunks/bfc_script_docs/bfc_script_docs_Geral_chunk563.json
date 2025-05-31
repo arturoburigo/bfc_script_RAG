@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "2 - Porem em um ambiente real, nossos scripts não estarão transcritos estaticamente no código, conforme vimos no exemplo acima, mas estarão armazenados em um banco de dados, havendo a possibilidade desses serem editados a qualquer momento.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

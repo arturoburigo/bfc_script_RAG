@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "O armazenamento dos scripts deve ser realizado pela aplicação, que deverá apenas implementar uma interface de acesso ao script, para que a engine saiba como resgata-lo durante a execução. É indicado que a aplicação possua uma tabela para",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A execução de scripts em lote pode ser realizada através da criação de um script centralizador. Este script será responsável por orquestrar a execução dos demais scripts obedecendo a ordem cronológica de execução. Exemplo:  \n```bfc-script\npercorrer(de:3, ate:5){ idPrincipal ->\nimprimir idPrincipal\npercorrer(de:6, ate:8){ idSecundario ->\nimprimir 'ID princial: ' + idPrincipal\nimprimir 'ID secundário: ' + idSecundario\n}\n}\n```55",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

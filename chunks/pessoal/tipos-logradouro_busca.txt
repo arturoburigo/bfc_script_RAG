@@ -1,0 +1,24 @@
+# tipos-logradouro_busca
+Description: Tipo de logradouro
+Method: busca (GET)
+Method Description: Listagem de tipos de logradouros
+Representation Type: TipoLogradouro
+Expressions:
+- abreviatura: Abreviatura (Type: String)
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+Types:
+## TipoLogradouro
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- abreviatura: Abreviatura (Type: String)
+Code Example:
+```
+fonteTipos-logradouro = Dados.pessoal.v2.tipos-logradouro;
+
+dadosTipos-logradouro = fonteTipos-logradouro.busca(campos: "id, descricao, abreviatura")
+
+percorrer (dadosTipos-logradouro) { itemTipos-logradouro ->
+
+}
+```

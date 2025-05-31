@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Funções de anexo da API  \n##### Email.criarAnexoUrl()  \nCria um novo anexo do tipo URL.  \n##### Email.criarAnexoUrl(url)  \nCria um novo anexo do tipo URL informando o endereço.  \n##### Email.criarAnexoUrl(url, nome)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

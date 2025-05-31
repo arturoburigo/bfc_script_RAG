@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "para manipulação de datas e caracteres podem ser utilizados de maneira direta, invocando o método apartir do próprio elemento, não necessitando a invocação através da classe. Durante a explanação das funções, serão sinalizados, as que possuem",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

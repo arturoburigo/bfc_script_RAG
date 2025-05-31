@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### proximo()  \nItera no documento passando a leitura para o próximo item. Tem como retorno o tipo do novo item.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```13  \n##### proximaTag()",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

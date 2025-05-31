@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Adiciona um novo atributo ao elemento atual indicando também o namespace e prefixo ao qual o atributo está vinculado. O retorno desta função é a representação do novo elemento criado e poderá ser utilizado para adicionar elementos filhos caso",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

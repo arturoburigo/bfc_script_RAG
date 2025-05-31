@@ -1,0 +1,4 @@
+# TipoLocal
+Enum: TipoLocal
+- Próprio (Key: PROPRIO, Value: 1)
+- Terceiro (Key: TERCEIRO, Value: 2)

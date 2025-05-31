@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "executadas criam uma cópia da requisição atual adicionado os respectivos parâmetro(s)/caminho(s). Desta forma a requisição original não é alterada e pode ser reutilizada para outras invocações no mesmo serviço.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

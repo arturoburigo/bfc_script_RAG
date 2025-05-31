@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```44  \n##### criarDiretorio  \nRealiza a criação de um diretório em branco no arquivo zip  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```45  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```46  \n##### adicionar(Arquivo)  \nAdiciona um arquivo no diretório raiz do arquivo zip  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```47",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

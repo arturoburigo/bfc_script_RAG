@@ -1,0 +1,6 @@
+# IncidenciaContribuicaoSindicalLaboral
+Enum: IncidenciaContribuicaoSindicalLaboral
+- 00 - Não é base de cálculo (Key: NAO_E_BASE_DE_CALCULO, Value: 1)
+- 11 - Base de cálculo (Key: BASE_DE_CALCULO, Value: 2)
+- 31 - Valor da contribuição sindical laboral descontada (Key: VALOR_DA_CONTRIBUICAO_SINDICAL_LABORAL_DESCONTADA, Value: 3)
+- 91 - Incidência suspensa em decorrência de decisão judicial (Key: INCIDENCIA_SUSPENSA_EM_DECORRENCIA_DE_DECISAO_JUDICIAL, Value: 4)

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```18  \n##### diferencaAnos  \nCalcula a diferença em anos entre duas datas.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```19  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```20  \n##### diferencaDias  \nCalcula a diferença em dias entre duas datas.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```21  \n_Alternativa_",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

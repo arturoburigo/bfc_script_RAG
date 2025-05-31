@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### adicionar(Lista de arquivos)  \nAdiciona um ou mais arquivos no diretório raiz do arquivo zip.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```54  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```55  \n##### adicionar(Lista de arquivos, Diretório)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

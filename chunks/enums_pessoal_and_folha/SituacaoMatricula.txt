@@ -1,0 +1,16 @@
+# SituacaoMatricula
+Enum: SituacaoMatricula
+- Trabalhando (Key: TRABALHANDO, Value: 1)
+- Falta (Key: FALTA, Value: 2)
+- Afastado (Key: AFASTADO, Value: 3)
+- Cedido (Key: CEDIDO, Value: 4)
+- Suspenso (Key: SUSPENSO, Value: 5)
+- Em férias (Key: FERIAS, Value: 6)
+- Demitido (Key: DEMITIDO, Value: 7)
+- Trabalhador sem vínculo (Key: SEM_VINCULO, Value: 8)
+- Aposentado (Key: APOSENTADO, Value: 9)
+- Pensionista (Key: PENSIONISTA, Value: 10)
+- Cessado (Key: CESSADO, Value: 11)
+- Benefício suspenso (Key: BENEFICIO_SUSPENSO, Value: 12)
+- Em serviço (Key: EM_SERVICO, Value: 13)
+- Inativo (Key: INATIVO, Value: 14)

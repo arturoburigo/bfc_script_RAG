@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**contemProximoElemento()**  \nIndica se o elemento atual possui um elemento anterior.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```96  \n#### Métodos",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

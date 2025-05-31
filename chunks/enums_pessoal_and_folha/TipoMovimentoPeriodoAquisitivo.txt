@@ -1,0 +1,5 @@
+# TipoMovimentoPeriodoAquisitivo
+Enum: TipoMovimentoPeriodoAquisitivo
+- Suspensão (Key: SUSPENSAO, Value: 1)
+- Cancelamento (Key: CANCELAMENTO, Value: 2)
+- Concessão (Key: CONCESSAO, Value: 3)

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A linguagem possui poucos comandos e algumas similaridades com a linguagem Java, como os operadores (lógico, comparação, atribuição e aritimético), o uso de chaves para circundar blocos, sintaxe case sensitive, etc. Para simplificar os scripts, não",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

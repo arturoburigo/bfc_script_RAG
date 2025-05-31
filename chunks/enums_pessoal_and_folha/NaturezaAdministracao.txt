@@ -1,0 +1,13 @@
+# NaturezaAdministracao
+Enum: NaturezaAdministracao
+- 101 - Órgão do Poder Executivo (Key: ORGAO_PODER_EXECUTIVO, Value: 1)
+- 103 - Fundo Especial (Key: FUNDO_ESPECIAL, Value: 2)
+- 104 - Regime Próprio de Previdência Social (Key: REGIME_PROPRIO_PREVIDENCIA_SOCIAL_DIRETO, Value: 3)
+- 201 - Autarquia (Key: AUTARQUIA, Value: 4)
+- 202 - Fundação Pública (Key: FUNDACAO_PUBLICA, Value: 5)
+-  203- Empresa Pública (Key: EMPRESA_PUBLICA, Value: 6)
+- 204 - Sociedade de Economia Mista (Key: SOCIEDADE_ECONOMIA_MISTA, Value: 7)
+- 205 - Empresa Estatal Dependente (Key: EMPRESA_ESTATAL_DEPENDENTE, Value: 8)
+- 206 - Regime Próprio de Previdência Social (Key: REGIME_PROPRIO_PREVIDENCIA_SOCIAL_INDIRETO, Value: 9)
+- 207 - Consórcio (Key: CONSORCIO, Value: 10)
+- 102 - Órgão do Poder Legislativo (Key: ORGAO_PODER_LEGISLATIVO, Value: 11)

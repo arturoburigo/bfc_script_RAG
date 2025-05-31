@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A engine por padrão, não permite que valores nulos sejam utilizados dentro dos scripts. Caso tentar passar um parâmetro nulo como variável, a engine irá disparar um NullpointerException e caso alguma propriedade dentro de um JavaBean estiver nula,",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**É recomendado que não se atríbua essa variável interna para um contexto maior, permitindo assim que a memória alocada seja liberada**  \n### Hash",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

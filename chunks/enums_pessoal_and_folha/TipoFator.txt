@@ -1,0 +1,8 @@
+# TipoFator
+Enum: TipoFator
+- Físico (Key: FISICO, Value: 1)
+- Químico (Key: QUIMICO, Value: 2)
+- Biológico (Key: BIOLOGICO, Value: 3)
+- Associação de agentes nocivos físicos, químicos e biológicos (Key: ASSOCIACAO, Value: 7)
+- Outros agentes nocivos (Key: OUTROS, Value: 8)
+- Ausência de agentes nocivos ou atividades especiais (Key: AUSENCIA_FATORES_RISCOS, Value: 9)

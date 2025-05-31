@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Devemos ter em mente que o estado dos objetos possuem escopo de contexto, qualquer modificação de um atributo será compartilhado a todos os scripts executados dentro de um mesmo contexto, possibilitando por exemplo, agrupar informações entre várias",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

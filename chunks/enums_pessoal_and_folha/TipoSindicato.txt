@@ -1,0 +1,4 @@
+# TipoSindicato
+Enum: TipoSindicato
+- Empregado (Key: EMPREGADO, Value: 1)
+- Empregador (Key: EMPREGADOR, Value: 2)

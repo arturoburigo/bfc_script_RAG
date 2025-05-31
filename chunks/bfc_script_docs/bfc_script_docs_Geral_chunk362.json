@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**_As opções disponíveis para criação de métodos a partir da mensagem são:_**  \n**metodo(operacao)**  \nCria um novo método para a operação/função informado no parâmetro.  \n**metodo(operacao, namespace, prefixo)**",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

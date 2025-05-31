@@ -1,0 +1,6 @@
+# AcumuloCargos
+Enum: AcumuloCargos
+- Não acumulável (Key: NAO_ACUMULAVEL, Value: 1)
+- Profissional de saúde (Key: PROFISSIONAL_SAUDE, Value: 2)
+- Professor (Key: PROFESSOR, Value: 3)
+- Técnico/Científico (Key: TECNICO_CENTIFICO, Value: 4)

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### link(href, titulo, label)  \nDefine o link, titulo e label a ser enviado pela notificação  \n#### enviar()  \nRealiza o envio da notificação aos destinatários.  \n### Exemplos  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```73  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```74  \n## API de Mensagens",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

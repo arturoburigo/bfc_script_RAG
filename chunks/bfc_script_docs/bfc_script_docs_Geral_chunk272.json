@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### Email.criarAnexoUrl(url, nome)  \nCria um novo anexo do tipo URL informando o endereço e o nome a ser utilizado na mensagem.  \n##### Email.criarAnexoArquivo()  \nCria um novo anexo do tipo arquivo.  \n##### Email.criarAnexoArquivo(arquivo)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

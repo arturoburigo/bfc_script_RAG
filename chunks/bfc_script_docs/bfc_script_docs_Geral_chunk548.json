@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```31  \n### Datas  \nAtualmente a engine de scripts tem suporte a **datas** através de seu formato completo (data e hora), e no critério ela é representada através do formato [ISO 8601](https://pt.wikipedia.org/wiki/ISO_8601)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

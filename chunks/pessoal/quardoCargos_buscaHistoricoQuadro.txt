@@ -1,0 +1,37 @@
+# quardoCargos_buscaHistoricoQuadro
+Description: Quadro de cargos
+Method: buscaHistoricoQuadro (GET)
+Method Description: Listagem de quadro de cargos pela origem
+Representation Type: QuadroCargo
+Expressions:
+- inicioVigencia:  (Type: LocalDateTime)
+- descricao:  (Type: String)
+Types:
+## TipoAto
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+## AtoMatriculaAssociacao
+- id: Id (Type: Long)
+- numeroOficial: Número oficial (Type: String)
+- tipo: Tipo de ato (Type: TipoAto)
+- ementa: Ementa (Type: String)
+## QuadroCargo
+- id:  (Type: Long)
+- descricao:  (Type: String)
+- inicioVigencia:  (Type: LocalDateTime)
+- percentualMinimo:  (Type: Integer)
+- atoCriacao:  (Type: AtoMatriculaAssociacao)
+- atoPercentualMinimo:  (Type: AtoMatriculaAssociacao)
+- extinto:  (Type: Boolean)
+- campoAdicional:  (Type: CampoAdicionalDto)
+Code Example:
+```
+fonteQuardoCargos = Dados.pessoal.v2.quardoCargos;
+
+dadosQuardoCargos = fonteQuardoCargos.buscaHistoricoQuadro(campos: "id, descricao, inicioVigencia, percentualMinimo, extinto",parametros:["id":null])
+
+percorrer (dadosQuardoCargos) { itemQuardoCargos ->
+
+}
+```

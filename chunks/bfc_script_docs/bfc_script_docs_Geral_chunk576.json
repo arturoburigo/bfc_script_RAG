@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "repositório, estendendo as seguintes classes, com.betha.bfc.script.engine.standard.AbstractScript e com.betha.bfc.script.engine.standard.AbstractScriptRepository.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

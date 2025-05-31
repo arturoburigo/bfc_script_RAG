@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "# precisam ter muito de seu comportamento definido de forma mais dinâmica. Isto conduziu a arquivos XML complexos que são difíceis de compreender que, por sua vez, levou as pessoas a explorar DSLs novamente.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

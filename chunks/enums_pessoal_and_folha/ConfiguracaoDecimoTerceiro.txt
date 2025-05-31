@@ -1,0 +1,5 @@
+# ConfiguracaoDecimoTerceiro
+Enum: ConfiguracaoDecimoTerceiro
+- Janeiro a Dezembro (Key: JANEIRO_DEZEMBRO, Value: 1)
+- Aniversário (Key: ANIVERSARIO, Value: 2)
+- Admissão (Key: ADMISSAO, Value: 3)

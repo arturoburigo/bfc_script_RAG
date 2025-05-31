@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "O editor de scripts fornece uma forma amigável para codificação de scripts que serão compilados e executados pela engine. A responsabilidade sobre a validação da sintaxe, compilação, execução de scripts e geração de informações relacionadas a erros",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

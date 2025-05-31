@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```04  \ndos quais:  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```05\n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```06\n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```07\n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```08\n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```09  \n### Implementação  \n#### Leitura  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```10  \n##### tipo()  \nRetorna o tipo do item sendo lido. Os valores disponíveis são:",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,6 @@
+# TipoOcorrenciaDisciplinar
+Enum: TipoOcorrenciaDisciplinar
+- Advertência (Key: ADVERTENCIA, Value: 1)
+- Elogio (Key: ELOGIO, Value: 2)
+- Suspensão (Key: SUSPENSAO, Value: 3)
+- Orientação (Key: ORIENTACAO, Value: 4)

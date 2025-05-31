@@ -1,0 +1,23 @@
+# TipoDeBeneficio
+# Part 3
+# This is a continuation of the TipoDeBeneficio enum
+Enum: TipoDeBeneficio
+- 0803 - Aposentadoria por invalidez com paridade concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial (Key: APOSENTADORIA_INVALI_COM_PARIDADE_CONCED_ANTES_OBRIGA_ENVIO_EVENTOS_NAO_PERIOD_PARA_ENTES_PUBLICO_ESOCIAL, Value: 803)
+- 0804 - Aposentadoria por invalidez sem paridade concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial (Key: APOSENTADORIA_INVALI_SEM_PARIDADE_CONCED_ANTES_OBRIGA_ENVIO_EVENTO_NAO_PERIOD_PARA_ENTES_PUBLICO_ESOCIAL, Value: 804)
+- 0805 - Transferência para reserva concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial (Key: TRANSFERENCIA_RESERVA_CONCED_ANTES_OBRIGA_ENVIO_EVENTOS_NAO_PERIODICO_PARA_ENTES_PUBLICO_ESOCIAL, Value: 805)
+- 0806 - Reforma concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial (Key: REFORMA_CONCED_ANTES_DA_OBRIGA_ENVIO_EVENTOS_NAO_PERIODICO_PARA_ENTES_PUBLICO_ESOCIAL, Value: 806)
+- 0807 - Pensão por morte com paridade concedida antes da obrigatoriedade do eSocial (Key: PENSAO_POR_MORTE_COM_PARIDADE_CONCED_ANTES_DA_OBRIGA_DO_ESOCIAL, Value: 807)
+- 0808 - Pensão por morte sem paridade concedida antes da obrigatoriedade do eSocial (Key: PENSAO_POR_MORTE_SEM_PARIDADE_CONCED_ANTES_DA_OBRIGA_DO_ESOCIAL, Value: 808)
+- 0809 - Outros benefícios previdenciários concedidos antes da obrigatoriedade do eSocial (Key: OUTROS_BENEFICIOS_PREVIDENCIARIOS_CONCEDIDOS_ANTES_DA_OBRIGA_DO_ESOCIAL, Value: 809)
+- 0810 - Aposentadoria de parlamentar - Plano próprio (Key: APOSENTADORIA_PARLAMENTAR_PLANO_PROPRIO, Value: 810)
+- 0811 - Aposentadoria de servidor vinculado ao Poder Legislativo - Plano próprio (Key: APOSENTADORIA_SERVI_VINCULADO_PODER_LEGISLATIVO_PLANO_PROPRIO, Value: 811)
+- 0812 - Pensão por morte - Plano próprio (Key: PENSAO_POR_MORTE_PLANO_PROPRIO, Value: 812)
+- 0901 - Benefício especial proporcional - Servidor pertencente a RPPS que opta pelo RPC da União (Key: BENEFICIO_ESP_PROPOR_SERVI_RPPS_OPTANTE_RPC_UNIAO, Value: 901)
+- 0902 - Benefício especial proporcional - Servidor RPPS optante RPC - Demais entes da Federação com leis específicas (Key: BENEFICIO_ESP_PROPOR_SERVI_RPPS_OPTANTE_RPC_DEMAIS_ENTES_DA_FEDERACAO_COM_LEIS_ESPECIFICAS, Value: 902)
+- 0909 - Outros benefícios especiais com vínculo previdenciário (Key: OUTROS_BENEFICIOS_ESPECIAIS_COM_VINCULO_PREVIDENCIARIO, Value: 909)
+- 1101 - Aposentadoria voluntária com proventos proporcionais ao tempo de mandato - Leis próprias (Key: APOSENTADORIA_VOLUNT_PROV_PROPORC_TEMPO_MANDATO_LEI_PROPRIA, Value: 1101)
+- 1102 - Aposentadoria voluntária com proventos integrais ao tempo de mandato - Leis próprias (Key: APOSENTADORIA_VOLUNT_PROV_INTEGRAIS_TEMPO_MANDATO_LEI_PROPRIA, Value: 1102)
+- 1103 - Aposentadoria por invalidez permanente - Proventos integrais - Leis próprias (Key: APOSENTADORIA_INVALI_PERMANENTE_PROV_INTEGRAIS_LEIS_PROPRIAS, Value: 1103)
+- 1104 - Aposentadoria por invalidez permanente - Proventos proporcionais ao tempo de mandato - Leis próprias (Key: APOSENTADORIA_INVALI_PROV_PROPORC_TEMPO_MANDATO_LEI_PROPRIA, Value: 1104)
+- 1105 - Pensão por morte de parlamentar - Lei específica (Key: PENSAO_POR_MORTE_DE_PARLAMENTAR_LEI_ESPECIFICA, Value: 1105)
+- 1106 - Pensão por morte de parlamentar - Planos anteriores à EC 20/1998 (Key: PENSAO_POR_MORTE_DE_PARLAMENTAR_PLANOS_ANTERIORES_A_1998, Value: 1106)

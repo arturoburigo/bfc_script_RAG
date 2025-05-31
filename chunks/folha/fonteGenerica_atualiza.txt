@@ -1,0 +1,20 @@
+# fonteGenerica_atualiza
+Description: Fonte genérica
+Method: atualiza (PUT)
+Representation Type: FonteGenerica
+Types:
+## FonteGenerica
+- id: Id (Type: Long)
+- identificador: Identificador (Type: String)
+- tipoRegistro: Tipo do registro (Type: String)
+- conteudo: Conteúdo (Type: String)
+Code Example:
+```
+fonteFonteGenerica = Dados.folha.v2.fonteGenerica;
+
+dadosFonteGenerica = fonteFonteGenerica.atualiza(campos: "id, identificador, tipoRegistro, conteudo")
+
+percorrer (dadosFonteGenerica) { itemFonteGenerica ->
+
+}
+```

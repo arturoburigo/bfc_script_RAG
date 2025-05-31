@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "um para chamada da api de assinatura e outro de callback que é executado após a assinatura e pode receber o arquivo assinado e o arquivo original como parâmetro.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

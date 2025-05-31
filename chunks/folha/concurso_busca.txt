@@ -1,0 +1,48 @@
+# concurso_busca
+Description: Concursos
+Method: busca (GET)
+Method Description: Listagem de concursos
+Representation Type: Concurso
+Expressions:
+- dataHomologacao: Data de homologação do concurso (Type: LocalDate)
+- dataInicialInscricao: Data de início da inscrição (Type: LocalDate)
+- dataFinalInscricaoPcd: Data final da inscrição dos PCDs (Type: LocalDate)
+- tipoRecrutamento: Tipo de Recrutamento (Type: )
+- dataProrrogacaoValidade: Data de prorrogação da validade do concurso (Type: LocalDate)
+- descricao: Descrição do concurso (Type: String)
+- dataFinalInscricao: Data final da inscrição (Type: LocalDate)
+- dataInicialInscricaoPcd: Data inicial da inscrição dos PCDs (Type: LocalDate)
+- dataEncerramento: Data de encerramento do concurso (Type: LocalDate)
+- dataValidade: Data de validade do concurso (Type: LocalDate)
+- numeroEdital: Número do edital do concurso (Type: String)
+- id: Id (Type: Long)
+- percentualPcd: Percentual de PcD (Type: BigDecimal)
+- dataProrrogacao: Data de prorrogação da inscrição (Type: LocalDate)
+Types:
+## Concurso
+- id: Id (Type: Long)
+- descricao: Descrição do concurso (Type: String)
+- tipoRecrutamento: Tipo de Recrutamento (Type: )
+- numeroEdital: Número do edital do concurso (Type: String)
+- percentualPcd: Percentual de PcD (Type: BigDecimal)
+- dataInicialInscricao: Data de início da inscrição (Type: LocalDate)
+- dataFinalInscricao: Data final da inscrição (Type: LocalDate)
+- dataProrrogacao: Data de prorrogação da inscrição (Type: LocalDate)
+- dataInicialInscricaoPcd: Data inicial da inscrição dos PCDs (Type: LocalDate)
+- dataFinalInscricaoPcd: Data final da inscrição dos PCDs (Type: LocalDate)
+- dataHomologacao: Data de homologação do concurso (Type: LocalDate)
+- dataValidade: Data de validade do concurso (Type: LocalDate)
+- dataProrrogacaoValidade: Data de prorrogação da validade do concurso (Type: LocalDate)
+- dataEncerramento: Data de encerramento do concurso (Type: LocalDate)
+Code Example:
+```
+fonteConcurso = Dados.folha.v2.concurso;
+
+filtroConcurso = "descricao = teste and tipoRecrutamento = CONCURSO_PUBLICO"
+
+dadosConcurso = fonteConcurso.busca(criterio: filtroConcurso,campos: "dataProrrogacao, numeroEdital, tipoRecrutamento, id",ordenacao: "tipoRecrutamento asc")
+
+percorrer (dadosConcurso) { itemConcurso ->
+
+}
+```

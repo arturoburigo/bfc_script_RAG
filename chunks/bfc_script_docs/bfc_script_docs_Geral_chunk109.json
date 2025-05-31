@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```06  \n##### adicionaSegundos  \nAdiciona uma quantidade especificada de segundos em uma data/hora.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```07  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```08  \n##### ano  \nObtem o ano em que se encontra uma determinada data.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```09",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

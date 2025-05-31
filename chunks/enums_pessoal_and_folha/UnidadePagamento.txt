@@ -1,0 +1,9 @@
+# UnidadePagamento
+Enum: UnidadePagamento
+- Mensalista (Key: MENSALISTA, Value: 1)
+- Quinzenalista (Key: QUINZENALISTA, Value: 2)
+- Semanalista (Key: SEMANALISTA, Value: 3)
+- Diarista (Key: DIARISTA, Value: 4)
+- Horista (Key: HORISTA, Value: 5)
+- Tarefeiro (Key: TAREFEIRO, Value: 6)
+- Outros (Key: OUTROS, Value: 7)

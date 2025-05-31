@@ -1,0 +1,4 @@
+# RegimeTrabalho
+Enum: RegimeTrabalho
+- 1 - CLT - Consolidação das Leis de Trabalho e legislações trabalhistas específicas (Key: CLT, Value: 1)
+- 2 - Estatutário/legislações específicas (servidor temporário, militar, agente político, etc.) (Key: ESTATUTARIO, Value: 2)

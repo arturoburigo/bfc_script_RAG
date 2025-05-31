@@ -1,0 +1,5 @@
+# TipoRegimePrevidenciario
+Enum: TipoRegimePrevidenciario
+- CLT (Key: CLT, Value: 1)
+- Regime Próprio (Key: REGIME_PROPRIO, Value: 2)
+- Outros (Key: OUTROS, Value: 3)

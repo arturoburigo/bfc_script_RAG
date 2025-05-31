@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### tempoLimite(valor)  \nDefine o tempo limite para a execução das requisições. O valor deve ser informado em milissegundos.  \n### Mensagem",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

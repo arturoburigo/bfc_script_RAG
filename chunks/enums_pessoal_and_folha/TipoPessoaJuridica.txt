@@ -1,0 +1,9 @@
+# TipoPessoaJuridica
+Enum: TipoPessoaJuridica
+- Geral (Key: GERAL, Value: 1)
+- Entidade cessionária (Key: ENTIDADE_CESSIONARIA, Value: 2)
+- Fornecedor de transporte (Key: FORNECEDOR_TRANSPORTE, Value: 3)
+- Instituição de ensino (Key: INSTITUICAO_ENSINO, Value: 4)
+- Operadora de plano de saúde (Key: OPERADORA_PLANO_SAUDE, Value: 5)
+- Sindicato (Key: SINDICATO, Value: 6)
+- Instituição médica (Key: INSTITUICAO_MEDICA, Value: 7)

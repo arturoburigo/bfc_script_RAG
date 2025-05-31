@@ -1,0 +1,5 @@
+# TipoFiliacao
+Enum: TipoFiliacao
+- Pai (Key: PAI, Value: 1)
+- Mãe (Key: MAE, Value: 2)
+- Tutor (Key: TUTOR, Value: 3)

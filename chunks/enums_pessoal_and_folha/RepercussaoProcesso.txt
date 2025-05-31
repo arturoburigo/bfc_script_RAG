@@ -1,0 +1,7 @@
+# RepercussaoProcesso
+Enum: RepercussaoProcesso
+- 1 - Com repercussão tributária e/ou FGTS (Key: DECISAO_COM_PAGAMENTO_DE_VERBAS_DE_NATUREZA_REMUNERATORIA, Value: 1)
+- 2 - Sem repercussão tributária ou FGTS (Key: DECISAO_SEM_PAGAMENTO_DE_VERBAS_DE_NATUREZA_REMUNERATORIA, Value: 2)
+- 3 - Com repercussão exclusiva para declaração IRRF (Key: COM_REPERCUSSAO_EXCLUSIVA_PARA_DECLARACAO_IRRF, Value: 3)
+- 4 - Com repercussão exclusiva para declaração de rendimentos para fins de Imposto de Renda com pagamento através de depósito judicial (Key: COM_REPERCUSSAO_EXCLUSIVA_PARA_DECLARACAO_RENDIMENTOS, Value: 4)
+- 5 - Com repercussão tributária e/ou FGTS com pagamento através de depósito judicial (Key: COM_REPERCUSSAO_TRIBUTARIA_FGTS, Value: 5)

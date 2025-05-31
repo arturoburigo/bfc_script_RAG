@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "No momento da execução dos scripts, a aplicação deve informar o id do script persistido, onde a engine se encarregará de carregar o script do banco de dados, compilar e executar. A engine ainda controla todo mecanismo de cache e reload de scripts,",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

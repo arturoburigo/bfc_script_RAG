@@ -1,0 +1,6 @@
+# GrauExposicaoAgentesNocivos
+Enum: GrauExposicaoAgentesNocivos
+- 1 - Não ensejador de aposentadoria especial (Key: NAO_ENSEJADOR_DE_APOSENTADORIA_ESPECIAL, Value: 1)
+- 2 - Exposto a agentes nocivos - aposentadoria 15 anos - 12% (Key: ENSEJADOR_DE_APOSENTADORIA_ESPECIAL_15_ANOS_12_POR_CENTO, Value: 2)
+- 3 - Exposto a agentes nocivos - aposentadoria 20 anos - 9% (Key: ENSEJADOR_DE_APOSENTADORIA_ESPECIAL_20_ANOS_9_POR_CENTO, Value: 3)
+- 4 - Exposto a agentes nocivos - aposentadoria 25 anos - 6% (Key: ENSEJADOR_DE_APOSENTADORIA_ESPECIAL_25_ANOS_6_POR_CENTO, Value: 4)

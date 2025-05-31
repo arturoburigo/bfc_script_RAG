@@ -1,0 +1,5 @@
+# IncidenciaIRRF
+# Part 5
+# This is a continuation of the IncidenciaIRRF enum
+Enum: IncidenciaIRRF
+- 68 - Desconto Simplificado Mensal (Key: DESCONTO_SIMPLIFICADO_MENSAL, Value: 81)

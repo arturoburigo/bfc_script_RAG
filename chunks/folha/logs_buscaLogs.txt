@@ -1,0 +1,71 @@
+# logs_buscaLogs
+Description: Logs
+Method: busca (GET)
+Method Description: Listagem de logs
+Representation Type: CalculoFolhaMensagem
+Expressions:
+- subTipoProcessamento:  (Type: )
+- matricula.organograma.descricao:  (Type: String)
+- matricula.codigoMatricula.contrato:  (Type: String)
+- matricula.organograma.id:  (Type: Long)
+- matricula.tipo:  (Type: )
+- usuarioCalculo:  (Type: String)
+- tipoProcessamento:  (Type: )
+- matricula.codigoMatricula.numero:  (Type: String)
+- tipoMensagem:  (Type: )
+- matricula.id:  (Type: Long)
+- competencia:  (Type: YearMonth)
+- dataCalculo:  (Type: LocalDateTime)
+Types:
+## PessoaFisica
+- id: Identificador da pessoa (Type: Long)
+- nome: Nome (Type: String)
+## CodigoMatriculaAssociacaoErroCalculo
+- numero: Número (Type: Long)
+- contrato: Contrato (Type: Integer)
+- digitoVerificador: Digito verificador (Type: Integer)
+## ConfiguracaoNivelOrganogramaAssociacao
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- nivelSecretaria: Nível secretaria? (Type: Boolean)
+- nivel: Nível da secretaria (Type: Integer)
+## ConfiguracaoOrganogramaAssociacao
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- niveis: Níveis (Type: ConfiguracaoNivelOrganogramaAssociacao)
+## OrganogramaAssociacao
+- id: Id (Type: Long)
+- configuracao: Configuração de organograma (Type: ConfiguracaoOrganogramaAssociacao)
+- descricao: Descrição (Type: String)
+- numero: Número (Type: String)
+- nivel: Nível (Type: Integer)
+## GrupoFuncional
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+## MatriculaAssociacaoErroCalculo
+- id: Identificador da matrícula (Type: Long)
+- tipo: Tipo de matrícula (Type: )
+- pessoa: Pessoa (Type: PessoaFisica)
+- codigoMatricula: Código da matrícula (Type: CodigoMatriculaAssociacaoErroCalculo)
+- organograma: Organograma (Type: OrganogramaAssociacao)
+- grupoFuncional: Grupo funcional (Type: GrupoFuncional)
+## CalculoFolhaMensagem
+- id: Identificador (Type: Long)
+- matricula: Matrícula (Type: MatriculaAssociacaoErroCalculo)
+- tipoProcessamento: Tipo de processamento (Type: )
+- subTipoProcessamento: Sub tipo de processamento (Type: )
+- competencia: Competência (Type: YearMonth)
+- tipo: Tipo mensagem (Type: )
+- mensagem: Mensagem (Type: String)
+- dataCalculo: Data do cálculo (Type: LocalDateTime)
+- usuarioCalculo: Usuário do cálculo (Type: LocalDateTime)
+Code Example:
+```
+fonteLogs = Dados.folha.v2.logs;
+
+dadosLogs = fonteLogs.buscaLogs(campos: "matricula(id, codigoMatricula(numero, contrato, digitoVerificador), pessoa(id, nome)), mensagem, tipo, dataCalculo",ordenacao: "matricula.codigoMatricula.numero,matricula.id asc")
+
+percorrer (dadosLogs) { itemLogs ->
+
+}
+```

@@ -1,0 +1,9 @@
+# IncidenciaRPPS
+Enum: IncidenciaRPPS
+- 00 - Não é base de cálculo de contribuições devidas ao RPPS/regime militar (Key: NAO_E_BASE_DE_CALCULO_DE_CONTRIBUICOES_DEVIDAS_AO_RPPS_REGIME_MILITAR, Value: 1)
+- 11 - Base de cálculo de contribuições devidas ao RPPS/regime militar (Key: BASE_DE_CALCULO_DE_CONTRIBUICOES_DIVIDAS_AO_RPPS_REGIME_MILITAR, Value: 2)
+- 12 - Base de cálculo de contribuições devidas ao RPPS/regime militar - 13º salário (Key: BASE_DE_CALCULO_DE_CONTRIBUICOES_DEVIDAS_AO_RPPS_REGIME_MILITAR_DECIMO_TERCEIRO_SALARIO, Value: 3)
+- 31 - Contribuição descontada do segurado e beneficiário (Key: CONTRIBUICAO_DESCONTADA_DO_SEGURADO_E_BENEFICIARIO, Value: 4)
+- 32 - Contribuição descontada do segurado e beneficiário - 13º salário (Key: CONTRIBUICAO_DESCONTADA_DO_SEGURADO_E_BENEFICIARIO_DECIMO_TERCEIRO_SALARIO, Value: 5)
+- 91 - Suspensão de incidência em decorrência de decisão judicial (Key: SUSPENSAO_DE_INCIDENCIA_EM_DECORRENCIA_DE_DECISAO_JUDICIAL, Value: 6)
+- 92 - Suspensão de incidência em decorrência de decisão judicial - 13º salário (Key: SUSPENSAO_DE_INCIDENCIA_EM_DECORRENCIA_DE_DECISAO_JUDICIAL_13_SALARIO, Value: 7)

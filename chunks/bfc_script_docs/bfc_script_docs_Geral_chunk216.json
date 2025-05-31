@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```19  \n##### escreverElementoVazio(elemento, namespace)  \nEscreve um elemento vazio e namespace no documento XML.  \n##### escreverElementoVazio(elemento, namespace, prefixo)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

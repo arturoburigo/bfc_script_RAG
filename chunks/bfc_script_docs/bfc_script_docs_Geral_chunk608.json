@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "É possível configurar a forma como o usuário vai interagir com uma variável. Podemos configurar uma variável como uma classe de funções, que na pratica, apenas altera a forma como o usuário visualizará a variável em tempo de desenvolvimento.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

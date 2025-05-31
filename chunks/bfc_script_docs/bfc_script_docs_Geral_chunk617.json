@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Podemos resgatar os valores das variáveis de outra forma. Para o script executado acima, existem duas outras variáveis declaradas que não foram submetidas ao comando retornar, poderíamos passar elas normalmente para o comando, assim como fizemos com",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```27  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```28  \n##### diferencaSegundos  \nCalcula a diferença em segundos entre duas datas/hora  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```29  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```30  \n##### ehData  \nVerifica se um texto é uma data válida.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

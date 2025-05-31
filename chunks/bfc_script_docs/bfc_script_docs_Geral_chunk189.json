@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### atributo(nome, namespace)  \nRetorna o [atributo](index.html#apiArquivosImplementacoesXmlTiposAtributo) do elemento com base no namespace e nome informado nos parâmetros. Tipos suportados: _INICIO_ELEMENTO_ , _ATRIBUTO_",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Os principais requisitos para a seleção de uma engine eram: tipagem dinamica, boa performance, favorecer a criação de DSLs. A engine do groovy foi a que melhor preencheu estes requisitos, se tornando a engine de execução do bfc-script.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

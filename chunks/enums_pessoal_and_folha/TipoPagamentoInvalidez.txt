@@ -1,0 +1,4 @@
+# TipoPagamentoInvalidez
+Enum: TipoPagamentoInvalidez
+- Invalidez parcial (Key: INVALIDEZ_PARCIAL, Value: 1)
+- Não inválido (Key: NAO_INVALIDO, Value: 2)

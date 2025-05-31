@@ -1,0 +1,58 @@
+# horarios_buscaIntervalosHorario
+Description: Horários
+Method: buscaIntervalosHorario (GET)
+Method Description: Listagem de intervalos do horário
+Representation Type: HorarioIntervalo
+Expressions:
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+Types:
+## HorarioIntervalo
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- entrada: Entrada (Type: String)
+- saida: Saída (Type: String)
+- flexivel: É flexível? (Type: Boolean)
+- toleranciaInicialEntrada: Mínimo falta (Type: String)
+- toleranciaFinallEntrada: Máximo extra (Type: String)
+- toleranciaInicialSaida: Mínimo extra (Type: String)
+- toleranciaFinallSaida: Máximo falta (Type: String)
+## HorarioMarcacao
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- sequencia: Sequência (Type: Long)
+- hora: Hora (Type: String)
+- geraMarcacaoAutomatica: Gera marcação automática? (Type: Boolean)
+- tipoMarcacaoHorario: Tipo (Type: )
+- toleranciaInicial: Mínimo falta (Type: String)
+- toleranciaFinal: Máximo extra (Type: String)
+## HorarioFonteDados
+- id: Id (Type: Long)
+- codigo: Código (Type: String)
+- descricao: Descrição (Type: String)
+- inicioVigencia: Vigência (Type: LocalDateTime)
+- entrada: Entrada (Type: String)
+- saida: Saída (Type: String)
+- flexivel: É flexível? (Type: Boolean)
+- quantoTempoAntes: Tolerância mínima até entrada? (Type: String)
+- quantoTempoDepois: Tolerância máxima após saída? (Type: String)
+- espera: Espera (Type: String)
+- cargaHoraria: Carga horária (Type: String)
+- duracaoIntervalo: Duração do Intervalo (Type: String)
+- toleranciaInicialEntrada: Entrada mín. extra (Type: String)
+- toleranciaFinallEntrada: Entrada máx. falta? (Type: String)
+- toleranciaInicialSaida: Saída mín. falta (Type: String)
+- toleranciaFinallSaida: Saída máx. extra (Type: String)
+- intervalos: Intervalos (Type: HorarioIntervalo)
+- marcacoes: Marcações (Type: HorarioMarcacao)
+- desabilitado: Horário desabilitado? (Type: Boolean)
+Code Example:
+```
+fonteHorarios = Dados.pessoal.v2.horarios;
+
+dadosHorarios = fonteHorarios.buscaIntervalosHorario(campos: "id, descricao, entrada, saida, flexivel")
+
+percorrer (dadosHorarios) { itemHorarios ->
+
+}
+```

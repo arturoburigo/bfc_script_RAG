@@ -1,0 +1,10 @@
+# ClassificacaoSaqueFgts
+Enum: ClassificacaoSaqueFgts
+- 01 - Despedida, sem justa causa, ou rescisão antecipada do contrato por prazo determinado, por iniciativa do empregador (Key: DESPEDIDA_SEM_JUSTA_CAUSA_OU_ANTECIPADA_PRAZO_DETERMINADO_INICIATIVA_EMPREGADOR, Value: 1)
+- 02 - Rescisão do contrato de trabalho, inclusive do contrato a termo, por culpa recíproca ou força maior (Key: RESCISAO_CULPA_RECIPROCA_OU_FORCA_MAIOR, Value: 2)
+- 03 - Rescisão por falência, falecimento empregador individual ou nulidade do contrato (Key: RESCISAO_FALENCIA_FALECIMENTO_NULIDADE, Value: 3)
+- 04 - Extinção normal do contrato a termo, trabalhadores temporários (Lei nº 6.019/79) (Key: EXTINCAO_NORMAL_TRABALHADORES_TEMPORARIOS, Value: 4)
+- 05 - Aposentadoria, inclusive por invalidez (Key: APOSENTADORIA_INCLUSIVE_INVALIDEZ, Value: 5)
+- 23 - Falecimento do trabalhador (Key: FALECIMENTO_TRABALHADOR, Value: 23)
+- 80 - Lei nº 7.670/88 (Key: LEI_7670_DE_88, Value: 80)
+- 88 - Determinação judicial (Key: DETERMINACAO_JUDICIAL, Value: 88)

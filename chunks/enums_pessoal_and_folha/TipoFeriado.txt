@@ -1,0 +1,4 @@
+# TipoFeriado
+Enum: TipoFeriado
+- Fixo (Key: FIXO, Value: F)
+- Variável (Key: VARIAVEL, Value: V)

@@ -1,0 +1,4 @@
+# ExpiraSelecaoAvancada
+Enum: ExpiraSelecaoAvancada
+- 1 hora (Key: UMA_HORA, Value: 1)
+- 1 dia (Key: UM_DIA, Value: 2)

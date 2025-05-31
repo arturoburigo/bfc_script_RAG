@@ -1,0 +1,11 @@
+# TempoAposentadoria
+Enum: TempoAposentadoria
+- 1,00 - 30 anos (Key: FEMININO_30_ANOS, Value: 1)
+- 1,20 - 25 anos (Key: FEMININO_25_ANOS, Value: 2)
+- 1,50 - 20 anos (Key: FEMININO_20_ANOS, Value: 3)
+- 2,00 - 15 anos (Key: FEMININO_15_ANOS, Value: 4)
+- 1,00 - 35 anos (Key: MASCULINO_35_ANOS, Value: 5)
+- 1,17 - 30 anos (Key: MASCULINO_30_ANOS, Value: 6)
+- 1,40 - 25 anos (Key: MASCULINO_25_ANOS, Value: 7)
+- 1,75 - 20 anos (Key: MASCULINO_20_ANOS, Value: 8)
+- 2,33 - 15 anos (Key: MASCULINO_15_ANOS, Value: 9)

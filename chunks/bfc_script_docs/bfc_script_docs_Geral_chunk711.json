@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Quando você está trabalhando num aspecto do sistema com ricas regras de negócios ou work-flows. Uma DSL bem escrita deveria permitir que os clientes entendessem as regras pelas quais o sistema funciona.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

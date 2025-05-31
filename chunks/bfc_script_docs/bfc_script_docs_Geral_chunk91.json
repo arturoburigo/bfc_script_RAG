@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\nnumeros = [1,2,3,4]\npercorrer(itens: numeros, nome: 'p1'){\nimprimir 'p1: ' + item\npercorrer(de: 1, ate: 5){\nse (indice == 3){\nparar 'p1'\n}\nimprimir 'p2: ' + indice\n}\n}\n```5  \n##### Caractere de escape  \nA seguinte linha de código provoca um erro de sintaxe:  \n```bfc-script\nnumeros = [1,2,3,4]\npercorrer(itens: numeros, nome: 'p1'){\nimprimir 'p1: ' + item\npercorrer(de: 1, ate: 5){\nse (indice == 3){\nparar 'p1'\n}\nimprimir 'p2: ' + indice\n}\n}\n```6",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### escreverElementoTexto(nome, valor)  \nEscreve um elemento texto no documento XML.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```25  \n##### escreverElementoTexto(nome, valor, namespace)  \nEscreve um elemento texto com namespace.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

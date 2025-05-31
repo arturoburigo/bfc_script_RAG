@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```88  \n#### Escrita  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```89  \nCriando um novo arquivo com um Encoding específico (Por padrão utiliza UTF-8):  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```90  \n##### escrever(texto)  \nRealiza a escrita de um conteúdo no arquivo  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```91",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

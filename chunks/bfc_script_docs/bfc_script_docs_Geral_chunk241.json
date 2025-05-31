@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Escreve um número  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```36  \n##### escreverBooleano(booleano)  \nEscreve um boolenao  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```37  \n##### escreverNulo()  \nEscreve o valor nulo  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```38  \n##### escreverObjeto(objeto)  \nEscreve um objeto completo",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

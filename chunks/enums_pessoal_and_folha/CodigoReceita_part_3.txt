@@ -1,0 +1,6 @@
+# CodigoReceita
+# Part 3
+# This is a continuation of the CodigoReceita enum
+Enum: CodigoReceita
+- 056152 - IRRF - CCP/NINTER (Key: IRRF_CCP_NINTER, Value: 56152)
+- 188951 - IRRF - RRA (Key: IRRF_RRA_DECISAO_DA_JUSTICA_DO_TRABALHO, Value: 188951)

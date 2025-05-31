@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### escreverFimElemento()  \nEscreve o fim do elemento atual.  \n##### nomeElementoAtual()  \nRetorna o nome do elemento sendo editado.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```22  \n##### escreverFimElementos()  \nEscreve o fim de todos os elementos atualmente abertos.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

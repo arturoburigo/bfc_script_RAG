@@ -1,0 +1,4 @@
+# ConfiguracaoCalculoMediaVantagem
+Enum: ConfiguracaoCalculoMediaVantagem
+- De janeiro (Key: JANEIRO, Value: 1)
+- Da admissão (Key: ADMISSAO, Value: 2)

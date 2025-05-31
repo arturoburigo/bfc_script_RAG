@@ -1,0 +1,6 @@
+# ClassificacaoEvento
+# Part 7
+# This is a continuation of the ClassificacaoEvento enum
+Enum: ClassificacaoEvento
+- Reembolso despesas de plano de saúde - REEMBDESPSAUDE (Key: REEMBDESPSAUDE, Value: 121)
+- 13º salário complementar - COMPL13SAL (Key: COMPL13SAL, Value: 122)

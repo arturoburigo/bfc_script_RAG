@@ -1,0 +1,51 @@
+# atos_buscaFontes
+Description: Atos
+Method: buscaFontes (GET)
+Method Description: Listagem de fontes de divulgação
+Representation Type: AtoFonteDivulgacao
+Types:
+## FonteDivulgacao
+- id: id (Type: Long)
+- descricao: Descrição (Type: String)
+- meioComunicacao: Meio de comunicação (Type: )
+## AtoFonteDivulgacao
+- id: id (Type: Long)
+- fonteDivulgacao: Fonte de divulgação (Type: FonteDivulgacao)
+- dataPublicacao: Data publicação (Type: LocalDate)
+- numeroPublicacao: Número publicação (Type: String)
+## ArquivoAto
+- name: Nome do arquivo (Type: String)
+- key: Chave do arquivo (Type: String)
+- description: Descrição do arquivo (Type: String)
+- type: Tipo de arquivo (Type: String)
+- size: Tamanho de arquivo (Type: Long)
+- url: URL para baixar o arquivo (Type: String)
+## TipoAto
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+## NaturezaTextoJuridico
+- id: id (Type: Long)
+- descricao: Descrição (Type: String)
+## AtoFonteDados
+- id: Id (Type: Long)
+- numeroOficial: Número oficial (Type: String)
+- tipo: Tipo (Type: TipoAto)
+- ementa: Ementa (Type: String)
+- naturezaTextoJuridico: Natureza do texto jurídico (Type: NaturezaTextoJuridico)
+- dataCriacao: Data de criação (Type: LocalDate)
+- dataVigorar: Data a vigorar (Type: LocalDate)
+- dataPublicacao: Data de publicação (Type: LocalDate)
+- dataResolucao: Data de resolução (Type: LocalDate)
+- numeroDiarioOficial: Número do diário oficial (Type: Long)
+- camposAdicionais: Campo adicional (Type: CamposAdicionais)
+Code Example:
+```
+fonteAtos = Dados.pessoal.v2.atos;
+
+dadosAtos = fonteAtos.buscaFontes(campos: "fonteDivulgacao(id, descricao, meioComunicacao), dataPublicacao, numeroPublicacao, id",parametros:["atoId":null])
+
+percorrer (dadosAtos) { itemAtos ->
+
+}
+```

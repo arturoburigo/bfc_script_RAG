@@ -1,0 +1,24 @@
+# NaturezaRubrica
+# Part 10
+# This is a continuation of the NaturezaRubrica enum
+Enum: NaturezaRubrica
+- 9244 - Cesta básica ou refeição, não vinculada ao PAT - Desconto (Key: CESTA_BASICA_REFEICAO_NAO_VINCULADA_PAT_DESCONTO, Value: 186)
+- 9291 - Abate-teto (Key: ABATE_TETO, Value: 187)
+- 9292 - Ressarcimento ao erário (Key: RESSARCIMENTO_ERARIO, Value: 188)
+- 9293 - Honorários advocatícios (Key: HONORARIOS_ADVOCATICIOS, Value: 189)
+- 9294 - Redutor EC 41/03 (Key: REDUTOR_EC, Value: 190)
+- 9907 - Total da contribuição da previdenciária patronal - RPPS (Key: TOTAL_CONTRIBUICAO_PREVIDENCIARIA_PATRONAL, Value: 191)
+- 1800 - Alimentação concedida sob a forma de pecúnia (Key: ALIMENTACAO_CONCEDIDA_EM_PECUNIA, Value: 192)
+- 1901 - Juros e/ou atualização monetária (Key: JUROS_E_OU_ATUALIZACAO_MONETARIA, Value: 193)
+- 1604 - Ajuda de custo - Acima de 50% da remuneração mensal (Key: AJUDA_DE_CUSTO_ACIMA_DE_50_POR_CENTO, Value: 1604)
+- 1651 - Diárias de viagem - Até 50% do salário (Key: DIARIAS_DE_VIAGEM_ATE_50_POR_CENTO, Value: 1651)
+- 1652 - Diárias de viagem - Acima de 50% do salário (Key: DIARIAS_DE_VIAGEM_ACIMA_DE_50_POR_CENTO, Value: 1652)
+- 1801 - Alimentação (Key: ALIMENTACAO, Value: 1801)
+- 2502 - Liberalidades concedidas em mais de duas parcelas anuais (Key: LIBERALIDADES_CONCEDIDAS_EM_MAIS_DE_DUAS_PARCELAS_ANUAIS, Value: 2502)
+- 2902 - Vestuário e equipamentos (Key: VESTUARIO_E_EQUIPAMENTOS, Value: 2902)
+- 2920 - Reembolsos diversos (Key: REEMBOLSOS_DIVERSOS, Value: 2920)
+- 4011 - Complemento de salário-mínimo - RPPS (Key: COMPLEMENTO_DE_SALARIO_MINIMO_RPPS, Value: 4011)
+- 6108 - Tempo de espera do motorista profissional (Key: TEMPO_DE_ESPERA_MOTORISTA_PROFISSIONAL, Value: 6108)
+- 9242 - Alimentação em ticket ou cartão, não vinculada ao PAT - Desconto (Key: ALIMENTACAO_EM_TICKET_OU_CARTAO_NAO_VINCULADA_AO_PAT_DESCONTO, Value: 9242)
+- 9950 - Horas extraordinárias - Banco de horas (Key: HORAS_EXTRAORDINARIAS_BANCO_DE_HORAS, Value: 9950)
+- 9951 - Horas compensadas - Banco de horas (Key: HORAS_COMPENSADAS_BANCO_DE_HORAS, Value: 9951)

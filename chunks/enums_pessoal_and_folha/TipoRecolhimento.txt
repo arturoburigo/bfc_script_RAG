@@ -1,0 +1,7 @@
+# TipoRecolhimento
+Enum: TipoRecolhimento
+- 115 - Recolhimento ao FGTS e informações à Previdência Social (no prazo ou em atraso) (Key: RECOLHIMENTO_FGTS_INFORMACOES_PREVIDENCIA, Value: 1)
+- 307 - Recolhimento de Parcelamento do FGTS (Key: RECOLHIMENTO_PARCELAMENTO_FGTS, Value: 2)
+- 327 - Recolhimento de Parcelamento do FGTS contratado segundo Resolução CCFGTS 325/1999 (Key: RECOLHIMENTO_PARCELAMENTO_FGTS_CONTRATADO_CCFGTS, Value: 3)
+- 650 - Recolhimento e/ou declaração ao FGTS e informações à Previdência Social relativo a dissídio coletivo, reclamatória trabalhista ou conciliação perante às Comissões de Conciliação Prévia (no prazo ou em atraso) (Key: RECOLHIMENTO_DECLARACAO_FGTS_INFORMACOES_PREVIDENCIA, Value: 4)
+- 660 - Recolhimento exclusivo ao FGTS referente a dissídio coletivo, reclamatória trabalhista ou conciliação perante as Comissões de Conciliação Prévia (no prazo ou em atraso) (Key: RECOLHIMENTO_EXCLUSIVO_FGTS, Value: 5)

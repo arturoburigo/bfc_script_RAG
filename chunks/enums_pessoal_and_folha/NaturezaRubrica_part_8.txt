@@ -1,0 +1,24 @@
+# NaturezaRubrica
+# Part 8
+# This is a continuation of the NaturezaRubrica enum
+Enum: NaturezaRubrica
+- 2801 - Quarentena remunerada (Key: QUARENTENA_REMUNERADA, Value: 145)
+- 2999 - Arredondamentos (Key: ARREDONDAMENTOS, Value: 146)
+- 7002 - Proventos - Pensão por morte Civil (Key: PROVENTOS_PENSAO_POR_MORTE_CIVIL, Value: 147)
+- 7003 - Proventos - Reserva (Key: PROVENTOS_RESERVA, Value: 148)
+- 7004 - Proventos - Reforma (Key: PROVENTOS_REFORMA, Value: 149)
+- 7005 - Pensão Militar (Key: PENSAO_MILITAR, Value: 150)
+- 9205 - Provisão de contribuição previdenciária (Key: PROVISAO_CONTRIBUICAO_PREVIDENCIARIA, Value: 151)
+- 9226 - Desconto de férias - abono (Key: DESCONTO_FERIAS_ABONO, Value: 152)
+- 9908 - FGTS - depósito (Key: FGTS_DEPOSITIO, Value: 153)
+- 9933 - Auxílio-doença (Key: AUXILIO_DOENCA, Value: 154)
+- 1006 - Intervalos intra e inter jornadas não concedidos (Key: INTEVALOS_INTRA_INTER_JORNADAS_NAO_CONCEDIDAS, Value: 155)
+- 1080 - Remuneração pelo exercício de opção de compra de ações da empresa (Stock Option) (Key: STOCK_OPTION, Value: 156)
+- 1225 - Quebra de caixa (Key: QUEBRA_CAIXA, Value: 157)
+- 3525 - Côngruas, prebendas e afins (Key: CONGRUAS_PREBENDAS_AFINS, Value: 158)
+- 9260 - Desconto Fies (Key: FIES_DESCONTO, Value: 160)
+- 9906 - Remuneração no exterior (Key: REMUNERACAO_EXTERIOR, Value: 161)
+- 1001 - Subsídio (Key: SUBSIDIO, Value: 162)
+- 1216 - Adicional de localidade (Key: ADICIONAL_LOCALIDADE, Value: 163)
+- 1217 - Gratificação de curso/concurso (Key: GRATIFICACAO_CURSO_CONCURSO, Value: 164)
+- 1411 - Auxílio-natalidade (Key: AUXILIO_NATALIDADE, Value: 165)

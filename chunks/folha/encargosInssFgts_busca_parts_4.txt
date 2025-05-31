@@ -1,0 +1,44 @@
+# Part 4
+# This is a continuation of the encargosInssFgts_busca section
+horas aux
+
+maternidade (Type: BigDecimal)
+- auxilioDoenca15Dias: Auxílio doença/acidente até 15 dias (Type: BigDecimal)
+- prorrogaAuxMater117702008: Prorrog
+
+do aux
+
+maternidade - Lei 11770/2008 (Type: BigDecimal)
+- fgts: FGTS (Type: BigDecimal)
+- fgts13Salario: FGTS 13º salário (Type: BigDecimal)
+- fgtsAvisoPrevio: FGTS aviso prévio (Type: BigDecimal)
+- fgtsFerias: FGTS férias (Type: BigDecimal)
+- inss: INSS (Type: BigDecimal)
+- inss13Salario: INSS 13º salário (Type: BigDecimal)
+- inssFerias: INSS férias (Type: BigDecimal)
+- inssOutrasEmp13Sal: INSS outras empresas 13º salário (Type: BigDecimal)
+- inssOutrasEmpresas: INSS outras empresas (Type: BigDecimal)
+- abatimentoInss: Abatimento INSS (Type: BigDecimal)
+- abatimentoInss13Salario: Abatimento INSS 13º salário (Type: BigDecimal)
+- abatimentoInssFerias: Abatimento INSS férias (Type: BigDecimal)
+- pagaProporcional: Paga proporcional (Type: BigDecimal)
+- salarioFamiliaNormal: Salário familía normal (Type: BigDecimal)
+- excedenteInss: Excedente INSS (Type: BigDecimal)
+- excedenteInss13Salario: Excedente INSS 13º salário (Type: BigDecimal)
+- excedenteInssFerias: Excedente INSS férias (Type: BigDecimal)
+- aliquotaFgts: Alíquota do FGTS (Type: BigDecimal)
+- isMovimentoAnterior: Movimento anterior (Type: Boolean)
+- enviarRemuneracoesESocial: Envia domínio de remuneracões para o eSocial (Cloud)? (Type: Boolean)
+- enviarPagamentosESocial: Envia domínio de pagamentos para o eSocial (Cloud)? (Type: Boolean)
+Code Example:
+```
+fonteEncargosInssFgts = Dados.folha.v2.encargosInssFgts;
+
+filtroEncargosInssFgts = "matricula.pessoa.nome = john doe"
+
+dadosEncargosInssFgts = fonteEncargosInssFgts.busca(criterio: filtroEncargosInssFgts,campos: "id, matricula(codigoMatricula(numero, contrato, digitoVerificador), id, tipo), totalDesconto, totalLiquido, competencia, tipoProcessamento, subTipoProcessamento, situacao, dataLiberacao, dataFechamento, dataPagamento, dataCalculo, totalBruto",ordenacao: "totalBruto,matricula.pessoa.nome asc")
+
+percorrer (dadosEncargosInssFgts) { itemEncargosInssFgts ->
+
+}
+```

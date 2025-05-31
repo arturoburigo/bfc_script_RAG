@@ -1,0 +1,18 @@
+# FusoHorario
+Enum: FusoHorario
+- América/Araguaína (Key: AMERICA_ARAGUAINA, Value: 1)
+- América/Bahia (Key: AMERICA_BAHIA, Value: 2)
+- América/Belém (Key: AMERICA_BELEM, Value: 3)
+- América/Boa Vista (Key: AMERICA_BOA_VISTA, Value: 4)
+- América/Campo Grande (Key: AMERICA_CAMPO_GRANDE, Value: 5)
+- América/Cuiabá (Key: AMERICA_CUIABA, Value: 6)
+- América/Eirunepé (Key: AMERICA_EIRUNEPE, Value: 7)
+- América/Fortaleza (Key: AMERICA_FORTALEZA, Value: 8)
+- América/Maceió (Key: AMERICA_MACEIO, Value: 9)
+- América/Manaus (Key: AMERICA_MANAUS, Value: 10)
+- América/Fernando de Noronha (Key: AMERICA_NORONHA, Value: 11)
+- América/Porto Acre (Key: AMERICA_PORTO_ACRE, Value: 12)
+- América/Porto Velho (Key: AMERICA_PORTO_VELHO, Value: 13)
+- América/Recife (Key: AMERICA_RECIFE, Value: 14)
+- América/Rio Branco (Key: AMERICA_RIO_BRANCO, Value: 15)
+- América/São Paulo (Key: AMERICA_SAO_PAULO, Value: 16)

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Ao contrário do Microsoft .Net, Java (linguagem e plataforma) não foi criada visando o uso de várias linguagens para gerar código interpretado (bytecodes em Java, MSIL - Microsoft Intermediate Language - em .Net). Com os anos, a comunidade Java",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

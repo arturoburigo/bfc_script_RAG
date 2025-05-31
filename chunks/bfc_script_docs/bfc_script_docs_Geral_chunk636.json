@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Atualmente a maioria dos softwares foram desenhados para operar nos data-centers das empresas, com contratos e licenças específicas. Porem em um ambiente cloud, onde aplicações podem ser oferecidas como serviço, é necessário que todos os recursos",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

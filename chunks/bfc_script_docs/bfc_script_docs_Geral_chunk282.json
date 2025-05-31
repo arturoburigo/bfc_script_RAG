@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### anexarUrl(url)  \nAdiciona um anexo à mensagem com base em uma URL. O download do anexo será realizado e adicionado a mensagem.  \n##### anexarUrl(url, nome)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

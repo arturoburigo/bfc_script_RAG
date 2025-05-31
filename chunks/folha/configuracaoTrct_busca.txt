@@ -1,0 +1,33 @@
+# configuracaoTrct_busca
+Description: ConfiguracaoTrct
+Method: busca (GET)
+Method Description: TRCT - Rescisão
+Representation Type: ConfiguracaoTrctFontDados
+Expressions:
+- eventos.configuracaoEvento.id: Id evento (Type: Long)
+- tipoProvento: Proventos (Type: )
+- tipoDesconto: Desconto (Type: )
+Types:
+## ConfiguracaoEventoFonteDados
+- id: Identificador (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação Evento (Type: )
+- codigoEvento: Código do evento (Type: Long)
+## ConfiguracaoTrctEventoFonteDados
+- id: Identificador (Type: Long)
+- configuracaoEvento: Configuração evento (Type: ConfiguracaoEventoFonteDados)
+## ConfiguracaoTrctFontDados
+- id: Identificador (Type: Long)
+- tipoProvento: Proventos (Type: )
+- tipoDesconto: Desconto (Type: )
+- eventos: Eventos (Type: ConfiguracaoTrctEventoFonteDados)
+Code Example:
+```
+fonteConfiguracaoTrct = Dados.folha.v2.configuracaoTrct;
+
+dadosConfiguracaoTrct = fonteConfiguracaoTrct.busca(campos: "eventos(configuracaoEvento(id, descricao, classificacao, codigoEvento), id), id, tipoProvento, tipoDesconto",ordenacao: "eventos.configuracaoEvento.id asc")
+
+percorrer (dadosConfiguracaoTrct) { itemConfiguracaoTrct ->
+
+}
+```

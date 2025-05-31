@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```50  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```51  \n##### segundo  \nObtem os segundos referentes a uma determinada data/hora.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```52  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```53  \n##### formatar",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

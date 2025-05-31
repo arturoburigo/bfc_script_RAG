@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Ainda é possível que independentemente de ocorrer uma falha ou não, ao final da execução do método seja executada alguma ação. Para isso, existe também o bloco _finalizar_. Onde tudo o que for definido neste bloco, será executado independentemente",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

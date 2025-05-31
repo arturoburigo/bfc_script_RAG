@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### mensagem(namespace, prefixo)  \nCria uma nova mensagem (envelope) à ser enviado ao serviço sobrescrevendo o namespace e prefixo padrão informados na criação do serviço.  \n#### mensagem([namespace](index.html#apiSoapServicoCriarNamespace))",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

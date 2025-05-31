@@ -1,0 +1,5 @@
+# AmbitoCelebracaoAcordo
+Enum: AmbitoCelebracaoAcordo
+- 1 - CCP no âmbito de empresa (Key: CCP_NO_AMBITO_DA_EMPRESA, Value: 1)
+- 2 - CCP no âmbito de sindicato (Key: CCP_NO_AMBITO_DE_SINDICADO, Value: 2)
+- 3 - NINTER (Key: NINTER, Value: 3)

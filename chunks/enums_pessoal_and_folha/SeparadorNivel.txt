@@ -1,0 +1,5 @@
+# SeparadorNivel
+Enum: SeparadorNivel
+- (.) Ponto Final (Key: PONTO, Value: 1)
+- (-) Hífen (Key: HIFEN, Value: 2)
+- (/) Barra (Key: BARRA, Value: 3)

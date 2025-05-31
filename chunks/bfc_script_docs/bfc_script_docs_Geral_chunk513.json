@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### cookie(nome)  \nRecupera um cookie da resposta com base no nome. Um cookie pode conter as seguintes informações:  \n* **nome()** : Nome do cookie\n* **valor()** : Valor do cookie\n* **valorCodificado()** : Valor do cookie codificado no padrão URL",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

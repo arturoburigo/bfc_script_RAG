@@ -1,0 +1,57 @@
+# grrfMatricula_buscarMatricula
+Description: GRRF matrícula
+Method: buscarMatricula (GET)
+Method Description: Listagem das matriculas da GRRF
+Representation Type: GrrfMatriculaFonteDados
+Expressions:
+- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )
+- tipoProcessamento: Tipo de processamento de cálculo (Type: )
+- situacaoMatricula: Situacao da matricula (Type: )
+- id: Identificador (Type: Long)
+- matricula.id: Identificador da matrícula (Type: Long)
+- competencia: Competência do cálculo (Type: YearMonth)
+Types:
+## GrrfFonteDados
+- id: Código da GFIP (Type: Long)
+- situacaoArquivoGrrf: Situação do envio da GRRF (Type: )
+## GrrfPessoaFisica
+- id: Id (Type: Long)
+- nome: Nome (Type: String)
+- cpf: CPF (Type: String)
+- dataNascimento: Data de nascimento (Type: LocalDate)
+- sexo: Sexo (Type: )
+## CodigoMatriculaFonteDadosMinhaFolha
+- numero: Número (Type: Long)
+- contrato: Contrato (Type: Integer)
+- digitoVerificador: Digito verificador (Type: Integer)
+## GrrfMatricula
+- id: Id da matrícula (Type: Long)
+- situacao: Situação (Type: )
+- pessoa: Pessoa (Type: GrrfPessoaFisica)
+- codigoMatricula: Codigo da matrícula (Type: CodigoMatriculaFonteDadosMinhaFolha)
+## GrrfMatriculaFonteDados
+- id: Identificador (Type: Long)
+- situacaoMatricula: Situacao da matricula (Type: )
+- competencia: Competência do cálculo (Type: YearMonth)
+- tipoProcessamento: Tipo de processamento de cálculo (Type: )
+- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )
+- matricula: Matrícula (Type: GrrfMatricula)
+## GrrfMatriculaDto
+- codigoMatricula: Código da matrícula (Type: Long)
+- codigoGrrf: Código da GRRF (Type: Long)
+- situacaoMatricula: Situação da matrícula (Type: )
+- competencia: Competencia (Type: YearMonth)
+- tipoProcessamento: Tipo Processamento (Type: )
+- subTipoProcessamento: Subtipo processamento (Type: )
+Code Example:
+```
+fonteGrrfMatricula = Dados.folha.v2.grrfMatricula;
+
+filtroGrrfMatricula = "matricula.id = 2019"
+
+dadosGrrfMatricula = fonteGrrfMatricula.buscarMatricula(criterio: filtroGrrfMatricula,campos: "matricula(pessoa(id, nome, cpf, dataNascimento, sexo), codigoMatricula(numero, contrato, digitoVerificador), id, situacao), id, situacaoMatricula, competencia",ordenacao: "id,situacaoMatricula asc")
+
+percorrer (dadosGrrfMatricula) { itemGrrfMatricula ->
+
+}
+```

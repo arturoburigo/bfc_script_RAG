@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Machine (JVM). A linguagem Java é compilada em bytecodes que são executados na JVM. Através deste projeto, Java oferece a sua portabilidade como grande diferencial.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

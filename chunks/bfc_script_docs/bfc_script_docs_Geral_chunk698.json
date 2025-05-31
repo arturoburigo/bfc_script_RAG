@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Em geral eu não penso assim. É muito trabalhoso criar um ambiente que permita as pessoas do negocio escrever suas próprias regras. Você tem que fazer boas ferramentas de edição, depuração, testes e etc. Você tem a maioria dos benefícios das DSLs",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,6 @@
+# ControleJornada
+Enum: ControleJornada
+- Submetidos a horário de trabalho (Key: SUBMETIDOS_HORARIO_TRABALHO, Value: 1)
+- Atividades externas (Key: ATIVIDADES_EXTERNAS, Value: 2)
+- Ocupante de cargo de gestão (Key: OCUPANTE_CARGO_GESTAO, Value: 3)
+- Teletrabalho (Key: TELETRABALHO, Value: 4)

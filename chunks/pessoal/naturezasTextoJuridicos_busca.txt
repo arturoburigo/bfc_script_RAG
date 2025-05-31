@@ -1,0 +1,24 @@
+# naturezasTextoJuridicos_busca
+Description: Naturezas de texto jurídicos de atos
+Method: busca (GET)
+Method Description: Listagem de naturezas de texto jurídicos de atos
+Representation Type: NaturezaTextoJuridico
+Expressions:
+- descricao: Descrição (Type: String)
+Types:
+## NaturezaTextoJuridico
+- id: id (Type: Long)
+- descricao: Descrição (Type: String)
+- camposAdicionais: Campo adicional (Type: CamposAdicionais)
+Code Example:
+```
+fonteNaturezasTextoJuridicos = Dados.pessoal.v2.naturezasTextoJuridicos;
+
+filtroNaturezasTextoJuridicos = "descricao = null"
+
+dadosNaturezasTextoJuridicos = fonteNaturezasTextoJuridicos.busca(criterio: filtroNaturezasTextoJuridicos,campos: "camposAdicionais(padrao(codigo_tce)), id, descricao",ordenacao: "descricao asc")
+
+percorrer (dadosNaturezasTextoJuridicos) { itemNaturezasTextoJuridicos ->
+
+}
+```

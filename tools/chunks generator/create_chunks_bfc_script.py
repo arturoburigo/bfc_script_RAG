@@ -5,12 +5,10 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter, MarkdownHead
 
 # Configurações automáticas
 INPUT_FILES = [
-    os.path.join("docs/BFC Doc", f) 
-    for f in os.listdir("docs/BFC Doc") 
-    if f.endswith('.md')
+    os.path.join(".", "bfc_script_docs.md")
 ]
-OUTPUT_JSON = "docs/documentation_chunks.json"
-OUTPUT_DIR = "docs/chunks/"
+OUTPUT_JSON = "documentation_chunks.json"
+OUTPUT_DIR = "chunks/bfc_script_docs/"
 
 # Criar diretório de saída se não existir
 os.makedirs(OUTPUT_DIR, exist_ok=True)

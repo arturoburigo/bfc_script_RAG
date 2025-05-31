@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```27  \ndos quais:  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```28\n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```29\n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```30\n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```31  \n### Implementação  \n#### Leitura  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```32  \nAvança a leitura para o próximo item  \n##### ehInicioObjeto()",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

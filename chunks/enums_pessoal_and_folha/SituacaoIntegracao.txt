@@ -1,0 +1,10 @@
+# SituacaoIntegracao
+Enum: SituacaoIntegracao
+- Aguardando execução (Key: AGUARDANDO_EXECUCAO, Value: 1)
+- Em execução (Key: EM_EXECUCAO, Value: 2)
+- Erro na consolidação (Key: ERRO_CONSOLIDACAO, Value: 3)
+- Enviando (Key: ENVIANDO, Value: 4)
+- Erro no envio (Key: ERRO_ENVIO, Value: 5)
+- Aguardando retorno (Key: AGUARDANDO_RETORNO, Value: 6)
+- Sucesso (Key: SUCESSO, Value: 7)
+- Alerta (Key: ALERTA, Value: 8)

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```72  \n#### mensagem(mensagem)  \nDefine a mensagem a ser enviada pela notificação  \n#### link(href)  \nDefine o link a ser enviado pela notificação  \n#### link(href, titulo)  \nDefine o link com título a ser enviado pela notificação",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

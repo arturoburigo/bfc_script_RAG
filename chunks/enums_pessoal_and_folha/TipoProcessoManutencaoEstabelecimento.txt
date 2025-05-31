@@ -1,0 +1,4 @@
+# TipoProcessoManutencaoEstabelecimento
+Enum: TipoProcessoManutencaoEstabelecimento
+- Administrativo (Key: ADMINISTRATIVO, Value: 1)
+- Judicial (Key: JUDICIAL, Value: 2)

@@ -1,0 +1,24 @@
+# NaturezaRubrica
+# Part 4
+# This is a continuation of the NaturezaRubrica enum
+Enum: NaturezaRubrica
+- 2930 - Insuficiência de saldo (Key: INSUFICIENCIA_SALDO, Value: 62)
+- 3501 - Remuneração por prestação de serviços (Key: PRESTACAO_SERVICOS, Value: 63)
+- 3505 - Retiradas (pró-labore) de diretores empregados (Key: PRO_LABORE_DIRETORES_EMPREGADOS, Value: 64)
+- 3506 - Retiradas (pró-labore) de diretores não empregados (Key: PRO_LABORE_DIRETORES_NAO_EMPREGADOS, Value: 65)
+- 3508 - Retiradas (pró-labore) de proprietários ou sócios (Key: PRO_LABORE_PROPRIETARIOS_SOCIOS, Value: 66)
+- 3509 - Honorários a conselheiros (Key: HONORARIOS_CONSELHEIROS, Value: 67)
+- 3520 - Remuneração de cooperado (Key: REMUNERACAO_COOPERADO, Value: 68)
+- 4010 - Complementação de auxílio doença (Key: COMPLEMENTACAO_AUXILIO_DOENCA, Value: 69)
+- 4050 - Salário maternidade (Key: SALARIO_MATERNIDADE, Value: 70)
+- 4051 - Salário maternidade 13º salário (Key: SALARIO_MATERNIDADE_13_SALARIO, Value: 71)
+- 5001 - 13º salário - Integral (Key: INTEGRAL_13_SALARIO, Value: 72)
+- 5005 - 13º salário - Complementar (Key: COMPLEMENTAR_13_SALARIO, Value: 73)
+- 5501 - Adiantamento de salário (Key: ADIANTAMENTO_SALARIO, Value: 74)
+- 5504 - 13º salário - Adiantamento (Key: ADIANTAMENTO_13_SALARIO, Value: 75)
+- 5510 - Adiantamento de benefícios previdenciários (Key: ADIANTAMENTO_BENEFICIOS_PREVIDENCIARIOS, Value: 76)
+- 6000 - Saldo de salários na rescisão contratual (Key: SALDO_SALARIO_RESCISAO, Value: 77)
+- 6001 - 13º salário relativo ao aviso prévio indenizado (Key: DECIMO_TERCEIRO_SALARIO_AVISO_PREVIO_INDENIZADO, Value: 78)
+- 6002 - 13º salário proporcional na rescisão (Key: DECIMO_TERCEIRO_SALARIO_PROPORCIONAL_RESCISAO, Value: 79)
+- 6003 - Indenização compensatória do aviso-prévio (Key: INDENIZACAO_AVISO_PREVIO, Value: 80)
+- 6004 - Férias em dobro na rescisão (Key: FERIAS_DOBRO_RESCISAO, Value: 81)

@@ -1,0 +1,10 @@
+# Part 4
+# This is a continuation of the matriculas_busca section
+filtroMatriculas = "situacao = TRABALHANDO"
+
+dadosMatriculas = fonteMatriculas.busca(criterio: filtroMatriculas,campos: "codigoMatricula(numero, contrato, digitoVerificador), atoContrato(tipo(id, descricao, classificacao), id, numeroOficial, ementa), id, tipo, geraRegistroPreliminar, eSocial, dataInicioContrato, rendimentoMensal, inicioVigencia, situacao",ordenacao: "pessoa.nome asc")
+
+percorrer (dadosMatriculas) { itemMatriculas ->
+
+}
+```

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```57  \n##### comentario(Comentário)  \nAdiciona um comentário às informações do arquivo zip  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```58  \n## API de E-mail",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

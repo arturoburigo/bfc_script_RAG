@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* }\n##### esperar  \nO comando esperar permite que a execução de um script entre em modo de pausa por um determinado intervalo tempo.  \nEste comando se mostra útil quando o acesso a um serviço é limitado por um intervalo de tempo.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```7",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

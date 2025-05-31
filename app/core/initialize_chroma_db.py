@@ -278,7 +278,10 @@ def initialize_chroma_db(reset_collections=False):
             except ValueError:
                 pass
         
-        collection = client.get_or_create_collection(collection_name)
+        collection = client.get_or_create_collection(
+            collection_name,
+            metadata={"hnsw:space": "cosine"}  # Use cosine distance for OpenAI embeddings
+        )
         
         # Get existing IDs to avoid duplicates
         existing_ids = get_existing_ids(collection)

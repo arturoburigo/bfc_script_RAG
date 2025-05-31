@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Várias engines podem ser registradas em um mesmo ambiente de execução. Isso poderá ser útil caso seja necessário criar engines que resgatam scripts de lugares específicos, ou que ainda precisem restringir ou liberar recursos específicos. As engines",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

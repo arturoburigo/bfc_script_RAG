@@ -1,0 +1,6 @@
+# SituacaoMatriculaGrrf
+Enum: SituacaoMatriculaGrrf
+- Gerado com sucesso (Key: GERADO_SUCESSO, Value: 1)
+- Gerando arquivo (Key: GERANDO_ARQUIVO, Value: 2)
+- Erro na execução do script (Key: ERRO_EXECUCAO_SCRIPT, Value: 3)
+- Erro ao gerar o arquivo (Key: ERRO_GERAR_ARQUIVO, Value: 4)

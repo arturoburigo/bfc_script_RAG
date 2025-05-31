@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "scripts utilizados por outros processos. Porem é necessário que durante a execução dos scripts exista isolamento, para que uma execução não gere efeitos colaterais em outras.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

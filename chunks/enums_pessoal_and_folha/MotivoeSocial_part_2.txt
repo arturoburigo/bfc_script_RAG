@@ -1,0 +1,24 @@
+# MotivoeSocial
+# Part 2
+# This is a continuation of the MotivoeSocial enum
+Enum: MotivoeSocial
+- 25 - Vacância para assumir outro cargo efetivo (Key: VACANCIA_ASSUMIR_OUTRO_CARGO, Value: 25)
+- 26 - Rescisão do contrato de trabalho por paralisação da empresa, estabelecimento ou parte das atividades motivada por atos de autoridade municipal, estadual ou federal (Key: RESCISAO_PARALISACAO_EMPRESA_ATOS_AUTORIDADE, Value: 26)
+- 27 - Rescisão por motivo de força maior (Key: RESCISAO_FORCA_MAIOR, Value: 27)
+- 28 - Término da Cessão/Requisição (Key: TERMINO_CESSAO_REQUISICAO, Value: 28)
+- 29 - Redistribuição ou Reforma Administrativa (Key: REDISTRIBUICAO, Value: 29)
+- 30 - Mudança de Regime Trabalhista (Key: MUDANCA_REGIME_TRABALHISTA, Value: 30)
+- 31 - Reversão de Reintegração (Key: REVERSAO_REINTEGRACAO, Value: 31)
+- 32 - Extravio de Militar (Key: EXTRAVIO_MILITAR, Value: 32)
+- 33 - Rescisão por acordo entre as partes (art. 484-A da CLT) (Key: RESCISAO_ACORDO_ENTRE_PARTES, Value: 33)
+- 34 - Transferência de titularidade do empregado doméstico para outro representante da mesma unidade familiar (Key: TRANSFERENCIA_DE_TITULARIDADE_DO_EMPREGADO_DOMESTICO_PARA_OUTRO_REPRESENTANTE_DA_MESMA_UNIDADE_FAMILIAR, Value: 34)
+- 35 - Extinção do contrato de trabalho intermitente (Key: EXTINCAO_DO_CONTRATO_DE_TRABALHO_INTERMITENTE, Value: 35)
+- 36 - Mudança de CPF (Key: MUDANCA_DE_CPF, Value: 36)
+- 37 - Remoção em caso de alteração do órgão declarante (Key: REMOCAO_EM_CASO_DE_ALTERACAO_DO_ORGAO_DECLARANTE, Value: 37)
+- 38 - Aposentadoria de servidor estatutário, exceto por invalidez (Key: APOSENTADORIA_DE_SERVIDORES_ESTATUTARIO_EXCETO_POR_INVALIDEZ, Value: 38)
+- 39 - Aposentadoria por invalidez de servidor estatutário (Key: APOSENTADORIA_POR_INVALIDEZ_DE_SERVIDOR_ESTATUTARIO, Value: 39)
+- 40 - Término de exercício de mandato (Key: TERMINO_DO_EXERCICIO_DO_MANDATO_ELETIVO, Value: 40)
+- 41 - Rescisão do contrato de aprendizagem por inadaptação ou desempenho insuficiente (Key: RESCISAO_DO_CONTRATO_DE_APRENDIZAGEM_POR_INADAPTACAO_OU_DESEMPENHO_INSUFICIENTE, Value: 41)
+- 42 - Rescisão do contrato de aprendizagem por ausência injustificada do aprendiz à escola que implique perda do ano letivo (Key: RESCISAO_DO_CONTRATO_DE_APRENDIZAGEM_POR_AUSENCIA_INJUSTIFICADA_DO_APRENDIZ_A_ESCOLA_QUE_IMPLIQUE_PERDA_DO_ANO_LETIVO, Value: 42)
+- 43 - Transferência de empregado de empresa considerada inapta (Key: TRANSFERENCIA_DE_EMPREGADO_DE_EMPRESA_CONSIDERADA_INAPTA, Value: 43)
+- 44 - Agrupamento contratual (Key: AGRUPAMENTO_CONTRATUAL, Value: 44)

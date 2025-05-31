@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```75  \n##### seZero  \nTesta os valores passados como parâmetro e retorna o primeiro diferente de zero.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```76  \n##### tangente  \nCalcula a tangente de um ângulo.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```77  \n##### teto",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

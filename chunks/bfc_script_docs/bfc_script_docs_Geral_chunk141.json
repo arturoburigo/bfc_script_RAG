@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```71  \n##### raiz  \nCalcula a raiz quadrada de um número.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```72  \n##### randomico  \nObtem um número aleatório entre 1 a um valor limite especificado.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```73  \n##### resto",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

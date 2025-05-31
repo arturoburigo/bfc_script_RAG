@@ -40,18 +40,18 @@ if not openai.api_key:
 
 # Define paths
 current_dir = Path(__file__).parent.parent.parent
-chunks_dir = current_dir / "chunks" / "pessoal"
-output_file = current_dir / "embeddings" / "pessoal_with_embeddings.json"
+chunks_dir = current_dir / "chunks" / "folha"
+output_file = current_dir / "embeddings" / "folha_with_embeddings.json"
 
 # Create output directory if it doesn't exist
 os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
-# Maximum tokens for text-embedding-3-large model
+# Maximum tokens for text-embedding-3-small model
 MAX_TOKENS = 8000  # Setting slightly below the 8192 limit for safety
 
 # Function to count tokens
 def count_tokens(text: str) -> int:
-    encoding = tiktoken.encoding_for_model("text-embedding-3-large")
+    encoding = tiktoken.encoding_for_model("text-embedding-3-small")
     return len(encoding.encode(text))
 
 # Function to split text into smaller chunks if it exceeds token limit
@@ -160,9 +160,9 @@ def get_embedding(text: str, retries: int = 5, delay: int = 1) -> List[float]:
                 raise ValueError(f"Text has {token_count} tokens, which exceeds the maximum of {MAX_TOKENS}")
                 
             response = openai.embeddings.create(
-                model="text-embedding-3-large",
-                input=text,
-                dimensions=3072  # The full dimensionality of the model
+                model="text-embedding-3-small",
+                dimensions=512,
+                input=text
             )
             return response.data[0].embedding
         except Exception as e:
@@ -308,7 +308,7 @@ def main():
     logger.info("Loading chunk files...")
     sections = process_chunk_files()
     
-    logger.info("Generating embeddings with OpenAI's text-embedding-3-large model...")
+    logger.info("Generating embeddings with OpenAI's text-embedding-3-small model...")
     
     # Save the JSON with embeddings
     try:

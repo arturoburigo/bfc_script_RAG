@@ -1,0 +1,7 @@
+# SituacaoPeriodoAquisitivo
+Enum: SituacaoPeriodoAquisitivo
+- Em andamento (Key: EM_ANDAMENTO, Value: 1)
+- Quitado (Key: QUITADO, Value: 2)
+- Cancelado (Key: CANCELADO, Value: 3)
+- Adquirido (Key: ADQUIRIDO, Value: 4)
+- Anulado em rescisão (Key: ANULADO, Value: 5)

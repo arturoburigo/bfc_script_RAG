@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```63  \n##### anexarArquivo(origem, nome)  \nAdiciona um anexo à mensagem com base em uma fonte de arquivo. O nome do anexo na mensagem será o mesmo informado no parâmetro nome.  \n##### anexarArquivo(anexoArquivo)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

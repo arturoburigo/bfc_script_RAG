@@ -1,0 +1,4 @@
+# TipoContratacaoAprendiz
+Enum: TipoContratacaoAprendiz
+- Contratação direta (Key: DIRETA, Value: 1)
+- Contratação indireta (Key: INDIRETA, Value: 2)

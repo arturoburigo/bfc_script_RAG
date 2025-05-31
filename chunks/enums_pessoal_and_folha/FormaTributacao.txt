@@ -1,0 +1,13 @@
+# FormaTributacao
+Enum: FormaTributacao
+- Retenção do IRRF - Alíquota padrão (Key: RETENCAO_IRRF_ALIQUOTA_PADRAO, Value: 10)
+- Retenção do IRRF - Alíquota da tabela progressiva (Key: RETENCAO_IRRF_ALIQUOTA_DA_TABELA_PROGRESSIVA, Value: 11)
+- Retenção do IRRF - Alíquota diferenciada (países com tributação favorecida) (Key: RETENCAO_IRRF_ALIQUOTA_DIFERENCIADA, Value: 12)
+- Retenção do IRRF - Alíquota limitada conforme cláusula em convênio (Key: RETENCAO_IRRF_ALIQUOTA_LIMITADA_CONFORME_CLAUSULA_EM_CONVENIO, Value: 13)
+- Retenção do IRRF - Outras hipóteses (Key: RETENCAO_IRRF_ALIQUOTA_OUTRAS_HIPOTESES, Value: 30)
+- Não retenção do IRRF - Isenção estabelecida em convênio (Key: NAO_RETENCAO_IRRF_ISENCAO_ESTABELECIDA_CONVENIO, Value: 40)
+- Não retenção do IRRF - Isenção prevista em lei interna (Key: NAO_RETENCAO_IRRF_ISENCAO_PREVISTA_EM_LEI_INTERNA, Value: 41)
+- Não retenção do IRRF - Alíquota zero prevista em lei interna (Key: NAO_RETENCAO_IRRF_ALIUOTA_ZERO_PREVISTA_EM_LEI_INTERNA, Value: 42)
+- Não retenção do IRRF - Pagamento antecipado do imposto (Key: NAO_RETENCAO_IRRF_PAGAMENTO_ANTECIPADO_DO_IMPOSTO, Value: 43)
+- Não retenção do IRRF - Medida judicial (Key: NAO_RETENCAO_IRRF_MEDIDA_JUDICIAL, Value: 44)
+- Não retenção do IRRF - Outras hipóteses (Key: NAO_RETENCAO_IRRF_OUTRAS_HIPOTESES, Value: 50)

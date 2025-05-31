@@ -1,0 +1,13 @@
+# fonteGenerica_exclui
+Description: Fonte genérica
+Method: exclui (DELETE)
+Types:
+## FonteGenerica
+- id:  (Type: Long)
+- identificador:  (Type: String)
+- tipoRegistro:  (Type: String)
+- conteudo:  (Type: String)
+Code Example:
+```
+
+```

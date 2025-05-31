@@ -1,0 +1,7 @@
+# TipoPrevidenciaEvento
+Enum: TipoPrevidenciaEvento
+- Previdência Federal (Key: FEDERAL, Value: 1)
+- Previdência Estadual (Key: ESTADUAL, Value: 2)
+- Fundo de Assistência (Key: FUNDO_ASSISTENCIA, Value: 3)
+- Fundo de Previdência (Key: FUNDO_PREVIDENCIA, Value: 4)
+- Fundo Financeiro (Key: FUNDO_FINANCEIRO, Value: 5)

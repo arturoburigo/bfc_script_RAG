@@ -1,0 +1,9 @@
+# EstadoCivil
+Enum: EstadoCivil
+- Solteiro (Key: SOLTEIRO, Value: 1)
+- Casado (Key: CASADO, Value: 2)
+- Divorciado (Key: DIVORCIADO, Value: 3)
+- Viúvo (Key: VIUVO, Value: 4)
+- Separado consensualmente (Key: SEPARADO_CONSENSUALMENTE, Value: 5)
+- Separado judicialmente (Key: SEPARADO_JUDICIALMENTE, Value: 6)
+- União estável (Key: UNIAO_ESTAVEL, Value: 7)

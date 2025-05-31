@@ -1,0 +1,139 @@
+# Part 1
+# This is a continuation of the encargosInssFgts_busca section
+# encargosInssFgts_busca
+Description: Encargos INSS e FGTS
+Method: busca (GET)
+Method Description: Listagem de encargos INSS e FGTS
+Representation Type: EncargosInssFgts
+Expressions:
+- subTipoProcessamento: Subtipo processamento (Type: )
+- matricula.organograma.descricao: Descrição do organograma (Type: String)
+- matricula.grupoFuncional.descricao: Descrição do grupo funcional (Type: String)
+- folhaPagamento: isFolhaPagamento (Type: Boolean)
+- situacao: Situação (Type: )
+- dataPagamento: Data pagamento (Type: LocalDate)
+- matricula.organograma.id: Id do organograma (Type: Long)
+- totalBruto: Total bruto (Type: BigDecimal)
+- dataFechamento: Data fechamento (Type: LocalDate)
+- matricula.codigoMatricula.numero: Código da matrícula (Type: Long)
+- totalDesconto: Total desconto (Type: BigDecimal)
+- matricula.pessoa.nome: Nome da pessoa (Type: String)
+- competencia: Competência (Type: YearMonth)
+- isMovimentoAnterior: Movimento anterior (Type: Boolean)
+- isOrigemConversao: É origem de conversão? (Type: Boolean)
+- dataLiberacao: Data liberação (Type: LocalDate)
+- tipoProcessamento: Tipo processamento (Type: )
+- id: Id (Type: Long)
+- totalLiquido: Total líquido (Type: BigDecimal)
+- matricula.id: Id da matrícula (Type: Long)
+- matricula.grupoFuncional.id: Id do grupo funcional (Type: Long)
+- matricula.pessoa.pis: PIS (Type: String)
+- dataCalculo: Data cálculo (Type: LocalDate)
+Types:
+## GrupoFuncionalMatricula
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+## CodigoMatriculaFonteDadosMinhaFolha
+- numero: Número (Type: Long)
+- contrato: Contrato (Type: Integer)
+- digitoVerificador: Digito verificador (Type: Integer)
+## ConfiguracaoNivelOrganograma
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- nivelSecretaria: Nível secretaria? (Type: Boolean)
+- nivel: Nível da secretaria (Type: Integer)
+- quantidadeDigitos: Quantidade de dígitos (Type: Integer)
+- separador: Separador de nível (Type: )
+## ConfiguracaoOrganograma
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- emUso: Configuração está em uso? (Type: Boolean)
+- niveis: Níveis (Type: ConfiguracaoNivelOrganograma)
+## OrganogramaMatricula
+- id: Id (Type: Long)
+- configuracao: Configuração do organograma (Type: ConfiguracaoOrganograma)
+- numero: Número (Type: String)
+- nivel: Nível (Type: Integer)
+- descricao: Descrição (Type: String)
+## PessoaFisicaFolha
+- id: Id (Type: Long)
+- nome: Nome (Type: String)
+- cpf: CPF (Type: String)
+- dataNascimento: Data de nascimento (Type: LocalDate)
+- sexo: Sexo (Type: )
+- pis: PIS (Type: String)
+- ctps: CTPS (Type: String)
+- serieCtps: Série da CTPS (Type: String)
+- ufEmissaoCtps: Uf de emissão da CTPS (Type: )
+## MatriculaOrigem
+- id: Id (Type: Long)
+## VinculoEmpregaticioCategoriaTrabalhadorFonteDados
+- id: Id (Type: Long)
+- descricao: descricao (Type: String)
+- grupoTrabalhador: Grupo de trabalhador (Type: )
+- codigoESocial: Código do eSocial (Type: String)
+## VinculoEmpregaticioFolha
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- sefip: SEFIP (Type: )
+- geraCaged: Gerar CAGED (Type: Boolean)
+- vinculoTemporario: É vínculo temporário (Type: Boolean)
+- categoriaTrabalhador: Categoria do trabalhador (Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados)
+## MotivoRescisaoMatricula
+- id: Id (Type: Long)
+- tipo: Tipo de rescisão (Type: )
+- classificacaoCaged: Indentificador classificação do CAGED (Type: Integer)
+- classificacaoSefip: Classificação da SEFIP (Type: )
+- classificacaoSaqueFgts: Classificação do saque do FGTS (Type: )
+- codigoSaqueFgts: Código do saque do FGTS (Type: Integer)
+## RescisaoMatricula
+- id: Id (Type: Long)
+- data: Data rescisão (Type: LocalDate)
+- motivoRescisao: Motivo da rescisão (Type: MotivoRescisaoMatricula)
+## TipoCargoFuncionario
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+## Cbo
+- id: Id (Type: Long)
+- codigoClassificacao: Código de classificação (Type: String)
+- descricao: Descrição (Type: String)
+- nivel: Tipo/Nível (Type: )
+## CargoFuncionario
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- tipo: Tipo de cargo (Type: TipoCargoFuncionario)
+- cbo: Cbo (Type: Cbo)
+## FuncionarioFolha
+- dataBase: Data base (Type: LocalDate)
+- contaFgts: Conta FGTS (Type: String)
+- vinculoEmpregaticio: Vinculo empregatício (Type: VinculoEmpregaticioFolha)
+- rescisao: Rescisão (Type: RescisaoMatricula)
+- optanteFgts: Optante FGTS (Type: Boolean)
+- dataOpcao: Data de opção (Type: LocalDate)
+- tipoAdmissao: Tipo admissão (Type: )
+- previdenciaFederal: Previdencia federal (Type: Boolean)
+- cargo: Cargo (Type: CargoFuncionario)
+- ocorrenciaSefip: Ocorrência SEFIP (Type: )
+- previdenciaEstadual: Previdencia estadual (Type: Boolean)
+- previdenciaFundoAssistencia: Fundo de assistência (Type: Boolean)
+- previdenciaFundoPrevidencia: Fundo de previdência (Type: Boolean)
+- previdenciaFundoFinanceiro: Fundo financeiro (Type: Boolean)
+## VinculoEmpregaticioConselheiroTutelar
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- sefip: SEFIP (Type: )
+- geraCaged: Gera CAGED (Type: Boolean)
+## SindicatoFuncionario
+- tipo: Tipo (Type: )
+- mesContribuicao: Mês contribuição (Type: )
+- numero: Número (Type: String)
+- diasAviso: Dias de aviso (Type: Integer)
+- dataBase: Data base (Type: MonthDay)
+## PessoaJuridica
+- id: Id (Type: Long)
+- tipo: Tipo (Type: )
+- razaoSocial: Razão social (Type: String)
+- nomeFantasia: Nome fantasia (Type: String)
+- cnpj: CNPJ (Type: String)
+- codigoInstFinanceira: Código Inst

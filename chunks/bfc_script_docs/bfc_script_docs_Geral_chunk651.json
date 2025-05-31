@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "diferentes. O Environment possibilita que as engines implementem caracteristicas desejáveis para os ambientes distintos, sendo estas caracteristicas perceptiveis na compilação e execução do scripts.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

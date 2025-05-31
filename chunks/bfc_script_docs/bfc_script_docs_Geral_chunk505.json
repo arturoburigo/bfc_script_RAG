@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "###### PUT()  \n###### PUT(Mapa[marcadores])  \nEnvia o formulário utilizando como tipo de método o verbo PUT.  \n```bfc-script\npercorrer(de:3, ate:5){ idPrincipal ->\nimprimir idPrincipal\npercorrer(de:6, ate:8){ idSecundario ->\nimprimir 'ID princial: ' + idPrincipal\nimprimir 'ID secundário: ' + idSecundario\n}\n}\n```94  \n###### PATCH()  \n###### PATCH(Mapa[marcadores])  \nEnvia o formulário utilizando como tipo de método o verbo PATCH.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

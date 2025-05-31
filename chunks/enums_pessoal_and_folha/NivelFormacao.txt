@@ -1,0 +1,12 @@
+# NivelFormacao
+Enum: NivelFormacao
+- Ensino Fundamental (Key: ENSINO_FUNDAMENTAL, Value: 1)
+- Ensino Médio (Key: ENSINO_MEDIO, Value: 2)
+- Ensino Profissionalizante (Key: ENSINO_PROFISSIONALIZANTE, Value: 3)
+- Graduação (Key: GRADUACAO, Value: 4)
+- Especialização (Key: ESPECIALIZACAO, Value: 5)
+- MBA (Key: MBA, Value: 6)
+- Mestrado (Key: MESTRADO, Value: 7)
+- Doutorado (Key: DOUTORADO, Value: 8)
+- Pós-Doutorado (Key: POS_DOUTORADO, Value: 9)
+- Mãe social (Lei 7.644/1987) (Key: MAE_SOCIAL, Value: 10)

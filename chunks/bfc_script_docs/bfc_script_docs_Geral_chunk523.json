@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A assinatura de um documento por meio do script pode ser feita por arquivo ou por lote, apenas documentos xml e pdf podem ser assinados. Todo processo de assinatura envolve a criação de dois scripts, um para chamada da api de assinatura e outro de",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

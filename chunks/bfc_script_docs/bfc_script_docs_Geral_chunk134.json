@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```63  \n##### inteiro  \nConverte o valor de um texto em um número inteiro. Caso o texto represente um número decimal, este será truncado para um inteiro, ou seja, a parte decimal será descartada.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```64  \n##### logaritmo",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

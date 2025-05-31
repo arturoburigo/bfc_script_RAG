@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```38  \n##### mes  \nObtem o mês em que se encontra uma determinada data.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```39  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```40  \n##### minuto  \nObtem os minutos referentes a uma determinada data/hora  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```41",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

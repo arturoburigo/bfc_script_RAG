@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Para criar uma nova mensagem de e-mail a ser enviada deve-se utilizar a função Email.**novo()** :  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```59",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

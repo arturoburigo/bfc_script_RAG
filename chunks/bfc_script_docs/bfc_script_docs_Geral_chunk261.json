@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Adiciona um email de destinatário na mensagem  \n#### para(email, nome)  \nAdiciona um email e nome de destinatário na mensagem  \n#### copiaPara(email)  \nAdiciona um email de cópia na mensagem  \n#### copiaPara(email, nome)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

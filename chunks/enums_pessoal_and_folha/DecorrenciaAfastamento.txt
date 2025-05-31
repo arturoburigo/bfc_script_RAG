@@ -1,0 +1,10 @@
+# DecorrenciaAfastamento
+Enum: DecorrenciaAfastamento
+- Faltas (Key: FALTAS, Value: 1)
+- Acidente/Doença (Key: ACIDENTE_DOENCA, Value: 2)
+- Licença (Key: LICENCA, Value: 3)
+- Cedência (Key: CEDENCIA, Value: 4)
+- Ocorrência disciplinar (Key: OCORRENCIA_DISCIPLINAR, Value: 5)
+- Férias (Key: FERIAS, Value: 6)
+- Rescisão (Key: RESCISAO, Value: 7)
+- Reintegração (Key: REINTEGRACAO, Value: 8)

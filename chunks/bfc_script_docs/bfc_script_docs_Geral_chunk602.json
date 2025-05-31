@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Para setar na engine as variáveis baseadas na configuração da classe VariaveisScriptFolha, é necessário antes, submeter a instancia da classe para o utilitário Injectables.byAnnotation, retornando uma instância de Injectables, que poderá ser setado",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Para criar um novo formulário multipart deve-se utilizar as funções **criarFormularioMultipart()** ou **criarFormularioMultipart(tipo de mídia formulário)**. Estas funções criam um novo formulário multipart utilizando como tipo de mídia o valor",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

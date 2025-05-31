@@ -8,7 +8,7 @@ import time
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Read all chunk files from the directory
-chunks_dir = "docs/chunks"
+chunks_dir = "chunks/bfc_script_docs"
 document_chunks = []
 
 # Read each individual chunk file
@@ -29,10 +29,10 @@ def get_embedding(text):
     max_retries = 5
     for attempt in range(max_retries):
         try:
-            response = openai.embeddingsa.create(
-                model="text-embedding-3-large",
+            response = openai.embeddings.create(
+                model="text-embedding-3-small",
                 input=text,
-                dimensions=3072  # The full dimensionality of the model
+                dimensions=512  # The full dimensionality of the model
             )
             return response.data[0].embedding
         except openai.RateLimitError:
@@ -61,7 +61,7 @@ successful_embeddings = sum(1 for chunk in document_chunks if "embedding" in chu
 print(f"Successfully generated {successful_embeddings} embeddings out of {len(document_chunks)} chunks")
 
 # Save the JSON with embeddings
-output_path = "docs/chunks/documentation_chunks_with_embeddings_v2.json"
+output_path = "embeddings/documentation_chunks_with_embeddings_v2.json"
 with open(output_path, "w", encoding="utf-8") as file:
     json.dump(document_chunks, file, indent=4, ensure_ascii=False)
 

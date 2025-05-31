@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* **Observação:** Para assinar qualquer documento, é necessário que a ferramenta de assinatura esteja rodando na maquina do usuário.\n### Assinando Documento  \nExemplo de script de assinatura de um documento pdf:  \n###### assinar(arquivo, opcoes)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

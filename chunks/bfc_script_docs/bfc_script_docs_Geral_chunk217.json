@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Escreve um elemento vazio e namespace com prefixo no documento XML.  \n##### escreverInicioDocumento()  \nEscreve a declaração de um documento XML.  \n##### escreverInicioDocumento(encoding)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Cria um novo método utilizando a operação e [namespaces](index.html#apiSoapServicoCriarNamespace) informados nos parâmetros.  \n**Exemplo:**  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```97  \n**_As funções disponíveis na representação de métodos são:_**",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

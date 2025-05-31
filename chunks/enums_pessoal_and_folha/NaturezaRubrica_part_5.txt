@@ -1,0 +1,24 @@
+# NaturezaRubrica
+# Part 5
+# This is a continuation of the NaturezaRubrica enum
+Enum: NaturezaRubrica
+- 6006 - Férias proporcionais (Key: FERIAS_PROPORCIONAIS, Value: 82)
+- 6007 - Férias vencidas na rescisão (Key: FERIAS_VENCIDAS_RESCISAO, Value: 83)
+- 6101 - Indenização multa 20 ou 40% (Key: INDENIZACAO_MULTA_20_40, Value: 84)
+- 6102 - Indenização art. 09 - Lei 7238/84 (Key: INDENIZACAO_ART_09_LEI, Value: 85)
+- 6103 - Indenização art. 14 - Lei 5889/73 (Key: INDENIZACAO_ART_14_LEI, Value: 86)
+- 6104 - Indenização art. 477 CLT (Key: INDENIZACAO_ART_477_CLT, Value: 87)
+- 6105 - Indenização incentivo a demissão (Key: INDENIZACAO_INCENTIVO_DEMISSAO, Value: 88)
+- 6106 - Multa art. 477 CLT (Key: MULTA_ART_477_CLT, Value: 89)
+- 6107 - Indenização quebra de estabilidade (Key: INDENIZACAO_QUEBRA_ESTABILIDADE, Value: 90)
+- 6129 - Outras indenização (Key: OUTRAS_INDENZACOES, Value: 91)
+- 6901 - Desconto de aviso prévio (Key: DESCONTO_AVISO_PREVIO, Value: 92)
+- 6904 - Multa art. 480 CLT (Key: MULTA_ART_480_CLT, Value: 93)
+- 7001 - Proventos (Key: PROVENTOS, Value: 94)
+- 9200 - Desconto de adiantamentos (Key: DESCONTO_ADIANTAMENTOS, Value: 95)
+- 9201 - Contribuição previdenciária (Key: CONTRIBUICAO_PREVIDENCIARIA, Value: 96)
+- 9203 - Imposto de Renda Retido na Fonte (Key: IRRF, Value: 97)
+- 1212 - Gratificações ou outras verbas de natureza permanente (Key: GRATIFICACOES_OUTRAS_VERBAS_NATUREZA_PERMANENTE, Value: 98)
+- 9207 - Faltas (Key: FALTAS, Value: 99)
+- 9210 - DSR sobre faltas e atrasos (Key: DSR_FALTAS_ATRASOS, Value: 100)
+- 9211 - Faltas e atrasos estagiários (Key: FALTAS_ATRASOS_ESTAGIARIOS, Value: 101)

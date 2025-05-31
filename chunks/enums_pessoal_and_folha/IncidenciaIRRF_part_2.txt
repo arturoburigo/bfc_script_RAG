@@ -1,0 +1,24 @@
+# IncidenciaIRRF
+# Part 2
+# This is a continuation of the IncidenciaIRRF enum
+Enum: IncidenciaIRRF
+- 46 - Previdência Privada - salário mensal (Key: PREVIDENCIA_PRIVADA_SALARIO_MENSAL, Value: 18)
+- 47 - Previdência Privada - 13° salário (Key: PREVIDENCIA_PRIVADA_DECIMO_TERCEIRO_SALARIO, Value: 19)
+- 51 - Pensão Alimentícia - Remuneração mensal (Key: PENSAO_ALIMENTICIA_REMUNERACAO_MENSAL, Value: 20)
+- 52 - Pensão Alimentícia - 13° salário (Key: PENSAO_ALIMENTICIA_DECIMO_TERCEIRO_SALARIO, Value: 21)
+- 53 - Pensão Alimentícia - Férias (Key: PENSAO_ALIMENTICIA_FERIAS, Value: 22)
+- 54 - Pensão Alimentícia - PLR (Key: PENSAO_ALIMENTICIA_PLR, Value: 23)
+- 55 - Pensão Alimentícia - RRA (Key: PENSAO_ALIMENTICIA_RRA, Value: 24)
+- 61 - Fundo de Aposentadoria Programada Individual - FAPI - Remuneração mensal (Key: FUNDO_DE_APOSENTADORIA_PROGRAMADA_INDIVIDUAL_FAPI_REMUNERACAO_MENSAL, Value: 25)
+- 62 - Fundo de Aposentadoria Programada Individual - FAPI - 13° salário (Key: FUNDO_DE_APOSENTADORIA_PROGRAMADA_INDIVIDUAL_FAPI_DECIMO_TERCEIRO_SALARIO, Value: 26)
+- 63 - Fundação de Previdência Complementar do Servidor Público - Funpresp - Remuneração mensal (Key: FUNDACAO_DE_PREVIDENCIA_COMPLEMENTAR_DO_SERVIDOR_PUBLICO_FUNPRESP_REMUNERACAO_MENSAL, Value: 27)
+- 64 - Fundação de Previdência Complementar do Servidor Público - Funpresp - 13° salário (Key: FUNDACAO_DE_PREVIDENCIA_COMPLEMENTAR_DO_SERVIDOR_PUBLICO_FUNPRESP_DECIMO_TERCEIRO_SALARIO, Value: 28)
+- 70 - Parcela Isenta 65 anos - Remuneração mensal (Key: PARCELA_ISENTA_SESSENTA_CINCO_ANOS_REMUNERACAO_MENSAL, Value: 29)
+- 71 - Parcela Isenta 65 anos - 13° salário (Key: PARCELA_ISENTA_SESSENTA_CINCO_ANOS_DECIMO_TERCEIRO_SALARIO, Value: 30)
+- 72 - Diárias (Key: DIARIAS, Value: 31)
+- 73 - Ajuda de custo (Key: AJUDA_DE_CUSTO, Value: 32)
+- 74 - Indenização e rescisão de contrato, inclusive a título de PDV e acidentes de trabalho (Key: INDENIZACAO_E_RESCISAO_DE_CONTRATO_INCLUSIVE_A_TITULO_DE_PDV_E_ACIDENTES_DE_TRABALHO, Value: 33)
+- 75 - Abono pecuniário (Key: ABONO_PECUNIARIO, Value: 34)
+- 76 - Pensão, aposentadoria ou reforma por moléstia grave ou acidente em serviço - Remuneração Mensal (Key: PENSAO_APOSENTADORIA_OU_REFORMA_POR_MOLESTIA_GRAVE_OU_ACIDENTE_EM_SERVICO_REMUNERACAO_MENSAL, Value: 35)
+- 77 - Pensão, aposentadoria ou reforma por moléstia grave ou acidente em serviço - 13° salário (Key: PENSAO_APOSENTADORIA_OU_REFORMA_POR_MOLESTIA_GRAVE_OU_ACIDENTE_EM_SERVICO_DECIMO_TERCEIRO_SALARIO, Value: 36)
+- 78 - Valores pagos a titular ou sócio de microempresa ou empresa de pequeno porte, exceto pró-labore e aluguéis (Key: VALORES_PAGOS_A_TITULAR_OU_SOCIO_DE_MICROEMPRESA_OU_EMPRESA_DE_PEQUENO_PORTE_EXCETO_PRO_LABORE_E_ALUGUEIS, Value: 37)

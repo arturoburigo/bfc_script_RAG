@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### exportar  \nComando utilizado para exportar símbolos declarados no escopo atual. Aceita como parâmetro um mapa com o nome externo e uma referência ao recursos exportado.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```9",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

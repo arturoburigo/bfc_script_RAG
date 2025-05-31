@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "As opções disponíveis para manipulação dos elementos são:  \n**nome()**  \nRetorna o nome do elemento.  \n**namespace()**  \nRetorna o [namespace](index.html#apiSoapServicoCriarNamespace) do elemento.  \n**adicionarElemento(nome)**",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

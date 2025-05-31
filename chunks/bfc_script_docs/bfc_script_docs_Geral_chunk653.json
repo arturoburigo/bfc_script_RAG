@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A engine de execução padrão foi desenvolvida para dar suporte às necessidades de praticamente todas as aplicações da Betha. A engine permite que pacotes de funções utilitárias sejam plugados, personalizando o box de funções utilitárias da engine",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

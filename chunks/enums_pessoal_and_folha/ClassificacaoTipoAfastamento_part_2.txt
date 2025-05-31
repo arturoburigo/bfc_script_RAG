@@ -1,0 +1,24 @@
+# ClassificacaoTipoAfastamento
+# Part 2
+# This is a continuation of the ClassificacaoTipoAfastamento enum
+Enum: ClassificacaoTipoAfastamento
+- Mandato eleitoral COM remuneração (Key: MANDATO_ELEITORAL_COM_REMUNERACAO, Value: 21)
+- Mandato eleitoral SEM remuneração (Key: MANDATO_ELEITORAL_SEM_REMUNERACAO, Value: 22)
+- Mandato sindical (Key: MANDATO_SINDICAL, Value: 23)
+- Mulher vítima de violência (Lei Maria da Penha) (Key: MULHER_VITIMA_DE_VIOLENCIA_LEI_MARIA_DA_PENHA, Value: 24)
+- Licença maternidade - Antecipação ou prorrogação (Key: PRORROGACAO_DA_LICENCA_MATERNIDADE, Value: 25)
+- Serviço militar (Key: SERVICO_MILITAR, Value: 26)
+- Servidor público em disponibilidade (Key: SERVIDOR_PUBLICO_EM_DISPONIBILIDADE, Value: 27)
+- Suspensão disciplinar Art.474 CLT (Key: SUSPENSAO_DISCIPLINAR_ART474_CLT, Value: 28)
+- Suspensão do contrato Art.476 CLT (Key: SUSPENSAO_DO_CONTRATO_ART476_CLT, Value: 29)
+- Aposentado (Key: APOSENTADO, Value: 30)
+- Demitido (Key: DEMITIDO, Value: 31)
+- Ausência Legal (Key: AUSENCIA_LEGAL, Value: 32)
+- Licença maternidade - Prorrogação 60 dias, Lei 11.770/2008 (Key: PRORROGACAO_DA_LICENCA_MATERNIDADE_11_770, Value: 33)
+- Reintegração sem perdas de direito (Key: REINTEGRACAO_SEM_PERDAS_DIREITO, Value: 34)
+- Reintegração com perdas de direito (Key: REINTEGRACAO_COM_PERDAS_DIREITO, Value: 35)
+- Candidato a cargo eletivo - Celetista (Key: CANDIDATO_A_CARGO_ELETIVO_CELETISTA, Value: 36)
+- Licença (COM vencimentos) - Liberdade da empresa, ACT (Key: LICENCA_COM_VENCIMENTOS_LIBERDADE_DA_EMPRESA_ACT, Value: 37)
+- Licença (NÃO remunerada) (Key: LICENCA_NAO_REMUNERADA, Value: 38)
+- Mandato eletivo ocupando cargo em comissão (Key: MANDATO_ELETIVO_PARA_CARGO_EM_COMISSAO, Value: 40)
+- Participação Conselho CNPS, Lei 8.213/1991 (Key: PARTICIPACAO_CONSELHO_CNPS_LEI_8_213_1991, Value: 41)

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Um Namespace contem as seguintes informações:  \n* prefixo(): Prefixo do namespace\n* namespace(): Valor do namespace  \n##### contemNamespace(namespace)  \nIndica se o item atual contém um namespace declarado igual ao informado por parâmetro.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

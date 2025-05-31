@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){ idPrincipal ->\nimprimir idPrincipal\npercorrer(de:6, ate:8){ idSecundario ->\nimprimir 'ID princial: ' + idPrincipal\nimprimir 'ID secundário: ' + idSecundario\n}\n}\n```82  \n#### METODO (método)  \n#### METODO (Mapa[marcadores], método)  \n#### METODO (método, dados)  \n#### METODO (método, dados, Mapa[marcadores])  \n#### METODO (método, tipo de mídia)  \n#### METODO (método, dados, tipo de mídia)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "para enviar arquivos anexos por e-mail. Uma abordagem muito comum, inclusive praticada por alguns tribunais de contas, é o uso do Base64 para envio de arquivos binários em webservices SOAP.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

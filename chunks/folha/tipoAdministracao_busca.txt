@@ -1,0 +1,29 @@
+# tipoAdministracao_busca
+Description: TipoAdministracao
+Method: busca (GET)
+Method Description: Listagem de tipos de administração
+Representation Type: TipoAdministraçãoDadosRepresentation
+Expressions:
+- tipo: Tipo de Administração (Type: )
+- subteto: Valor do Subteto (Type: BigDecimal)
+- naturezaJuridica: Natureza Jurídica (Type: )
+- descricao: Descrição (Type: String)
+Types:
+## TipoAdministraçãoDadosRepresentation
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- subteto: Valor do Subteto (Type: BigDecimal)
+- naturezaJuridica: Natureza Jurídica (Type: )
+- tipo: Tipo de Administração (Type: )
+Code Example:
+```
+fonteTipoAdministracao = Dados.folha.v2.tipoAdministracao;
+
+filtroTipoAdministracao = "naturezaJuridica = ORGAO_LEGISLATIVO_FEDERAL"
+
+dadosTipoAdministracao = fonteTipoAdministracao.busca(criterio: filtroTipoAdministracao,campos: "id, descricao, subteto, naturezaJuridica, tipo",ordenacao: "naturezaJuridica asc")
+
+percorrer (dadosTipoAdministracao) { itemTipoAdministracao ->
+
+}
+```

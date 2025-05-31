@@ -1,0 +1,25 @@
+# tiposAto_busca
+Description: Tipo de ato
+Method: busca (GET)
+Method Description: Listagem de tipos de ato
+Representation Type: TipoAto
+Expressions:
+- classificacao: Classificação (Type: )
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+Types:
+## TipoAto
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+- camposAdicionais: Campo adicional (Type: CamposAdicionais)
+Code Example:
+```
+fonteTiposAto = Dados.pessoal.v2.tiposAto;
+
+dadosTiposAto = fonteTiposAto.busca(campos: "id, descricao, classificacao",ordenacao: "classificacao asc")
+
+percorrer (dadosTiposAto) { itemTiposAto ->
+
+}
+```

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* Arquivo.ler(_arquivo ou conteúdo, tipo do arquivo_): Realiza a leitura do arquivo utilizando a implementação própria para o tipo de arquivo informado.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

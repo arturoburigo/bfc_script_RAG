@@ -1,0 +1,24 @@
+# NaturezaRubrica
+# Part 9
+# This is a continuation of the NaturezaRubrica enum
+Enum: NaturezaRubrica
+- 1412 - Abono permanência (Key: ABONO_PERMANENCIA, Value: 166)
+- 1619 - Ajuda compensatória - Lei 14.020/2020 (Key: AJUDA_COMPENSATORIA, Value: 167)
+- 1806 - Alimentação em ticket ou cartão, vinculada ao PAT (Key: ALIMENTACAO_TICKET_CARTAO_VINCULADA_PAT, Value: 168)
+- 1807 - Alimentação em ticket ou cartão, não vinculada ao PAT (Key: ALIMENTACAO_TICKET_CARTAO_NAO_VINCULADA_PAT, Value: 169)
+- 1808 - Cesta básica ou refeição, vinculada ao PAT (Key: CESTA_BASICA_REFEICAO_VINCULADA_PAT, Value: 170)
+- 1809 - Cesta básica ou refeição, não vinculada ao PAT (Key: CESTA_BASICA_REFEICAO_NAO_VINCULADA_PAT, Value: 171)
+- 1899 - Outros auxílios (Key: OUTROS_AUXILIOS, Value: 172)
+- 3510 - Gratificação (jeton) (Key: GRATIFICACAO_JETON, Value: 173)
+- 3511 - Gratificação eleitoral (Key: GRATIFICACAO_ELEITORAL, Value: 174)
+- 6119 - Indenização rescisória - Lei 14.020/2020 (Key: INDENIZACAO_RESCISORIA, Value: 175)
+- 7006 - Auxílio-reclusão (Key: AUXILIO_RECLUSAO, Value: 176)
+- 7007 - Pensões especiais (Key: PENSOES_ESPECIAIS, Value: 177)
+- 7008 - Complementação de aposentadoria/ pensão (Key: COMPLEMENTACAO_APOSENTADORIA_PENSAO, Value: 178)
+- 9202 - Contribuição militar (Key: CONTRIBUICAO_MILITAR, Value: 179)
+- 9208 - Atrasos (Key: ATRASOS, Value: 180)
+- 9209 - Faltas ou atrasos (Key: FALTAS_ATRASOS, Value: 181)
+- 9212 - DSR sobre atrasos (Key: DSR_SOBRE_ATRASOS, Value: 182)
+- 9240 - Alimentação concedida em pecúnia - Desconto (Key: ALIMENTACAO_CONCEDIDA_PECUNIA_DESCONTO, Value: 183)
+- 9241 - Alimentação em ticket ou cartão, vinculada ao PAT - Desconto (Key: ALIMENTACAO_TICKET_CARTAO_VINCULADA_PAT_DESCONTO, Value: 184)
+- 9243 - Cesta básica ou refeição, vinculada ao PAT - Desconto (Key: CESTA_BASICA_REFEICAO_VINCULADA_PAT_DESCONTO, Value: 185)

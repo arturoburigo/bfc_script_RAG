@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "_Alternativa_  \n```bfc-script\nnumeros = [1,2,3]\npercorrer(de:1, ate:3, itens: numeros){\nimprimir item\n}\n// Irá imprimir os números 1, 2 e 3\n```9  \n##### posicao  \nObtem a posição inicial de uma [expressão regular](http://guia-er.sourceforge.net/metacaracteres.html#2) em uma texto.  \n```bfc-script\nletras = ['A','B','C']\npercorrer(de:2, ate:3, itens: letras){\nimprimir item\n}\n// Irá imprimir as letras B e C, ou seja, do índice 2 até o índice 3\n```0  \n_Alternativa_  \n```bfc-script\nletras = ['A','B','C']\npercorrer(de:2, ate:3, itens: letras){\nimprimir item\n}\n// Irá imprimir as letras B e C, ou seja, do índice 2 até o índice 3\n```1  \n##### posicaoFinal",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

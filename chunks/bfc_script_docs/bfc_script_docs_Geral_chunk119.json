@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Obtem a data e hora do sistema operacional.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```35  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```36  \n##### hora  \nObtem a hora em que se encontra uma determinada data/hora.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```37  \n_Alternativa_  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```38  \n##### mes",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

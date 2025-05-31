@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```59  \nUma mensagem contem diversas caracteristicas que serão apresentadas a seguir, uma vez configurada a mensagem, o envio é realizado através da função **enviar()** da mensagem.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```60  \n### Mensagem  \n#### de(email)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

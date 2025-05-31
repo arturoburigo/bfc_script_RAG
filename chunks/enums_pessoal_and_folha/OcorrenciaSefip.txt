@@ -1,0 +1,7 @@
+# OcorrenciaSefip
+Enum: OcorrenciaSefip
+- Nunca teve exposto a agentes nocivos (Key: NUNCA_EXPOSTO_AGENTES_NOCIVOS, Value: 1)
+- Trabalhador já teve exposto alguma vez (Key: EXPOSTO_ALGUMA_VEZ, Value: 2)
+- Exposto a agentes nocivos - aposentadoria 15 anos (Key: EXPOSTO_APOSENTADORIA_15_ANOS, Value: 3)
+- Exposto a agentes nocivos - aposentadoria 20 anos (Key: EXPOSTO_APOSENTADORIA_20_ANOS, Value: 4)
+- Exposto a agentes nocivos - aposentadoria 25 anos (Key: EXPOSTO_APOSENTADORIA_25_ANOS, Value: 5)

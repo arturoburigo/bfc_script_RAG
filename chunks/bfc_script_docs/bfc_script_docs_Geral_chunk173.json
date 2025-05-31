@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### escrever(texto)  \nRealiza a escrita de um conteúdo no arquivo utilizando o delimitador parametrizado.  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```91  \n##### novaLinha()  \nRealiza a escrita de uma quebra de linha no arquivo  \n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```92  \n### Arquivos XML (xml)",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### contemResultado()  \nIndica se a requisição retornou algum resultado. Esta verificação é realizada com base no conteudo() e no tamanho() da mensagem e pode ou não estar presente dependendo de cada serviço utilizado.  \n#### ultimaModificacao()",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

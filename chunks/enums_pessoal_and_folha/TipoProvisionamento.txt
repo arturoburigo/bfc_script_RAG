@@ -1,0 +1,5 @@
+# TipoProvisionamento
+Enum: TipoProvisionamento
+- Todos os períodos em aberto (Key: TODOS_PERIODOS_ABERTO, Value: 1)
+- Apenas períodos em andamento (Key: APENAS_PERIODOS_ANDAMENTO, Value: 2)
+- Apenas períodos novos (Key: APENAS_PERIODOS_NOVOS, Value: 3)

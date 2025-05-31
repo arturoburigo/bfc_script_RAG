@@ -1,0 +1,7 @@
+# SituacaoEnvioMatriculaCaged
+Enum: SituacaoEnvioMatriculaCaged
+- Pendente de validação do envio (Key: PENDENTE_VALIDACAO_ENVIO, Value: 1)
+- Envio validado (Key: ENVIO_VALIDADO, Value: 2)
+- Gerando arquivo (Key: GERANDO_ARQUIVO, Value: 3)
+- Erro na execução do script (Key: ERRO_EXECUCAO_SCRIPT, Value: 4)
+- Erro ao gerar o arquivo (Key: ERRO_GERAR_ARQUIVO, Value: 5)

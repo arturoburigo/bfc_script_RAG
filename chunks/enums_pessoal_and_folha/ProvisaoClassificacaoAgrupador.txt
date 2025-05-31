@@ -1,0 +1,7 @@
+# ProvisaoClassificacaoAgrupador
+Enum: ProvisaoClassificacaoAgrupador
+- Ferias (Key: FERIAS, Value: )
+- Um Terco Ferias (Key: UM_TERCO_FERIAS, Value: )
+- Media Vantagem Ferias (Key: MEDIA_VANTAGEM_FERIAS, Value: )
+- Decimo Terceiro (Key: DECIMO_TERCEIRO, Value: )
+- Media Vantagem Decimo Terceiro Salario (Key: MEDIA_VANTAGEM_DECIMO_TERCEIRO_SALARIO, Value: )

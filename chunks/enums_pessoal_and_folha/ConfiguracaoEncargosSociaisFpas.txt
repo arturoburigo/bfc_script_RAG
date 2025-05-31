@@ -1,0 +1,15 @@
+# ConfiguracaoEncargosSociaisFpas
+Enum: ConfiguracaoEncargosSociaisFpas
+- 515 - Empresa e serviço de processamento de dados (Key: EMPRESA_SERVICO_PROC_DADOS, Value: 1)
+- 523 - Sindicato ou associação profissional de empregado, trabalhador avulso ou empregador, pertencente a atividade outrora não vinculada ao ex-IAPC (Key: SINDICATO_ASSOCIACAO_PROF_EMPREGADO, Value: 2)
+- 566 - Empresa de comunicação (Key: EMPRESA_COMUNICACAO, Value: 3)
+- 574 - Estabelecimento de ensino (Key: ESTABELECIMENTO_ENSINO, Value: 4)
+- 582 - Órgão do Poder Público (Key: ORGAO_PODER_PUBLICO, Value: 5)
+- 590 - Cartório oficializado ou não (Key: CARTORIO, Value: 6)
+- 612 - Empresa de transporte rodoviário (Key: EMPRESA_TRANSP_RODOVIARIO, Value: 7)
+- 620 - Tomador de serviço de transportador autônomo (Key: TOMADOR_SERVIDO_TRANSP_AUTONOMO, Value: 8)
+- 639 - Entidade beneficente de assistência social (Key: ENTIDADE_BENEFICENTE, Value: 9)
+- 647 - Associação desportiva (Key: ASSOCIACAO_DESPORTIVA, Value: 10)
+- 655 - Empresa de trabalho temporário (Key: EMPRESA_TRABALHO_TEMPORARIO, Value: 11)
+- 507 - Tratamento e disposição de resíduos não-perigosos (Key: TRATAMENTO_DISP_RESIDUOS, Value: 12)
+- 736 - Bancos e instituições financeiras (Key: BANCOS_INST_FINANCEIRAS, Value: 13)

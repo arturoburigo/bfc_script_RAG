@@ -1,0 +1,41 @@
+# tipoCargo_busca
+Description: TipoCargo
+Method: busca (GET)
+Method Description: Listagem de tipos de cargos
+Representation Type: TipoCargoFonteDados
+Expressions:
+- tipoMovimentacaoSubstituto.descricao: Descrição do tipo de movimentação do substituto (Type: String)
+- tipoMovimentacaoSaida.descricao: Descrição do tipo de movimentação de saída (Type: String)
+- tipoMovimentacaoSaidaSubstituto.classificacao: Classificação do tipo de movimentação de saída do substituto (Type: )
+- tipoMovimentacao.descricao: Descrição do tipo de movimentação (Type: String)
+- tipoMovimentacaoSaidaSubstituto.descricao: Descrição do tipo de movimentação de saída do substituto (Type: String)
+- tipoMovimentacaoSaida.classificacao: Classificação do tipo de movimentação de saída (Type: )
+- tipoMovimentacao.classificacao: Classificação do tipo de movimentação (Type: )
+- classificacao: Classificação (Type: )
+- id: Id (Type: Long)
+- tipoMovimentacaoSubstituto.classificacao: Classificação do tipo de movimentação do substituto (Type: )
+- descricao: Descrição (Type: String)
+Types:
+## TipoMovimentacaoPessoalTipoCargo
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+## TipoCargoFonteDados
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+- tipoMovimentacao: Tipo movimentação (Type: TipoMovimentacaoPessoalTipoCargo)
+- tipoMovimentacaoSaida: Tipo movimentação de saída (Type: TipoMovimentacaoPessoalTipoCargo)
+- tipoMovimentacaoSubstituto: Tipo movimentação do substituto (Type: TipoMovimentacaoPessoalTipoCargo)
+- tipoMovimentacaoSaidaSubstituto: Tipo movimentação de saída do substituto (Type: TipoMovimentacaoPessoalTipoCargo)
+- camposAdicionais: Campos Adicionais (Type: CamposAdicionais)
+Code Example:
+```
+fonteTipoCargo = Dados.pessoal.v2.tipoCargo;
+
+dadosTipoCargo = fonteTipoCargo.busca(campos: "id, descricao, classificacao")
+
+percorrer (dadosTipoCargo) { itemTipoCargo ->
+
+}
+```

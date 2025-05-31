@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Provavelmente é por causa do Ruby and Rails. Ruby é uma linguagem com muitas características que tornam fácil o desenvolvimento de DSLs e as pessoas que estão envolvidas na comunidade Ruby têm se sentido mais a vontades com essa abordagem, então",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

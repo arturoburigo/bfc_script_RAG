@@ -1,0 +1,12 @@
+# TipoCurso
+Enum: TipoCurso
+- Curso (Key: CURSO, Value: 1)
+- Treinamento (Key: TREINAMENTO, Value: 2)
+- Conferência (Key: CONFERENCIA, Value: 3)
+- Congresso (Key: CONGRESSO, Value: 4)
+- Seminário (Key: SEMINARIO, Value: 5)
+- Simpósio (Key: SIMPOSIO, Value: 6)
+- Semana (Key: SEMANA, Value: 7)
+- Encontro técnico (Key: ENCONTRO_TECNICO, Value: 8)
+- Fórum (Key: FORUM, Value: 9)
+- Workshop (Key: WORKSHOP, Value: 10)

@@ -1,0 +1,22 @@
+# grupoFuncional_busca
+Description: GrupoFuncional
+Method: busca (GET)
+Method Description: Grupo funcional
+Representation Type: GrupoFuncional
+Expressions:
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+Types:
+## GrupoFuncional
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+Code Example:
+```
+fonteGrupoFuncional = Dados.pessoal.v2.grupoFuncional;
+
+dadosGrupoFuncional = fonteGrupoFuncional.busca(campos: "id, descricao",ordenacao: "descricao asc")
+
+percorrer (dadosGrupoFuncional) { itemGrupoFuncional ->
+
+}
+```

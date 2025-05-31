@@ -1,0 +1,4 @@
+# PrazoDeterminado
+Enum: PrazoDeterminado
+- Definido em dias (Key: DEFINIDO_EM_DIAS, Value: 1)
+- Ocorrência de um fato (Key: OCORRENCIA_DE_UM_FATO, Value: 2)

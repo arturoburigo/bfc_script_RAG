@@ -1,0 +1,5 @@
+# TipoDeducaoSuspensa
+Enum: TipoDeducaoSuspensa
+- 1 - Previdência oficial (Key: PREVIDENCIA_OFICIAL, Value: 1)
+- 5 - Pensão alimentícia (Key: PENSAO_ALIMENTICIA, Value: 2)
+- 7 - Dependentes (Key: DEPENDENTES, Value: 3)

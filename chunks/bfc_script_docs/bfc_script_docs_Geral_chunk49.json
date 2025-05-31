@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A linguagem permite trabalhar com datas de forma bem simplificada. Várias funções estão embutidas nos elementos de data facilitando muito o uso, além de tornar as implementações bem intuitivas. O exemplo abaixo demonstra o uso de algumas funções",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

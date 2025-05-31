@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A engine padrão, possui um conjunto de funções utilitárias para manipulação de datas, caracteres, números, e também instruções de iteração e condicionais, que definem a linguagem e utilitários da engine.  \n### Groovy",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

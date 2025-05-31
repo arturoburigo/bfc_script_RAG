@@ -1,0 +1,46 @@
+# motivosRescisao_busca
+Description: Motivos de rescisão
+Method: busca (GET)
+Method Description: Listagem de motivos de rescisão
+Representation Type: MotivoRescisaoFonteDados
+Expressions:
+- tipoAfastamento.descricao: Descrição do tipo de afastamento (Type: String)
+- classificacao: Classificação (Type: )
+- id: Id (Type: Long)
+- tipoMovimentacaoPessoal.descricao: Classificação do tipo de movimentação pessoal (Type: String)
+- descricao: Descrição (Type: String)
+Types:
+## TipoAfastamentoMotivoRescisao
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+## TipoMovimentacaoPessoalMotivoRescisao
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+## MotivoRescisaoFonteDados
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- tipo: Tipo (Type: )
+- classificacao: Classificação (Type: )
+- continuidadeVinculo: Continuidade do vínculo (Type: Boolean)
+- motivoeSocial: Motivo eSocial (Type: )
+- tipoGeracao: Tipo de geração (Type: )
+- classificacaoSefip: Classificação SEFIP (Type: )
+- classificacaoSaqueFgts: Classificação do saque FGTS (Type: )
+- classificacaoHomolognet: Classificação Homolognet (Type: )
+- classificacaoRais: Classificação RAIS (Type: )
+- classificacaoCaged: Classificação CAGED (Type: )
+- seguroDesemprego: Seguro desemprego (Type: Boolean)
+- tipoAfastamento: Tipo de afastamento (Type: TipoAfastamentoMotivoRescisao)
+- tipoMovimentacaoPessoal: Tipo de movimentação pessoal (Type: TipoMovimentacaoPessoalMotivoRescisao)
+Code Example:
+```
+fonteMotivosRescisao = Dados.folha.v2.motivosRescisao;
+
+dadosMotivosRescisao = fonteMotivosRescisao.busca(campos: "id, tipoAfastamento(id, descricao, classificacao), tipoMovimentacaoPessoal(id, descricao, classificacao), tipo, descricao, classificacao",ordenacao: "classificacao,tipoAfastamento.descricao asc")
+
+percorrer (dadosMotivosRescisao) { itemMotivosRescisao ->
+
+}
+```

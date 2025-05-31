@@ -1,0 +1,4 @@
+# CriterioFiltroSelecaoMatricula
+Enum: CriterioFiltroSelecaoMatricula
+- Contém (Key: CONTEM, Value: 1)
+- Não contém (Key: NAO_CONTEM, Value: 2)

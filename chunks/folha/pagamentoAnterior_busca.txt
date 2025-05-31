@@ -1,0 +1,64 @@
+# pagamentoAnterior_busca
+Description: Pagamento anterior
+Method: busca (GET)
+Method Description: Listagem de processos trabalhistas
+Representation Type: PagamentoAnterior
+Expressions:
+- competenciaDevida:  (Type: YearMonth)
+- id:  (Type: Long)
+- tipoPagamento:  (Type: )
+- contemRra:  (Type: Boolean)
+- numeroProcessoRRA:  (Type: String)
+- dataAssinatura:  (Type: LocalDate)
+Types:
+## PagamentoAnteriorParcela
+- id: Identificador (Type: Long)
+- numero: Parcela (Type: Long)
+- rra: É RRA? (Type: Boolean)
+- competenciaInicial: Competência incial (Type: YearMonth)
+- competenciaFinal: Competência final (Type: YearMonth)
+- dataPagamento: Data de pagamento (Type: LocalDate)
+## DespesaFonteDados
+- id: Identificador (Type: Long)
+- tipoInscricao: Tipo de inscrição (Type: )
+- numeroInscricao: Número da inscrição (Type: String)
+- nomeInscricao: Nome da inscrição (Type: String)
+- valorDespesa: Valor da despesa (Type: BigDecimal)
+## MatriculaAssociacao
+- id: Id (Type: Long)
+- tipo: Tipo de matrícula (Type: )
+- dataInicioContrato: Data de admissão (Type: LocalDate)
+- eSocial: eSocial (Type: String)
+- situacao: Situação (Type: )
+- inicioVigencia: Início da vigência (Type: LocalDateTime)
+## PagamentoAnterior
+- id: Identificador (Type: Long)
+- contemRra: Contém RRA? (Type: Boolean)
+- pagamentoParcelado: Pagamento foi parcelado? (Type: Boolean)
+- remuneracaoSalarialDevidaSucessora: Remuneração salárial é devida pela sucessora (Type: Boolean)
+- tipoPagamento: Tipo de pagamento anterior (Type: )
+- competenciaDevida: Competencia devida (Type: YearMonth)
+- dataAssinatura: Data de assinatura (Type: LocalDate)
+- parcelas: Parcelas de pagamentos (Type: PagamentoAnteriorParcela)
+- origemPagamentoAnterior: Origem do pagamento anterior (Type: String)
+- tipoProcessoRRA: Tipo de processo RRA (Type: )
+- numeroProcessoRRA: Número do processo RRA (Type: String)
+- descricaoRRA: Descrição do RRA (Type: String)
+- valorDespesasCustoJudicial: Valor das despesas com custo judicial (Type: BigDecimal)
+- valorTotalDespesasAdvogados: Valor total das despesas com advogados (Type: BigDecimal)
+- despesas: Despesas com advogados (Type: DespesaFonteDados)
+- tipoSelecaoMatricula: Tipo de seleção de matrícula (Type: )
+- matriculas: Matrículas (Type: MatriculaAssociacao)
+- restringirMatriculasLista: Restringir as matrículas a lista? (Type: Boolean)
+Code Example:
+```
+fontePagamentoAnterior = Dados.folha.v2.pagamentoAnterior;
+
+filtroPagamentoAnterior = "tipoPagamento = null"
+
+dadosPagamentoAnterior = fontePagamentoAnterior.busca(criterio: filtroPagamentoAnterior,campos: "matriculas(id, tipo, dataInicioContrato, eSocial, situacao, inicioVigencia), parcelas(id, numero, rra, competenciaInicial, competenciaFinal, dataPagamento), id, contemRra, descricaoRRA, tipoProcessoRRA",ordenacao: "id asc")
+
+percorrer (dadosPagamentoAnterior) { itemPagamentoAnterior ->
+
+}
+```

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "### Arquivos JSON (json)  \nOs documentos JSON são lidos e escritos por item/evento. Cada parte do documento é considerado um item e possui caracteristicas diferentes. No exemplo abaixo podemos afirmar que o documento JSON possui 4 itens:",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

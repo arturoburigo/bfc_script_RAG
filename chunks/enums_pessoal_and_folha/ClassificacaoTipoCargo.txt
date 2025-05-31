@@ -1,0 +1,9 @@
+# ClassificacaoTipoCargo
+Enum: ClassificacaoTipoCargo
+- Não classificado (Key: NAO_CLASSIFICADO, Value: 1)
+- Efetivo (Key: EFETIVO, Value: 2)
+- Comissionado (Key: COMISSIONADO, Value: 3)
+- Eletivo (Key: ELETIVO, Value: 4)
+- Emprego público (Key: EMPREGO_PUBLICO, Value: 5)
+- Função pública (Key: FUNCAO_PUBLICA, Value: 6)
+- Militar (Key: MILITAR, Value: 7)

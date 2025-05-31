@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Quando você passa por parâmetro um objeto, alterações na classe do objeto impactam diretamente os scripts que o utilizam. Existe uma dependência forte entre a classe que representa o objeto e os scripts. Não é prudente fornecer um objeto que possui",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

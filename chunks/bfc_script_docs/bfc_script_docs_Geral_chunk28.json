@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "No bloco _tentar_ devem ser colocadas as ações onde pode ocorrer um erro. Por exemplo, chamar um serviço HTTP, SOAP, escrever em um arquivo, etc.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

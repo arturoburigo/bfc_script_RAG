@@ -1,0 +1,4 @@
+# TipoRecrutamento
+Enum: TipoRecrutamento
+- Concurso público (Key: CONCURSO_PUBLICO, Value: 1)
+- Processo seletivo (Key: PROCESSO_SELETIVO, Value: 2)

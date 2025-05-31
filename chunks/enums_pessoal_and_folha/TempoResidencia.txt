@@ -1,0 +1,4 @@
+# TempoResidencia
+Enum: TempoResidencia
+- Prazo determinado (Key: PRAZO_DETERMINADO, Value: 1)
+- Prazo indeterminado (Key: PRAZO_INDETERMINADO, Value: 2)

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* _linha_ \\- Linha onde ocorreu o erro\n```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```5",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

@@ -38,7 +38,7 @@ class ResponseGenerator:
         self.system_prompt = self.prompts.get("RAG_SYSTEM_PROMPT", "")
         
         # Initialize tokenizer
-        self.tokenizer = tiktoken.encoding_for_model("gpt-4o-mini")
+        self.tokenizer = tiktoken.encoding_for_model("gpt-4")
         
         # Set maximum context length (leaving room for response)
         self.max_context_tokens = 12000  # Aumento do limite para deixar mais espaço para contexto
@@ -181,7 +181,7 @@ class ResponseGenerator:
                     {"role": "system", "content": "Você é um analisador sintático técnico que extrai padrões de código de documentação."},
                     {"role": "user", "content": syntax_prompt}
                 ],
-                temperature=0.3  # Lower temperature for more consistent pattern extraction
+                temperature=0.4     # Lower temperature for more consistent pattern extraction
             )
             
             return response.choices[0].message.content
@@ -330,12 +330,11 @@ class ResponseGenerator:
     
     def extract_function_requirements(self, query: str, context: Optional[str] = None) -> Dict[str, Any]:
         """
-        Extract function requirements from the query including domain-specific entities, 
-        fields, data sources, and domain-specific information. Uses context when available.
+        Extract function requirements from the query and context.
         
         Args:
             query: User query
-            context: Optional search context to extract more accurate requirements
+            context: Optional context from search results
             
         Returns:
             Dictionary of function requirements
@@ -347,27 +346,18 @@ class ResponseGenerator:
             "filters": [],
             "ordering": None,
             "data_source": None,
-            "version": "v2",  # Default version
+            "version": "v2",
             "enum_type": None,
             "is_script_query": False,
             "code_examples": [],
             "specific_operations": []
         }
         
-        # Check if this is a script generation query
-        script_keywords = ["criar", "crie", "gere", "gerar", "script", "código", "codigo", 
-                          "função", "funcao", "buscar", "busque", "consultar", "consulte", 
-                          "implementar", "implementação", "exemplo", "explique", "crie um script"]
         query_lower = query.lower()
         
-        requirements["is_script_query"] = any(keyword in query_lower for keyword in script_keywords)
-        
-        # Extract code examples from context if available
-        if context and requirements["is_script_query"]:
-            code_examples = self._extract_code_examples_from_context(context)
-            if code_examples:
-                requirements["code_examples"] = code_examples
-                logger.info(f"Found {len(code_examples)} code examples in context")
+        # Check if it's a script query
+        if any(term in query_lower for term in ["crie", "criar", "implemente", "implementar", "script", "código"]):
+            requirements["is_script_query"] = True
         
         # For data source related queries
         for entity, patterns in self.entity_patterns.items():
@@ -398,72 +388,17 @@ class ResponseGenerator:
                     elif entity in data_sources["pessoal"]:
                         requirements["data_source"] = f"Dados.pessoal.v2.{entity}"
                         requirements["entity_type"] = "pessoal"
+                    
+                    # If no specific entity found but we have a data source in context
+                    if not requirements["data_source"]:
+                        if data_sources["folha"]:
+                            requirements["data_source"] = "Dados.folha.v2"
+                            requirements["entity_type"] = "folha"
+                        elif data_sources["pessoal"]:
+                            requirements["data_source"] = "Dados.pessoal.v2"
+                            requirements["entity_type"] = "pessoal"
                 break
         
-        # Extract field names mentioned in the query
-        field_names = []
-        
-        # If "campos" is in the query, it's likely referring to specific fields
-        if "campos" in query_lower or "campo" in query_lower:
-            # Clear default fields to only use explicitly mentioned ones
-            requirements["fields"] = []
-            for field in field_names:
-                if field in query_lower:
-                    requirements["fields"].append(field)
-        
-        # Extract filter information
-        filter_keywords = ["filtro", "filtros", "expression", "expressions", "expressao", "condicao", "condição", "criterio", "critério"]
-        if any(keyword in query_lower for keyword in filter_keywords):
-            filter_info = {}
-            
-            # Look for operators
-            operators = ["=", ">", "<", ">=", "<=", "!=", "contem", "contém", "inicio", "início", "fim", "maior", "menor", "igual", "diferente"]
-            for operator in operators:
-                if operator in query_lower:
-                    filter_info["operator"] = operator
-                    break
-                
-            # Look for filter fields
-            for field in field_names:
-                if field in query_lower and any(kw in query_lower.split(field)[0][-15:] for kw in filter_keywords):
-                    filter_info["field"] = field
-                    break
-                
-            if filter_info:
-                requirements["filters"].append(filter_info)
-                
-            # Add a general operation for filtering
-            requirements["specific_operations"].append("filtro")
-        
-        # Extract ordering information
-        order_keywords = ["ordenar", "ordenacao", "ordenação", "sort", "order"]
-        if any(keyword in query_lower for keyword in order_keywords):
-            # Common ordering directions
-            directions = ["asc", "desc", "crescente", "decrescente"]
-            for direction in directions:
-                if direction in query_lower:
-                    requirements["ordering"] = direction
-                    break
-            
-            # Add a general operation for ordering
-            requirements["specific_operations"].append("ordenacao")
-        
-        # Detect specific operations being requested
-        operation_keywords = {
-            "busca": ["busca", "buscar", "consulta", "consultar", "query"],
-            "percorrer": ["percorrer", "iterar", "loop", "para cada"],
-            "imprimir": ["imprimir", "mostrar", "exibir", "imprime", "print"],
-            "mapear": ["mapear", "transformar", "converter"],
-            "filtrar": ["filtrar", "filter", "onde", "where"],
-            "agrupar": ["agrupar", "agrupar por", "group by", "group"]
-        }
-        
-        for operation, keywords in operation_keywords.items():
-            if any(keyword in query_lower for keyword in keywords):
-                if operation not in requirements["specific_operations"]:
-                    requirements["specific_operations"].append(operation)
-        
-        logger.info(f"Extracted function requirements: {requirements}")
         return requirements
     
     def _log_context_details(self, query: str, context: str, function_requirements: Dict[str, Any], syntax_patterns: str, history_context: str) -> None:
@@ -619,7 +554,7 @@ class ResponseGenerator:
             "parametros.",
             "fonteDados = Dados.",
             "filtro =",
-            "dados = fonteDados.busca",
+            "dados = fonteDados.(dados)",
             "percorrer (dados)",
             "fonte.inserirLinha",
             "retornar fonte"

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "A função METODO é utilizada para realizar chamadas utilizando métodos personalizados. Tem como retorno uma representação de resposta. Os dados/formulário da requisição quando existentes são enviados conforme tipo de mídia informado no parâmetro",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,215 @@
+# provisao_buscaBases
+Description: Provisão
+Method: buscaBases (GET)
+Method Description: Listagem de bases de uma provisão
+Representation Type: ProvisaoMatriculaBase
+Expressions:
+- valorAjustePositivo: Valor ajuste negativo (Type: BigDecimal)
+- valorProvisao: Valor provisão (Type: BigDecimal)
+- saldoAnterior: Saldo anterior (Type: BigDecimal)
+- saldoAtual: Saldo atual (Type: BigDecimal)
+- id: Id (Type: Long)
+- valorBaixa: Valor de baixa (Type: BigDecimal)
+- classificacaoEvento: classificação do evento (Type: )
+- valorAjusteNegativo: Valor ajuste positivo (Type: BigDecimal)
+Types:
+## ConfiguracaoProvisao
+- id: Identificador (Type: Long)
+- dataInicial: Data inícial (Type: LocalDate)
+- tipoProvisionamentoFerias: Tipo de provisionamento de férias (Type: )
+- tipoProvisionamentoDecimoTerceiro: Tipo de provisionamento para décimo terceiro (Type: )
+## CodigoMatriculaFonteDadosMinhaFolha
+- numero: Número (Type: Long)
+- contrato: Contrato (Type: Integer)
+- digitoVerificador: Digito verificador (Type: Integer)
+## PessoaFisicaProvisao
+- id: Id (Type: Long)
+- nome: Nome (Type: String)
+- cpf: CPF (Type: String)
+- dataNascimento: Data de nascimento (Type: LocalDate)
+- sexo: Sexo (Type: )
+## ConfiguracaoNivelOrganograma
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- nivelSecretaria: Nível secretaria? (Type: Boolean)
+- nivel: Nível da secretaria (Type: Integer)
+- quantidadeDigitos: Quantidade de dígitos (Type: Integer)
+- separador: Separador de nível (Type: )
+## ConfiguracaoOrganograma
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- emUso: Configuração está em uso? (Type: Boolean)
+- niveis: Níveis (Type: ConfiguracaoNivelOrganograma)
+## TipoAdministracao
+- id: Id (Type: Long)
+- tipo: Tipo (Type: )
+- naturezaJuridica: Natureza Jurídica (Type: )
+- descricao: Descrição (Type: String)
+- subteto: Valor do Subteto (Type: BigDecimal)
+## TipoLogradouroOrganograma
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- abreviatura: Abreviatura (Type: String)
+## LogradouroOrganograma
+- id: Id (Type: Long)
+- tipoLogradouro: Tipo (Type: TipoLogradouroOrganograma)
+- descricao: Descrição (Type: String)
+## EstadoPessoaFisica
+- id: Id (Type: Long)
+- uf: UF (Type: String)
+- nome: Nome (Type: String)
+- pais: País (Type: String)
+## MunicipioPessoaFisica
+- id: Id (Type: Long)
+- nome: Nome (Type: String)
+- estado: Estado (Type: EstadoPessoaFisica)
+## BairroOrganograma
+- id: Id (Type: Long)
+- nome: Nome (Type: String)
+- municipio: Município (Type: MunicipioPessoaFisica)
+## Endereco
+- id: Id (Type: Long)
+- logradouro: Logradouro (Type: LogradouroOrganograma)
+- bairro: Bairro (Type: BairroOrganograma)
+- cep: CEP (Type: String)
+- numero: Número (Type: String)
+- complemento: Complemento (Type: String)
+- descricao: Complemento (Type: String)
+## CargoOrganograma
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- codigoESocial: Código ESocial (Type: String)
+- tipo: Tipo (Type: TipoCargo)
+## FuncaoOrganograma
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+## AtoOrganograma
+- id: Id (Type: Long)
+- tipo: Tipo de ato (Type: TipoAto)
+- numeroOficial: Número oficial (Type: String)
+## OrganogramaResponsavelFonteDados
+- id: Id (Type: Long)
+- dataInicio: Data de início da responsabilidade (Type: LocalDate)
+- dataTermino: Data de término da responsabilidade (Type: LocalDate)
+- substituto: É substituto? (Type: Boolean)
+- cargo: Cargo (Type: CargoOrganograma)
+- funcaoGratificada: Função gratificada (Type: FuncaoOrganograma)
+- ato: Ato da responsabilidade (Type: AtoOrganograma)
+- tipoMatricula: Tipo da matrícula (Type: )
+- nome: Nome do responsável (Type: String)
+- idPessoa: Id da pessoa do responsável (Type: Long)
+- cpf: CPF do responsável (Type: String)
+## OrganogramaFonteDados
+- id: Id (Type: Long)
+- configuracao: Configuração de organograma (Type: ConfiguracaoOrganograma)
+- descricao: Descrição (Type: String)
+- numero: Número (Type: String)
+- sigla: Sigla (Type: String)
+- nivel: Nível (Type: Integer)
+- tipoAdministracao: Tipo de Administração (Type: TipoAdministracao)
+- endereco: Endereço (Type: Endereco)
+- responsavel: Responsável vigente (Type: OrganogramaResponsavelFonteDados)
+## MatriculaProvisao
+- id: Id (Type: Long)
+- tipo: Tipo de matrícula (Type: )
+- dataInicioContrato: Data de admissão (Type: LocalDate)
+- situacao: Situação (Type: )
+- inicioVigencia: Início da vigência (Type: LocalDateTime)
+- codigoMatricula: Codigo da matrícula (Type: CodigoMatriculaFonteDadosMinhaFolha)
+- rendimentoMensal: Rendimento mensal (Type: BigDecimal)
+- pessoa: Pessoa (Type: PessoaFisicaProvisao)
+- organograma: Organograma (Type: OrganogramaFonteDados)
+## ProvisaoMatriculaTotal
+- id: Id (Type: Long)
+- saldoAnterior: Total do saldo anterior (Type: BigDecimal)
+- valorProvisao: Total do valor de provisão (Type: BigDecimal)
+- valorAjustePositivo: Total do ajuste positivo (Type: BigDecimal)
+- valorAjusteNegativo: Total do ajuste negativo (Type: BigDecimal)
+- valorBaixa: Total do valor de baixa (Type: BigDecimal)
+- saldoAtual: Total do saldo atual (Type: BigDecimal)
+## PeriodoAquisitivoProvisao
+- id: Id (Type: Long)
+- situacao: Situação (Type: )
+- dataInicial: Data inicial (Type: LocalDate)
+- dataFinal: Data final (Type: LocalDate)
+- competenciaFechamentoProvisao: Competência de fechamento da provisão (Type: YearMonth)
+## PeriodoAquisitivoDecimoTerceiro
+- id: Id (Type: Long)
+- situacao: Situação (Type: )
+- dataInicial: Data inicial (Type: LocalDate)
+- dataFinal: Data final (Type: LocalDate)
+- competenciaFechamentoProvisao: Competência de fechamento da provisão (Type: YearMonth)
+## ProvisaoMatriculaClassificacaoBase
+- descricao: descricao (Type: String)
+- valorProvisao: Valor provisão (Type: BigDecimal)
+- valorAjustePositivo: Valor ajuste positivo (Type: BigDecimal)
+- valorAjusteNegativo: Valor ajuste negativo (Type: BigDecimal)
+- valorBaixa: Valor baixa (Type: BigDecimal)
+## ProvisaoMatriculaClassificacao
+- provisaoClassificacaoAgrupador: Classificacao de agrupador de provisão (Type: )
+- saldoAnterior: Saldo anterior (Type: BigDecimal)
+- valorProvisao: Valor de provisão (Type: BigDecimal)
+- valorAjustePositivo: Valor ajuste positivo (Type: BigDecimal)
+- valorAjusteNegativo: Valor ajuste negativo (Type: BigDecimal)
+- valorBaixa: Valor baixa (Type: BigDecimal)
+- saldoAtual: Saldo atual (Type: BigDecimal)
+- bases: Bases (Type: ProvisaoMatriculaClassificacaoBase)
+## ProvisaoMatriculaEncargoValor
+- id:  (Type: Long)
+- total:  (Type: BigDecimal)
+- patronal:  (Type: BigDecimal)
+- ratFap:  (Type: BigDecimal)
+- fundo:  (Type: BigDecimal)
+- aporte:  (Type: BigDecimal)
+- taxa:  (Type: BigDecimal)
+## ProvisaoMatriculaEncargo
+- id: Identificador (Type: Long)
+- classificacao: Classificação (Type: )
+- saldoAnterior: Saldo anterior (Type: ProvisaoMatriculaEncargoValor)
+- valorProvisao: Valor provisão (Type: ProvisaoMatriculaEncargoValor)
+- valorAjustePositivo: Valor ajuste positivo (Type: ProvisaoMatriculaEncargoValor)
+- valorAjusteNegativo: Valor ajuste negativo (Type: ProvisaoMatriculaEncargoValor)
+- valorBaixa: Valor baixa (Type: ProvisaoMatriculaEncargoValor)
+- saldoAtual: Saldo atual (Type: ProvisaoMatriculaEncargoValor)
+## Provisao
+- id: Id (Type: Long)
+- competencia: Competência (Type: YearMonth)
+- tipoProvisao: Tipo provisão (Type: )
+- configuracao: Configuração (Type: ConfiguracaoProvisao)
+- matricula: Matrícula (Type: MatriculaProvisao)
+- totalBase:  (Type: ProvisaoMatriculaTotal)
+- totalEncargo:  (Type: ProvisaoMatriculaTotal)
+- periodoAquisitivo: Periodo aquisitivo (Type: PeriodoAquisitivoProvisao)
+- periodoAquisitivoDecimoTerceiro: Periodo aquisitivo de 13º (Type: PeriodoAquisitivoDecimoTerceiro)
+- valorDecimoTerceiroAdiantado: Valor 13° adiantado (Type: BigDecimal)
+- valorDecimoTerceiroDescontadoAdiantamento: Valor 13° adiantamento descontado (Type: BigDecimal)
+- agrupadoresBases: Bases de provisão agrupadas por tipo (Type: ProvisaoMatriculaClassificacao)
+- encargos: Encargos de provisão (Type: ProvisaoMatriculaEncargo)
+## ConfiguracaoEventoProvisao
+- id: Id (Type: Long)
+- codigo: Código (Type: Long)
+- descricao: Descrição (Type: String)
+- tipo: Tipo (Type: )
+- classificacao: Classificação (Type: )
+- classificacaoBaixaProvisao: Baixa da provisão (Type: )
+- tiposPrevidencia: Tipos de previdência (Type: )
+## ProvisaoMatriculaBase
+- id: Id (Type: Long)
+- saldoAnterior: Saldo anterior (Type: BigDecimal)
+- valorProvisao: Valor provisão (Type: BigDecimal)
+- valorAjustePositivo: Valor ajuste negativo (Type: BigDecimal)
+- valorAjusteNegativo: Valor ajuste positivo (Type: BigDecimal)
+- valorBaixa: Valor de baixa (Type: BigDecimal)
+- saldoAtual: Saldo atual (Type: BigDecimal)
+- classificacaoEvento: classificação do evento (Type: )
+- configuracaoEvento: Configuração do evento (Type: ConfiguracaoEventoProvisao)
+Code Example:
+```
+fonteProvisao = Dados.folha.v2.provisao;
+
+dadosProvisao = fonteProvisao.buscaBases(campos: "id, configuracaoEvento(id, codigo, descricao, tipo, classificacao, classificacaoBaixaProvisao, tiposPrevidencia), saldoAnterior, valorProvisao, saldoAtual")
+
+percorrer (dadosProvisao) { itemProvisao ->
+
+}
+```

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* Script principal, onde recebe os parâmetros para gerar as informações e enviá-las ao Tribunal de Contas;\n* Componente para identificar todos os fornecedores passíveis de envio ao Tribunal de Contas;",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,6 @@
+# TipoMarcacaoHorario
+Enum: TipoMarcacaoHorario
+- Entrada (Key: ENTRADA, Value: 1)
+- Saída (Key: SAIDA, Value: 2)
+- Intervalo Entrada (Key: INTERVALO_ENTRADA, Value: 3)
+- Intervalo Saída (Key: INTERVALO_SAIDA, Value: 4)

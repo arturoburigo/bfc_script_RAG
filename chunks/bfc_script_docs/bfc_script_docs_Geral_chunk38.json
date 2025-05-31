@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(ate:5){\nimprimir indice\n}\n```8  \nO tempo máximo de espera permitido por comando é de 60 segundos. Essa função está disponíveis ao usuário final apenas através da **Ferramenta de Scripts**.  \n##### exportar",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

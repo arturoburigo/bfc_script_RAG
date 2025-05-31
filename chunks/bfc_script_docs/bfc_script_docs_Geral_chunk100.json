@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\np1: 1 // primeiro item da lista de números do percorrer 'p1'\np2: 1 // primeiro índice do segundo percorrer\np2: 2 // ...\np2: 3 // ...\np2: 4 // No índice 4 o comando parar 'p1' foi executado interrompendo a execução de todos os comandos percorrer até o 'p1'\n```3  \n##### posicaoFinal()  \nRetorna a posição final do texto que coincida totalmente com a expressão utilizada. Caso não encontrado retorna -1.  \n```bfc-script\np1: 1 // primeiro item da lista de números do percorrer 'p1'\np2: 1 // primeiro índice do segundo percorrer\np2: 2 // ...\np2: 3 // ...\np2: 4 // No índice 4 o comando parar 'p1' foi executado interrompendo a execução de todos os comandos percorrer até o 'p1'\n```4  \n##### valoresGrupos()",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

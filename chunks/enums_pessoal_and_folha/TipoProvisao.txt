@@ -1,0 +1,5 @@
+# TipoProvisao
+Enum: TipoProvisao
+- Férias (Key: FERIAS, Value: 1)
+- Décimo terceiro (Key: DECIMO_TERCEIRO, Value: 2)
+- Férias e Décimo terceiro (Key: FERIAS_DECIMO_TERCEIRO, Value: 3)

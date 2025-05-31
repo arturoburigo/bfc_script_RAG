@@ -1,0 +1,24 @@
+# NaturezaRubrica
+# Part 2
+# This is a continuation of the NaturezaRubrica enum
+Enum: NaturezaRubrica
+- 1203 - Adicional de periculosidade (Key: ADICIONAL_PERICULOSIDADE, Value: 20)
+- 1204 - Adicional de transferência (Key: ADICIONAL_TRANSFERENCIA, Value: 21)
+- 1205 - Adicional noturno (Key: ADICIONAL_NOTURNO, Value: 22)
+- 1206 - Adicional de tempo de serviço (Key: ADICIONAL_TEMPO_SERVICO, Value: 23)
+- 1207 - Comissão, porcentagens, produção (Key: COMISSAO_PORCENTAGENS_PRODUCAO, Value: 24)
+- 1208 - Gueltas ou gorjetas - Repassadas por fornecedores ou clientes (Key: GUELTAS, Value: 25)
+- 1209 - Gueltas ou gorjetas - Repassadas pelo empregador (Key: GORJETAS, Value: 26)
+- 1210 - Gratificações por acordo coletivo (Key: GRATIFICACOES_ACORDO_COLETIVO, Value: 27)
+- 1211 - Gratificações (Key: GRATIFICACOES, Value: 28)
+- 1213 - Gratificações ou outras verbas de natureza transitória (Key: GRATIFICACOES_OUTRAS_VERBAS_TRANSITORIAS, Value: 29)
+- 1215 - Adicional de unidocência (Key: ADICIONAL_UNIDOCENCIA, Value: 30)
+- 1230 - Remuneração dirigente sindical (Key: REMUNERACAO_DIRIGENTE_SINDICAL, Value: 31)
+- 1299 - Outros adicionais (Key: OUTROS_ADICIONAIS, Value: 32)
+- 1300 - PLR - Participação Lucros e Resultados (Key: PARTICAPACAO_LUCROS_RESULTADOS, Value: 33)
+- 1350 - Bolsa de estudo - Estagiário (Key: BOLSA_ESTUDO_ESTAGIARIO, Value: 34)
+- 1351 - Bolsa de estudo - Médico residente (Key: BOLSA_ESTUDO_MEDICO_RESIDENTE, Value: 35)
+- 1352 - Bolsa de estudo ou pesquisa (Key: BOLSA_ESTUDO_PESQUISA, Value: 36)
+- 1401 - Abono (Key: ABONO, Value: 37)
+- 1402 - Abono PIS/PASEP (Key: ABONO_PIS_PASEP, Value: 38)
+- 1403 - Abono legal (Key: ABONO_LEGAL, Value: 39)

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "* _codigo_ \\- É um identificador alfanumérico erro para facilitar sua localização nos manuais e documentações\n* _mensagem_ \\- Uma mensagem passada pela API ou linguagem que representa a descrição do erro ocorrido",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

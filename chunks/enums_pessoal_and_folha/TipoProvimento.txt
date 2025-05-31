@@ -1,0 +1,13 @@
+# TipoProvimento
+Enum: TipoProvimento
+- Nomeação de cargo efetivo (Key: NOMEACAO_CARGO_EFETIVO, Value: 1)
+- Nomeação de cargo em comissão (Key: NOMEACAO_CARGO_COMISSAO, Value: 2)
+- Incorporação ou matrícula (militar) (Key: INCORPORACAO_MATRICULA_OU_NOMEACAO_MILITAR, Value: 3)
+- Redistribuição ou Reforma Administrativa (Key: REDISTRIBUICAO, Value: 4)
+- Diplomação (Key: DIPLOMACAO, Value: 5)
+- Contratação por tempo determinado (Key: CONTRATACAO_POR_TEMPO_DETERMINADO, Value: 6)
+- Remoção (em caso de alteração do órgão declarante) (Key: REMOCAO_EM_CASO_DE_ALTERACAO_DO_ORGAO_DECLARANTE, Value: 7)
+- Designação (Key: DESIGNACAO, Value: 8)
+- Mudança de CPF (Key: MUDANCA_DE_CPF, Value: 9)
+- Outras não relacionadas acima (Key: OUTRAS, Value: 10)
+- Estabilizados - Art. 19 do ADCT (Key: ESTABILIZADOS_ART_19_DO_ADCT, Value: 11)

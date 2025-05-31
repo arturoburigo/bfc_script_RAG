@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### parametro(nome, lista de valores)  \nCria uma cópia da requisição atual adicionando um ou mais parâmetros de query na requisição.  \n#### parametro(Mapa[nome, valor])",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,4 @@
+# LocalAmbiente
+Enum: LocalAmbiente
+- Estabelecimento do próprio empregador (Key: ESTABELECIMENTO_PROPRIO, Value: 1)
+- Estabelecimento de terceiros (Key: ESTABELECIMENTO_TERCEIROS, Value: 2)

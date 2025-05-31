@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### Escrita  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```15  \n**Parâmetros de escrita:**  \n* _encoding_ : Encoding do documento XML. Por padrão utiliza UTF-8.\n* _indentar_ : Indica se o documento será escrito indentado ou de forma linear. Utilizar _S_ para Sim e _N_ para Não.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

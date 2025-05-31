@@ -1,0 +1,118 @@
+# afastamentos_busca
+Description: Afastamentos
+Method: busca (GET)
+Method Description: Listagem de afastamentos
+Representation Type: AfastamentoFonteDados
+Expressions:
+- quantidadeAbono: Quantidade de abono (Type: BigDecimal)
+- tipoAfastamento.descricao: Descrição do tipo de afastamento (Type: String)
+- matricula.grupoFuncional.descricao: Descrição do grupo funcional (Type: String)
+- matricula.organograma.descricao: Descrição do organograma (Type: String)
+- motivo: Motivo (Type: String)
+- matricula.organograma.id: Id do organograma (Type: Long)
+- matricula.situacao: Situação da matrícula (Type: )
+- competenciaAbono: Competência de abono (Type: YearMonth)
+- unidade: Unidade (Type: )
+- descontar: Descontar (Type: Boolean)
+- abonar: Abonar (Type: Boolean)
+- decorrente: Decorrente (Type: )
+- fimAfastamento: Fim do afastamento (Type: LocalDate)
+- matricula.tipo: Tipo da matrícula (Type: )
+- competenciaDesconto: Competência de desconto (Type: YearMonth)
+- retornoTrabalho: Data de retorno ao trabalho (Type: LocalDate)
+- inicioAfastamento: Início do afastamento (Type: LocalDate)
+- id: Id (Type: Long)
+- tipoAfastamento.classificacao: Classificação do tipo de afastamento (Type: )
+- quantidade: Quantidade (Type: BigDecimal)
+- matricula.id: Id da matrícula (Type: Long)
+- matricula.grupoFuncional.id: Id do grupo funcional (Type: Long)
+Types:
+## PessoaFisicaAfastamento
+- id: Id (Type: Long)
+- nome: Nome (Type: String)
+- cpf: CPF (Type: String)
+- dataNascimento: Data de nascimento (Type: LocalDate)
+- sexo: Sexo (Type: )
+## CodigoMatriculaFonteDadosMinhaFolha
+- numero: Número (Type: Long)
+- contrato: Contrato (Type: Integer)
+- digitoVerificador: Digito verificador (Type: Integer)
+## MatriculaAfastamento
+- id: Id da matrícula (Type: Long)
+- situacao: Situação (Type: )
+- tipo: Tipo Matrícula (Type: )
+- pessoa: Pessoa (Type: PessoaFisicaAfastamento)
+- codigoMatricula: Codigo da matrícula (Type: CodigoMatriculaFonteDadosMinhaFolha)
+## TipoAfastamentoAfastamento
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- classificacao: Classificação (Type: )
+## AtoAfastamento
+- id: Id (Type: Long)
+- numeroOficial: Número oficial (Type: String)
+## AtestadoAfastamento
+- id: Id (Type: Long)
+## AfastamentoOrigem
+- id: Id (Type: Long)
+- tipoAfastamento: Tipo do afastamento (Type: TipoAfastamentoAfastamento)
+- inicioAfastamento: Início afastamento (Type: LocalDate)
+- fimAfastamento: Fim afastamento (Type: LocalDate)
+## SindicatoFuncionario
+- tipo: Tipo (Type: )
+- mesContribuicao: Mês contribuição (Type: )
+- numero: Número (Type: String)
+- diasAviso: Dias de aviso (Type: Integer)
+- dataBase: Data base (Type: MonthDay)
+## PessoaJuridica
+- id: Id (Type: Long)
+- tipo: Tipo (Type: )
+- razaoSocial: Razão social (Type: String)
+- nomeFantasia: Nome fantasia (Type: String)
+- cnpj: CNPJ (Type: String)
+- codigoInstFinanceira: Código Inst. Financeira (Type: String)
+- sindicato: Sindicato (Type: SindicatoFuncionario)
+## AfastamentoFonteDados
+- id: Id (Type: Long)
+- matricula: Matrícula (Type: MatriculaAfastamento)
+- tipoAfastamento: Tipo do afastamento (Type: TipoAfastamentoAfastamento)
+- ato: Ato (Type: AtoAfastamento)
+- inicioAfastamento: Início do afastamento (Type: LocalDate)
+- fimAfastamento: Fim do afastamento (Type: LocalDate)
+- retornoTrabalho: Data de retorno ao trabalho (Type: LocalDate)
+- quantidade: Quantidade (Type: BigDecimal)
+- unidade: Unidade (Type: )
+- quantidadeDias: Quantidade de dias (Type: BigDecimal)
+- jornadaDiaria: Jornada diária (Type: BigDecimal)
+- decorrente: Decorrente (Type: )
+- atestados: Atestados (Type: AtestadoAfastamento)
+- acidenteTransito: Acidente de trânsito (Type: )
+- retificacao: Retificação (Type: Boolean)
+- dataRetificacao: Data de retificação (Type: YearMonth)
+- origemRetificacao: Origem da retificação (Type: )
+- tipoProcessoRetificacao: Tipo de processo da retificação (Type: )
+- numeroProcesso: Número do processo (Type: String)
+- remuneracaoCargoEfetivo: Remuneração do cargo efetivo (Type: Boolean)
+- observacao: Observação (Type: String)
+- motivo: Motivo (Type: String)
+- descontar: Descontar (Type: Boolean)
+- competenciaDesconto: Competência de desconto (Type: YearMonth)
+- abonar: Abonar (Type: Boolean)
+- competenciaAbono: Competência de abono (Type: YearMonth)
+- quantidadeAbono: Quantidade de abono (Type: BigDecimal)
+- afastamentoOrigem: Afastamento de origem (Type: AfastamentoOrigem)
+- orgaoDestino: Órgão destino (Type: PessoaJuridica)
+- tipoOnus: Tipo de ônus (Type: )
+- atoCessao: Ato de cessão (Type: AtoAfastamento)
+- atoRetorno: Ato de retorno (Type: AtoAfastamento)
+- indicativoCessao: Indicativo de cessão (Type: )
+- codigoUnidadeGestoraDestino: Código da unidade gestora de destino (Type: String)
+Code Example:
+```
+fonteAfastamentos = Dados.pessoal.v2.afastamentos;
+
+dadosAfastamentos = fonteAfastamentos.busca(campos: "matricula(codigoMatricula(numero, contrato, digitoVerificador), pessoa(nome), situacao), id, inicioAfastamento, fimAfastamento, decorrente, motivo",ordenacao: "matricula.id asc")
+
+percorrer (dadosAfastamentos) { itemAfastamentos ->
+
+}
+```

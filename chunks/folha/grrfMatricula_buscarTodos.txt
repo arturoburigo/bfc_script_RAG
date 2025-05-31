@@ -1,0 +1,51 @@
+# grrfMatricula_buscarTodos
+Description: GRRF matrícula
+Method: buscarTodos (GET)
+Method Description: Listagem da GRRF
+Representation Type: GrrfFonteDados
+Expressions:
+- situacaoArquivoGrrf: Situação do envio da GRRF (Type: )
+- id: Código da GFIP (Type: Long)
+Types:
+## GrrfFonteDados
+- id: Código da GFIP (Type: Long)
+- situacaoArquivoGrrf: Situação do envio da GRRF (Type: )
+## GrrfPessoaFisica
+- id: Id (Type: Long)
+- nome: Nome (Type: String)
+- cpf: CPF (Type: String)
+- dataNascimento: Data de nascimento (Type: LocalDate)
+- sexo: Sexo (Type: )
+## CodigoMatriculaFonteDadosMinhaFolha
+- numero: Número (Type: Long)
+- contrato: Contrato (Type: Integer)
+- digitoVerificador: Digito verificador (Type: Integer)
+## GrrfMatricula
+- id: Id da matrícula (Type: Long)
+- situacao: Situação (Type: )
+- pessoa: Pessoa (Type: GrrfPessoaFisica)
+- codigoMatricula: Codigo da matrícula (Type: CodigoMatriculaFonteDadosMinhaFolha)
+## GrrfMatriculaFonteDados
+- id: Identificador (Type: Long)
+- situacaoMatricula: Situacao da matricula (Type: )
+- competencia: Competência do cálculo (Type: YearMonth)
+- tipoProcessamento: Tipo de processamento de cálculo (Type: )
+- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )
+- matricula: Matrícula (Type: GrrfMatricula)
+## GrrfMatriculaDto
+- codigoMatricula: Código da matrícula (Type: Long)
+- codigoGrrf: Código da GRRF (Type: Long)
+- situacaoMatricula: Situação da matrícula (Type: )
+- competencia: Competencia (Type: YearMonth)
+- tipoProcessamento: Tipo Processamento (Type: )
+- subTipoProcessamento: Subtipo processamento (Type: )
+Code Example:
+```
+fonteGrrfMatricula = Dados.folha.v2.grrfMatricula;
+
+dadosGrrfMatricula = fonteGrrfMatricula.buscarTodos(campos: "id, situacaoArquivoGrrf",ordenacao: "id asc")
+
+percorrer (dadosGrrfMatricula) { itemGrrfMatricula ->
+
+}
+```

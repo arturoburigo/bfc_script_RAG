@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```64  \n##### anexarUrl(anexoUrl)  \nAdiciona um anexo criado a partir da função Email.criarAnexoUrl à mensagem  \n### Exemplos  \n#### Envio de e-mail autenticado  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```65  \n#### Envio de e-mail com anexos  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```66",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

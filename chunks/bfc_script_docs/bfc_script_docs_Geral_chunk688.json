@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Sim, como eu já disse, as DSLs já estavam por ai há muito tempo, mais do que o Ruby. Ruby tem uma sintaxe não obstrutiva e também características de meta-programação que a torna mais fácil para criar elegantes DSLs internas, mais do que outras",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

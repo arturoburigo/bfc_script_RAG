@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**Então você não poderia escrever todo projeto em uma DSL?**  \nNão. A maioria dos projetos irão usar uma linguagem de propósito geral e muitas DSLs.  \n**Essa idéia é nova?**",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

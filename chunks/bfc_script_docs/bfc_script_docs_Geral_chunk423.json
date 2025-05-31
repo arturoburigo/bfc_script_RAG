@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "O bfc-script disponibiliza uma API que provê suporte à chamada entre scripts. Esta funcionalidade permite que uma lógica comum seja reutilizada por diversos scripts e está disponivel ao usuário final apenas através da **Ferramenta de Scripts**.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

@@ -1,0 +1,24 @@
+# CampoDirf
+# Part 2
+# This is a continuation of the CampoDirf enum
+Enum: CampoDirf
+- 4.6 - Valores pagos a titular ou sócio da microempresa ou empresa de pequeno porte, exceto pro labore, aluguéis ou serviços prestados (Key: VALORES_PAGOS_TITULAR_SOCIO_EMPRESA, Value: 22)
+- 4.7.1 - Indenizações por rescisão de contrato de trabalho, inclusive a título de PDV, e por acidente de trabalho (Key: INDENIZ_RESC_CONTRATO_TRABALHO, Value: 24)
+- 4.7.2 - Indenizações por rescisão de contrato de trabalho, inclusive a título de PDV, e por acidente de trabalho sobre 13º salário (Key: INDENIZ_RESC_CONTRATO_TRABALHO_13_SALARIO, Value: 25)
+- 4.7 - Indenizações por rescisão de contrato de trabalho, inclusive a título de PDV, e por acidente de trabalho (Key: INDENIZ_RESC_CONTRATO_TRABALHO_GERAL, Value: 23)
+- 4.8 - Juros de mora recebidos, devidos pelo atraso no pagamento de remunerações por exercicio de emprego, cargo ou função (Key: REND_ISENTOS_OUTROS_JUROS_MORA_RECEBIDOS, Value: 52)
+- 4.9.1 - Outros (Key: REND_ISENTOS_OUTROS, Value: 27)
+- 4.9.2 - Outros - Médico residente (Key: REND_ISENTOS_OUTROS_MEDICO_RESIDENTE, Value: 28)
+- 4.9 - Outros (especificar) (Key: REND_ISENTOS_OUTROS_GERAL, Value: 26)
+- 4 - Rendimentos isentos e não tributáveis (Key: REND_ISENTOS, Value: 13)
+- 5.1.1 - Total dos rendimentos 13º salário (Key: TOTAL_REND_13_SALARIO, Value: 31)
+- 5.1.2.1 - Contribuição previdenciária oficial 13º salário (Key: CONTRIB_PREV_OFICIAL_13_SALARIO, Value: 33)
+- 5.1.2.2.1 - Contribuição à previdência privada 13º salário (Key: CONTRIB_PREV_PRIVADA_13_SALARIO, Value: 35)
+- 5.1.2.2.2 - Contribuição ao FAPI 13º salário (Key: CONTRIB_FAPI_13_SALARIO, Value: 36)
+- 5.1.2.2.3 - Contribuição ao fundo de previdência do servidor público 13º salário (Key: CONTRIB_FUND_PREV_SERVIDOR_PUBLICO_13_SALARIO, Value: 37)
+- 5.1.2.2.4 - Contribuição do ente público patrocinador 13º salário (Key: CONTRIB_ENTE_PUBLICO_PATROCINADOR_13_SALARIO, Value: 38)
+- 5.1.2.2 - Contribuição previdenciária complementar 13º salário (Key: CONTRIB_PREV_COMPLEMENTAR_13_SALARIO, Value: 34)
+- 5.1.2 - Contribuição previdenciária 13º salário (Key: CONTRIB_PREV_13_SALARIO_GERAL, Value: 32)
+- 5.1 - Décimo terceiro salário (Key: DECIMO_TERCEIRO_SALARIO, Value: 30)
+- 5.2 - Imposto sobre a renda retido na fonte sobre 13º salário (Key: IRRF_13_SALARIO, Value: 39)
+- 5.3.1 - Outros sobre 13º salário (Key: REND_SUJ_TRIB_EXCLUSIVA_OUTROS_13_SALARIO, Value: 41)

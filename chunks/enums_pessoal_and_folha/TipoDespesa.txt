@@ -1,0 +1,5 @@
+# TipoDespesa
+Enum: TipoDespesa
+- Folhas e eventos (Key: FOLHA, Value: 1)
+- Encargos (Key: ENCARGOS, Value: 2)
+- Escrituração (Key: ESCRITURACAO, Value: 3)

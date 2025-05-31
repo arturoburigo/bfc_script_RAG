@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Por outro lado, um contexto permite o compartilhamento de informações durante o seu tempo de vida. Podemos executar um número ilimitado de scripts em um único contexto, sendo útil quando precisamos passar os mesmos parâmetros para vários scripts a",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

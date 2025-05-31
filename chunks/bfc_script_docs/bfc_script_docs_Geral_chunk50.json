@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "exemplo abaixo demonstra o uso de algumas funções para datas da API padrão e como utilizar estas funções de forma simplificada, além de demonstrar formas nativas para somar datas/horas/etc.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

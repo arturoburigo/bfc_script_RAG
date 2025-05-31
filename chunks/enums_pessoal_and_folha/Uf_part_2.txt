@@ -1,0 +1,11 @@
+# Uf
+# Part 2
+# This is a continuation of the Uf enum
+Enum: Uf
+- RS (Key: RS, Value: RS)
+- RO (Key: RO, Value: RO)
+- RR (Key: RR, Value: RR)
+- SC (Key: SC, Value: SC)
+- SP (Key: SP, Value: SP)
+- SE (Key: SE, Value: SE)
+- TO (Key: TO, Value: TO)

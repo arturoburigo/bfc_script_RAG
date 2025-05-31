@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```7  \nÉ importante notar que os valores numéricos informados nas funções de data para representar ano, mês, dias, horas e segundos, diferentemente da formatação Brasileira, não devem conter zeros à esquerda:  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```8",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}

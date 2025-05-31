@@ -1,0 +1,4 @@
+# TipoProcessoExigibilidadeSuspensa
+Enum: TipoProcessoExigibilidadeSuspensa
+- 1 - Administrativo (Key: ADMINISTRATIVO, Value: 1)
+- 2 - Judicial (Key: JUDICIAL, Value: 2)

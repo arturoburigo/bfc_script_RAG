@@ -1,0 +1,28 @@
+# cbos_busca
+Description: Cbo
+Method: busca (GET)
+Method Description: Listagem de cbos
+Representation Type: Cbo
+Expressions:
+- id: Id (Type: Long)
+- codigoClassificacao: Código de classificação (Type: String)
+- nivel: Tipo/Nível (Type: )
+- descricao: Descrição (Type: String)
+Types:
+## Cbo
+- id: Id (Type: Long)
+- codigoClassificacao: Código de classificação (Type: String)
+- descricao: Descrição (Type: String)
+- nivel: Tipo/Nível (Type: )
+Code Example:
+```
+fonteCbos = Dados.pessoal.v2.cbos;
+
+filtroCbos = "codigoClassificacao = null"
+
+dadosCbos = fonteCbos.busca(criterio: filtroCbos,campos: "id, codigoClassificacao, descricao, nivel",ordenacao: "id asc")
+
+percorrer (dadosCbos) { itemCbos ->
+
+}
+```

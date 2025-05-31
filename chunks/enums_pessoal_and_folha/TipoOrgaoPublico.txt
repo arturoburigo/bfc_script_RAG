@@ -1,0 +1,8 @@
+# TipoOrgaoPublico
+Enum: TipoOrgaoPublico
+- Executivo (Key: EXECUTIVO, Value: 1)
+- Judiciário (Key: JUDICIARIO, Value: 2)
+- Legislativo (Key: LEGISLATIVO, Value: 3)
+- Ministério público (Key: MINISTERIO_PUBLICO, Value: 4)
+- Tribunal de contas (Key: TRIBUNAL_CONTAS, Value: 5)
+- Defensoria pública (Key: DEFENSORIA_PUBLICA, Value: 6)

@@ -1,0 +1,6 @@
+# CorOlhos
+Enum: CorOlhos
+- Azul (Key: AZUL, Value: 0)
+- Castanho (Key: CASTANHO, Value: 1)
+- Preto (Key: PRETO, Value: 2)
+- Verde (Key: VERDE, Value: 3)

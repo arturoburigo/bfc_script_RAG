@@ -1,0 +1,9 @@
+# MotivoeSocial
+# Part 3
+# This is a continuation of the MotivoeSocial enum
+Enum: MotivoeSocial
+- 45 - Exclusão de militar das Forças Armadas do serviço ativo, com efeitos financeiros (Key: EXCLUSAO_DE_MILITAR_COM_EFEITOS_FINANCEIROS, Value: 45)
+- 46 - Exclusão de militar das Forças Armadas do serviço ativo, sem efeitos financeiros (Key: EXCLUSAO_DE_MILITAR_SEM_EFEITOS_FINANCEIROS, Value: 46)
+- 47 - Rescisão do contrato de trabalho por encerramento da empresa, de seus estabelecimentos ou supressão de parte de suas atividades (Key: RESCISAO_DO_CONTRATO_DE_TRABALHO_POR_ENCERRAMENTO_DA_EMPRESA, Value: 47)
+- 48 - Falecimento do empregador individual sem continuação da atividade (Key: FALECIMENTO_DO_EMPREGADOR_INDIVIDUAL, Value: 48)
+- 49 - Falecimento do empregador doméstico sem continuação da atividade (Key: FALECIMENTO_DO_EMPREGADOR_DOMESTICO, Value: 49)

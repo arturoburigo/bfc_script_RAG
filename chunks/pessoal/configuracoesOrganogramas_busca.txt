@@ -1,0 +1,34 @@
+# configuracoesOrganogramas_busca
+Description: Configurações de organogramas
+Method: busca (GET)
+Method Description: Listagem de configurações de organogramas
+Representation Type: ConfiguracaoOrganograma
+Expressions:
+- emUso: Configuração está em uso? (Type: Boolean)
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+Types:
+## ConfiguracaoNivelOrganograma
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- nivel: Nível (Type: Integer)
+- quantidadeDigitos: Quantidade de dígitos (Type: Integer)
+- separador: Separador de nível (Type: )
+- responsavelControleVagas: É responsável pelo controle de vagas? (Type: Boolean)
+## ConfiguracaoOrganograma
+- id: Id (Type: Long)
+- descricao: Descrição (Type: String)
+- emUso: Configuração está em uso? (Type: Boolean)
+- niveis: Níveis (Type: ConfiguracaoNivelOrganograma)
+Code Example:
+```
+fonteConfiguracoesOrganogramas = Dados.pessoal.v2.configuracoesOrganogramas;
+
+filtroConfiguracoesOrganogramas = "emUso = TRUE"
+
+dadosConfiguracoesOrganogramas = fonteConfiguracoesOrganogramas.busca(criterio: filtroConfiguracoesOrganogramas,campos: "id, descricao, niveis(id, descricao, nivelSecretaria, nivel, quantidadeDigitos, separador), emUso",ordenacao: "id asc")
+
+percorrer (dadosConfiguracoesOrganogramas) { itemConfiguracoesOrganogramas ->
+
+}
+```

@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "**Atenção** : existe um limite cumulativo de **30MB** para codificar/decodificar conteúdo Base64 durante uma execução de script. A soma de todo o conteúdo processado deve ficar sempre abaixo deste limite. Lembrando que este limite incinde sobre a",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

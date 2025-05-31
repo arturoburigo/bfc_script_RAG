@@ -9,6 +9,7 @@ import re
 from typing import List, Dict, Any, Optional, Tuple
 import logging
 from .config import setup_logging, is_dev_mode, log_debug, log_function_call, log_function_return
+import gradio as gr
 
 # Configure logging
 logger = setup_logging(__name__, "logs/semantic_search.log")
@@ -109,10 +110,11 @@ class SemanticSearch:
             # Load each collection
             for collection in collections:
                 collection_name = collection.name
-                self.collections[collection_name] = collection
+                # Get the collection - it should already have cosine distance from initialization
+                self.collections[collection_name] = self.chroma_client.get_collection(collection_name)
                 
                 # Check collection status
-                count = collection.count()
+                count = self.collections[collection_name].count()
                 logger.info(f"Loaded collection: {collection_name} with {count} documents")
             
             logger.info(f"Loaded {len(self.collections)} collections")
@@ -130,6 +132,12 @@ class SemanticSearch:
         Returns:
             Enhanced query
         """
+        # TEMPORARILY DISABLED - query enhancement might be making results worse
+        # Return original query without modifications
+        return query
+        
+        # Original enhancement code commented out for testing
+        '''
         query_lower = query.lower()
         
         # Analyze query intent
@@ -169,6 +177,7 @@ class SemanticSearch:
             return enhanced_query
             
         return query
+        '''
     
     def detect_content_type(self, query: str) -> Dict[str, float]:
         """
@@ -233,14 +242,25 @@ class SemanticSearch:
             max_tokens = 8000
             if len(text) > max_tokens:
                 text = text[:max_tokens]
+                logger.info(f"Text truncated to {max_tokens} tokens")
+            
+            logger.info(f"Generating embedding for text of length {len(text)}")
             
             # Use the same model as embedding files
             response = self.client.embeddings.create(
-                model="text-embedding-3-large",
+                model="text-embedding-3-small",
                 input=text,
-                dimensions=3072  # Full dimensionality as used in embedding files
+                dimensions=512  # Full dimensionality as used in embedding files
             )
-            return response.data[0].embedding
+            
+            embedding = response.data[0].embedding
+            logger.info(f"Generated embedding of length {len(embedding)}")
+            
+            # Log embedding statistics
+            embedding_array = np.array(embedding)
+            logger.info(f"Embedding stats - Mean: {np.mean(embedding_array):.4f}, Std: {np.std(embedding_array):.4f}, Min: {np.min(embedding_array):.4f}, Max: {np.max(embedding_array):.4f}")
+            
+            return embedding
         except Exception as e:
             logger.error(f"Error getting embedding: {str(e)}")
             return np.random.rand(3072).tolist()  # Match embedding dimension
@@ -275,9 +295,14 @@ class SemanticSearch:
             # Format results
             formatted_results = []
             if results and 'documents' in results and results['documents']:
+                logger.info(f"Raw distances from ChromaDB: {results['distances'][0] if 'distances' in results else 'No distances'}")
                 for i in range(len(results['documents'][0])):
                     distance = results['distances'][0][i] if 'distances' in results and results['distances'] else 1.0
-                    relevance_score = 1.0 - distance  # Convert distance to relevance score
+                    # For cosine distance: 0 = identical, 2 = opposite
+                    # Convert to relevance score: 1 = perfect match, 0 = no match
+                    relevance_score = 1.0 - (distance / 2.0)  # Normalize cosine distance to [0, 1]
+                    
+                    logger.info(f"Document {i+1} - Raw distance: {distance:.4f}, Relevance score: {relevance_score:.4f}")
                     
                     # Get the content and metadata
                     content = results['documents'][0][i]
@@ -294,6 +319,14 @@ class SemanticSearch:
                     # Check for specific data source mentions and boost if relevant
                     if any(source in content for source in ["Dados.folha", "Dados.pessoal"]):
                         relevance_score *= 1.3  # Boost data source references
+                        
+                        # Extract data source information
+                        if "Dados.folha.v2" in content:
+                            metadata["data_source"] = "Dados.folha.v2"
+                            metadata["entity_type"] = "folha"
+                        elif "Dados.pessoal.v2" in content:
+                            metadata["data_source"] = "Dados.pessoal.v2"
+                            metadata["entity_type"] = "pessoal"
                     
                     result = {
                         "content": content,
@@ -598,3 +631,27 @@ class SemanticSearch:
         except Exception as e:
             logger.error(f"Error getting document context: {str(e)}")
             return "", []
+
+    def create_interface(self) -> gr.ChatInterface:
+        log_function_call(logger, "BFCScriptUI.create_interface")
+
+        def chat_fn(message, history):
+            try:
+                search_results = self.search(message)
+                response = self.response_generator.generate_response(message, search_results, history)
+                return response
+            except Exception as e:
+                return f"Error: {e}"
+
+        interface = gr.ChatInterface(
+            fn=chat_fn,
+            title="BFC Script Assistant",
+            description="Ask questions about BFC Script programming.",
+            theme=gr.themes.Soft(),
+            examples=["Como faço um loop em BFC Script?", "O que é a função FOLHA?"],
+            retry_btn=None,
+            undo_btn=None,
+            clear_btn="Limpar Conversa"
+        )
+        log_function_return(logger, "BFCScriptUI.create_interface", result=interface)
+        return interface

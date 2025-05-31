@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "com esse webservice é realizado através de uma **Mensagem**. O produto desta mensagem quando executada é uma **Resposta** , essa resposta pode ser transformada em vários tipos de saídas, sendo elas um Leitor de XML da API de arquivo, Uma fonte de",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

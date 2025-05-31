@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "#### requisicao()  \nRetorna uma representação para leitura da requisição SOAP realizada. Esta leitor de mensagem contém as mesmas funcionalidades da [resposta](index.html#apiSoapResposta) e poderá ser utilizado para fins de depuração.",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

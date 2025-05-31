@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "##### ehTipoInicioElemento  \nIndica se o [tipo](index.html#apiArquivosImplementacoesXmlTipos) do item atual é igual a INICIO_ELEMENTO  \n##### ehTipoEspaco",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

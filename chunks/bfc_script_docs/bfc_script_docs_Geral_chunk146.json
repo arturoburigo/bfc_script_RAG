@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "O bfc-script disponibiliza uma API para leitura e escrita de arquivos. As funções são separadas por tipo de arquivo e são invocadas como métodos. Esta sessão abordará o uso de cada função da API de arquivos e os detalhes de cada implementação. Essas",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": false
+}

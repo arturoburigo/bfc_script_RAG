@@ -1,0 +1,52 @@
+# periodoAquisitivo_buscaPeriodoDecimoTerceiro
+Description: Períodos Aquisitivos
+Method: buscaPeriodoDecimoTerceiro (GET)
+Method Description: Listagem de períodos aquisitivos de décimo terceiro de uma matrícula
+Representation Type: PeriodoAquisitivoDecimoTerceiro
+Expressions:
+- situacao: Situação (Type: )
+- configuracao: Configuração (Type: )
+- dataInicial: Data inicial (Type: LocalDate)
+- id:  (Type: Long)
+- anoExercicio: Ano do exercício (Type: Year)
+- matricula.id: Identificador da matrícula (Type: Long)
+- dataFinal: Data final (Type: LocalDate)
+Types:
+## SuspensaoCessacaoPeriodoAquisitivoRepresentation
+- id: Id (Type: Long)
+- tipoSuspensao: Tipo de suspensão (Type: )
+- dataInicial: Data inicial (Type: LocalDate)
+- motivoSuspensaoCessacao: Motivo de suspensão ou cessação (Type: )
+- descricao: Descrição (Type: String)
+- cnpjOrgaoSucessor: CNPJ do orgão sucessor (Type: String)
+- dataTermino: Data de termino (Type: LocalDate)
+- dataEfeitoFinanceiro: Data do efeito financeiro (Type: LocalDate)
+## ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro
+- id: Id (Type: Long)
+- motivo: Motivo (Type: )
+- consideraAvosPerdidos: Considera avos perdido? (Type: Boolean)
+- competencia: Competência (Type: YearMonth)
+- valor: Valor (Type: BigDecimal)
+- cessacao: Cessação (Type: SuspensaoCessacaoPeriodoAquisitivoRepresentation)
+## PeriodoAquisitivoDecimoTerceiro
+- id: Id (Type: Long)
+- configuracao: Configuração (Type: )
+- situacao: Situação (Type: )
+- dataInicial: Data inicial do período aquisitivo (Type: LocalDate)
+- dataFinal: Data final do período aquisitivo (Type: LocalDate)
+- avosAdquiridos: Avos adquiridos (Type: Integer)
+- avosAdquiridosFgts: Avos adquiridos FGTS (Type: Integer)
+- avosDireito: Avos direito (Type: Integer)
+- avosPerdidos: Avos perdido (Type: Integer)
+- anoExercicio: Ano exercício (Type: Year)
+- movimentacoes: Movimentações (Type: ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro)
+Code Example:
+```
+fontePeriodoAquisitivo = Dados.folha.v2.periodoAquisitivo;
+
+dadosPeriodoAquisitivo = fontePeriodoAquisitivo.buscaPeriodoDecimoTerceiro(campos: "movimentacoes(cessacao(id, tipoSuspensao, dataInicial, motivoSuspensaoCessacao, descricao, cnpjOrgaoSucessor, dataTermino, dataEfeitoFinanceiro), id, motivo, consideraAvosPerdidos, competencia, valor), id, configuracao, situacao, dataInicial, dataFinal, avosAdquiridos, avosAdquiridosFgts, avosDireito, avosPerdidos, anoExercicio",ordenacao: "id asc")
+
+percorrer (dadosPeriodoAquisitivo) { itemPeriodoAquisitivo ->
+
+}
+```

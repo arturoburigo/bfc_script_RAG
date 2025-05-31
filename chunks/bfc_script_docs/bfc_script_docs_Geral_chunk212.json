@@ -1,0 +1,11 @@
+{
+    "document": "bfc_script_docs",
+    "section": "Geral",
+    "subsection": "",
+    "subsubsection": "",
+    "content": "Escreve um novo atributo no elemento atual informando também o namespace.  \n##### escreverCData(data)  \nEscreve uma área com conteúdo CDATA no documento XML.  \n##### escreverTexto(texto)  \nEscreve texto no item atual.  \n```bfc-script\npercorrer(de:3, ate:5){\nimprimir indice\n}\n```17",
+    "metadata": {
+        "source": "./bfc_script_docs.md"
+    },
+    "contains_code": true
+}
