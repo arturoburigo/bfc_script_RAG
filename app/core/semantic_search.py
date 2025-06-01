@@ -297,14 +297,14 @@ class SemanticSearch:
             # Format results
             formatted_results = []
             if results and 'documents' in results and results['documents']:
-                logger.info(f"Raw distances from ChromaDB: {results['distances'][0] if 'distances' in results else 'No distances'}")
+                #logger.info(f"Raw distances from ChromaDB: {results['distances'][0] if 'distances' in results else 'No distances'}")
                 for i in range(len(results['documents'][0])):
                     distance = results['distances'][0][i] if 'distances' in results and results['distances'] else 1.0
                     # For cosine distance: 0 = identical, 2 = opposite
                     # Convert to relevance score: 1 = perfect match, 0 = no match
                     relevance_score = 1.0 - (distance / 2.0)  # Normalize cosine distance to [0, 1]
                     
-                    logger.info(f"Document {i+1} - Raw distance: {distance:.4f}, Relevance score: {relevance_score:.4f}")
+                    #logger.info(f"Document {i+1} - Raw distance: {distance:.4f}, Relevance score: {relevance_score:.4f}")
                     
                     # Get the content and metadata
                     content = results['documents'][0][i]
@@ -389,20 +389,6 @@ class SemanticSearch:
             # Boost field documentation when requested
             if fields_requested and any(term in content_lower for term in ["fields:", "campos:", "propriedades:"]):
                 score *= 1.2
-                
-            # Check for specific entity mentions in both query and content
-            # Entities to check (common domain objects)
-            '''
-            entities = ["cargo", "funcionario", "contrato", "rubrica", "evento", "historico", 
-                       "departamento", "consolidacao", "motivo", "rescisao", "classificacao", 
-                       "remuneracao", "processotrabalhista"]
-            
-            for entity in entities:
-                if entity in query_lower and entity in content_lower:
-                    score *= 1.15  # Boost matches on domain entities
-                    
-            # Update score
-            result["relevance_score"] = score'''
         
         # Re-sort results by updated relevance score
         results.sort(key=lambda x: x.get("relevance_score", 0), reverse=True)
@@ -471,11 +457,11 @@ class SemanticSearch:
             for result in merged_results:
                 result["query"] = query
                 
-            logger.info(f"Found {len(merged_results)} results for query: '{query}', enhanced: '{enhanced_query}'")
+            #logger.info(f"Found {len(merged_results)} results for query: '{query}', enhanced: '{enhanced_query}'")
             
             # Log the best matches and their contents for debugging
             if merged_results:
-                logger.info("----- TOP SEARCH RESULTS -----")
+                #logger.info("----- TOP SEARCH RESULTS -----")
                 for i, result in enumerate(merged_results[:3]):  # Log top 3 results
                     relevance = result.get("relevance_score", 0.0)
                     collection = result.get("collection", "unknown")
@@ -486,9 +472,9 @@ class SemanticSearch:
                     if len(content) > 200:
                         content = content[:200] + "..."
                         
-                    logger.info(f"Result #{i+1} | Score: {relevance:.4f} | Collection: {collection} | Has Code: {has_code}")
-                    logger.info(f"Content Preview: {content}")
-                    logger.info("--------------------------")
+                    #logger.info(f"Result #{i+1} | Score: {relevance:.4f} | Collection: {collection} | Has Code: {has_code}")
+                    #logger.info(f"Content Preview: {content}")
+                    #logger.info("--------------------------")
             else:
                 logger.warning("No results found for the query")
             

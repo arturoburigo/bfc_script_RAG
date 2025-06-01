@@ -13,7 +13,7 @@ EXTRAIA APENAS
 5. Convenções de nomenclatura observadas
 6. Padrões de acesso a fontes de dados (folha, pessoal)
 7. Uso de enums 
-8. Use sempre operadores em minusculo (exemplo: and, or, not, etc.)
+8. - Use sempre operadores em minusculo (exemplo: and, or, not, etc.)
 
 """
 
@@ -91,7 +91,6 @@ INSTRUÇÕES PARA RESPOSTA:
 3. PARA CÓDIGO:
    - Use SOMENTE padrões e exemplos que aparecem DIRETAMENTE no contexto fornecido
    - Reproduza fielmente a sintaxe encontrada em exemplos reais
-   - Não precisa informar a linguagem de programação, apenas a sintaxe do BFC-Script, comentarios comente com '//'
    - Utilize os nomes exatos de fontes de dados, campos, e parâmetros conforme aparecem nos exemplos
    - Se não houver um exemplo específico, indique claramente quais partes da solução são inferidas
 
@@ -121,7 +120,6 @@ DIRETRIZES PARA CRIAÇÃO DE RELATÓRIOS:
 
 IMPORTANTE: 
 - Use sempre operadores em minusculo (exemplo: and, or, not, etc.)
-- Não precisa informar a linguagem de programação, apenas a sintaxe do BFC-Script, comentarios comente com '//'
 - Ao trabalhar com datas, use sempre o .format("yyyy-MM-dd") para formatar a data
 - Dê uma explicação sobre o que o relatório faz, fontes de dados e parâmetros utilizados e condições de uso
 - Ao usar variáveis em filtros, NUNCA coloque aspas simples ou duplas ao redor da variável. Use apenas ${variavel}
@@ -174,6 +172,7 @@ IMPORTANTE:
    - Valide a integridade dos dados antes do retorno
 
 ESTRUTURA RECOMENDADA PARA RELATÓRIOS:
+- Os valores podem variar, porém o formatacao deve ser sempre baseada no exemplo abaixo:
 ```
 // 1. Definição do esquema do relatório
 esquema = [
@@ -195,7 +194,7 @@ fonteDados = Dados.{fonte origem}.v2.{nome da funcao da fonte}
 
 // 5. Implementação da lógica do relatório
 filtro = "competencia = '${competencia}' and matricula.id in (${matriculas.join(',')})"
-dados = fonteDados.(funcao da fonte de dados)(criterio: filtro, campos: "[campos]")
+dados = fonteDados.busca(criterio: filtro, campos: "[campos])
 
 // 6. Processamento dos dados do relatório
 percorrer (dados) { item ->
