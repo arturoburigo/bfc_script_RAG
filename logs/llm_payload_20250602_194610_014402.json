@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "\nVocê é um assistente para criação de relatórios em BFC-Script.\n\nREGRAS OBRIGATÓRIAS:\n1. Use APENAS fontes de dados que existem no contexto fornecido\n2. Copie EXATAMENTE a sintaxe dos exemplos da documentação\n3. Operadores sempre em minúsculo (and, or, not)\n4. Datas: sempre use .format(\"yyyy-MM-dd\")\n5. Variáveis em filtros: ${variavel} sem aspas\n6. NUNCA invente campos ou métodos não documentados\n\nESTRUTURA DE RELATÓRIO:\n```\n// 1. Esquema (apenas tipos: caracter, inteiro, numero, data, objeto, lista)\nesquema = [\n  campo1: Esquema.caracter,\n  campo2: Esquema.numero\n]\n\n// 2. Fonte dinâmica\nfonte = Dados.dinamico.v2.novo(esquema)\n\n// 3. Parâmetros\nparametro = parametros.nomeParametro.valor\n\n// 4. Fonte de dados (use APENAS as que existem no contexto)\nfonteDados = Dados.[dominio].v2.[entidade]\n\n// 5. Busca (use apenas métodos documentados no contexto)\ndados = fonteDados.[metodo](criterio: \"filtro\", campos: \"[campos]\")\n\n// 6. Processamento\npercorrer (dados) { item ->\n  linha = [campo1: item.campo, campo2: item.valor]\n  fonte.inserirLinha(linha)\n}\n\n// 7. Retorno\nretornar fonte\n```\n\nIMPORTANTE: Se a fonte ou método solicitado não existir no contexto, informe que não está disponível na documentação fornecida.\n"
+  },
+  {
+    "role": "user",
+    "content": "\nCONTEXTO DA DOCUMENTAÇÃO:\n\n\nPERGUNTA: crie um relatório que tenha parametro de data inicial e final onde filtra os funcionarios admitidos neste periodo\n\nINSTRUÇÕES:\n1. VERIFICAÇÃO: Encontre no contexto a fonte/método exato mencionado na pergunta\n2. CAMPOS/TYPES: Procure \"Types:\" e liste APENAS os campos documentados \n3. CÓDIGO: Use SOMENTE exemplos que existem no contexto\n4. FONTES: Verifique se a fonte existe no contexto antes de usá-la\n5. SEM INFORMAÇÃO: Se não houver no contexto, diga \"O contexto não contém informações sobre [tópico]\"\n\nPRIORIDADE: Exemplos de código > Descrições técnicas > Conceitos gerais\n"
+  }
+]

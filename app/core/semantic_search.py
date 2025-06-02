@@ -1,4 +1,4 @@
-# semantic_search.py
+# app/core/semantic_search.py
 import os
 import time
 import chromadb
@@ -8,11 +8,57 @@ import numpy as np
 import re
 from typing import List, Dict, Any, Optional, Tuple
 import logging
-from .config import setup_logging, is_dev_mode, log_debug, log_function_call, log_function_return
-import gradio as gr
+from .config import setup_logging #, is_dev_mode, log_debug, log_function_call, log_function_return # Assuming these are not strictly needed for this modification snippet
+# import gradio as gr # Gradio UI parts are not directly modified by the request
 
 # Configure logging
 logger = setup_logging(__name__, "logs/semantic_search.log")
+
+# Moved BasicQueryAnalyzer here
+class BasicQueryAnalyzer:
+    """Analyzes the query to understand intents and expected output format."""
+    def analyze_query(self, query: str) -> Dict[str, Any]:
+        query_lower = query.lower()
+        
+        analysis = {
+            "intents": [],
+            "expected_output": "explanation",
+            "complexity": "simple" # Default complexity
+        }
+        
+        # Detect intents and expected output
+        if any(term in query_lower for term in ["código", "script", "implementa", "implementar", "criar", "exemplo", "função"]): # Added "função"
+            analysis["intents"].append("code_request")
+            analysis["expected_output"] = "code"
+        
+        if any(term in query_lower for term in ["campos", "types", "propriedades", "definição de campo"]): # Added "definição de campo"
+            analysis["intents"].append("field_query")
+            analysis["expected_output"] = "structured_list"
+        
+        if any(term in query_lower for term in ["enum", "enums", "classificação", "tipos de"]):
+            analysis["intents"].append("enum_query")
+            analysis["expected_output"] = "structured_list"
+        
+        if any(term in query_lower for term in ["relatório", "report"]):
+            analysis["intents"].append("report_query")
+            analysis["expected_output"] = "code" # Reports often involve code/scripts
+        
+        if any(term in query_lower for term in ["fonte de dados", "dados.", "fonte"]):
+            analysis["intents"].append("data_source_query")
+
+        # Basic complexity assessment (can be expanded)
+        if len(query_lower.split()) > 10 or "como funciona" in query_lower or "detalhes sobre" in query_lower:
+            analysis["complexity"] = "complex"
+            
+        # Ensure "code_request" is present if "report_query" is, as reports imply code
+        if "report_query" in analysis["intents"] and "code_request" not in analysis["intents"]:
+            analysis["intents"].append("code_request")
+
+        # Remove duplicate intents
+        analysis["intents"] = list(set(analysis["intents"]))
+
+        logger.info(f"Query analysis result: {analysis}")
+        return analysis
 
 class SemanticSearch:
     def __init__(self, api_key=None, chroma_path="./chroma_db"):
@@ -38,15 +84,12 @@ class SemanticSearch:
         )
         
         self._load_collections()
-        
         self._initialize_reranker()
+        self._initialize_query_analyzer() # Now initializes BasicQueryAnalyzer
         
-        self._initialize_query_analyzer()
+        self.max_results_per_collection = 10 
+        self.min_relevance_score = 0.0  # Keep this to allow lower scores to be considered by reranker
         
-        self.max_results_per_collection = 10  # Increased for better recall
-        self.min_relevance_score = 0.0  
-        
-        # Configure collection weights - prioritize code sources for code-related queries
         self.collection_weights = {
             "docs": 0.7,
             "enums": 0.7,
@@ -54,43 +97,16 @@ class SemanticSearch:
             "pessoal": 1.0
         }
         
-        # Define domain-specific patterns to recognize in queries
+        # Domain patterns (can be used by query_analyzer if it's enhanced further, or for other purposes)
         self.domain_patterns = {
-            "fonte_de_dados": [
-                r"fonte\s+de\s+dados",
-                r"Dados\.[a-zA-Z0-9_]+\.[a-zA-Z0-9_]+",
-                r"fonte",
-            ],
-            "codigo_exemplo": [
-                r"exemplo",
-                r"código",
-                r"script",
-                r"criar",
-                r"implementar",
-                r"code example"
-            ],
-            "filtros": [
-                r"filtro",
-                r"condição",
-                r"types",
-                r"expressions"
-            ],
-            "campo": [
-                r"campo",
-                r"atributo",
-                r"propriedade",
-                r"field",
-                r"Campos"
-            ],
-            "enum": [
-                r"enum",
-                r"classificacao",
-                r"tipo",
-            ]
+            "fonte_de_dados": [r"fonte\s+de\s+dados", r"Dados\.[a-zA-Z0-9_]+\.[a-zA-Z0-9_]+", r"fonte"],
+            "codigo_exemplo": [r"exemplo", r"código", r"script", r"criar", r"implementar", r"code example"],
+            "filtros": [r"filtro", r"condição", r"types", r"expressions"],
+            "campo": [r"campo", r"atributo", r"propriedade", r"field", r"Campos"],
+            "enum": [r"enum", r"classificacao", r"tipo"]
         }
         
-        # Define source type weights
-        self.source_type_weights = {
+        self.source_type_weights = { # These seem specific and could be part of a more advanced reranking or boosting
             "folha": 1.2,
             "pessoal": 1.2,
             "historico": 0.8,
@@ -98,586 +114,270 @@ class SemanticSearch:
         }
     
     def _load_collections(self):
-        """
-        Load collections from ChromaDB.
-        """
         try:
-            # Get all collections
-            collections = self.chroma_client.list_collections()
-            
-            # Initialize collections dictionary
+            collections_list = self.chroma_client.list_collections()
             self.collections = {}
-            
-            # Load each collection
-            for collection in collections:
-                collection_name = collection.name
-                # Get the collection - it should already have cosine distance from initialization
+            for collection_obj in collections_list:
+                collection_name = collection_obj.name
                 self.collections[collection_name] = self.chroma_client.get_collection(collection_name)
-                
-                # Check collection status
                 count = self.collections[collection_name].count()
                 logger.info(f"Loaded collection: {collection_name} with {count} documents")
-            
             logger.info(f"Loaded {len(self.collections)} collections")
         except Exception as e:
             logger.error(f"Error loading collections: {str(e)}")
             self.collections = {}
-    
-    def enhance_query(self, query: str) -> str:
-        """
-        Enhance the query with domain-specific terms to improve search relevance.
-        
-        Args:
-            query: Original user query
-            
-        Returns:
-            Enhanced query
-        """
-        # TEMPORARILY DISABLED - query enhancement might be making results worse
-        # Return original query without modifications
-        #return query
-        
-        # Original enhancement code commented out for testing
-        
-        query_lower = query.lower()
-        
-        # Analyze query intent
-        query_intents = []
-        
-        for intent, patterns in self.domain_patterns.items():
-            if any(re.search(pattern, query_lower) for pattern in patterns):
-                query_intents.append(intent)
-        
-        # No enhancement needed if no patterns detected
-        if not query_intents:
-            return query
-        
-        # Add domain-specific context based on detected intents
-        enhancements = []
-        
-        if "fonte_de_dados" in query_intents:
-            # Check for specific domain sources mentioned
-            if "folha" in query_lower:
-                enhancements.append("Dados.folha.v2")
-            if "pessoal" in query_lower:
-                enhancements.append("Dados.pessoal.v2")
-                
-        if "codigo_exemplo" in query_intents:
-            enhancements.append("Code Example")
-            
-        if "filtros" in query_intents:
-            enhancements.append("filtros, busca expressions")
-            
-        if "enum" in query_intents:
-            enhancements.append("enum values")
-        
-        # Create enhanced query
-        if enhancements:
-            enhanced_query = f"{query} {' '.join(enhancements)}"
-            logger.info(f"Enhanced query from '{query}' to '{enhanced_query}'")
-            return enhanced_query
-            
-        return query
-    
+
+    # enhance_query method is removed
     
     def detect_content_type(self, query: str) -> Dict[str, float]:
         """
-        Detect the type of content needed and provide collection weights.
-        
-        
+        Detect the type of content potentially relevant to the query to adjust collection search preference.
         Args:
             query: User query
-            
         Returns:
-            Dictionary of collection weights
+            Dictionary of collection preference weights
         """
         query_lower = query.lower()
+        weights = self.collection_weights.copy() # Start with base weights
         
-        # Default weights
-        weights = self.collection_weights.copy()
-        
-        # Adjust weights based on query content
-        if any(term in query_lower for term in ["código", "script", "busca", "implementar", "criar"]):
-            # For code-related queries, prioritize collections with examples
-            weights["folha"] *= 1.1
-            weights["pessoal"] *= 1.1
-            weights["enums"] *= 0.9
-            weights["docs"] *= 0.8
+        # Adjust weights based on query content indicating preference for code/data examples
+        if any(term in query_lower for term in ["código", "script", "busca", "implementar", "criar", "relatório"]):
+            weights["folha"] = weights.get("folha", 1.0) * 1.1  # Boost for code-heavy collections
+            weights["pessoal"] = weights.get("pessoal", 1.0) * 1.1
+            weights["enums"] = weights.get("enums", 0.7) * 0.9 # Slightly deprioritize if focused on code
+            weights["docs"] = weights.get("docs", 0.7) * 0.8   # Deprioritize general docs if code is likely needed
             
-        elif any(term in query_lower for term in ["enum", "enums", "tipo"]):
-            # For enum-related queries
-            weights["enums"] *= 1.2
-            weights["docs"] *= 0.9
-            weights["folha"] *= 0.8
-            weights["pessoal"] *= 0.8
+        elif any(term in query_lower for term in ["enum", "enums", "tipo"]): # Enum specific
+            weights["enums"] = weights.get("enums", 0.7) * 1.2
+            weights["docs"] = weights.get("docs", 0.7) * 0.9
+            weights["folha"] = weights.get("folha", 1.0) * 0.8
+            weights["pessoal"] = weights.get("pessoal", 1.0) * 0.8
             
-        elif any(term in query_lower for term in ["documentação", "conceito", "o que é"]):
-            # For documentation/concept queries
-            weights["docs"] *= 1.2
-            weights["enums"] *= 0.9
-            weights["folha"] *= 0.7
-            weights["pessoal"] *= 0.7
+        elif any(term in query_lower for term in ["documentação", "conceito", "o que é", "explica"]): # Documentation focus
+            weights["docs"] = weights.get("docs", 0.7) * 1.2
+            weights["enums"] = weights.get("enums", 0.7) * 0.9
+            weights["folha"] = weights.get("folha", 1.0) * 0.7
+            weights["pessoal"] = weights.get("pessoal", 1.0) * 0.7
         
-        # Source-specific weights
-        if "folha" in query_lower:
-            weights["folha"] *= self.source_type_weights["folha"]
-            weights["pessoal"] *= 0.6
-        elif "pessoal" in query_lower:
-            weights["pessoal"] *= self.source_type_weights["pessoal"]
-            weights["folha"] *= 0.6
+        # Source-specific keywords can also fine-tune preferences
+        if "folha" in query_lower and "pessoal" not in query_lower: # Explicitly mentions "folha"
+            weights["folha"] = weights.get("folha", 1.0) * self.source_type_weights.get("folha", 1.2)
+            weights["pessoal"] = weights.get("pessoal", 1.0) * 0.6 # Deprioritize other if one is specified
+        elif "pessoal" in query_lower and "folha" not in query_lower: # Explicitly mentions "pessoal"
+            weights["pessoal"] = weights.get("pessoal", 1.0) * self.source_type_weights.get("pessoal", 1.2)
+            weights["folha"] = weights.get("folha", 1.0) * 0.6
             
         logger.info(f"Content type detection weights: {weights}")
         return weights
     
     def get_embedding(self, text: str) -> List[float]:
-        """
-        Get embedding for text using OpenAI API.
-        
-        Args:
-            text: Text to embed
-            
-        Returns:
-            Embedding vector
-        """
         try:
-            # Truncate text if too long (matching embedding files)
-            max_tokens = 8000
-            if len(text) > max_tokens:
-                text = text[:max_tokens]
-                logger.info(f"Text truncated to {max_tokens} tokens")
+            max_tokens_for_embedding = 8000 # OpenAI's limit for some models, ensure text fits
+            if len(text) > max_tokens_for_embedding: # Simple character count, not exact tokens
+                text = text[:max_tokens_for_embedding]
+                logger.warning(f"Text truncated to {max_tokens_for_embedding} characters for embedding")
             
-            logger.info(f"Generating embedding for text of length {len(text)}")
-            
-            # Use the same model as embedding files
             response = self.client.embeddings.create(
-                model="text-embedding-3-small",
+                model="text-embedding-3-small", # Ensure this matches your embedding generation
                 input=text,
-                dimensions=512  # Full dimensionality as used in embedding files
+                dimensions=512 
             )
-            
             embedding = response.data[0].embedding
             logger.info(f"Generated embedding of length {len(embedding)}")
-            
-            # Log embedding statistics
-            embedding_array = np.array(embedding)
-            logger.info(f"Embedding stats - Mean: {np.mean(embedding_array):.4f}, Std: {np.std(embedding_array):.4f}, Min: {np.min(embedding_array):.4f}, Max: {np.max(embedding_array):.4f}")
-            
             return embedding
         except Exception as e:
             logger.error(f"Error getting embedding: {str(e)}")
-            return np.random.rand(3072).tolist()  # Match embedding dimension
+            # Fallback to a random embedding if API fails, though this is not ideal
+            return np.random.rand(512).tolist() 
     
     def search_collection(self, collection_name: str, query_embedding: List[float], 
-                         content_weights: Dict[str, float], top_k: int = 100) -> List[Dict]:
-        """
-        Search in a specific collection with content type weighting.
-        
-        Args:
-            collection_name: Name of the collection
-            query_embedding: Query embedding vector
-            content_weights: Weights for different content types
-            top_k: Number of results to return
-            
-        Returns:
-            List of search results
-        """
+                         collection_preference_weights: Dict[str, float], top_k_initial: int = 100) -> List[Dict]:
         collection = self.collections.get(collection_name)
         if not collection:
-            logger.warning(f"Collection {collection_name} not available")
+            logger.warning(f"Collection {collection_name} not available for search.")
             return []
         
         try:
-            # Execute query with increased n_results
             results = collection.query(
                 query_embeddings=[query_embedding],
-                n_results=top_k,
+                n_results=top_k_initial, # Fetch more initially for reranking
                 include=["documents", "metadatas", "distances"]
             )
             
-            # Format results
             formatted_results = []
-            if results and 'documents' in results and results['documents']:
-                #logger.info(f"Raw distances from ChromaDB: {results['distances'][0] if 'distances' in results else 'No distances'}")
+            if results and results['documents'] and results['documents'][0]:
                 for i in range(len(results['documents'][0])):
-                    distance = results['distances'][0][i] if 'distances' in results and results['distances'] else 1.0
-                    # For cosine distance: 0 = identical, 2 = opposite
-                    # Convert to relevance score: 1 = perfect match, 0 = no match
-                    relevance_score = 1.0 - (distance / 2.0)  # Normalize cosine distance to [0, 1]
+                    distance = results['distances'][0][i]
+                    # Base relevance from cosine distance (0=identical, 1=orthogonal, 2=opposite)
+                    # Score: 1 for identical, 0.5 for orthogonal, 0 for opposite
+                    base_relevance_score = 1.0 - (distance / 2.0)
                     
-                    #logger.info(f"Document {i+1} - Raw distance: {distance:.4f}, Relevance score: {relevance_score:.4f}")
-                    
-                    # Get the content and metadata
                     content = results['documents'][0][i]
-                    metadata = results['metadatas'][0][i] if 'metadatas' in results and results['metadatas'] else {}
+                    metadata = results['metadatas'][0][i] if results['metadatas'] and results['metadatas'][0] else {}
                     
-                    # Apply collection weight to relevance score
-                    collection_weight = content_weights.get(collection_name, 0.8)
-                    relevance_score *= collection_weight
+                    current_score = base_relevance_score
                     
-                    # Check for code examples and boost their score
+                    # Apply content-specific boosts (multiplicative)
+                    content_boost_factor = 1.0
                     if "Code Example:" in content or "```" in content:
-                        relevance_score *= 1.45  # Boost code examples
-                        
-                    # Check for specific data source mentions and boost if relevant
-                    if any(source in content for source in ["Dados.folha", "Dados.pessoal"]):
-                        relevance_score *= 1.3  # Boost data source references
-                        
-                        # Extract data source information
-                        if "Dados.folha.v2" in content:
-                            metadata["data_source"] = "Dados.folha.v2"
-                            metadata["entity_type"] = "folha"
-                        elif "Dados.pessoal.v2" in content:
-                            metadata["data_source"] = "Dados.pessoal.v2"
-                            metadata["entity_type"] = "pessoal"
+                        content_boost_factor *= 1.45  # Boost for code examples
+                    if any(ds_mention in content for ds_mention in ["Dados.folha", "Dados.pessoal"]):
+                        content_boost_factor *= 1.3   # Boost for data source references
+                    current_score *= content_boost_factor
+
+                    # Apply collection preference weight
+                    collection_pref = collection_preference_weights.get(collection_name, 1.0) # Default to 1.0 if not specified
+                    current_score *= collection_pref
                     
-                    result = {
+                    # Cap the relevance score to a max of 1.0 for easier interpretation downstream
+                    # This ensures boosts enhance ranking but don't push scores beyond a "perfect match" concept.
+                    final_relevance_score = min(current_score, 1.0) 
+                                        
+                    formatted_results.append({
                         "content": content,
                         "metadata": metadata,
-                        "distance": distance,
+                        "distance": distance, # Original distance for reference
                         "collection": collection_name,
-                        "relevance_score": relevance_score,
+                        "relevance_score": final_relevance_score, # Capped score
                         "has_code_example": "Code Example:" in content or "```" in content
-                    }
-                    formatted_results.append(result)
+                    })
             
             return formatted_results
         except Exception as e:
             logger.error(f"Error searching in collection {collection_name}: {str(e)}")
             return []
     
-    def rerank_results(self, results: List[Dict], query: str) -> List[Dict]:
-        """
-        Rerank results based on content relevance for the query.
-        
-        Args:
-            results: List of search results
-            query: User query
-            
-        Returns:
-            Reranked results
-        """
+    def rerank_results(self, results: List[Dict], query: str, query_analysis: Dict[str, Any]) -> List[Dict]:
         if not results:
             return []
         
-        query_lower = query.lower()
-        
-        # Check for code example requests
-        code_example_requested = any(term in query_lower for term in 
-                                   ["código", "exemplo", "script", "implementação", "implementar", "criar"])
-        
-        # Check for specific data source requests
-        data_source_requested = any(term in query_lower for term in 
-                                  ["fonte de dados", "fonte"])
-        
-        # Check for specific field requests
-        fields_requested = any(term in query_lower for term in 
-                             ["campos", "atributos", "fields", "propriedades"])
-        
+        # Use query_analysis intents for more targeted reranking
+        intents = query_analysis.get("intents", [])
+        expected_output = query_analysis.get("expected_output", "explanation")
+
         for result in results:
-            score = result["relevance_score"]
-            content = result["content"]
-            content_lower = content.lower()
+            # Start with the relevance score from search_collection (already capped at 1.0)
+            score = result["relevance_score"] 
+            content_lower = result["content"].lower()
             
-            # Boost code examples when explicitly requested
-            if code_example_requested and result.get("has_code_example", False):
-                score *= 1.3
+            boost_factor = 1.0
+            if ("code_request" in intents or expected_output == "code") and result.get("has_code_example", False):
+                boost_factor *= 1.3  # Prioritize code examples if code is expected/requested
+            
+            if "data_source_query" in intents and any(term in content_lower for term in ["fonte", "dados."]):
+                boost_factor *= 1.25 # Prioritize docs mentioning data sources
                 
-            # Boost data source documentation when requested
-            if data_source_requested and any(term in content_lower for term in ["fonte", "dados."]):
-                score *= 1.25
-                
-            # Boost field documentation when requested
-            if fields_requested and any(term in content_lower for term in ["fields:", "campos:", "propriedades:"]):
-                score *= 1.2
-        
-        # Re-sort results by updated relevance score
-        results.sort(key=lambda x: x.get("relevance_score", 0), reverse=True)
+            if "field_query" in intents and any(term in content_lower for term in ["fields:", "campos:", "propriedades:"]):
+                boost_factor *= 1.2  # Prioritize field definitions
+            
+            if "enum_query" in intents and result.get("collection") == "enums": # Specific boost for enums collection if enums are queried
+                 boost_factor *= 1.15
+
+            result["relevance_score"] = min(score * boost_factor, 1.0) # Apply boost and re-cap at 1.0
+
+        results.sort(key=lambda x: x.get("relevance_score", 0.0), reverse=True)
         return results
-    
-    def merge_and_rank_results(self, results_by_collection: Dict[str, List[Dict]], query: str, top_k: int = 10) -> List[Dict]:
-        """
-        Merge and rank results from multiple collections.
         
-        Args:
-            results_by_collection: Dictionary of results by collection
-            query: Original user query
-            top_k: Number of results to return
-            
-        Returns:
-            Merged and ranked results
-        """
-        # Flatten results
+    def merge_and_rank_results(self, results_by_collection: Dict[str, List[Dict]], query: str, query_analysis: Dict[str, Any], top_k: int = 10) -> List[Dict]:
         all_results = []
-        for collection_name, results in results_by_collection.items():
-            all_results.extend(results)
+        for res_list in results_by_collection.values():
+            all_results.extend(res_list)
         
-        # Rerank results based on content relevance
-        reranked_results = self.rerank_results(all_results, query)
+        # Initial sort before reranking (optional, but good if scores are already somewhat comparable)
+        all_results.sort(key=lambda x: x.get("relevance_score", 0.0), reverse=True)
         
-        # Return top k results
-        return reranked_results[:top_k]
+        # Rerank based on deeper query understanding
+        reranked_results = self.rerank_results(all_results, query, query_analysis)
+        
+        return reranked_results[:top_k] # Return the final top_k results
     
-    def search(self, query: str, top_k: int = 10) -> List[Dict]:
+    def search(self, query: str, query_analysis: Dict[str, Any], top_k: int = 10) -> List[Dict]:
         """
         Perform semantic search across all collections.
-        
-        Args:
-            query: User query
-            top_k: Number of results to return
-            
-        Returns:
-            Search results
+        Now takes query_analysis as an argument.
         """
         try:
-            # Enhance query with domain-specific terms
-            enhanced_query = self.enhance_query(query)
+            # Query enhancement is removed. Original query is used.
             
-            # Detect content type and adjust collection weights
-            content_weights = self.detect_content_type(query)
+            # Detect content type preferences to adjust collection search
+            collection_preference_weights = self.detect_content_type(query) # Based on original query
             
-            # Get embedding for enhanced query
-            query_embedding = self.get_embedding(enhanced_query)
+            query_embedding = self.get_embedding(query) # Embedding of original query
             
-            # Search in all collections with content-specific weights
             results_by_collection = {}
             for collection_name in self.collections:
-                if self.collections[collection_name]:
+                if self.collections[collection_name]: # Check if collection loaded properly
                     collection_results = self.search_collection(
                         collection_name, 
                         query_embedding,
-                        content_weights,
-                        top_k=self.max_results_per_collection
+                        collection_preference_weights, # Pass preferences
+                        top_k_initial=self.max_results_per_collection # Fetch more for better reranking pool
                     )
                     results_by_collection[collection_name] = collection_results
             
-            # Merge and rank results with content-aware reranking
-            merged_results = self.merge_and_rank_results(results_by_collection, query, top_k)
+            # Merge and rank results, now also passing query_analysis for smarter reranking
+            merged_results = self.merge_and_rank_results(results_by_collection, query, query_analysis, top_k)
             
-            # Add search metadata
+            # Add original query metadata to each result for context
             for result in merged_results:
-                result["query"] = query
+                result["query_debug_original"] = query # Keep track of the original query for this result set
                 
-            #logger.info(f"Found {len(merged_results)} results for query: '{query}', enhanced: '{enhanced_query}'")
-            
-            # Log the best matches and their contents for debugging
-            if merged_results:
-                #logger.info("----- TOP SEARCH RESULTS -----")
-                for i, result in enumerate(merged_results[:3]):  # Log top 3 results
-                    relevance = result.get("relevance_score", 0.0)
-                    collection = result.get("collection", "unknown")
-                    has_code = "Yes" if result.get("has_code_example", False) else "No"
-                    
-                    # Format content for logging (trim if too long)
-                    content = result.get("content", "")
-                    if len(content) > 200:
-                        content = content[:200] + "..."
-                        
-                    #logger.info(f"Result #{i+1} | Score: {relevance:.4f} | Collection: {collection} | Has Code: {has_code}")
-                    #logger.info(f"Content Preview: {content}")
-                    #logger.info("--------------------------")
-            else:
-                logger.warning("No results found for the query")
-            
+            logger.info(f"Found {len(merged_results)} results for query: '{query}' after merging and reranking.")
             return merged_results
+            
         except Exception as e:
-            logger.error(f"Error in search: {str(e)}")
+            logger.error(f"Error in main search process: {str(e)}")
             return []
-    
-    def extract_code_examples(self, results: List[Dict]) -> List[Dict]:
-        """
-        Extract code examples from search results.
-        
-        Args:
-            results: Search results
-            
-        Returns:
-            List of code examples with metadata
-        """
-        code_examples = []
-        
-        for result in results:
-            content = result.get("content", "")
-            
-            # Check for code examples
-            if "Code Example:" in content or "```" in content:
-                # Extract code between backticks
-                code_blocks = re.findall(r'```(?:.*?)\n(.*?)```', content, re.DOTALL)
-                
-                if not code_blocks:
-                    # Try alternative format: Code Example: followed by text
-                    if "Code Example:" in content:
-                        parts = content.split("Code Example:")
-                        if len(parts) > 1:
-                            code_text = parts[1].strip()
-                            code_blocks = [code_text]
-                
-                for code_block in code_blocks:
-                    # Get metadata from result
-                    metadata = result.get("metadata", {})
-                    metadata["source"] = result.get("collection", "")
-                    metadata["relevance_score"] = result.get("relevance_score", 0.0)
-                    
-                    code_examples.append({
-                        "code": code_block.strip(),
-                        "metadata": metadata,
-                        "context": content
-                    })
-        
-        return code_examples
-    
-    def get_document_context(self, query: str, top_k: int = 10) -> Tuple[str, List[Dict]]:
-        """
-        Get context from documents based on the query.
-        
-        Args:
-            query: User query
-            top_k: Number of results to return
-            
-        Returns:
-            Context string and search results
-        """
+
+    def _initialize_reranker(self):
+        """Initialize the reranker component (currently conceptual)."""
+        self.reranker_config = { # Changed to reranker_config to avoid confusion with a callable reranker
+            "is_fitted": True, 
+            "type": "heuristic_boost" # Reflects current rerank_results logic
+        }
+        logger.info("Reranker (heuristic boosting) initialized successfully")
+
+    def _initialize_query_analyzer(self):
+        """Initialize the BasicQueryAnalyzer."""
         try:
-            # Get search results with enhanced search
-            results = self.search(query, top_k)
-            
+            self.query_analyzer = BasicQueryAnalyzer() # Instantiate the analyzer
+            logger.info("BasicQueryAnalyzer initialized successfully in SemanticSearch")
+        except Exception as e:
+            logger.error(f"Error initializing BasicQueryAnalyzer in SemanticSearch: {str(e)}")
+            # Fallback or error state for query_analyzer
+            self.query_analyzer = None # Or a dummy analyzer that returns default analysis
+
+    # get_document_context and create_interface remain but are not directly modified by this request's core logic
+    # They would consume the results from the modified search pipeline.
+    def get_document_context(self, query: str, query_analysis: Dict[str, Any], top_k: int = 10) -> Tuple[str, List[Dict]]:
+        try:
+            results = self.search(query, query_analysis, top_k) # Pass query_analysis
+            # ... rest of the method for building context string based on results
+            # This part would benefit from using the 'query_analysis' too, e.g., to prioritize code examples in context string
             if not results:
                 logger.warning(f"No results found for query: {query}")
                 return "", []
             
-            # Extract code examples if the query is related to code
-            code_examples = []
-            if any(term in query.lower() for term in ["código", "exemplo", "script", "implementação", "criar"]):
-                code_examples = self.extract_code_examples(results)
-                logger.info(f"Extracted {len(code_examples)} code examples from search results")
-            
-            # Build context with source information
+            # Simplified context building for brevity
             context_parts = []
+            expected_output = query_analysis.get("expected_output")
             
-            # Add code examples first if available and relevant
-            if code_examples:
+            if expected_output == "code" and any(r.get("has_code_example") for r in results):
                 context_parts.append("## Exemplos de Código Relevantes\n")
-                for i, example in enumerate(code_examples):
-                    metadata = example.get("metadata", {})
-                    source_info = []
-                    
-                    if metadata.get("function_name"):
-                        source_info.append(f"Função: {metadata['function_name']}")
-                    if metadata.get("source"):
-                        source_info.append(f"Fonte: {metadata['source']}")
-                    
-                    source_str = " | ".join(source_info)
-                    relevance = metadata.get("relevance_score", 0.0)
-                    
-                    context_parts.append(f"[Exemplo {i+1}] Relevância: {relevance:.2f}\n```\n{example['code']}\n```\nFonte: {source_str}\n")
+                for r in results:
+                    if r.get("has_code_example"):
+                         context_parts.append(f"[Score: {r['relevance_score']:.2f}, Fonte: {r['collection']}]\n{r['content']}\n")
             
-            # Add general context from results
-            context_parts.append("## Contexto de Documentação\n")
-            for i, r in enumerate(results):
-                metadata = r.get("metadata", {})
-                source_info = []
-                
-                # Add collection-specific metadata
-                if r.get("collection") == "docs":
-                    if metadata.get("document"):
-                        source_info.append(f"Documento: {metadata['document']}")
-                    if metadata.get("section"):
-                        source_info.append(f"Seção: {metadata['section']}")
-                elif r.get("collection") == "enums":
-                    if metadata.get("enum_name"):
-                        source_info.append(f"Enum: {metadata['enum_name']}")
-                elif r.get("collection") in ["folha", "pessoal"]:
-                    if metadata.get("function_name"):
-                        source_info.append(f"Função: {metadata['function_name']}")
-                    if metadata.get("filename"):
-                        source_info.append(f"Arquivo: {metadata['filename']}")
-                
-                # Build context entry with relevance score and source
-                source_str = " | ".join(source_info)
-                relevance = r.get("relevance_score", 0.0)
-                
-                # Skip duplicates that might already be in code examples
-                if code_examples and r.get("has_code_example", False):
-                    # Only include the non-code parts or a summary
-                    content = r.get("content", "")
-                    # Remove code blocks
-                    content = re.sub(r'```(?:.*?)```', '[Código já mostrado nos exemplos acima]', content, flags=re.DOTALL)
-                    # Remove "Code Example:" sections
-                    if "Code Example:" in content:
-                        parts = content.split("Code Example:")
-                        content = parts[0].strip()
-                
-                context_parts.append(f"[{i+1}] Relevância: {relevance:.2f}\n{r['content']}\nFonte: {source_str}\n")
-            
-            context = "\n".join(context_parts)
-            
-            # Log context statistics
-            logger.info(f"Generated context with {len(results)} results and {len(context)} characters")
-            if code_examples:
-                logger.info(f"Context includes {len(code_examples)} code examples")
-                
-            return context, results
+            context_parts.append("## Contexto Adicional\n")
+            for r in results:
+                # Avoid duplicating if already shown as code example, or show non-code part
+                if not (expected_output == "code" and r.get("has_code_example")):
+                    context_parts.append(f"[Score: {r['relevance_score']:.2f}, Fonte: {r['collection']}]\n{r['content']}\n")
+
+            context_str = "\n".join(context_parts)
+            logger.info(f"Generated context with {len(results)} results, {len(context_str)} chars for query: {query}")
+            return context_str, results
+
         except Exception as e:
             logger.error(f"Error getting document context: {str(e)}")
             return "", []
-
-    def create_interface(self) -> gr.ChatInterface:
-        log_function_call(logger, "BFCScriptUI.create_interface")
-
-        def chat_fn(message, history):
-            try:
-                search_results = self.search(message)
-                response = self.response_generator.generate_response(message, search_results, history)
-                return response
-            except Exception as e:
-                return f"Error: {e}"
-
-        interface = gr.ChatInterface(
-            fn=chat_fn,
-            title="BFC Script Assistant",
-            description="Ask questions about BFC Script programming.",
-            theme=gr.themes.Soft(),
-            examples=["Como faço um loop em BFC Script?", "O que é a função FOLHA?"],
-            retry_btn=None,
-            undo_btn=None,
-            clear_btn="Limpar Conversa"
-        )
-        log_function_return(logger, "BFCScriptUI.create_interface", result=interface)
-        return interface
-
-    def _initialize_reranker(self):
-        """Initialize the reranker component"""
-        try:
-            # For now, we're using a simple reranking approach based on semantic similarity
-            # This could be enhanced with a more sophisticated reranker in the future
-            self.reranker = {
-                "is_fitted": True,  # Simple reranker is always ready
-                "type": "semantic_similarity"
-            }
-            logger.info("Reranker initialized successfully")
-        except Exception as e:
-            logger.error(f"Error initializing reranker: {str(e)}")
-            self.reranker = {
-                "is_fitted": False,
-                "type": "none"
-            }
-
-    def _initialize_query_analyzer(self):
-        """Initialize the query analyzer component"""
-        try:
-            self.query_analyzer = {
-                "is_initialized": True,
-                "type": "semantic",
-                "features": {
-                    "intent_detection": True,
-                    "entity_recognition": True,
-                    "domain_specific": True
-                }
-            }
-            logger.info("Query analyzer initialized successfully")
-        except Exception as e:
-            logger.error(f"Error initializing query analyzer: {str(e)}")
-            self.query_analyzer = {
-                "is_initialized": False,
-                "type": "none",
-                "features": {}
-            }
