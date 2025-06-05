@@ -1,0 +1,49 @@
+{
+  "content": "Cálculo folha",
+  "metadata": {
+    "chunk_id": "calculoFolha_buscaCalculoRescisao_0_dc7fb38c",
+    "section_name": "calculoFolha_buscaCalculoRescisao",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 5,
+    "char_count": 13,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 4,
+    "keywords": [
+      "calculofolha",
+      "folha"
+    ],
+    "entities": [
+      "AvisoPrevioCalculoFolhaRescisao",
+      "buscaCalculoRescisao",
+      "NaturezaTextoJuridico",
+      "SindicatoFuncionario",
+      "PessoaJuridica",
+      "calculoFolha",
+      "TipoAto",
+      "CalculoFolhaRescisaoFonteDados",
+      "AtoFonteDados",
+      "MotivoRescisaoCalculoFolhaRescisao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.645282",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "dc7fb38c4a7fa23ae499280c9f999460",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: calculoFolha_buscaCalculoRescisao\nType: definition\nRelated to: AvisoPrevioCalculoFolhaRescisao, buscaCalculoRescisao, NaturezaTextoJuridico\n\nCálculo folha\n\nKeywords: calculofolha, folha",
+  "search_text": "calculoFolha_buscaCalculoRescisao AvisoPrevioCalculoFolhaRescisao buscaCalculoRescisao NaturezaTextoJuridico SindicatoFuncionario PessoaJuridica calculoFolha TipoAto CalculoFolhaRescisaoFonteDados AtoFonteDados MotivoRescisaoCalculoFolhaRescisao calculofolha folha Cálculo folha"
+}

@@ -1,0 +1,43 @@
+{
+  "content": "Médias e vantagens",
+  "metadata": {
+    "chunk_id": "mediasVantagens_busca_0_6ca0b992",
+    "section_name": "mediasVantagens_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 6,
+    "char_count": 18,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 4,
+    "keywords": [
+      "mediasvantagens"
+    ],
+    "entities": [
+      "mediasVantagens",
+      "busca",
+      "EventosAssociacaoFonteDados",
+      "EventosComposicaoAssociacaoFonteDados",
+      "MediaVantagemFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.288188",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "6ca0b99204a1f3bf8fd2f4f2059c2f6b",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: mediasVantagens_busca\nType: definition\nRelated to: mediasVantagens, busca, EventosAssociacaoFonteDados\n\nMédias e vantagens\n\nKeywords: mediasvantagens",
+  "search_text": "mediasVantagens_busca mediasVantagens busca EventosAssociacaoFonteDados EventosComposicaoAssociacaoFonteDados MediaVantagemFonteDados mediasvantagens Médias e vantagens"
+}

@@ -1,0 +1,46 @@
+{
+  "content": "buscaGfip (GET)\nMethod Description: Listagem de dados de Controle de Modalidades de Encargos INSS e FGTS\n\nRepresentation Type: GfipFonteDados",
+  "metadata": {
+    "chunk_id": "gfipMatricula_buscaGfip_1_1a48576c",
+    "section_name": "gfipMatricula_buscaGfip",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 40,
+    "char_count": 141,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 25,
+    "keywords": [
+      "dados",
+      "gfipmatricula",
+      "busca"
+    ],
+    "entities": [
+      "GfipMatriculaDto",
+      "gfipMatricula",
+      "GfipFonteDados",
+      "buscaGfip",
+      "GfipMatriculaFonteDados",
+      "MatriculaGfipFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.228082",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "1a48576cf63c2070cde88a379f58a204",
+    "related_chunks": [
+      "gfipMatricula_buscaGfip_0_a7181776",
+      "gfipMatricula_buscaGfip_6_b21e5052",
+      "gfipMatricula_importa_0_a7181776",
+      "gfipMatricula_buscaGfip_4_a955820e",
+      "gfipMatricula_importa_3_ad915c0f"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: gfipMatricula_buscaGfip\nType: definition\nRelated to: GfipMatriculaDto, gfipMatricula, GfipFonteDados\n\nbuscaGfip (GET)\nMethod Description: Listagem de dados de Controle de Modalidades de Encargos INSS e FGTS\n\nRepresentation Type: GfipFonteDados\n\nKeywords: dados, gfipmatricula, busca",
+  "search_text": "gfipMatricula_buscaGfip GfipMatriculaDto gfipMatricula GfipFonteDados buscaGfip GfipMatriculaFonteDados MatriculaGfipFonteDados dados gfipmatricula busca buscaGfip (GET)\nMethod Description: Listagem de dados de Controle de Modalidades de Encargos INSS e FGTS\n\nRepresentation Type: GfipFonteDados"
+}

@@ -1,0 +1,51 @@
+{
+  "content": "- id: Id (Type: Long)\n- descricao: Descrição da tabela (Type: String)\n- identificador: Identificador da tabela (Type: String)",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliar_busca_4_fcbb62df",
+    "section_name": "tabelaAuxiliar_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 35,
+    "char_count": 125,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 19,
+    "keywords": [
+      "tabelaauxiliar",
+      "identificador",
+      "id",
+      "descricao"
+    ],
+    "entities": [
+      "TabelaAuxiliarRegistroSemValores",
+      "TabelaAuxiliarValorSemCampo",
+      "busca",
+      "TabelaAuxiliarCampoSemValores",
+      "TabelaAuxiliar",
+      "TabelaAuxiliarRegistro",
+      "TabelaAuxiliarCampo",
+      "tabelaAuxiliar",
+      "TabelaAuxiliarValorSemRegistro",
+      "TabelaAuxiliarImportacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.217884",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "fcbb62df25e1a84079f4c265e6a54095",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "tabelaAuxiliar_exclui_1_469039d5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tabelaAuxiliar_busca\nType: reference\nRelated to: TabelaAuxiliarRegistroSemValores, TabelaAuxiliarValorSemCampo, busca\n\n- id: Id (Type: Long)\n- descricao: Descrição da tabela (Type: String)\n- identificador: Identificador da tabela (Type: String)\n\nKeywords: tabelaauxiliar, identificador, id, descricao",
+  "search_text": "tabelaAuxiliar_busca TabelaAuxiliarRegistroSemValores TabelaAuxiliarValorSemCampo busca TabelaAuxiliarCampoSemValores TabelaAuxiliar TabelaAuxiliarRegistro TabelaAuxiliarCampo tabelaAuxiliar TabelaAuxiliarValorSemRegistro TabelaAuxiliarImportacao tabelaauxiliar identificador id descricao - id: Id (Type: Long)\n- descricao: Descrição da tabela (Type: String)\n- identificador: Identificador da tabela (Type: String)"
+}

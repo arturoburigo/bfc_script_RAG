@@ -1,0 +1,49 @@
+{
+  "content": "groovy\nfonteTiposAto = Dados.pessoal.v2.tiposAto;\n\ndadosTiposAto = fonteTiposAto.busca(campos: \"id, descricao, classificacao\",ordenacao: \"classificacao asc\")\n\npercorrer (dadosTiposAto) { itemTiposAto ->\n\n}",
+  "metadata": {
+    "chunk_id": "tiposAto_busca_6_baa09e19",
+    "section_name": "tiposAto_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 76,
+    "char_count": 205,
+    "overlap_with_previous": 10,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "tipo",
+      "ordenacao",
+      "v2",
+      "tiposato",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "TipoAto",
+      "tiposAto",
+      "Dados.pessoal.v2.tiposAto",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.198144",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "baa09e191206a141c6ed3019a969d68c",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: tiposAto_busca\nType: example\nRelated to: TipoAto, tiposAto, Dados.pessoal.v2.tiposAto\n\ngroovy\nfonteTiposAto = Dados.pessoal.v2.tiposAto;\n\ndadosTiposAto = fonteTiposAto.busca(campos: \"id, descricao, classificacao\",ordenacao: \"classificacao asc\")\n\npercorrer (dadosTiposAto) { itemTiposAto ->\n\n}\n\nKeywords: pessoal, busca, tipo, ordenacao, v2, tiposato, campo, dados",
+  "search_text": "tiposAto_busca TipoAto tiposAto Dados.pessoal.v2.tiposAto busca pessoal busca tipo ordenacao v2 tiposato campo dados groovy\nfonteTiposAto = Dados.pessoal.v2.tiposAto;\n\ndadosTiposAto = fonteTiposAto.busca(campos: \"id, descricao, classificacao\",ordenacao: \"classificacao asc\")\n\npercorrer (dadosTiposAto) { itemTiposAto ->\n\n}"
+}

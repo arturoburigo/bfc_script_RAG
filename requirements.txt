@@ -1,0 +1,4 @@
+ctransformers>=0.2.27
+python-dotenv>=1.0.0
+chromadb>=0.4.22
+openai>=1.12.0 

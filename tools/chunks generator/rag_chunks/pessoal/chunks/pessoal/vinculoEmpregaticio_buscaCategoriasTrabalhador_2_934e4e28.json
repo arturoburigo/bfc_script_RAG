@@ -1,0 +1,44 @@
+{
+  "content": "Listagem de categorias do trabalhador\n\nRepresentation Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados",
+  "metadata": {
+    "chunk_id": "vinculoEmpregaticio_buscaCategoriasTrabalhador_2_934e4e28",
+    "section_name": "vinculoEmpregaticio_buscaCategoriasTrabalhador",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 28,
+    "char_count": 109,
+    "overlap_with_previous": 25,
+    "overlap_with_next": 26,
+    "keywords": [
+      "vinculoempregaticio",
+      "dados"
+    ],
+    "entities": [
+      "buscaCategoriasTrabalhador",
+      "VinculoEmpregaticioMotivoRescisaoFonteDados",
+      "vinculoEmpregaticio",
+      "VinculoEmpregaticioCategoriaTrabalhadorFonteDados",
+      "VinculoEmpregaticioFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.201659",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "934e4e28d069413026c9aedbd4ae0aef",
+    "related_chunks": [
+      "vinculoEmpregaticio_busca_2_802b9c15",
+      "vinculoEmpregaticio_buscaCategoriasTrabalhador_3_934e4e28",
+      "cargo_busca_3_b8c35b40",
+      "cargo_buscaTodos_3_e9113024",
+      "vinculoEmpregaticio_buscaCategoriasTrabalhador_4_0eedb897"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: vinculoEmpregaticio_buscaCategoriasTrabalhador\nType: definition\nRelated to: buscaCategoriasTrabalhador, VinculoEmpregaticioMotivoRescisaoFonteDados, vinculoEmpregaticio\n\nListagem de categorias do trabalhador\n\nRepresentation Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados\n\nKeywords: vinculoempregaticio, dados",
+  "search_text": "vinculoEmpregaticio_buscaCategoriasTrabalhador buscaCategoriasTrabalhador VinculoEmpregaticioMotivoRescisaoFonteDados vinculoEmpregaticio VinculoEmpregaticioCategoriaTrabalhadorFonteDados VinculoEmpregaticioFonteDados vinculoempregaticio dados Listagem de categorias do trabalhador\n\nRepresentation Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados"
+}

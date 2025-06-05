@@ -1,0 +1,48 @@
+{
+  "content": "groovy\nfonteEstados = Dados.pessoal.v2.estados;\n\ndadosEstados = fonteEstados.busca(campos: \"id, nome\",ordenacao: \"nome asc\")\n\npercorrer (dadosEstados) { itemEstados ->\n\n}",
+  "metadata": {
+    "chunk_id": "feriado_buscarTodos_6_9a667efe",
+    "section_name": "feriado_buscarTodos",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 58,
+    "char_count": 170,
+    "overlap_with_previous": 5,
+    "overlap_with_next": 0,
+    "keywords": [
+      "feriado",
+      "pessoal",
+      "busca",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "feriado",
+      "FeriadoDadosRepresentation",
+      "Dados.pessoal.v2.estados",
+      "buscarTodos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.203113",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "9a667efe4d09580ef6ffc1e909f53859",
+    "related_chunks": [
+      "feriado_buscarTodos_3_ae2a9086",
+      "feriado_buscarTodos_5_020d3034",
+      "feriado_buscarTodos_0_1528e9c1",
+      "feriado_buscarTodos_2_ae2a9086",
+      "estados_busca_6_9a667efe"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: feriado_buscarTodos\nType: example\nRelated to: feriado, FeriadoDadosRepresentation, Dados.pessoal.v2.estados\n\ngroovy\nfonteEstados = Dados.pessoal.v2.estados;\n\ndadosEstados = fonteEstados.busca(campos: \"id, nome\",ordenacao: \"nome asc\")\n\npercorrer (dadosEstados) { itemEstados ->\n\n}\n\nKeywords: feriado, pessoal, busca, ordenacao, v2, campo, dados",
+  "search_text": "feriado_buscarTodos feriado FeriadoDadosRepresentation Dados.pessoal.v2.estados buscarTodos feriado pessoal busca ordenacao v2 campo dados groovy\nfonteEstados = Dados.pessoal.v2.estados;\n\ndadosEstados = fonteEstados.busca(campos: \"id, nome\",ordenacao: \"nome asc\")\n\npercorrer (dadosEstados) { itemEstados ->\n\n}"
+}

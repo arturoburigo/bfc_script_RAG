@@ -1,0 +1,47 @@
+{
+  "content": "buscaFontes (GET)\nMethod Description: Listagem de fontes de divulgação\n\nRepresentation Type: AtoFonteDivulgacao",
+  "metadata": {
+    "chunk_id": "atos_buscaFontes_1_83ea55ca",
+    "section_name": "atos_buscaFontes",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 30,
+    "char_count": 111,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 18,
+    "keywords": [
+      "busca",
+      "atos"
+    ],
+    "entities": [
+      "AtoFonteDados",
+      "ArquivoAto",
+      "NaturezaTextoJuridico",
+      "AtoFonteDivulgacao",
+      "TipoAto",
+      "buscaFontes",
+      "atos",
+      "FonteDivulgacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.199835",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "83ea55ca0dbece0982d64ccba3aca468",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "fontesDivulgacao_busca_2_58920ed9"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: atos_buscaFontes\nType: definition\nRelated to: AtoFonteDados, ArquivoAto, NaturezaTextoJuridico\n\nbuscaFontes (GET)\nMethod Description: Listagem de fontes de divulgação\n\nRepresentation Type: AtoFonteDivulgacao\n\nKeywords: busca, atos",
+  "search_text": "atos_buscaFontes AtoFonteDados ArquivoAto NaturezaTextoJuridico AtoFonteDivulgacao TipoAto buscaFontes atos FonteDivulgacao busca atos buscaFontes (GET)\nMethod Description: Listagem de fontes de divulgação\n\nRepresentation Type: AtoFonteDivulgacao"
+}

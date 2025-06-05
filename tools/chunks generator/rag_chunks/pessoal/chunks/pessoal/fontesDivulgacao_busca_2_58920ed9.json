@@ -1,0 +1,41 @@
+{
+  "content": "Listagem de fontes de divulgação\n\nRepresentation Type: FonteDivulgacao",
+  "metadata": {
+    "chunk_id": "fontesDivulgacao_busca_2_58920ed9",
+    "section_name": "fontesDivulgacao_busca",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 18,
+    "char_count": 70,
+    "overlap_with_previous": 16,
+    "overlap_with_next": 17,
+    "keywords": [
+      "fontesdivulgacao"
+    ],
+    "entities": [
+      "fontesDivulgacao",
+      "FonteDivulgacao",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.664355",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "58920ed96a9d59d16499d0864e132ebd",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0",
+      "pessoaFisica_busca_6_538fb60a"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: fontesDivulgacao_busca\nType: definition\nRelated to: fontesDivulgacao, FonteDivulgacao, busca\n\nListagem de fontes de divulgação\n\nRepresentation Type: FonteDivulgacao\n\nKeywords: fontesdivulgacao",
+  "search_text": "fontesDivulgacao_busca fontesDivulgacao FonteDivulgacao busca fontesdivulgacao Listagem de fontes de divulgação\n\nRepresentation Type: FonteDivulgacao"
+}

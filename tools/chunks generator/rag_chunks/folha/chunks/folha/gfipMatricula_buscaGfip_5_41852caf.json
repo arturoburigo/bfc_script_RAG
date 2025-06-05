@@ -1,0 +1,54 @@
+{
+  "content": "## GfipMatriculaDto\n- codigoMatricula: Código da matrícula (Type: Long)\n- codigoGfip: Código da gfip (Type: Long)\n- situacaoEnvioMatricula: Situação do envio da matrícula (Type: )\n\n## MatriculaGfipFonteDados\n- id: Matrícula do empregado (Type: Long)\n\n## GfipMatriculaFonteDados\n- id: Identificador (Type: Long)\n- matricula: Matrícula (Type: MatriculaGfipFonteDados)\n\n## GfipFonteDados\n- id: Código da GFIP (Type: Long)\n- competencia: Competência (Type: YearMonth)\n- tipoRecolhimento: Tipo de recolhimento utilizado na geração da GFIP (Type: )\n- situacaoEnvioMatricula: Situação do envio da GFIP (Type: )\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- modalidade: Modalidade (Type: )\n- gfipMatriculas: Matrícula GFIP (Type: GfipMatriculaFonteDados)",
+  "metadata": {
+    "chunk_id": "gfipMatricula_buscaGfip_5_41852caf",
+    "section_name": "gfipMatricula_buscaGfip",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 277,
+    "char_count": 834,
+    "overlap_with_previous": 66,
+    "overlap_with_next": 25,
+    "keywords": [
+      "codigomatricula",
+      "situacaoenviomatricula",
+      "id",
+      "gfipfontedados",
+      "gfipmatricula",
+      "codigogfip",
+      "gfipmatriculadto",
+      "tipo",
+      "dados",
+      "matriculagfipfontedados",
+      "gfipmatriculafontedados"
+    ],
+    "entities": [
+      "GfipMatriculaDto",
+      "gfipMatricula",
+      "GfipFonteDados",
+      "buscaGfip",
+      "GfipMatriculaFonteDados",
+      "MatriculaGfipFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.228679",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "41852caf85ea7ad888e719bbad2d078e",
+    "related_chunks": [
+      "gfipMatricula_buscaGfip_0_a7181776",
+      "gfipMatricula_buscaGfip_6_b21e5052",
+      "gfipMatricula_buscaGfip_1_1a48576c",
+      "gfipMatricula_importa_0_a7181776",
+      "gfipMatricula_buscaGfip_4_a955820e"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: gfipMatricula_buscaGfip\nType: reference\nRelated to: GfipMatriculaDto, gfipMatricula, GfipFonteDados\n\n## GfipMatriculaDto\n- codigoMatricula: Código da matrícula (Type: Long)\n- codigoGfip: Código da gfip (Type: Long)\n- situacaoEnvioMatricula: Situação do envio da matrícula (Type: )\n\n## MatriculaGfipFonteDados\n- id: Matrícula do empregado (Type: Long)\n\n## GfipMatriculaFonteDados\n- id: Identificador (Type: Long)\n- matricula: Matrícula (Type: MatriculaGfipFonteDados)\n\n## GfipFonteDados\n- id: Código da GFIP (Type: Long)\n- competencia: Competência (Type: YearMonth)\n- tipoRecolhimento: Tipo de recolhimento utilizado na geração da GFIP (Type: )\n- situacaoEnvioMatricula: Situação do envio da GFIP (Type: )\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- modalidade: Modalidade (Type: )\n- gfipMatriculas: Matrícula GFIP (Type: GfipMatriculaFonteDados)\n\nKeywords: codigomatricula, situacaoenviomatricula, id, gfipfontedados, gfipmatricula, codigogfip, gfipmatriculadto, tipo, dados, matriculagfipfontedados, gfipmatriculafontedados",
+  "search_text": "gfipMatricula_buscaGfip GfipMatriculaDto gfipMatricula GfipFonteDados buscaGfip GfipMatriculaFonteDados MatriculaGfipFonteDados codigomatricula situacaoenviomatricula id gfipfontedados gfipmatricula codigogfip gfipmatriculadto tipo dados matriculagfipfontedados gfipmatriculafontedados ## GfipMatriculaDto\n- codigoMatricula: Código da matrícula (Type: Long)\n- codigoGfip: Código da gfip (Type: Long)\n- situacaoEnvioMatricula: Situação do envio da matrícula (Type: )\n\n## MatriculaGfipFonteDados\n- id: Matrícula do empregado (Type: Long)\n\n## GfipMatriculaFonteDados\n- id: Identificador (Type: Long)\n- matricula: Matrícula (Type: MatriculaGfipFonteDados)\n\n## GfipFonteDados\n- id: Código da GFIP (Type: Long)\n- competencia: Competência (Type: YearMonth)\n- tipoRecolhimento: Tipo de recolhimento utilizado na geração da GFIP (Type: )\n- situacaoEnvioMatricula: Situação do envio da GFIP (Type: )\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- modalidade: Modalidade (Type: )\n- gfipMatriculas: Matrícula GFIP (Type: GfipMatriculaFonteDados)"
+}

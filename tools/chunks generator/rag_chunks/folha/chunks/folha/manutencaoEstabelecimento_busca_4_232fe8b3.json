@@ -1,0 +1,59 @@
+{
+  "content": "- entidade: Identificador da entidade (Type: Long)\n- inicioVigencia: Início vigência (Type: YearMonth)\n- id: Identificador (Type: Long)",
+  "metadata": {
+    "chunk_id": "manutencaoEstabelecimento_busca_4_232fe8b3",
+    "section_name": "manutencaoEstabelecimento_busca",
+    "chunk_index": 4,
+    "total_chunks": 5,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 40,
+    "char_count": 135,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 0,
+    "keywords": [
+      "iniciovigencia",
+      "entidade",
+      "id",
+      "manutencaoestabelecimento"
+    ],
+    "entities": [
+      "ConfiguracaoEncargosSociaisGeralManutencaoEstabelecimento",
+      "EntidadeEducativaEncargosSociaisManutencaoEstabelecimento",
+      "ConfiguracaoEncargosSociaisFgtsManutencaoEstabelecimento",
+      "AtoManutencaoEstabelecimento",
+      "busca",
+      "ConfiguracaoFaixaContribuicaoManutencaoEstabelecimento",
+      "AgenciaManutencaoEstabelecimento",
+      "PessoaJuridicaManutencaoEstabelecimento",
+      "ManutencaoEstabelecimentoConfiguracaoEncargosSociaisFundoPrevidenciaId",
+      "BancoManutencaoEstabelecimento",
+      "manutencaoEstabelecimento",
+      "ConfiguracaoEncargosSociaisFundoPrevidenciaManutencaoEstabelecimento",
+      "ManutencaoEstabelecimento",
+      "ConfiguracaoEncargosSociaisDadosProcessuaisManutencaoEstabelecimento",
+      "ConfiguracaoSalarioFamiliaManutencaoEstabelecimento",
+      "ConfiguracaoFaixaContribuicaoIrrfManutencaoEstabelecimento",
+      "ConfiguracaoEncargosSociaisRgpsManutencaoEstabelecimento",
+      "ConfiguracaoEncargosSociaisIrrfManutencaoEstabelecimento"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.650585",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "232fe8b321129c198d990f78f0dc814c",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: manutencaoEstabelecimento_busca\nType: reference\nRelated to: ConfiguracaoEncargosSociaisGeralManutencaoEstabelecimento, EntidadeEducativaEncargosSociaisManutencaoEstabelecimento, ConfiguracaoEncargosSociaisFgtsManutencaoEstabelecimento\n\n- entidade: Identificador da entidade (Type: Long)\n- inicioVigencia: Início vigência (Type: YearMonth)\n- id: Identificador (Type: Long)\n\nKeywords: iniciovigencia, entidade, id, manutencaoestabelecimento",
+  "search_text": "manutencaoEstabelecimento_busca ConfiguracaoEncargosSociaisGeralManutencaoEstabelecimento EntidadeEducativaEncargosSociaisManutencaoEstabelecimento ConfiguracaoEncargosSociaisFgtsManutencaoEstabelecimento AtoManutencaoEstabelecimento busca ConfiguracaoFaixaContribuicaoManutencaoEstabelecimento AgenciaManutencaoEstabelecimento PessoaJuridicaManutencaoEstabelecimento ManutencaoEstabelecimentoConfiguracaoEncargosSociaisFundoPrevidenciaId BancoManutencaoEstabelecimento manutencaoEstabelecimento ConfiguracaoEncargosSociaisFundoPrevidenciaManutencaoEstabelecimento ManutencaoEstabelecimento ConfiguracaoEncargosSociaisDadosProcessuaisManutencaoEstabelecimento ConfiguracaoSalarioFamiliaManutencaoEstabelecimento ConfiguracaoFaixaContribuicaoIrrfManutencaoEstabelecimento ConfiguracaoEncargosSociaisRgpsManutencaoEstabelecimento ConfiguracaoEncargosSociaisIrrfManutencaoEstabelecimento iniciovigencia entidade id manutencaoestabelecimento - entidade: Identificador da entidade (Type: Long)\n- inicioVigencia: Início vigência (Type: YearMonth)\n- id: Identificador (Type: Long)"
+}

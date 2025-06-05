@@ -1,4 +1,0 @@
-# SituacaoNivelSalarial
-Enum: SituacaoNivelSalarial
-- Ativo (Key: ATIVO, Value: 1)
-- Inativo (Key: INATIVO, Value: 2)

@@ -1,0 +1,48 @@
+{
+  "content": "## MotivoAlteracaoSalarial\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- tipoMovimentacaoPessoal: Tipo de movimentação de pessoal (Type: TipoMovimentacaoPessoal)\n- camposAdicionais:  (Type: CamposAdicionais)",
+  "metadata": {
+    "chunk_id": "motivoAlteracaoSalarial_buscarTodos_4_47de78f6",
+    "section_name": "motivoAlteracaoSalarial_buscarTodos",
+    "chunk_index": 4,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 73,
+    "char_count": 234,
+    "overlap_with_previous": 8,
+    "overlap_with_next": 21,
+    "keywords": [
+      "pessoal",
+      "motivoalteracaosalarial",
+      "tipo",
+      "id",
+      "descricao",
+      "camposadicionais",
+      "tipomovimentacaopessoal",
+      "campo"
+    ],
+    "entities": [
+      "MotivoAlteracaoSalarial",
+      "motivoAlteracaoSalarial",
+      "buscarTodos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.086509",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "47de78f6c57bfef10435faf2fed3bc6d",
+    "related_chunks": [
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc",
+      "remuneracoes_buscaComEventos_8_6afef83d",
+      "remuneracoes_buscaComEventos_1_237ee743"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: motivoAlteracaoSalarial_buscarTodos\nType: reference\nRelated to: MotivoAlteracaoSalarial, motivoAlteracaoSalarial, buscarTodos\n\n## MotivoAlteracaoSalarial\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- tipoMovimentacaoPessoal: Tipo de movimentação de pessoal (Type: TipoMovimentacaoPessoal)\n- camposAdicionais:  (Type: CamposAdicionais)\n\nKeywords: pessoal, motivoalteracaosalarial, tipo, id, descricao, camposadicionais, tipomovimentacaopessoal, campo",
+  "search_text": "motivoAlteracaoSalarial_buscarTodos MotivoAlteracaoSalarial motivoAlteracaoSalarial buscarTodos pessoal motivoalteracaosalarial tipo id descricao camposadicionais tipomovimentacaopessoal campo ## MotivoAlteracaoSalarial\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- tipoMovimentacaoPessoal: Tipo de movimentação de pessoal (Type: TipoMovimentacaoPessoal)\n- camposAdicionais:  (Type: CamposAdicionais)"
+}

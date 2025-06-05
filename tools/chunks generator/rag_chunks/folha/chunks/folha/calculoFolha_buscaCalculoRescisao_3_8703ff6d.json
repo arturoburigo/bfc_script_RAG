@@ -1,0 +1,50 @@
+{
+  "content": "Cálculo de folha de rescisão\n\nRepresentation Type: CalculoFolhaRescisaoFonteDados",
+  "metadata": {
+    "chunk_id": "calculoFolha_buscaCalculoRescisao_3_8703ff6d",
+    "section_name": "calculoFolha_buscaCalculoRescisao",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 25,
+    "char_count": 81,
+    "overlap_with_previous": 23,
+    "overlap_with_next": 8,
+    "keywords": [
+      "dados",
+      "calculofolha",
+      "folha"
+    ],
+    "entities": [
+      "AvisoPrevioCalculoFolhaRescisao",
+      "buscaCalculoRescisao",
+      "NaturezaTextoJuridico",
+      "SindicatoFuncionario",
+      "PessoaJuridica",
+      "calculoFolha",
+      "TipoAto",
+      "CalculoFolhaRescisaoFonteDados",
+      "AtoFonteDados",
+      "MotivoRescisaoCalculoFolhaRescisao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.645421",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "8703ff6d063c9bc7c62677db1c498236",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: calculoFolha_buscaCalculoRescisao\nType: definition\nRelated to: AvisoPrevioCalculoFolhaRescisao, buscaCalculoRescisao, NaturezaTextoJuridico\n\nCálculo de folha de rescisão\n\nRepresentation Type: CalculoFolhaRescisaoFonteDados\n\nKeywords: dados, calculofolha, folha",
+  "search_text": "calculoFolha_buscaCalculoRescisao AvisoPrevioCalculoFolhaRescisao buscaCalculoRescisao NaturezaTextoJuridico SindicatoFuncionario PessoaJuridica calculoFolha TipoAto CalculoFolhaRescisaoFonteDados AtoFonteDados MotivoRescisaoCalculoFolhaRescisao dados calculofolha folha Cálculo de folha de rescisão\n\nRepresentation Type: CalculoFolhaRescisaoFonteDados"
+}

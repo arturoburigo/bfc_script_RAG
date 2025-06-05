@@ -1,4 +1,0 @@
-# TipoGeracao
-Enum: TipoGeracao
-- GRRF (Key: GRRF, Value: 1)
-- GFIP (Key: GFIP, Value: 2)

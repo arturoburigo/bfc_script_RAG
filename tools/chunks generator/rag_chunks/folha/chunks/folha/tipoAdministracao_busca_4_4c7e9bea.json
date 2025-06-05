@@ -1,0 +1,45 @@
+{
+  "content": "- tipo: Tipo de Administração (Type: )\n- subteto: Valor do Subteto (Type: BigDecimal)\n- naturezaJuridica: Natureza Jurídica (Type: )\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "tipoAdministracao_busca_4_4c7e9bea",
+    "section_name": "tipoAdministracao_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 53,
+    "char_count": 170,
+    "overlap_with_previous": 5,
+    "overlap_with_next": 31,
+    "keywords": [
+      "subteto",
+      "descricao",
+      "naturezajuridica",
+      "tipoadministracao",
+      "tipo"
+    ],
+    "entities": [
+      "TipoAdministraçãoDadosRepresentation",
+      "tipoAdministracao",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.239487",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "4c7e9bea0d5de6b0ba850588d0180890",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tipoAdministracao_busca\nType: reference\nRelated to: TipoAdministraçãoDadosRepresentation, tipoAdministracao, busca\n\n- tipo: Tipo de Administração (Type: )\n- subteto: Valor do Subteto (Type: BigDecimal)\n- naturezaJuridica: Natureza Jurídica (Type: )\n- descricao: Descrição (Type: String)\n\nKeywords: subteto, descricao, naturezajuridica, tipoadministracao, tipo",
+  "search_text": "tipoAdministracao_busca TipoAdministraçãoDadosRepresentation tipoAdministracao busca subteto descricao naturezajuridica tipoadministracao tipo - tipo: Tipo de Administração (Type: )\n- subteto: Valor do Subteto (Type: BigDecimal)\n- naturezaJuridica: Natureza Jurídica (Type: )\n- descricao: Descrição (Type: String)"
+}

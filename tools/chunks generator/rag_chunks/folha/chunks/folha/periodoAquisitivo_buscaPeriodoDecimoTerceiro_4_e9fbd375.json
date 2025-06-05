@@ -1,0 +1,48 @@
+{
+  "content": "- situacao: Situação (Type: )\n- configuracao: Configuração (Type: )\n- dataInicial: Data inicial (Type: LocalDate)\n- id:  (Type: Long)\n- anoExercicio: Ano do exercício (Type: Year)\n- matricula.id: Identificador da matrícula (Type: Long)\n- dataFinal: Data final (Type: LocalDate)",
+  "metadata": {
+    "chunk_id": "periodoAquisitivo_buscaPeriodoDecimoTerceiro_4_e9fbd375",
+    "section_name": "periodoAquisitivo_buscaPeriodoDecimoTerceiro",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 84,
+    "char_count": 277,
+    "overlap_with_previous": 6,
+    "overlap_with_next": 34,
+    "keywords": [
+      "situacao",
+      "configuracao",
+      "id",
+      "anoexercicio",
+      "periodoaquisitivo",
+      "datainicial"
+    ],
+    "entities": [
+      "PeriodoAquisitivoDecimoTerceiro",
+      "buscaPeriodoDecimoTerceiro",
+      "SuspensaoCessacaoPeriodoAquisitivoRepresentation",
+      "periodoAquisitivo",
+      "ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.442634",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "e9fbd3751562644704ea007cb9290864",
+    "related_chunks": [
+      "provisao_buscaBases_5_e3986e07",
+      "provisao_busca_6_0cee3b39",
+      "provisao_buscaBases_1_b10fac4c",
+      "provisao_busca_1_a6c8a2b0",
+      "provisao_buscaBases_4_f5cc4ecd"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: periodoAquisitivo_buscaPeriodoDecimoTerceiro\nType: reference\nRelated to: PeriodoAquisitivoDecimoTerceiro, buscaPeriodoDecimoTerceiro, SuspensaoCessacaoPeriodoAquisitivoRepresentation\n\n- situacao: Situação (Type: )\n- configuracao: Configuração (Type: )\n- dataInicial: Data inicial (Type: LocalDate)\n- id:  (Type: Long)\n- anoExercicio: Ano do exercício (Type: Year)\n- matricula.id: Identificador da matrícula (Type: Long)\n- dataFinal: Data final (Type: LocalDate)\n\nKeywords: situacao, configuracao, id, anoexercicio, periodoaquisitivo, datainicial",
+  "search_text": "periodoAquisitivo_buscaPeriodoDecimoTerceiro PeriodoAquisitivoDecimoTerceiro buscaPeriodoDecimoTerceiro SuspensaoCessacaoPeriodoAquisitivoRepresentation periodoAquisitivo ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro situacao configuracao id anoexercicio periodoaquisitivo datainicial - situacao: Situação (Type: )\n- configuracao: Configuração (Type: )\n- dataInicial: Data inicial (Type: LocalDate)\n- id:  (Type: Long)\n- anoExercicio: Ano do exercício (Type: Year)\n- matricula.id: Identificador da matrícula (Type: Long)\n- dataFinal: Data final (Type: LocalDate)"
+}

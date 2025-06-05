@@ -1,0 +1,55 @@
+{
+  "content": "- origem.id: Id da Origem do nível salarial  (Type: Long)\n- planoCargoSalario.descricao: Descrição do plano de cargos e salários (Type: String)\n- dataHoraCriacao: Data de criação (Type: LocalDateTime)\n- id: Id (Type: Long)\n- cargaHoraria: Carga horária (Type: BigDecimal)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "nivelSalarial_buscaHistoricos_4_901b3f75",
+    "section_name": "nivelSalarial_buscaHistoricos",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 93,
+    "char_count": 309,
+    "overlap_with_previous": 6,
+    "overlap_with_next": 47,
+    "keywords": [
+      "cargahoraria",
+      "id",
+      "descricao",
+      "datahoracriacao",
+      "nivelsalarial"
+    ],
+    "entities": [
+      "NivelSalarialAtoTipoFonteDados",
+      "NivelSalarialClasseReferenciaFonteDados",
+      "ClasseReferenciaFonteDados",
+      "NivelSalarialCompletaFonteDados",
+      "MotivoAlteracaoSalarial",
+      "NivelSalarialAtoFonteDados",
+      "NivelSalarialPlanoCargoSalarioFonteDados",
+      "NivelSalarialAssociacao",
+      "buscaHistoricos",
+      "NivelSalarialReajusteSalarialFonteDados",
+      "nivelSalarial",
+      "NivelSalarialCompletaComHistorico",
+      "CargoRemuneracaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.565168",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "901b3f75ce05b21e8f6d2166ae86cbab",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: nivelSalarial_buscaHistoricos\nType: reference\nRelated to: NivelSalarialAtoTipoFonteDados, NivelSalarialClasseReferenciaFonteDados, ClasseReferenciaFonteDados\n\n- origem.id: Id da Origem do nível salarial  (Type: Long)\n- planoCargoSalario.descricao: Descrição do plano de cargos e salários (Type: String)\n- dataHoraCriacao: Data de criação (Type: LocalDateTime)\n- id: Id (Type: Long)\n- cargaHoraria: Carga horária (Type: BigDecimal)\n- descricao: Descrição (Type: String)\n\nKeywords: cargahoraria, id, descricao, datahoracriacao, nivelsalarial",
+  "search_text": "nivelSalarial_buscaHistoricos NivelSalarialAtoTipoFonteDados NivelSalarialClasseReferenciaFonteDados ClasseReferenciaFonteDados NivelSalarialCompletaFonteDados MotivoAlteracaoSalarial NivelSalarialAtoFonteDados NivelSalarialPlanoCargoSalarioFonteDados NivelSalarialAssociacao buscaHistoricos NivelSalarialReajusteSalarialFonteDados nivelSalarial NivelSalarialCompletaComHistorico CargoRemuneracaoFonteDados cargahoraria id descricao datahoracriacao nivelsalarial - origem.id: Id da Origem do nível salarial  (Type: Long)\n- planoCargoSalario.descricao: Descrição do plano de cargos e salários (Type: String)\n- dataHoraCriacao: Data de criação (Type: LocalDateTime)\n- id: Id (Type: Long)\n- cargaHoraria: Carga horária (Type: BigDecimal)\n- descricao: Descrição (Type: String)"
+}

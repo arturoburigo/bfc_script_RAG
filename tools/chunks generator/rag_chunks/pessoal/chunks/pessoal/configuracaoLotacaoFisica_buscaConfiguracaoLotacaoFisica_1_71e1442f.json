@@ -1,0 +1,55 @@
+{
+  "content": "buscaConfiguracaoLotacaoFisica (GET)\nMethod Description: Listagem da configuração de lotação físicas\n\nRepresentation Type: ConfiguracaoLotacaoFisica",
+  "metadata": {
+    "chunk_id": "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica_1_71e1442f",
+    "section_name": "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 39,
+    "char_count": 148,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 21,
+    "keywords": [
+      "lotacoesfisicas",
+      "busca"
+    ],
+    "entities": [
+      "EmpresaResponsavelLotacaoFisica",
+      "BairroLotacaoFisica",
+      "EnderecoLotacaoFisica",
+      "ProfissionalLocatacaoFisica",
+      "EstadoLotacaoFisica",
+      "TelefonesLotacaoFisica",
+      "ResponsavelLotacaoFisica",
+      "LotacaoFisica",
+      "NiveisConfiguracaoLotacaoFisica",
+      "ConfiguracaoLotacaoFisicaFonteDados",
+      "PaisLotacaoFisica",
+      "ConfiguracaoLotacaoFisica",
+      "buscaConfiguracaoLotacaoFisica",
+      "LogradouroLotacaoFisica",
+      "MunicipioLotacaoFisica",
+      "lotacoesFisicas"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.380538",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "71e1442f89879c260a2292baac13388d",
+    "related_chunks": [
+      "lotacaoFisica_busca_6_4bcc3eb6",
+      "lotacaoFisica_busca_1_b413aa40",
+      "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica_3_834aa679",
+      "lotacaoFisica_busca_2_63c6b571",
+      "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica_4_73c1f374"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica\nType: definition\nRelated to: EmpresaResponsavelLotacaoFisica, BairroLotacaoFisica, EnderecoLotacaoFisica\n\nbuscaConfiguracaoLotacaoFisica (GET)\nMethod Description: Listagem da configuração de lotação físicas\n\nRepresentation Type: ConfiguracaoLotacaoFisica\n\nKeywords: lotacoesfisicas, busca",
+  "search_text": "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica EmpresaResponsavelLotacaoFisica BairroLotacaoFisica EnderecoLotacaoFisica ProfissionalLocatacaoFisica EstadoLotacaoFisica TelefonesLotacaoFisica ResponsavelLotacaoFisica LotacaoFisica NiveisConfiguracaoLotacaoFisica ConfiguracaoLotacaoFisicaFonteDados PaisLotacaoFisica ConfiguracaoLotacaoFisica buscaConfiguracaoLotacaoFisica LogradouroLotacaoFisica MunicipioLotacaoFisica lotacoesFisicas lotacoesfisicas busca buscaConfiguracaoLotacaoFisica (GET)\nMethod Description: Listagem da configuração de lotação físicas\n\nRepresentation Type: ConfiguracaoLotacaoFisica"
+}

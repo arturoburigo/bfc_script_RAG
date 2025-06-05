@@ -1,0 +1,52 @@
+{
+  "content": "- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- situacaoMatricula: Situacao da matricula (Type: )\n- id: Identificador (Type: Long)\n- matricula.id: Identificador da matrícula (Type: Long)\n- competencia: Competência do cálculo (Type: YearMonth)",
+  "metadata": {
+    "chunk_id": "grrfMatricula_buscarMatricula_4_bd5a431c",
+    "section_name": "grrfMatricula_buscarMatricula",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 95,
+    "char_count": 328,
+    "overlap_with_previous": 5,
+    "overlap_with_next": 41,
+    "keywords": [
+      "tipoprocessamento",
+      "subtipoprocessamento",
+      "id",
+      "situacaomatricula",
+      "grrfmatricula",
+      "tipo",
+      "competencia"
+    ],
+    "entities": [
+      "GrrfFonteDados",
+      "GrrfMatricula",
+      "GrrfPessoaFisica",
+      "grrfMatricula",
+      "buscarMatricula",
+      "CodigoMatriculaFonteDadosMinhaFolha",
+      "GrrfMatriculaFonteDados",
+      "GrrfMatriculaDto"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.980466",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "bd5a431ceaa4007b9148259ffa25aee7",
+    "related_chunks": [
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc",
+      "remuneracoes_buscaComEventos_8_6afef83d",
+      "remuneracoes_buscaComEventos_1_237ee743"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: grrfMatricula_buscarMatricula\nType: reference\nRelated to: GrrfFonteDados, GrrfMatricula, GrrfPessoaFisica\n\n- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- situacaoMatricula: Situacao da matricula (Type: )\n- id: Identificador (Type: Long)\n- matricula.id: Identificador da matrícula (Type: Long)\n- competencia: Competência do cálculo (Type: YearMonth)\n\nKeywords: tipoprocessamento, subtipoprocessamento, id, situacaomatricula, grrfmatricula, tipo, competencia",
+  "search_text": "grrfMatricula_buscarMatricula GrrfFonteDados GrrfMatricula GrrfPessoaFisica grrfMatricula buscarMatricula CodigoMatriculaFonteDadosMinhaFolha GrrfMatriculaFonteDados GrrfMatriculaDto tipoprocessamento subtipoprocessamento id situacaomatricula grrfmatricula tipo competencia - subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- situacaoMatricula: Situacao da matricula (Type: )\n- id: Identificador (Type: Long)\n- matricula.id: Identificador da matrícula (Type: Long)\n- competencia: Competência do cálculo (Type: YearMonth)"
+}

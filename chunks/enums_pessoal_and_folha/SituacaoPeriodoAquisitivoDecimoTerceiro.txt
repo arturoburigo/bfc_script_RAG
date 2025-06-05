@@ -1,8 +1,0 @@
-# SituacaoPeriodoAquisitivoDecimoTerceiro
-Enum: SituacaoPeriodoAquisitivoDecimoTerceiro
-- Atrasado (Key: ATRASADO, Value: 1)
-- Em andamento (Key: EM_ANDAMENTO, Value: 2)
-- Perda de direito (Key: PERDA_DIREITO, Value: 3)
-- Quitado (Key: QUITADO, Value: 4)
-- Quitado parcialmente (Key: QUITADO_PARCIALMENTE, Value: 5)
-- Anulado (Key: ANULADO, Value: 6)

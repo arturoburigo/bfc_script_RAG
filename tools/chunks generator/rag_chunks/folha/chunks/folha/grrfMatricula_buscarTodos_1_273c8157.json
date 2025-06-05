@@ -1,0 +1,48 @@
+{
+  "content": "buscarTodos (GET)\nMethod Description: Listagem da GRRF\n\nRepresentation Type: GrrfFonteDados",
+  "metadata": {
+    "chunk_id": "grrfMatricula_buscarTodos_1_273c8157",
+    "section_name": "grrfMatricula_buscarTodos",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 24,
+    "char_count": 91,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 14,
+    "keywords": [
+      "grrfmatricula",
+      "dados",
+      "busca"
+    ],
+    "entities": [
+      "GrrfFonteDados",
+      "GrrfMatricula",
+      "GrrfPessoaFisica",
+      "grrfMatricula",
+      "CodigoMatriculaFonteDadosMinhaFolha",
+      "GrrfMatriculaFonteDados",
+      "buscarTodos",
+      "GrrfMatriculaDto"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.230156",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "273c815730c152fb8d81c022b44aef6f",
+    "related_chunks": [
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc",
+      "remuneracoes_buscaComEventos_8_6afef83d",
+      "remuneracoes_buscaComEventos_1_237ee743"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: grrfMatricula_buscarTodos\nType: definition\nRelated to: GrrfFonteDados, GrrfMatricula, GrrfPessoaFisica\n\nbuscarTodos (GET)\nMethod Description: Listagem da GRRF\n\nRepresentation Type: GrrfFonteDados\n\nKeywords: grrfmatricula, dados, busca",
+  "search_text": "grrfMatricula_buscarTodos GrrfFonteDados GrrfMatricula GrrfPessoaFisica grrfMatricula CodigoMatriculaFonteDadosMinhaFolha GrrfMatriculaFonteDados buscarTodos GrrfMatriculaDto grrfmatricula dados busca buscarTodos (GET)\nMethod Description: Listagem da GRRF\n\nRepresentation Type: GrrfFonteDados"
+}

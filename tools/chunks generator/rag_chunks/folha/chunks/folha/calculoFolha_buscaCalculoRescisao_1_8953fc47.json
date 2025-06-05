@@ -1,0 +1,51 @@
+{
+  "content": "buscaCalculoRescisao (GET)\nMethod Description: Cálculo de folha de rescisão\n\nRepresentation Type: CalculoFolhaRescisaoFonteDados",
+  "metadata": {
+    "chunk_id": "calculoFolha_buscaCalculoRescisao_1_8953fc47",
+    "section_name": "calculoFolha_buscaCalculoRescisao",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 38,
+    "char_count": 128,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 22,
+    "keywords": [
+      "busca",
+      "dados",
+      "calculofolha",
+      "folha"
+    ],
+    "entities": [
+      "AvisoPrevioCalculoFolhaRescisao",
+      "buscaCalculoRescisao",
+      "NaturezaTextoJuridico",
+      "SindicatoFuncionario",
+      "PessoaJuridica",
+      "calculoFolha",
+      "TipoAto",
+      "CalculoFolhaRescisaoFonteDados",
+      "AtoFonteDados",
+      "MotivoRescisaoCalculoFolhaRescisao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.645335",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "8953fc47ed0dc21c964980d3325eeaf3",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: calculoFolha_buscaCalculoRescisao\nType: definition\nRelated to: AvisoPrevioCalculoFolhaRescisao, buscaCalculoRescisao, NaturezaTextoJuridico\n\nbuscaCalculoRescisao (GET)\nMethod Description: Cálculo de folha de rescisão\n\nRepresentation Type: CalculoFolhaRescisaoFonteDados\n\nKeywords: busca, dados, calculofolha, folha",
+  "search_text": "calculoFolha_buscaCalculoRescisao AvisoPrevioCalculoFolhaRescisao buscaCalculoRescisao NaturezaTextoJuridico SindicatoFuncionario PessoaJuridica calculoFolha TipoAto CalculoFolhaRescisaoFonteDados AtoFonteDados MotivoRescisaoCalculoFolhaRescisao busca dados calculofolha folha buscaCalculoRescisao (GET)\nMethod Description: Cálculo de folha de rescisão\n\nRepresentation Type: CalculoFolhaRescisaoFonteDados"
+}

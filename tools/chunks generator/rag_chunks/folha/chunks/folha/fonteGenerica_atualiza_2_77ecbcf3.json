@@ -1,0 +1,46 @@
+{
+  "content": "## FonteGenerica\n- id: Id (Type: Long)\n- identificador: Identificador (Type: String)\n- tipoRegistro: Tipo do registro (Type: String)\n- conteudo: Conteúdo (Type: String)",
+  "metadata": {
+    "chunk_id": "fonteGenerica_atualiza_2_77ecbcf3",
+    "section_name": "fonteGenerica_atualiza",
+    "chunk_index": 2,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 49,
+    "char_count": 168,
+    "overlap_with_previous": 6,
+    "overlap_with_next": 13,
+    "keywords": [
+      "id",
+      "tiporegistro",
+      "conteudo",
+      "identificador",
+      "fontegenerica",
+      "tipo"
+    ],
+    "entities": [
+      "FonteGenerica",
+      "fonteGenerica",
+      "atualiza"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.235352",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "77ecbcf3b7461fa87c588a3237288855",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "fonteGenerica_exclui_3_5f202e7a",
+      "fonteGenerica_busca_4_c8dc2d69",
+      "fonteGenerica_busca_6_ac1c78af",
+      "fonteGenerica_busca_5_77ecbcf3"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: fonteGenerica_atualiza\nType: reference\nRelated to: FonteGenerica, fonteGenerica, atualiza\n\n## FonteGenerica\n- id: Id (Type: Long)\n- identificador: Identificador (Type: String)\n- tipoRegistro: Tipo do registro (Type: String)\n- conteudo: Conteúdo (Type: String)\n\nKeywords: id, tiporegistro, conteudo, identificador, fontegenerica, tipo",
+  "search_text": "fonteGenerica_atualiza FonteGenerica fonteGenerica atualiza id tiporegistro conteudo identificador fontegenerica tipo ## FonteGenerica\n- id: Id (Type: Long)\n- identificador: Identificador (Type: String)\n- tipoRegistro: Tipo do registro (Type: String)\n- conteudo: Conteúdo (Type: String)"
+}

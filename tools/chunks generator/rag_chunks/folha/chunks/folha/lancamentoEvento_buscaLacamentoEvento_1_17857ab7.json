@@ -1,0 +1,62 @@
+{
+  "content": "buscaLacamentoEvento (GET)\nMethod Description: Listagem de lançamento de eventos\n\nRepresentation Type: LancamentoEventoFonteDados",
+  "metadata": {
+    "chunk_id": "lancamentoEvento_buscaLacamentoEvento_1_17857ab7",
+    "section_name": "lancamentoEvento_buscaLacamentoEvento",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 29,
+    "char_count": 129,
+    "overlap_with_previous": 3,
+    "overlap_with_next": 14,
+    "keywords": [
+      "lancamentoevento",
+      "dados",
+      "busca"
+    ],
+    "entities": [
+      "TipoLogradouroOrganograma",
+      "ConfiguracaoEventoLancamentoEvento",
+      "EstadoPessoaFisica",
+      "MunicipioPessoaFisica",
+      "OrganogramaFonteDados",
+      "CodigoMatriculaLancamentoEvento",
+      "ConfiguracaoOrganograma",
+      "CargoOrganograma",
+      "PessoaFisicaLancamentoEvento",
+      "Endereco",
+      "MatriculaLancamentoEvento",
+      "buscaLacamentoEvento",
+      "TipoAdministracao",
+      "LogradouroOrganograma",
+      "ConfiguracaoNivelOrganograma",
+      "lancamentoEvento",
+      "OrganogramaResponsavelFonteDados",
+      "LancamentoEventoDto",
+      "FuncaoOrganograma",
+      "BairroOrganograma",
+      "AtoOrganograma",
+      "LancamentoEventoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.220095",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "17857ab71beef8b272207f967921c0cb",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: lancamentoEvento_buscaLacamentoEvento\nType: definition\nRelated to: TipoLogradouroOrganograma, ConfiguracaoEventoLancamentoEvento, EstadoPessoaFisica\n\nbuscaLacamentoEvento (GET)\nMethod Description: Listagem de lançamento de eventos\n\nRepresentation Type: LancamentoEventoFonteDados\n\nKeywords: lancamentoevento, dados, busca",
+  "search_text": "lancamentoEvento_buscaLacamentoEvento TipoLogradouroOrganograma ConfiguracaoEventoLancamentoEvento EstadoPessoaFisica MunicipioPessoaFisica OrganogramaFonteDados CodigoMatriculaLancamentoEvento ConfiguracaoOrganograma CargoOrganograma PessoaFisicaLancamentoEvento Endereco MatriculaLancamentoEvento buscaLacamentoEvento TipoAdministracao LogradouroOrganograma ConfiguracaoNivelOrganograma lancamentoEvento OrganogramaResponsavelFonteDados LancamentoEventoDto FuncaoOrganograma BairroOrganograma AtoOrganograma LancamentoEventoFonteDados lancamentoevento dados busca buscaLacamentoEvento (GET)\nMethod Description: Listagem de lançamento de eventos\n\nRepresentation Type: LancamentoEventoFonteDados"
+}

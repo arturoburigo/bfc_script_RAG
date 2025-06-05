@@ -1,0 +1,46 @@
+{
+  "content": "Retorna os documentos anexos ao ato.\n\nRepresentation Type: ArquivoAto",
+  "metadata": {
+    "chunk_id": "atos_buscaDocumentos_2_7d3996d1",
+    "section_name": "atos_buscaDocumentos",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 18,
+    "char_count": 69,
+    "overlap_with_previous": 16,
+    "overlap_with_next": 18,
+    "keywords": [
+      "atos"
+    ],
+    "entities": [
+      "atos",
+      "ArquivoAto",
+      "NaturezaTextoJuridico",
+      "buscaDocumentos",
+      "AtoFonteDivulgacao",
+      "TipoAto",
+      "AtoFonteDados",
+      "FonteDivulgacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.191602",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "7d3996d1ba8cc0e567f8cbbfc45ad471",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "fontesDivulgacao_busca_2_58920ed9"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: atos_buscaDocumentos\nType: definition\nRelated to: atos, ArquivoAto, NaturezaTextoJuridico\n\nRetorna os documentos anexos ao ato.\n\nRepresentation Type: ArquivoAto\n\nKeywords: atos",
+  "search_text": "atos_buscaDocumentos atos ArquivoAto NaturezaTextoJuridico buscaDocumentos AtoFonteDivulgacao TipoAto AtoFonteDados FonteDivulgacao atos Retorna os documentos anexos ao ato.\n\nRepresentation Type: ArquivoAto"
+}

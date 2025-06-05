@@ -1,3 +1,0 @@
-# TipoDeRevezamento
-Enum: TipoDeRevezamento
-- Fim da Jornada de trabalho (Key: FIM_JORNADA_TRABALHO, Value: 1)

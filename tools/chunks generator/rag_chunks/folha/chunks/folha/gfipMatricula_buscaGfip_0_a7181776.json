@@ -1,0 +1,44 @@
+{
+  "content": "GFIP matrícula",
+  "metadata": {
+    "chunk_id": "gfipMatricula_buscaGfip_0_a7181776",
+    "section_name": "gfipMatricula_buscaGfip",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 6,
+    "char_count": 14,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 0,
+    "keywords": [
+      "gfipmatricula"
+    ],
+    "entities": [
+      "GfipMatriculaDto",
+      "gfipMatricula",
+      "GfipFonteDados",
+      "buscaGfip",
+      "GfipMatriculaFonteDados",
+      "MatriculaGfipFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.228025",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "a7181776f828b91419209e8d1ed1b63f",
+    "related_chunks": [
+      "gfipMatricula_buscaGfip_6_b21e5052",
+      "gfipMatricula_buscaGfip_1_1a48576c",
+      "gfipMatricula_importa_0_a7181776",
+      "gfipMatricula_buscaGfip_4_a955820e",
+      "gfipMatricula_importa_3_ad915c0f"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: gfipMatricula_buscaGfip\nType: definition\nRelated to: GfipMatriculaDto, gfipMatricula, GfipFonteDados\n\nGFIP matrícula\n\nKeywords: gfipmatricula",
+  "search_text": "gfipMatricula_buscaGfip GfipMatriculaDto gfipMatricula GfipFonteDados buscaGfip GfipMatriculaFonteDados MatriculaGfipFonteDados gfipmatricula GFIP matrícula"
+}

@@ -1,0 +1,59 @@
+{
+  "content": "- tipoSistemaControlePonto: Sistema de controle de ponto (Type: )\n- tipoInscricao: Tipo inscrição (Type: )\n- mesDataBase: Mês da data base (Type: )",
+  "metadata": {
+    "chunk_id": "configuracaoRais_buscaResponsavel_4_fa8f36a5",
+    "section_name": "configuracaoRais_buscaResponsavel",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 45,
+    "char_count": 147,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 31,
+    "keywords": [
+      "tiposistemacontroleponto",
+      "configuracaorais",
+      "tipoinscricao",
+      "mesdatabase",
+      "tipo"
+    ],
+    "entities": [
+      "DeficienciaPessoaFisica",
+      "PessoaOrigem",
+      "ConfiguracaoRaisCampo",
+      "buscaResponsavel",
+      "AtoConfiguracaoEvento",
+      "Base",
+      "ConfiguracaoEventoFonteDados",
+      "configuracaoRais",
+      "dependenciasFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoRaisCampoEvento",
+      "PessoaJuridica",
+      "ConfiguracaoRais",
+      "ProcessoJudicial",
+      "SindicatoFuncionario",
+      "PessoaFisicaRepresentation",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.211005",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "fa8f36a5c957f4ee57ca8416042f1bce",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracaoRais_buscaResponsavel\nType: reference\nRelated to: DeficienciaPessoaFisica, PessoaOrigem, ConfiguracaoRaisCampo\n\n- tipoSistemaControlePonto: Sistema de controle de ponto (Type: )\n- tipoInscricao: Tipo inscrição (Type: )\n- mesDataBase: Mês da data base (Type: )\n\nKeywords: tiposistemacontroleponto, configuracaorais, tipoinscricao, mesdatabase, tipo",
+  "search_text": "configuracaoRais_buscaResponsavel DeficienciaPessoaFisica PessoaOrigem ConfiguracaoRaisCampo buscaResponsavel AtoConfiguracaoEvento Base ConfiguracaoEventoFonteDados configuracaoRais dependenciasFonteDados ScriptFonteDados ConfiguracaoRaisCampoEvento PessoaJuridica ConfiguracaoRais ProcessoJudicial SindicatoFuncionario PessoaFisicaRepresentation ConfiguracaoEventoAssociacaoFonteDados tiposistemacontroleponto configuracaorais tipoinscricao mesdatabase tipo - tipoSistemaControlePonto: Sistema de controle de ponto (Type: )\n- tipoInscricao: Tipo inscrição (Type: )\n- mesDataBase: Mês da data base (Type: )"
+}

@@ -1,6 +1,0 @@
-# TipoRescisao
-Enum: TipoRescisao
-- Iniciativa do empregado (Key: INICIATIVA_EMPREGADO, Value: 1)
-- Iniciativa do empregador (Key: INICIATIVA_EMPREGADOR, Value: 2)
-- Dissolução do contrato de trabalho (Key: DISSOLUCAO_CONTRATO_TRABALHO, Value: 3)
-- Aposentadoria (Key: APOSENTADORIA, Value: 4)

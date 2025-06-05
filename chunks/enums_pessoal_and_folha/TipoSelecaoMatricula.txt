@@ -1,5 +1,0 @@
-# TipoSelecaoMatricula
-Enum: TipoSelecaoMatricula
-- Por faixa (Key: POR_FAIXA, Value: 1)
-- Individual (Key: INDIVIDUAL, Value: 2)
-- Avançada (Key: AVANCADA, Value: 3)

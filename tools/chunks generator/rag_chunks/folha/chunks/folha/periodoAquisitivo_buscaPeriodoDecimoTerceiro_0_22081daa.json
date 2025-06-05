@@ -1,0 +1,43 @@
+{
+  "content": "Períodos Aquisitivos",
+  "metadata": {
+    "chunk_id": "periodoAquisitivo_buscaPeriodoDecimoTerceiro_0_22081daa",
+    "section_name": "periodoAquisitivo_buscaPeriodoDecimoTerceiro",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 7,
+    "char_count": 20,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 4,
+    "keywords": [
+      "periodoaquisitivo"
+    ],
+    "entities": [
+      "PeriodoAquisitivoDecimoTerceiro",
+      "buscaPeriodoDecimoTerceiro",
+      "SuspensaoCessacaoPeriodoAquisitivoRepresentation",
+      "periodoAquisitivo",
+      "ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.442333",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "22081daaa2c7ebe21bc31a07bbf34293",
+    "related_chunks": [
+      "provisao_buscaBases_5_e3986e07",
+      "provisao_busca_6_0cee3b39",
+      "provisao_buscaBases_1_b10fac4c",
+      "provisao_busca_1_a6c8a2b0",
+      "provisao_buscaBases_4_f5cc4ecd"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: periodoAquisitivo_buscaPeriodoDecimoTerceiro\nType: definition\nRelated to: PeriodoAquisitivoDecimoTerceiro, buscaPeriodoDecimoTerceiro, SuspensaoCessacaoPeriodoAquisitivoRepresentation\n\nPeríodos Aquisitivos\n\nKeywords: periodoaquisitivo",
+  "search_text": "periodoAquisitivo_buscaPeriodoDecimoTerceiro PeriodoAquisitivoDecimoTerceiro buscaPeriodoDecimoTerceiro SuspensaoCessacaoPeriodoAquisitivoRepresentation periodoAquisitivo ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro periodoaquisitivo Períodos Aquisitivos"
+}

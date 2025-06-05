@@ -1,0 +1,45 @@
+{
+  "content": "- emUso: Configuração está em uso? (Type: Boolean)\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "configuracoesOrganogramas_busca_4_d5f563e1",
+    "section_name": "configuracoesOrganogramas_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 37,
+    "char_count": 110,
+    "overlap_with_previous": 3,
+    "overlap_with_next": 23,
+    "keywords": [
+      "configuracoes-organogramas",
+      "emuso",
+      "id",
+      "descricao"
+    ],
+    "entities": [
+      "configuracoes-organogramas",
+      "ConfiguracaoOrganograma",
+      "ConfiguracaoNivelOrganograma",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.576644",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "d5f563e15abf73e8cb0416139bc4eabf",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracoesOrganogramas_busca\nType: reference\nRelated to: configuracoes-organogramas, ConfiguracaoOrganograma, ConfiguracaoNivelOrganograma\n\n- emUso: Configuração está em uso? (Type: Boolean)\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n\nKeywords: configuracoes-organogramas, emuso, id, descricao",
+  "search_text": "configuracoesOrganogramas_busca configuracoes-organogramas ConfiguracaoOrganograma ConfiguracaoNivelOrganograma busca configuracoes-organogramas emuso id descricao - emUso: Configuração está em uso? (Type: Boolean)\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)"
+}

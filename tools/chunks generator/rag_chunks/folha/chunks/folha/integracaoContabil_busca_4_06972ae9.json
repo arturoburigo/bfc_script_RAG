@@ -1,0 +1,49 @@
+{
+  "content": "- id:  (Type: Long)\n- tipoDespesa:  (Type: )",
+  "metadata": {
+    "chunk_id": "integracaoContabil_busca_4_06972ae9",
+    "section_name": "integracaoContabil_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 20,
+    "char_count": 44,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 12,
+    "keywords": [
+      "tipodespesa",
+      "tipo",
+      "id",
+      "integracaocontabil"
+    ],
+    "entities": [
+      "SelecaoAvancadaFonteDados",
+      "IntegracaoContabilFonteDados",
+      "busca",
+      "integracaoContabil",
+      "MatriculaAssociacao",
+      "integracaoContabilInconsitencia",
+      "integracaoContabilAssociacao",
+      "ConfiguracaoIntegracaoContabilAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.548203",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "06972ae92df76a37b6beb901ca045f84",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: integracaoContabil_busca\nType: reference\nRelated to: SelecaoAvancadaFonteDados, IntegracaoContabilFonteDados, busca\n\n- id:  (Type: Long)\n- tipoDespesa:  (Type: )\n\nKeywords: tipodespesa, tipo, id, integracaocontabil",
+  "search_text": "integracaoContabil_busca SelecaoAvancadaFonteDados IntegracaoContabilFonteDados busca integracaoContabil MatriculaAssociacao integracaoContabilInconsitencia integracaoContabilAssociacao ConfiguracaoIntegracaoContabilAssociacao tipodespesa tipo id integracaocontabil - id:  (Type: Long)\n- tipoDespesa:  (Type: )"
+}

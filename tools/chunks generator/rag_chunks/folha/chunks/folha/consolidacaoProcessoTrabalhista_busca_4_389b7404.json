@@ -1,0 +1,49 @@
+{
+  "content": "- numeroProcesso:  (Type: String)\n- competenciaPagamento:  (Type: YearMonth)\n- id:  (Type: Long)",
+  "metadata": {
+    "chunk_id": "consolidacaoProcessoTrabalhista_busca_4_389b7404",
+    "section_name": "consolidacaoProcessoTrabalhista_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 33,
+    "char_count": 96,
+    "overlap_with_previous": 3,
+    "overlap_with_next": 19,
+    "keywords": [
+      "competenciapagamento",
+      "id",
+      "consolidacaoprocessotrabalhista",
+      "numeroprocesso"
+    ],
+    "entities": [
+      "ProcessoTrabalhistaAssociacao",
+      "busca",
+      "FonteDadosAssociacao",
+      "ConsolidacaoProcessoTrabalhistaFonteDados",
+      "DadosTributacaoAssociacao",
+      "consolidacaoProcessoTrabalhista",
+      "FonteDadosConsolidacaoProcessoTrabalhistaAssociacao",
+      "PessoaFisicaAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.145606",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "389b7404d570baa6552ddd027862e59c",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: consolidacaoProcessoTrabalhista_busca\nType: reference\nRelated to: ProcessoTrabalhistaAssociacao, busca, FonteDadosAssociacao\n\n- numeroProcesso:  (Type: String)\n- competenciaPagamento:  (Type: YearMonth)\n- id:  (Type: Long)\n\nKeywords: competenciapagamento, id, consolidacaoprocessotrabalhista, numeroprocesso",
+  "search_text": "consolidacaoProcessoTrabalhista_busca ProcessoTrabalhistaAssociacao busca FonteDadosAssociacao ConsolidacaoProcessoTrabalhistaFonteDados DadosTributacaoAssociacao consolidacaoProcessoTrabalhista FonteDadosConsolidacaoProcessoTrabalhistaAssociacao PessoaFisicaAssociacao competenciapagamento id consolidacaoprocessotrabalhista numeroprocesso - numeroProcesso:  (Type: String)\n- competenciaPagamento:  (Type: YearMonth)\n- id:  (Type: Long)"
+}

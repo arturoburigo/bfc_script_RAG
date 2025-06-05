@@ -1,0 +1,46 @@
+{
+  "content": "## Base\n- id: Identificador (Type: Long)\n- sigla: Sigla (Type: String)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )",
+  "metadata": {
+    "chunk_id": "tipoBase_busca_5_90541552",
+    "section_name": "tipoBase_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 46,
+    "char_count": 148,
+    "overlap_with_previous": 16,
+    "overlap_with_next": 9,
+    "keywords": [
+      "tipobase",
+      "base",
+      "id",
+      "descricao",
+      "classificacao",
+      "sigla"
+    ],
+    "entities": [
+      "busca",
+      "Base",
+      "tipoBase"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.295189",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "90541552ae96d74d098c05427cca4a10",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: tipoBase_busca\nType: reference\nRelated to: busca, Base, tipoBase\n\n## Base\n- id: Identificador (Type: Long)\n- sigla: Sigla (Type: String)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\nKeywords: tipobase, base, id, descricao, classificacao, sigla",
+  "search_text": "tipoBase_busca busca Base tipoBase tipobase base id descricao classificacao sigla ## Base\n- id: Identificador (Type: Long)\n- sigla: Sigla (Type: String)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )"
+}

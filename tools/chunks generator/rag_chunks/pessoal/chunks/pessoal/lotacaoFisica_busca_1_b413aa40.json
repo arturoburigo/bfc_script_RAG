@@ -1,0 +1,55 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de lotações físicas\n\nRepresentation Type: LotacaoFisica",
+  "metadata": {
+    "chunk_id": "lotacaoFisica_busca_1_b413aa40",
+    "section_name": "lotacaoFisica_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 24,
+    "char_count": 96,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 15,
+    "keywords": [
+      "lotacoesfisicas",
+      "busca"
+    ],
+    "entities": [
+      "EmpresaResponsavelLotacaoFisica",
+      "BairroLotacaoFisica",
+      "busca",
+      "EnderecoLotacaoFisica",
+      "ProfissionalLocatacaoFisica",
+      "TelefonesLotacaoFisica",
+      "ResponsavelLotacaoFisica",
+      "LotacaoFisica",
+      "NiveisConfiguracaoLotacaoFisica",
+      "ConfiguracaoLotacaoFisicaFonteDados",
+      "PaisLotacaoFisica",
+      "ConfiguracaoLotacaoFisica",
+      "EstadoLotacaoFisica",
+      "LogradouroLotacaoFisica",
+      "MunicipioLotacaoFisica",
+      "lotacoesFisicas"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.196041",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "b413aa406adf033a89cf1b6a61051903",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: lotacaoFisica_busca\nType: definition\nRelated to: EmpresaResponsavelLotacaoFisica, BairroLotacaoFisica, busca\n\nbusca (GET)\nMethod Description: Listagem de lotações físicas\n\nRepresentation Type: LotacaoFisica\n\nKeywords: lotacoesfisicas, busca",
+  "search_text": "lotacaoFisica_busca EmpresaResponsavelLotacaoFisica BairroLotacaoFisica busca EnderecoLotacaoFisica ProfissionalLocatacaoFisica TelefonesLotacaoFisica ResponsavelLotacaoFisica LotacaoFisica NiveisConfiguracaoLotacaoFisica ConfiguracaoLotacaoFisicaFonteDados PaisLotacaoFisica ConfiguracaoLotacaoFisica EstadoLotacaoFisica LogradouroLotacaoFisica MunicipioLotacaoFisica lotacoesFisicas lotacoesfisicas busca busca (GET)\nMethod Description: Listagem de lotações físicas\n\nRepresentation Type: LotacaoFisica"
+}

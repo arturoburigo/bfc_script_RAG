@@ -1,5 +1,0 @@
-# IndicativoAdmissao
-Enum: IndicativoAdmissao
-- Normal (Key: NORMAL, Value: 1)
-- Decorrente de ação fiscal (Key: DECORRENTE_ACAO_FISCAL, Value: 2)
-- Decorrente de decisão judicial (Key: DECORRENTE_DECISAO_JUDICIAL, Value: 3)

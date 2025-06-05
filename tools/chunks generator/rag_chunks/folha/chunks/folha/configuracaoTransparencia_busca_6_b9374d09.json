@@ -1,0 +1,49 @@
+{
+  "content": "groovy\nfonteConfiguracaoTransparencia = Dados.folha.v2.configuracaoTransparencia;\n\nfiltroConfiguracaoTransparencia = \"emailRetorno = null\"\n\ndadosConfiguracaoTransparencia = fonteConfiguracaoTransparencia.busca(criterio: filtroConfiguracaoTransparencia,campos: \"id, chave, emailRetorno, enviaCalculosFolha, enviaDadosCadastrais\",ordenacao: \"chave asc\")\n\npercorrer (dadosConfiguracaoTransparencia) { itemConfiguracaoTransparencia ->\n\n}",
+  "metadata": {
+    "chunk_id": "configuracaoTransparencia_busca_6_b9374d09",
+    "section_name": "configuracaoTransparencia_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 130,
+    "char_count": 433,
+    "overlap_with_previous": 27,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "configuracaotransparencia",
+      "filtro",
+      "ordenacao",
+      "folha",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "configuracaoTransparencia",
+      "Dados.folha.v2.configuracaoTransparencia",
+      "ConfiguracaoTransparencia",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.445162",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "b9374d09ae0f4fcc0fb7411970082c1e",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: configuracaoTransparencia_busca\nType: example\nRelated to: configuracaoTransparencia, Dados.folha.v2.configuracaoTransparencia, ConfiguracaoTransparencia\n\ngroovy\nfonteConfiguracaoTransparencia = Dados.folha.v2.configuracaoTransparencia;\n\nfiltroConfiguracaoTransparencia = \"emailRetorno = null\"\n\ndadosConfiguracaoTransparencia = fonteConfiguracaoTransparencia.busca(criterio: filtroConfiguracaoTransparencia,campos: \"id, chave, emailRetorno, enviaCalculosFolha, enviaDadosCadastrais\",ordenacao: \"chave asc\")\n\npercorrer (dadosConfiguracaoTransparencia) { itemConfiguracaoTransparencia ->\n\n}\n\nKeywords: busca, configuracaotransparencia, filtro, ordenacao, folha, v2, campo, dados",
+  "search_text": "configuracaoTransparencia_busca configuracaoTransparencia Dados.folha.v2.configuracaoTransparencia ConfiguracaoTransparencia busca busca configuracaotransparencia filtro ordenacao folha v2 campo dados groovy\nfonteConfiguracaoTransparencia = Dados.folha.v2.configuracaoTransparencia;\n\nfiltroConfiguracaoTransparencia = \"emailRetorno = null\"\n\ndadosConfiguracaoTransparencia = fonteConfiguracaoTransparencia.busca(criterio: filtroConfiguracaoTransparencia,campos: \"id, chave, emailRetorno, enviaCalculosFolha, enviaDadosCadastrais\",ordenacao: \"chave asc\")\n\npercorrer (dadosConfiguracaoTransparencia) { itemConfiguracaoTransparencia ->\n\n}"
+}

@@ -1,0 +1,46 @@
+{
+  "content": "Logradouros",
+  "metadata": {
+    "chunk_id": "logradouros_busca_0_3daac26e",
+    "section_name": "logradouros_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 4,
+    "char_count": 11,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 3,
+    "keywords": [
+      "logradouros"
+    ],
+    "entities": [
+      "logradouros",
+      "Estado",
+      "busca",
+      "TipoLogradouro",
+      "Municipio",
+      "Logradouro",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.567178",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "3daac26e4d557db3792c309b7f73cbc2",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: logradouros_busca\nType: definition\nRelated to: logradouros, Estado, busca\n\nLogradouros\n\nKeywords: logradouros",
+  "search_text": "logradouros_busca logradouros Estado busca TipoLogradouro Municipio Logradouro Bairro Pais logradouros Logradouros"
+}

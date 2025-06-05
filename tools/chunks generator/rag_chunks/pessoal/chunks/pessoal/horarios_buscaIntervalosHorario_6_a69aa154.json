@@ -1,0 +1,49 @@
+{
+  "content": "groovy\nfonteHorarios = Dados.pessoal.v2.horarios;\n\ndadosHorarios = fonteHorarios.buscaIntervalosHorario(campos: \"id, descricao, entrada, saida, flexivel\")\n\npercorrer (dadosHorarios) { itemHorarios ->\n\n}",
+  "metadata": {
+    "chunk_id": "horarios_buscaIntervalosHorario_6_a69aa154",
+    "section_name": "horarios_buscaIntervalosHorario",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 64,
+    "char_count": 202,
+    "overlap_with_previous": 17,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "horarios",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "HorarioIntervalo",
+      "HorarioFonteDados",
+      "horarios",
+      "buscaIntervalosHorario",
+      "Dados.pessoal.v2.horarios",
+      "HorarioMarcacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.272615",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "a69aa1546413775e4c3de2b148acfac1",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "horarios_buscaHorarios_4_86131741"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: horarios_buscaIntervalosHorario\nType: example\nRelated to: HorarioIntervalo, HorarioFonteDados, horarios\n\ngroovy\nfonteHorarios = Dados.pessoal.v2.horarios;\n\ndadosHorarios = fonteHorarios.buscaIntervalosHorario(campos: \"id, descricao, entrada, saida, flexivel\")\n\npercorrer (dadosHorarios) { itemHorarios ->\n\n}\n\nKeywords: pessoal, busca, horarios, v2, campo, dados",
+  "search_text": "horarios_buscaIntervalosHorario HorarioIntervalo HorarioFonteDados horarios buscaIntervalosHorario Dados.pessoal.v2.horarios HorarioMarcacao pessoal busca horarios v2 campo dados groovy\nfonteHorarios = Dados.pessoal.v2.horarios;\n\ndadosHorarios = fonteHorarios.buscaIntervalosHorario(campos: \"id, descricao, entrada, saida, flexivel\")\n\npercorrer (dadosHorarios) { itemHorarios ->\n\n}"
+}

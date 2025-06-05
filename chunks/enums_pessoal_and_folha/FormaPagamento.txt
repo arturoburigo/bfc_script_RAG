@@ -1,6 +1,0 @@
-# FormaPagamento
-Enum: FormaPagamento
-- Dinheiro (Key: DINHEIRO, Value: 1)
-- Cheque (Key: CHEQUE, Value: 2)
-- Crédito em conta (Key: CREDITO_EM_CONTA, Value: 3)
-- Pix (Key: PIX, Value: 4)

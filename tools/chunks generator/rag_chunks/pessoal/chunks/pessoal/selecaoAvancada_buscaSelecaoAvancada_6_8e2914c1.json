@@ -1,0 +1,52 @@
+{
+  "content": "groovy\nfonteSelecaoAvancada = Dados.pessoal.v2.selecaoAvancada;\n\nfiltroSelecaoAvancada = \"id = null\"\n\ndadosSelecaoAvancada = fonteSelecaoAvancada.buscaSelecaoAvancada(criterio: filtroSelecaoAvancada,campos: \"cargos(id, descricao), tipoSelecaoMatricula, descricao, id, criterioCargo, criterioOrganograma, criterioVinculoEmpregaticio, classificacoesTipoAfastamento, matriculas(id), situacoes\",ordenacao: \"id asc\")\n\npercorrer (dadosSelecaoAvancada) { itemSelecaoAvancada ->\n\n}",
+  "metadata": {
+    "chunk_id": "selecaoAvancada_buscaSelecaoAvancada_6_8e2914c1",
+    "section_name": "selecaoAvancada_buscaSelecaoAvancada",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 154,
+    "char_count": 473,
+    "overlap_with_previous": 40,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "tipo",
+      "filtro",
+      "ordenacao",
+      "v2",
+      "selecaoavancada",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "buscaSelecaoAvancada",
+      "Dados.pessoal.v2.selecaoAvancada",
+      "CargoSelecaoAvacanda",
+      "EntidadeFiltravelSelecaoDtoAssociacao",
+      "MatriculaFiltroSelecaoAvancadaFonteDados",
+      "selecaoAvancada"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.140973",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "8e2914c1657b845d155d2f57e32fe998",
+    "related_chunks": [
+      "selecaoAvancada_buscaSelecaoAvancada_3_0409ec37",
+      "selecaoAvancada_buscaSelecaoAvancada_2_0409ec37",
+      "selecaoAvancada_buscaSelecaoAvancada_5_d65533f5",
+      "selecaoAvancada_buscaSelecaoAvancada_0_f759a958",
+      "selecaoAvancada_buscaSelecaoAvancada_4_3be9d31c"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: selecaoAvancada_buscaSelecaoAvancada\nType: example\nRelated to: buscaSelecaoAvancada, Dados.pessoal.v2.selecaoAvancada, CargoSelecaoAvacanda\n\ngroovy\nfonteSelecaoAvancada = Dados.pessoal.v2.selecaoAvancada;\n\nfiltroSelecaoAvancada = \"id = null\"\n\ndadosSelecaoAvancada = fonteSelecaoAvancada.buscaSelecaoAvancada(criterio: filtroSelecaoAvancada,campos: \"cargos(id, descricao), tipoSelecaoMatricula, descricao, id, criterioCargo, criterioOrganograma, criterioVinculoEmpregaticio, classificacoesTipoAfastamento, matriculas(id), situacoes\",ordenacao: \"id asc\")\n\npercorrer (dadosSelecaoAvancada) { itemSelecaoAvancada ->\n\n}\n\nKeywords: pessoal, busca, tipo, filtro, ordenacao, v2, selecaoavancada, campo, dados",
+  "search_text": "selecaoAvancada_buscaSelecaoAvancada buscaSelecaoAvancada Dados.pessoal.v2.selecaoAvancada CargoSelecaoAvacanda EntidadeFiltravelSelecaoDtoAssociacao MatriculaFiltroSelecaoAvancadaFonteDados selecaoAvancada pessoal busca tipo filtro ordenacao v2 selecaoavancada campo dados groovy\nfonteSelecaoAvancada = Dados.pessoal.v2.selecaoAvancada;\n\nfiltroSelecaoAvancada = \"id = null\"\n\ndadosSelecaoAvancada = fonteSelecaoAvancada.buscaSelecaoAvancada(criterio: filtroSelecaoAvancada,campos: \"cargos(id, descricao), tipoSelecaoMatricula, descricao, id, criterioCargo, criterioOrganograma, criterioVinculoEmpregaticio, classificacoesTipoAfastamento, matriculas(id), situacoes\",ordenacao: \"id asc\")\n\npercorrer (dadosSelecaoAvancada) { itemSelecaoAvancada ->\n\n}"
+}

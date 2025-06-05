@@ -1,0 +1,49 @@
+{
+  "content": "## TipoMovimentacaoPessaolFonteDados\n- id: Id (Type: Long)\n- descricao: Descricao (Type: String)\n- classificacao: Classificacao (Type: )\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)",
+  "metadata": {
+    "chunk_id": "tipoMovimentacaoPessoal_busca_5_fe0c05cc",
+    "section_name": "tipoMovimentacaoPessoal_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 60,
+    "char_count": 197,
+    "overlap_with_previous": 18,
+    "overlap_with_next": 12,
+    "keywords": [
+      "id",
+      "descricao",
+      "tipomovimentacaopessaolfontedados",
+      "camposadicionais",
+      "classificacao",
+      "campo",
+      "tipomovimentacaopessoal",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "tipoMovimentacaoPessoal",
+      "TipoMovimentacaoPessaolFonteDados",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.791734",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "fe0c05ccc418e0865ba3aefa13b7d136",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: tipoMovimentacaoPessoal_busca\nType: reference\nRelated to: tipoMovimentacaoPessoal, TipoMovimentacaoPessaolFonteDados, busca\n\n## TipoMovimentacaoPessaolFonteDados\n- id: Id (Type: Long)\n- descricao: Descricao (Type: String)\n- classificacao: Classificacao (Type: )\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)\n\nKeywords: id, descricao, tipomovimentacaopessaolfontedados, camposadicionais, classificacao, campo, tipomovimentacaopessoal, tipo, dados",
+  "search_text": "tipoMovimentacaoPessoal_busca tipoMovimentacaoPessoal TipoMovimentacaoPessaolFonteDados busca id descricao tipomovimentacaopessaolfontedados camposadicionais classificacao campo tipomovimentacaopessoal tipo dados ## TipoMovimentacaoPessaolFonteDados\n- id: Id (Type: Long)\n- descricao: Descricao (Type: String)\n- classificacao: Classificacao (Type: )\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)"
+}

@@ -1,0 +1,53 @@
+{
+  "content": "- bairro.id: Id do bairro (Type: Long)\n- numeroEndereco: Número do endereço (Type: String)\n- bairro.municipio.id: Id do município (Type: Long)\n- banco.id: Id do banco (Type: Long)\n- numero: Número (Type: String)\n- logradouro.id: Id do logradouro (Type: Long)\n- nome: Nome (Type: String)\n- id: Id (Type: Long)\n- digito: Dígito (Type: String)\n- cep: CEP (Type: String)",
+  "metadata": {
+    "chunk_id": "agenciasBancarias_busca_4_a6c763b5",
+    "section_name": "agenciasBancarias_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 123,
+    "char_count": 366,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 35,
+    "keywords": [
+      "digito",
+      "nome",
+      "id",
+      "numeroendereco",
+      "agenciasbancarias",
+      "numero"
+    ],
+    "entities": [
+      "agenciasBancarias",
+      "Estado",
+      "Banco",
+      "busca",
+      "TipoLogradouro",
+      "AgenciaBancaria",
+      "Municipio",
+      "Logradouro",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.203707",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "a6c763b57bb6fa47f01939d81e918c7a",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: agenciasBancarias_busca\nType: reference\nRelated to: agenciasBancarias, Estado, Banco\n\n- bairro.id: Id do bairro (Type: Long)\n- numeroEndereco: Número do endereço (Type: String)\n- bairro.municipio.id: Id do município (Type: Long)\n- banco.id: Id do banco (Type: Long)\n- numero: Número (Type: String)\n- logradouro.id: Id do logradouro (Type: Long)\n- nome: Nome (Type: String)\n- id: Id (Type: Long)\n- digito: Dígito (Type: String)\n- cep: CEP (Type: String)\n\nKeywords: digito, nome, id, numeroendereco, agenciasbancarias, numero",
+  "search_text": "agenciasBancarias_busca agenciasBancarias Estado Banco busca TipoLogradouro AgenciaBancaria Municipio Logradouro Bairro Pais digito nome id numeroendereco agenciasbancarias numero - bairro.id: Id do bairro (Type: Long)\n- numeroEndereco: Número do endereço (Type: String)\n- bairro.municipio.id: Id do município (Type: Long)\n- banco.id: Id do banco (Type: Long)\n- numero: Número (Type: String)\n- logradouro.id: Id do logradouro (Type: Long)\n- nome: Nome (Type: String)\n- id: Id (Type: Long)\n- digito: Dígito (Type: String)\n- cep: CEP (Type: String)"
+}

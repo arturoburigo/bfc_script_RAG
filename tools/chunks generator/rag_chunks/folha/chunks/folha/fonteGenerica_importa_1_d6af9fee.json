@@ -1,0 +1,41 @@
+{
+  "content": "importa (POST)\n\nRepresentation Type: FonteGenerica",
+  "metadata": {
+    "chunk_id": "fonteGenerica_importa_1_d6af9fee",
+    "section_name": "fonteGenerica_importa",
+    "chunk_index": 1,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 12,
+    "char_count": 50,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 6,
+    "keywords": [
+      "fontegenerica"
+    ],
+    "entities": [
+      "FonteGenerica",
+      "fonteGenerica",
+      "importa"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.447049",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "d6af9fee6a42ac30c52a1e0d00e5a1e1",
+    "related_chunks": [
+      "fonteGenerica_atualiza_2_77ecbcf3",
+      "fonteGenerica_exclui_3_5f202e7a",
+      "gfipMatricula_importa_3_ad915c0f",
+      "fonteGenerica_busca_4_c8dc2d69",
+      "tabelaAuxiliarValor_importa_3_3648ed36"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: fonteGenerica_importa\nType: definition\nRelated to: FonteGenerica, fonteGenerica, importa\n\nimporta (POST)\n\nRepresentation Type: FonteGenerica\n\nKeywords: fontegenerica",
+  "search_text": "fonteGenerica_importa FonteGenerica fonteGenerica importa fontegenerica importa (POST)\n\nRepresentation Type: FonteGenerica"
+}

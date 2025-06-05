@@ -1,0 +1,53 @@
+{
+  "content": "## ConfiguracaoDirfConfiguracaoEvento\n- id: Id (Type: Long)\n- codigo: Código (Type: Long)\n- descricao: Descrição (Type: String)\n- inicioVigencia: Competência (Type: LocalDateTime)\n- tipo: Tipo (Type: )\n- naturezaRubrica: Natureza da Rubrica (Type: )\n- classificacao: Classificação (Type: )\n- classificacaoBaixaProvisao: Baixa da provisão (Type: )\n- unidade: Unidade (Type: )\n- taxa: Taxa (Type: BigDecimal)\n- enviaTransparencia: Envia ao transparência (Type: Boolean)\n- enviaEsocial: Envia ao eSocial (Type: Boolean)\n- codigoEsocial: Código para o eSocial (Type: String)\n- compoemHorasMes: Compõem horas do mês (Type: Boolean)\n- incideDsr: Incide DSR (Type: Boolean)\n- desabilitado: Registro Desativado (Type: Boolean)\n- tiposPrevidencia: Tipos de previdência (Type: )\n\n## ConfiguracaoDirfEventoFonteDados\n- id: Id (Type: Long)\n- configuracaoEvento: Configuração de evento (Type: ConfiguracaoDirfConfiguracaoEvento)\n\n## ConfiguracaoDirfFonteDados\n- id: Id (Type: Long)\n- campoDirf: Campos (Type: )\n- eventos: Eventos configurado (Type: ConfiguracaoDirfEventoFonteDados)",
+  "metadata": {
+    "chunk_id": "configuracaoDirf_busca_5_74c3396e",
+    "section_name": "configuracaoDirf_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 335,
+    "char_count": 1069,
+    "overlap_with_previous": 8,
+    "overlap_with_next": 20,
+    "keywords": [
+      "configuracaodirfconfiguracaoevento",
+      "iniciovigencia",
+      "tipo",
+      "id",
+      "descricao",
+      "configuracaodirf",
+      "configuracaodirfeventofontedados",
+      "configuracaodirffontedados",
+      "codigo",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "busca",
+      "ConfiguracaoDirfConfiguracaoEvento",
+      "ConfiguracaoDirfFonteDados",
+      "configuracaoDirf",
+      "ConfiguracaoDirfEventoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.229603",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "74c3396ea5ad800e2a2072033d6a1d07",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: configuracaoDirf_busca\nType: reference\nRelated to: busca, ConfiguracaoDirfConfiguracaoEvento, ConfiguracaoDirfFonteDados\n\n## ConfiguracaoDirfConfiguracaoEvento\n- id: Id (Type: Long)\n- codigo: Código (Type: Long)\n- descricao: Descrição (Type: String)\n- inicioVigencia: Competência (Type: LocalDateTime)\n- tipo: Tipo (Type: )\n- naturezaRubrica: Natureza da Rubrica (Type: )\n- classificacao: Classificação (Type: )\n- classificacaoBaixaProvisao: Baixa da provisão (Type: )\n- unidade: Unidade (Type: )\n- taxa: Taxa (Type: BigDecimal)\n- enviaTransparencia: Envia ao transparência (Type: Boolean)\n- enviaEsocial: Envia ao eSocial (Type: Boolean)\n- codigoEsocial: Código para o eSocial (Type: String)\n- compoemHorasMes: Compõem horas do mês (Type: Boolean)\n- incideDsr: Incide DSR (Type: Boolean)\n- desabilitado: Registro Desativado (Type: Boolean)\n- tiposPrevidencia: Tipos de previdência (Type: )\n\n## ConfiguracaoDirfEventoFonteDados\n- id: Id (Type: Long)\n- configuracaoEvento: Configuração de evento (Type: ConfiguracaoDirfConfiguracaoEvento)\n\n## ConfiguracaoDirfFonteDados\n- id: Id (Type: Long)\n- campoDirf: Campos (Type: )\n- eventos: Eventos configurado (Type: ConfiguracaoDirfEventoFonteDados)\n\nKeywords: configuracaodirfconfiguracaoevento, iniciovigencia, tipo, id, descricao, configuracaodirf, configuracaodirfeventofontedados, configuracaodirffontedados, codigo, campo, dados",
+  "search_text": "configuracaoDirf_busca busca ConfiguracaoDirfConfiguracaoEvento ConfiguracaoDirfFonteDados configuracaoDirf ConfiguracaoDirfEventoFonteDados configuracaodirfconfiguracaoevento iniciovigencia tipo id descricao configuracaodirf configuracaodirfeventofontedados configuracaodirffontedados codigo campo dados ## ConfiguracaoDirfConfiguracaoEvento\n- id: Id (Type: Long)\n- codigo: Código (Type: Long)\n- descricao: Descrição (Type: String)\n- inicioVigencia: Competência (Type: LocalDateTime)\n- tipo: Tipo (Type: )\n- naturezaRubrica: Natureza da Rubrica (Type: )\n- classificacao: Classificação (Type: )\n- classificacaoBaixaProvisao: Baixa da provisão (Type: )\n- unidade: Unidade (Type: )\n- taxa: Taxa (Type: BigDecimal)\n- enviaTransparencia: Envia ao transparência (Type: Boolean)\n- enviaEsocial: Envia ao eSocial (Type: Boolean)\n- codigoEsocial: Código para o eSocial (Type: String)\n- compoemHorasMes: Compõem horas do mês (Type: Boolean)\n- incideDsr: Incide DSR (Type: Boolean)\n- desabilitado: Registro Desativado (Type: Boolean)\n- tiposPrevidencia: Tipos de previdência (Type: )\n\n## ConfiguracaoDirfEventoFonteDados\n- id: Id (Type: Long)\n- configuracaoEvento: Configuração de evento (Type: ConfiguracaoDirfConfiguracaoEvento)\n\n## ConfiguracaoDirfFonteDados\n- id: Id (Type: Long)\n- campoDirf: Campos (Type: )\n- eventos: Eventos configurado (Type: ConfiguracaoDirfEventoFonteDados)"
+}

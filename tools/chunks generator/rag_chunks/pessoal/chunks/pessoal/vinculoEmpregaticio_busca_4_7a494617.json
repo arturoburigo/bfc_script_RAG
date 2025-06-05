@@ -1,0 +1,48 @@
+{
+  "content": "- descricaoRegimePrevidenciario: Regime previdenciário (Type: String)\n- tipo: Tipo do regime trabalhista (Type: )\n- id: Id (Type: Long)\n- categoriaTrabalhador.grupoTrabalhador:  (Type: )\n- sefip: Categoria da SEFIP (Type: )\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "vinculoEmpregaticio_busca_4_7a494617",
+    "section_name": "vinculoEmpregaticio_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 85,
+    "char_count": 261,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 40,
+    "keywords": [
+      "sefip",
+      "id",
+      "descricao",
+      "descricaoregimeprevidenciario",
+      "vinculoempregaticio",
+      "tipo"
+    ],
+    "entities": [
+      "busca",
+      "VinculoEmpregaticioMotivoRescisaoFonteDados",
+      "vinculoEmpregaticio",
+      "VinculoEmpregaticioCategoriaTrabalhadorFonteDados",
+      "VinculoEmpregaticioFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.729851",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "7a4946172c83829ac227541e7b786ff4",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: vinculoEmpregaticio_busca\nType: reference\nRelated to: busca, VinculoEmpregaticioMotivoRescisaoFonteDados, vinculoEmpregaticio\n\n- descricaoRegimePrevidenciario: Regime previdenciário (Type: String)\n- tipo: Tipo do regime trabalhista (Type: )\n- id: Id (Type: Long)\n- categoriaTrabalhador.grupoTrabalhador:  (Type: )\n- sefip: Categoria da SEFIP (Type: )\n- descricao: Descrição (Type: String)\n\nKeywords: sefip, id, descricao, descricaoregimeprevidenciario, vinculoempregaticio, tipo",
+  "search_text": "vinculoEmpregaticio_busca busca VinculoEmpregaticioMotivoRescisaoFonteDados vinculoEmpregaticio VinculoEmpregaticioCategoriaTrabalhadorFonteDados VinculoEmpregaticioFonteDados sefip id descricao descricaoregimeprevidenciario vinculoempregaticio tipo - descricaoRegimePrevidenciario: Regime previdenciário (Type: String)\n- tipo: Tipo do regime trabalhista (Type: )\n- id: Id (Type: Long)\n- categoriaTrabalhador.grupoTrabalhador:  (Type: )\n- sefip: Categoria da SEFIP (Type: )\n- descricao: Descrição (Type: String)"
+}

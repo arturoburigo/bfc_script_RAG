@@ -1,0 +1,50 @@
+{
+  "content": "groovy\nfonteQuadroCargos = Dados.pessoal.v2.quadroCargos;\n\ndadosQuadroCargos = fonteQuadroCargos.buscaHistoricoQuadro(campos: \"atoCriacao(tipo(id, descricao, classificacao), id, numeroOficial, ementa), atoPercentualMinimo(tipo(id, descricao, classificacao), id, numeroOficial, ementa), id, descricao, inicioVigencia, percentualMinimo, extinto\",parametros:[\"id\":null])\n\npercorrer (dadosQuadroCargos) { itemQuadroCargos ->\n\n}",
+  "metadata": {
+    "chunk_id": "quadroCargos_buscaHistoricoQuadro_6_4864b3ea",
+    "section_name": "quadroCargos_buscaHistoricoQuadro",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 140,
+    "char_count": 423,
+    "overlap_with_previous": 29,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "tipo",
+      "v2",
+      "quadrocargos",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "AtoMatriculaAssociacao",
+      "QuadroCargo",
+      "Dados.pessoal.v2.quadroCargos",
+      "TipoAto",
+      "buscaHistoricoQuadro",
+      "quadroCargos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.221247",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "4864b3ea50b84c660f739a229e407582",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: quadroCargos_buscaHistoricoQuadro\nType: example\nRelated to: AtoMatriculaAssociacao, QuadroCargo, Dados.pessoal.v2.quadroCargos\n\ngroovy\nfonteQuadroCargos = Dados.pessoal.v2.quadroCargos;\n\ndadosQuadroCargos = fonteQuadroCargos.buscaHistoricoQuadro(campos: \"atoCriacao(tipo(id, descricao, classificacao), id, numeroOficial, ementa), atoPercentualMinimo(tipo(id, descricao, classificacao), id, numeroOficial, ementa), id, descricao, inicioVigencia, percentualMinimo, extinto\",parametros:[\"id\":null])\n\npercorrer (dadosQuadroCargos) { itemQuadroCargos ->\n\n}\n\nKeywords: pessoal, busca, tipo, v2, quadrocargos, campo, dados",
+  "search_text": "quadroCargos_buscaHistoricoQuadro AtoMatriculaAssociacao QuadroCargo Dados.pessoal.v2.quadroCargos TipoAto buscaHistoricoQuadro quadroCargos pessoal busca tipo v2 quadrocargos campo dados groovy\nfonteQuadroCargos = Dados.pessoal.v2.quadroCargos;\n\ndadosQuadroCargos = fonteQuadroCargos.buscaHistoricoQuadro(campos: \"atoCriacao(tipo(id, descricao, classificacao), id, numeroOficial, ementa), atoPercentualMinimo(tipo(id, descricao, classificacao), id, numeroOficial, ementa), id, descricao, inicioVigencia, percentualMinimo, extinto\",parametros:[\"id\":null])\n\npercorrer (dadosQuadroCargos) { itemQuadroCargos ->\n\n}"
+}

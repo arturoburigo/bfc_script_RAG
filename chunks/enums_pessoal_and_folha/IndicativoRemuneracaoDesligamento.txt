@@ -1,4 +1,0 @@
-# IndicativoRemuneracaoDesligamento
-Enum: IndicativoRemuneracaoDesligamento
-- 2 - Desligamento reconhecido judicialmente com data anterior a competências com remunerações já informadas no eSocial (Key: DESLIGAMENTO_JUDICIAL_DATA_ANTERIOR_COMPETENCIA_COM_REMUNERACOES_INFORMADAS, Value: 2)
-- 3 - Aposentadoria de servidor com data anterior a competências com remunerações já informadas no eSocial (Key: APOSENTADORIA_SERVIDOR_DATA_ANTERIOR_COMPETENCIA_COM_REMUNERACOES_INFORMADAS, Value: 3)

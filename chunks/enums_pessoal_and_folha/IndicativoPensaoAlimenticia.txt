@@ -1,6 +1,0 @@
-# IndicativoPensaoAlimenticia
-Enum: IndicativoPensaoAlimenticia
-- 0 - Não existe pensão alimentícia (Key: NAO_EXISTE_PENSAO_ALIMENTICIA, Value: 0)
-- 1 - Percentual de pensão alimentícia (Key: PERCENTUAL_PENSAO_ALIMENTICIA, Value: 1)
-- 2 - Valor de pensão alimentícia (Key: VALOR_PENSAO_ALIMENTICIA, Value: 2)
-- 3 - Percentual e valor de pensão alimentícia (Key: PERCENTUAL_VALOR_PENSAO_ALIMENTICIA, Value: 3)

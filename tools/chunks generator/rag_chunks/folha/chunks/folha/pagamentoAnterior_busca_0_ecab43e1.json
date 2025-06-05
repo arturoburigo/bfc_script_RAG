@@ -1,0 +1,44 @@
+{
+  "content": "Pagamento anterior",
+  "metadata": {
+    "chunk_id": "pagamentoAnterior_busca_0_ecab43e1",
+    "section_name": "pagamentoAnterior_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 3,
+    "char_count": 18,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 1,
+    "keywords": [
+      "pagamentoanterior"
+    ],
+    "entities": [
+      "busca",
+      "PagamentoAnterior",
+      "pagamentoAnterior",
+      "PagamentoAnteriorParcela",
+      "MatriculaAssociacao",
+      "DespesaFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.647174",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "ecab43e1efdddc322b3b8a59be591d8e",
+    "related_chunks": [
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19",
+      "remuneracoes_buscaComposicoesBasesFolha_3_3f265087",
+      "remuneracoes_buscaEventosDeFolhas_0_f817d7f1"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: pagamentoAnterior_busca\nType: definition\nRelated to: busca, PagamentoAnterior, pagamentoAnterior\n\nPagamento anterior\n\nKeywords: pagamentoanterior",
+  "search_text": "pagamentoAnterior_busca busca PagamentoAnterior pagamentoAnterior PagamentoAnteriorParcela MatriculaAssociacao DespesaFonteDados pagamentoanterior Pagamento anterior"
+}

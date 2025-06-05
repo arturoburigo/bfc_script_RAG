@@ -1,0 +1,47 @@
+{
+  "content": "## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)",
+  "metadata": {
+    "chunk_id": "paises_busca_5_f176de62",
+    "section_name": "paises_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 103,
+    "char_count": 269,
+    "overlap_with_previous": 37,
+    "overlap_with_next": 6,
+    "keywords": [
+      "paises",
+      "nome",
+      "sigla3d",
+      "pais",
+      "id",
+      "sigla2c",
+      "sigla3c"
+    ],
+    "entities": [
+      "paises",
+      "Pais",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.383793",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "f176de62a0a990f665029e8f044cfb8d",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.8
+  },
+  "embeddings_text": "Section: paises_busca\nType: reference\nRelated to: paises, Pais, busca\n\n## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)\n\nKeywords: paises, nome, sigla3d, pais, id, sigla2c, sigla3c",
+  "search_text": "paises_busca paises Pais busca paises nome sigla3d pais id sigla2c sigla3c ## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)"
+}

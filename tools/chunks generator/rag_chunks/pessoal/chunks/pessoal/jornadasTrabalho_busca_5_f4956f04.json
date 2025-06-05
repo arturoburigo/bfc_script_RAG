@@ -1,0 +1,63 @@
+{
+  "content": "## HorarioMarcacao\n- id: Identificador (Type: Long)\n- hora: Horário (Type: LocalTime)\n\n## HorarioIntervalo\n- id: Identificador (Type: Long)\n- entrada: Horário de entrada (Type: LocalTime)\n- saida: Horário de saída (Type: LocalTime)\n\n## Horario\n- id: Identificador (Type: Long)\n- codigo: Código (Type: String)\n- entrada:  (Type: LocalTime)\n- saida:  (Type: LocalTime)\n- cargaHoraria: Carga horária (Type: BigDecimal)\n- marcacoes: Marcações (Type: HorarioMarcacao)\n- intervalos:  (Type: HorarioIntervalo)\n\n## PeriodoJornadaTrabalho\n- id: Identificador (Type: Long)\n- dia: Dia (Type: Integer)\n- horario: Horário (Type: Horario)\n- classificacao: Classificação (Type: )\n\n## JornadaTrabalhoFonteDadosAssociacao\n- id: Identificador (Type: Long)\n- cargaHorariaSemanal: Carga horária semanal (Type: Duration)\n- periodos: Períodos (Type: PeriodoJornadaTrabalho)\n\n## JornadaTrabalhoEscala\n- id: Id (Type: Long)\n- sequencia: Sequência (Type: Long)\n- jornadaTrabalho: Jornada de trabalho (Type: JornadaTrabalhoFonteDadosAssociacao)\n- cor: Cor (Type: String)\n\n## Escala\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo da escala (Type: )\n- jornadaTrabalhoEscalas: Jornadas (Type: JornadaTrabalhoEscala)\n\n## JornadaTrabalhoFonteDadosCompleta\n- id: Id (Type: Long)\n- codigo: Código (Type: String)\n- descricao: Descrição (Type: String)\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n- tipo: Tipo da jornada (Type: )\n- enviarESocial: tipo de valor que sera enviado ao eSocial (Type: )\n- horarioNoturno: Horario noturno (Type: Boolean)\n- tipoCompensacao: Compensação (Type: )\n- cargaHorariaSemanal: Carga horária semanal (Type: String)\n- desativado: Desativado (Type: Boolean)\n- periodos: Períodos (Type: PeriodoJornadaTrabalho)\n- revezamento: Revezamento (Type: Boolean)\n- tipoDeRevezamento: Tipo de revezamento (Type: )\n- escala: Escala (Type: Escala)\n- inicioRevezamento: Data de início do revezamento (Type: LocalDate)\n- horasDSR: Representa a quatidade de horas DSR (Type: LocalTime)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)",
+  "metadata": {
+    "chunk_id": "jornadasTrabalho_busca_5_f4956f04",
+    "section_name": "jornadasTrabalho_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 663,
+    "char_count": 2066,
+    "overlap_with_previous": 35,
+    "overlap_with_next": 29,
+    "keywords": [
+      "saida",
+      "tipo",
+      "id",
+      "jornadatrabalhoescala",
+      "entrada",
+      "jornadastrabalho",
+      "jornadatrabalhofontedadosassociacao",
+      "escala",
+      "periodojornadatrabalho",
+      "jornadatrabalhofontedadoscompleta",
+      "horariointervalo",
+      "horario",
+      "campo",
+      "dados",
+      "horariomarcacao",
+      "hora"
+    ],
+    "entities": [
+      "Horario",
+      "HorarioIntervalo",
+      "JornadaTrabalhoEscala",
+      "busca",
+      "PeriodoJornadaTrabalho",
+      "JornadaTrabalhoFonteDadosAssociacao",
+      "jornadasTrabalho",
+      "JornadaTrabalhoFonteDadosCompleta",
+      "HorarioMarcacao",
+      "Escala"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.190820",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "f4956f047be2f358a1decb2bfe3d1e94",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 1.0
+  },
+  "embeddings_text": "Section: jornadasTrabalho_busca\nType: reference\nRelated to: Horario, HorarioIntervalo, JornadaTrabalhoEscala\n\n## HorarioMarcacao\n- id: Identificador (Type: Long)\n- hora: Horário (Type: LocalTime)\n\n## HorarioIntervalo\n- id: Identificador (Type: Long)\n- entrada: Horário de entrada (Type: LocalTime)\n- saida: Horário de saída (Type: LocalTime)\n\n## Horario\n- id: Identificador (Type: Long)\n- codigo: Código (Type: String)\n- entrada:  (Type: LocalTime)\n- saida:  (Type: LocalTime)\n- cargaHoraria: Carga horária (Type: BigDecimal)\n- marcacoes: Marcações (Type: HorarioMarcacao)\n- intervalos:  (Type: HorarioIntervalo)\n\n## PeriodoJornadaTrabalho\n- id: Identificador (Type: Long)\n- dia: Dia (Type: Integer)\n- horario: Horário (Type: Horario)\n- classificacao: Classificação (Type: )\n\n## JornadaTrabalhoFonteDadosAssociacao\n- id: Identificador (Type: Long)\n- cargaHorariaSemanal: Carga horária semanal (Type: Duration)\n- periodos: Períodos (Type: PeriodoJornadaTrabalho)\n\n## JornadaTrabalhoEscala\n- id: Id (Type: Long)\n- sequencia: Sequência (Type: Long)\n- jornadaTrabalho: Jornada de trabalho (Type: JornadaTrabalhoFonteDadosAssociacao)\n- cor: Cor (Type: String)\n\n## Escala\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo da escala (Type: )\n- jornadaTrabalhoEscalas: Jornadas (Type: JornadaTrabalhoEscala)\n\n## JornadaTrabalhoFonteDadosCompleta\n- id: Id (Type: Long)\n- codigo: Código (Type: String)\n- descricao: Descrição (Type: String)\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n- tipo: Tipo da jornada (Type: )\n- enviarESocial: tipo de valor que sera enviado ao eSocial (Type: )\n- horarioNoturno: Horario noturno (Type: Boolean)\n- tipoCompensacao: Compensação (Type: )\n- cargaHorariaSemanal: Carga horária semanal (Type: String)\n- desativado: Desativado (Type: Boolean)\n- periodos: Períodos (Type: PeriodoJornadaTrabalho)\n- revezamento: Revezamento (Type: Boolean)\n- tipoDeRevezamento: Tipo de revezamento (Type: )\n- escala: Escala (Type: Escala)\n- inicioRevezamento: Data de início do revezamento (Type: LocalDate)\n- horasDSR: Representa a quatidade de horas DSR (Type: LocalTime)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)\n\nKeywords: saida, tipo, id, jornadatrabalhoescala, entrada, jornadastrabalho, jornadatrabalhofontedadosassociacao, escala, periodojornadatrabalho, jornadatrabalhofontedadoscompleta, horariointervalo, horario, campo, dados, horariomarcacao, hora",
+  "search_text": "jornadasTrabalho_busca Horario HorarioIntervalo JornadaTrabalhoEscala busca PeriodoJornadaTrabalho JornadaTrabalhoFonteDadosAssociacao jornadasTrabalho JornadaTrabalhoFonteDadosCompleta HorarioMarcacao Escala saida tipo id jornadatrabalhoescala entrada jornadastrabalho jornadatrabalhofontedadosassociacao escala periodojornadatrabalho jornadatrabalhofontedadoscompleta horariointervalo horario campo dados horariomarcacao hora ## HorarioMarcacao\n- id: Identificador (Type: Long)\n- hora: Horário (Type: LocalTime)\n\n## HorarioIntervalo\n- id: Identificador (Type: Long)\n- entrada: Horário de entrada (Type: LocalTime)\n- saida: Horário de saída (Type: LocalTime)\n\n## Horario\n- id: Identificador (Type: Long)\n- codigo: Código (Type: String)\n- entrada:  (Type: LocalTime)\n- saida:  (Type: LocalTime)\n- cargaHoraria: Carga horária (Type: BigDecimal)\n- marcacoes: Marcações (Type: HorarioMarcacao)\n- intervalos:  (Type: HorarioIntervalo)\n\n## PeriodoJornadaTrabalho\n- id: Identificador (Type: Long)\n- dia: Dia (Type: Integer)\n- horario: Horário (Type: Horario)\n- classificacao: Classificação (Type: )\n\n## JornadaTrabalhoFonteDadosAssociacao\n- id: Identificador (Type: Long)\n- cargaHorariaSemanal: Carga horária semanal (Type: Duration)\n- periodos: Períodos (Type: PeriodoJornadaTrabalho)\n\n## JornadaTrabalhoEscala\n- id: Id (Type: Long)\n- sequencia: Sequência (Type: Long)\n- jornadaTrabalho: Jornada de trabalho (Type: JornadaTrabalhoFonteDadosAssociacao)\n- cor: Cor (Type: String)\n\n## Escala\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo da escala (Type: )\n- jornadaTrabalhoEscalas: Jornadas (Type: JornadaTrabalhoEscala)\n\n## JornadaTrabalhoFonteDadosCompleta\n- id: Id (Type: Long)\n- codigo: Código (Type: String)\n- descricao: Descrição (Type: String)\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n- tipo: Tipo da jornada (Type: )\n- enviarESocial: tipo de valor que sera enviado ao eSocial (Type: )\n- horarioNoturno: Horario noturno (Type: Boolean)\n- tipoCompensacao: Compensação (Type: )\n- cargaHorariaSemanal: Carga horária semanal (Type: String)\n- desativado: Desativado (Type: Boolean)\n- periodos: Períodos (Type: PeriodoJornadaTrabalho)\n- revezamento: Revezamento (Type: Boolean)\n- tipoDeRevezamento: Tipo de revezamento (Type: )\n- escala: Escala (Type: Escala)\n- inicioRevezamento: Data de início do revezamento (Type: LocalDate)\n- horasDSR: Representa a quatidade de horas DSR (Type: LocalTime)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)"
+}

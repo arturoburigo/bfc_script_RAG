@@ -1,0 +1,46 @@
+{
+  "content": "Integração contábil",
+  "metadata": {
+    "chunk_id": "integracaoContabil_busca_0_34faa8d2",
+    "section_name": "integracaoContabil_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 6,
+    "char_count": 19,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 4,
+    "keywords": [
+      "integracaocontabil"
+    ],
+    "entities": [
+      "SelecaoAvancadaFonteDados",
+      "IntegracaoContabilFonteDados",
+      "busca",
+      "integracaoContabil",
+      "MatriculaAssociacao",
+      "integracaoContabilInconsitencia",
+      "integracaoContabilAssociacao",
+      "ConfiguracaoIntegracaoContabilAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.548023",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "34faa8d24df32a9b740904c578b08c04",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: integracaoContabil_busca\nType: definition\nRelated to: SelecaoAvancadaFonteDados, IntegracaoContabilFonteDados, busca\n\nIntegração contábil\n\nKeywords: integracaocontabil",
+  "search_text": "integracaoContabil_busca SelecaoAvancadaFonteDados IntegracaoContabilFonteDados busca integracaoContabil MatriculaAssociacao integracaoContabilInconsitencia integracaoContabilAssociacao ConfiguracaoIntegracaoContabilAssociacao integracaocontabil Integração contábil"
+}

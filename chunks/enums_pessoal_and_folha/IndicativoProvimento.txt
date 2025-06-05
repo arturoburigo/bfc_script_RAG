@@ -1,4 +1,0 @@
-# IndicativoProvimento
-Enum: IndicativoProvimento
-- Normal (Key: NORMAL, Value: 1)
-- Decorrente de decisão judicial (Key: DECORRENTE_DECISAO_JUDICIAL, Value: 2)

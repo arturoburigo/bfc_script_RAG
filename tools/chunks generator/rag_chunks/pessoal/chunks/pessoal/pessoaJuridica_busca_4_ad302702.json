@@ -1,0 +1,47 @@
+{
+  "content": "- tipo: Tipo (Type: )\n- nomeFantasia: Nome fantasia (Type: String)\n- codigoInstFinanceira: Código Inst. Financeira (Type: String)\n- cnpj: CNPJ (Type: String)\n- id: Id (Type: Long)\n- razaoSocial: Razão social (Type: String)",
+  "metadata": {
+    "chunk_id": "pessoaJuridica_busca_4_ad302702",
+    "section_name": "pessoaJuridica_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 71,
+    "char_count": 222,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 37,
+    "keywords": [
+      "nomefantasia",
+      "id",
+      "cnpj",
+      "codigoinstfinanceira",
+      "tipo",
+      "pessoajuridica"
+    ],
+    "entities": [
+      "pessoaJuridica",
+      "SindicatoFuncionario",
+      "PessoaJuridica",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.640458",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "ad3027023b0c9bdbf25c19349e0d0cef",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: pessoaJuridica_busca\nType: reference\nRelated to: pessoaJuridica, SindicatoFuncionario, PessoaJuridica\n\n- tipo: Tipo (Type: )\n- nomeFantasia: Nome fantasia (Type: String)\n- codigoInstFinanceira: Código Inst. Financeira (Type: String)\n- cnpj: CNPJ (Type: String)\n- id: Id (Type: Long)\n- razaoSocial: Razão social (Type: String)\n\nKeywords: nomefantasia, id, cnpj, codigoinstfinanceira, tipo, pessoajuridica",
+  "search_text": "pessoaJuridica_busca pessoaJuridica SindicatoFuncionario PessoaJuridica busca nomefantasia id cnpj codigoinstfinanceira tipo pessoajuridica - tipo: Tipo (Type: )\n- nomeFantasia: Nome fantasia (Type: String)\n- codigoInstFinanceira: Código Inst. Financeira (Type: String)\n- cnpj: CNPJ (Type: String)\n- id: Id (Type: Long)\n- razaoSocial: Razão social (Type: String)"
+}

@@ -1,0 +1,47 @@
+{
+  "content": "- dataHomologacao: Data de homologação do concurso (Type: LocalDate)\n- dataInicialInscricao: Data de início da inscrição (Type: LocalDate)\n- dataFinalInscricaoPcd: Data final da inscrição dos PCDs (Type: LocalDate)\n- tipoRecrutamento: Tipo de Recrutamento (Type: )\n- dataProrrogacaoValidade: Data de prorrogação da validade do concurso (Type: LocalDate)\n- descricao: Descrição do concurso (Type: String)\n- dataFinalInscricao: Data final da inscrição (Type: LocalDate)\n- dataInicialInscricaoPcd: Data inicial da inscrição dos PCDs (Type: LocalDate)\n- dataEncerramento: Data de encerramento do concurso (Type: LocalDate)\n- dataValidade: Data de validade do concurso (Type: LocalDate)\n- numeroEdital: Número do edital do concurso (Type: String)\n- id: Id (Type: Long)\n- percentualPcd: Percentual de PcD (Type: BigDecimal)\n- dataProrrogacao: Data de prorrogação da inscrição (Type: LocalDate)",
+  "metadata": {
+    "chunk_id": "concurso_busca_4_a4a73b39",
+    "section_name": "concurso_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 261,
+    "char_count": 887,
+    "overlap_with_previous": 3,
+    "overlap_with_next": 74,
+    "keywords": [
+      "datafinalinscricaopcd",
+      "tiporecrutamento",
+      "datainicialinscricao",
+      "concurso",
+      "dataprorrogacaovalidade",
+      "tipo",
+      "datahomologacao"
+    ],
+    "entities": [
+      "concurso",
+      "Concurso",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.445769",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "a4a73b39bc3f01d16e45d5e563c0b47c",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.65
+  },
+  "embeddings_text": "Section: concurso_busca\nType: reference\nRelated to: concurso, Concurso, busca\n\n- dataHomologacao: Data de homologação do concurso (Type: LocalDate)\n- dataInicialInscricao: Data de início da inscrição (Type: LocalDate)\n- dataFinalInscricaoPcd: Data final da inscrição dos PCDs (Type: LocalDate)\n- tipoRecrutamento: Tipo de Recrutamento (Type: )\n- dataProrrogacaoValidade: Data de prorrogação da validade do concurso (Type: LocalDate)\n- descricao: Descrição do concurso (Type: String)\n- dataFinalInscricao: Data final da inscrição (Type: LocalDate)\n- dataInicialInscricaoPcd: Data inicial da inscrição dos PCDs (Type: LocalDate)\n- dataEncerramento: Data de encerramento do concurso (Type: LocalDate)\n- dataValidade: Data de validade do concurso (Type: LocalDate)\n- numeroEdital: Número do edital do concurso (Type: String)\n- id: Id (Type: Long)\n- percentualPcd: Percentual de PcD (Type: BigDecimal)\n- dataProrrogacao: Data de prorrogação da inscrição (Type: LocalDate)\n\nKeywords: datafinalinscricaopcd, tiporecrutamento, datainicialinscricao, concurso, dataprorrogacaovalidade, tipo, datahomologacao",
+  "search_text": "concurso_busca concurso Concurso busca datafinalinscricaopcd tiporecrutamento datainicialinscricao concurso dataprorrogacaovalidade tipo datahomologacao - dataHomologacao: Data de homologação do concurso (Type: LocalDate)\n- dataInicialInscricao: Data de início da inscrição (Type: LocalDate)\n- dataFinalInscricaoPcd: Data final da inscrição dos PCDs (Type: LocalDate)\n- tipoRecrutamento: Tipo de Recrutamento (Type: )\n- dataProrrogacaoValidade: Data de prorrogação da validade do concurso (Type: LocalDate)\n- descricao: Descrição do concurso (Type: String)\n- dataFinalInscricao: Data final da inscrição (Type: LocalDate)\n- dataInicialInscricaoPcd: Data inicial da inscrição dos PCDs (Type: LocalDate)\n- dataEncerramento: Data de encerramento do concurso (Type: LocalDate)\n- dataValidade: Data de validade do concurso (Type: LocalDate)\n- numeroEdital: Número do edital do concurso (Type: String)\n- id: Id (Type: Long)\n- percentualPcd: Percentual de PcD (Type: BigDecimal)\n- dataProrrogacao: Data de prorrogação da inscrição (Type: LocalDate)"
+}

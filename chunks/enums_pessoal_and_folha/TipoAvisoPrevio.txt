@@ -1,8 +1,0 @@
-# TipoAvisoPrevio
-Enum: TipoAvisoPrevio
-- Trabalhado com redução de 2 horas diárias (Key: TRABALHADO_REDUCAO_2_HORAS_DIARIAS, Value: 1)
-- Trabalhado com redução de 7 dias corridos (Key: TRABALHADO_REDUCAO_7_DIAS_CORRIDOS, Value: 2)
-- Indenizado (Key: INDENIZADO, Value: 3)
-- Trabalhado (Key: TRABALHADO, Value: 4)
-- Descontado (Key: DESCONTADO, Value: 5)
-- Dispensado (Key: DISPENSADO, Value: 6)

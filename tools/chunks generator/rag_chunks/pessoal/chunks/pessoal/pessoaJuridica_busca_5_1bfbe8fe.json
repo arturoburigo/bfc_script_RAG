@@ -1,0 +1,48 @@
+{
+  "content": "## SindicatoFuncionario\n- tipo: Tipo (Type: )\n- mesContribuicao: Mês contribuição (Type: )\n- numero: Número (Type: String)\n- diasAviso: Dias de aviso (Type: Integer)\n- dataBase: Data base (Type: MonthDay)\n\n## PessoaJuridica\n- id: Id (Type: Long)\n- tipo: Tipo (Type: )\n- razaoSocial: Razão social (Type: String)\n- nomeFantasia: Nome fantasia (Type: String)\n- cnpj: CNPJ (Type: String)\n- codigoInstFinanceira: Código Inst. Financeira (Type: String)\n- sindicato: Sindicato (Type: SindicatoFuncionario)",
+  "metadata": {
+    "chunk_id": "pessoaJuridica_busca_5_1bfbe8fe",
+    "section_name": "pessoaJuridica_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 159,
+    "char_count": 498,
+    "overlap_with_previous": 37,
+    "overlap_with_next": 16,
+    "keywords": [
+      "mescontribuicao",
+      "numero",
+      "database",
+      "diasaviso",
+      "sindicatofuncionario",
+      "tipo",
+      "pessoajuridica"
+    ],
+    "entities": [
+      "pessoaJuridica",
+      "SindicatoFuncionario",
+      "PessoaJuridica",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.640664",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "1bfbe8fe1281cc8c70dcc072041ce0a6",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.8
+  },
+  "embeddings_text": "Section: pessoaJuridica_busca\nType: reference\nRelated to: pessoaJuridica, SindicatoFuncionario, PessoaJuridica\n\n## SindicatoFuncionario\n- tipo: Tipo (Type: )\n- mesContribuicao: Mês contribuição (Type: )\n- numero: Número (Type: String)\n- diasAviso: Dias de aviso (Type: Integer)\n- dataBase: Data base (Type: MonthDay)\n\n## PessoaJuridica\n- id: Id (Type: Long)\n- tipo: Tipo (Type: )\n- razaoSocial: Razão social (Type: String)\n- nomeFantasia: Nome fantasia (Type: String)\n- cnpj: CNPJ (Type: String)\n- codigoInstFinanceira: Código Inst. Financeira (Type: String)\n- sindicato: Sindicato (Type: SindicatoFuncionario)\n\nKeywords: mescontribuicao, numero, database, diasaviso, sindicatofuncionario, tipo, pessoajuridica",
+  "search_text": "pessoaJuridica_busca pessoaJuridica SindicatoFuncionario PessoaJuridica busca mescontribuicao numero database diasaviso sindicatofuncionario tipo pessoajuridica ## SindicatoFuncionario\n- tipo: Tipo (Type: )\n- mesContribuicao: Mês contribuição (Type: )\n- numero: Número (Type: String)\n- diasAviso: Dias de aviso (Type: Integer)\n- dataBase: Data base (Type: MonthDay)\n\n## PessoaJuridica\n- id: Id (Type: Long)\n- tipo: Tipo (Type: )\n- razaoSocial: Razão social (Type: String)\n- nomeFantasia: Nome fantasia (Type: String)\n- cnpj: CNPJ (Type: String)\n- codigoInstFinanceira: Código Inst. Financeira (Type: String)\n- sindicato: Sindicato (Type: SindicatoFuncionario)"
+}

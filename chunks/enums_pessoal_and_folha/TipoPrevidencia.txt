@@ -1,7 +1,0 @@
-# TipoPrevidencia
-Enum: TipoPrevidencia
-- Estadual (Key: ESTADUAL, Value: 1)
-- Fundo de Assistência (Key: FUNDO_ASSISTENCIA, Value: 2)
-- Fundo de Previdência (Key: FUNDO_PREVIDENCIA, Value: 3)
-- Fundo Financeiro (Key: FUNDO_FINANCEIRO, Value: 4)
-- Complementar (Key: COMPLEMENTAR, Value: 5)

@@ -1,0 +1,41 @@
+{
+  "content": "Cbo",
+  "metadata": {
+    "chunk_id": "cbos_busca_0_64cd357f",
+    "section_name": "cbos_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 2,
+    "char_count": 3,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 1,
+    "keywords": [
+      "cbos"
+    ],
+    "entities": [
+      "cbos",
+      "Cbo",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.198980",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "64cd357f4f97b1f17457a06d738b8339",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "areaAtuacao_areaatuacao_3_931a34ca"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: cbos_busca\nType: definition\nRelated to: cbos, Cbo, busca\n\nCbo\n\nKeywords: cbos",
+  "search_text": "cbos_busca cbos Cbo busca cbos Cbo"
+}

@@ -1,0 +1,43 @@
+{
+  "content": "buscaNiveisEmUso (GET)\nMethod Description: Listagem de nível em uso da configuração de organograma\n\nRepresentation Type: ConfiguracaoNivelOrganograma",
+  "metadata": {
+    "chunk_id": "configuracoes-organogramas_buscaNiveisEmUso_1_e26a804c",
+    "section_name": "configuracoes-organogramas_buscaNiveisEmUso",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 41,
+    "char_count": 149,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 23,
+    "keywords": [
+      "configuracoes-organogramas",
+      "busca"
+    ],
+    "entities": [
+      "configuracoes-organogramas",
+      "buscaNiveisEmUso",
+      "ConfiguracaoOrganograma",
+      "ConfiguracaoNivelOrganograma"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.664844",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "e26a804c7dcfc8d3370e07a4d01d634f",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracoes-organogramas_buscaNiveisEmUso\nType: definition\nRelated to: configuracoes-organogramas, buscaNiveisEmUso, ConfiguracaoOrganograma\n\nbuscaNiveisEmUso (GET)\nMethod Description: Listagem de nível em uso da configuração de organograma\n\nRepresentation Type: ConfiguracaoNivelOrganograma\n\nKeywords: configuracoes-organogramas, busca",
+  "search_text": "configuracoes-organogramas_buscaNiveisEmUso configuracoes-organogramas buscaNiveisEmUso ConfiguracaoOrganograma ConfiguracaoNivelOrganograma configuracoes-organogramas busca buscaNiveisEmUso (GET)\nMethod Description: Listagem de nível em uso da configuração de organograma\n\nRepresentation Type: ConfiguracaoNivelOrganograma"
+}

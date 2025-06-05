@@ -1,0 +1,50 @@
+{
+  "content": "groovy\nfonteTipofuncao = Dados.pessoal.v2.tipofuncao;\n\ndadosTipofuncao = fonteTipofuncao.busca(campos: \"id, descricao, classificacaoTipoFuncao, tipoFuncaoGratificada\",ordenacao: \"descricao asc\")\n\npercorrer (dadosTipofuncao) { itemTipofuncao ->\n\n}",
+  "metadata": {
+    "chunk_id": "tipofuncao_busca_6_c7090124",
+    "section_name": "tipofuncao_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 85,
+    "char_count": 246,
+    "overlap_with_previous": 14,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "tipo",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados",
+      "funcao",
+      "tipofuncao"
+    ],
+    "entities": [
+      "Dados.pessoal.v2.tipofuncao",
+      "busca",
+      "TipoFuncao",
+      "tipofuncao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.088102",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "c7090124ada56541a9a0da9228189e0e",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: tipofuncao_busca\nType: example\nRelated to: Dados.pessoal.v2.tipofuncao, busca, TipoFuncao\n\ngroovy\nfonteTipofuncao = Dados.pessoal.v2.tipofuncao;\n\ndadosTipofuncao = fonteTipofuncao.busca(campos: \"id, descricao, classificacaoTipoFuncao, tipoFuncaoGratificada\",ordenacao: \"descricao asc\")\n\npercorrer (dadosTipofuncao) { itemTipofuncao ->\n\n}\n\nKeywords: pessoal, busca, tipo, ordenacao, v2, campo, dados, funcao, tipofuncao",
+  "search_text": "tipofuncao_busca Dados.pessoal.v2.tipofuncao busca TipoFuncao tipofuncao pessoal busca tipo ordenacao v2 campo dados funcao tipofuncao groovy\nfonteTipofuncao = Dados.pessoal.v2.tipofuncao;\n\ndadosTipofuncao = fonteTipofuncao.busca(campos: \"id, descricao, classificacaoTipoFuncao, tipoFuncaoGratificada\",ordenacao: \"descricao asc\")\n\npercorrer (dadosTipofuncao) { itemTipofuncao ->\n\n}"
+}

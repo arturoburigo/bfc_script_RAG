@@ -1,0 +1,55 @@
+{
+  "content": "Configuração RAIS\n\nRepresentation Type: ConfiguracaoRais",
+  "metadata": {
+    "chunk_id": "configuracaoRais_buscaResponsavel_2_fd676cfc",
+    "section_name": "configuracaoRais_buscaResponsavel",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 14,
+    "char_count": 56,
+    "overlap_with_previous": 13,
+    "overlap_with_next": 14,
+    "keywords": [
+      "configuracaorais"
+    ],
+    "entities": [
+      "DeficienciaPessoaFisica",
+      "PessoaOrigem",
+      "ConfiguracaoRaisCampo",
+      "buscaResponsavel",
+      "AtoConfiguracaoEvento",
+      "Base",
+      "ConfiguracaoEventoFonteDados",
+      "configuracaoRais",
+      "dependenciasFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoRaisCampoEvento",
+      "PessoaJuridica",
+      "ConfiguracaoRais",
+      "ProcessoJudicial",
+      "SindicatoFuncionario",
+      "PessoaFisicaRepresentation",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.210907",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "fd676cfcd62bcf840301395576543372",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracaoRais_buscaResponsavel\nType: definition\nRelated to: DeficienciaPessoaFisica, PessoaOrigem, ConfiguracaoRaisCampo\n\nConfiguração RAIS\n\nRepresentation Type: ConfiguracaoRais\n\nKeywords: configuracaorais",
+  "search_text": "configuracaoRais_buscaResponsavel DeficienciaPessoaFisica PessoaOrigem ConfiguracaoRaisCampo buscaResponsavel AtoConfiguracaoEvento Base ConfiguracaoEventoFonteDados configuracaoRais dependenciasFonteDados ScriptFonteDados ConfiguracaoRaisCampoEvento PessoaJuridica ConfiguracaoRais ProcessoJudicial SindicatoFuncionario PessoaFisicaRepresentation ConfiguracaoEventoAssociacaoFonteDados configuracaorais Configuração RAIS\n\nRepresentation Type: ConfiguracaoRais"
+}

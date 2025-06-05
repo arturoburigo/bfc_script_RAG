@@ -1,0 +1,50 @@
+{
+  "content": "groovy\nfonteTipoBase = Dados.folha.v2.tipoBase;\n\nfiltroTipoBase = \"id = null\"\n\ndadosTipoBase = fonteTipoBase.busca(criterio: filtroTipoBase,campos: \"id, sigla, descricao, classificacao\",ordenacao: \"id asc\")\n\npercorrer (dadosTipoBase) { itemTipoBase ->\n\n}",
+  "metadata": {
+    "chunk_id": "tipoBase_busca_6_3e457cba",
+    "section_name": "tipoBase_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 82,
+    "char_count": 254,
+    "overlap_with_previous": 9,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "tipobase",
+      "tipo",
+      "filtro",
+      "ordenacao",
+      "folha",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "busca",
+      "Dados.folha.v2.tipoBase",
+      "Base",
+      "tipoBase"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.295306",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "3e457cbacacf66dbf5aeac04ce4a3f1a",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: tipoBase_busca\nType: example\nRelated to: busca, Dados.folha.v2.tipoBase, Base\n\ngroovy\nfonteTipoBase = Dados.folha.v2.tipoBase;\n\nfiltroTipoBase = \"id = null\"\n\ndadosTipoBase = fonteTipoBase.busca(criterio: filtroTipoBase,campos: \"id, sigla, descricao, classificacao\",ordenacao: \"id asc\")\n\npercorrer (dadosTipoBase) { itemTipoBase ->\n\n}\n\nKeywords: busca, tipobase, tipo, filtro, ordenacao, folha, v2, campo, dados",
+  "search_text": "tipoBase_busca busca Dados.folha.v2.tipoBase Base tipoBase busca tipobase tipo filtro ordenacao folha v2 campo dados groovy\nfonteTipoBase = Dados.folha.v2.tipoBase;\n\nfiltroTipoBase = \"id = null\"\n\ndadosTipoBase = fonteTipoBase.busca(criterio: filtroTipoBase,campos: \"id, sigla, descricao, classificacao\",ordenacao: \"id asc\")\n\npercorrer (dadosTipoBase) { itemTipoBase ->\n\n}"
+}

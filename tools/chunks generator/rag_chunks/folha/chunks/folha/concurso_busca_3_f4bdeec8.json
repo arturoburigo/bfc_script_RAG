@@ -1,0 +1,41 @@
+{
+  "content": "Listagem de concursos\n\nRepresentation Type: Concurso",
+  "metadata": {
+    "chunk_id": "concurso_busca_3_f4bdeec8",
+    "section_name": "concurso_busca",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 11,
+    "char_count": 52,
+    "overlap_with_previous": 11,
+    "overlap_with_next": 3,
+    "keywords": [
+      "concurso"
+    ],
+    "entities": [
+      "concurso",
+      "Concurso",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.445500",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "f4bdeec82d0be64b230a22eab210b56e",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: concurso_busca\nType: definition\nRelated to: concurso, Concurso, busca\n\nListagem de concursos\n\nRepresentation Type: Concurso\n\nKeywords: concurso",
+  "search_text": "concurso_busca concurso Concurso busca concurso Listagem de concursos\n\nRepresentation Type: Concurso"
+}

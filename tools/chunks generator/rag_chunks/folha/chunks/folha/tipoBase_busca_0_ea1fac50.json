@@ -1,0 +1,42 @@
+{
+  "content": "TipoBase",
+  "metadata": {
+    "chunk_id": "tipoBase_busca_0_ea1fac50",
+    "section_name": "tipoBase_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 2,
+    "char_count": 8,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 0,
+    "keywords": [
+      "tipo",
+      "tipobase"
+    ],
+    "entities": [
+      "busca",
+      "Base",
+      "tipoBase"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.294937",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "ea1fac509763c26d51e95492ca6da0ef",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: tipoBase_busca\nType: definition\nRelated to: busca, Base, tipoBase\n\nTipoBase\n\nKeywords: tipo, tipobase",
+  "search_text": "tipoBase_busca busca Base tipoBase tipo tipobase TipoBase"
+}

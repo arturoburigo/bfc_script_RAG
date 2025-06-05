@@ -1,0 +1,52 @@
+{
+  "content": "groovy\nfonteAtos = Dados.pessoal.v2.atos;\n\ndadosAtos = fonteAtos.buscaDocumentos(campos: \"name, key, description, type, size, url\",parametros:[\"atoId\":null])\n\npercorrer (dadosAtos) { itemAtos ->\n\n}",
+  "metadata": {
+    "chunk_id": "atos_buscaDocumentos_6_29b63e12",
+    "section_name": "atos_buscaDocumentos",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 69,
+    "char_count": 197,
+    "overlap_with_previous": 9,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "v2",
+      "atos",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "atos",
+      "ArquivoAto",
+      "NaturezaTextoJuridico",
+      "Dados.pessoal.v2.atos",
+      "buscaDocumentos",
+      "AtoFonteDivulgacao",
+      "TipoAto",
+      "AtoFonteDados",
+      "FonteDivulgacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.192903",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "29b63e123cfa98691492899accfab31d",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "fontesDivulgacao_busca_2_58920ed9"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: atos_buscaDocumentos\nType: example\nRelated to: atos, ArquivoAto, NaturezaTextoJuridico\n\ngroovy\nfonteAtos = Dados.pessoal.v2.atos;\n\ndadosAtos = fonteAtos.buscaDocumentos(campos: \"name, key, description, type, size, url\",parametros:[\"atoId\":null])\n\npercorrer (dadosAtos) { itemAtos ->\n\n}\n\nKeywords: pessoal, busca, v2, atos, campo, dados",
+  "search_text": "atos_buscaDocumentos atos ArquivoAto NaturezaTextoJuridico Dados.pessoal.v2.atos buscaDocumentos AtoFonteDivulgacao TipoAto AtoFonteDados FonteDivulgacao pessoal busca v2 atos campo dados groovy\nfonteAtos = Dados.pessoal.v2.atos;\n\ndadosAtos = fonteAtos.buscaDocumentos(campos: \"name, key, description, type, size, url\",parametros:[\"atoId\":null])\n\npercorrer (dadosAtos) { itemAtos ->\n\n}"
+}

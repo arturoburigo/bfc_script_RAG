@@ -1,4 +1,0 @@
-# UnidadeCalculo
-Enum: UnidadeCalculo
-- Dias (Key: DIAS, Value: D)
-- Horas (Key: HORAS, Value: H)

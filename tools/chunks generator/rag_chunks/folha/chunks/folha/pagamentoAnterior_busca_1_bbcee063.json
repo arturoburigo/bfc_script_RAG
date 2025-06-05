@@ -1,0 +1,45 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de processos trabalhistas\n\nRepresentation Type: PagamentoAnterior",
+  "metadata": {
+    "chunk_id": "pagamentoAnterior_busca_1_bbcee063",
+    "section_name": "pagamentoAnterior_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 24,
+    "char_count": 106,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 15,
+    "keywords": [
+      "pagamentoanterior",
+      "busca"
+    ],
+    "entities": [
+      "busca",
+      "PagamentoAnterior",
+      "pagamentoAnterior",
+      "PagamentoAnteriorParcela",
+      "MatriculaAssociacao",
+      "DespesaFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.647219",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "bbcee063e178d901319a316cd17bf22a",
+    "related_chunks": [
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19",
+      "remuneracoes_buscaComposicoesBasesFolha_3_3f265087",
+      "remuneracoes_buscaEventosDeFolhas_0_f817d7f1"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: pagamentoAnterior_busca\nType: definition\nRelated to: busca, PagamentoAnterior, pagamentoAnterior\n\nbusca (GET)\nMethod Description: Listagem de processos trabalhistas\n\nRepresentation Type: PagamentoAnterior\n\nKeywords: pagamentoanterior, busca",
+  "search_text": "pagamentoAnterior_busca busca PagamentoAnterior pagamentoAnterior PagamentoAnteriorParcela MatriculaAssociacao DespesaFonteDados pagamentoanterior busca busca (GET)\nMethod Description: Listagem de processos trabalhistas\n\nRepresentation Type: PagamentoAnterior"
+}

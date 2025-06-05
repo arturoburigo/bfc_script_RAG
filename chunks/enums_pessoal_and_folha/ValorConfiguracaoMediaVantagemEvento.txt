@@ -1,5 +1,0 @@
-# ValorConfiguracaoMediaVantagemEvento
-Enum: ValorConfiguracaoMediaVantagemEvento
-- Soma dos valores (Key: SOMA_VALORES, Value: 1)
-- Maior valor X nº de meses (Key: MAIOR_VALOR_MESES, Value: 2)
-- Último valor X nº de meses (Key: ULTIMO_VALOR_MESES, Value: 3)

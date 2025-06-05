@@ -1,0 +1,51 @@
+{
+  "content": "groovy\nfonteMunicipios = Dados.pessoal.v2.municipios;\n\nfiltroMunicipios = \"estado.id = null\"\n\ndadosMunicipios = fonteMunicipios.busca(criterio: filtroMunicipios,campos: \"id, nome, codigoIbge, cep, codigoSiafi, estado(nome, id, sigla)\",ordenacao: \"nome asc\")\n\npercorrer (dadosMunicipios) { itemMunicipios ->\n\n}",
+  "metadata": {
+    "chunk_id": "municipios_busca_6_05c7fdf3",
+    "section_name": "municipios_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 104,
+    "char_count": 309,
+    "overlap_with_previous": 19,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "municipios",
+      "filtro",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Dados.pessoal.v2.municipios",
+      "Estado",
+      "busca",
+      "Municipio",
+      "municipios",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.656910",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "05c7fdf3c203e823251900bcefdf24b1",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: municipios_busca\nType: example\nRelated to: Dados.pessoal.v2.municipios, Estado, busca\n\ngroovy\nfonteMunicipios = Dados.pessoal.v2.municipios;\n\nfiltroMunicipios = \"estado.id = null\"\n\ndadosMunicipios = fonteMunicipios.busca(criterio: filtroMunicipios,campos: \"id, nome, codigoIbge, cep, codigoSiafi, estado(nome, id, sigla)\",ordenacao: \"nome asc\")\n\npercorrer (dadosMunicipios) { itemMunicipios ->\n\n}\n\nKeywords: pessoal, busca, municipios, filtro, ordenacao, v2, campo, dados",
+  "search_text": "municipios_busca Dados.pessoal.v2.municipios Estado busca Municipio municipios Pais pessoal busca municipios filtro ordenacao v2 campo dados groovy\nfonteMunicipios = Dados.pessoal.v2.municipios;\n\nfiltroMunicipios = \"estado.id = null\"\n\ndadosMunicipios = fonteMunicipios.busca(criterio: filtroMunicipios,campos: \"id, nome, codigoIbge, cep, codigoSiafi, estado(nome, id, sigla)\",ordenacao: \"nome asc\")\n\npercorrer (dadosMunicipios) { itemMunicipios ->\n\n}"
+}

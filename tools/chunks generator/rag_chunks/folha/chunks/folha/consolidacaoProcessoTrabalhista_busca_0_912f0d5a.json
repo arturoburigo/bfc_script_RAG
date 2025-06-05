@@ -1,0 +1,46 @@
+{
+  "content": "Consolidação processo trabalhista",
+  "metadata": {
+    "chunk_id": "consolidacaoProcessoTrabalhista_busca_0_912f0d5a",
+    "section_name": "consolidacaoProcessoTrabalhista_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 8,
+    "char_count": 33,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 5,
+    "keywords": [
+      "consolidacaoprocessotrabalhista"
+    ],
+    "entities": [
+      "ProcessoTrabalhistaAssociacao",
+      "busca",
+      "FonteDadosAssociacao",
+      "ConsolidacaoProcessoTrabalhistaFonteDados",
+      "DadosTributacaoAssociacao",
+      "consolidacaoProcessoTrabalhista",
+      "FonteDadosConsolidacaoProcessoTrabalhistaAssociacao",
+      "PessoaFisicaAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.145395",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "912f0d5aba44e61975d4b7c59ad27064",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: consolidacaoProcessoTrabalhista_busca\nType: definition\nRelated to: ProcessoTrabalhistaAssociacao, busca, FonteDadosAssociacao\n\nConsolidação processo trabalhista\n\nKeywords: consolidacaoprocessotrabalhista",
+  "search_text": "consolidacaoProcessoTrabalhista_busca ProcessoTrabalhistaAssociacao busca FonteDadosAssociacao ConsolidacaoProcessoTrabalhistaFonteDados DadosTributacaoAssociacao consolidacaoProcessoTrabalhista FonteDadosConsolidacaoProcessoTrabalhistaAssociacao PessoaFisicaAssociacao consolidacaoprocessotrabalhista Consolidação processo trabalhista"
+}

@@ -1,0 +1,57 @@
+{
+  "content": "groovy\nfonteJornadasTrabalho = Dados.pessoal.v2.jornadasTrabalho;\n\nfiltroJornadasTrabalho = \"inicioVigencia >= 2015-09-09\"\n\ndadosJornadasTrabalho = fonteJornadasTrabalho.busca(criterio: filtroJornadasTrabalho,campos: \"id, codigo, descricao, inicioVigencia, tipo, enviarESocial, tipoCompensacao\",ordenacao: \"inicioVigencia asc\")\n\npercorrer (dadosJornadasTrabalho) { itemJornadasTrabalho ->\n\n}",
+  "metadata": {
+    "chunk_id": "jornadasTrabalho_busca_6_e35af9f0",
+    "section_name": "jornadasTrabalho_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 137,
+    "char_count": 391,
+    "overlap_with_previous": 29,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "tipo",
+      "jornadastrabalho",
+      "filtro",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Horario",
+      "HorarioIntervalo",
+      "JornadaTrabalhoEscala",
+      "Dados.pessoal.v2.jornadasTrabalho",
+      "busca",
+      "PeriodoJornadaTrabalho",
+      "JornadaTrabalhoFonteDadosAssociacao",
+      "jornadasTrabalho",
+      "JornadaTrabalhoFonteDadosCompleta",
+      "HorarioMarcacao",
+      "Escala"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.191290",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "e35af9f0b6520dc35b225114f661ab8e",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: jornadasTrabalho_busca\nType: example\nRelated to: Horario, HorarioIntervalo, JornadaTrabalhoEscala\n\ngroovy\nfonteJornadasTrabalho = Dados.pessoal.v2.jornadasTrabalho;\n\nfiltroJornadasTrabalho = \"inicioVigencia >= 2015-09-09\"\n\ndadosJornadasTrabalho = fonteJornadasTrabalho.busca(criterio: filtroJornadasTrabalho,campos: \"id, codigo, descricao, inicioVigencia, tipo, enviarESocial, tipoCompensacao\",ordenacao: \"inicioVigencia asc\")\n\npercorrer (dadosJornadasTrabalho) { itemJornadasTrabalho ->\n\n}\n\nKeywords: pessoal, busca, tipo, jornadastrabalho, filtro, ordenacao, v2, campo, dados",
+  "search_text": "jornadasTrabalho_busca Horario HorarioIntervalo JornadaTrabalhoEscala Dados.pessoal.v2.jornadasTrabalho busca PeriodoJornadaTrabalho JornadaTrabalhoFonteDadosAssociacao jornadasTrabalho JornadaTrabalhoFonteDadosCompleta HorarioMarcacao Escala pessoal busca tipo jornadastrabalho filtro ordenacao v2 campo dados groovy\nfonteJornadasTrabalho = Dados.pessoal.v2.jornadasTrabalho;\n\nfiltroJornadasTrabalho = \"inicioVigencia >= 2015-09-09\"\n\ndadosJornadasTrabalho = fonteJornadasTrabalho.busca(criterio: filtroJornadasTrabalho,campos: \"id, codigo, descricao, inicioVigencia, tipo, enviarESocial, tipoCompensacao\",ordenacao: \"inicioVigencia asc\")\n\npercorrer (dadosJornadasTrabalho) { itemJornadasTrabalho ->\n\n}"
+}

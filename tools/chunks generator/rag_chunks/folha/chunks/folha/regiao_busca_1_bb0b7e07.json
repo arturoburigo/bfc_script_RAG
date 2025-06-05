@@ -1,0 +1,42 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de região\n\nRepresentation Type: Regiao",
+  "metadata": {
+    "chunk_id": "regiao_busca_1_bb0b7e07",
+    "section_name": "regiao_busca",
+    "chunk_index": 1,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 19,
+    "char_count": 79,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 10,
+    "keywords": [
+      "regiao",
+      "busca"
+    ],
+    "entities": [
+      "Regiao",
+      "regiao",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.295478",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "bb0b7e07a067a7885e7c9126657d32bb",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: regiao_busca\nType: definition\nRelated to: Regiao, regiao, busca\n\nbusca (GET)\nMethod Description: Listagem de região\n\nRepresentation Type: Regiao\n\nKeywords: regiao, busca",
+  "search_text": "regiao_busca Regiao regiao busca regiao busca busca (GET)\nMethod Description: Listagem de região\n\nRepresentation Type: Regiao"
+}

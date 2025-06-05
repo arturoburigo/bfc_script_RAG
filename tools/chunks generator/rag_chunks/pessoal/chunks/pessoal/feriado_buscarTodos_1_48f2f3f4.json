@@ -1,0 +1,43 @@
+{
+  "content": "buscarTodos (GET)\nMethod Description: Listagem de Feriados\n\nRepresentation Type: FeriadoDadosRepresentation",
+  "metadata": {
+    "chunk_id": "feriado_buscarTodos_1_48f2f3f4",
+    "section_name": "feriado_buscarTodos",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 22,
+    "char_count": 107,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 11,
+    "keywords": [
+      "feriado",
+      "dados",
+      "busca"
+    ],
+    "entities": [
+      "feriado",
+      "FeriadoDadosRepresentation",
+      "buscarTodos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.202610",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "48f2f3f490dc89d3bdb0557878b6fed6",
+    "related_chunks": [
+      "feriado_buscarTodos_3_ae2a9086",
+      "feriado_buscarTodos_5_020d3034",
+      "feriado_buscarTodos_0_1528e9c1",
+      "feriado_buscarTodos_2_ae2a9086",
+      "cargo_buscaTodos_4_e2a05bd8"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: feriado_buscarTodos\nType: definition\nRelated to: feriado, FeriadoDadosRepresentation, buscarTodos\n\nbuscarTodos (GET)\nMethod Description: Listagem de Feriados\n\nRepresentation Type: FeriadoDadosRepresentation\n\nKeywords: feriado, dados, busca",
+  "search_text": "feriado_buscarTodos feriado FeriadoDadosRepresentation buscarTodos feriado dados busca buscarTodos (GET)\nMethod Description: Listagem de Feriados\n\nRepresentation Type: FeriadoDadosRepresentation"
+}

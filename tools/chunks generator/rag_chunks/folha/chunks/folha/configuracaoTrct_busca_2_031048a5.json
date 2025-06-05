@@ -1,0 +1,44 @@
+{
+  "content": "TRCT - Rescisão\n\nRepresentation Type: ConfiguracaoTrctFontDados",
+  "metadata": {
+    "chunk_id": "configuracaoTrct_busca_2_031048a5",
+    "section_name": "configuracaoTrct_busca",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 17,
+    "char_count": 63,
+    "overlap_with_previous": 16,
+    "overlap_with_next": 17,
+    "keywords": [
+      "configuracaotrct",
+      "dados"
+    ],
+    "entities": [
+      "configuracaoTrct",
+      "ConfiguracaoTrctFontDados",
+      "busca",
+      "ConfiguracaoEventoFonteDados",
+      "ConfiguracaoTrctEventoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.979527",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "031048a52531dd936a183f246574ee04",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracaoTrct_busca\nType: definition\nRelated to: configuracaoTrct, ConfiguracaoTrctFontDados, busca\n\nTRCT - Rescisão\n\nRepresentation Type: ConfiguracaoTrctFontDados\n\nKeywords: configuracaotrct, dados",
+  "search_text": "configuracaoTrct_busca configuracaoTrct ConfiguracaoTrctFontDados busca ConfiguracaoEventoFonteDados ConfiguracaoTrctEventoFonteDados configuracaotrct dados TRCT - Rescisão\n\nRepresentation Type: ConfiguracaoTrctFontDados"
+}

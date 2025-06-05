@@ -1,0 +1,50 @@
+{
+  "content": "groovy\nfonteTipoAfastamento = Dados.pessoal.v2.tipoAfastamento;\n\ndadosTipoAfastamento = fonteTipoAfastamento.busca(campos: \"descricao, classificacao, diasPrevistos, consideraVencimento, perdeTempoServico, reduz13Salario, reduzFerias, reduzFgts, id, tipoMovimentacaoPessoal(id, descricao, classificacao)\",ordenacao: \"classificacao asc\")\n\npercorrer (dadosTipoAfastamento) { itemTipoAfastamento ->\n\n}",
+  "metadata": {
+    "chunk_id": "tipoAfastamento_busca_6_00b32f09",
+    "section_name": "tipoAfastamento_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 127,
+    "char_count": 397,
+    "overlap_with_previous": 45,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "tipo",
+      "tipoafastamento",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "TipoMovimentacaoPessoalTipoAfastamento",
+      "TipoAfastamentoFonteDados",
+      "busca",
+      "tipoAfastamento",
+      "Dados.pessoal.v2.tipoAfastamento"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.385388",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "00b32f09654e2a6c17deddccc28d0613",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: tipoAfastamento_busca\nType: example\nRelated to: TipoMovimentacaoPessoalTipoAfastamento, TipoAfastamentoFonteDados, busca\n\ngroovy\nfonteTipoAfastamento = Dados.pessoal.v2.tipoAfastamento;\n\ndadosTipoAfastamento = fonteTipoAfastamento.busca(campos: \"descricao, classificacao, diasPrevistos, consideraVencimento, perdeTempoServico, reduz13Salario, reduzFerias, reduzFgts, id, tipoMovimentacaoPessoal(id, descricao, classificacao)\",ordenacao: \"classificacao asc\")\n\npercorrer (dadosTipoAfastamento) { itemTipoAfastamento ->\n\n}\n\nKeywords: pessoal, busca, tipo, tipoafastamento, ordenacao, v2, campo, dados",
+  "search_text": "tipoAfastamento_busca TipoMovimentacaoPessoalTipoAfastamento TipoAfastamentoFonteDados busca tipoAfastamento Dados.pessoal.v2.tipoAfastamento pessoal busca tipo tipoafastamento ordenacao v2 campo dados groovy\nfonteTipoAfastamento = Dados.pessoal.v2.tipoAfastamento;\n\ndadosTipoAfastamento = fonteTipoAfastamento.busca(campos: \"descricao, classificacao, diasPrevistos, consideraVencimento, perdeTempoServico, reduz13Salario, reduzFerias, reduzFgts, id, tipoMovimentacaoPessoal(id, descricao, classificacao)\",ordenacao: \"classificacao asc\")\n\npercorrer (dadosTipoAfastamento) { itemTipoAfastamento ->\n\n}"
+}

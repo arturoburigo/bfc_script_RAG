@@ -1,4 +1,0 @@
-# DuracaoBeneficio
-Enum: DuracaoBeneficio
-- Vitalícia (Key: VITALICIA, Value: 1)
-- Temporária (Key: TEMPORARIA, Value: 2)

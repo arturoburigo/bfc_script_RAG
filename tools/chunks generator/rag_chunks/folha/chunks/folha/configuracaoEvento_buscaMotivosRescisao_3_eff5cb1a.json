@@ -1,0 +1,48 @@
+{
+  "content": "Listagem dos motivos de rescisão\n\nRepresentation Type: MotivoRescisaoConfiguracaoEvento",
+  "metadata": {
+    "chunk_id": "configuracaoEvento_buscaMotivosRescisao_3_eff5cb1a",
+    "section_name": "configuracaoEvento_buscaMotivosRescisao",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 22,
+    "char_count": 87,
+    "overlap_with_previous": 22,
+    "overlap_with_next": 1,
+    "keywords": [
+      "configuracaoevento"
+    ],
+    "entities": [
+      "AtoConfiguracaoEvento",
+      "MotivoRescisaoConfiguracaoEvento",
+      "configuracaoEvento",
+      "Base",
+      "dependenciasFonteDados",
+      "ConfiguracaoEventoFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoProcessamentoFonteDados",
+      "ConfiguracaoEventoAssociacaoFonteDados",
+      "buscaMotivosRescisao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.508073",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "eff5cb1a300d86aa20a5821bb8c3fdd2",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_buscaMotivosRescisao_1_0ae38fb7",
+      "configuracaoRais_buscaResponsavel_2_fd676cfc",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracaoEvento_buscaMotivosRescisao\nType: definition\nRelated to: AtoConfiguracaoEvento, MotivoRescisaoConfiguracaoEvento, configuracaoEvento\n\nListagem dos motivos de rescisão\n\nRepresentation Type: MotivoRescisaoConfiguracaoEvento\n\nKeywords: configuracaoevento",
+  "search_text": "configuracaoEvento_buscaMotivosRescisao AtoConfiguracaoEvento MotivoRescisaoConfiguracaoEvento configuracaoEvento Base dependenciasFonteDados ConfiguracaoEventoFonteDados ScriptFonteDados ConfiguracaoProcessamentoFonteDados ConfiguracaoEventoAssociacaoFonteDados buscaMotivosRescisao configuracaoevento Listagem dos motivos de rescisão\n\nRepresentation Type: MotivoRescisaoConfiguracaoEvento"
+}

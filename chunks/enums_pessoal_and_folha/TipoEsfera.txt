@@ -1,5 +1,0 @@
-# TipoEsfera
-Enum: TipoEsfera
-- Federal (Key: FEDERAL, Value: 1)
-- Estadual (Key: ESTADUAL, Value: 2)
-- Municipal (Key: MUNICIPAL, Value: 3)

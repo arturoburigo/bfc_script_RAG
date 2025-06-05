@@ -1,0 +1,58 @@
+{
+  "content": "Busca os históricos de entidade\n\nRepresentation Type: EntidadeEncargosInssFgts",
+  "metadata": {
+    "chunk_id": "historicoEntidade_buscaHistoricoEntidade_2_e77f1487",
+    "section_name": "historicoEntidade_buscaHistoricoEntidade",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 23,
+    "char_count": 78,
+    "overlap_with_previous": 20,
+    "overlap_with_next": 21,
+    "keywords": [
+      "entidade",
+      "busca"
+    ],
+    "entities": [
+      "entidade",
+      "AtoFonteDados",
+      "Pais",
+      "Estado",
+      "EmailEntidade",
+      "Endereco",
+      "NaturezaTextoJuridico",
+      "TipoAto",
+      "SindicatoFuncionario",
+      "Bairro",
+      "TipoLogradouro",
+      "Logradouro",
+      "PessoaJuridica",
+      "EntidadeEncargosInssFgts",
+      "buscaHistoricoEntidade",
+      "Entidade",
+      "TelefonesEntidadeEncargosInssFgts",
+      "Municipio",
+      "EntidadeSoftwareHouseEncargosInssFgts"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.635740",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "e77f1487db2923e508f1b654067f38ee",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: historicoEntidade_buscaHistoricoEntidade\nType: definition\nRelated to: entidade, AtoFonteDados, Pais\n\nBusca os históricos de entidade\n\nRepresentation Type: EntidadeEncargosInssFgts\n\nKeywords: entidade, busca",
+  "search_text": "historicoEntidade_buscaHistoricoEntidade entidade AtoFonteDados Pais Estado EmailEntidade Endereco NaturezaTextoJuridico TipoAto SindicatoFuncionario Bairro TipoLogradouro Logradouro PessoaJuridica EntidadeEncargosInssFgts buscaHistoricoEntidade Entidade TelefonesEntidadeEncargosInssFgts Municipio EntidadeSoftwareHouseEncargosInssFgts entidade busca Busca os históricos de entidade\n\nRepresentation Type: EntidadeEncargosInssFgts"
+}

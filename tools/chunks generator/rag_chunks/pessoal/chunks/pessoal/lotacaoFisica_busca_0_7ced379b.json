@@ -1,0 +1,54 @@
+{
+  "content": "Lotações físicas",
+  "metadata": {
+    "chunk_id": "lotacaoFisica_busca_0_7ced379b",
+    "section_name": "lotacaoFisica_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 5,
+    "char_count": 16,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 2,
+    "keywords": [
+      "lotacoesfisicas"
+    ],
+    "entities": [
+      "EmpresaResponsavelLotacaoFisica",
+      "BairroLotacaoFisica",
+      "busca",
+      "EnderecoLotacaoFisica",
+      "ProfissionalLocatacaoFisica",
+      "TelefonesLotacaoFisica",
+      "ResponsavelLotacaoFisica",
+      "LotacaoFisica",
+      "NiveisConfiguracaoLotacaoFisica",
+      "ConfiguracaoLotacaoFisicaFonteDados",
+      "PaisLotacaoFisica",
+      "ConfiguracaoLotacaoFisica",
+      "EstadoLotacaoFisica",
+      "LogradouroLotacaoFisica",
+      "MunicipioLotacaoFisica",
+      "lotacoesFisicas"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.195996",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "7ced379b6e7123d068df0c91b19b36dd",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: lotacaoFisica_busca\nType: definition\nRelated to: EmpresaResponsavelLotacaoFisica, BairroLotacaoFisica, busca\n\nLotações físicas\n\nKeywords: lotacoesfisicas",
+  "search_text": "lotacaoFisica_busca EmpresaResponsavelLotacaoFisica BairroLotacaoFisica busca EnderecoLotacaoFisica ProfissionalLocatacaoFisica TelefonesLotacaoFisica ResponsavelLotacaoFisica LotacaoFisica NiveisConfiguracaoLotacaoFisica ConfiguracaoLotacaoFisicaFonteDados PaisLotacaoFisica ConfiguracaoLotacaoFisica EstadoLotacaoFisica LogradouroLotacaoFisica MunicipioLotacaoFisica lotacoesFisicas lotacoesfisicas Lotações físicas"
+}

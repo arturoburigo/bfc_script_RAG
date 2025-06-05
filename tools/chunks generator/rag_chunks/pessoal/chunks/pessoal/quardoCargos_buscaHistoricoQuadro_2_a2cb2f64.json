@@ -1,0 +1,43 @@
+{
+  "content": "Listagem de quadro de cargos pela origem\n\nRepresentation Type: QuadroCargo",
+  "metadata": {
+    "chunk_id": "quardoCargos_buscaHistoricoQuadro_2_a2cb2f64",
+    "section_name": "quardoCargos_buscaHistoricoQuadro",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 18,
+    "char_count": 74,
+    "overlap_with_previous": 15,
+    "overlap_with_next": 16,
+    "keywords": [
+      "quadrocargos"
+    ],
+    "entities": [
+      "AtoMatriculaAssociacao",
+      "QuadroCargo",
+      "TipoAto",
+      "buscaHistoricoQuadro",
+      "quadroCargos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.198392",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "a2cb2f643fef5504e274fb6ad5daacf5",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: quardoCargos_buscaHistoricoQuadro\nType: definition\nRelated to: AtoMatriculaAssociacao, QuadroCargo, TipoAto\n\nListagem de quadro de cargos pela origem\n\nRepresentation Type: QuadroCargo\n\nKeywords: quadrocargos",
+  "search_text": "quardoCargos_buscaHistoricoQuadro AtoMatriculaAssociacao QuadroCargo TipoAto buscaHistoricoQuadro quadroCargos quadrocargos Listagem de quadro de cargos pela origem\n\nRepresentation Type: QuadroCargo"
+}

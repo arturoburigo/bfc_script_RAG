@@ -1,5 +1,0 @@
-# ConfiguracaoEncargosSociaisGps
-# Part 2
-# This is a continuation of the ConfiguracaoEncargosSociaisGps enum
-Enum: ConfiguracaoEncargosSociaisGps
-- 2917 - Reclamatória trabalhista CNPJ Rec. exclusivo para outras entidades (sesc, sesi, senai, etc) (Key: RECLAMATORIA_TRABALHISTA_CNPJ_EXSCLUSIVO, Value: 21)

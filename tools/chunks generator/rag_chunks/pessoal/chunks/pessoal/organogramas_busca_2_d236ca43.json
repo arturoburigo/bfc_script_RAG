@@ -1,0 +1,55 @@
+{
+  "content": "Listagem de organogramas\n\nRepresentation Type: OrganogramaFonteDados",
+  "metadata": {
+    "chunk_id": "organogramas_busca_2_d236ca43",
+    "section_name": "organogramas_busca",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 16,
+    "char_count": 68,
+    "overlap_with_previous": 14,
+    "overlap_with_next": 15,
+    "keywords": [
+      "organogramas",
+      "dados"
+    ],
+    "entities": [
+      "ConfiguracaoOrganograma",
+      "organogramas",
+      "TipoLogradouroOrganograma",
+      "Endereco",
+      "CargoOrganograma",
+      "busca",
+      "FuncaoOrganograma",
+      "LogradouroOrganograma",
+      "BairroOrganograma",
+      "EstadoPessoaFisica",
+      "AtoOrganograma",
+      "ConfiguracaoNivelOrganograma",
+      "MunicipioPessoaFisica",
+      "OrganogramaResponsavelFonteDados",
+      "OrganogramaFonteDados",
+      "TipoAdministracao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.273109",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "d236ca43f3c8a78196f7c25351c2ee44",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "pessoaFisica_buscaFiliacao_4_0a7e85dc",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: organogramas_busca\nType: definition\nRelated to: ConfiguracaoOrganograma, organogramas, TipoLogradouroOrganograma\n\nListagem de organogramas\n\nRepresentation Type: OrganogramaFonteDados\n\nKeywords: organogramas, dados",
+  "search_text": "organogramas_busca ConfiguracaoOrganograma organogramas TipoLogradouroOrganograma Endereco CargoOrganograma busca FuncaoOrganograma LogradouroOrganograma BairroOrganograma EstadoPessoaFisica AtoOrganograma ConfiguracaoNivelOrganograma MunicipioPessoaFisica OrganogramaResponsavelFonteDados OrganogramaFonteDados TipoAdministracao organogramas dados Listagem de organogramas\n\nRepresentation Type: OrganogramaFonteDados"
+}

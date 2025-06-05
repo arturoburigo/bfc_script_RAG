@@ -1,0 +1,43 @@
+{
+  "content": "Parâmetros gerais",
+  "metadata": {
+    "chunk_id": "parametrosGerais_buscaParametroCalculo_0_56175d3f",
+    "section_name": "parametrosGerais_buscaParametroCalculo",
+    "chunk_index": 0,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 5,
+    "char_count": 17,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 1,
+    "keywords": [
+      "parametrosgerais"
+    ],
+    "entities": [
+      "TipoEventoMensalFerias",
+      "buscaParametroCalculo",
+      "TipoAfastamentoParametrosGerais",
+      "ConfiguracaoCalculo",
+      "parametrosGerais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.977289",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "56175d3f6df011f9ad79ca4297707b0b",
+    "related_chunks": [
+      "parametrosGerais_buscaParametroCalculo_5_8088740d",
+      "parametrosGerais_buscaParametroCalculo_2_1d339291",
+      "parametrosGerais_buscaParametroCalculo_3_1d339291",
+      "parametrosGerais_buscaParametroCalculo_1_4a5ce4de",
+      "parametrosGerais_buscaParametroCalculo_4_2aaaf06b"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: parametrosGerais_buscaParametroCalculo\nType: definition\nRelated to: TipoEventoMensalFerias, buscaParametroCalculo, TipoAfastamentoParametrosGerais\n\nParâmetros gerais\n\nKeywords: parametrosgerais",
+  "search_text": "parametrosGerais_buscaParametroCalculo TipoEventoMensalFerias buscaParametroCalculo TipoAfastamentoParametrosGerais ConfiguracaoCalculo parametrosGerais parametrosgerais Parâmetros gerais"
+}

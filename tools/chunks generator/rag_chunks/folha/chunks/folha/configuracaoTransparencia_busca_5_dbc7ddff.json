@@ -1,0 +1,49 @@
+{
+  "content": "## ConfiguracaoTransparencia\n- id: id (Type: Long)\n- chave: Chave de acesso ao transparência (Type: String)\n- competenciaIncialDados: Competência inicial para envio de dados (Type: YearMonth)\n- competenciaIncialMovimentos: Competência inicial para envio de movimentos (Type: YearMonth)\n- enviaCalculosFolha: Se envia dados do cálculo de folha (Type: Boolean)\n- enviaDadosCadastrais: Se envia dados cadastrais (Type: Boolean)\n- emailRetorno: Email para retorno (Type: String)\n- enviaDemaisDadosPessoalCargaInicial: Se envia dados de pessoal (Type: Boolean)\n- enviaQuadroSocialCargaInicial: Se envia quadro social (Type: Boolean)\n- enviaMatriculasAtivasCargaInicial: Se envia matrículas ativas (Type: Boolean)\n- enviaTotalFolhaCargaInicial: Se envia total folha de pagamento (Type: Boolean)\n- ativo: Define se o fly está ativo (Type: Boolean)",
+  "metadata": {
+    "chunk_id": "configuracaoTransparencia_busca_5_dbc7ddff",
+    "section_name": "configuracaoTransparencia_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 247,
+    "char_count": 840,
+    "overlap_with_previous": 86,
+    "overlap_with_next": 27,
+    "keywords": [
+      "pessoal",
+      "competenciaincialmovimentos",
+      "id",
+      "chave",
+      "configuracaotransparencia",
+      "competenciaincialdados",
+      "folha",
+      "enviacalculosfolha",
+      "dados"
+    ],
+    "entities": [
+      "configuracaoTransparencia",
+      "ConfiguracaoTransparencia",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.444951",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "dbc7ddfffad0c207bbb793ef476c2838",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: configuracaoTransparencia_busca\nType: reference\nRelated to: configuracaoTransparencia, ConfiguracaoTransparencia, busca\n\n## ConfiguracaoTransparencia\n- id: id (Type: Long)\n- chave: Chave de acesso ao transparência (Type: String)\n- competenciaIncialDados: Competência inicial para envio de dados (Type: YearMonth)\n- competenciaIncialMovimentos: Competência inicial para envio de movimentos (Type: YearMonth)\n- enviaCalculosFolha: Se envia dados do cálculo de folha (Type: Boolean)\n- enviaDadosCadastrais: Se envia dados cadastrais (Type: Boolean)\n- emailRetorno: Email para retorno (Type: String)\n- enviaDemaisDadosPessoalCargaInicial: Se envia dados de pessoal (Type: Boolean)\n- enviaQuadroSocialCargaInicial: Se envia quadro social (Type: Boolean)\n- enviaMatriculasAtivasCargaInicial: Se envia matrículas ativas (Type: Boolean)\n- enviaTotalFolhaCargaInicial: Se envia total folha de pagamento (Type: Boolean)\n- ativo: Define se o fly está ativo (Type: Boolean)\n\nKeywords: pessoal, competenciaincialmovimentos, id, chave, configuracaotransparencia, competenciaincialdados, folha, enviacalculosfolha, dados",
+  "search_text": "configuracaoTransparencia_busca configuracaoTransparencia ConfiguracaoTransparencia busca pessoal competenciaincialmovimentos id chave configuracaotransparencia competenciaincialdados folha enviacalculosfolha dados ## ConfiguracaoTransparencia\n- id: id (Type: Long)\n- chave: Chave de acesso ao transparência (Type: String)\n- competenciaIncialDados: Competência inicial para envio de dados (Type: YearMonth)\n- competenciaIncialMovimentos: Competência inicial para envio de movimentos (Type: YearMonth)\n- enviaCalculosFolha: Se envia dados do cálculo de folha (Type: Boolean)\n- enviaDadosCadastrais: Se envia dados cadastrais (Type: Boolean)\n- emailRetorno: Email para retorno (Type: String)\n- enviaDemaisDadosPessoalCargaInicial: Se envia dados de pessoal (Type: Boolean)\n- enviaQuadroSocialCargaInicial: Se envia quadro social (Type: Boolean)\n- enviaMatriculasAtivasCargaInicial: Se envia matrículas ativas (Type: Boolean)\n- enviaTotalFolhaCargaInicial: Se envia total folha de pagamento (Type: Boolean)\n- ativo: Define se o fly está ativo (Type: Boolean)"
+}

@@ -1,0 +1,57 @@
+{
+  "content": "groovy\nfonteCalculoFolha = Dados.folha.v2.calculoFolha;\n\nfiltroCalculoFolha = \"id = null\"\n\ndadosCalculoFolha = fonteCalculoFolha.buscaCalculoRescisao(criterio: filtroCalculoFolha,campos: \"motivoRescisao(id, descricao), id, ato(tipo(id, descricao, classificacao), naturezaTextoJuridico(id, descricao), id, numeroOficial, ementa, dataCriacao, dataVigorar, dataPublicacao, dataResolucao, numeroDiarioOficial), observacao, trabalhouDiaRescisao\",ordenacao: \"motivoRescisao.descricao asc\")\n\npercorrer (dadosCalculoFolha) { itemCalculoFolha ->\n\n}",
+  "metadata": {
+    "chunk_id": "calculoFolha_buscaCalculoRescisao_6_6473e96c",
+    "section_name": "calculoFolha_buscaCalculoRescisao",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 182,
+    "char_count": 539,
+    "overlap_with_previous": 46,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "tipo",
+      "filtro",
+      "calculofolha",
+      "folha",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "AvisoPrevioCalculoFolhaRescisao",
+      "buscaCalculoRescisao",
+      "NaturezaTextoJuridico",
+      "Dados.folha.v2.calculoFolha",
+      "SindicatoFuncionario",
+      "PessoaJuridica",
+      "calculoFolha",
+      "TipoAto",
+      "CalculoFolhaRescisaoFonteDados",
+      "AtoFonteDados",
+      "MotivoRescisaoCalculoFolhaRescisao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.646866",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "6473e96c1d563060e9e0c92b42dd5884",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: calculoFolha_buscaCalculoRescisao\nType: example\nRelated to: AvisoPrevioCalculoFolhaRescisao, buscaCalculoRescisao, NaturezaTextoJuridico\n\ngroovy\nfonteCalculoFolha = Dados.folha.v2.calculoFolha;\n\nfiltroCalculoFolha = \"id = null\"\n\ndadosCalculoFolha = fonteCalculoFolha.buscaCalculoRescisao(criterio: filtroCalculoFolha,campos: \"motivoRescisao(id, descricao), id, ato(tipo(id, descricao, classificacao), naturezaTextoJuridico(id, descricao), id, numeroOficial, ementa, dataCriacao, dataVigorar, dataPublicacao, dataResolucao, numeroDiarioOficial), observacao, trabalhouDiaRescisao\",ordenacao: \"motivoRescisao.descricao asc\")\n\npercorrer (dadosCalculoFolha) { itemCalculoFolha ->\n\n}\n\nKeywords: busca, tipo, filtro, calculofolha, folha, ordenacao, v2, campo, dados",
+  "search_text": "calculoFolha_buscaCalculoRescisao AvisoPrevioCalculoFolhaRescisao buscaCalculoRescisao NaturezaTextoJuridico Dados.folha.v2.calculoFolha SindicatoFuncionario PessoaJuridica calculoFolha TipoAto CalculoFolhaRescisaoFonteDados AtoFonteDados MotivoRescisaoCalculoFolhaRescisao busca tipo filtro calculofolha folha ordenacao v2 campo dados groovy\nfonteCalculoFolha = Dados.folha.v2.calculoFolha;\n\nfiltroCalculoFolha = \"id = null\"\n\ndadosCalculoFolha = fonteCalculoFolha.buscaCalculoRescisao(criterio: filtroCalculoFolha,campos: \"motivoRescisao(id, descricao), id, ato(tipo(id, descricao, classificacao), naturezaTextoJuridico(id, descricao), id, numeroOficial, ementa, dataCriacao, dataVigorar, dataPublicacao, dataResolucao, numeroDiarioOficial), observacao, trabalhouDiaRescisao\",ordenacao: \"motivoRescisao.descricao asc\")\n\npercorrer (dadosCalculoFolha) { itemCalculoFolha ->\n\n}"
+}

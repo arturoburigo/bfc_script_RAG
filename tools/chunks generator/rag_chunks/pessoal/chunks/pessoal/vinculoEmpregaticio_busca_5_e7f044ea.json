@@ -1,0 +1,53 @@
+{
+  "content": "## VinculoEmpregaticioCategoriaTrabalhadorFonteDados\n- id: Id (Type: Long)\n- descricao: descricao (Type: String)\n- grupoTrabalhador: Grupo de trabalhador (Type: )\n- codigoESocial: Código do eSocial (Type: String)\n\n## VinculoEmpregaticioMotivoRescisaoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo (Type: )\n- classificacao: Classificação (Type: )\n\n## VinculoEmpregaticioFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo do regime trabalhista (Type: )\n- descricaoRegimePrevidenciario: Regime previdenciário (Type: String)\n- codigoSefip: Código da SEFIF (Type: String)\n- geraRais: Gera RAIS? (Type: Boolean)\n- codigoRais: Código da RAIS (Type: String)\n- descricaoRais: Código da RAIS (Type: String)\n- vinculoTemporario: Vínculo temporário? (Type: Boolean)\n- dataFinalObrigatoria: Data final obrigatória (Type: Boolean)\n- geraCaged: Gera CAGED? (Type: Boolean)\n- geraLicencaPremio: Gera liçenca-prêmio? (Type: Boolean)\n- categoriaTrabalhador: Categoria do trabalhador (Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados)\n- motivoRescisao: Motivo de rescisão (Type: VinculoEmpregaticioMotivoRescisaoFonteDados)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)",
+  "metadata": {
+    "chunk_id": "vinculoEmpregaticio_busca_5_e7f044ea",
+    "section_name": "vinculoEmpregaticio_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 406,
+    "char_count": 1242,
+    "overlap_with_previous": 40,
+    "overlap_with_next": 54,
+    "keywords": [
+      "vinculoempregaticiomotivorescisaofontedados",
+      "codigoesocial",
+      "vinculoempregaticiofontedados",
+      "id",
+      "descricao",
+      "vinculoempregaticiocategoriatrabalhadorfontedados",
+      "vinculoempregaticio",
+      "campo",
+      "grupotrabalhador",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "busca",
+      "VinculoEmpregaticioMotivoRescisaoFonteDados",
+      "vinculoEmpregaticio",
+      "VinculoEmpregaticioCategoriaTrabalhadorFonteDados",
+      "VinculoEmpregaticioFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.730582",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "e7f044eae26f6429db5995b1c5b5eb3b",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: vinculoEmpregaticio_busca\nType: reference\nRelated to: busca, VinculoEmpregaticioMotivoRescisaoFonteDados, vinculoEmpregaticio\n\n## VinculoEmpregaticioCategoriaTrabalhadorFonteDados\n- id: Id (Type: Long)\n- descricao: descricao (Type: String)\n- grupoTrabalhador: Grupo de trabalhador (Type: )\n- codigoESocial: Código do eSocial (Type: String)\n\n## VinculoEmpregaticioMotivoRescisaoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo (Type: )\n- classificacao: Classificação (Type: )\n\n## VinculoEmpregaticioFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo do regime trabalhista (Type: )\n- descricaoRegimePrevidenciario: Regime previdenciário (Type: String)\n- codigoSefip: Código da SEFIF (Type: String)\n- geraRais: Gera RAIS? (Type: Boolean)\n- codigoRais: Código da RAIS (Type: String)\n- descricaoRais: Código da RAIS (Type: String)\n- vinculoTemporario: Vínculo temporário? (Type: Boolean)\n- dataFinalObrigatoria: Data final obrigatória (Type: Boolean)\n- geraCaged: Gera CAGED? (Type: Boolean)\n- geraLicencaPremio: Gera liçenca-prêmio? (Type: Boolean)\n- categoriaTrabalhador: Categoria do trabalhador (Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados)\n- motivoRescisao: Motivo de rescisão (Type: VinculoEmpregaticioMotivoRescisaoFonteDados)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)\n\nKeywords: vinculoempregaticiomotivorescisaofontedados, codigoesocial, vinculoempregaticiofontedados, id, descricao, vinculoempregaticiocategoriatrabalhadorfontedados, vinculoempregaticio, campo, grupotrabalhador, tipo, dados",
+  "search_text": "vinculoEmpregaticio_busca busca VinculoEmpregaticioMotivoRescisaoFonteDados vinculoEmpregaticio VinculoEmpregaticioCategoriaTrabalhadorFonteDados VinculoEmpregaticioFonteDados vinculoempregaticiomotivorescisaofontedados codigoesocial vinculoempregaticiofontedados id descricao vinculoempregaticiocategoriatrabalhadorfontedados vinculoempregaticio campo grupotrabalhador tipo dados ## VinculoEmpregaticioCategoriaTrabalhadorFonteDados\n- id: Id (Type: Long)\n- descricao: descricao (Type: String)\n- grupoTrabalhador: Grupo de trabalhador (Type: )\n- codigoESocial: Código do eSocial (Type: String)\n\n## VinculoEmpregaticioMotivoRescisaoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo (Type: )\n- classificacao: Classificação (Type: )\n\n## VinculoEmpregaticioFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo do regime trabalhista (Type: )\n- descricaoRegimePrevidenciario: Regime previdenciário (Type: String)\n- codigoSefip: Código da SEFIF (Type: String)\n- geraRais: Gera RAIS? (Type: Boolean)\n- codigoRais: Código da RAIS (Type: String)\n- descricaoRais: Código da RAIS (Type: String)\n- vinculoTemporario: Vínculo temporário? (Type: Boolean)\n- dataFinalObrigatoria: Data final obrigatória (Type: Boolean)\n- geraCaged: Gera CAGED? (Type: Boolean)\n- geraLicencaPremio: Gera liçenca-prêmio? (Type: Boolean)\n- categoriaTrabalhador: Categoria do trabalhador (Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados)\n- motivoRescisao: Motivo de rescisão (Type: VinculoEmpregaticioMotivoRescisaoFonteDados)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)"
+}

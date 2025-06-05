@@ -1,5 +1,0 @@
-# TipoCertidaoCivil
-Enum: TipoCertidaoCivil
-- Nascimento (Key: NASCIMENTO, Value: 1)
-- Casamento (Key: CASAMENTO, Value: 2)
-- Óbito (Key: OBITO, Value: 3)

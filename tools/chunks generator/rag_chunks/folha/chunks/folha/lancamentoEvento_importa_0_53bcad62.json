@@ -1,0 +1,60 @@
+{
+  "content": "Lançamento de evento",
+  "metadata": {
+    "chunk_id": "lancamentoEvento_importa_0_53bcad62",
+    "section_name": "lancamentoEvento_importa",
+    "chunk_index": 0,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 6,
+    "char_count": 20,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 1,
+    "keywords": [
+      "lancamentoevento"
+    ],
+    "entities": [
+      "TipoLogradouroOrganograma",
+      "ConfiguracaoEventoLancamentoEvento",
+      "EstadoPessoaFisica",
+      "MunicipioPessoaFisica",
+      "OrganogramaFonteDados",
+      "CodigoMatriculaLancamentoEvento",
+      "ConfiguracaoOrganograma",
+      "CargoOrganograma",
+      "PessoaFisicaLancamentoEvento",
+      "Endereco",
+      "MatriculaLancamentoEvento",
+      "TipoAdministracao",
+      "LogradouroOrganograma",
+      "importa",
+      "ConfiguracaoNivelOrganograma",
+      "lancamentoEvento",
+      "OrganogramaResponsavelFonteDados",
+      "LancamentoEventoDto",
+      "FuncaoOrganograma",
+      "BairroOrganograma",
+      "AtoOrganograma",
+      "LancamentoEventoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.594968",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "53bcad629b98ebf6021cce03bb1d8d40",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: lancamentoEvento_importa\nType: definition\nRelated to: TipoLogradouroOrganograma, ConfiguracaoEventoLancamentoEvento, EstadoPessoaFisica\n\nLançamento de evento\n\nKeywords: lancamentoevento",
+  "search_text": "lancamentoEvento_importa TipoLogradouroOrganograma ConfiguracaoEventoLancamentoEvento EstadoPessoaFisica MunicipioPessoaFisica OrganogramaFonteDados CodigoMatriculaLancamentoEvento ConfiguracaoOrganograma CargoOrganograma PessoaFisicaLancamentoEvento Endereco MatriculaLancamentoEvento TipoAdministracao LogradouroOrganograma importa ConfiguracaoNivelOrganograma lancamentoEvento OrganogramaResponsavelFonteDados LancamentoEventoDto FuncaoOrganograma BairroOrganograma AtoOrganograma LancamentoEventoFonteDados lancamentoevento Lançamento de evento"
+}

@@ -1,0 +1,41 @@
+{
+  "content": "Fonte genérica",
+  "metadata": {
+    "chunk_id": "fonteGenerica_importa_0_148bb230",
+    "section_name": "fonteGenerica_importa",
+    "chunk_index": 0,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 4,
+    "char_count": 14,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 1,
+    "keywords": [
+      "fontegenerica"
+    ],
+    "entities": [
+      "FonteGenerica",
+      "fonteGenerica",
+      "importa"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.447005",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "148bb230570ca3cc8a6f09e19698c247",
+    "related_chunks": [
+      "fonteGenerica_atualiza_2_77ecbcf3",
+      "fonteGenerica_exclui_3_5f202e7a",
+      "gfipMatricula_importa_3_ad915c0f",
+      "fonteGenerica_busca_4_c8dc2d69",
+      "tabelaAuxiliarValor_importa_3_3648ed36"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: fonteGenerica_importa\nType: definition\nRelated to: FonteGenerica, fonteGenerica, importa\n\nFonte genérica\n\nKeywords: fontegenerica",
+  "search_text": "fonteGenerica_importa FonteGenerica fonteGenerica importa fontegenerica Fonte genérica"
+}

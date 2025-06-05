@@ -1,0 +1,52 @@
+{
+  "content": "## TipoEventoMensalFerias\n- id: Identificador (Type: Long)\n- tipoEvento: Tipo de evento (Type: )\n\n## TipoAfastamentoParametrosGerais\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## ConfiguracaoCalculo\n- id: Identificador (Type: Long)\n- pagaUmTercoFeriasIntegralEmFeriasFracionada: Pagamento de ⅓ de férias integral em cálculo de férias fracionadas (Type: Boolean)\n- rescicaoAutomaticaVinculoTemporario: Rescisão automática para vínculos temporários (Type: Boolean)\n- abonoSemGozo: Abono sem gozo (Type: Boolean)\n- descontaFaltasFerias: Descontar faltas sobre férias, inclusive na rescisão (Type: Boolean)\n- descontaEmprestimoRescisao: Descontar empréstimos na rescisão (Type: Boolean)\n- encerraAfastamentoRescisao: Encerrar afastamentos em aberto na rescisão (Type: Boolean)\n- carregaEventosMensaisRescicao: Carregar eventos de processamento mensal na rescisão (Type: Boolean)\n- replicaEventosCalculoFeriasParaCalculoMensal: Replicar eventos do cálculo de férias para o cálculo mensal (Type: Boolean)\n- carregaEventosMensaisFerias: Carregar eventos variáveis do processamento mensal nas férias (Type: Boolean)\n- tiposEventosMensaisFerias: Tipos de eventos de processamento mensal a carregar nas férias (Type: TipoEventoMensalFerias)\n- tipoAcaoAlterarFolhaParaPendente: Alterar folha calculadas para pendente ao alterar uma informação que impacta em cálculo de folha? (Type: )\n- unidade: Trabalha em (Type: )\n- configuracaoDecimoTerceiro: Período aquisitivo de 13º salário (Type: )\n- diaPagamentoMensal: Dia para pagamento mensal (Type: Integer)\n- tipoAfastamentoFerias: Tipo de afastamento para férias (Type: TipoAfastamentoParametrosGerais)\n- isencaoInssPatronalAfastamento: Isenção de INSS Patronal sobre afastamentos (Type: Boolean)\n- recolheFgtsAtravesSefip: Recolhe FGTS através da SEFIP (Type: Boolean)",
+  "metadata": {
+    "chunk_id": "parametrosGerais_buscaParametroCalculo_4_2aaaf06b",
+    "section_name": "parametrosGerais_buscaParametroCalculo",
+    "chunk_index": 4,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 593,
+    "char_count": 1875,
+    "overlap_with_previous": 12,
+    "overlap_with_next": 84,
+    "keywords": [
+      "tipoeventomensalferias",
+      "tipoevento",
+      "configuracaocalculo",
+      "id",
+      "parametrosgerais",
+      "descricao",
+      "folha",
+      "classificacao",
+      "tipo",
+      "tipoafastamentoparametrosgerais"
+    ],
+    "entities": [
+      "TipoEventoMensalFerias",
+      "buscaParametroCalculo",
+      "TipoAfastamentoParametrosGerais",
+      "ConfiguracaoCalculo",
+      "parametrosGerais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.978067",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "2aaaf06b29386d359ae643e84ed8b0bc",
+    "related_chunks": [
+      "parametrosGerais_buscaParametroCalculo_5_8088740d",
+      "parametrosGerais_buscaParametroCalculo_2_1d339291",
+      "parametrosGerais_buscaParametroCalculo_0_56175d3f",
+      "parametrosGerais_buscaParametroCalculo_3_1d339291",
+      "parametrosGerais_buscaParametroCalculo_1_4a5ce4de"
+    ],
+    "quality_score": 1.0
+  },
+  "embeddings_text": "Section: parametrosGerais_buscaParametroCalculo\nType: reference\nRelated to: TipoEventoMensalFerias, buscaParametroCalculo, TipoAfastamentoParametrosGerais\n\n## TipoEventoMensalFerias\n- id: Identificador (Type: Long)\n- tipoEvento: Tipo de evento (Type: )\n\n## TipoAfastamentoParametrosGerais\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## ConfiguracaoCalculo\n- id: Identificador (Type: Long)\n- pagaUmTercoFeriasIntegralEmFeriasFracionada: Pagamento de ⅓ de férias integral em cálculo de férias fracionadas (Type: Boolean)\n- rescicaoAutomaticaVinculoTemporario: Rescisão automática para vínculos temporários (Type: Boolean)\n- abonoSemGozo: Abono sem gozo (Type: Boolean)\n- descontaFaltasFerias: Descontar faltas sobre férias, inclusive na rescisão (Type: Boolean)\n- descontaEmprestimoRescisao: Descontar empréstimos na rescisão (Type: Boolean)\n- encerraAfastamentoRescisao: Encerrar afastamentos em aberto na rescisão (Type: Boolean)\n- carregaEventosMensaisRescicao: Carregar eventos de processamento mensal na rescisão (Type: Boolean)\n- replicaEventosCalculoFeriasParaCalculoMensal: Replicar eventos do cálculo de férias para o cálculo mensal (Type: Boolean)\n- carregaEventosMensaisFerias: Carregar eventos variáveis do processamento mensal nas férias (Type: Boolean)\n- tiposEventosMensaisFerias: Tipos de eventos de processamento mensal a carregar nas férias (Type: TipoEventoMensalFerias)\n- tipoAcaoAlterarFolhaParaPendente: Alterar folha calculadas para pendente ao alterar uma informação que impacta em cálculo de folha? (Type: )\n- unidade: Trabalha em (Type: )\n- configuracaoDecimoTerceiro: Período aquisitivo de 13º salário (Type: )\n- diaPagamentoMensal: Dia para pagamento mensal (Type: Integer)\n- tipoAfastamentoFerias: Tipo de afastamento para férias (Type: TipoAfastamentoParametrosGerais)\n- isencaoInssPatronalAfastamento: Isenção de INSS Patronal sobre afastamentos (Type: Boolean)\n- recolheFgtsAtravesSefip: Recolhe FGTS através da SEFIP (Type: Boolean)\n\nKeywords: tipoeventomensalferias, tipoevento, configuracaocalculo, id, parametrosgerais, descricao, folha, classificacao, tipo, tipoafastamentoparametrosgerais",
+  "search_text": "parametrosGerais_buscaParametroCalculo TipoEventoMensalFerias buscaParametroCalculo TipoAfastamentoParametrosGerais ConfiguracaoCalculo parametrosGerais tipoeventomensalferias tipoevento configuracaocalculo id parametrosgerais descricao folha classificacao tipo tipoafastamentoparametrosgerais ## TipoEventoMensalFerias\n- id: Identificador (Type: Long)\n- tipoEvento: Tipo de evento (Type: )\n\n## TipoAfastamentoParametrosGerais\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## ConfiguracaoCalculo\n- id: Identificador (Type: Long)\n- pagaUmTercoFeriasIntegralEmFeriasFracionada: Pagamento de ⅓ de férias integral em cálculo de férias fracionadas (Type: Boolean)\n- rescicaoAutomaticaVinculoTemporario: Rescisão automática para vínculos temporários (Type: Boolean)\n- abonoSemGozo: Abono sem gozo (Type: Boolean)\n- descontaFaltasFerias: Descontar faltas sobre férias, inclusive na rescisão (Type: Boolean)\n- descontaEmprestimoRescisao: Descontar empréstimos na rescisão (Type: Boolean)\n- encerraAfastamentoRescisao: Encerrar afastamentos em aberto na rescisão (Type: Boolean)\n- carregaEventosMensaisRescicao: Carregar eventos de processamento mensal na rescisão (Type: Boolean)\n- replicaEventosCalculoFeriasParaCalculoMensal: Replicar eventos do cálculo de férias para o cálculo mensal (Type: Boolean)\n- carregaEventosMensaisFerias: Carregar eventos variáveis do processamento mensal nas férias (Type: Boolean)\n- tiposEventosMensaisFerias: Tipos de eventos de processamento mensal a carregar nas férias (Type: TipoEventoMensalFerias)\n- tipoAcaoAlterarFolhaParaPendente: Alterar folha calculadas para pendente ao alterar uma informação que impacta em cálculo de folha? (Type: )\n- unidade: Trabalha em (Type: )\n- configuracaoDecimoTerceiro: Período aquisitivo de 13º salário (Type: )\n- diaPagamentoMensal: Dia para pagamento mensal (Type: Integer)\n- tipoAfastamentoFerias: Tipo de afastamento para férias (Type: TipoAfastamentoParametrosGerais)\n- isencaoInssPatronalAfastamento: Isenção de INSS Patronal sobre afastamentos (Type: Boolean)\n- recolheFgtsAtravesSefip: Recolhe FGTS através da SEFIP (Type: Boolean)"
+}

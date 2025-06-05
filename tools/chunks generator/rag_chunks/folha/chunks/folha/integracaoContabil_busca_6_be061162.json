@@ -1,0 +1,54 @@
+{
+  "content": "groovy\nfonteIntegracaoContabil = Dados.folha.v2.integracaoContabil;\n\ndadosIntegracaoContabil = fonteIntegracaoContabil.busca(campos: \"id, matriculas(id, tipo), competencia, matriculasId\",ordenacao: \"id asc\")\n\npercorrer (dadosIntegracaoContabil) { itemIntegracaoContabil ->\n\n}",
+  "metadata": {
+    "chunk_id": "integracaoContabil_busca_6_be061162",
+    "section_name": "integracaoContabil_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 89,
+    "char_count": 275,
+    "overlap_with_previous": 17,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "tipo",
+      "ordenacao",
+      "v2",
+      "folha",
+      "campo",
+      "dados",
+      "integracaocontabil"
+    ],
+    "entities": [
+      "SelecaoAvancadaFonteDados",
+      "IntegracaoContabilFonteDados",
+      "busca",
+      "integracaoContabil",
+      "MatriculaAssociacao",
+      "integracaoContabilInconsitencia",
+      "Dados.folha.v2.integracaoContabil",
+      "integracaoContabilAssociacao",
+      "ConfiguracaoIntegracaoContabilAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.549071",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "be0611623b3e6af60bffb24246bcdc84",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: integracaoContabil_busca\nType: example\nRelated to: SelecaoAvancadaFonteDados, IntegracaoContabilFonteDados, busca\n\ngroovy\nfonteIntegracaoContabil = Dados.folha.v2.integracaoContabil;\n\ndadosIntegracaoContabil = fonteIntegracaoContabil.busca(campos: \"id, matriculas(id, tipo), competencia, matriculasId\",ordenacao: \"id asc\")\n\npercorrer (dadosIntegracaoContabil) { itemIntegracaoContabil ->\n\n}\n\nKeywords: busca, tipo, ordenacao, v2, folha, campo, dados, integracaocontabil",
+  "search_text": "integracaoContabil_busca SelecaoAvancadaFonteDados IntegracaoContabilFonteDados busca integracaoContabil MatriculaAssociacao integracaoContabilInconsitencia Dados.folha.v2.integracaoContabil integracaoContabilAssociacao ConfiguracaoIntegracaoContabilAssociacao busca tipo ordenacao v2 folha campo dados integracaocontabil groovy\nfonteIntegracaoContabil = Dados.folha.v2.integracaoContabil;\n\ndadosIntegracaoContabil = fonteIntegracaoContabil.busca(campos: \"id, matriculas(id, tipo), competencia, matriculasId\",ordenacao: \"id asc\")\n\npercorrer (dadosIntegracaoContabil) { itemIntegracaoContabil ->\n\n}"
+}

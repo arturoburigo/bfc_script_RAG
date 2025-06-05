@@ -1,0 +1,49 @@
+{
+  "content": "groovy\nfonteConfiguracaoDirf = Dados.folha.v2.configuracaoDirf;\n\ndadosConfiguracaoDirf = fonteConfiguracaoDirf.busca(campos: \"eventos(configuracaoEvento(id, codigo, enviaEsocial)), id, campoDirf\")\n\npercorrer (dadosConfiguracaoDirf) { itemConfiguracaoDirf ->\n\n}",
+  "metadata": {
+    "chunk_id": "configuracaoDirf_busca_6_f1dd5a22",
+    "section_name": "configuracaoDirf_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 86,
+    "char_count": 260,
+    "overlap_with_previous": 20,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "configuracaodirf",
+      "v2",
+      "folha",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "busca",
+      "ConfiguracaoDirfConfiguracaoEvento",
+      "Dados.folha.v2.configuracaoDirf",
+      "ConfiguracaoDirfFonteDados",
+      "configuracaoDirf",
+      "ConfiguracaoDirfEventoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.229844",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "f1dd5a22488a3bcca21db641b318d1ab",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: configuracaoDirf_busca\nType: example\nRelated to: busca, ConfiguracaoDirfConfiguracaoEvento, Dados.folha.v2.configuracaoDirf\n\ngroovy\nfonteConfiguracaoDirf = Dados.folha.v2.configuracaoDirf;\n\ndadosConfiguracaoDirf = fonteConfiguracaoDirf.busca(campos: \"eventos(configuracaoEvento(id, codigo, enviaEsocial)), id, campoDirf\")\n\npercorrer (dadosConfiguracaoDirf) { itemConfiguracaoDirf ->\n\n}\n\nKeywords: busca, configuracaodirf, v2, folha, campo, dados",
+  "search_text": "configuracaoDirf_busca busca ConfiguracaoDirfConfiguracaoEvento Dados.folha.v2.configuracaoDirf ConfiguracaoDirfFonteDados configuracaoDirf ConfiguracaoDirfEventoFonteDados busca configuracaodirf v2 folha campo dados groovy\nfonteConfiguracaoDirf = Dados.folha.v2.configuracaoDirf;\n\ndadosConfiguracaoDirf = fonteConfiguracaoDirf.busca(campos: \"eventos(configuracaoEvento(id, codigo, enviaEsocial)), id, campoDirf\")\n\npercorrer (dadosConfiguracaoDirf) { itemConfiguracaoDirf ->\n\n}"
+}

@@ -1,5 +1,0 @@
-# TipoDecisao
-Enum: TipoDecisao
-- Decisão líquida (Key: DECISAO_LIQUIDA, Value: 1)
-- Homologação de acordo judicial (Key: HOMOLOG_ACORDO_JUDICIAL, Value: 2)
-- Homologação de liquidação da sentença (Key: HOLOG_LIQUIDACAO_SENTENCA, Value: 3)

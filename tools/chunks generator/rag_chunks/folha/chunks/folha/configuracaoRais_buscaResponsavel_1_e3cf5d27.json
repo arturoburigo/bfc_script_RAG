@@ -1,0 +1,56 @@
+{
+  "content": "buscaResponsavel (GET)\nMethod Description: Configuração RAIS\n\nRepresentation Type: ConfiguracaoRais",
+  "metadata": {
+    "chunk_id": "configuracaoRais_buscaResponsavel_1_e3cf5d27",
+    "section_name": "configuracaoRais_buscaResponsavel",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 24,
+    "char_count": 99,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 13,
+    "keywords": [
+      "configuracaorais",
+      "busca"
+    ],
+    "entities": [
+      "DeficienciaPessoaFisica",
+      "PessoaOrigem",
+      "ConfiguracaoRaisCampo",
+      "buscaResponsavel",
+      "AtoConfiguracaoEvento",
+      "Base",
+      "ConfiguracaoEventoFonteDados",
+      "configuracaoRais",
+      "dependenciasFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoRaisCampoEvento",
+      "PessoaJuridica",
+      "ConfiguracaoRais",
+      "ProcessoJudicial",
+      "SindicatoFuncionario",
+      "PessoaFisicaRepresentation",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.210867",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "e3cf5d27e36162874eba9c3df9aff535",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracaoRais_buscaResponsavel\nType: definition\nRelated to: DeficienciaPessoaFisica, PessoaOrigem, ConfiguracaoRaisCampo\n\nbuscaResponsavel (GET)\nMethod Description: Configuração RAIS\n\nRepresentation Type: ConfiguracaoRais\n\nKeywords: configuracaorais, busca",
+  "search_text": "configuracaoRais_buscaResponsavel DeficienciaPessoaFisica PessoaOrigem ConfiguracaoRaisCampo buscaResponsavel AtoConfiguracaoEvento Base ConfiguracaoEventoFonteDados configuracaoRais dependenciasFonteDados ScriptFonteDados ConfiguracaoRaisCampoEvento PessoaJuridica ConfiguracaoRais ProcessoJudicial SindicatoFuncionario PessoaFisicaRepresentation ConfiguracaoEventoAssociacaoFonteDados configuracaorais busca buscaResponsavel (GET)\nMethod Description: Configuração RAIS\n\nRepresentation Type: ConfiguracaoRais"
+}

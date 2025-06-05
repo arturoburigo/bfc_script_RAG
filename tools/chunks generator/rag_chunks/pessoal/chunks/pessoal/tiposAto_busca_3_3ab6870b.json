@@ -1,0 +1,42 @@
+{
+  "content": "Listagem de tipos de ato\n\nRepresentation Type: TipoAto",
+  "metadata": {
+    "chunk_id": "tiposAto_busca_3_3ab6870b",
+    "section_name": "tiposAto_busca",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 14,
+    "char_count": 54,
+    "overlap_with_previous": 13,
+    "overlap_with_next": 1,
+    "keywords": [
+      "tiposato",
+      "tipo"
+    ],
+    "entities": [
+      "TipoAto",
+      "tiposAto",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.197918",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "3ab6870b2094068f91a305658115e8c3",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: tiposAto_busca\nType: definition\nRelated to: TipoAto, tiposAto, busca\n\nListagem de tipos de ato\n\nRepresentation Type: TipoAto\n\nKeywords: tiposato, tipo",
+  "search_text": "tiposAto_busca TipoAto tiposAto busca tiposato tipo Listagem de tipos de ato\n\nRepresentation Type: TipoAto"
+}

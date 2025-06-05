@@ -1,0 +1,56 @@
+{
+  "content": "Manutenção de estabelecimento",
+  "metadata": {
+    "chunk_id": "manutencaoEstabelecimento_busca_0_83f84872",
+    "section_name": "manutencaoEstabelecimento_busca",
+    "chunk_index": 0,
+    "total_chunks": 5,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 8,
+    "char_count": 29,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 7,
+    "keywords": [
+      "manutencaoestabelecimento"
+    ],
+    "entities": [
+      "ConfiguracaoEncargosSociaisGeralManutencaoEstabelecimento",
+      "EntidadeEducativaEncargosSociaisManutencaoEstabelecimento",
+      "ConfiguracaoEncargosSociaisFgtsManutencaoEstabelecimento",
+      "AtoManutencaoEstabelecimento",
+      "busca",
+      "ConfiguracaoFaixaContribuicaoManutencaoEstabelecimento",
+      "AgenciaManutencaoEstabelecimento",
+      "PessoaJuridicaManutencaoEstabelecimento",
+      "ManutencaoEstabelecimentoConfiguracaoEncargosSociaisFundoPrevidenciaId",
+      "BancoManutencaoEstabelecimento",
+      "manutencaoEstabelecimento",
+      "ConfiguracaoEncargosSociaisFundoPrevidenciaManutencaoEstabelecimento",
+      "ManutencaoEstabelecimento",
+      "ConfiguracaoEncargosSociaisDadosProcessuaisManutencaoEstabelecimento",
+      "ConfiguracaoSalarioFamiliaManutencaoEstabelecimento",
+      "ConfiguracaoFaixaContribuicaoIrrfManutencaoEstabelecimento",
+      "ConfiguracaoEncargosSociaisRgpsManutencaoEstabelecimento",
+      "ConfiguracaoEncargosSociaisIrrfManutencaoEstabelecimento"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.650344",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "83f848727c5560250853b6c08b3e51d1",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: manutencaoEstabelecimento_busca\nType: definition\nRelated to: ConfiguracaoEncargosSociaisGeralManutencaoEstabelecimento, EntidadeEducativaEncargosSociaisManutencaoEstabelecimento, ConfiguracaoEncargosSociaisFgtsManutencaoEstabelecimento\n\nManutenção de estabelecimento\n\nKeywords: manutencaoestabelecimento",
+  "search_text": "manutencaoEstabelecimento_busca ConfiguracaoEncargosSociaisGeralManutencaoEstabelecimento EntidadeEducativaEncargosSociaisManutencaoEstabelecimento ConfiguracaoEncargosSociaisFgtsManutencaoEstabelecimento AtoManutencaoEstabelecimento busca ConfiguracaoFaixaContribuicaoManutencaoEstabelecimento AgenciaManutencaoEstabelecimento PessoaJuridicaManutencaoEstabelecimento ManutencaoEstabelecimentoConfiguracaoEncargosSociaisFundoPrevidenciaId BancoManutencaoEstabelecimento manutencaoEstabelecimento ConfiguracaoEncargosSociaisFundoPrevidenciaManutencaoEstabelecimento ManutencaoEstabelecimento ConfiguracaoEncargosSociaisDadosProcessuaisManutencaoEstabelecimento ConfiguracaoSalarioFamiliaManutencaoEstabelecimento ConfiguracaoFaixaContribuicaoIrrfManutencaoEstabelecimento ConfiguracaoEncargosSociaisRgpsManutencaoEstabelecimento ConfiguracaoEncargosSociaisIrrfManutencaoEstabelecimento manutencaoestabelecimento Manutenção de estabelecimento"
+}

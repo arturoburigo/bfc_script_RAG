@@ -1,0 +1,50 @@
+{
+  "content": "groovy\nfonteConfiguracoesOrganogramas = Dados.pessoal.v2.configuracoesOrganogramas;\n\nfiltroConfiguracoesOrganogramas = \"emUso = TRUE\"\n\ndadosConfiguracoesOrganogramas = fonteConfiguracoesOrganogramas.busca(criterio: filtroConfiguracoesOrganogramas,campos: \"id, descricao, niveis(id, descricao, nivelSecretaria, nivel, quantidadeDigitos, separador), emUso\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracoesOrganogramas) { itemConfiguracoesOrganogramas ->\n\n}",
+  "metadata": {
+    "chunk_id": "configuracoesOrganogramas_busca_6_215d6f23",
+    "section_name": "configuracoesOrganogramas_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 132,
+    "char_count": 457,
+    "overlap_with_previous": 21,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "filtro",
+      "ordenacao",
+      "v2",
+      "configuracoes-organogramas",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Dados.pessoal.v2.configuracoesOrganogramas",
+      "ConfiguracaoOrganograma",
+      "busca",
+      "ConfiguracaoNivelOrganograma",
+      "configuracoes-organogramas"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.577031",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "215d6f236d638f8e5d62a04cd5fc8424",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: configuracoesOrganogramas_busca\nType: example\nRelated to: Dados.pessoal.v2.configuracoesOrganogramas, ConfiguracaoOrganograma, busca\n\ngroovy\nfonteConfiguracoesOrganogramas = Dados.pessoal.v2.configuracoesOrganogramas;\n\nfiltroConfiguracoesOrganogramas = \"emUso = TRUE\"\n\ndadosConfiguracoesOrganogramas = fonteConfiguracoesOrganogramas.busca(criterio: filtroConfiguracoesOrganogramas,campos: \"id, descricao, niveis(id, descricao, nivelSecretaria, nivel, quantidadeDigitos, separador), emUso\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracoesOrganogramas) { itemConfiguracoesOrganogramas ->\n\n}\n\nKeywords: pessoal, busca, filtro, ordenacao, v2, configuracoes-organogramas, campo, dados",
+  "search_text": "configuracoesOrganogramas_busca Dados.pessoal.v2.configuracoesOrganogramas ConfiguracaoOrganograma busca ConfiguracaoNivelOrganograma configuracoes-organogramas pessoal busca filtro ordenacao v2 configuracoes-organogramas campo dados groovy\nfonteConfiguracoesOrganogramas = Dados.pessoal.v2.configuracoesOrganogramas;\n\nfiltroConfiguracoesOrganogramas = \"emUso = TRUE\"\n\ndadosConfiguracoesOrganogramas = fonteConfiguracoesOrganogramas.busca(criterio: filtroConfiguracoesOrganogramas,campos: \"id, descricao, niveis(id, descricao, nivelSecretaria, nivel, quantidadeDigitos, separador), emUso\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracoesOrganogramas) { itemConfiguracoesOrganogramas ->\n\n}"
+}

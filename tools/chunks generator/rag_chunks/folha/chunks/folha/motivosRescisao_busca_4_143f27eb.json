@@ -1,0 +1,48 @@
+{
+  "content": "- tipoAfastamento.descricao: Descrição do tipo de afastamento (Type: String)\n- classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- tipoMovimentacaoPessoal.descricao: Classificação do tipo de movimentação pessoal (Type: String)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "motivosRescisao_busca_4_143f27eb",
+    "section_name": "motivosRescisao_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 79,
+    "char_count": 274,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 36,
+    "keywords": [
+      "pessoal",
+      "motivosrescisao",
+      "id",
+      "descricao",
+      "classificacao",
+      "tipo"
+    ],
+    "entities": [
+      "motivosRescisao",
+      "TipoMovimentacaoPessoalMotivoRescisao",
+      "busca",
+      "TipoAfastamentoMotivoRescisao",
+      "MotivoRescisaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.095320",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "143f27ebd64a760d4128e62efa00eb2e",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: motivosRescisao_busca\nType: reference\nRelated to: motivosRescisao, TipoMovimentacaoPessoalMotivoRescisao, busca\n\n- tipoAfastamento.descricao: Descrição do tipo de afastamento (Type: String)\n- classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- tipoMovimentacaoPessoal.descricao: Classificação do tipo de movimentação pessoal (Type: String)\n- descricao: Descrição (Type: String)\n\nKeywords: pessoal, motivosrescisao, id, descricao, classificacao, tipo",
+  "search_text": "motivosRescisao_busca motivosRescisao TipoMovimentacaoPessoalMotivoRescisao busca TipoAfastamentoMotivoRescisao MotivoRescisaoFonteDados pessoal motivosrescisao id descricao classificacao tipo - tipoAfastamento.descricao: Descrição do tipo de afastamento (Type: String)\n- classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- tipoMovimentacaoPessoal.descricao: Classificação do tipo de movimentação pessoal (Type: String)\n- descricao: Descrição (Type: String)"
+}

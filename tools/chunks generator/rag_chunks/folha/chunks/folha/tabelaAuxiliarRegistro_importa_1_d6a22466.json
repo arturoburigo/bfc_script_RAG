@@ -1,0 +1,47 @@
+{
+  "content": "importa (POST)\n\nRepresentation Type: TabelaAuxiliarRegistroImportacao",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliarRegistro_importa_1_d6a22466",
+    "section_name": "tabelaAuxiliarRegistro_importa",
+    "chunk_index": 1,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 15,
+    "char_count": 69,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 10,
+    "keywords": [
+      "tabelaauxiliarregistro"
+    ],
+    "entities": [
+      "TabelaAuxiliarCampoSemValores",
+      "TabelaAuxiliarAssociacao",
+      "TabelaAuxiliarRegistro",
+      "importa",
+      "TabelaAuxiliarRegistroImportacao",
+      "tabelaAuxiliarRegistro",
+      "TabelaAuxiliarCampoAssociacao",
+      "TabelaAuxiliarValorSemRegistro",
+      "TabelaAuxiliarValorAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.141559",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "d6a22466a7942d2d0715b6461868eceb",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "tabelaAuxiliar_exclui_1_469039d5",
+      "tabelaAuxiliarValor_busca_0_9b03df81",
+      "fonteGenerica_importa_2_77ecbcf3",
+      "tabelaAuxiliarCampo_busca_4_9f589243"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tabelaAuxiliarRegistro_importa\nType: definition\nRelated to: TabelaAuxiliarCampoSemValores, TabelaAuxiliarAssociacao, TabelaAuxiliarRegistro\n\nimporta (POST)\n\nRepresentation Type: TabelaAuxiliarRegistroImportacao\n\nKeywords: tabelaauxiliarregistro",
+  "search_text": "tabelaAuxiliarRegistro_importa TabelaAuxiliarCampoSemValores TabelaAuxiliarAssociacao TabelaAuxiliarRegistro importa TabelaAuxiliarRegistroImportacao tabelaAuxiliarRegistro TabelaAuxiliarCampoAssociacao TabelaAuxiliarValorSemRegistro TabelaAuxiliarValorAssociacao tabelaauxiliarregistro importa (POST)\n\nRepresentation Type: TabelaAuxiliarRegistroImportacao"
+}

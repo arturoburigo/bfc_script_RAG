@@ -1,4 +1,0 @@
-# HipoteseLegal
-Enum: HipoteseLegal
-- Necessidade de substituição transitória de pessoal (Key: NECESSIDADE_SUBSTITUICAO_TRANSITORIA_PESSOAL, Value: 1)
-- Demanda complementar de serviço (Key: DEMANDA_COMPLEMENTAR_DE_SERVICO, Value: 2)

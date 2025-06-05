@@ -1,0 +1,43 @@
+{
+  "content": "## GrupoFuncional\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "grupoFuncional_busca_5_45c12770",
+    "section_name": "grupoFuncional_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 25,
+    "char_count": 77,
+    "overlap_with_previous": 14,
+    "overlap_with_next": 7,
+    "keywords": [
+      "grupofuncional",
+      "id",
+      "descricao"
+    ],
+    "entities": [
+      "grupoFuncional",
+      "GrupoFuncional",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.370994",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "45c12770323047adfcff430b1b4e24d6",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: grupoFuncional_busca\nType: reference\nRelated to: grupoFuncional, GrupoFuncional, busca\n\n## GrupoFuncional\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n\nKeywords: grupofuncional, id, descricao",
+  "search_text": "grupoFuncional_busca grupoFuncional GrupoFuncional busca grupofuncional id descricao ## GrupoFuncional\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)"
+}

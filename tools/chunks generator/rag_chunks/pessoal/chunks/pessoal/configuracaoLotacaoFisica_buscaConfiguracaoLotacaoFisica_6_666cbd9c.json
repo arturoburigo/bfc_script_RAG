@@ -1,0 +1,62 @@
+{
+  "content": "groovy\nfonteConfiguracaoLotacaoFisica = Dados.pessoal.v2.configuracaoLotacaoFisica;\n\nfiltroConfiguracaoLotacaoFisica = \"id = null\"\n\ndadosConfiguracaoLotacaoFisica = fonteConfiguracaoLotacaoFisica.buscaConfiguracaoLotacaoFisica(criterio: filtroConfiguracaoLotacaoFisica,campos: \"niveis(id, nivel, descricao, quantidadeDigitos, separador), id, emUso, descricao\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracaoLotacaoFisica) { itemConfiguracaoLotacaoFisica ->\n\n}",
+  "metadata": {
+    "chunk_id": "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica_6_666cbd9c",
+    "section_name": "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 151,
+    "char_count": 462,
+    "overlap_with_previous": 25,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "lotacoesfisicas",
+      "filtro",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "EmpresaResponsavelLotacaoFisica",
+      "BairroLotacaoFisica",
+      "EnderecoLotacaoFisica",
+      "ProfissionalLocatacaoFisica",
+      "EstadoLotacaoFisica",
+      "TelefonesLotacaoFisica",
+      "ResponsavelLotacaoFisica",
+      "LotacaoFisica",
+      "NiveisConfiguracaoLotacaoFisica",
+      "ConfiguracaoLotacaoFisicaFonteDados",
+      "PaisLotacaoFisica",
+      "ConfiguracaoLotacaoFisica",
+      "buscaConfiguracaoLotacaoFisica",
+      "Dados.pessoal.v2.configuracaoLotacaoFisica",
+      "LogradouroLotacaoFisica",
+      "MunicipioLotacaoFisica",
+      "lotacoesFisicas"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.382191",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "666cbd9c721741724baf90cde67ba57d",
+    "related_chunks": [
+      "lotacaoFisica_busca_6_4bcc3eb6",
+      "lotacaoFisica_busca_1_b413aa40",
+      "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica_3_834aa679",
+      "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica_1_71e1442f",
+      "lotacaoFisica_busca_2_63c6b571"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica\nType: example\nRelated to: EmpresaResponsavelLotacaoFisica, BairroLotacaoFisica, EnderecoLotacaoFisica\n\ngroovy\nfonteConfiguracaoLotacaoFisica = Dados.pessoal.v2.configuracaoLotacaoFisica;\n\nfiltroConfiguracaoLotacaoFisica = \"id = null\"\n\ndadosConfiguracaoLotacaoFisica = fonteConfiguracaoLotacaoFisica.buscaConfiguracaoLotacaoFisica(criterio: filtroConfiguracaoLotacaoFisica,campos: \"niveis(id, nivel, descricao, quantidadeDigitos, separador), id, emUso, descricao\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracaoLotacaoFisica) { itemConfiguracaoLotacaoFisica ->\n\n}\n\nKeywords: pessoal, busca, lotacoesfisicas, filtro, ordenacao, v2, campo, dados",
+  "search_text": "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica EmpresaResponsavelLotacaoFisica BairroLotacaoFisica EnderecoLotacaoFisica ProfissionalLocatacaoFisica EstadoLotacaoFisica TelefonesLotacaoFisica ResponsavelLotacaoFisica LotacaoFisica NiveisConfiguracaoLotacaoFisica ConfiguracaoLotacaoFisicaFonteDados PaisLotacaoFisica ConfiguracaoLotacaoFisica buscaConfiguracaoLotacaoFisica Dados.pessoal.v2.configuracaoLotacaoFisica LogradouroLotacaoFisica MunicipioLotacaoFisica lotacoesFisicas pessoal busca lotacoesfisicas filtro ordenacao v2 campo dados groovy\nfonteConfiguracaoLotacaoFisica = Dados.pessoal.v2.configuracaoLotacaoFisica;\n\nfiltroConfiguracaoLotacaoFisica = \"id = null\"\n\ndadosConfiguracaoLotacaoFisica = fonteConfiguracaoLotacaoFisica.buscaConfiguracaoLotacaoFisica(criterio: filtroConfiguracaoLotacaoFisica,campos: \"niveis(id, nivel, descricao, quantidadeDigitos, separador), id, emUso, descricao\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracaoLotacaoFisica) { itemConfiguracaoLotacaoFisica ->\n\n}"
+}

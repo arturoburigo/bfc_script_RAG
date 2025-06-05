@@ -1,0 +1,48 @@
+{
+  "content": "## ClasseReferenciaDadosRepresentation\n- id: Id (Type: Long)\n- classe: Classe (Type: String)\n- referencia: Referência (Type: String)\n- classeTce: Classe TCE (Type: String)\n- referenciaTce: Referência TCE (Type: String)\n- fatorValor: Valor (Type: BigDecimal)\n- ordem: Ordem (Type: Integer)",
+  "metadata": {
+    "chunk_id": "classeReferencia_busca_5_e49b8635",
+    "section_name": "classeReferencia_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 84,
+    "char_count": 288,
+    "overlap_with_previous": 16,
+    "overlap_with_next": 15,
+    "keywords": [
+      "referenciatce",
+      "id",
+      "classereferencia",
+      "referencia",
+      "classereferenciadadosrepresentation",
+      "classe",
+      "dados",
+      "classetce"
+    ],
+    "entities": [
+      "classeReferencia",
+      "ClasseReferenciaDadosRepresentation",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.081745",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "e49b863554fd5e497882a6be4d947853",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.8
+  },
+  "embeddings_text": "Section: classeReferencia_busca\nType: reference\nRelated to: classeReferencia, ClasseReferenciaDadosRepresentation, busca\n\n## ClasseReferenciaDadosRepresentation\n- id: Id (Type: Long)\n- classe: Classe (Type: String)\n- referencia: Referência (Type: String)\n- classeTce: Classe TCE (Type: String)\n- referenciaTce: Referência TCE (Type: String)\n- fatorValor: Valor (Type: BigDecimal)\n- ordem: Ordem (Type: Integer)\n\nKeywords: referenciatce, id, classereferencia, referencia, classereferenciadadosrepresentation, classe, dados, classetce",
+  "search_text": "classeReferencia_busca classeReferencia ClasseReferenciaDadosRepresentation busca referenciatce id classereferencia referencia classereferenciadadosrepresentation classe dados classetce ## ClasseReferenciaDadosRepresentation\n- id: Id (Type: Long)\n- classe: Classe (Type: String)\n- referencia: Referência (Type: String)\n- classeTce: Classe TCE (Type: String)\n- referenciaTce: Referência TCE (Type: String)\n- fatorValor: Valor (Type: BigDecimal)\n- ordem: Ordem (Type: Integer)"
+}

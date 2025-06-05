@@ -1,5 +1,0 @@
-# AbrangenciaFeriado
-Enum: AbrangenciaFeriado
-- Municipal (Key: MUNICIPAL, Value: M)
-- Estadual (Key: ESTADUAL, Value: E)
-- Nacional (Key: NACIONAL, Value: N)

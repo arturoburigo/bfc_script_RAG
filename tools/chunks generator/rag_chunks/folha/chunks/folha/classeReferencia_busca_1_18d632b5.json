@@ -1,0 +1,43 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de classes/referências de níveis salariais\n\nRepresentation Type: ClasseReferenciaDadosRepresentation",
+  "metadata": {
+    "chunk_id": "classeReferencia_busca_1_18d632b5",
+    "section_name": "classeReferencia_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 30,
+    "char_count": 141,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 19,
+    "keywords": [
+      "dados",
+      "classereferencia",
+      "busca"
+    ],
+    "entities": [
+      "classeReferencia",
+      "ClasseReferenciaDadosRepresentation",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.081461",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "18d632b5c4b64bedc91ba0293b9122c4",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: classeReferencia_busca\nType: definition\nRelated to: classeReferencia, ClasseReferenciaDadosRepresentation, busca\n\nbusca (GET)\nMethod Description: Listagem de classes/referências de níveis salariais\n\nRepresentation Type: ClasseReferenciaDadosRepresentation\n\nKeywords: dados, classereferencia, busca",
+  "search_text": "classeReferencia_busca classeReferencia ClasseReferenciaDadosRepresentation busca dados classereferencia busca busca (GET)\nMethod Description: Listagem de classes/referências de níveis salariais\n\nRepresentation Type: ClasseReferenciaDadosRepresentation"
+}

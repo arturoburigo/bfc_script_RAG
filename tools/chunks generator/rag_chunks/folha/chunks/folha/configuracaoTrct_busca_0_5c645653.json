@@ -1,0 +1,43 @@
+{
+  "content": "ConfiguracaoTrct",
+  "metadata": {
+    "chunk_id": "configuracaoTrct_busca_0_5c645653",
+    "section_name": "configuracaoTrct_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 5,
+    "char_count": 16,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 4,
+    "keywords": [
+      "configuracaotrct"
+    ],
+    "entities": [
+      "configuracaoTrct",
+      "ConfiguracaoTrctFontDados",
+      "busca",
+      "ConfiguracaoEventoFonteDados",
+      "ConfiguracaoTrctEventoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.979441",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "5c6456533d905b1ab06bff6771ecd4ed",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracaoTrct_busca\nType: definition\nRelated to: configuracaoTrct, ConfiguracaoTrctFontDados, busca\n\nConfiguracaoTrct\n\nKeywords: configuracaotrct",
+  "search_text": "configuracaoTrct_busca configuracaoTrct ConfiguracaoTrctFontDados busca ConfiguracaoEventoFonteDados ConfiguracaoTrctEventoFonteDados configuracaotrct ConfiguracaoTrct"
+}

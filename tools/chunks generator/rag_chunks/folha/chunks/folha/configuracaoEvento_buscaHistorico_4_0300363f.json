@@ -1,0 +1,53 @@
+{
+  "content": "- taxa: Taxa (Type: BigDecimal)\n- classificacaoBaixaProvisao: Baixa da provisão (Type: )\n- observacao: Observações (Type: String)\n- tipo: Tipo (Type: )\n- codigo: Código (Type: Long)\n- ato.numeroOficial: Número oficial do ato (Type: String)\n- enviaEsocial: Envia ao eSocial (Type: Boolean)\n- origem.id:  (Type: Long)\n- naturezaRubrica: Natureza da Rubrica (Type: )\n- unidade: Unidade (Type: )\n- tetoRemuneratorio: Teto Remuneratório (Type: Boolean)\n- compoemHorasMes: Compõem horas do mês (Type: Boolean)\n- incideDsr: Incide DSR (Type: Boolean)\n- descricao: Descrição (Type: String)\n- codigoEsocial: Código para o eSocial (Type: String)\n- configuracaoEvento.codigo:  (Type: String)\n- enviaRais: Envia para RAIS? (Type: Boolean)\n- inicioVigencia: Competência (Type: LocalDateTime)\n- classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- enviaTransparencia: Envia ao transparência (Type: Boolean)\n- desabilitado: Registro Desativado (Type: Boolean)\n- calcularPorUltimo: Calcular Por Último (Type: Boolean)",
+  "metadata": {
+    "chunk_id": "configuracaoEvento_buscaHistorico_4_0300363f",
+    "section_name": "configuracaoEvento_buscaHistorico",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 320,
+    "char_count": 1010,
+    "overlap_with_previous": 3,
+    "overlap_with_next": 131,
+    "keywords": [
+      "classificacaobaixaprovisao",
+      "configuracaoevento",
+      "observacao",
+      "codigo",
+      "taxa",
+      "tipo"
+    ],
+    "entities": [
+      "buscaHistorico",
+      "AtoConfiguracaoEvento",
+      "MotivoRescisaoConfiguracaoEvento",
+      "configuracaoEvento",
+      "Base",
+      "dependenciasFonteDados",
+      "ConfiguracaoEventoFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoProcessamentoFonteDados",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.083776",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "0300363f094edb128983118275477253",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_buscaMotivosRescisao_1_0ae38fb7",
+      "configuracaoRais_buscaResponsavel_2_fd676cfc",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020"
+    ],
+    "quality_score": 0.65
+  },
+  "embeddings_text": "Section: configuracaoEvento_buscaHistorico\nType: reference\nRelated to: buscaHistorico, AtoConfiguracaoEvento, MotivoRescisaoConfiguracaoEvento\n\n- taxa: Taxa (Type: BigDecimal)\n- classificacaoBaixaProvisao: Baixa da provisão (Type: )\n- observacao: Observações (Type: String)\n- tipo: Tipo (Type: )\n- codigo: Código (Type: Long)\n- ato.numeroOficial: Número oficial do ato (Type: String)\n- enviaEsocial: Envia ao eSocial (Type: Boolean)\n- origem.id:  (Type: Long)\n- naturezaRubrica: Natureza da Rubrica (Type: )\n- unidade: Unidade (Type: )\n- tetoRemuneratorio: Teto Remuneratório (Type: Boolean)\n- compoemHorasMes: Compõem horas do mês (Type: Boolean)\n- incideDsr: Incide DSR (Type: Boolean)\n- descricao: Descrição (Type: String)\n- codigoEsocial: Código para o eSocial (Type: String)\n- configuracaoEvento.codigo:  (Type: String)\n- enviaRais: Envia para RAIS? (Type: Boolean)\n- inicioVigencia: Competência (Type: LocalDateTime)\n- classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- enviaTransparencia: Envia ao transparência (Type: Boolean)\n- desabilitado: Registro Desativado (Type: Boolean)\n- calcularPorUltimo: Calcular Por Último (Type: Boolean)\n\nKeywords: classificacaobaixaprovisao, configuracaoevento, observacao, codigo, taxa, tipo",
+  "search_text": "configuracaoEvento_buscaHistorico buscaHistorico AtoConfiguracaoEvento MotivoRescisaoConfiguracaoEvento configuracaoEvento Base dependenciasFonteDados ConfiguracaoEventoFonteDados ScriptFonteDados ConfiguracaoProcessamentoFonteDados ConfiguracaoEventoAssociacaoFonteDados classificacaobaixaprovisao configuracaoevento observacao codigo taxa tipo - taxa: Taxa (Type: BigDecimal)\n- classificacaoBaixaProvisao: Baixa da provisão (Type: )\n- observacao: Observações (Type: String)\n- tipo: Tipo (Type: )\n- codigo: Código (Type: Long)\n- ato.numeroOficial: Número oficial do ato (Type: String)\n- enviaEsocial: Envia ao eSocial (Type: Boolean)\n- origem.id:  (Type: Long)\n- naturezaRubrica: Natureza da Rubrica (Type: )\n- unidade: Unidade (Type: )\n- tetoRemuneratorio: Teto Remuneratório (Type: Boolean)\n- compoemHorasMes: Compõem horas do mês (Type: Boolean)\n- incideDsr: Incide DSR (Type: Boolean)\n- descricao: Descrição (Type: String)\n- codigoEsocial: Código para o eSocial (Type: String)\n- configuracaoEvento.codigo:  (Type: String)\n- enviaRais: Envia para RAIS? (Type: Boolean)\n- inicioVigencia: Competência (Type: LocalDateTime)\n- classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- enviaTransparencia: Envia ao transparência (Type: Boolean)\n- desabilitado: Registro Desativado (Type: Boolean)\n- calcularPorUltimo: Calcular Por Último (Type: Boolean)"
+}

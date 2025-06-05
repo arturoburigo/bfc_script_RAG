@@ -1,0 +1,44 @@
+{
+  "content": "- abreviatura: Abreviatura (Type: String)\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "tipos-logradouro_busca_4_e88aece6",
+    "section_name": "tipos-logradouro_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 35,
+    "char_count": 101,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 19,
+    "keywords": [
+      "id",
+      "abreviatura",
+      "descricao",
+      "tipos-logradouro"
+    ],
+    "entities": [
+      "TipoLogradouro",
+      "busca",
+      "tipos-logradouro"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.551192",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "e88aece6c1a980dc51e60a1d8eefb857",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tipos-logradouro_busca\nType: reference\nRelated to: TipoLogradouro, busca, tipos-logradouro\n\n- abreviatura: Abreviatura (Type: String)\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n\nKeywords: id, abreviatura, descricao, tipos-logradouro",
+  "search_text": "tipos-logradouro_busca TipoLogradouro busca tipos-logradouro id abreviatura descricao tipos-logradouro - abreviatura: Abreviatura (Type: String)\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)"
+}

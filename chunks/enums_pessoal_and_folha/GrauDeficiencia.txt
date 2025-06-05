@@ -1,5 +1,0 @@
-# GrauDeficiencia
-Enum: GrauDeficiencia
-- Parcial (Key: PARCIAL, Value: 1)
-- Total (Key: TOTAL, Value: 2)
-- Não inválido (Key: NAOINVALIDO, Value: 3)

@@ -1,0 +1,45 @@
+{
+  "content": "buscaCategoriasTrabalhador (GET)\nMethod Description: Listagem de categorias do trabalhador\n\nRepresentation Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados",
+  "metadata": {
+    "chunk_id": "vinculoEmpregaticio_buscaCategoriasTrabalhador_1_f3d447c8",
+    "section_name": "vinculoEmpregaticio_buscaCategoriasTrabalhador",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 42,
+    "char_count": 162,
+    "overlap_with_previous": 6,
+    "overlap_with_next": 25,
+    "keywords": [
+      "vinculoempregaticio",
+      "dados",
+      "busca"
+    ],
+    "entities": [
+      "buscaCategoriasTrabalhador",
+      "VinculoEmpregaticioMotivoRescisaoFonteDados",
+      "vinculoEmpregaticio",
+      "VinculoEmpregaticioCategoriaTrabalhadorFonteDados",
+      "VinculoEmpregaticioFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.201606",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "f3d447c828eebcbfda27b775f0f2314a",
+    "related_chunks": [
+      "vinculoEmpregaticio_busca_2_802b9c15",
+      "vinculoEmpregaticio_buscaCategoriasTrabalhador_3_934e4e28",
+      "cargo_busca_3_b8c35b40",
+      "cargo_buscaTodos_3_e9113024",
+      "vinculoEmpregaticio_buscaCategoriasTrabalhador_4_0eedb897"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: vinculoEmpregaticio_buscaCategoriasTrabalhador\nType: definition\nRelated to: buscaCategoriasTrabalhador, VinculoEmpregaticioMotivoRescisaoFonteDados, vinculoEmpregaticio\n\nbuscaCategoriasTrabalhador (GET)\nMethod Description: Listagem de categorias do trabalhador\n\nRepresentation Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados\n\nKeywords: vinculoempregaticio, dados, busca",
+  "search_text": "vinculoEmpregaticio_buscaCategoriasTrabalhador buscaCategoriasTrabalhador VinculoEmpregaticioMotivoRescisaoFonteDados vinculoEmpregaticio VinculoEmpregaticioCategoriaTrabalhadorFonteDados VinculoEmpregaticioFonteDados vinculoempregaticio dados busca buscaCategoriasTrabalhador (GET)\nMethod Description: Listagem de categorias do trabalhador\n\nRepresentation Type: VinculoEmpregaticioCategoriaTrabalhadorFonteDados"
+}

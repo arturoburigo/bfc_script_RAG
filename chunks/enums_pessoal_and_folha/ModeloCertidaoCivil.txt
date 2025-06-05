@@ -1,4 +1,0 @@
-# ModeloCertidaoCivil
-Enum: ModeloCertidaoCivil
-- Antigo (Key: ANTIGO, Value: 0)
-- Novo (Key: NOVO, Value: 1)

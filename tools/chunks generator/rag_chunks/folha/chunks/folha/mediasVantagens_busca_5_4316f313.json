@@ -1,0 +1,53 @@
+{
+  "content": "## EventosAssociacaoFonteDados\n- id: Id (Type: Long)\n- codigo: Código (Type: Long)\n- descricao: Descrição (Type: String)\n\n## EventosComposicaoAssociacaoFonteDados\n- id: Id (Type: Long)\n- configuracaoEvento: Evento de composição (Type: EventosAssociacaoFonteDados)\n- periodo: Período (Type: )\n- abrangencia: Abrangência (Type: )\n- valor: Valor (Type: )\n- integralizar: Integralizar? (Type: Boolean)\n\n## MediaVantagemFonteDados\n- id: Id (Type: Long)\n- configuracaoEvento: Evento (Type: EventosAssociacaoFonteDados)\n- tipoMediaVantagem:  (Type: )\n- grupoMediaVantagem: Grupo (Type: )\n- exibirEmFolha: Exibir em folha? (Type: )\n- configuracaoCalculoMediaVantagem: Calcular a partir de (Type: )\n- eventosComposicao: Eventos de composição (Type: EventosComposicaoAssociacaoFonteDados)",
+  "metadata": {
+    "chunk_id": "mediasVantagens_busca_5_4316f313",
+    "section_name": "mediasVantagens_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 245,
+    "char_count": 778,
+    "overlap_with_previous": 39,
+    "overlap_with_next": 29,
+    "keywords": [
+      "codigo",
+      "configuracaoevento",
+      "mediavantagemfontedados",
+      "id",
+      "descricao",
+      "eventosassociacaofontedados",
+      "mediasvantagens",
+      "folha",
+      "eventoscomposicaoassociacaofontedados",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "mediasVantagens",
+      "busca",
+      "EventosAssociacaoFonteDados",
+      "EventosComposicaoAssociacaoFonteDados",
+      "MediaVantagemFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.288708",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "4316f3130cc7432d7568f50d6be3e41c",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: mediasVantagens_busca\nType: reference\nRelated to: mediasVantagens, busca, EventosAssociacaoFonteDados\n\n## EventosAssociacaoFonteDados\n- id: Id (Type: Long)\n- codigo: Código (Type: Long)\n- descricao: Descrição (Type: String)\n\n## EventosComposicaoAssociacaoFonteDados\n- id: Id (Type: Long)\n- configuracaoEvento: Evento de composição (Type: EventosAssociacaoFonteDados)\n- periodo: Período (Type: )\n- abrangencia: Abrangência (Type: )\n- valor: Valor (Type: )\n- integralizar: Integralizar? (Type: Boolean)\n\n## MediaVantagemFonteDados\n- id: Id (Type: Long)\n- configuracaoEvento: Evento (Type: EventosAssociacaoFonteDados)\n- tipoMediaVantagem:  (Type: )\n- grupoMediaVantagem: Grupo (Type: )\n- exibirEmFolha: Exibir em folha? (Type: )\n- configuracaoCalculoMediaVantagem: Calcular a partir de (Type: )\n- eventosComposicao: Eventos de composição (Type: EventosComposicaoAssociacaoFonteDados)\n\nKeywords: codigo, configuracaoevento, mediavantagemfontedados, id, descricao, eventosassociacaofontedados, mediasvantagens, folha, eventoscomposicaoassociacaofontedados, tipo, dados",
+  "search_text": "mediasVantagens_busca mediasVantagens busca EventosAssociacaoFonteDados EventosComposicaoAssociacaoFonteDados MediaVantagemFonteDados codigo configuracaoevento mediavantagemfontedados id descricao eventosassociacaofontedados mediasvantagens folha eventoscomposicaoassociacaofontedados tipo dados ## EventosAssociacaoFonteDados\n- id: Id (Type: Long)\n- codigo: Código (Type: Long)\n- descricao: Descrição (Type: String)\n\n## EventosComposicaoAssociacaoFonteDados\n- id: Id (Type: Long)\n- configuracaoEvento: Evento de composição (Type: EventosAssociacaoFonteDados)\n- periodo: Período (Type: )\n- abrangencia: Abrangência (Type: )\n- valor: Valor (Type: )\n- integralizar: Integralizar? (Type: Boolean)\n\n## MediaVantagemFonteDados\n- id: Id (Type: Long)\n- configuracaoEvento: Evento (Type: EventosAssociacaoFonteDados)\n- tipoMediaVantagem:  (Type: )\n- grupoMediaVantagem: Grupo (Type: )\n- exibirEmFolha: Exibir em folha? (Type: )\n- configuracaoCalculoMediaVantagem: Calcular a partir de (Type: )\n- eventosComposicao: Eventos de composição (Type: EventosComposicaoAssociacaoFonteDados)"
+}

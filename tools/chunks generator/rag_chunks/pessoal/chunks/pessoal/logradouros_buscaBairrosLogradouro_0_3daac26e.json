@@ -1,0 +1,46 @@
+{
+  "content": "Logradouros",
+  "metadata": {
+    "chunk_id": "logradouros_buscaBairrosLogradouro_0_3daac26e",
+    "section_name": "logradouros_buscaBairrosLogradouro",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 4,
+    "char_count": 11,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 2,
+    "keywords": [
+      "logradouros"
+    ],
+    "entities": [
+      "logradouros",
+      "Estado",
+      "TipoLogradouro",
+      "Municipio",
+      "buscaBairrosLogradouro",
+      "Logradouro",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.086722",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "3daac26e4d557db3792c309b7f73cbc2",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "agenciasBancarias_busca_1_ef251772",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "logradouros_buscaBairrosLogradouro_5_4f5931c1"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: logradouros_buscaBairrosLogradouro\nType: definition\nRelated to: logradouros, Estado, TipoLogradouro\n\nLogradouros\n\nKeywords: logradouros",
+  "search_text": "logradouros_buscaBairrosLogradouro logradouros Estado TipoLogradouro Municipio buscaBairrosLogradouro Logradouro Bairro Pais logradouros Logradouros"
+}

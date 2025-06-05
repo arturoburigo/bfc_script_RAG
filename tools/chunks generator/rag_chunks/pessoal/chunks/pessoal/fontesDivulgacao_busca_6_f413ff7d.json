@@ -1,0 +1,48 @@
+{
+  "content": "groovy\nfonteFontesDivulgacao = Dados.pessoal.v2.fontesDivulgacao;\n\ndadosFontesDivulgacao = fonteFontesDivulgacao.busca(campos: \"id, descricao, meioComunicacao\",ordenacao: \"id asc\")\n\npercorrer (dadosFontesDivulgacao) { itemFontesDivulgacao ->\n\n}",
+  "metadata": {
+    "chunk_id": "fontesDivulgacao_busca_6_f413ff7d",
+    "section_name": "fontesDivulgacao_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 81,
+    "char_count": 244,
+    "overlap_with_previous": 11,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "fontesdivulgacao",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Dados.pessoal.v2.fontesDivulgacao",
+      "fontesDivulgacao",
+      "FonteDivulgacao",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.664615",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "f413ff7de69fde22f3e0ede96b879aa6",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: fontesDivulgacao_busca\nType: example\nRelated to: Dados.pessoal.v2.fontesDivulgacao, fontesDivulgacao, FonteDivulgacao\n\ngroovy\nfonteFontesDivulgacao = Dados.pessoal.v2.fontesDivulgacao;\n\ndadosFontesDivulgacao = fonteFontesDivulgacao.busca(campos: \"id, descricao, meioComunicacao\",ordenacao: \"id asc\")\n\npercorrer (dadosFontesDivulgacao) { itemFontesDivulgacao ->\n\n}\n\nKeywords: pessoal, busca, fontesdivulgacao, ordenacao, v2, campo, dados",
+  "search_text": "fontesDivulgacao_busca Dados.pessoal.v2.fontesDivulgacao fontesDivulgacao FonteDivulgacao busca pessoal busca fontesdivulgacao ordenacao v2 campo dados groovy\nfonteFontesDivulgacao = Dados.pessoal.v2.fontesDivulgacao;\n\ndadosFontesDivulgacao = fonteFontesDivulgacao.busca(campos: \"id, descricao, meioComunicacao\",ordenacao: \"id asc\")\n\npercorrer (dadosFontesDivulgacao) { itemFontesDivulgacao ->\n\n}"
+}

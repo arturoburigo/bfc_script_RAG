@@ -1,9 +1,0 @@
-# AposentadoriaEspecial
-Enum: AposentadoriaEspecial
-- Não (Key: NAO, Value: 1)
-- Professor (Infantil, Fundamental e Médio) (Key: PROFESSOR, Value: 2)
-- Professor de ensino superior (com ingresso anterior à 16/12/2008 EC nº 20/98) (Key: PROFESSOR_ENSINO_SUPERIOR, Value: 3)
-- Magistrado (com ingresso anterior à 16/12/2008 EC nº 20/98) (Key: MAGISTRADO, Value: 4)
-- Membro MPU (com ingresso anterior à 16/12/2008 EC nº 20/98) (Key: MEMBRO_MPU, Value: 5)
-- Membro TCU (com ingresso anterior à 16/12/2008 EC nº 20/98) (Key: MEMBRO_TCU, Value: 6)
-- Aposentadoria Especial (EC 47/2005) (com ingresso anterior à 16/12/2008 EC nº 20/98) (Key: APOSENTADORIA_ESPECIAL, Value: 7)

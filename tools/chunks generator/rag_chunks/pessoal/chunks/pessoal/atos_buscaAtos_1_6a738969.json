@@ -1,0 +1,48 @@
+{
+  "content": "buscaAtos (GET)\nMethod Description: Listagem de atos\n\nRepresentation Type: AtoFonteDados",
+  "metadata": {
+    "chunk_id": "atos_buscaAtos_1_6a738969",
+    "section_name": "atos_buscaAtos",
+    "chunk_index": 1,
+    "total_chunks": 8,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 24,
+    "char_count": 88,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 13,
+    "keywords": [
+      "busca",
+      "dados",
+      "atos"
+    ],
+    "entities": [
+      "buscaAtos",
+      "AtoFonteDados",
+      "ArquivoAto",
+      "NaturezaTextoJuridico",
+      "AtoFonteDivulgacao",
+      "TipoAto",
+      "atos",
+      "FonteDivulgacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.666013",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "6a738969aaf97cc622ba9daf97a8c676",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "fontesDivulgacao_busca_2_58920ed9"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: atos_buscaAtos\nType: definition\nRelated to: buscaAtos, AtoFonteDados, ArquivoAto\n\nbuscaAtos (GET)\nMethod Description: Listagem de atos\n\nRepresentation Type: AtoFonteDados\n\nKeywords: busca, dados, atos",
+  "search_text": "atos_buscaAtos buscaAtos AtoFonteDados ArquivoAto NaturezaTextoJuridico AtoFonteDivulgacao TipoAto atos FonteDivulgacao busca dados atos buscaAtos (GET)\nMethod Description: Listagem de atos\n\nRepresentation Type: AtoFonteDados"
+}

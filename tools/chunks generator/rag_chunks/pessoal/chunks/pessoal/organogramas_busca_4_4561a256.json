@@ -1,0 +1,59 @@
+{
+  "content": "- sigla: Sigla (Type: String)\n- numero: Número (Type: String)\n- id: Id (Type: Long)\n- nivel: Nível (Type: Integer)\n- configuracao.emUso: Configuração está em uso? (Type: Boolean)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "organogramas_busca_4_4561a256",
+    "section_name": "organogramas_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 70,
+    "char_count": 216,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 34,
+    "keywords": [
+      "organogramas",
+      "nivel",
+      "id",
+      "descricao",
+      "numero",
+      "sigla"
+    ],
+    "entities": [
+      "ConfiguracaoOrganograma",
+      "organogramas",
+      "TipoLogradouroOrganograma",
+      "Endereco",
+      "CargoOrganograma",
+      "busca",
+      "FuncaoOrganograma",
+      "LogradouroOrganograma",
+      "BairroOrganograma",
+      "EstadoPessoaFisica",
+      "AtoOrganograma",
+      "ConfiguracaoNivelOrganograma",
+      "MunicipioPessoaFisica",
+      "OrganogramaResponsavelFonteDados",
+      "OrganogramaFonteDados",
+      "TipoAdministracao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.273331",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "4561a25663d0fec336e0705a18de5cae",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "pessoaFisica_buscaFiliacao_4_0a7e85dc",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: organogramas_busca\nType: reference\nRelated to: ConfiguracaoOrganograma, organogramas, TipoLogradouroOrganograma\n\n- sigla: Sigla (Type: String)\n- numero: Número (Type: String)\n- id: Id (Type: Long)\n- nivel: Nível (Type: Integer)\n- configuracao.emUso: Configuração está em uso? (Type: Boolean)\n- descricao: Descrição (Type: String)\n\nKeywords: organogramas, nivel, id, descricao, numero, sigla",
+  "search_text": "organogramas_busca ConfiguracaoOrganograma organogramas TipoLogradouroOrganograma Endereco CargoOrganograma busca FuncaoOrganograma LogradouroOrganograma BairroOrganograma EstadoPessoaFisica AtoOrganograma ConfiguracaoNivelOrganograma MunicipioPessoaFisica OrganogramaResponsavelFonteDados OrganogramaFonteDados TipoAdministracao organogramas nivel id descricao numero sigla - sigla: Sigla (Type: String)\n- numero: Número (Type: String)\n- id: Id (Type: Long)\n- nivel: Nível (Type: Integer)\n- configuracao.emUso: Configuração está em uso? (Type: Boolean)\n- descricao: Descrição (Type: String)"
+}

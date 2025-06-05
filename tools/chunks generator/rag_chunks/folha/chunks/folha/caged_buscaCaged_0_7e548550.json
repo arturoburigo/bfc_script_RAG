@@ -1,0 +1,46 @@
+{
+  "content": "CAGED matrícula",
+  "metadata": {
+    "chunk_id": "caged_buscaCaged_0_7e548550",
+    "section_name": "caged_buscaCaged",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 6,
+    "char_count": 15,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 2,
+    "keywords": [
+      "cagedmatricula"
+    ],
+    "entities": [
+      "Caged",
+      "CagedMatricula",
+      "buscaCaged",
+      "MatriculaMatricula",
+      "EstadoMunicipioCaged",
+      "cagedMatricula",
+      "CagedMatriculaDto",
+      "MunicipioCaged"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.157095",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "7e548550b32420cd28220727a05f7108",
+    "related_chunks": [
+      "cagedMatricula_importa_3_44189c69",
+      "caged_buscaCaged_1_7758de71",
+      "caged_buscaCaged_5_b9d32e1c",
+      "cagedMatricula_importa_2_e612514e",
+      "caged_buscaCaged_3_d49e7fac"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: caged_buscaCaged\nType: definition\nRelated to: Caged, CagedMatricula, buscaCaged\n\nCAGED matrícula\n\nKeywords: cagedmatricula",
+  "search_text": "caged_buscaCaged Caged CagedMatricula buscaCaged MatriculaMatricula EstadoMunicipioCaged cagedMatricula CagedMatriculaDto MunicipioCaged cagedmatricula CAGED matrícula"
+}

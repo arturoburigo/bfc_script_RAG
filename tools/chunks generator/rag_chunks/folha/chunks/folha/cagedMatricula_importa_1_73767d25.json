@@ -1,0 +1,46 @@
+{
+  "content": "importa (POST)\n\nRepresentation Type: CagedMatriculaDto",
+  "metadata": {
+    "chunk_id": "cagedMatricula_importa_1_73767d25",
+    "section_name": "cagedMatricula_importa",
+    "chunk_index": 1,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 13,
+    "char_count": 54,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 9,
+    "keywords": [
+      "cagedmatricula"
+    ],
+    "entities": [
+      "Caged",
+      "CagedMatricula",
+      "importa",
+      "MatriculaMatricula",
+      "EstadoMunicipioCaged",
+      "cagedMatricula",
+      "CagedMatriculaDto",
+      "MunicipioCaged"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.978688",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "73767d257f0f4d3f307a8e2605084447",
+    "related_chunks": [
+      "caged_buscaCaged_1_7758de71",
+      "gfipMatricula_importa_3_ad915c0f",
+      "tabelaAuxiliarValor_importa_3_3648ed36",
+      "gfipMatricula_importa_1_f700bf51",
+      "caged_buscaCaged_6_ca0e308c"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: cagedMatricula_importa\nType: definition\nRelated to: Caged, CagedMatricula, importa\n\nimporta (POST)\n\nRepresentation Type: CagedMatriculaDto\n\nKeywords: cagedmatricula",
+  "search_text": "cagedMatricula_importa Caged CagedMatricula importa MatriculaMatricula EstadoMunicipioCaged cagedMatricula CagedMatriculaDto MunicipioCaged cagedmatricula importa (POST)\n\nRepresentation Type: CagedMatriculaDto"
+}

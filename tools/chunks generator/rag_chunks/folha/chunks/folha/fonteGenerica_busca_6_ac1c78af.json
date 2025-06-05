@@ -1,0 +1,48 @@
+{
+  "content": "groovy\nfonteFonteGenerica = Dados.folha.v2.fonteGenerica;\n\ndadosFonteGenerica = fonteFonteGenerica.busca(campos: \"id, identificador, tipoRegistro, conteudo\")\n\npercorrer (dadosFonteGenerica) { itemFonteGenerica ->\n\n}",
+  "metadata": {
+    "chunk_id": "fonteGenerica_busca_6_ac1c78af",
+    "section_name": "fonteGenerica_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 70,
+    "char_count": 215,
+    "overlap_with_previous": 13,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "tipo",
+      "fontegenerica",
+      "v2",
+      "folha",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "FonteGenerica",
+      "fonteGenerica",
+      "Dados.folha.v2.fonteGenerica",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.345140",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "ac1c78af66dfacffefe0e7c1535eb696",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: fonteGenerica_busca\nType: example\nRelated to: FonteGenerica, fonteGenerica, Dados.folha.v2.fonteGenerica\n\ngroovy\nfonteFonteGenerica = Dados.folha.v2.fonteGenerica;\n\ndadosFonteGenerica = fonteFonteGenerica.busca(campos: \"id, identificador, tipoRegistro, conteudo\")\n\npercorrer (dadosFonteGenerica) { itemFonteGenerica ->\n\n}\n\nKeywords: busca, tipo, fontegenerica, v2, folha, campo, dados",
+  "search_text": "fonteGenerica_busca FonteGenerica fonteGenerica Dados.folha.v2.fonteGenerica busca busca tipo fontegenerica v2 folha campo dados groovy\nfonteFonteGenerica = Dados.folha.v2.fonteGenerica;\n\ndadosFonteGenerica = fonteFonteGenerica.busca(campos: \"id, identificador, tipoRegistro, conteudo\")\n\npercorrer (dadosFonteGenerica) { itemFonteGenerica ->\n\n}"
+}

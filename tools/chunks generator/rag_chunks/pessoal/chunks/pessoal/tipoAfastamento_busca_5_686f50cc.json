@@ -1,0 +1,51 @@
+{
+  "content": "## TipoMovimentacaoPessoalTipoAfastamento\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## TipoAfastamentoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n- tipoMovimentacaoPessoal: Tipo de movimentação pessoal (Type: TipoMovimentacaoPessoalTipoAfastamento)\n- diasPrevistos: Dias previstos (Type: Integer)\n- consideraVencimento: Considera vencimentos? (Type: Boolean)\n- perdeTempoServico: Perde tempo de serviço? (Type: Boolean)\n- reduz13Salario: Reduz 13º salário? (Type: Boolean)\n- reduzFerias: Reduz férias? (Type: Boolean)\n- reduzFgts: Reduz FGTS? (Type: Boolean)\n- camposAdicionais: Campos Adicionais (Type: CamposAdicionais)",
+  "metadata": {
+    "chunk_id": "tipoAfastamento_busca_5_686f50cc",
+    "section_name": "tipoAfastamento_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 240,
+    "char_count": 747,
+    "overlap_with_previous": 77,
+    "overlap_with_next": 45,
+    "keywords": [
+      "pessoal",
+      "tipo",
+      "tipoafastamento",
+      "id",
+      "descricao",
+      "tipoafastamentofontedados",
+      "tipomovimentacaopessoaltipoafastamento",
+      "classificacao",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "TipoMovimentacaoPessoalTipoAfastamento",
+      "tipoAfastamento",
+      "TipoAfastamentoFonteDados",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.385175",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "686f50cc9297eebbc05eac993389ba8d",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: tipoAfastamento_busca\nType: reference\nRelated to: TipoMovimentacaoPessoalTipoAfastamento, tipoAfastamento, TipoAfastamentoFonteDados\n\n## TipoMovimentacaoPessoalTipoAfastamento\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## TipoAfastamentoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n- tipoMovimentacaoPessoal: Tipo de movimentação pessoal (Type: TipoMovimentacaoPessoalTipoAfastamento)\n- diasPrevistos: Dias previstos (Type: Integer)\n- consideraVencimento: Considera vencimentos? (Type: Boolean)\n- perdeTempoServico: Perde tempo de serviço? (Type: Boolean)\n- reduz13Salario: Reduz 13º salário? (Type: Boolean)\n- reduzFerias: Reduz férias? (Type: Boolean)\n- reduzFgts: Reduz FGTS? (Type: Boolean)\n- camposAdicionais: Campos Adicionais (Type: CamposAdicionais)\n\nKeywords: pessoal, tipo, tipoafastamento, id, descricao, tipoafastamentofontedados, tipomovimentacaopessoaltipoafastamento, classificacao, campo, dados",
+  "search_text": "tipoAfastamento_busca TipoMovimentacaoPessoalTipoAfastamento tipoAfastamento TipoAfastamentoFonteDados busca pessoal tipo tipoafastamento id descricao tipoafastamentofontedados tipomovimentacaopessoaltipoafastamento classificacao campo dados ## TipoMovimentacaoPessoalTipoAfastamento\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## TipoAfastamentoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n- tipoMovimentacaoPessoal: Tipo de movimentação pessoal (Type: TipoMovimentacaoPessoalTipoAfastamento)\n- diasPrevistos: Dias previstos (Type: Integer)\n- consideraVencimento: Considera vencimentos? (Type: Boolean)\n- perdeTempoServico: Perde tempo de serviço? (Type: Boolean)\n- reduz13Salario: Reduz 13º salário? (Type: Boolean)\n- reduzFerias: Reduz férias? (Type: Boolean)\n- reduzFgts: Reduz FGTS? (Type: Boolean)\n- camposAdicionais: Campos Adicionais (Type: CamposAdicionais)"
+}

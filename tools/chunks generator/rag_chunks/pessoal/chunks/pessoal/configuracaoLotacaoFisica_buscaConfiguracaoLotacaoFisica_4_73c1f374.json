@@ -1,0 +1,56 @@
+{
+  "content": "- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica_4_73c1f374",
+    "section_name": "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 21,
+    "char_count": 70,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 15,
+    "keywords": [
+      "lotacoesfisicas",
+      "id",
+      "descricao"
+    ],
+    "entities": [
+      "EmpresaResponsavelLotacaoFisica",
+      "BairroLotacaoFisica",
+      "EnderecoLotacaoFisica",
+      "ProfissionalLocatacaoFisica",
+      "EstadoLotacaoFisica",
+      "TelefonesLotacaoFisica",
+      "ResponsavelLotacaoFisica",
+      "LotacaoFisica",
+      "NiveisConfiguracaoLotacaoFisica",
+      "ConfiguracaoLotacaoFisicaFonteDados",
+      "PaisLotacaoFisica",
+      "ConfiguracaoLotacaoFisica",
+      "buscaConfiguracaoLotacaoFisica",
+      "LogradouroLotacaoFisica",
+      "MunicipioLotacaoFisica",
+      "lotacoesFisicas"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.380697",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "73c1f374bf75f2ce16355716a97b491d",
+    "related_chunks": [
+      "lotacaoFisica_busca_6_4bcc3eb6",
+      "lotacaoFisica_busca_1_b413aa40",
+      "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica_3_834aa679",
+      "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica_1_71e1442f",
+      "lotacaoFisica_busca_2_63c6b571"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica\nType: reference\nRelated to: EmpresaResponsavelLotacaoFisica, BairroLotacaoFisica, EnderecoLotacaoFisica\n\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n\nKeywords: lotacoesfisicas, id, descricao",
+  "search_text": "configuracaoLotacaoFisica_buscaConfiguracaoLotacaoFisica EmpresaResponsavelLotacaoFisica BairroLotacaoFisica EnderecoLotacaoFisica ProfissionalLocatacaoFisica EstadoLotacaoFisica TelefonesLotacaoFisica ResponsavelLotacaoFisica LotacaoFisica NiveisConfiguracaoLotacaoFisica ConfiguracaoLotacaoFisicaFonteDados PaisLotacaoFisica ConfiguracaoLotacaoFisica buscaConfiguracaoLotacaoFisica LogradouroLotacaoFisica MunicipioLotacaoFisica lotacoesFisicas lotacoesfisicas id descricao - id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)"
+}

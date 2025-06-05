@@ -1,0 +1,44 @@
+{
+  "content": "Listagem de tipos de afastamentos\n\nRepresentation Type: TipoAfastamentoFonteDados",
+  "metadata": {
+    "chunk_id": "tipoAfastamento_busca_2_29ab21f9",
+    "section_name": "tipoAfastamento_busca",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 19,
+    "char_count": 81,
+    "overlap_with_previous": 17,
+    "overlap_with_next": 18,
+    "keywords": [
+      "dados",
+      "tipo",
+      "tipoafastamento"
+    ],
+    "entities": [
+      "TipoMovimentacaoPessoalTipoAfastamento",
+      "tipoAfastamento",
+      "TipoAfastamentoFonteDados",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.384566",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "29ab21f94fc16c36fa499f5646290c85",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: tipoAfastamento_busca\nType: definition\nRelated to: TipoMovimentacaoPessoalTipoAfastamento, tipoAfastamento, TipoAfastamentoFonteDados\n\nListagem de tipos de afastamentos\n\nRepresentation Type: TipoAfastamentoFonteDados\n\nKeywords: dados, tipo, tipoafastamento",
+  "search_text": "tipoAfastamento_busca TipoMovimentacaoPessoalTipoAfastamento tipoAfastamento TipoAfastamentoFonteDados busca dados tipo tipoafastamento Listagem de tipos de afastamentos\n\nRepresentation Type: TipoAfastamentoFonteDados"
+}

@@ -1,0 +1,48 @@
+{
+  "content": "exclui (DELETE)",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliar_exclui_1_469039d5",
+    "section_name": "tabelaAuxiliar_exclui",
+    "chunk_index": 1,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 6,
+    "char_count": 15,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 2,
+    "keywords": [
+      "tabelaauxiliar"
+    ],
+    "entities": [
+      "exclui",
+      "TabelaAuxiliarRegistroSemValores",
+      "TabelaAuxiliarValorSemCampo",
+      "TabelaAuxiliarCampoSemValores",
+      "TabelaAuxiliar",
+      "TabelaAuxiliarRegistro",
+      "TabelaAuxiliarCampo",
+      "tabelaAuxiliar",
+      "TabelaAuxiliarValorSemRegistro",
+      "TabelaAuxiliarImportacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.082141",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "469039d56c2350fe32799732c1aabf3d",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "tabelaAuxiliarValor_busca_0_9b03df81",
+      "fonteGenerica_exclui_2_3fa34461",
+      "tabelaAuxiliarCampo_busca_4_9f589243",
+      "tabelaAuxiliar_exclui_2_d7e78139"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tabelaAuxiliar_exclui\nType: definition\nRelated to: exclui, TabelaAuxiliarRegistroSemValores, TabelaAuxiliarValorSemCampo\n\nexclui (DELETE)\n\nKeywords: tabelaauxiliar",
+  "search_text": "tabelaAuxiliar_exclui exclui TabelaAuxiliarRegistroSemValores TabelaAuxiliarValorSemCampo TabelaAuxiliarCampoSemValores TabelaAuxiliar TabelaAuxiliarRegistro TabelaAuxiliarCampo tabelaAuxiliar TabelaAuxiliarValorSemRegistro TabelaAuxiliarImportacao tabelaauxiliar exclui (DELETE)"
+}

@@ -1,0 +1,56 @@
+{
+  "content": "groovy\nfonteLogs = Dados.folha.v2.logs;\n\ndadosLogs = fonteLogs.buscaLogs(campos: \"matricula(id, codigoMatricula(numero, contrato, digitoVerificador), pessoa(id, nome)), mensagem, tipo, dataCalculo\",ordenacao: \"matricula.codigoMatricula.numero,matricula.id asc\")\n\npercorrer (dadosLogs) { itemLogs ->\n\n}",
+  "metadata": {
+    "chunk_id": "logs_buscaLogs_6_e0a3439d",
+    "section_name": "logs_buscaLogs",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 87,
+    "char_count": 301,
+    "overlap_with_previous": 22,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "tipo",
+      "ordenacao",
+      "v2",
+      "folha",
+      "logs",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "OrganogramaAssociacao",
+      "ConfiguracaoNivelOrganogramaAssociacao",
+      "CodigoMatriculaAssociacaoErroCalculo",
+      "busca",
+      "GrupoFuncional",
+      "ConfiguracaoOrganogramaAssociacao",
+      "CalculoFolhaMensagem",
+      "PessoaFisica",
+      "logs",
+      "Dados.folha.v2.logs",
+      "MatriculaAssociacaoErroCalculo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.297176",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "e0a3439d793787ae734dd3d5ad1ee9d6",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: logs_buscaLogs\nType: example\nRelated to: OrganogramaAssociacao, ConfiguracaoNivelOrganogramaAssociacao, CodigoMatriculaAssociacaoErroCalculo\n\ngroovy\nfonteLogs = Dados.folha.v2.logs;\n\ndadosLogs = fonteLogs.buscaLogs(campos: \"matricula(id, codigoMatricula(numero, contrato, digitoVerificador), pessoa(id, nome)), mensagem, tipo, dataCalculo\",ordenacao: \"matricula.codigoMatricula.numero,matricula.id asc\")\n\npercorrer (dadosLogs) { itemLogs ->\n\n}\n\nKeywords: busca, tipo, ordenacao, v2, folha, logs, campo, dados",
+  "search_text": "logs_buscaLogs OrganogramaAssociacao ConfiguracaoNivelOrganogramaAssociacao CodigoMatriculaAssociacaoErroCalculo busca GrupoFuncional ConfiguracaoOrganogramaAssociacao CalculoFolhaMensagem PessoaFisica logs Dados.folha.v2.logs MatriculaAssociacaoErroCalculo busca tipo ordenacao v2 folha logs campo dados groovy\nfonteLogs = Dados.folha.v2.logs;\n\ndadosLogs = fonteLogs.buscaLogs(campos: \"matricula(id, codigoMatricula(numero, contrato, digitoVerificador), pessoa(id, nome)), mensagem, tipo, dataCalculo\",ordenacao: \"matricula.codigoMatricula.numero,matricula.id asc\")\n\npercorrer (dadosLogs) { itemLogs ->\n\n}"
+}

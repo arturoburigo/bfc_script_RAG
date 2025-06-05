@@ -1,0 +1,50 @@
+{
+  "content": "buscaProcessamentos (GET)\nMethod Description: Listagem dos processamentos da configuração de evento\n\nRepresentation Type: ConfiguracaoProcessamentoFonteDados",
+  "metadata": {
+    "chunk_id": "configuracaoEvento_buscaProcessamentos_1_3278e9bc",
+    "section_name": "configuracaoEvento_buscaProcessamentos",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 33,
+    "char_count": 157,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 22,
+    "keywords": [
+      "configuracaoevento",
+      "dados",
+      "busca"
+    ],
+    "entities": [
+      "buscaProcessamentos",
+      "MotivoRescisaoConfiguracaoEvento",
+      "AtoConfiguracaoEvento",
+      "configuracaoEvento",
+      "Base",
+      "dependenciasFonteDados",
+      "ConfiguracaoEventoFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoProcessamentoFonteDados",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.225340",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "3278e9bcbbc19ff94265eea30ce15bcf",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_buscaMotivosRescisao_1_0ae38fb7",
+      "configuracaoRais_buscaResponsavel_2_fd676cfc",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracaoEvento_buscaProcessamentos\nType: definition\nRelated to: buscaProcessamentos, MotivoRescisaoConfiguracaoEvento, AtoConfiguracaoEvento\n\nbuscaProcessamentos (GET)\nMethod Description: Listagem dos processamentos da configuração de evento\n\nRepresentation Type: ConfiguracaoProcessamentoFonteDados\n\nKeywords: configuracaoevento, dados, busca",
+  "search_text": "configuracaoEvento_buscaProcessamentos buscaProcessamentos MotivoRescisaoConfiguracaoEvento AtoConfiguracaoEvento configuracaoEvento Base dependenciasFonteDados ConfiguracaoEventoFonteDados ScriptFonteDados ConfiguracaoProcessamentoFonteDados ConfiguracaoEventoAssociacaoFonteDados configuracaoevento dados busca buscaProcessamentos (GET)\nMethod Description: Listagem dos processamentos da configuração de evento\n\nRepresentation Type: ConfiguracaoProcessamentoFonteDados"
+}

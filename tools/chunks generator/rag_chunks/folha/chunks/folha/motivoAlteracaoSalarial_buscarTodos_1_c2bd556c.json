@@ -1,0 +1,42 @@
+{
+  "content": "buscarTodos (GET)\nMethod Description: Buscar todos os registros.\n\nRepresentation Type: MotivoAlteracaoSalarial",
+  "metadata": {
+    "chunk_id": "motivoAlteracaoSalarial_buscarTodos_1_c2bd556c",
+    "section_name": "motivoAlteracaoSalarial_buscarTodos",
+    "chunk_index": 1,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 24,
+    "char_count": 110,
+    "overlap_with_previous": 6,
+    "overlap_with_next": 14,
+    "keywords": [
+      "motivoalteracaosalarial",
+      "busca"
+    ],
+    "entities": [
+      "MotivoAlteracaoSalarial",
+      "motivoAlteracaoSalarial",
+      "buscarTodos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.086344",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "c2bd556cae2c44c59e4c7832d7f7e4aa",
+    "related_chunks": [
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc",
+      "remuneracoes_buscaComEventos_8_6afef83d",
+      "remuneracoes_buscaComEventos_1_237ee743"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: motivoAlteracaoSalarial_buscarTodos\nType: definition\nRelated to: MotivoAlteracaoSalarial, motivoAlteracaoSalarial, buscarTodos\n\nbuscarTodos (GET)\nMethod Description: Buscar todos os registros.\n\nRepresentation Type: MotivoAlteracaoSalarial\n\nKeywords: motivoalteracaosalarial, busca",
+  "search_text": "motivoAlteracaoSalarial_buscarTodos MotivoAlteracaoSalarial motivoAlteracaoSalarial buscarTodos motivoalteracaosalarial busca buscarTodos (GET)\nMethod Description: Buscar todos os registros.\n\nRepresentation Type: MotivoAlteracaoSalarial"
+}

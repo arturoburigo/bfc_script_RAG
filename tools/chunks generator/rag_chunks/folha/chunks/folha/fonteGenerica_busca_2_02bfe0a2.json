@@ -1,0 +1,42 @@
+{
+  "content": "Listagem de dados da fonte genérica\n\nRepresentation Type: FonteGenerica",
+  "metadata": {
+    "chunk_id": "fonteGenerica_busca_2_02bfe0a2",
+    "section_name": "fonteGenerica_busca",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 17,
+    "char_count": 71,
+    "overlap_with_previous": 15,
+    "overlap_with_next": 16,
+    "keywords": [
+      "dados",
+      "fontegenerica"
+    ],
+    "entities": [
+      "FonteGenerica",
+      "fonteGenerica",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.344861",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "02bfe0a2100121df209d66c65a80af13",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: fonteGenerica_busca\nType: definition\nRelated to: FonteGenerica, fonteGenerica, busca\n\nListagem de dados da fonte genérica\n\nRepresentation Type: FonteGenerica\n\nKeywords: dados, fontegenerica",
+  "search_text": "fonteGenerica_busca FonteGenerica fonteGenerica busca dados fontegenerica Listagem de dados da fonte genérica\n\nRepresentation Type: FonteGenerica"
+}

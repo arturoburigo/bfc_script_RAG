@@ -1,7 +1,0 @@
-# NaturezaJuridicaOrganograma
-# Part 5
-# This is a continuation of the NaturezaJuridicaOrganograma enum
-Enum: NaturezaJuridicaOrganograma
-- 501-0 - Organização Internacional (Key: ORGANIZACAO_INTERNACIONAL, Value: 81)
-- 502-9 - Representação Diplomática Estrangeira (Key: REPRESENTACAO_DIPLOMATICA_ESTRANGEIRA, Value: 82)
-- 503-7 - Outras Instituições Extraterritoriais (Key: OUTRAS_INSTITUICOES_EXTRATERRITORIAIS, Value: 83)

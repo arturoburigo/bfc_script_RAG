@@ -1,0 +1,48 @@
+{
+  "content": "groovy\nfonteGrupoFuncional = Dados.pessoal.v2.grupoFuncional;\n\ndadosGrupoFuncional = fonteGrupoFuncional.busca(campos: \"id, descricao\",ordenacao: \"descricao asc\")\n\npercorrer (dadosGrupoFuncional) { itemGrupoFuncional ->\n\n}",
+  "metadata": {
+    "chunk_id": "grupoFuncional_busca_6_3d89e3e7",
+    "section_name": "grupoFuncional_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 65,
+    "char_count": 222,
+    "overlap_with_previous": 7,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "grupofuncional",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "grupoFuncional",
+      "Dados.pessoal.v2.grupoFuncional",
+      "GrupoFuncional",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.371087",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "3d89e3e72940d33422c08209004a8cbb",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: grupoFuncional_busca\nType: example\nRelated to: grupoFuncional, Dados.pessoal.v2.grupoFuncional, GrupoFuncional\n\ngroovy\nfonteGrupoFuncional = Dados.pessoal.v2.grupoFuncional;\n\ndadosGrupoFuncional = fonteGrupoFuncional.busca(campos: \"id, descricao\",ordenacao: \"descricao asc\")\n\npercorrer (dadosGrupoFuncional) { itemGrupoFuncional ->\n\n}\n\nKeywords: pessoal, busca, grupofuncional, ordenacao, v2, campo, dados",
+  "search_text": "grupoFuncional_busca grupoFuncional Dados.pessoal.v2.grupoFuncional GrupoFuncional busca pessoal busca grupofuncional ordenacao v2 campo dados groovy\nfonteGrupoFuncional = Dados.pessoal.v2.grupoFuncional;\n\ndadosGrupoFuncional = fonteGrupoFuncional.busca(campos: \"id, descricao\",ordenacao: \"descricao asc\")\n\npercorrer (dadosGrupoFuncional) { itemGrupoFuncional ->\n\n}"
+}

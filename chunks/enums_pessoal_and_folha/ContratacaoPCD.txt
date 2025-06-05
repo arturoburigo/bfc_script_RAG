@@ -1,6 +1,0 @@
-# ContratacaoPCD
-Enum: ContratacaoPCD
-- 0 - Dispensado de acordo com a lei (Key: DISPENSADO_DE_ACORDO_COM_LEI, Value: 1)
-- 1 - Dispensado, mesmo que parcialmente, em virtude de processo judicial (Key: DISPENSADO_VIRTUDE_PROCESSO_JUDICIAL, Value: 2)
-- 2 - Com exigibilidade suspensa, mesmo que parcialmente em virtude de Termo de Compromisso firmado com o Ministério do Trabalho (Key: COM_EXIGIBILIDADE_SUSPENSA, Value: 3)
-- 9 - Obrigado (Key: OBRIGADO, Value: 4)

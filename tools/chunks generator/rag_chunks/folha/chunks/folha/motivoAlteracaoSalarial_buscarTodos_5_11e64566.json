@@ -1,0 +1,49 @@
+{
+  "content": "groovy\nfonteMotivoAlteracaoSalarial = Dados.folha.v2.motivoAlteracaoSalarial;\n\ndadosMotivoAlteracaoSalarial = fonteMotivoAlteracaoSalarial.buscarTodos(campos: \"camposAdicionais(betha_esfinge_padrao(tipo_de_movimentacao_tce)), id, descricao, tipoMovimentacaoPessoal\")\n\npercorrer (dadosMotivoAlteracaoSalarial) { itemMotivoAlteracaoSalarial ->\n\n}",
+  "metadata": {
+    "chunk_id": "motivoAlteracaoSalarial_buscarTodos_5_11e64566",
+    "section_name": "motivoAlteracaoSalarial_buscarTodos",
+    "chunk_index": 5,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 114,
+    "char_count": 344,
+    "overlap_with_previous": 21,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "motivoalteracaosalarial",
+      "busca",
+      "tipo",
+      "v2",
+      "folha",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "MotivoAlteracaoSalarial",
+      "Dados.folha.v2.motivoAlteracaoSalarial",
+      "motivoAlteracaoSalarial",
+      "buscarTodos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.086645",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "11e64566f2f278f398624b93ac5b881c",
+    "related_chunks": [
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc",
+      "remuneracoes_buscaComEventos_8_6afef83d",
+      "remuneracoes_buscaComEventos_1_237ee743"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: motivoAlteracaoSalarial_buscarTodos\nType: example\nRelated to: MotivoAlteracaoSalarial, Dados.folha.v2.motivoAlteracaoSalarial, motivoAlteracaoSalarial\n\ngroovy\nfonteMotivoAlteracaoSalarial = Dados.folha.v2.motivoAlteracaoSalarial;\n\ndadosMotivoAlteracaoSalarial = fonteMotivoAlteracaoSalarial.buscarTodos(campos: \"camposAdicionais(betha_esfinge_padrao(tipo_de_movimentacao_tce)), id, descricao, tipoMovimentacaoPessoal\")\n\npercorrer (dadosMotivoAlteracaoSalarial) { itemMotivoAlteracaoSalarial ->\n\n}\n\nKeywords: pessoal, motivoalteracaosalarial, busca, tipo, v2, folha, campo, dados",
+  "search_text": "motivoAlteracaoSalarial_buscarTodos MotivoAlteracaoSalarial Dados.folha.v2.motivoAlteracaoSalarial motivoAlteracaoSalarial buscarTodos pessoal motivoalteracaosalarial busca tipo v2 folha campo dados groovy\nfonteMotivoAlteracaoSalarial = Dados.folha.v2.motivoAlteracaoSalarial;\n\ndadosMotivoAlteracaoSalarial = fonteMotivoAlteracaoSalarial.buscarTodos(campos: \"camposAdicionais(betha_esfinge_padrao(tipo_de_movimentacao_tce)), id, descricao, tipoMovimentacaoPessoal\")\n\npercorrer (dadosMotivoAlteracaoSalarial) { itemMotivoAlteracaoSalarial ->\n\n}"
+}

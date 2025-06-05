@@ -1,0 +1,43 @@
+{
+  "content": "Lista todos\n\nRepresentation Type: QuadroCargo",
+  "metadata": {
+    "chunk_id": "quardoCargos_buscaTodos_2_b8a05f73",
+    "section_name": "quardoCargos_buscaTodos",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 9,
+    "char_count": 45,
+    "overlap_with_previous": 8,
+    "overlap_with_next": 9,
+    "keywords": [
+      "quadrocargos"
+    ],
+    "entities": [
+      "AtoMatriculaAssociacao",
+      "QuadroCargo",
+      "TipoAto",
+      "buscaTodos",
+      "quadroCargos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.634298",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "b8a05f73641ccf81fbf3e836e5101bd5",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: quardoCargos_buscaTodos\nType: definition\nRelated to: AtoMatriculaAssociacao, QuadroCargo, TipoAto\n\nLista todos\n\nRepresentation Type: QuadroCargo\n\nKeywords: quadrocargos",
+  "search_text": "quardoCargos_buscaTodos AtoMatriculaAssociacao QuadroCargo TipoAto buscaTodos quadroCargos quadrocargos Lista todos\n\nRepresentation Type: QuadroCargo"
+}

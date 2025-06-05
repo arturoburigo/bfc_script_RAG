@@ -1,0 +1,43 @@
+{
+  "content": "VinculoEmpregaticio",
+  "metadata": {
+    "chunk_id": "vinculoEmpregaticio_busca_0_513655c1",
+    "section_name": "vinculoEmpregaticio_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 7,
+    "char_count": 19,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 6,
+    "keywords": [
+      "vinculoempregaticio"
+    ],
+    "entities": [
+      "busca",
+      "VinculoEmpregaticioMotivoRescisaoFonteDados",
+      "vinculoEmpregaticio",
+      "VinculoEmpregaticioCategoriaTrabalhadorFonteDados",
+      "VinculoEmpregaticioFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.729496",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "513655c10ca08b6db74affa0380ae87d",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: vinculoEmpregaticio_busca\nType: definition\nRelated to: busca, VinculoEmpregaticioMotivoRescisaoFonteDados, vinculoEmpregaticio\n\nVinculoEmpregaticio\n\nKeywords: vinculoempregaticio",
+  "search_text": "vinculoEmpregaticio_busca busca VinculoEmpregaticioMotivoRescisaoFonteDados vinculoEmpregaticio VinculoEmpregaticioCategoriaTrabalhadorFonteDados VinculoEmpregaticioFonteDados vinculoempregaticio VinculoEmpregaticio"
+}

@@ -1,0 +1,52 @@
+{
+  "content": "- tipo: Tipo da jornada (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n- enviarESocial: tipo de valor que sera enviado ao eSocial (Type: )\n- id: Id (Type: Long)",
+  "metadata": {
+    "chunk_id": "jornadasTrabalho_busca_4_04de5b1e",
+    "section_name": "jornadasTrabalho_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 54,
+    "char_count": 181,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 35,
+    "keywords": [
+      "iniciovigencia",
+      "enviaresocial",
+      "id",
+      "jornadastrabalho",
+      "tipo"
+    ],
+    "entities": [
+      "Horario",
+      "HorarioIntervalo",
+      "JornadaTrabalhoEscala",
+      "busca",
+      "PeriodoJornadaTrabalho",
+      "JornadaTrabalhoFonteDadosAssociacao",
+      "jornadasTrabalho",
+      "JornadaTrabalhoFonteDadosCompleta",
+      "HorarioMarcacao",
+      "Escala"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.190116",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "04de5b1ed738e36380142425bec9c444",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: jornadasTrabalho_busca\nType: reference\nRelated to: Horario, HorarioIntervalo, JornadaTrabalhoEscala\n\n- tipo: Tipo da jornada (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n- enviarESocial: tipo de valor que sera enviado ao eSocial (Type: )\n- id: Id (Type: Long)\n\nKeywords: iniciovigencia, enviaresocial, id, jornadastrabalho, tipo",
+  "search_text": "jornadasTrabalho_busca Horario HorarioIntervalo JornadaTrabalhoEscala busca PeriodoJornadaTrabalho JornadaTrabalhoFonteDadosAssociacao jornadasTrabalho JornadaTrabalhoFonteDadosCompleta HorarioMarcacao Escala iniciovigencia enviaresocial id jornadastrabalho tipo - tipo: Tipo da jornada (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n- enviarESocial: tipo de valor que sera enviado ao eSocial (Type: )\n- id: Id (Type: Long)"
+}

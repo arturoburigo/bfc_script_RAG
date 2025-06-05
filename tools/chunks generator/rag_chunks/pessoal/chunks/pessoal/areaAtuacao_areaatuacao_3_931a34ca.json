@@ -1,0 +1,42 @@
+{
+  "content": "Listagem de Area de atuação\n\nRepresentation Type: AreaAtuacao",
+  "metadata": {
+    "chunk_id": "areaAtuacao_areaatuacao_3_931a34ca",
+    "section_name": "areaAtuacao_areaatuacao",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 15,
+    "char_count": 61,
+    "overlap_with_previous": 13,
+    "overlap_with_next": 1,
+    "keywords": [
+      "areaatuacao"
+    ],
+    "entities": [
+      "areaatuacao",
+      "Cbo",
+      "buscatodos",
+      "AreaAtuacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.379595",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "931a34cab6867e17f93430fb5f284c4a",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "cbos_busca_2_eda9679d"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: areaAtuacao_areaatuacao\nType: definition\nRelated to: areaatuacao, Cbo, buscatodos\n\nListagem de Area de atuação\n\nRepresentation Type: AreaAtuacao\n\nKeywords: areaatuacao",
+  "search_text": "areaAtuacao_areaatuacao areaatuacao Cbo buscatodos AreaAtuacao areaatuacao Listagem de Area de atuação\n\nRepresentation Type: AreaAtuacao"
+}

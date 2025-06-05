@@ -1,0 +1,52 @@
+{
+  "content": "## SuspensaoCessacaoPeriodoAquisitivoRepresentation\n- id: Id (Type: Long)\n- tipoSuspensao: Tipo de suspensão (Type: )\n- dataInicial: Data inicial (Type: LocalDate)\n- motivoSuspensaoCessacao: Motivo de suspensão ou cessação (Type: )\n- descricao: Descrição (Type: String)\n- cnpjOrgaoSucessor: CNPJ do orgão sucessor (Type: String)\n- dataTermino: Data de termino (Type: LocalDate)\n- dataEfeitoFinanceiro: Data do efeito financeiro (Type: LocalDate)\n\n## ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro\n- id: Id (Type: Long)\n- motivo: Motivo (Type: )\n- consideraAvosPerdidos: Considera avos perdido? (Type: Boolean)\n- competencia: Competência (Type: YearMonth)\n- valor: Valor (Type: BigDecimal)\n- cessacao: Cessação (Type: SuspensaoCessacaoPeriodoAquisitivoRepresentation)\n\n## PeriodoAquisitivoDecimoTerceiro\n- id: Id (Type: Long)\n- configuracao: Configuração (Type: )\n- situacao: Situação (Type: )\n- dataInicial: Data inicial do período aquisitivo (Type: LocalDate)\n- dataFinal: Data final do período aquisitivo (Type: LocalDate)\n- avosAdquiridos: Avos adquiridos (Type: Integer)\n- avosAdquiridosFgts: Avos adquiridos FGTS (Type: Integer)\n- avosDireito: Avos direito (Type: Integer)\n- avosPerdidos: Avos perdido (Type: Integer)\n- anoExercicio: Ano exercício (Type: Year)\n- movimentacoes: Movimentações (Type: ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro)",
+  "metadata": {
+    "chunk_id": "periodoAquisitivo_buscaPeriodoDecimoTerceiro_5_9366191e",
+    "section_name": "periodoAquisitivo_buscaPeriodoDecimoTerceiro",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 427,
+    "char_count": 1363,
+    "overlap_with_previous": 34,
+    "overlap_with_next": 63,
+    "keywords": [
+      "configuracaomovimentoperiodoaquisitivodecimoterceiro",
+      "tiposuspensao",
+      "id",
+      "motivosuspensaocessacao",
+      "descricao",
+      "periodoaquisitivo",
+      "datainicial",
+      "periodoaquisitivodecimoterceiro",
+      "suspensaocessacaoperiodoaquisitivorepresentation",
+      "tipo"
+    ],
+    "entities": [
+      "PeriodoAquisitivoDecimoTerceiro",
+      "buscaPeriodoDecimoTerceiro",
+      "SuspensaoCessacaoPeriodoAquisitivoRepresentation",
+      "periodoAquisitivo",
+      "ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.443086",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "9366191e0d78c0faf4c849b05944dc6c",
+    "related_chunks": [
+      "provisao_buscaBases_5_e3986e07",
+      "provisao_busca_6_0cee3b39",
+      "provisao_buscaBases_1_b10fac4c",
+      "provisao_busca_1_a6c8a2b0",
+      "provisao_buscaBases_4_f5cc4ecd"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: periodoAquisitivo_buscaPeriodoDecimoTerceiro\nType: reference\nRelated to: PeriodoAquisitivoDecimoTerceiro, buscaPeriodoDecimoTerceiro, SuspensaoCessacaoPeriodoAquisitivoRepresentation\n\n## SuspensaoCessacaoPeriodoAquisitivoRepresentation\n- id: Id (Type: Long)\n- tipoSuspensao: Tipo de suspensão (Type: )\n- dataInicial: Data inicial (Type: LocalDate)\n- motivoSuspensaoCessacao: Motivo de suspensão ou cessação (Type: )\n- descricao: Descrição (Type: String)\n- cnpjOrgaoSucessor: CNPJ do orgão sucessor (Type: String)\n- dataTermino: Data de termino (Type: LocalDate)\n- dataEfeitoFinanceiro: Data do efeito financeiro (Type: LocalDate)\n\n## ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro\n- id: Id (Type: Long)\n- motivo: Motivo (Type: )\n- consideraAvosPerdidos: Considera avos perdido? (Type: Boolean)\n- competencia: Competência (Type: YearMonth)\n- valor: Valor (Type: BigDecimal)\n- cessacao: Cessação (Type: SuspensaoCessacaoPeriodoAquisitivoRepresentation)\n\n## PeriodoAquisitivoDecimoTerceiro\n- id: Id (Type: Long)\n- configuracao: Configuração (Type: )\n- situacao: Situação (Type: )\n- dataInicial: Data inicial do período aquisitivo (Type: LocalDate)\n- dataFinal: Data final do período aquisitivo (Type: LocalDate)\n- avosAdquiridos: Avos adquiridos (Type: Integer)\n- avosAdquiridosFgts: Avos adquiridos FGTS (Type: Integer)\n- avosDireito: Avos direito (Type: Integer)\n- avosPerdidos: Avos perdido (Type: Integer)\n- anoExercicio: Ano exercício (Type: Year)\n- movimentacoes: Movimentações (Type: ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro)\n\nKeywords: configuracaomovimentoperiodoaquisitivodecimoterceiro, tiposuspensao, id, motivosuspensaocessacao, descricao, periodoaquisitivo, datainicial, periodoaquisitivodecimoterceiro, suspensaocessacaoperiodoaquisitivorepresentation, tipo",
+  "search_text": "periodoAquisitivo_buscaPeriodoDecimoTerceiro PeriodoAquisitivoDecimoTerceiro buscaPeriodoDecimoTerceiro SuspensaoCessacaoPeriodoAquisitivoRepresentation periodoAquisitivo ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro configuracaomovimentoperiodoaquisitivodecimoterceiro tiposuspensao id motivosuspensaocessacao descricao periodoaquisitivo datainicial periodoaquisitivodecimoterceiro suspensaocessacaoperiodoaquisitivorepresentation tipo ## SuspensaoCessacaoPeriodoAquisitivoRepresentation\n- id: Id (Type: Long)\n- tipoSuspensao: Tipo de suspensão (Type: )\n- dataInicial: Data inicial (Type: LocalDate)\n- motivoSuspensaoCessacao: Motivo de suspensão ou cessação (Type: )\n- descricao: Descrição (Type: String)\n- cnpjOrgaoSucessor: CNPJ do orgão sucessor (Type: String)\n- dataTermino: Data de termino (Type: LocalDate)\n- dataEfeitoFinanceiro: Data do efeito financeiro (Type: LocalDate)\n\n## ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro\n- id: Id (Type: Long)\n- motivo: Motivo (Type: )\n- consideraAvosPerdidos: Considera avos perdido? (Type: Boolean)\n- competencia: Competência (Type: YearMonth)\n- valor: Valor (Type: BigDecimal)\n- cessacao: Cessação (Type: SuspensaoCessacaoPeriodoAquisitivoRepresentation)\n\n## PeriodoAquisitivoDecimoTerceiro\n- id: Id (Type: Long)\n- configuracao: Configuração (Type: )\n- situacao: Situação (Type: )\n- dataInicial: Data inicial do período aquisitivo (Type: LocalDate)\n- dataFinal: Data final do período aquisitivo (Type: LocalDate)\n- avosAdquiridos: Avos adquiridos (Type: Integer)\n- avosAdquiridosFgts: Avos adquiridos FGTS (Type: Integer)\n- avosDireito: Avos direito (Type: Integer)\n- avosPerdidos: Avos perdido (Type: Integer)\n- anoExercicio: Ano exercício (Type: Year)\n- movimentacoes: Movimentações (Type: ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro)"
+}

@@ -1,0 +1,43 @@
+{
+  "content": "buscatodos (GET)\nMethod Description: Listagem de Area de atuação\n\nRepresentation Type: AreaAtuacao",
+  "metadata": {
+    "chunk_id": "areaAtuacao_buscaTodos_1_155e5c07",
+    "section_name": "areaAtuacao_buscaTodos",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 24,
+    "char_count": 98,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 12,
+    "keywords": [
+      "areaatuacao",
+      "busca"
+    ],
+    "entities": [
+      "areaatuacao",
+      "Cbo",
+      "buscatodos",
+      "AreaAtuacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.212551",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "155e5c0770d865a6f6f22cc2bcb1f2a4",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "cbos_busca_2_eda9679d"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: areaAtuacao_buscaTodos\nType: definition\nRelated to: areaatuacao, Cbo, buscatodos\n\nbuscatodos (GET)\nMethod Description: Listagem de Area de atuação\n\nRepresentation Type: AreaAtuacao\n\nKeywords: areaatuacao, busca",
+  "search_text": "areaAtuacao_buscaTodos areaatuacao Cbo buscatodos AreaAtuacao areaatuacao busca buscatodos (GET)\nMethod Description: Listagem de Area de atuação\n\nRepresentation Type: AreaAtuacao"
+}

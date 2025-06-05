@@ -1,0 +1,48 @@
+{
+  "content": "## TipoAdministraçãoDadosRepresentation\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- subteto: Valor do Subteto (Type: BigDecimal)\n- naturezaJuridica: Natureza Jurídica (Type: )\n- tipo: Tipo de Administração (Type: )",
+  "metadata": {
+    "chunk_id": "tipoAdministracao_busca_5_967e2c09",
+    "section_name": "tipoAdministracao_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 70,
+    "char_count": 232,
+    "overlap_with_previous": 31,
+    "overlap_with_next": 12,
+    "keywords": [
+      "subteto",
+      "id",
+      "descricao",
+      "naturezajuridica",
+      "tipoadministraçãodadosrepresentation",
+      "tipoadministracao",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "TipoAdministraçãoDadosRepresentation",
+      "tipoAdministracao",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.239606",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "967e2c0953a6d4d29fcea3de4a38ebc2",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: tipoAdministracao_busca\nType: reference\nRelated to: TipoAdministraçãoDadosRepresentation, tipoAdministracao, busca\n\n## TipoAdministraçãoDadosRepresentation\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- subteto: Valor do Subteto (Type: BigDecimal)\n- naturezaJuridica: Natureza Jurídica (Type: )\n- tipo: Tipo de Administração (Type: )\n\nKeywords: subteto, id, descricao, naturezajuridica, tipoadministraçãodadosrepresentation, tipoadministracao, tipo, dados",
+  "search_text": "tipoAdministracao_busca TipoAdministraçãoDadosRepresentation tipoAdministracao busca subteto id descricao naturezajuridica tipoadministraçãodadosrepresentation tipoadministracao tipo dados ## TipoAdministraçãoDadosRepresentation\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- subteto: Valor do Subteto (Type: BigDecimal)\n- naturezaJuridica: Natureza Jurídica (Type: )\n- tipo: Tipo de Administração (Type: )"
+}

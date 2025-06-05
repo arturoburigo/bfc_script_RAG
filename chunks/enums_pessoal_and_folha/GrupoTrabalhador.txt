@@ -1,8 +1,0 @@
-# GrupoTrabalhador
-Enum: GrupoTrabalhador
-- Funcionário (Key: FUNCIONARIO, Value: 1)
-- Avulso (Key: AVULSO, Value: 2)
-- Agente Público (Key: AGENTE_PUBLICO, Value: 3)
-- Cessão (Key: CESSAO, Value: 4)
-- Contribuinte individual (Key: CONTRIBUINTE_INDIVIDUAL, Value: 5)
-- Bolsista (Key: BOLSISTA, Value: 6)

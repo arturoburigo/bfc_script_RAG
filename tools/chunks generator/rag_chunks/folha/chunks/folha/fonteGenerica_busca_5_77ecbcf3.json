@@ -1,0 +1,46 @@
+{
+  "content": "## FonteGenerica\n- id: Id (Type: Long)\n- identificador: Identificador (Type: String)\n- tipoRegistro: Tipo do registro (Type: String)\n- conteudo: Conteúdo (Type: String)",
+  "metadata": {
+    "chunk_id": "fonteGenerica_busca_5_77ecbcf3",
+    "section_name": "fonteGenerica_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 49,
+    "char_count": 168,
+    "overlap_with_previous": 22,
+    "overlap_with_next": 13,
+    "keywords": [
+      "id",
+      "tiporegistro",
+      "conteudo",
+      "identificador",
+      "fontegenerica",
+      "tipo"
+    ],
+    "entities": [
+      "FonteGenerica",
+      "fonteGenerica",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.345047",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "77ecbcf3b7461fa87c588a3237288855",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: fonteGenerica_busca\nType: reference\nRelated to: FonteGenerica, fonteGenerica, busca\n\n## FonteGenerica\n- id: Id (Type: Long)\n- identificador: Identificador (Type: String)\n- tipoRegistro: Tipo do registro (Type: String)\n- conteudo: Conteúdo (Type: String)\n\nKeywords: id, tiporegistro, conteudo, identificador, fontegenerica, tipo",
+  "search_text": "fonteGenerica_busca FonteGenerica fonteGenerica busca id tiporegistro conteudo identificador fontegenerica tipo ## FonteGenerica\n- id: Id (Type: Long)\n- identificador: Identificador (Type: String)\n- tipoRegistro: Tipo do registro (Type: String)\n- conteudo: Conteúdo (Type: String)"
+}

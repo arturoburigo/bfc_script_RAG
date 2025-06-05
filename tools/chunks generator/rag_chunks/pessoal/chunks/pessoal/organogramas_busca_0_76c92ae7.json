@@ -1,0 +1,54 @@
+{
+  "content": "Organogramas",
+  "metadata": {
+    "chunk_id": "organogramas_busca_0_76c92ae7",
+    "section_name": "organogramas_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 3,
+    "char_count": 12,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 2,
+    "keywords": [
+      "organogramas"
+    ],
+    "entities": [
+      "ConfiguracaoOrganograma",
+      "organogramas",
+      "TipoLogradouroOrganograma",
+      "Endereco",
+      "CargoOrganograma",
+      "busca",
+      "FuncaoOrganograma",
+      "LogradouroOrganograma",
+      "BairroOrganograma",
+      "EstadoPessoaFisica",
+      "AtoOrganograma",
+      "ConfiguracaoNivelOrganograma",
+      "MunicipioPessoaFisica",
+      "OrganogramaResponsavelFonteDados",
+      "OrganogramaFonteDados",
+      "TipoAdministracao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.273022",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "76c92ae757d886edd69348c29661094e",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "pessoaFisica_buscaFiliacao_4_0a7e85dc",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: organogramas_busca\nType: definition\nRelated to: ConfiguracaoOrganograma, organogramas, TipoLogradouroOrganograma\n\nOrganogramas\n\nKeywords: organogramas",
+  "search_text": "organogramas_busca ConfiguracaoOrganograma organogramas TipoLogradouroOrganograma Endereco CargoOrganograma busca FuncaoOrganograma LogradouroOrganograma BairroOrganograma EstadoPessoaFisica AtoOrganograma ConfiguracaoNivelOrganograma MunicipioPessoaFisica OrganogramaResponsavelFonteDados OrganogramaFonteDados TipoAdministracao organogramas Organogramas"
+}

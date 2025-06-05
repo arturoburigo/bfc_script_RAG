@@ -1,0 +1,41 @@
+{
+  "content": "MotivoAlteracaoSalarial",
+  "metadata": {
+    "chunk_id": "motivoAlteracaoSalarial_buscarTodos_0_efe6700d",
+    "section_name": "motivoAlteracaoSalarial_buscarTodos",
+    "chunk_index": 0,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 7,
+    "char_count": 23,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 6,
+    "keywords": [
+      "motivoalteracaosalarial"
+    ],
+    "entities": [
+      "MotivoAlteracaoSalarial",
+      "motivoAlteracaoSalarial",
+      "buscarTodos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.086298",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "efe6700dabac8c92d4bae5d294cf1437",
+    "related_chunks": [
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc",
+      "remuneracoes_buscaComEventos_8_6afef83d",
+      "remuneracoes_buscaComEventos_1_237ee743"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: motivoAlteracaoSalarial_buscarTodos\nType: definition\nRelated to: MotivoAlteracaoSalarial, motivoAlteracaoSalarial, buscarTodos\n\nMotivoAlteracaoSalarial\n\nKeywords: motivoalteracaosalarial",
+  "search_text": "motivoAlteracaoSalarial_buscarTodos MotivoAlteracaoSalarial motivoAlteracaoSalarial buscarTodos motivoalteracaosalarial MotivoAlteracaoSalarial"
+}

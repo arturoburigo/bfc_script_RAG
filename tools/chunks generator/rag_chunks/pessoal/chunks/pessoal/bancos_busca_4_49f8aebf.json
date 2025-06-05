@@ -1,0 +1,46 @@
+{
+  "content": "- numeroBanco: Número (Type: String)\n- site: Site (Type: String)\n- sigla: Sigla (Type: String)\n- associadoFebraban: Associado ao Febraban (Type: Boolean)\n- nome: Nome (Type: String)\n- cnpj: CNPJ (Type: String)\n- id: Id (Type: Long)",
+  "metadata": {
+    "chunk_id": "bancos_busca_4_49f8aebf",
+    "section_name": "bancos_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 79,
+    "char_count": 231,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 35,
+    "keywords": [
+      "associadofebraban",
+      "site",
+      "nome",
+      "bancos",
+      "numerobanco",
+      "sigla"
+    ],
+    "entities": [
+      "bancos",
+      "Banco",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.550483",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "49f8aebf58823e8ee7c01a1478dd8881",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: bancos_busca\nType: reference\nRelated to: bancos, Banco, busca\n\n- numeroBanco: Número (Type: String)\n- site: Site (Type: String)\n- sigla: Sigla (Type: String)\n- associadoFebraban: Associado ao Febraban (Type: Boolean)\n- nome: Nome (Type: String)\n- cnpj: CNPJ (Type: String)\n- id: Id (Type: Long)\n\nKeywords: associadofebraban, site, nome, bancos, numerobanco, sigla",
+  "search_text": "bancos_busca bancos Banco busca associadofebraban site nome bancos numerobanco sigla - numeroBanco: Número (Type: String)\n- site: Site (Type: String)\n- sigla: Sigla (Type: String)\n- associadoFebraban: Associado ao Febraban (Type: Boolean)\n- nome: Nome (Type: String)\n- cnpj: CNPJ (Type: String)\n- id: Id (Type: Long)"
+}

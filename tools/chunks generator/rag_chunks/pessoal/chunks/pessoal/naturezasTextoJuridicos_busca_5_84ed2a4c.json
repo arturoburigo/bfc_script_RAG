@@ -1,0 +1,46 @@
+{
+  "content": "## NaturezaTextoJuridico\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)",
+  "metadata": {
+    "chunk_id": "naturezasTextoJuridicos_busca_5_84ed2a4c",
+    "section_name": "naturezasTextoJuridicos_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 45,
+    "char_count": 145,
+    "overlap_with_previous": 10,
+    "overlap_with_next": 12,
+    "keywords": [
+      "naturezatextojuridico",
+      "naturezastextojuridicos",
+      "id",
+      "descricao",
+      "camposadicionais",
+      "campo"
+    ],
+    "entities": [
+      "naturezasTextoJuridicos",
+      "NaturezaTextoJuridico",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.141535",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "84ed2a4c2fbf2c5c43e130e939cd15d1",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "historicoEntidade_buscaHistoricoEntidade_6_fec108ce"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: naturezasTextoJuridicos_busca\nType: reference\nRelated to: naturezasTextoJuridicos, NaturezaTextoJuridico, busca\n\n## NaturezaTextoJuridico\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)\n\nKeywords: naturezatextojuridico, naturezastextojuridicos, id, descricao, camposadicionais, campo",
+  "search_text": "naturezasTextoJuridicos_busca naturezasTextoJuridicos NaturezaTextoJuridico busca naturezatextojuridico naturezastextojuridicos id descricao camposadicionais campo ## NaturezaTextoJuridico\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)"
+}

@@ -1,4 +1,0 @@
-# TipoProcessoRRA
-Enum: TipoProcessoRRA
-- Judicial (Key: JUDICIAL, Value: 1)
-- Administrativo (Key: ADMINISTRATIVO, Value: 2)

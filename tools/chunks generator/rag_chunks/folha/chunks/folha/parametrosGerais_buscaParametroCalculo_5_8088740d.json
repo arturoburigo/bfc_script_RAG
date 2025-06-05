@@ -1,0 +1,50 @@
+{
+  "content": "groovy\nfonteParametrosGerais = Dados.folha.v2.parametrosGerais;\n\ndadosParametrosGerais = fonteParametrosGerais.buscaParametroCalculo(campos: \"tipoAfastamentoFerias(id, descricao, classificacao), tiposEventosMensaisFerias(id, tipoEvento), id, pagaUmTercoFeriasIntegralEmFeriasFracionada, configuracaoDecimoTerceiro, unidade, tipoAcaoAlterarFolhaParaPendente, replicaEventosCalculoFeriasParaCalculoMensal, carregaEventosMensaisRescicao, isencaoInssPatronalAfastamento, diaPagamentoMensal, abonoSemGozo, rescicaoAutomaticaVinculoTemporario\")\n\npercorrer (dadosParametrosGerais) { itemParametrosGerais ->\n\n}",
+  "metadata": {
+    "chunk_id": "parametrosGerais_buscaParametroCalculo_5_8088740d",
+    "section_name": "parametrosGerais_buscaParametroCalculo",
+    "chunk_index": 5,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 197,
+    "char_count": 602,
+    "overlap_with_previous": 84,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "tipo",
+      "parametrosgerais",
+      "v2",
+      "folha",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "TipoEventoMensalFerias",
+      "buscaParametroCalculo",
+      "Dados.folha.v2.parametrosGerais",
+      "TipoAfastamentoParametrosGerais",
+      "ConfiguracaoCalculo",
+      "parametrosGerais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.978442",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "8088740d3daafff09f19c5f5ff5cb91a",
+    "related_chunks": [
+      "parametrosGerais_buscaParametroCalculo_2_1d339291",
+      "parametrosGerais_buscaParametroCalculo_0_56175d3f",
+      "parametrosGerais_buscaParametroCalculo_3_1d339291",
+      "parametrosGerais_buscaParametroCalculo_1_4a5ce4de",
+      "parametrosGerais_buscaParametroCalculo_4_2aaaf06b"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: parametrosGerais_buscaParametroCalculo\nType: example\nRelated to: TipoEventoMensalFerias, buscaParametroCalculo, Dados.folha.v2.parametrosGerais\n\ngroovy\nfonteParametrosGerais = Dados.folha.v2.parametrosGerais;\n\ndadosParametrosGerais = fonteParametrosGerais.buscaParametroCalculo(campos: \"tipoAfastamentoFerias(id, descricao, classificacao), tiposEventosMensaisFerias(id, tipoEvento), id, pagaUmTercoFeriasIntegralEmFeriasFracionada, configuracaoDecimoTerceiro, unidade, tipoAcaoAlterarFolhaParaPendente, replicaEventosCalculoFeriasParaCalculoMensal, carregaEventosMensaisRescicao, isencaoInssPatronalAfastamento, diaPagamentoMensal, abonoSemGozo, rescicaoAutomaticaVinculoTemporario\")\n\npercorrer (dadosParametrosGerais) { itemParametrosGerais ->\n\n}\n\nKeywords: busca, tipo, parametrosgerais, v2, folha, campo, dados",
+  "search_text": "parametrosGerais_buscaParametroCalculo TipoEventoMensalFerias buscaParametroCalculo Dados.folha.v2.parametrosGerais TipoAfastamentoParametrosGerais ConfiguracaoCalculo parametrosGerais busca tipo parametrosgerais v2 folha campo dados groovy\nfonteParametrosGerais = Dados.folha.v2.parametrosGerais;\n\ndadosParametrosGerais = fonteParametrosGerais.buscaParametroCalculo(campos: \"tipoAfastamentoFerias(id, descricao, classificacao), tiposEventosMensaisFerias(id, tipoEvento), id, pagaUmTercoFeriasIntegralEmFeriasFracionada, configuracaoDecimoTerceiro, unidade, tipoAcaoAlterarFolhaParaPendente, replicaEventosCalculoFeriasParaCalculoMensal, carregaEventosMensaisRescicao, isencaoInssPatronalAfastamento, diaPagamentoMensal, abonoSemGozo, rescicaoAutomaticaVinculoTemporario\")\n\npercorrer (dadosParametrosGerais) { itemParametrosGerais ->\n\n}"
+}

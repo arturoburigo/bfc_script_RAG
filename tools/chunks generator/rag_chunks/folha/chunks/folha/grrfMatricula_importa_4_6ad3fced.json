@@ -1,0 +1,58 @@
+{
+  "content": "## GrrfFonteDados\n- id: Código da GFIP (Type: Long)\n- situacaoArquivoGrrf: Situação do envio da GRRF (Type: )\n\n## GrrfPessoaFisica\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- cpf: CPF (Type: String)\n- dataNascimento: Data de nascimento (Type: LocalDate)\n- sexo: Sexo (Type: )\n\n## CodigoMatriculaFonteDadosMinhaFolha\n- numero: Número (Type: Long)\n- contrato: Contrato (Type: Integer)\n- digitoVerificador: Digito verificador (Type: Integer)\n\n## GrrfMatricula\n- id: Id da matrícula (Type: Long)\n- situacao: Situação (Type: )\n- pessoa: Pessoa (Type: GrrfPessoaFisica)\n- codigoMatricula: Codigo da matrícula (Type: CodigoMatriculaFonteDadosMinhaFolha)\n\n## GrrfMatriculaFonteDados\n- id: Identificador (Type: Long)\n- situacaoMatricula: Situacao da matricula (Type: )\n- competencia: Competência do cálculo (Type: YearMonth)\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- matricula: Matrícula (Type: GrrfMatricula)\n\n## GrrfMatriculaDto\n- codigoMatricula: Código da matrícula (Type: Long)\n- codigoGrrf: Código da GRRF (Type: Long)\n- situacaoMatricula: Situação da matrícula (Type: )\n- competencia: Competencia (Type: YearMonth)\n- tipoProcessamento: Tipo Processamento (Type: )\n- subTipoProcessamento: Subtipo processamento (Type: )",
+  "metadata": {
+    "chunk_id": "grrfMatricula_importa_4_6ad3fced",
+    "section_name": "grrfMatricula_importa",
+    "chunk_index": 4,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 428,
+    "char_count": 1316,
+    "overlap_with_previous": 10,
+    "overlap_with_next": 15,
+    "keywords": [
+      "grrfpessoafisica",
+      "grrffontedados",
+      "nome",
+      "grrfmatriculafontedados",
+      "grrfmatriculadto",
+      "codigomatriculafontedadosminhafolha",
+      "id",
+      "cpf",
+      "grrfmatricula",
+      "folha",
+      "situacaoarquivogrrf",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "GrrfFonteDados",
+      "GrrfMatricula",
+      "GrrfPessoaFisica",
+      "grrfMatricula",
+      "CodigoMatriculaFonteDadosMinhaFolha",
+      "importa",
+      "GrrfMatriculaFonteDados",
+      "GrrfMatriculaDto"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.144096",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "6ad3fcedf2f0eff3f4b35c91ddf80270",
+    "related_chunks": [
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc",
+      "remuneracoes_buscaComEventos_8_6afef83d",
+      "remuneracoes_buscaComEventos_1_237ee743"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: grrfMatricula_importa\nType: reference\nRelated to: GrrfFonteDados, GrrfMatricula, GrrfPessoaFisica\n\n## GrrfFonteDados\n- id: Código da GFIP (Type: Long)\n- situacaoArquivoGrrf: Situação do envio da GRRF (Type: )\n\n## GrrfPessoaFisica\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- cpf: CPF (Type: String)\n- dataNascimento: Data de nascimento (Type: LocalDate)\n- sexo: Sexo (Type: )\n\n## CodigoMatriculaFonteDadosMinhaFolha\n- numero: Número (Type: Long)\n- contrato: Contrato (Type: Integer)\n- digitoVerificador: Digito verificador (Type: Integer)\n\n## GrrfMatricula\n- id: Id da matrícula (Type: Long)\n- situacao: Situação (Type: )\n- pessoa: Pessoa (Type: GrrfPessoaFisica)\n- codigoMatricula: Codigo da matrícula (Type: CodigoMatriculaFonteDadosMinhaFolha)\n\n## GrrfMatriculaFonteDados\n- id: Identificador (Type: Long)\n- situacaoMatricula: Situacao da matricula (Type: )\n- competencia: Competência do cálculo (Type: YearMonth)\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- matricula: Matrícula (Type: GrrfMatricula)\n\n## GrrfMatriculaDto\n- codigoMatricula: Código da matrícula (Type: Long)\n- codigoGrrf: Código da GRRF (Type: Long)\n- situacaoMatricula: Situação da matrícula (Type: )\n- competencia: Competencia (Type: YearMonth)\n- tipoProcessamento: Tipo Processamento (Type: )\n- subTipoProcessamento: Subtipo processamento (Type: )\n\nKeywords: grrfpessoafisica, grrffontedados, nome, grrfmatriculafontedados, grrfmatriculadto, codigomatriculafontedadosminhafolha, id, cpf, grrfmatricula, folha, situacaoarquivogrrf, tipo, dados",
+  "search_text": "grrfMatricula_importa GrrfFonteDados GrrfMatricula GrrfPessoaFisica grrfMatricula CodigoMatriculaFonteDadosMinhaFolha importa GrrfMatriculaFonteDados GrrfMatriculaDto grrfpessoafisica grrffontedados nome grrfmatriculafontedados grrfmatriculadto codigomatriculafontedadosminhafolha id cpf grrfmatricula folha situacaoarquivogrrf tipo dados ## GrrfFonteDados\n- id: Código da GFIP (Type: Long)\n- situacaoArquivoGrrf: Situação do envio da GRRF (Type: )\n\n## GrrfPessoaFisica\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- cpf: CPF (Type: String)\n- dataNascimento: Data de nascimento (Type: LocalDate)\n- sexo: Sexo (Type: )\n\n## CodigoMatriculaFonteDadosMinhaFolha\n- numero: Número (Type: Long)\n- contrato: Contrato (Type: Integer)\n- digitoVerificador: Digito verificador (Type: Integer)\n\n## GrrfMatricula\n- id: Id da matrícula (Type: Long)\n- situacao: Situação (Type: )\n- pessoa: Pessoa (Type: GrrfPessoaFisica)\n- codigoMatricula: Codigo da matrícula (Type: CodigoMatriculaFonteDadosMinhaFolha)\n\n## GrrfMatriculaFonteDados\n- id: Identificador (Type: Long)\n- situacaoMatricula: Situacao da matricula (Type: )\n- competencia: Competência do cálculo (Type: YearMonth)\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- matricula: Matrícula (Type: GrrfMatricula)\n\n## GrrfMatriculaDto\n- codigoMatricula: Código da matrícula (Type: Long)\n- codigoGrrf: Código da GRRF (Type: Long)\n- situacaoMatricula: Situação da matrícula (Type: )\n- competencia: Competencia (Type: YearMonth)\n- tipoProcessamento: Tipo Processamento (Type: )\n- subTipoProcessamento: Subtipo processamento (Type: )"
+}

@@ -1,0 +1,56 @@
+{
+  "content": "## CagedMatriculaDto\n- codigoMatricula: Código da matrícula (Type: Long)\n- codigoCaged: Código do caged (Type: Long)\n- situacaoMatricula: Situação da matrícula (Type: )\n- situacaoEnvioMatricula: Situação do envio da matrícula (Type: )\n\n## EstadoMunicipioCaged\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- uf: UF (Type: String)\n\n## MunicipioCaged\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: EstadoMunicipioCaged)\n\n## MatriculaMatricula\n- id: Código matrícula (Type: Long)\n\n## CagedMatricula\n- id: Identificador (Type: Long)\n- matricula: Matrícula (Type: MatriculaMatricula)\n- situacaoMatricula: Situação da matrícula (Type: )\n- situacaoEnvioMatricula: Situação do envio da matrícula (Type: )\n\n## Caged\n- id: Código do caged (Type: Long)\n- dataEnvio: Competência (Type: LocalDate)\n- situacaoEnvioMatricula: Situação do CAGED (Type: )\n- entidade: Entidade (Type: Long)\n- municipio: Município (Type: MunicipioCaged)\n- cagedMatriculas: CAGED matrícula (Type: CagedMatricula)",
+  "metadata": {
+    "chunk_id": "cagedMatricula_importa_2_e612514e",
+    "section_name": "cagedMatricula_importa",
+    "chunk_index": 2,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 334,
+    "char_count": 1006,
+    "overlap_with_previous": 9,
+    "overlap_with_next": 14,
+    "keywords": [
+      "codigocaged",
+      "codigomatricula",
+      "caged",
+      "cagedmatriculadto",
+      "situacaoenviomatricula",
+      "id",
+      "matriculamatricula",
+      "municipiocaged",
+      "situacaomatricula",
+      "cagedmatricula",
+      "estadomunicipiocaged"
+    ],
+    "entities": [
+      "Caged",
+      "CagedMatricula",
+      "importa",
+      "MatriculaMatricula",
+      "EstadoMunicipioCaged",
+      "cagedMatricula",
+      "CagedMatriculaDto",
+      "MunicipioCaged"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.979059",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "e612514eb333690cf619abc5b440f95f",
+    "related_chunks": [
+      "caged_buscaCaged_1_7758de71",
+      "gfipMatricula_importa_3_ad915c0f",
+      "tabelaAuxiliarValor_importa_3_3648ed36",
+      "gfipMatricula_importa_1_f700bf51",
+      "caged_buscaCaged_6_ca0e308c"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: cagedMatricula_importa\nType: reference\nRelated to: Caged, CagedMatricula, importa\n\n## CagedMatriculaDto\n- codigoMatricula: Código da matrícula (Type: Long)\n- codigoCaged: Código do caged (Type: Long)\n- situacaoMatricula: Situação da matrícula (Type: )\n- situacaoEnvioMatricula: Situação do envio da matrícula (Type: )\n\n## EstadoMunicipioCaged\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- uf: UF (Type: String)\n\n## MunicipioCaged\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: EstadoMunicipioCaged)\n\n## MatriculaMatricula\n- id: Código matrícula (Type: Long)\n\n## CagedMatricula\n- id: Identificador (Type: Long)\n- matricula: Matrícula (Type: MatriculaMatricula)\n- situacaoMatricula: Situação da matrícula (Type: )\n- situacaoEnvioMatricula: Situação do envio da matrícula (Type: )\n\n## Caged\n- id: Código do caged (Type: Long)\n- dataEnvio: Competência (Type: LocalDate)\n- situacaoEnvioMatricula: Situação do CAGED (Type: )\n- entidade: Entidade (Type: Long)\n- municipio: Município (Type: MunicipioCaged)\n- cagedMatriculas: CAGED matrícula (Type: CagedMatricula)\n\nKeywords: codigocaged, codigomatricula, caged, cagedmatriculadto, situacaoenviomatricula, id, matriculamatricula, municipiocaged, situacaomatricula, cagedmatricula, estadomunicipiocaged",
+  "search_text": "cagedMatricula_importa Caged CagedMatricula importa MatriculaMatricula EstadoMunicipioCaged cagedMatricula CagedMatriculaDto MunicipioCaged codigocaged codigomatricula caged cagedmatriculadto situacaoenviomatricula id matriculamatricula municipiocaged situacaomatricula cagedmatricula estadomunicipiocaged ## CagedMatriculaDto\n- codigoMatricula: Código da matrícula (Type: Long)\n- codigoCaged: Código do caged (Type: Long)\n- situacaoMatricula: Situação da matrícula (Type: )\n- situacaoEnvioMatricula: Situação do envio da matrícula (Type: )\n\n## EstadoMunicipioCaged\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- uf: UF (Type: String)\n\n## MunicipioCaged\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: EstadoMunicipioCaged)\n\n## MatriculaMatricula\n- id: Código matrícula (Type: Long)\n\n## CagedMatricula\n- id: Identificador (Type: Long)\n- matricula: Matrícula (Type: MatriculaMatricula)\n- situacaoMatricula: Situação da matrícula (Type: )\n- situacaoEnvioMatricula: Situação do envio da matrícula (Type: )\n\n## Caged\n- id: Código do caged (Type: Long)\n- dataEnvio: Competência (Type: LocalDate)\n- situacaoEnvioMatricula: Situação do CAGED (Type: )\n- entidade: Entidade (Type: Long)\n- municipio: Município (Type: MunicipioCaged)\n- cagedMatriculas: CAGED matrícula (Type: CagedMatricula)"
+}

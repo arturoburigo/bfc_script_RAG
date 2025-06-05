@@ -1,9 +1,0 @@
-# TipoAdmissao
-Enum: TipoAdmissao
-- Admissão (Key: ADMISSAO, Value: 1)
-- Transferência por sucessão, incorporação, cisão ou fusão (Key: TRANSFERENCIA, Value: 2)
-- Admissão por substituição (Key: SUBSTITUICAO, Value: 3)
-- Transferência de empresa do mesmo grupo econômico (Key: TRANSFERENCIA_DE_EMPRESA_DO_MESMO_GRUPO_ECONOMICO, Value: 4)
-- Transferência de empresa consorciada ou de consórcio (Key: TRANSFERENCIA_DE_EMPRESA_CONSORCIADA_OU_DE_CONSORCIO, Value: 5)
-- Mudança de CPF (Key: MUDANCA_DE_CPF, Value: 6)
-- Transferência quando a empresa sucedida é considerada inapta por inexistência de fato (Key: TRANSFERENCIA_QUANDO_EMPRESA_SUCEDIDA_E_INAPTA_POR_INEXISTENCIA_DE_FATO, Value: 7)

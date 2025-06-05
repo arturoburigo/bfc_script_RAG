@@ -1,0 +1,43 @@
+{
+  "content": "VinculoEmpregaticio",
+  "metadata": {
+    "chunk_id": "vinculoEmpregaticio_buscaCategoriasTrabalhador_0_513655c1",
+    "section_name": "vinculoEmpregaticio_buscaCategoriasTrabalhador",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 7,
+    "char_count": 19,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 6,
+    "keywords": [
+      "vinculoempregaticio"
+    ],
+    "entities": [
+      "buscaCategoriasTrabalhador",
+      "VinculoEmpregaticioMotivoRescisaoFonteDados",
+      "vinculoEmpregaticio",
+      "VinculoEmpregaticioCategoriaTrabalhadorFonteDados",
+      "VinculoEmpregaticioFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.201484",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "513655c10ca08b6db74affa0380ae87d",
+    "related_chunks": [
+      "vinculoEmpregaticio_busca_2_802b9c15",
+      "vinculoEmpregaticio_buscaCategoriasTrabalhador_3_934e4e28",
+      "cargo_busca_3_b8c35b40",
+      "cargo_buscaTodos_3_e9113024",
+      "vinculoEmpregaticio_buscaCategoriasTrabalhador_4_0eedb897"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: vinculoEmpregaticio_buscaCategoriasTrabalhador\nType: definition\nRelated to: buscaCategoriasTrabalhador, VinculoEmpregaticioMotivoRescisaoFonteDados, vinculoEmpregaticio\n\nVinculoEmpregaticio\n\nKeywords: vinculoempregaticio",
+  "search_text": "vinculoEmpregaticio_buscaCategoriasTrabalhador buscaCategoriasTrabalhador VinculoEmpregaticioMotivoRescisaoFonteDados vinculoEmpregaticio VinculoEmpregaticioCategoriaTrabalhadorFonteDados VinculoEmpregaticioFonteDados vinculoempregaticio VinculoEmpregaticio"
+}

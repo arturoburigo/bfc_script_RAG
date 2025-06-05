@@ -1,9 +1,0 @@
-# UnidadeEvento
-Enum: UnidadeEvento
-- Automático (Key: AUTOMATICO, Value: 1)
-- Avos (Key: AVOS, Value: 2)
-- Dias (Key: DIAS, Value: 3)
-- Horas (Key: HORAS, Value: 4)
-- Percentual (Key: PERCENTUAL, Value: 5)
-- Quantidade (Key: QUANTIDADE, Value: 6)
-- Valor (Key: VALOR, Value: 7)

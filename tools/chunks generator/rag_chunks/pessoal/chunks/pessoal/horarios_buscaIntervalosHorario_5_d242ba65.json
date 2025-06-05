@@ -1,0 +1,53 @@
+{
+  "content": "## HorarioIntervalo\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- entrada: Entrada (Type: String)\n- saida: Saída (Type: String)\n- flexivel: É flexível? (Type: Boolean)\n- toleranciaInicialEntrada: Mínimo falta (Type: String)\n- toleranciaFinallEntrada: Máximo extra (Type: String)\n- toleranciaInicialSaida: Mínimo extra (Type: String)\n- toleranciaFinallSaida: Máximo falta (Type: String)\n\n## HorarioMarcacao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- sequencia: Sequência (Type: Long)\n- hora: Hora (Type: String)\n- geraMarcacaoAutomatica: Gera marcação automática? (Type: Boolean)\n- tipoMarcacaoHorario: Tipo (Type: )\n- toleranciaInicial: Mínimo falta (Type: String)\n- toleranciaFinal: Máximo extra (Type: String)\n\n## HorarioFonteDados\n- id: Id (Type: Long)\n- codigo: Código (Type: String)\n- descricao: Descrição (Type: String)\n- inicioVigencia: Vigência (Type: LocalDateTime)\n- entrada: Entrada (Type: String)\n- saida: Saída (Type: String)\n- flexivel: É flexível? (Type: Boolean)\n- quantoTempoAntes: Tolerância mínima até entrada? (Type: String)\n- quantoTempoDepois: Tolerância máxima após saída? (Type: String)\n- espera: Espera (Type: String)\n- cargaHoraria: Carga horária (Type: String)\n- duracaoIntervalo: Duração do Intervalo (Type: String)\n- toleranciaInicialEntrada: Entrada mín. extra (Type: String)\n- toleranciaFinallEntrada: Entrada máx. falta? (Type: String)\n- toleranciaInicialSaida: Saída mín. falta (Type: String)\n- toleranciaFinallSaida: Saída máx. extra (Type: String)\n- intervalos: Intervalos (Type: HorarioIntervalo)\n- marcacoes: Marcações (Type: HorarioMarcacao)\n- desabilitado: Horário desabilitado? (Type: Boolean)",
+  "metadata": {
+    "chunk_id": "horarios_buscaIntervalosHorario_5_d242ba65",
+    "section_name": "horarios_buscaIntervalosHorario",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 517,
+    "char_count": 1668,
+    "overlap_with_previous": 14,
+    "overlap_with_next": 17,
+    "keywords": [
+      "dados",
+      "horarios",
+      "saida",
+      "id",
+      "descricao",
+      "entrada",
+      "horariofontedados",
+      "flexivel",
+      "tipo",
+      "horariointervalo",
+      "horariomarcacao"
+    ],
+    "entities": [
+      "HorarioIntervalo",
+      "HorarioFonteDados",
+      "horarios",
+      "buscaIntervalosHorario",
+      "HorarioMarcacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.272186",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "d242ba65cb01211e9c464450c0b59094",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "horarios_buscaHorarios_4_86131741"
+    ],
+    "quality_score": 1.0
+  },
+  "embeddings_text": "Section: horarios_buscaIntervalosHorario\nType: reference\nRelated to: HorarioIntervalo, HorarioFonteDados, horarios\n\n## HorarioIntervalo\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- entrada: Entrada (Type: String)\n- saida: Saída (Type: String)\n- flexivel: É flexível? (Type: Boolean)\n- toleranciaInicialEntrada: Mínimo falta (Type: String)\n- toleranciaFinallEntrada: Máximo extra (Type: String)\n- toleranciaInicialSaida: Mínimo extra (Type: String)\n- toleranciaFinallSaida: Máximo falta (Type: String)\n\n## HorarioMarcacao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- sequencia: Sequência (Type: Long)\n- hora: Hora (Type: String)\n- geraMarcacaoAutomatica: Gera marcação automática? (Type: Boolean)\n- tipoMarcacaoHorario: Tipo (Type: )\n- toleranciaInicial: Mínimo falta (Type: String)\n- toleranciaFinal: Máximo extra (Type: String)\n\n## HorarioFonteDados\n- id: Id (Type: Long)\n- codigo: Código (Type: String)\n- descricao: Descrição (Type: String)\n- inicioVigencia: Vigência (Type: LocalDateTime)\n- entrada: Entrada (Type: String)\n- saida: Saída (Type: String)\n- flexivel: É flexível? (Type: Boolean)\n- quantoTempoAntes: Tolerância mínima até entrada? (Type: String)\n- quantoTempoDepois: Tolerância máxima após saída? (Type: String)\n- espera: Espera (Type: String)\n- cargaHoraria: Carga horária (Type: String)\n- duracaoIntervalo: Duração do Intervalo (Type: String)\n- toleranciaInicialEntrada: Entrada mín. extra (Type: String)\n- toleranciaFinallEntrada: Entrada máx. falta? (Type: String)\n- toleranciaInicialSaida: Saída mín. falta (Type: String)\n- toleranciaFinallSaida: Saída máx. extra (Type: String)\n- intervalos: Intervalos (Type: HorarioIntervalo)\n- marcacoes: Marcações (Type: HorarioMarcacao)\n- desabilitado: Horário desabilitado? (Type: Boolean)\n\nKeywords: dados, horarios, saida, id, descricao, entrada, horariofontedados, flexivel, tipo, horariointervalo, horariomarcacao",
+  "search_text": "horarios_buscaIntervalosHorario HorarioIntervalo HorarioFonteDados horarios buscaIntervalosHorario HorarioMarcacao dados horarios saida id descricao entrada horariofontedados flexivel tipo horariointervalo horariomarcacao ## HorarioIntervalo\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- entrada: Entrada (Type: String)\n- saida: Saída (Type: String)\n- flexivel: É flexível? (Type: Boolean)\n- toleranciaInicialEntrada: Mínimo falta (Type: String)\n- toleranciaFinallEntrada: Máximo extra (Type: String)\n- toleranciaInicialSaida: Mínimo extra (Type: String)\n- toleranciaFinallSaida: Máximo falta (Type: String)\n\n## HorarioMarcacao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- sequencia: Sequência (Type: Long)\n- hora: Hora (Type: String)\n- geraMarcacaoAutomatica: Gera marcação automática? (Type: Boolean)\n- tipoMarcacaoHorario: Tipo (Type: )\n- toleranciaInicial: Mínimo falta (Type: String)\n- toleranciaFinal: Máximo extra (Type: String)\n\n## HorarioFonteDados\n- id: Id (Type: Long)\n- codigo: Código (Type: String)\n- descricao: Descrição (Type: String)\n- inicioVigencia: Vigência (Type: LocalDateTime)\n- entrada: Entrada (Type: String)\n- saida: Saída (Type: String)\n- flexivel: É flexível? (Type: Boolean)\n- quantoTempoAntes: Tolerância mínima até entrada? (Type: String)\n- quantoTempoDepois: Tolerância máxima após saída? (Type: String)\n- espera: Espera (Type: String)\n- cargaHoraria: Carga horária (Type: String)\n- duracaoIntervalo: Duração do Intervalo (Type: String)\n- toleranciaInicialEntrada: Entrada mín. extra (Type: String)\n- toleranciaFinallEntrada: Entrada máx. falta? (Type: String)\n- toleranciaInicialSaida: Saída mín. falta (Type: String)\n- toleranciaFinallSaida: Saída máx. extra (Type: String)\n- intervalos: Intervalos (Type: HorarioIntervalo)\n- marcacoes: Marcações (Type: HorarioMarcacao)\n- desabilitado: Horário desabilitado? (Type: Boolean)"
+}

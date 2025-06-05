@@ -1,0 +1,49 @@
+{
+  "content": "groovy\nfonteCbos = Dados.pessoal.v2.cbos;\n\nfiltroCbos = \"codigoClassificacao = null\"\n\ndadosCbos = fonteCbos.busca(criterio: filtroCbos,campos: \"id, codigoClassificacao, descricao, nivel\",ordenacao: \"id asc\")\n\npercorrer (dadosCbos) { itemCbos ->\n\n}",
+  "metadata": {
+    "chunk_id": "cbos_busca_6_33996faa",
+    "section_name": "cbos_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 85,
+    "char_count": 247,
+    "overlap_with_previous": 9,
+    "overlap_with_next": 0,
+    "keywords": [
+      "cbos",
+      "pessoal",
+      "busca",
+      "filtro",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "cbos",
+      "Cbo",
+      "Dados.pessoal.v2.cbos",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.199470",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "33996faa37396af9371cbe0c482f8c9d",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "areaAtuacao_areaatuacao_3_931a34ca"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: cbos_busca\nType: example\nRelated to: cbos, Cbo, Dados.pessoal.v2.cbos\n\ngroovy\nfonteCbos = Dados.pessoal.v2.cbos;\n\nfiltroCbos = \"codigoClassificacao = null\"\n\ndadosCbos = fonteCbos.busca(criterio: filtroCbos,campos: \"id, codigoClassificacao, descricao, nivel\",ordenacao: \"id asc\")\n\npercorrer (dadosCbos) { itemCbos ->\n\n}\n\nKeywords: cbos, pessoal, busca, filtro, ordenacao, v2, campo, dados",
+  "search_text": "cbos_busca cbos Cbo Dados.pessoal.v2.cbos busca cbos pessoal busca filtro ordenacao v2 campo dados groovy\nfonteCbos = Dados.pessoal.v2.cbos;\n\nfiltroCbos = \"codigoClassificacao = null\"\n\ndadosCbos = fonteCbos.busca(criterio: filtroCbos,campos: \"id, codigoClassificacao, descricao, nivel\",ordenacao: \"id asc\")\n\npercorrer (dadosCbos) { itemCbos ->\n\n}"
+}

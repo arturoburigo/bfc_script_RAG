@@ -1,5 +1,0 @@
-# ContratacaoMenorAprendiz
-Enum: ContratacaoMenorAprendiz
-- 0 - Dispensado de acordo com a lei (Key: DISPENSADO_DE_ACORDO_LEI, Value: 1)
-- 1 - Dispensado, mesmo que parcialmente, em virtude de processo judicial (Key: DISPENSADO_VIRTUDE_PROCESSO_JUDICIAL, Value: 2)
-- 2 - Obrigado (Key: OBRIGADO, Value: 3)

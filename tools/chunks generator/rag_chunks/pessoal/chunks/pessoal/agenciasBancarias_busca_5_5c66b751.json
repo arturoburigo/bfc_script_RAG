@@ -1,0 +1,62 @@
+{
+  "content": "## Banco\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- numeroBanco: Número (Type: String)\n- sigla: Sigla (Type: String)\n- cnpj: CNPJ (Type: String)\n- site: Site (Type: String)\n- associadoFebraban: Associado ao Febraban (Type: Boolean)\n\n## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)\n\n## Estado\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla: Sigla (Type: String)\n- codigoIbge: Código no IBGE (Type: Integer)\n- pais: País (Type: Pais)\n\n## Municipio\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: Estado)\n- codigoIbge: Código no IBGE (Type: Long)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- cep: CEP geral (Type: Long)\n\n## TipoLogradouro\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- abreviatura: Abreviatura (Type: String)\n\n## Logradouro\n- id: Id (Type: Long)\n- municipio: Município (Type: Municipio)\n- tipoLogradouro: Tipo (Type: TipoLogradouro)\n- descricao: Descrição (Type: String)\n- cep: CEP principal (Type: String)\n\n## Bairro\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- municipio: Município (Type: Municipio)\n- zonaRural: Zona rural (Type: Boolean)\n\n## AgenciaBancaria\n- id: Id (Type: Long)\n- banco: Banco (Type: Banco)\n- nome: Nome (Type: String)\n- numero: Número (Type: String)\n- digito: Dígito (Type: String)\n- logradouro: Logradouro (Type: Logradouro)\n- numeroEndereco: Número do endereço (Type: String)\n- bairro: Bairro (Type: Bairro)\n- cep: CEP (Type: String)\n- municipio: Município (Type: Municipio)",
+  "metadata": {
+    "chunk_id": "agenciasBancarias_busca_5_5c66b751",
+    "section_name": "agenciasBancarias_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 588,
+    "char_count": 1704,
+    "overlap_with_previous": 35,
+    "overlap_with_next": 11,
+    "keywords": [
+      "banco",
+      "municipio",
+      "estado",
+      "agenciabancaria",
+      "logradouro",
+      "bairro",
+      "nome",
+      "tipologradouro",
+      "pais",
+      "id",
+      "numerobanco",
+      "cnpj",
+      "agenciasbancarias",
+      "tipo",
+      "sigla"
+    ],
+    "entities": [
+      "agenciasBancarias",
+      "Estado",
+      "Banco",
+      "busca",
+      "TipoLogradouro",
+      "AgenciaBancaria",
+      "Municipio",
+      "Logradouro",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.204455",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "5c66b7511b99765103ae596c81ebcdfd",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 1.0
+  },
+  "embeddings_text": "Section: agenciasBancarias_busca\nType: reference\nRelated to: agenciasBancarias, Estado, Banco\n\n## Banco\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- numeroBanco: Número (Type: String)\n- sigla: Sigla (Type: String)\n- cnpj: CNPJ (Type: String)\n- site: Site (Type: String)\n- associadoFebraban: Associado ao Febraban (Type: Boolean)\n\n## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)\n\n## Estado\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla: Sigla (Type: String)\n- codigoIbge: Código no IBGE (Type: Integer)\n- pais: País (Type: Pais)\n\n## Municipio\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: Estado)\n- codigoIbge: Código no IBGE (Type: Long)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- cep: CEP geral (Type: Long)\n\n## TipoLogradouro\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- abreviatura: Abreviatura (Type: String)\n\n## Logradouro\n- id: Id (Type: Long)\n- municipio: Município (Type: Municipio)\n- tipoLogradouro: Tipo (Type: TipoLogradouro)\n- descricao: Descrição (Type: String)\n- cep: CEP principal (Type: String)\n\n## Bairro\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- municipio: Município (Type: Municipio)\n- zonaRural: Zona rural (Type: Boolean)\n\n## AgenciaBancaria\n- id: Id (Type: Long)\n- banco: Banco (Type: Banco)\n- nome: Nome (Type: String)\n- numero: Número (Type: String)\n- digito: Dígito (Type: String)\n- logradouro: Logradouro (Type: Logradouro)\n- numeroEndereco: Número do endereço (Type: String)\n- bairro: Bairro (Type: Bairro)\n- cep: CEP (Type: String)\n- municipio: Município (Type: Municipio)\n\nKeywords: banco, municipio, estado, agenciabancaria, logradouro, bairro, nome, tipologradouro, pais, id, numerobanco, cnpj, agenciasbancarias, tipo, sigla",
+  "search_text": "agenciasBancarias_busca agenciasBancarias Estado Banco busca TipoLogradouro AgenciaBancaria Municipio Logradouro Bairro Pais banco municipio estado agenciabancaria logradouro bairro nome tipologradouro pais id numerobanco cnpj agenciasbancarias tipo sigla ## Banco\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- numeroBanco: Número (Type: String)\n- sigla: Sigla (Type: String)\n- cnpj: CNPJ (Type: String)\n- site: Site (Type: String)\n- associadoFebraban: Associado ao Febraban (Type: Boolean)\n\n## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)\n\n## Estado\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla: Sigla (Type: String)\n- codigoIbge: Código no IBGE (Type: Integer)\n- pais: País (Type: Pais)\n\n## Municipio\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: Estado)\n- codigoIbge: Código no IBGE (Type: Long)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- cep: CEP geral (Type: Long)\n\n## TipoLogradouro\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- abreviatura: Abreviatura (Type: String)\n\n## Logradouro\n- id: Id (Type: Long)\n- municipio: Município (Type: Municipio)\n- tipoLogradouro: Tipo (Type: TipoLogradouro)\n- descricao: Descrição (Type: String)\n- cep: CEP principal (Type: String)\n\n## Bairro\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- municipio: Município (Type: Municipio)\n- zonaRural: Zona rural (Type: Boolean)\n\n## AgenciaBancaria\n- id: Id (Type: Long)\n- banco: Banco (Type: Banco)\n- nome: Nome (Type: String)\n- numero: Número (Type: String)\n- digito: Dígito (Type: String)\n- logradouro: Logradouro (Type: Logradouro)\n- numeroEndereco: Número do endereço (Type: String)\n- bairro: Bairro (Type: Bairro)\n- cep: CEP (Type: String)\n- municipio: Município (Type: Municipio)"
+}

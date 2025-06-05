@@ -1,0 +1,59 @@
+{
+  "content": "- campoRais: Campo da RAIS (Type: )\n- cnpjSindicato: CNPJ da entidade sindical (Type: String)\n- id: Identificador (Type: Long)",
+  "metadata": {
+    "chunk_id": "configuracaoRais_buscaConfiguracaoCampos_4_ae32a1e9",
+    "section_name": "configuracaoRais_buscaConfiguracaoCampos",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 42,
+    "char_count": 126,
+    "overlap_with_previous": 6,
+    "overlap_with_next": 30,
+    "keywords": [
+      "cnpjsindicato",
+      "configuracaorais",
+      "id",
+      "camporais",
+      "campo"
+    ],
+    "entities": [
+      "DeficienciaPessoaFisica",
+      "PessoaOrigem",
+      "ConfiguracaoRaisCampo",
+      "AtoConfiguracaoEvento",
+      "PessoaJuridica",
+      "Base",
+      "configuracaoRais",
+      "dependenciasFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoEventoFonteDados",
+      "ConfiguracaoRais",
+      "ConfiguracaoRaisCampoEvento",
+      "buscaConfiguracaoCampos",
+      "ProcessoJudicial",
+      "SindicatoFuncionario",
+      "PessoaFisicaRepresentation",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.511764",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "ae32a1e97cdbbab8ae1779b8607839de",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracaoRais_buscaConfiguracaoCampos\nType: reference\nRelated to: DeficienciaPessoaFisica, PessoaOrigem, ConfiguracaoRaisCampo\n\n- campoRais: Campo da RAIS (Type: )\n- cnpjSindicato: CNPJ da entidade sindical (Type: String)\n- id: Identificador (Type: Long)\n\nKeywords: cnpjsindicato, configuracaorais, id, camporais, campo",
+  "search_text": "configuracaoRais_buscaConfiguracaoCampos DeficienciaPessoaFisica PessoaOrigem ConfiguracaoRaisCampo AtoConfiguracaoEvento PessoaJuridica Base configuracaoRais dependenciasFonteDados ScriptFonteDados ConfiguracaoEventoFonteDados ConfiguracaoRais ConfiguracaoRaisCampoEvento buscaConfiguracaoCampos ProcessoJudicial SindicatoFuncionario PessoaFisicaRepresentation ConfiguracaoEventoAssociacaoFonteDados cnpjsindicato configuracaorais id camporais campo - campoRais: Campo da RAIS (Type: )\n- cnpjSindicato: CNPJ da entidade sindical (Type: String)\n- id: Identificador (Type: Long)"
+}

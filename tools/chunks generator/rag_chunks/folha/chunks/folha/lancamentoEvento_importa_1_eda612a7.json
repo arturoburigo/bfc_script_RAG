@@ -1,0 +1,60 @@
+{
+  "content": "importa (POST)\n\nRepresentation Type: LancamentoEventoDto",
+  "metadata": {
+    "chunk_id": "lancamentoEvento_importa_1_eda612a7",
+    "section_name": "lancamentoEvento_importa",
+    "chunk_index": 1,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 12,
+    "char_count": 56,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 8,
+    "keywords": [
+      "lancamentoevento"
+    ],
+    "entities": [
+      "TipoLogradouroOrganograma",
+      "ConfiguracaoEventoLancamentoEvento",
+      "EstadoPessoaFisica",
+      "MunicipioPessoaFisica",
+      "OrganogramaFonteDados",
+      "CodigoMatriculaLancamentoEvento",
+      "ConfiguracaoOrganograma",
+      "CargoOrganograma",
+      "PessoaFisicaLancamentoEvento",
+      "Endereco",
+      "MatriculaLancamentoEvento",
+      "TipoAdministracao",
+      "LogradouroOrganograma",
+      "importa",
+      "ConfiguracaoNivelOrganograma",
+      "lancamentoEvento",
+      "OrganogramaResponsavelFonteDados",
+      "LancamentoEventoDto",
+      "FuncaoOrganograma",
+      "BairroOrganograma",
+      "AtoOrganograma",
+      "LancamentoEventoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.595004",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "eda612a78edef314dc3f2ca4544d5c85",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: lancamentoEvento_importa\nType: definition\nRelated to: TipoLogradouroOrganograma, ConfiguracaoEventoLancamentoEvento, EstadoPessoaFisica\n\nimporta (POST)\n\nRepresentation Type: LancamentoEventoDto\n\nKeywords: lancamentoevento",
+  "search_text": "lancamentoEvento_importa TipoLogradouroOrganograma ConfiguracaoEventoLancamentoEvento EstadoPessoaFisica MunicipioPessoaFisica OrganogramaFonteDados CodigoMatriculaLancamentoEvento ConfiguracaoOrganograma CargoOrganograma PessoaFisicaLancamentoEvento Endereco MatriculaLancamentoEvento TipoAdministracao LogradouroOrganograma importa ConfiguracaoNivelOrganograma lancamentoEvento OrganogramaResponsavelFonteDados LancamentoEventoDto FuncaoOrganograma BairroOrganograma AtoOrganograma LancamentoEventoFonteDados lancamentoevento importa (POST)\n\nRepresentation Type: LancamentoEventoDto"
+}

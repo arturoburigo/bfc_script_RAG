@@ -1,4 +1,0 @@
-# SituacaoBeneficio
-Enum: SituacaoBeneficio
-- Benefício concedido pelo próprio órgão declarante (Key: BENEFICIO_CONCEDIDO_PELO_PROPRIO_ORGAO_DECLARANTE, Value: 1)
-- Benefício transferido de outro órgão (Key: BENEFICIO_TRANSFERIDO_DE_OUTRO_ORGAO, Value: 2)

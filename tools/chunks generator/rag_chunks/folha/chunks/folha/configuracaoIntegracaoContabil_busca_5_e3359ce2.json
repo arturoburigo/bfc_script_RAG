@@ -1,0 +1,54 @@
+{
+  "content": "## EventosConfiguracaoIntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- codigo: Código (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo do evento (Type: )\n- classificacao: Classifação (Type: )\n\n## ConfiguracaoOrganograma\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## OrganogramasConfiguracaoIntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- numero: Número (Type: String)\n- descricao: Descrição (Type: String)\n- configuracao: Configuração do organograma (Type: ConfiguracaoOrganograma)\n\n## ConfiguracaoIntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- exercicio: Exercício (Type: String)\n- nomeEntidade: Nome da entidade contábil (Type: String)\n- cnpjEntidade: CNPJ da entidade contábil (Type: String)\n- tiposDespesa: Tipos de despesa (Type: )\n- eventos: Eventos selecionado (Type: EventosConfiguracaoIntegracaoContabilFonteDados)\n- organogramas: Organogramas selecionado (Type: OrganogramasConfiguracaoIntegracaoContabilFonteDados)\n- organogramasId: Organogramas Ids selecionado (Type: Long)\n- eventosId: Eventos Ids selecionado (Type: Long)",
+  "metadata": {
+    "chunk_id": "configuracaoIntegracaoContabil_busca_5_e3359ce2",
+    "section_name": "configuracaoIntegracaoContabil_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 333,
+    "char_count": 1083,
+    "overlap_with_previous": 29,
+    "overlap_with_next": 19,
+    "keywords": [
+      "configuracaointegracaocontabil",
+      "classificacao",
+      "configuracaoorganograma",
+      "configuracaointegracaocontabilfontedados",
+      "id",
+      "descricao",
+      "organogramasconfiguracaointegracaocontabilfontedados",
+      "codigo",
+      "eventosconfiguracaointegracaocontabilfontedados",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "ConfiguracaoOrganograma",
+      "OrganogramasConfiguracaoIntegracaoContabilFonteDados",
+      "busca",
+      "ConfiguracaoIntegracaoContabilFonteDados",
+      "EventosConfiguracaoIntegracaoContabilFonteDados",
+      "configuracaoIntegracaoContabil"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.976768",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "e3359ce2aff522a02ebe74d961bdcf87",
+    "related_chunks": [
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19",
+      "remuneracoes_buscaComposicoesBasesFolha_3_3f265087",
+      "remuneracoes_buscaEventosDeFolhas_0_f817d7f1"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: configuracaoIntegracaoContabil_busca\nType: reference\nRelated to: ConfiguracaoOrganograma, OrganogramasConfiguracaoIntegracaoContabilFonteDados, busca\n\n## EventosConfiguracaoIntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- codigo: Código (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo do evento (Type: )\n- classificacao: Classifação (Type: )\n\n## ConfiguracaoOrganograma\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## OrganogramasConfiguracaoIntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- numero: Número (Type: String)\n- descricao: Descrição (Type: String)\n- configuracao: Configuração do organograma (Type: ConfiguracaoOrganograma)\n\n## ConfiguracaoIntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- exercicio: Exercício (Type: String)\n- nomeEntidade: Nome da entidade contábil (Type: String)\n- cnpjEntidade: CNPJ da entidade contábil (Type: String)\n- tiposDespesa: Tipos de despesa (Type: )\n- eventos: Eventos selecionado (Type: EventosConfiguracaoIntegracaoContabilFonteDados)\n- organogramas: Organogramas selecionado (Type: OrganogramasConfiguracaoIntegracaoContabilFonteDados)\n- organogramasId: Organogramas Ids selecionado (Type: Long)\n- eventosId: Eventos Ids selecionado (Type: Long)\n\nKeywords: configuracaointegracaocontabil, classificacao, configuracaoorganograma, configuracaointegracaocontabilfontedados, id, descricao, organogramasconfiguracaointegracaocontabilfontedados, codigo, eventosconfiguracaointegracaocontabilfontedados, tipo, dados",
+  "search_text": "configuracaoIntegracaoContabil_busca ConfiguracaoOrganograma OrganogramasConfiguracaoIntegracaoContabilFonteDados busca ConfiguracaoIntegracaoContabilFonteDados EventosConfiguracaoIntegracaoContabilFonteDados configuracaoIntegracaoContabil configuracaointegracaocontabil classificacao configuracaoorganograma configuracaointegracaocontabilfontedados id descricao organogramasconfiguracaointegracaocontabilfontedados codigo eventosconfiguracaointegracaocontabilfontedados tipo dados ## EventosConfiguracaoIntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- codigo: Código (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo do evento (Type: )\n- classificacao: Classifação (Type: )\n\n## ConfiguracaoOrganograma\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## OrganogramasConfiguracaoIntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- numero: Número (Type: String)\n- descricao: Descrição (Type: String)\n- configuracao: Configuração do organograma (Type: ConfiguracaoOrganograma)\n\n## ConfiguracaoIntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- exercicio: Exercício (Type: String)\n- nomeEntidade: Nome da entidade contábil (Type: String)\n- cnpjEntidade: CNPJ da entidade contábil (Type: String)\n- tiposDespesa: Tipos de despesa (Type: )\n- eventos: Eventos selecionado (Type: EventosConfiguracaoIntegracaoContabilFonteDados)\n- organogramas: Organogramas selecionado (Type: OrganogramasConfiguracaoIntegracaoContabilFonteDados)\n- organogramasId: Organogramas Ids selecionado (Type: Long)\n- eventosId: Eventos Ids selecionado (Type: Long)"
+}

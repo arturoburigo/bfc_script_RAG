@@ -1,0 +1,52 @@
+{
+  "content": "groovy\nfonteAtos = Dados.pessoal.v2.atos;\n\ndadosAtos = fonteAtos.buscaFontes(campos: \"fonteDivulgacao(id, descricao, meioComunicacao), dataPublicacao, numeroPublicacao, id\",parametros:[\"atoId\":null])\n\npercorrer (dadosAtos) { itemAtos ->\n\n}",
+  "metadata": {
+    "chunk_id": "atos_buscaFontes_6_dfca133c",
+    "section_name": "atos_buscaFontes",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 81,
+    "char_count": 239,
+    "overlap_with_previous": 12,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "v2",
+      "atos",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "AtoFonteDados",
+      "ArquivoAto",
+      "NaturezaTextoJuridico",
+      "Dados.pessoal.v2.atos",
+      "AtoFonteDivulgacao",
+      "TipoAto",
+      "buscaFontes",
+      "atos",
+      "FonteDivulgacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.201267",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "dfca133c4845803be2ffbd2d1e4ddc6b",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "fontesDivulgacao_busca_2_58920ed9"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: atos_buscaFontes\nType: example\nRelated to: AtoFonteDados, ArquivoAto, NaturezaTextoJuridico\n\ngroovy\nfonteAtos = Dados.pessoal.v2.atos;\n\ndadosAtos = fonteAtos.buscaFontes(campos: \"fonteDivulgacao(id, descricao, meioComunicacao), dataPublicacao, numeroPublicacao, id\",parametros:[\"atoId\":null])\n\npercorrer (dadosAtos) { itemAtos ->\n\n}\n\nKeywords: pessoal, busca, v2, atos, campo, dados",
+  "search_text": "atos_buscaFontes AtoFonteDados ArquivoAto NaturezaTextoJuridico Dados.pessoal.v2.atos AtoFonteDivulgacao TipoAto buscaFontes atos FonteDivulgacao pessoal busca v2 atos campo dados groovy\nfonteAtos = Dados.pessoal.v2.atos;\n\ndadosAtos = fonteAtos.buscaFontes(campos: \"fonteDivulgacao(id, descricao, meioComunicacao), dataPublicacao, numeroPublicacao, id\",parametros:[\"atoId\":null])\n\npercorrer (dadosAtos) { itemAtos ->\n\n}"
+}

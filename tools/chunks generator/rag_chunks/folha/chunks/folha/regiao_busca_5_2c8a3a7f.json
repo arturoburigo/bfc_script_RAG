@@ -1,0 +1,47 @@
+{
+  "content": "groovy\nfonteRegiao = Dados.folha.v2.regiao;\n\ndadosRegiao = fonteRegiao.busca(campos: \"id, descricao, campoAdicional\")\n\npercorrer (dadosRegiao) { itemRegiao ->\n\n}",
+  "metadata": {
+    "chunk_id": "regiao_busca_5_2c8a3a7f",
+    "section_name": "regiao_busca",
+    "chunk_index": 5,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 55,
+    "char_count": 161,
+    "overlap_with_previous": 9,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "regiao",
+      "v2",
+      "folha",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Dados.folha.v2.regiao",
+      "Regiao",
+      "regiao",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.295698",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "2c8a3a7f7bfd24c8071ca65e90edb86e",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: regiao_busca\nType: example\nRelated to: Dados.folha.v2.regiao, Regiao, regiao\n\ngroovy\nfonteRegiao = Dados.folha.v2.regiao;\n\ndadosRegiao = fonteRegiao.busca(campos: \"id, descricao, campoAdicional\")\n\npercorrer (dadosRegiao) { itemRegiao ->\n\n}\n\nKeywords: busca, regiao, v2, folha, campo, dados",
+  "search_text": "regiao_busca Dados.folha.v2.regiao Regiao regiao busca busca regiao v2 folha campo dados groovy\nfonteRegiao = Dados.folha.v2.regiao;\n\ndadosRegiao = fonteRegiao.busca(campos: \"id, descricao, campoAdicional\")\n\npercorrer (dadosRegiao) { itemRegiao ->\n\n}"
+}

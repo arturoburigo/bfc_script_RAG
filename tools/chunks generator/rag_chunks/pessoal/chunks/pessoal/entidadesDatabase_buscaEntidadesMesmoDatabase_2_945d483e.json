@@ -1,0 +1,58 @@
+{
+  "content": "Busca as entidades do mesmo database\n\nRepresentation Type: EntidadeEncargosInssFgts",
+  "metadata": {
+    "chunk_id": "entidadesDatabase_buscaEntidadesMesmoDatabase_2_945d483e",
+    "section_name": "entidadesDatabase_buscaEntidadesMesmoDatabase",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 22,
+    "char_count": 83,
+    "overlap_with_previous": 21,
+    "overlap_with_next": 22,
+    "keywords": [
+      "entidade",
+      "busca"
+    ],
+    "entities": [
+      "buscaEntidadesMesmoDatabase",
+      "entidade",
+      "AtoFonteDados",
+      "Pais",
+      "Estado",
+      "EmailEntidade",
+      "Endereco",
+      "NaturezaTextoJuridico",
+      "TipoAto",
+      "SindicatoFuncionario",
+      "Bairro",
+      "TipoLogradouro",
+      "Logradouro",
+      "PessoaJuridica",
+      "EntidadeEncargosInssFgts",
+      "Entidade",
+      "TelefonesEntidadeEncargosInssFgts",
+      "Municipio",
+      "EntidadeSoftwareHouseEncargosInssFgts"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.668132",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "945d483eeda1b74cd615fab8be4d38a9",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: entidadesDatabase_buscaEntidadesMesmoDatabase\nType: definition\nRelated to: buscaEntidadesMesmoDatabase, entidade, AtoFonteDados\n\nBusca as entidades do mesmo database\n\nRepresentation Type: EntidadeEncargosInssFgts\n\nKeywords: entidade, busca",
+  "search_text": "entidadesDatabase_buscaEntidadesMesmoDatabase buscaEntidadesMesmoDatabase entidade AtoFonteDados Pais Estado EmailEntidade Endereco NaturezaTextoJuridico TipoAto SindicatoFuncionario Bairro TipoLogradouro Logradouro PessoaJuridica EntidadeEncargosInssFgts Entidade TelefonesEntidadeEncargosInssFgts Municipio EntidadeSoftwareHouseEncargosInssFgts entidade busca Busca as entidades do mesmo database\n\nRepresentation Type: EntidadeEncargosInssFgts"
+}

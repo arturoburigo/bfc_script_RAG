@@ -1,0 +1,53 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de níveis salariais\n\nRepresentation Type: NivelSalarialCompletaFonteDados",
+  "metadata": {
+    "chunk_id": "nivelSalarial_busca_1_51fff527",
+    "section_name": "nivelSalarial_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 30,
+    "char_count": 114,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 21,
+    "keywords": [
+      "nivelsalarial",
+      "dados",
+      "busca"
+    ],
+    "entities": [
+      "NivelSalarialAtoTipoFonteDados",
+      "NivelSalarialClasseReferenciaFonteDados",
+      "ClasseReferenciaFonteDados",
+      "NivelSalarialCompletaFonteDados",
+      "MotivoAlteracaoSalarial",
+      "busca",
+      "NivelSalarialAtoFonteDados",
+      "NivelSalarialPlanoCargoSalarioFonteDados",
+      "NivelSalarialAssociacao",
+      "NivelSalarialReajusteSalarialFonteDados",
+      "nivelSalarial",
+      "NivelSalarialCompletaComHistorico",
+      "CargoRemuneracaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.142141",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "51fff5277163093323e4d55ed6fd0de3",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: nivelSalarial_busca\nType: definition\nRelated to: NivelSalarialAtoTipoFonteDados, NivelSalarialClasseReferenciaFonteDados, ClasseReferenciaFonteDados\n\nbusca (GET)\nMethod Description: Listagem de níveis salariais\n\nRepresentation Type: NivelSalarialCompletaFonteDados\n\nKeywords: nivelsalarial, dados, busca",
+  "search_text": "nivelSalarial_busca NivelSalarialAtoTipoFonteDados NivelSalarialClasseReferenciaFonteDados ClasseReferenciaFonteDados NivelSalarialCompletaFonteDados MotivoAlteracaoSalarial busca NivelSalarialAtoFonteDados NivelSalarialPlanoCargoSalarioFonteDados NivelSalarialAssociacao NivelSalarialReajusteSalarialFonteDados nivelSalarial NivelSalarialCompletaComHistorico CargoRemuneracaoFonteDados nivelsalarial dados busca busca (GET)\nMethod Description: Listagem de níveis salariais\n\nRepresentation Type: NivelSalarialCompletaFonteDados"
+}

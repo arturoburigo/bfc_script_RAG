@@ -1,0 +1,45 @@
+{
+  "content": "- id: Id seleção avançada (Type: Long)\n- descricao: Descrição seleção avançada (Type: String)",
+  "metadata": {
+    "chunk_id": "selecaoAvancada_buscaSelecaoAvancada_4_3be9d31c",
+    "section_name": "selecaoAvancada_buscaSelecaoAvancada",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 32,
+    "char_count": 93,
+    "overlap_with_previous": 7,
+    "overlap_with_next": 15,
+    "keywords": [
+      "selecaoavancada",
+      "id",
+      "descricao"
+    ],
+    "entities": [
+      "buscaSelecaoAvancada",
+      "CargoSelecaoAvacanda",
+      "EntidadeFiltravelSelecaoDtoAssociacao",
+      "MatriculaFiltroSelecaoAvancadaFonteDados",
+      "selecaoAvancada"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.140194",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "3be9d31c499f242a588555c8752d4f7e",
+    "related_chunks": [
+      "selecaoAvancada_buscaSelecaoAvancada_6_8e2914c1",
+      "selecaoAvancada_buscaSelecaoAvancada_3_0409ec37",
+      "selecaoAvancada_buscaSelecaoAvancada_2_0409ec37",
+      "selecaoAvancada_buscaSelecaoAvancada_5_d65533f5",
+      "selecaoAvancada_buscaSelecaoAvancada_0_f759a958"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: selecaoAvancada_buscaSelecaoAvancada\nType: reference\nRelated to: buscaSelecaoAvancada, CargoSelecaoAvacanda, EntidadeFiltravelSelecaoDtoAssociacao\n\n- id: Id seleção avançada (Type: Long)\n- descricao: Descrição seleção avançada (Type: String)\n\nKeywords: selecaoavancada, id, descricao",
+  "search_text": "selecaoAvancada_buscaSelecaoAvancada buscaSelecaoAvancada CargoSelecaoAvacanda EntidadeFiltravelSelecaoDtoAssociacao MatriculaFiltroSelecaoAvancadaFonteDados selecaoAvancada selecaoavancada id descricao - id: Id seleção avançada (Type: Long)\n- descricao: Descrição seleção avançada (Type: String)"
+}

@@ -1,0 +1,43 @@
+{
+  "content": "Listagem de períodos aquisitivos de décimo terceiro de uma matrícula\n\nRepresentation Type: PeriodoAquisitivoDecimoTerceiro",
+  "metadata": {
+    "chunk_id": "periodoAquisitivo_buscaPeriodoDecimoTerceiro_2_1645022f",
+    "section_name": "periodoAquisitivo_buscaPeriodoDecimoTerceiro",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 36,
+    "char_count": 122,
+    "overlap_with_previous": 28,
+    "overlap_with_next": 29,
+    "keywords": [
+      "periodoaquisitivo"
+    ],
+    "entities": [
+      "PeriodoAquisitivoDecimoTerceiro",
+      "buscaPeriodoDecimoTerceiro",
+      "SuspensaoCessacaoPeriodoAquisitivoRepresentation",
+      "periodoAquisitivo",
+      "ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.442463",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "1645022f60a5e42bc876cc5fabca9e11",
+    "related_chunks": [
+      "provisao_buscaBases_5_e3986e07",
+      "provisao_busca_6_0cee3b39",
+      "provisao_buscaBases_1_b10fac4c",
+      "provisao_busca_1_a6c8a2b0",
+      "provisao_buscaBases_4_f5cc4ecd"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: periodoAquisitivo_buscaPeriodoDecimoTerceiro\nType: definition\nRelated to: PeriodoAquisitivoDecimoTerceiro, buscaPeriodoDecimoTerceiro, SuspensaoCessacaoPeriodoAquisitivoRepresentation\n\nListagem de períodos aquisitivos de décimo terceiro de uma matrícula\n\nRepresentation Type: PeriodoAquisitivoDecimoTerceiro\n\nKeywords: periodoaquisitivo",
+  "search_text": "periodoAquisitivo_buscaPeriodoDecimoTerceiro PeriodoAquisitivoDecimoTerceiro buscaPeriodoDecimoTerceiro SuspensaoCessacaoPeriodoAquisitivoRepresentation periodoAquisitivo ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro periodoaquisitivo Listagem de períodos aquisitivos de décimo terceiro de uma matrícula\n\nRepresentation Type: PeriodoAquisitivoDecimoTerceiro"
+}

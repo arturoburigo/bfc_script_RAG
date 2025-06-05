@@ -1,5 +1,0 @@
-# OrigemRetificacao
-Enum: OrigemRetificacao
-- Iniciativa do empregador (Key: INICIATIVA_DO_EMPREGADOR, Value: 1)
-- Revisão administrativa (Key: REVISAO_ADMINISTRATIVA, Value: 2)
-- Determinação judicial (Key: DETERMINACAO_JUDICIAL, Value: 3)

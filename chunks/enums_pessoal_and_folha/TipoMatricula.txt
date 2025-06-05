@@ -1,7 +1,0 @@
-# TipoMatricula
-Enum: TipoMatricula
-- Funcionário (Key: FUNCIONARIO, Value: 1)
-- Estagiário (Key: ESTAGIARIO, Value: 2)
-- Autônomo (Key: AUTONOMO, Value: 3)
-- Aposentado (Key: APOSENTADO, Value: 4)
-- Pensionista (Key: PENSIONISTA, Value: 5)

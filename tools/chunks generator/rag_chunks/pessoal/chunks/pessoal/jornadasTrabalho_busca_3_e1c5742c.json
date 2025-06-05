@@ -1,0 +1,49 @@
+{
+  "content": "Listagem de jornada de trabalho\n\nRepresentation Type: JornadaTrabalhoFonteDadosCompleta",
+  "metadata": {
+    "chunk_id": "jornadasTrabalho_busca_3_e1c5742c",
+    "section_name": "jornadasTrabalho_busca",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 22,
+    "char_count": 87,
+    "overlap_with_previous": 20,
+    "overlap_with_next": 4,
+    "keywords": [
+      "jornadastrabalho",
+      "dados"
+    ],
+    "entities": [
+      "Horario",
+      "HorarioIntervalo",
+      "JornadaTrabalhoEscala",
+      "busca",
+      "PeriodoJornadaTrabalho",
+      "JornadaTrabalhoFonteDadosAssociacao",
+      "jornadasTrabalho",
+      "JornadaTrabalhoFonteDadosCompleta",
+      "HorarioMarcacao",
+      "Escala"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.190018",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "e1c5742ca38ca25f0d10d0dcab89140f",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: jornadasTrabalho_busca\nType: definition\nRelated to: Horario, HorarioIntervalo, JornadaTrabalhoEscala\n\nListagem de jornada de trabalho\n\nRepresentation Type: JornadaTrabalhoFonteDadosCompleta\n\nKeywords: jornadastrabalho, dados",
+  "search_text": "jornadasTrabalho_busca Horario HorarioIntervalo JornadaTrabalhoEscala busca PeriodoJornadaTrabalho JornadaTrabalhoFonteDadosAssociacao jornadasTrabalho JornadaTrabalhoFonteDadosCompleta HorarioMarcacao Escala jornadastrabalho dados Listagem de jornada de trabalho\n\nRepresentation Type: JornadaTrabalhoFonteDadosCompleta"
+}

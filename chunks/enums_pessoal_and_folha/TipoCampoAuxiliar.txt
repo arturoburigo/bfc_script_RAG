@@ -1,8 +1,0 @@
-# TipoCampoAuxiliar
-Enum: TipoCampoAuxiliar
-- Data (Key: DATA, Value: 1)
-- Data e hora (Key: DATA_HORA, Value: 2)
-- Hora (Key: HORA, Value: 3)
-- Número (Key: NUMERO, Value: 4)
-- Número decimal (Key: NUMERO_DECIMAL, Value: 5)
-- Texto (Key: TEXTO, Value: 6)

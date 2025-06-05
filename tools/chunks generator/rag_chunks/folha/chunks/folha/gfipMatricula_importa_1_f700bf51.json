@@ -1,0 +1,44 @@
+{
+  "content": "importa (POST)\n\nRepresentation Type: GfipMatriculaDto",
+  "metadata": {
+    "chunk_id": "gfipMatricula_importa_1_f700bf51",
+    "section_name": "gfipMatricula_importa",
+    "chunk_index": 1,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 14,
+    "char_count": 53,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 10,
+    "keywords": [
+      "gfipmatricula"
+    ],
+    "entities": [
+      "GfipMatriculaDto",
+      "GfipFonteDados",
+      "gfipMatricula",
+      "importa",
+      "GfipMatriculaFonteDados",
+      "MatriculaGfipFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.443634",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "f700bf51fac01eacdc6b10fdb4b86739",
+    "related_chunks": [
+      "gfipMatricula_importa_3_ad915c0f",
+      "gfipMatricula_buscaGfip_2_55cb00d6",
+      "tabelaAuxiliarValor_importa_3_3648ed36",
+      "tabelaAuxiliarValor_importa_0_9b03df81",
+      "fonteGenerica_importa_2_77ecbcf3"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: gfipMatricula_importa\nType: definition\nRelated to: GfipMatriculaDto, GfipFonteDados, gfipMatricula\n\nimporta (POST)\n\nRepresentation Type: GfipMatriculaDto\n\nKeywords: gfipmatricula",
+  "search_text": "gfipMatricula_importa GfipMatriculaDto GfipFonteDados gfipMatricula importa GfipMatriculaFonteDados MatriculaGfipFonteDados gfipmatricula importa (POST)\n\nRepresentation Type: GfipMatriculaDto"
+}

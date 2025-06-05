@@ -1,0 +1,57 @@
+{
+  "content": "groovy\nfonteAfastamentos = Dados.pessoal.v2.afastamentos;\n\ndadosAfastamentos = fonteAfastamentos.busca(campos: \"matricula(codigoMatricula(numero, contrato, digitoVerificador), pessoa(nome), situacao), id, inicioAfastamento, fimAfastamento, decorrente, motivo\",ordenacao: \"matricula.id asc\")\n\npercorrer (dadosAfastamentos) { itemAfastamentos ->\n\n}",
+  "metadata": {
+    "chunk_id": "afastamentos_busca_6_4f6763f7",
+    "section_name": "afastamentos_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 100,
+    "char_count": 346,
+    "overlap_with_previous": 27,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "ordenacao",
+      "v2",
+      "afastamentos",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "PessoaFisicaAfastamento",
+      "CodigoMatriculaFonteDadosMinhaFolha",
+      "busca",
+      "AtoAfastamento",
+      "SindicatoFuncionario",
+      "TipoAfastamentoAfastamento",
+      "PessoaJuridica",
+      "AfastamentoFonteDados",
+      "AfastamentoOrigem",
+      "AtestadoAfastamento",
+      "MatriculaAfastamento",
+      "afastamentos",
+      "Dados.pessoal.v2.afastamentos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.195679",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "4f6763f77f25acfc736d5ef979a220b9",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: afastamentos_busca\nType: example\nRelated to: PessoaFisicaAfastamento, CodigoMatriculaFonteDadosMinhaFolha, busca\n\ngroovy\nfonteAfastamentos = Dados.pessoal.v2.afastamentos;\n\ndadosAfastamentos = fonteAfastamentos.busca(campos: \"matricula(codigoMatricula(numero, contrato, digitoVerificador), pessoa(nome), situacao), id, inicioAfastamento, fimAfastamento, decorrente, motivo\",ordenacao: \"matricula.id asc\")\n\npercorrer (dadosAfastamentos) { itemAfastamentos ->\n\n}\n\nKeywords: pessoal, busca, ordenacao, v2, afastamentos, campo, dados",
+  "search_text": "afastamentos_busca PessoaFisicaAfastamento CodigoMatriculaFonteDadosMinhaFolha busca AtoAfastamento SindicatoFuncionario TipoAfastamentoAfastamento PessoaJuridica AfastamentoFonteDados AfastamentoOrigem AtestadoAfastamento MatriculaAfastamento afastamentos Dados.pessoal.v2.afastamentos pessoal busca ordenacao v2 afastamentos campo dados groovy\nfonteAfastamentos = Dados.pessoal.v2.afastamentos;\n\ndadosAfastamentos = fonteAfastamentos.busca(campos: \"matricula(codigoMatricula(numero, contrato, digitoVerificador), pessoa(nome), situacao), id, inicioAfastamento, fimAfastamento, decorrente, motivo\",ordenacao: \"matricula.id asc\")\n\npercorrer (dadosAfastamentos) { itemAfastamentos ->\n\n}"
+}

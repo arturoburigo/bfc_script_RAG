@@ -1,4 +1,0 @@
-# TipoCorrecao
-Enum: TipoCorrecao
-- Valor (Key: VALOR, Value: 1)
-- Percentual (Key: PERCENTUAL, Value: 2)

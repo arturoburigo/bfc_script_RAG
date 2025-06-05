@@ -1,0 +1,44 @@
+{
+  "content": "ConfiguracaoIntegracaoContabil",
+  "metadata": {
+    "chunk_id": "configuracaoIntegracaoContabil_busca_0_4aac3e4c",
+    "section_name": "configuracaoIntegracaoContabil_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 8,
+    "char_count": 30,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 6,
+    "keywords": [
+      "configuracaointegracaocontabil"
+    ],
+    "entities": [
+      "ConfiguracaoOrganograma",
+      "OrganogramasConfiguracaoIntegracaoContabilFonteDados",
+      "busca",
+      "ConfiguracaoIntegracaoContabilFonteDados",
+      "EventosConfiguracaoIntegracaoContabilFonteDados",
+      "configuracaoIntegracaoContabil"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.975990",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "4aac3e4c4d351befb22806e524e8636a",
+    "related_chunks": [
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19",
+      "remuneracoes_buscaComposicoesBasesFolha_3_3f265087",
+      "remuneracoes_buscaEventosDeFolhas_0_f817d7f1"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracaoIntegracaoContabil_busca\nType: definition\nRelated to: ConfiguracaoOrganograma, OrganogramasConfiguracaoIntegracaoContabilFonteDados, busca\n\nConfiguracaoIntegracaoContabil\n\nKeywords: configuracaointegracaocontabil",
+  "search_text": "configuracaoIntegracaoContabil_busca ConfiguracaoOrganograma OrganogramasConfiguracaoIntegracaoContabilFonteDados busca ConfiguracaoIntegracaoContabilFonteDados EventosConfiguracaoIntegracaoContabilFonteDados configuracaoIntegracaoContabil configuracaointegracaocontabil ConfiguracaoIntegracaoContabil"
+}

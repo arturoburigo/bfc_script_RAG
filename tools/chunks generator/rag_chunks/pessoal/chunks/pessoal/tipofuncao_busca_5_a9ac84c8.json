@@ -1,0 +1,47 @@
+{
+  "content": "## TipoFuncao\n- id:  (Type: Long)\n- descricao:  (Type: String)\n- classificacaoTipoFuncao:  (Type: )\n- tipoFuncaoGratificada:  (Type: )",
+  "metadata": {
+    "chunk_id": "tipofuncao_busca_5_a9ac84c8",
+    "section_name": "tipofuncao_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 50,
+    "char_count": 134,
+    "overlap_with_previous": 10,
+    "overlap_with_next": 14,
+    "keywords": [
+      "tipofuncaogratificada",
+      "id",
+      "descricao",
+      "classificacaotipofuncao",
+      "tipo",
+      "funcao",
+      "tipofuncao"
+    ],
+    "entities": [
+      "busca",
+      "TipoFuncao",
+      "tipofuncao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.087991",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "a9ac84c8362f255ddd2961d44f348fba",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: tipofuncao_busca\nType: reference\nRelated to: busca, TipoFuncao, tipofuncao\n\n## TipoFuncao\n- id:  (Type: Long)\n- descricao:  (Type: String)\n- classificacaoTipoFuncao:  (Type: )\n- tipoFuncaoGratificada:  (Type: )\n\nKeywords: tipofuncaogratificada, id, descricao, classificacaotipofuncao, tipo, funcao, tipofuncao",
+  "search_text": "tipofuncao_busca busca TipoFuncao tipofuncao tipofuncaogratificada id descricao classificacaotipofuncao tipo funcao tipofuncao ## TipoFuncao\n- id:  (Type: Long)\n- descricao:  (Type: String)\n- classificacaoTipoFuncao:  (Type: )\n- tipoFuncaoGratificada:  (Type: )"
+}

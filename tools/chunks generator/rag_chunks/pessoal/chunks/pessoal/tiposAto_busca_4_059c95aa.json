@@ -1,0 +1,44 @@
+{
+  "content": "- classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "tiposAto_busca_4_059c95aa",
+    "section_name": "tiposAto_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 31,
+    "char_count": 99,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 20,
+    "keywords": [
+      "tiposato",
+      "id",
+      "classificacao",
+      "descricao"
+    ],
+    "entities": [
+      "TipoAto",
+      "tiposAto",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.197969",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "059c95aa61c4a15a0d556df36cc3270d",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tiposAto_busca\nType: reference\nRelated to: TipoAto, tiposAto, busca\n\n- classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n\nKeywords: tiposato, id, classificacao, descricao",
+  "search_text": "tiposAto_busca TipoAto tiposAto busca tiposato id classificacao descricao - classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)"
+}

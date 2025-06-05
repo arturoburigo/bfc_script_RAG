@@ -1,0 +1,49 @@
+{
+  "content": "- municipio.id: Id do município (Type: Long)\n- nome: Nome (Type: String)\n- id: Id (Type: Long)\n- zonaRural: Zona rural (Type: Boolean)",
+  "metadata": {
+    "chunk_id": "logradouros_buscaBairrosLogradouro_4_45bba5ce",
+    "section_name": "logradouros_buscaBairrosLogradouro",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 47,
+    "char_count": 134,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 24,
+    "keywords": [
+      "logradouros",
+      "id",
+      "zonarural",
+      "nome"
+    ],
+    "entities": [
+      "logradouros",
+      "Estado",
+      "TipoLogradouro",
+      "Municipio",
+      "buscaBairrosLogradouro",
+      "Logradouro",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.086929",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "45bba5ce6a11eef1942c52d38e5ede69",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "agenciasBancarias_busca_1_ef251772",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "logradouros_buscaBairrosLogradouro_5_4f5931c1"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: logradouros_buscaBairrosLogradouro\nType: reference\nRelated to: logradouros, Estado, TipoLogradouro\n\n- municipio.id: Id do município (Type: Long)\n- nome: Nome (Type: String)\n- id: Id (Type: Long)\n- zonaRural: Zona rural (Type: Boolean)\n\nKeywords: logradouros, id, zonarural, nome",
+  "search_text": "logradouros_buscaBairrosLogradouro logradouros Estado TipoLogradouro Municipio buscaBairrosLogradouro Logradouro Bairro Pais logradouros id zonarural nome - municipio.id: Id do município (Type: Long)\n- nome: Nome (Type: String)\n- id: Id (Type: Long)\n- zonaRural: Zona rural (Type: Boolean)"
+}

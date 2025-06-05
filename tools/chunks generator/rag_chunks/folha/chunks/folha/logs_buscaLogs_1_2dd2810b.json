@@ -1,0 +1,50 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de logs\n\nRepresentation Type: CalculoFolhaMensagem",
+  "metadata": {
+    "chunk_id": "logs_buscaLogs_1_2dd2810b",
+    "section_name": "logs_buscaLogs",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 23,
+    "char_count": 91,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 14,
+    "keywords": [
+      "logs",
+      "busca",
+      "folha"
+    ],
+    "entities": [
+      "OrganogramaAssociacao",
+      "ConfiguracaoNivelOrganogramaAssociacao",
+      "CodigoMatriculaAssociacaoErroCalculo",
+      "busca",
+      "GrupoFuncional",
+      "ConfiguracaoOrganogramaAssociacao",
+      "CalculoFolhaMensagem",
+      "PessoaFisica",
+      "logs",
+      "MatriculaAssociacaoErroCalculo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.295983",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "2dd2810bb1e46b2e0b5f41e91993d768",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: logs_buscaLogs\nType: definition\nRelated to: OrganogramaAssociacao, ConfiguracaoNivelOrganogramaAssociacao, CodigoMatriculaAssociacaoErroCalculo\n\nbusca (GET)\nMethod Description: Listagem de logs\n\nRepresentation Type: CalculoFolhaMensagem\n\nKeywords: logs, busca, folha",
+  "search_text": "logs_buscaLogs OrganogramaAssociacao ConfiguracaoNivelOrganogramaAssociacao CodigoMatriculaAssociacaoErroCalculo busca GrupoFuncional ConfiguracaoOrganogramaAssociacao CalculoFolhaMensagem PessoaFisica logs MatriculaAssociacaoErroCalculo logs busca folha busca (GET)\nMethod Description: Listagem de logs\n\nRepresentation Type: CalculoFolhaMensagem"
+}

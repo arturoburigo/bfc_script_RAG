@@ -1,0 +1,49 @@
+{
+  "content": "groovy\nfonteConfiguracoes-organogramas = Dados.pessoal.v2.configuracoes-organogramas;\n\ndadosConfiguracoes-organogramas = fonteConfiguracoes-organogramas.buscaNiveisEmUso(campos: \"id, descricao\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracoes-organogramas) { itemConfiguracoes-organogramas ->\n\n}",
+  "metadata": {
+    "chunk_id": "configuracoes-organogramas_buscaNiveisEmUso_6_ad2666f5",
+    "section_name": "configuracoes-organogramas_buscaNiveisEmUso",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 94,
+    "char_count": 298,
+    "overlap_with_previous": 14,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "ordenacao",
+      "v2",
+      "configuracoes-organogramas",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "ConfiguracaoOrganograma",
+      "Dados.pessoal.v2.configuracoes",
+      "buscaNiveisEmUso",
+      "ConfiguracaoNivelOrganograma",
+      "configuracoes-organogramas"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.665607",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "ad2666f50ea52e72ba88f45f872420ee",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: configuracoes-organogramas_buscaNiveisEmUso\nType: example\nRelated to: ConfiguracaoOrganograma, Dados.pessoal.v2.configuracoes, buscaNiveisEmUso\n\ngroovy\nfonteConfiguracoes-organogramas = Dados.pessoal.v2.configuracoes-organogramas;\n\ndadosConfiguracoes-organogramas = fonteConfiguracoes-organogramas.buscaNiveisEmUso(campos: \"id, descricao\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracoes-organogramas) { itemConfiguracoes-organogramas ->\n\n}\n\nKeywords: pessoal, busca, ordenacao, v2, configuracoes-organogramas, campo, dados",
+  "search_text": "configuracoes-organogramas_buscaNiveisEmUso ConfiguracaoOrganograma Dados.pessoal.v2.configuracoes buscaNiveisEmUso ConfiguracaoNivelOrganograma configuracoes-organogramas pessoal busca ordenacao v2 configuracoes-organogramas campo dados groovy\nfonteConfiguracoes-organogramas = Dados.pessoal.v2.configuracoes-organogramas;\n\ndadosConfiguracoes-organogramas = fonteConfiguracoes-organogramas.buscaNiveisEmUso(campos: \"id, descricao\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracoes-organogramas) { itemConfiguracoes-organogramas ->\n\n}"
+}

@@ -1,0 +1,45 @@
+{
+  "content": "## FonteDivulgacao\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n- meioComunicacao: Meio de comunicação (Type: )",
+  "metadata": {
+    "chunk_id": "fontesDivulgacao_busca_5_e59ba7b0",
+    "section_name": "fontesDivulgacao_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 42,
+    "char_count": 126,
+    "overlap_with_previous": 21,
+    "overlap_with_next": 11,
+    "keywords": [
+      "fontedivulgacao",
+      "fontesdivulgacao",
+      "id",
+      "descricao",
+      "meiocomunicacao"
+    ],
+    "entities": [
+      "fontesDivulgacao",
+      "FonteDivulgacao",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.664519",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "e59ba7b0c29754166067c9084cb22bf9",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: fontesDivulgacao_busca\nType: reference\nRelated to: fontesDivulgacao, FonteDivulgacao, busca\n\n## FonteDivulgacao\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n- meioComunicacao: Meio de comunicação (Type: )\n\nKeywords: fontedivulgacao, fontesdivulgacao, id, descricao, meiocomunicacao",
+  "search_text": "fontesDivulgacao_busca fontesDivulgacao FonteDivulgacao busca fontedivulgacao fontesdivulgacao id descricao meiocomunicacao ## FonteDivulgacao\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n- meioComunicacao: Meio de comunicação (Type: )"
+}

@@ -1,0 +1,45 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de bairros\n\nRepresentation Type: Bairro",
+  "metadata": {
+    "chunk_id": "bairros_busca_1_c5b71952",
+    "section_name": "bairros_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 20,
+    "char_count": 80,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 11,
+    "keywords": [
+      "bairros",
+      "busca"
+    ],
+    "entities": [
+      "Estado",
+      "busca",
+      "bairros",
+      "Municipio",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.575627",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "c5b719525908f238a856dc5c86235098",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: bairros_busca\nType: definition\nRelated to: Estado, busca, bairros\n\nbusca (GET)\nMethod Description: Listagem de bairros\n\nRepresentation Type: Bairro\n\nKeywords: bairros, busca",
+  "search_text": "bairros_busca Estado busca bairros Municipio Bairro Pais bairros busca busca (GET)\nMethod Description: Listagem de bairros\n\nRepresentation Type: Bairro"
+}

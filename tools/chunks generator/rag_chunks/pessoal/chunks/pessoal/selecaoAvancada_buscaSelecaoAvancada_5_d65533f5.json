@@ -1,0 +1,51 @@
+{
+  "content": "## EntidadeFiltravelSelecaoDtoAssociacao\n- id:  (Type: Long)\n\n## CargoSelecaoAvacanda\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n\n## MatriculaFiltroSelecaoAvancadaFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipoSelecaoMatricula:  (Type: )\n- inicioFaixaMatricula:  (Type: Integer)\n- fimFaixaMatricula:  (Type: Integer)\n- inicioAdmissao:  (Type: LocalDate)\n- fimAdmissao:  (Type: LocalDate)\n- criterioGrupoFuncional:  (Type: )\n- criterioMatricula:  (Type: )\n- criterioLotacaoFisica:  (Type: )\n- criterioTipoAfastamento:  (Type: )\n- criterioCargo:  (Type: )\n- criterioOrganograma:  (Type: )\n- criterioVinculoEmpregaticio:  (Type: )\n- classificacoesTipoAfastamento:  (Type: )\n- tiposContrato:  (Type: )\n- situacoes:  (Type: )\n- matriculas:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- gruposFuncional:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- vinculosEmpregaticio:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- cargos:  (Type: CargoSelecaoAvacanda)\n- organogramas:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- lotacoesFisica:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)",
+  "metadata": {
+    "chunk_id": "selecaoAvancada_buscaSelecaoAvancada_5_d65533f5",
+    "section_name": "selecaoAvancada_buscaSelecaoAvancada",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 387,
+    "char_count": 1144,
+    "overlap_with_previous": 15,
+    "overlap_with_next": 40,
+    "keywords": [
+      "matriculafiltroselecaoavancadafontedados",
+      "id",
+      "descricao",
+      "filtro",
+      "cargoselecaoavacanda",
+      "entidadefiltravelselecaodtoassociacao",
+      "selecaoavancada",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "buscaSelecaoAvancada",
+      "CargoSelecaoAvacanda",
+      "EntidadeFiltravelSelecaoDtoAssociacao",
+      "MatriculaFiltroSelecaoAvancadaFonteDados",
+      "selecaoAvancada"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.140572",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "d65533f5f2903ad5989fca914a7d3ae1",
+    "related_chunks": [
+      "selecaoAvancada_buscaSelecaoAvancada_6_8e2914c1",
+      "selecaoAvancada_buscaSelecaoAvancada_3_0409ec37",
+      "selecaoAvancada_buscaSelecaoAvancada_2_0409ec37",
+      "selecaoAvancada_buscaSelecaoAvancada_0_f759a958",
+      "selecaoAvancada_buscaSelecaoAvancada_4_3be9d31c"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: selecaoAvancada_buscaSelecaoAvancada\nType: reference\nRelated to: buscaSelecaoAvancada, CargoSelecaoAvacanda, EntidadeFiltravelSelecaoDtoAssociacao\n\n## EntidadeFiltravelSelecaoDtoAssociacao\n- id:  (Type: Long)\n\n## CargoSelecaoAvacanda\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n\n## MatriculaFiltroSelecaoAvancadaFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipoSelecaoMatricula:  (Type: )\n- inicioFaixaMatricula:  (Type: Integer)\n- fimFaixaMatricula:  (Type: Integer)\n- inicioAdmissao:  (Type: LocalDate)\n- fimAdmissao:  (Type: LocalDate)\n- criterioGrupoFuncional:  (Type: )\n- criterioMatricula:  (Type: )\n- criterioLotacaoFisica:  (Type: )\n- criterioTipoAfastamento:  (Type: )\n- criterioCargo:  (Type: )\n- criterioOrganograma:  (Type: )\n- criterioVinculoEmpregaticio:  (Type: )\n- classificacoesTipoAfastamento:  (Type: )\n- tiposContrato:  (Type: )\n- situacoes:  (Type: )\n- matriculas:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- gruposFuncional:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- vinculosEmpregaticio:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- cargos:  (Type: CargoSelecaoAvacanda)\n- organogramas:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- lotacoesFisica:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n\nKeywords: matriculafiltroselecaoavancadafontedados, id, descricao, filtro, cargoselecaoavacanda, entidadefiltravelselecaodtoassociacao, selecaoavancada, tipo, dados",
+  "search_text": "selecaoAvancada_buscaSelecaoAvancada buscaSelecaoAvancada CargoSelecaoAvacanda EntidadeFiltravelSelecaoDtoAssociacao MatriculaFiltroSelecaoAvancadaFonteDados selecaoAvancada matriculafiltroselecaoavancadafontedados id descricao filtro cargoselecaoavacanda entidadefiltravelselecaodtoassociacao selecaoavancada tipo dados ## EntidadeFiltravelSelecaoDtoAssociacao\n- id:  (Type: Long)\n\n## CargoSelecaoAvacanda\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n\n## MatriculaFiltroSelecaoAvancadaFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipoSelecaoMatricula:  (Type: )\n- inicioFaixaMatricula:  (Type: Integer)\n- fimFaixaMatricula:  (Type: Integer)\n- inicioAdmissao:  (Type: LocalDate)\n- fimAdmissao:  (Type: LocalDate)\n- criterioGrupoFuncional:  (Type: )\n- criterioMatricula:  (Type: )\n- criterioLotacaoFisica:  (Type: )\n- criterioTipoAfastamento:  (Type: )\n- criterioCargo:  (Type: )\n- criterioOrganograma:  (Type: )\n- criterioVinculoEmpregaticio:  (Type: )\n- classificacoesTipoAfastamento:  (Type: )\n- tiposContrato:  (Type: )\n- situacoes:  (Type: )\n- matriculas:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- gruposFuncional:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- vinculosEmpregaticio:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- cargos:  (Type: CargoSelecaoAvacanda)\n- organogramas:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)\n- lotacoesFisica:  (Type: EntidadeFiltravelSelecaoDtoAssociacao)"
+}

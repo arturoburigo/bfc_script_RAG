@@ -1,0 +1,44 @@
+{
+  "content": "Listagem de motivos de rescisão\n\nRepresentation Type: MotivoRescisaoFonteDados",
+  "metadata": {
+    "chunk_id": "motivosRescisao_busca_2_dedaf917",
+    "section_name": "motivosRescisao_busca",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 21,
+    "char_count": 78,
+    "overlap_with_previous": 19,
+    "overlap_with_next": 20,
+    "keywords": [
+      "motivosrescisao",
+      "dados"
+    ],
+    "entities": [
+      "motivosRescisao",
+      "TipoMovimentacaoPessoalMotivoRescisao",
+      "busca",
+      "TipoAfastamentoMotivoRescisao",
+      "MotivoRescisaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.095181",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "dedaf91733db3aa64b2564aefd17796a",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: motivosRescisao_busca\nType: definition\nRelated to: motivosRescisao, TipoMovimentacaoPessoalMotivoRescisao, busca\n\nListagem de motivos de rescisão\n\nRepresentation Type: MotivoRescisaoFonteDados\n\nKeywords: motivosrescisao, dados",
+  "search_text": "motivosRescisao_busca motivosRescisao TipoMovimentacaoPessoalMotivoRescisao busca TipoAfastamentoMotivoRescisao MotivoRescisaoFonteDados motivosrescisao dados Listagem de motivos de rescisão\n\nRepresentation Type: MotivoRescisaoFonteDados"
+}

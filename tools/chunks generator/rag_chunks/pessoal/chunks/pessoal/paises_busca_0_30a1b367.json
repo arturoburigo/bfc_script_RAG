@@ -1,0 +1,41 @@
+{
+  "content": "Países",
+  "metadata": {
+    "chunk_id": "paises_busca_0_30a1b367",
+    "section_name": "paises_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 2,
+    "char_count": 6,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 0,
+    "keywords": [
+      "paises"
+    ],
+    "entities": [
+      "paises",
+      "Pais",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.383429",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "30a1b36738e6651ddda83c5c8bba272b",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: paises_busca\nType: definition\nRelated to: paises, Pais, busca\n\nPaíses\n\nKeywords: paises",
+  "search_text": "paises_busca paises Pais busca paises Países"
+}

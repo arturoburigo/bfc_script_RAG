@@ -1,0 +1,58 @@
+{
+  "content": "## ConfiguracaoIntegracaoContabilAssociacao\n- id: Id (Type: Long)\n- exercicio: Exercício (Type: Year)\n- nomeEntidade: Nome da entidade contábil (Type: String)\n- cnpjEntidade: CNPJ da entidade contábil (Type: String)\n\n## SelecaoAvancadaFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- temporaria: Temporaria (Type: Boolean)\n- expiraEm: Expira em (Type: )\n- expiracao: Data hora expiração (Type: LocalDateTime)\n\n## MatriculaAssociacao\n- id: Id (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- dataInicioContrato: Data de admissão (Type: LocalDate)\n- eSocial: eSocial (Type: String)\n- situacao: Situação (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n\n## IntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- competencia: Competência (Type: YearMonth)\n- tipoDespesa: Tipos de despesa (Type: )\n- tipoProcessamento: Processamento (Type: )\n- subTipoProcessamento: Subtipo de Processamento (Type: )\n- arredondarValores: Arredondar valores? (Type: Boolean)\n- configuracaoIntegracaoContabil: Entidade contábil (Type: ConfiguracaoIntegracaoContabilAssociacao)\n- matriculasId:  (Type: Long)\n- dataPagamentoInicial: Data de pagamento final (Type: LocalDate)\n- dataPagamentoFinal: Data de pagamento inicial (Type: LocalDate)\n- selecaoAvancada: Seleção avançada (Type: SelecaoAvancadaFonteDados)\n- matriculas: Matrículas (Type: MatriculaAssociacao)\n- matriculaInicial: Matrícula inicial (Type: Integer)\n- matriculaFinal: Matrícula final (Type: Integer)\n- dataHoraExecucao: Data hora da execução (Type: LocalDateTime)\n\n## integracaoContabilAssociacao\n- id: Id (Type: Long)\n\n## integracaoContabilInconsitencia\n- id: Id (Type: Long)\n- situacao: Situação (Type: )\n- mensagem: Mensagem (Type: String)\n- integracaoContabil: Identificador da integração conbtábil (Type: integracaoContabilAssociacao)",
+  "metadata": {
+    "chunk_id": "integracaoContabil_busca_5_a909ca68",
+    "section_name": "integracaoContabil_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 552,
+    "char_count": 1823,
+    "overlap_with_previous": 12,
+    "overlap_with_next": 17,
+    "keywords": [
+      "integracaocontabilfontedados",
+      "cnpjentidade",
+      "integracaocontabilassociacao",
+      "id",
+      "selecaoavancadafontedados",
+      "exercicio",
+      "integracaocontabilinconsitencia",
+      "configuracaointegracaocontabilassociacao",
+      "nomeentidade",
+      "tipo",
+      "dados",
+      "matriculaassociacao",
+      "integracaocontabil"
+    ],
+    "entities": [
+      "SelecaoAvancadaFonteDados",
+      "IntegracaoContabilFonteDados",
+      "busca",
+      "integracaoContabil",
+      "MatriculaAssociacao",
+      "integracaoContabilInconsitencia",
+      "integracaoContabilAssociacao",
+      "ConfiguracaoIntegracaoContabilAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.548754",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "a909ca68547ffcf969bc34af63e9c08f",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 1.0
+  },
+  "embeddings_text": "Section: integracaoContabil_busca\nType: reference\nRelated to: SelecaoAvancadaFonteDados, IntegracaoContabilFonteDados, busca\n\n## ConfiguracaoIntegracaoContabilAssociacao\n- id: Id (Type: Long)\n- exercicio: Exercício (Type: Year)\n- nomeEntidade: Nome da entidade contábil (Type: String)\n- cnpjEntidade: CNPJ da entidade contábil (Type: String)\n\n## SelecaoAvancadaFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- temporaria: Temporaria (Type: Boolean)\n- expiraEm: Expira em (Type: )\n- expiracao: Data hora expiração (Type: LocalDateTime)\n\n## MatriculaAssociacao\n- id: Id (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- dataInicioContrato: Data de admissão (Type: LocalDate)\n- eSocial: eSocial (Type: String)\n- situacao: Situação (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n\n## IntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- competencia: Competência (Type: YearMonth)\n- tipoDespesa: Tipos de despesa (Type: )\n- tipoProcessamento: Processamento (Type: )\n- subTipoProcessamento: Subtipo de Processamento (Type: )\n- arredondarValores: Arredondar valores? (Type: Boolean)\n- configuracaoIntegracaoContabil: Entidade contábil (Type: ConfiguracaoIntegracaoContabilAssociacao)\n- matriculasId:  (Type: Long)\n- dataPagamentoInicial: Data de pagamento final (Type: LocalDate)\n- dataPagamentoFinal: Data de pagamento inicial (Type: LocalDate)\n- selecaoAvancada: Seleção avançada (Type: SelecaoAvancadaFonteDados)\n- matriculas: Matrículas (Type: MatriculaAssociacao)\n- matriculaInicial: Matrícula inicial (Type: Integer)\n- matriculaFinal: Matrícula final (Type: Integer)\n- dataHoraExecucao: Data hora da execução (Type: LocalDateTime)\n\n## integracaoContabilAssociacao\n- id: Id (Type: Long)\n\n## integracaoContabilInconsitencia\n- id: Id (Type: Long)\n- situacao: Situação (Type: )\n- mensagem: Mensagem (Type: String)\n- integracaoContabil: Identificador da integração conbtábil (Type: integracaoContabilAssociacao)\n\nKeywords: integracaocontabilfontedados, cnpjentidade, integracaocontabilassociacao, id, selecaoavancadafontedados, exercicio, integracaocontabilinconsitencia, configuracaointegracaocontabilassociacao, nomeentidade, tipo, dados, matriculaassociacao, integracaocontabil",
+  "search_text": "integracaoContabil_busca SelecaoAvancadaFonteDados IntegracaoContabilFonteDados busca integracaoContabil MatriculaAssociacao integracaoContabilInconsitencia integracaoContabilAssociacao ConfiguracaoIntegracaoContabilAssociacao integracaocontabilfontedados cnpjentidade integracaocontabilassociacao id selecaoavancadafontedados exercicio integracaocontabilinconsitencia configuracaointegracaocontabilassociacao nomeentidade tipo dados matriculaassociacao integracaocontabil ## ConfiguracaoIntegracaoContabilAssociacao\n- id: Id (Type: Long)\n- exercicio: Exercício (Type: Year)\n- nomeEntidade: Nome da entidade contábil (Type: String)\n- cnpjEntidade: CNPJ da entidade contábil (Type: String)\n\n## SelecaoAvancadaFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- temporaria: Temporaria (Type: Boolean)\n- expiraEm: Expira em (Type: )\n- expiracao: Data hora expiração (Type: LocalDateTime)\n\n## MatriculaAssociacao\n- id: Id (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- dataInicioContrato: Data de admissão (Type: LocalDate)\n- eSocial: eSocial (Type: String)\n- situacao: Situação (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n\n## IntegracaoContabilFonteDados\n- id: Id (Type: Long)\n- competencia: Competência (Type: YearMonth)\n- tipoDespesa: Tipos de despesa (Type: )\n- tipoProcessamento: Processamento (Type: )\n- subTipoProcessamento: Subtipo de Processamento (Type: )\n- arredondarValores: Arredondar valores? (Type: Boolean)\n- configuracaoIntegracaoContabil: Entidade contábil (Type: ConfiguracaoIntegracaoContabilAssociacao)\n- matriculasId:  (Type: Long)\n- dataPagamentoInicial: Data de pagamento final (Type: LocalDate)\n- dataPagamentoFinal: Data de pagamento inicial (Type: LocalDate)\n- selecaoAvancada: Seleção avançada (Type: SelecaoAvancadaFonteDados)\n- matriculas: Matrículas (Type: MatriculaAssociacao)\n- matriculaInicial: Matrícula inicial (Type: Integer)\n- matriculaFinal: Matrícula final (Type: Integer)\n- dataHoraExecucao: Data hora da execução (Type: LocalDateTime)\n\n## integracaoContabilAssociacao\n- id: Id (Type: Long)\n\n## integracaoContabilInconsitencia\n- id: Id (Type: Long)\n- situacao: Situação (Type: )\n- mensagem: Mensagem (Type: String)\n- integracaoContabil: Identificador da integração conbtábil (Type: integracaoContabilAssociacao)"
+}

@@ -1,4 +1,0 @@
-# TipoSuspensao
-Enum: TipoSuspensao
-- Cessação (Key: CESSACAO, Value: 1)
-- Suspensão (Key: SUSPENSAO, Value: 2)

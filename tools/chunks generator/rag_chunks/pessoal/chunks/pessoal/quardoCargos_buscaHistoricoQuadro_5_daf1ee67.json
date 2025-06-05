@@ -1,0 +1,52 @@
+{
+  "content": "## TipoAto\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## AtoMatriculaAssociacao\n- id: Id (Type: Long)\n- numeroOficial: Número oficial (Type: String)\n- tipo: Tipo de ato (Type: TipoAto)\n- ementa: Ementa (Type: String)\n\n## QuadroCargo\n- id:  (Type: Long)\n- descricao:  (Type: String)\n- inicioVigencia:  (Type: LocalDateTime)\n- percentualMinimo:  (Type: Integer)\n- atoCriacao:  (Type: AtoMatriculaAssociacao)\n- atoPercentualMinimo:  (Type: AtoMatriculaAssociacao)\n- extinto:  (Type: Boolean)\n- campoAdicional:  (Type: CampoAdicionalDto)",
+  "metadata": {
+    "chunk_id": "quardoCargos_buscaHistoricoQuadro_5_daf1ee67",
+    "section_name": "quardoCargos_buscaHistoricoQuadro",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 199,
+    "char_count": 591,
+    "overlap_with_previous": 14,
+    "overlap_with_next": 16,
+    "keywords": [
+      "numerooficial",
+      "atomatriculaassociacao",
+      "campo",
+      "tipoato",
+      "id",
+      "descricao",
+      "quadrocargo",
+      "classificacao",
+      "quadrocargos",
+      "tipo"
+    ],
+    "entities": [
+      "AtoMatriculaAssociacao",
+      "QuadroCargo",
+      "TipoAto",
+      "buscaHistoricoQuadro",
+      "quadroCargos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.198686",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "daf1ee67d195bf465d5899bf153e6eb2",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.8
+  },
+  "embeddings_text": "Section: quardoCargos_buscaHistoricoQuadro\nType: reference\nRelated to: AtoMatriculaAssociacao, QuadroCargo, TipoAto\n\n## TipoAto\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## AtoMatriculaAssociacao\n- id: Id (Type: Long)\n- numeroOficial: Número oficial (Type: String)\n- tipo: Tipo de ato (Type: TipoAto)\n- ementa: Ementa (Type: String)\n\n## QuadroCargo\n- id:  (Type: Long)\n- descricao:  (Type: String)\n- inicioVigencia:  (Type: LocalDateTime)\n- percentualMinimo:  (Type: Integer)\n- atoCriacao:  (Type: AtoMatriculaAssociacao)\n- atoPercentualMinimo:  (Type: AtoMatriculaAssociacao)\n- extinto:  (Type: Boolean)\n- campoAdicional:  (Type: CampoAdicionalDto)\n\nKeywords: numerooficial, atomatriculaassociacao, campo, tipoato, id, descricao, quadrocargo, classificacao, quadrocargos, tipo",
+  "search_text": "quardoCargos_buscaHistoricoQuadro AtoMatriculaAssociacao QuadroCargo TipoAto buscaHistoricoQuadro quadroCargos numerooficial atomatriculaassociacao campo tipoato id descricao quadrocargo classificacao quadrocargos tipo ## TipoAto\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## AtoMatriculaAssociacao\n- id: Id (Type: Long)\n- numeroOficial: Número oficial (Type: String)\n- tipo: Tipo de ato (Type: TipoAto)\n- ementa: Ementa (Type: String)\n\n## QuadroCargo\n- id:  (Type: Long)\n- descricao:  (Type: String)\n- inicioVigencia:  (Type: LocalDateTime)\n- percentualMinimo:  (Type: Integer)\n- atoCriacao:  (Type: AtoMatriculaAssociacao)\n- atoPercentualMinimo:  (Type: AtoMatriculaAssociacao)\n- extinto:  (Type: Boolean)\n- campoAdicional:  (Type: CampoAdicionalDto)"
+}

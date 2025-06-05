@@ -1,0 +1,50 @@
+{
+  "content": "- configuracaoEvento.id: Id da configuração de evento (Type: Long)\n- tipoProcessamento: Tipo do processamento (Type: )",
+  "metadata": {
+    "chunk_id": "configuracaoEvento_buscaProcessamentos_4_da9d0252",
+    "section_name": "configuracaoEvento_buscaProcessamentos",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 31,
+    "char_count": 118,
+    "overlap_with_previous": 11,
+    "overlap_with_next": 19,
+    "keywords": [
+      "configuracaoevento",
+      "tipoprocessamento",
+      "tipo"
+    ],
+    "entities": [
+      "buscaProcessamentos",
+      "MotivoRescisaoConfiguracaoEvento",
+      "AtoConfiguracaoEvento",
+      "configuracaoEvento",
+      "Base",
+      "dependenciasFonteDados",
+      "ConfiguracaoEventoFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoProcessamentoFonteDados",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.225504",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "da9d025209900fa2a93c32a23d6c81a8",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_buscaMotivosRescisao_1_0ae38fb7",
+      "configuracaoRais_buscaResponsavel_2_fd676cfc",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracaoEvento_buscaProcessamentos\nType: reference\nRelated to: buscaProcessamentos, MotivoRescisaoConfiguracaoEvento, AtoConfiguracaoEvento\n\n- configuracaoEvento.id: Id da configuração de evento (Type: Long)\n- tipoProcessamento: Tipo do processamento (Type: )\n\nKeywords: configuracaoevento, tipoprocessamento, tipo",
+  "search_text": "configuracaoEvento_buscaProcessamentos buscaProcessamentos MotivoRescisaoConfiguracaoEvento AtoConfiguracaoEvento configuracaoEvento Base dependenciasFonteDados ConfiguracaoEventoFonteDados ScriptFonteDados ConfiguracaoProcessamentoFonteDados ConfiguracaoEventoAssociacaoFonteDados configuracaoevento tipoprocessamento tipo - configuracaoEvento.id: Id da configuração de evento (Type: Long)\n- tipoProcessamento: Tipo do processamento (Type: )"
+}

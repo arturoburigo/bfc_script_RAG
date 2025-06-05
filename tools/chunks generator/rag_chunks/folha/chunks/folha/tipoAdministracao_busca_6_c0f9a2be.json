@@ -1,0 +1,50 @@
+{
+  "content": "groovy\nfonteTipoAdministracao = Dados.folha.v2.tipoAdministracao;\n\nfiltroTipoAdministracao = \"naturezaJuridica = ORGAO_LEGISLATIVO_FEDERAL\"\n\ndadosTipoAdministracao = fonteTipoAdministracao.busca(criterio: filtroTipoAdministracao,campos: \"id, descricao, subteto, naturezaJuridica, tipo\",ordenacao: \"naturezaJuridica asc\")\n\npercorrer (dadosTipoAdministracao) { itemTipoAdministracao ->\n\n}",
+  "metadata": {
+    "chunk_id": "tipoAdministracao_busca_6_c0f9a2be",
+    "section_name": "tipoAdministracao_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 111,
+    "char_count": 386,
+    "overlap_with_previous": 12,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "tipo",
+      "filtro",
+      "ordenacao",
+      "folha",
+      "tipoadministracao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "TipoAdministraçãoDadosRepresentation",
+      "Dados.folha.v2.tipoAdministracao",
+      "tipoAdministracao",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.239785",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "c0f9a2be20030bfe7c45944a6ea17b49",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: tipoAdministracao_busca\nType: example\nRelated to: TipoAdministraçãoDadosRepresentation, Dados.folha.v2.tipoAdministracao, tipoAdministracao\n\ngroovy\nfonteTipoAdministracao = Dados.folha.v2.tipoAdministracao;\n\nfiltroTipoAdministracao = \"naturezaJuridica = ORGAO_LEGISLATIVO_FEDERAL\"\n\ndadosTipoAdministracao = fonteTipoAdministracao.busca(criterio: filtroTipoAdministracao,campos: \"id, descricao, subteto, naturezaJuridica, tipo\",ordenacao: \"naturezaJuridica asc\")\n\npercorrer (dadosTipoAdministracao) { itemTipoAdministracao ->\n\n}\n\nKeywords: busca, tipo, filtro, ordenacao, folha, tipoadministracao, v2, campo, dados",
+  "search_text": "tipoAdministracao_busca TipoAdministraçãoDadosRepresentation Dados.folha.v2.tipoAdministracao tipoAdministracao busca busca tipo filtro ordenacao folha tipoadministracao v2 campo dados groovy\nfonteTipoAdministracao = Dados.folha.v2.tipoAdministracao;\n\nfiltroTipoAdministracao = \"naturezaJuridica = ORGAO_LEGISLATIVO_FEDERAL\"\n\ndadosTipoAdministracao = fonteTipoAdministracao.busca(criterio: filtroTipoAdministracao,campos: \"id, descricao, subteto, naturezaJuridica, tipo\",ordenacao: \"naturezaJuridica asc\")\n\npercorrer (dadosTipoAdministracao) { itemTipoAdministracao ->\n\n}"
+}

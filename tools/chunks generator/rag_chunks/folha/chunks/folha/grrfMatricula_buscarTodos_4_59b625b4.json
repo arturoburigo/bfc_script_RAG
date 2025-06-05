@@ -1,0 +1,48 @@
+{
+  "content": "- situacaoArquivoGrrf: Situação do envio da GRRF (Type: )\n- id: Código da GFIP (Type: Long)",
+  "metadata": {
+    "chunk_id": "grrfMatricula_buscarTodos_4_59b625b4",
+    "section_name": "grrfMatricula_buscarTodos",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 35,
+    "char_count": 91,
+    "overlap_with_previous": 7,
+    "overlap_with_next": 27,
+    "keywords": [
+      "situacaoarquivogrrf",
+      "grrfmatricula",
+      "id"
+    ],
+    "entities": [
+      "GrrfFonteDados",
+      "GrrfMatricula",
+      "GrrfPessoaFisica",
+      "grrfMatricula",
+      "CodigoMatriculaFonteDadosMinhaFolha",
+      "GrrfMatriculaFonteDados",
+      "buscarTodos",
+      "GrrfMatriculaDto"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.230300",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "59b625b4cb407991fdf58237373cca2c",
+    "related_chunks": [
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc",
+      "remuneracoes_buscaComEventos_8_6afef83d",
+      "remuneracoes_buscaComEventos_1_237ee743"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: grrfMatricula_buscarTodos\nType: reference\nRelated to: GrrfFonteDados, GrrfMatricula, GrrfPessoaFisica\n\n- situacaoArquivoGrrf: Situação do envio da GRRF (Type: )\n- id: Código da GFIP (Type: Long)\n\nKeywords: situacaoarquivogrrf, grrfmatricula, id",
+  "search_text": "grrfMatricula_buscarTodos GrrfFonteDados GrrfMatricula GrrfPessoaFisica grrfMatricula CodigoMatriculaFonteDadosMinhaFolha GrrfMatriculaFonteDados buscarTodos GrrfMatriculaDto situacaoarquivogrrf grrfmatricula id - situacaoArquivoGrrf: Situação do envio da GRRF (Type: )\n- id: Código da GFIP (Type: Long)"
+}

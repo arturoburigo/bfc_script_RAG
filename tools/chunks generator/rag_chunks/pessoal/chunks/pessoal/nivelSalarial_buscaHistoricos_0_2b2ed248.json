@@ -1,0 +1,51 @@
+{
+  "content": "NivelSalarial",
+  "metadata": {
+    "chunk_id": "nivelSalarial_buscaHistoricos_0_2b2ed248",
+    "section_name": "nivelSalarial_buscaHistoricos",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 5,
+    "char_count": 13,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 4,
+    "keywords": [
+      "nivelsalarial"
+    ],
+    "entities": [
+      "NivelSalarialAtoTipoFonteDados",
+      "NivelSalarialClasseReferenciaFonteDados",
+      "ClasseReferenciaFonteDados",
+      "NivelSalarialCompletaFonteDados",
+      "MotivoAlteracaoSalarial",
+      "NivelSalarialAtoFonteDados",
+      "NivelSalarialPlanoCargoSalarioFonteDados",
+      "NivelSalarialAssociacao",
+      "buscaHistoricos",
+      "NivelSalarialReajusteSalarialFonteDados",
+      "nivelSalarial",
+      "NivelSalarialCompletaComHistorico",
+      "CargoRemuneracaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.564878",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "2b2ed248e31f2949d3b32a165bd5b289",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: nivelSalarial_buscaHistoricos\nType: definition\nRelated to: NivelSalarialAtoTipoFonteDados, NivelSalarialClasseReferenciaFonteDados, ClasseReferenciaFonteDados\n\nNivelSalarial\n\nKeywords: nivelsalarial",
+  "search_text": "nivelSalarial_buscaHistoricos NivelSalarialAtoTipoFonteDados NivelSalarialClasseReferenciaFonteDados ClasseReferenciaFonteDados NivelSalarialCompletaFonteDados MotivoAlteracaoSalarial NivelSalarialAtoFonteDados NivelSalarialPlanoCargoSalarioFonteDados NivelSalarialAssociacao buscaHistoricos NivelSalarialReajusteSalarialFonteDados nivelSalarial NivelSalarialCompletaComHistorico CargoRemuneracaoFonteDados nivelsalarial NivelSalarial"
+}

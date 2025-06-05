@@ -1,5 +1,0 @@
-# TipoOnus
-Enum: TipoOnus
-- Cedente (Key: CEDENTE, Value: 1)
-- Cessionário (Key: CESSIONARIO, Value: 2)
-- Cedente e cessionário (Key: CEDENTE_E_CESSIONARIO, Value: 3)

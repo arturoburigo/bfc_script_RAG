@@ -1,0 +1,43 @@
+{
+  "content": "Listagem de tipo de função\n\nRepresentation Type: TipoFuncao",
+  "metadata": {
+    "chunk_id": "tipofuncao_busca_3_3a792bf8",
+    "section_name": "tipofuncao_busca",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 13,
+    "char_count": 59,
+    "overlap_with_previous": 12,
+    "overlap_with_next": 1,
+    "keywords": [
+      "tipo",
+      "funcao",
+      "tipofuncao"
+    ],
+    "entities": [
+      "busca",
+      "TipoFuncao",
+      "tipofuncao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.087873",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "3a792bf8627f0dc45b4050c63bfd0df4",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: tipofuncao_busca\nType: definition\nRelated to: busca, TipoFuncao, tipofuncao\n\nListagem de tipo de função\n\nRepresentation Type: TipoFuncao\n\nKeywords: tipo, funcao, tipofuncao",
+  "search_text": "tipofuncao_busca busca TipoFuncao tipofuncao tipo funcao tipofuncao Listagem de tipo de função\n\nRepresentation Type: TipoFuncao"
+}

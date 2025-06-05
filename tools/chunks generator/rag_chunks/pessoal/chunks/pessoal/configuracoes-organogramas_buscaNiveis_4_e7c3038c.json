@@ -1,0 +1,47 @@
+{
+  "content": "- responsavelControleVagas: É responsável pelo controle de vagas? (Type: Boolean)\n- quantidadeDigitos: Quantidade de dígitos (Type: Integer)\n- id: Id (Type: Long)\n- separador: Separador de nível (Type: )\n- nivel: Nível (Type: Integer)\n- configuracao.emUso: Configuração do organograma em uso (Type: Boolean)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "configuracoes-organogramas_buscaNiveis_4_e7c3038c",
+    "section_name": "configuracoes-organogramas_buscaNiveis",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 103,
+    "char_count": 345,
+    "overlap_with_previous": 11,
+    "overlap_with_next": 55,
+    "keywords": [
+      "separador",
+      "nivel",
+      "id",
+      "quantidadedigitos",
+      "responsavelcontrolevagas",
+      "configuracoes-organogramas"
+    ],
+    "entities": [
+      "ConfiguracaoOrganograma",
+      "configuracoes-organogramas",
+      "buscaNiveis",
+      "ConfiguracaoNivelOrganograma"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.648970",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "e7c3038c2127066a55ecec0c26e31155",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: configuracoes-organogramas_buscaNiveis\nType: reference\nRelated to: ConfiguracaoOrganograma, configuracoes-organogramas, buscaNiveis\n\n- responsavelControleVagas: É responsável pelo controle de vagas? (Type: Boolean)\n- quantidadeDigitos: Quantidade de dígitos (Type: Integer)\n- id: Id (Type: Long)\n- separador: Separador de nível (Type: )\n- nivel: Nível (Type: Integer)\n- configuracao.emUso: Configuração do organograma em uso (Type: Boolean)\n- descricao: Descrição (Type: String)\n\nKeywords: separador, nivel, id, quantidadedigitos, responsavelcontrolevagas, configuracoes-organogramas",
+  "search_text": "configuracoes-organogramas_buscaNiveis ConfiguracaoOrganograma configuracoes-organogramas buscaNiveis ConfiguracaoNivelOrganograma separador nivel id quantidadedigitos responsavelcontrolevagas configuracoes-organogramas - responsavelControleVagas: É responsável pelo controle de vagas? (Type: Boolean)\n- quantidadeDigitos: Quantidade de dígitos (Type: Integer)\n- id: Id (Type: Long)\n- separador: Separador de nível (Type: )\n- nivel: Nível (Type: Integer)\n- configuracao.emUso: Configuração do organograma em uso (Type: Boolean)\n- descricao: Descrição (Type: String)"
+}

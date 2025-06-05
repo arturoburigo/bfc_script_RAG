@@ -1,0 +1,46 @@
+{
+  "content": "Tabela auxíliar campo",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliarCampo_atualiza_0_9e675aa8",
+    "section_name": "tabelaAuxiliarCampo_atualiza",
+    "chunk_index": 0,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 7,
+    "char_count": 21,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 1,
+    "keywords": [
+      "campo",
+      "tabelaauxiliarcampo"
+    ],
+    "entities": [
+      "TabelaAuxiliarCampoImportacao",
+      "TabelaAuxiliarRegistroSemValores",
+      "TabelaAuxiliarValorSemCampo",
+      "TabelaAuxiliarAssociacao",
+      "atualiza",
+      "tabelaAuxiliarCampo",
+      "TabelaAuxiliarCampo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.216930",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "9e675aa81c534f8c8386b10de9bee730",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "tabelaAuxiliar_exclui_1_469039d5",
+      "tabelaAuxiliarValor_busca_0_9b03df81",
+      "tabelaAuxiliarCampo_busca_4_9f589243",
+      "tabelaAuxiliarCampo_exclui_1_469039d5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: tabelaAuxiliarCampo_atualiza\nType: definition\nRelated to: TabelaAuxiliarCampoImportacao, TabelaAuxiliarRegistroSemValores, TabelaAuxiliarValorSemCampo\n\nTabela auxíliar campo\n\nKeywords: campo, tabelaauxiliarcampo",
+  "search_text": "tabelaAuxiliarCampo_atualiza TabelaAuxiliarCampoImportacao TabelaAuxiliarRegistroSemValores TabelaAuxiliarValorSemCampo TabelaAuxiliarAssociacao atualiza tabelaAuxiliarCampo TabelaAuxiliarCampo campo tabelaauxiliarcampo Tabela auxíliar campo"
+}

@@ -1,4 +1,0 @@
-# TipoTrabalhador
-Enum: TipoTrabalhador
-- Urbano (Key: URBANO, Value: 1)
-- Rural (Key: RURAL, Value: 2)

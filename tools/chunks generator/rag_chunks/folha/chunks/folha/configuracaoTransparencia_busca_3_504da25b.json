@@ -1,0 +1,41 @@
+{
+  "content": "Betha Transparência\n\nRepresentation Type: ConfiguracaoTransparencia",
+  "metadata": {
+    "chunk_id": "configuracaoTransparencia_busca_3_504da25b",
+    "section_name": "configuracaoTransparencia_busca",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 15,
+    "char_count": 67,
+    "overlap_with_previous": 15,
+    "overlap_with_next": 3,
+    "keywords": [
+      "configuracaotransparencia"
+    ],
+    "entities": [
+      "configuracaoTransparencia",
+      "ConfiguracaoTransparencia",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.444403",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "504da25b9f861d75f4ad4ecd1cada6e9",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracaoTransparencia_busca\nType: definition\nRelated to: configuracaoTransparencia, ConfiguracaoTransparencia, busca\n\nBetha Transparência\n\nRepresentation Type: ConfiguracaoTransparencia\n\nKeywords: configuracaotransparencia",
+  "search_text": "configuracaoTransparencia_busca configuracaoTransparencia ConfiguracaoTransparencia busca configuracaotransparencia Betha Transparência\n\nRepresentation Type: ConfiguracaoTransparencia"
+}

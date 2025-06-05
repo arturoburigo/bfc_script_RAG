@@ -1,0 +1,56 @@
+{
+  "content": "## TabelaAuxiliarRegistroSemValores\n- id: Id (Type: Long)\n- identificador: Identificador do registro (Type: Long)\n\n## TabelaAuxiliarValorSemCampo\n- id: Id (Type: Long)\n- registro: Registro (Type: TabelaAuxiliarRegistroSemValores)\n- valor: Valor do campo (Type: String)\n\n## TabelaAuxiliarCampo\n- id: Id (Type: Long)\n- identificador: Identificador do campo (Type: String)\n- descricao: Descrição do campo (Type: String)\n- tipo: Tipo do campo (Type: )\n- exibir: Deve exibir o campo? (Type: Boolean)\n- tamanho: Tamanho do campo (Type: Integer)\n- valores: Valores do campo (Type: TabelaAuxiliarValorSemCampo)\n\n## TabelaAuxiliarAssociacao\n- id: Id (Type: Long)\n\n## TabelaAuxiliarCampoImportacao\n- id: Id (Type: Long)\n- descricao: Descrição do campo (Type: String)\n- tipo: Tipo do campo (Type: )\n- exibir: Deve exibir o campo? (Type: Boolean)\n- tamanho: Tamanho do campo (Type: Integer)\n- tabela: Tabela auxiliar (Type: TabelaAuxiliarAssociacao)\n- fonteDados:  (Type: Boolean)",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliarCampo_exclui_2_f09a3fc4",
+    "section_name": "tabelaAuxiliarCampo_exclui",
+    "chunk_index": 2,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 289,
+    "char_count": 968,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 9,
+    "keywords": [
+      "tabelaauxiliarregistrosemvalores",
+      "tabelaauxiliarcampo",
+      "tabelaauxiliarcampoimportacao",
+      "id",
+      "identificador",
+      "tabelaauxiliarassociacao",
+      "valor",
+      "registro",
+      "tabelaauxiliarvalorsemcampo",
+      "campo",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "exclui",
+      "TabelaAuxiliarCampoImportacao",
+      "TabelaAuxiliarRegistroSemValores",
+      "TabelaAuxiliarValorSemCampo",
+      "TabelaAuxiliarAssociacao",
+      "tabelaAuxiliarCampo",
+      "TabelaAuxiliarCampo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.345608",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "f09a3fc486a990c673c24c3463d4b800",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "tabelaAuxiliar_exclui_1_469039d5",
+      "tabelaAuxiliarValor_busca_0_9b03df81",
+      "fonteGenerica_exclui_2_3fa34461",
+      "tabelaAuxiliarCampo_busca_4_9f589243"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: tabelaAuxiliarCampo_exclui\nType: reference\nRelated to: exclui, TabelaAuxiliarCampoImportacao, TabelaAuxiliarRegistroSemValores\n\n## TabelaAuxiliarRegistroSemValores\n- id: Id (Type: Long)\n- identificador: Identificador do registro (Type: Long)\n\n## TabelaAuxiliarValorSemCampo\n- id: Id (Type: Long)\n- registro: Registro (Type: TabelaAuxiliarRegistroSemValores)\n- valor: Valor do campo (Type: String)\n\n## TabelaAuxiliarCampo\n- id: Id (Type: Long)\n- identificador: Identificador do campo (Type: String)\n- descricao: Descrição do campo (Type: String)\n- tipo: Tipo do campo (Type: )\n- exibir: Deve exibir o campo? (Type: Boolean)\n- tamanho: Tamanho do campo (Type: Integer)\n- valores: Valores do campo (Type: TabelaAuxiliarValorSemCampo)\n\n## TabelaAuxiliarAssociacao\n- id: Id (Type: Long)\n\n## TabelaAuxiliarCampoImportacao\n- id: Id (Type: Long)\n- descricao: Descrição do campo (Type: String)\n- tipo: Tipo do campo (Type: )\n- exibir: Deve exibir o campo? (Type: Boolean)\n- tamanho: Tamanho do campo (Type: Integer)\n- tabela: Tabela auxiliar (Type: TabelaAuxiliarAssociacao)\n- fonteDados:  (Type: Boolean)\n\nKeywords: tabelaauxiliarregistrosemvalores, tabelaauxiliarcampo, tabelaauxiliarcampoimportacao, id, identificador, tabelaauxiliarassociacao, valor, registro, tabelaauxiliarvalorsemcampo, campo, tipo, dados",
+  "search_text": "tabelaAuxiliarCampo_exclui exclui TabelaAuxiliarCampoImportacao TabelaAuxiliarRegistroSemValores TabelaAuxiliarValorSemCampo TabelaAuxiliarAssociacao tabelaAuxiliarCampo TabelaAuxiliarCampo tabelaauxiliarregistrosemvalores tabelaauxiliarcampo tabelaauxiliarcampoimportacao id identificador tabelaauxiliarassociacao valor registro tabelaauxiliarvalorsemcampo campo tipo dados ## TabelaAuxiliarRegistroSemValores\n- id: Id (Type: Long)\n- identificador: Identificador do registro (Type: Long)\n\n## TabelaAuxiliarValorSemCampo\n- id: Id (Type: Long)\n- registro: Registro (Type: TabelaAuxiliarRegistroSemValores)\n- valor: Valor do campo (Type: String)\n\n## TabelaAuxiliarCampo\n- id: Id (Type: Long)\n- identificador: Identificador do campo (Type: String)\n- descricao: Descrição do campo (Type: String)\n- tipo: Tipo do campo (Type: )\n- exibir: Deve exibir o campo? (Type: Boolean)\n- tamanho: Tamanho do campo (Type: Integer)\n- valores: Valores do campo (Type: TabelaAuxiliarValorSemCampo)\n\n## TabelaAuxiliarAssociacao\n- id: Id (Type: Long)\n\n## TabelaAuxiliarCampoImportacao\n- id: Id (Type: Long)\n- descricao: Descrição do campo (Type: String)\n- tipo: Tipo do campo (Type: )\n- exibir: Deve exibir o campo? (Type: Boolean)\n- tamanho: Tamanho do campo (Type: Integer)\n- tabela: Tabela auxiliar (Type: TabelaAuxiliarAssociacao)\n- fonteDados:  (Type: Boolean)"
+}

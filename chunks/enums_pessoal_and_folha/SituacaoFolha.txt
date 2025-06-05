@@ -1,7 +1,0 @@
-# SituacaoFolha
-Enum: SituacaoFolha
-- Pendente (Key: PENDENTE, Value: 1)
-- Calculada (Key: CALCULADA, Value: 2)
-- Fechada (Key: FECHADA, Value: 3)
-- Erro (Key: ERRO, Value: 4)
-- Lançada (Key: LANCADA, Value: 5)

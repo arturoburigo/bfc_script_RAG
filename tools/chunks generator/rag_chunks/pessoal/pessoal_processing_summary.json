@@ -1,0 +1,20 @@
+{
+  "domain": "pessoal",
+  "timestamp": "2025-06-03T23:15:06.221009",
+  "statistics": {
+    "total_sections": 75,
+    "total_chunks": 610,
+    "processing_time_seconds": 1.148911,
+    "errors_count": 0
+  },
+  "chunk_statistics": {
+    "avg_tokens": 414.42622950819674,
+    "total_tokens": 252800,
+    "unique_entities": 376,
+    "unique_keywords": 435
+  },
+  "recommendations": [
+    "Consider increasing chunk size for better context",
+    "Review 225 low-quality chunks"
+  ]
+}

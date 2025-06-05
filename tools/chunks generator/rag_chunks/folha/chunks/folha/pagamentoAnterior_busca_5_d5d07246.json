@@ -1,0 +1,54 @@
+{
+  "content": "## PagamentoAnteriorParcela\n- id: Identificador (Type: Long)\n- numero: Parcela (Type: Long)\n- rra: É RRA? (Type: Boolean)\n- competenciaInicial: Competência incial (Type: YearMonth)\n- competenciaFinal: Competência final (Type: YearMonth)\n- dataPagamento: Data de pagamento (Type: LocalDate)\n\n## DespesaFonteDados\n- id: Identificador (Type: Long)\n- tipoInscricao: Tipo de inscrição (Type: )\n- numeroInscricao: Número da inscrição (Type: String)\n- nomeInscricao: Nome da inscrição (Type: String)\n- valorDespesa: Valor da despesa (Type: BigDecimal)\n\n## MatriculaAssociacao\n- id: Id (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- dataInicioContrato: Data de admissão (Type: LocalDate)\n- eSocial: eSocial (Type: String)\n- situacao: Situação (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n\n## PagamentoAnterior\n- id: Identificador (Type: Long)\n- contemRra: Contém RRA? (Type: Boolean)\n- pagamentoParcelado: Pagamento foi parcelado? (Type: Boolean)\n- remuneracaoSalarialDevidaSucessora: Remuneração salárial é devida pela sucessora (Type: Boolean)\n- tipoPagamento: Tipo de pagamento anterior (Type: )\n- competenciaDevida: Competencia devida (Type: YearMonth)\n- dataAssinatura: Data de assinatura (Type: LocalDate)\n- parcelas: Parcelas de pagamentos (Type: PagamentoAnteriorParcela)\n- origemPagamentoAnterior: Origem do pagamento anterior (Type: String)\n- tipoProcessoRRA: Tipo de processo RRA (Type: )\n- numeroProcessoRRA: Número do processo RRA (Type: String)\n- descricaoRRA: Descrição do RRA (Type: String)\n- valorDespesasCustoJudicial: Valor das despesas com custo judicial (Type: BigDecimal)\n- valorTotalDespesasAdvogados: Valor total das despesas com advogados (Type: BigDecimal)\n- despesas: Despesas com advogados (Type: DespesaFonteDados)\n- tipoSelecaoMatricula: Tipo de seleção de matrícula (Type: )\n- matriculas: Matrículas (Type: MatriculaAssociacao)\n- restringirMatriculasLista: Restringir as matrículas a lista? (Type: Boolean)",
+  "metadata": {
+    "chunk_id": "pagamentoAnterior_busca_5_d5d07246",
+    "section_name": "pagamentoAnterior_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 589,
+    "char_count": 1955,
+    "overlap_with_previous": 33,
+    "overlap_with_next": 41,
+    "keywords": [
+      "despesafontedados",
+      "competenciainicial",
+      "pagamentoanterior",
+      "id",
+      "numero",
+      "competenciafinal",
+      "rra",
+      "pagamentoanteriorparcela",
+      "tipo",
+      "dados",
+      "matriculaassociacao"
+    ],
+    "entities": [
+      "busca",
+      "PagamentoAnterior",
+      "pagamentoAnterior",
+      "PagamentoAnteriorParcela",
+      "MatriculaAssociacao",
+      "DespesaFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.647979",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "d5d072462e34edf4a473ee5f93e4fed9",
+    "related_chunks": [
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19",
+      "remuneracoes_buscaComposicoesBasesFolha_3_3f265087",
+      "remuneracoes_buscaEventosDeFolhas_0_f817d7f1"
+    ],
+    "quality_score": 1.0
+  },
+  "embeddings_text": "Section: pagamentoAnterior_busca\nType: reference\nRelated to: busca, PagamentoAnterior, pagamentoAnterior\n\n## PagamentoAnteriorParcela\n- id: Identificador (Type: Long)\n- numero: Parcela (Type: Long)\n- rra: É RRA? (Type: Boolean)\n- competenciaInicial: Competência incial (Type: YearMonth)\n- competenciaFinal: Competência final (Type: YearMonth)\n- dataPagamento: Data de pagamento (Type: LocalDate)\n\n## DespesaFonteDados\n- id: Identificador (Type: Long)\n- tipoInscricao: Tipo de inscrição (Type: )\n- numeroInscricao: Número da inscrição (Type: String)\n- nomeInscricao: Nome da inscrição (Type: String)\n- valorDespesa: Valor da despesa (Type: BigDecimal)\n\n## MatriculaAssociacao\n- id: Id (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- dataInicioContrato: Data de admissão (Type: LocalDate)\n- eSocial: eSocial (Type: String)\n- situacao: Situação (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n\n## PagamentoAnterior\n- id: Identificador (Type: Long)\n- contemRra: Contém RRA? (Type: Boolean)\n- pagamentoParcelado: Pagamento foi parcelado? (Type: Boolean)\n- remuneracaoSalarialDevidaSucessora: Remuneração salárial é devida pela sucessora (Type: Boolean)\n- tipoPagamento: Tipo de pagamento anterior (Type: )\n- competenciaDevida: Competencia devida (Type: YearMonth)\n- dataAssinatura: Data de assinatura (Type: LocalDate)\n- parcelas: Parcelas de pagamentos (Type: PagamentoAnteriorParcela)\n- origemPagamentoAnterior: Origem do pagamento anterior (Type: String)\n- tipoProcessoRRA: Tipo de processo RRA (Type: )\n- numeroProcessoRRA: Número do processo RRA (Type: String)\n- descricaoRRA: Descrição do RRA (Type: String)\n- valorDespesasCustoJudicial: Valor das despesas com custo judicial (Type: BigDecimal)\n- valorTotalDespesasAdvogados: Valor total das despesas com advogados (Type: BigDecimal)\n- despesas: Despesas com advogados (Type: DespesaFonteDados)\n- tipoSelecaoMatricula: Tipo de seleção de matrícula (Type: )\n- matriculas: Matrículas (Type: MatriculaAssociacao)\n- restringirMatriculasLista: Restringir as matrículas a lista? (Type: Boolean)\n\nKeywords: despesafontedados, competenciainicial, pagamentoanterior, id, numero, competenciafinal, rra, pagamentoanteriorparcela, tipo, dados, matriculaassociacao",
+  "search_text": "pagamentoAnterior_busca busca PagamentoAnterior pagamentoAnterior PagamentoAnteriorParcela MatriculaAssociacao DespesaFonteDados despesafontedados competenciainicial pagamentoanterior id numero competenciafinal rra pagamentoanteriorparcela tipo dados matriculaassociacao ## PagamentoAnteriorParcela\n- id: Identificador (Type: Long)\n- numero: Parcela (Type: Long)\n- rra: É RRA? (Type: Boolean)\n- competenciaInicial: Competência incial (Type: YearMonth)\n- competenciaFinal: Competência final (Type: YearMonth)\n- dataPagamento: Data de pagamento (Type: LocalDate)\n\n## DespesaFonteDados\n- id: Identificador (Type: Long)\n- tipoInscricao: Tipo de inscrição (Type: )\n- numeroInscricao: Número da inscrição (Type: String)\n- nomeInscricao: Nome da inscrição (Type: String)\n- valorDespesa: Valor da despesa (Type: BigDecimal)\n\n## MatriculaAssociacao\n- id: Id (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- dataInicioContrato: Data de admissão (Type: LocalDate)\n- eSocial: eSocial (Type: String)\n- situacao: Situação (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n\n## PagamentoAnterior\n- id: Identificador (Type: Long)\n- contemRra: Contém RRA? (Type: Boolean)\n- pagamentoParcelado: Pagamento foi parcelado? (Type: Boolean)\n- remuneracaoSalarialDevidaSucessora: Remuneração salárial é devida pela sucessora (Type: Boolean)\n- tipoPagamento: Tipo de pagamento anterior (Type: )\n- competenciaDevida: Competencia devida (Type: YearMonth)\n- dataAssinatura: Data de assinatura (Type: LocalDate)\n- parcelas: Parcelas de pagamentos (Type: PagamentoAnteriorParcela)\n- origemPagamentoAnterior: Origem do pagamento anterior (Type: String)\n- tipoProcessoRRA: Tipo de processo RRA (Type: )\n- numeroProcessoRRA: Número do processo RRA (Type: String)\n- descricaoRRA: Descrição do RRA (Type: String)\n- valorDespesasCustoJudicial: Valor das despesas com custo judicial (Type: BigDecimal)\n- valorTotalDespesasAdvogados: Valor total das despesas com advogados (Type: BigDecimal)\n- despesas: Despesas com advogados (Type: DespesaFonteDados)\n- tipoSelecaoMatricula: Tipo de seleção de matrícula (Type: )\n- matriculas: Matrículas (Type: MatriculaAssociacao)\n- restringirMatriculasLista: Restringir as matrículas a lista? (Type: Boolean)"
+}

@@ -1,6 +1,0 @@
-# TipoMediaVantagem
-Enum: TipoMediaVantagem
-- Média horas (Key: MEDIA_HORAS, Value: 1)
-- Média valor (Key: MEDIA_VALOR, Value: 3)
-- Vantagem (Key: VANTAGEM, Value: 4)
-- Média percentual (Key: MEDIA_PERCENTUAL, Value: 2)

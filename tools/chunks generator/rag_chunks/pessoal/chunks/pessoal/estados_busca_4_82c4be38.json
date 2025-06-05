@@ -1,0 +1,45 @@
+{
+  "content": "- pais.id: Id do pais (Type: Long)\n- codigoIbge: Código no IBGE (Type: Integer)\n- nome: Nome (Type: String)\n- id: Id (Type: Long)",
+  "metadata": {
+    "chunk_id": "estados_busca_4_82c4be38",
+    "section_name": "estados_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 46,
+    "char_count": 129,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 23,
+    "keywords": [
+      "codigoibge",
+      "estados",
+      "id",
+      "nome"
+    ],
+    "entities": [
+      "Pais",
+      "estados",
+      "Estado",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.633749",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "82c4be38fb4a8b0da044deaa691c9885",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: estados_busca\nType: reference\nRelated to: Pais, estados, Estado\n\n- pais.id: Id do pais (Type: Long)\n- codigoIbge: Código no IBGE (Type: Integer)\n- nome: Nome (Type: String)\n- id: Id (Type: Long)\n\nKeywords: codigoibge, estados, id, nome",
+  "search_text": "estados_busca Pais estados Estado busca codigoibge estados id nome - pais.id: Id do pais (Type: Long)\n- codigoIbge: Código no IBGE (Type: Integer)\n- nome: Nome (Type: String)\n- id: Id (Type: Long)"
+}

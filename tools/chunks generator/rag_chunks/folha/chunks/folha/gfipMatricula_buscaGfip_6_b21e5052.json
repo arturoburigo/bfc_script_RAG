@@ -1,0 +1,52 @@
+{
+  "content": "groovy\nfonteGfipMatricula = Dados.folha.v2.gfipMatricula;\n\ndadosGfipMatricula = fonteGfipMatricula.buscaGfip(campos: \"gfipMatriculas(matricula(id), id), id, tipoProcessamento, situacaoEnvioMatricula, tipoRecolhimento\",ordenacao: \"id asc\")\n\npercorrer (dadosGfipMatricula) { itemGfipMatricula ->\n\n}",
+  "metadata": {
+    "chunk_id": "gfipMatricula_buscaGfip_6_b21e5052",
+    "section_name": "gfipMatricula_buscaGfip",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 104,
+    "char_count": 296,
+    "overlap_with_previous": 25,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "tipo",
+      "gfipmatricula",
+      "ordenacao",
+      "folha",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "GfipMatriculaDto",
+      "gfipMatricula",
+      "GfipFonteDados",
+      "Dados.folha.v2.gfipMatricula",
+      "buscaGfip",
+      "GfipMatriculaFonteDados",
+      "MatriculaGfipFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.228875",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "b21e5052b62ae246c2a424b6e4fb11db",
+    "related_chunks": [
+      "gfipMatricula_buscaGfip_0_a7181776",
+      "gfipMatricula_buscaGfip_1_1a48576c",
+      "gfipMatricula_importa_0_a7181776",
+      "gfipMatricula_buscaGfip_4_a955820e",
+      "gfipMatricula_importa_3_ad915c0f"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: gfipMatricula_buscaGfip\nType: example\nRelated to: GfipMatriculaDto, gfipMatricula, GfipFonteDados\n\ngroovy\nfonteGfipMatricula = Dados.folha.v2.gfipMatricula;\n\ndadosGfipMatricula = fonteGfipMatricula.buscaGfip(campos: \"gfipMatriculas(matricula(id), id), id, tipoProcessamento, situacaoEnvioMatricula, tipoRecolhimento\",ordenacao: \"id asc\")\n\npercorrer (dadosGfipMatricula) { itemGfipMatricula ->\n\n}\n\nKeywords: busca, tipo, gfipmatricula, ordenacao, folha, v2, campo, dados",
+  "search_text": "gfipMatricula_buscaGfip GfipMatriculaDto gfipMatricula GfipFonteDados Dados.folha.v2.gfipMatricula buscaGfip GfipMatriculaFonteDados MatriculaGfipFonteDados busca tipo gfipmatricula ordenacao folha v2 campo dados groovy\nfonteGfipMatricula = Dados.folha.v2.gfipMatricula;\n\ndadosGfipMatricula = fonteGfipMatricula.buscaGfip(campos: \"gfipMatriculas(matricula(id), id), id, tipoProcessamento, situacaoEnvioMatricula, tipoRecolhimento\",ordenacao: \"id asc\")\n\npercorrer (dadosGfipMatricula) { itemGfipMatricula ->\n\n}"
+}

@@ -1,0 +1,45 @@
+{
+  "content": "buscaHorarios (GET)\nMethod Description: Listagem de horários\n\nRepresentation Type: HorarioFonteDados",
+  "metadata": {
+    "chunk_id": "horarios_buscaHorarios_1_7814b50b",
+    "section_name": "horarios_buscaHorarios",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 24,
+    "char_count": 100,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 13,
+    "keywords": [
+      "busca",
+      "dados",
+      "horarios"
+    ],
+    "entities": [
+      "HorarioIntervalo",
+      "HorarioFonteDados",
+      "horarios",
+      "buscaHorarios",
+      "HorarioMarcacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.578400",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "7814b50b41d095ca5dd346353bc1587c",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "horarios_buscaHorarios_4_86131741"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: horarios_buscaHorarios\nType: definition\nRelated to: HorarioIntervalo, HorarioFonteDados, horarios\n\nbuscaHorarios (GET)\nMethod Description: Listagem de horários\n\nRepresentation Type: HorarioFonteDados\n\nKeywords: busca, dados, horarios",
+  "search_text": "horarios_buscaHorarios HorarioIntervalo HorarioFonteDados horarios buscaHorarios HorarioMarcacao busca dados horarios buscaHorarios (GET)\nMethod Description: Listagem de horários\n\nRepresentation Type: HorarioFonteDados"
+}

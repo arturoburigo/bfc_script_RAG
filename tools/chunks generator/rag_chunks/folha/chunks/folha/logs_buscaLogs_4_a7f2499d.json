@@ -1,0 +1,54 @@
+{
+  "content": "- subTipoProcessamento:  (Type: )\n- matricula.organograma.descricao:  (Type: String)\n- matricula.codigoMatricula.contrato:  (Type: String)\n- matricula.organograma.id:  (Type: Long)\n- matricula.tipo:  (Type: )\n- usuarioCalculo:  (Type: String)\n- tipoProcessamento:  (Type: )\n- matricula.codigoMatricula.numero:  (Type: String)\n- tipoMensagem:  (Type: )\n- matricula.id:  (Type: Long)\n- competencia:  (Type: YearMonth)\n- dataCalculo:  (Type: LocalDateTime)",
+  "metadata": {
+    "chunk_id": "logs_buscaLogs_4_a7f2499d",
+    "section_name": "logs_buscaLogs",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 144,
+    "char_count": 453,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 31,
+    "keywords": [
+      "tipoprocessamento",
+      "subtipoprocessamento",
+      "usuariocalculo",
+      "logs",
+      "tipomensagem",
+      "tipo",
+      "competencia"
+    ],
+    "entities": [
+      "OrganogramaAssociacao",
+      "ConfiguracaoNivelOrganogramaAssociacao",
+      "CodigoMatriculaAssociacaoErroCalculo",
+      "busca",
+      "GrupoFuncional",
+      "ConfiguracaoOrganogramaAssociacao",
+      "CalculoFolhaMensagem",
+      "PessoaFisica",
+      "logs",
+      "MatriculaAssociacaoErroCalculo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.296243",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "a7f2499d382d76e2391cb8ff24641ca3",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: logs_buscaLogs\nType: reference\nRelated to: OrganogramaAssociacao, ConfiguracaoNivelOrganogramaAssociacao, CodigoMatriculaAssociacaoErroCalculo\n\n- subTipoProcessamento:  (Type: )\n- matricula.organograma.descricao:  (Type: String)\n- matricula.codigoMatricula.contrato:  (Type: String)\n- matricula.organograma.id:  (Type: Long)\n- matricula.tipo:  (Type: )\n- usuarioCalculo:  (Type: String)\n- tipoProcessamento:  (Type: )\n- matricula.codigoMatricula.numero:  (Type: String)\n- tipoMensagem:  (Type: )\n- matricula.id:  (Type: Long)\n- competencia:  (Type: YearMonth)\n- dataCalculo:  (Type: LocalDateTime)\n\nKeywords: tipoprocessamento, subtipoprocessamento, usuariocalculo, logs, tipomensagem, tipo, competencia",
+  "search_text": "logs_buscaLogs OrganogramaAssociacao ConfiguracaoNivelOrganogramaAssociacao CodigoMatriculaAssociacaoErroCalculo busca GrupoFuncional ConfiguracaoOrganogramaAssociacao CalculoFolhaMensagem PessoaFisica logs MatriculaAssociacaoErroCalculo tipoprocessamento subtipoprocessamento usuariocalculo logs tipomensagem tipo competencia - subTipoProcessamento:  (Type: )\n- matricula.organograma.descricao:  (Type: String)\n- matricula.codigoMatricula.contrato:  (Type: String)\n- matricula.organograma.id:  (Type: Long)\n- matricula.tipo:  (Type: )\n- usuarioCalculo:  (Type: String)\n- tipoProcessamento:  (Type: )\n- matricula.codigoMatricula.numero:  (Type: String)\n- tipoMensagem:  (Type: )\n- matricula.id:  (Type: Long)\n- competencia:  (Type: YearMonth)\n- dataCalculo:  (Type: LocalDateTime)"
+}

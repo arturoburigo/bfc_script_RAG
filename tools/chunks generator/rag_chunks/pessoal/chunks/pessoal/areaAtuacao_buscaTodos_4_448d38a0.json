@@ -1,0 +1,44 @@
+{
+  "content": "- id:  (Type: Long)\n- descricao:  (Type: String)",
+  "metadata": {
+    "chunk_id": "areaAtuacao_buscaTodos_4_448d38a0",
+    "section_name": "areaAtuacao_buscaTodos",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 18,
+    "char_count": 48,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 11,
+    "keywords": [
+      "areaatuacao",
+      "id",
+      "descricao"
+    ],
+    "entities": [
+      "areaatuacao",
+      "Cbo",
+      "buscatodos",
+      "AreaAtuacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.212666",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "448d38a096ae76eb70708e77984161f4",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "cbos_busca_2_eda9679d"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: areaAtuacao_buscaTodos\nType: reference\nRelated to: areaatuacao, Cbo, buscatodos\n\n- id:  (Type: Long)\n- descricao:  (Type: String)\n\nKeywords: areaatuacao, id, descricao",
+  "search_text": "areaAtuacao_buscaTodos areaatuacao Cbo buscatodos AreaAtuacao areaatuacao id descricao - id:  (Type: Long)\n- descricao:  (Type: String)"
+}

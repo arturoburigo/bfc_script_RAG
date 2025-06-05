@@ -1,0 +1,46 @@
+{
+  "content": "importa (POST)\nMethod Description: Importar matricula para GRRF\n\nRepresentation Type: GrrfMatriculaDto",
+  "metadata": {
+    "chunk_id": "grrfMatricula_importa_1_55008250",
+    "section_name": "grrfMatricula_importa",
+    "chunk_index": 1,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 26,
+    "char_count": 102,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 15,
+    "keywords": [
+      "grrfmatricula"
+    ],
+    "entities": [
+      "GrrfFonteDados",
+      "GrrfMatricula",
+      "GrrfPessoaFisica",
+      "grrfMatricula",
+      "CodigoMatriculaFonteDadosMinhaFolha",
+      "importa",
+      "GrrfMatriculaFonteDados",
+      "GrrfMatriculaDto"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.143627",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "550082500ab244b1b3b732e5dd280162",
+    "related_chunks": [
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc",
+      "remuneracoes_buscaComEventos_8_6afef83d",
+      "remuneracoes_buscaComEventos_1_237ee743"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: grrfMatricula_importa\nType: definition\nRelated to: GrrfFonteDados, GrrfMatricula, GrrfPessoaFisica\n\nimporta (POST)\nMethod Description: Importar matricula para GRRF\n\nRepresentation Type: GrrfMatriculaDto\n\nKeywords: grrfmatricula",
+  "search_text": "grrfMatricula_importa GrrfFonteDados GrrfMatricula GrrfPessoaFisica grrfMatricula CodigoMatriculaFonteDadosMinhaFolha importa GrrfMatriculaFonteDados GrrfMatriculaDto grrfmatricula importa (POST)\nMethod Description: Importar matricula para GRRF\n\nRepresentation Type: GrrfMatriculaDto"
+}

@@ -1,0 +1,53 @@
+{
+  "content": "groovy\nfonteGrrfMatricula = Dados.folha.v2.grrfMatricula;\n\ndadosGrrfMatricula = fonteGrrfMatricula.buscarTodos(campos: \"id, situacaoArquivoGrrf\",ordenacao: \"id asc\")\n\npercorrer (dadosGrrfMatricula) { itemGrrfMatricula ->\n\n}",
+  "metadata": {
+    "chunk_id": "grrfMatricula_buscarTodos_6_363de695",
+    "section_name": "grrfMatricula_buscarTodos",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 83,
+    "char_count": 223,
+    "overlap_with_previous": 15,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "grrfmatricula",
+      "ordenacao",
+      "v2",
+      "folha",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "GrrfFonteDados",
+      "GrrfMatricula",
+      "GrrfPessoaFisica",
+      "grrfMatricula",
+      "CodigoMatriculaFonteDadosMinhaFolha",
+      "GrrfMatriculaFonteDados",
+      "buscarTodos",
+      "GrrfMatriculaDto",
+      "Dados.folha.v2.grrfMatricula"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.231273",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "363de69513548da75cfc448ed80e93ed",
+    "related_chunks": [
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc",
+      "remuneracoes_buscaComEventos_8_6afef83d",
+      "remuneracoes_buscaComEventos_1_237ee743"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: grrfMatricula_buscarTodos\nType: example\nRelated to: GrrfFonteDados, GrrfMatricula, GrrfPessoaFisica\n\ngroovy\nfonteGrrfMatricula = Dados.folha.v2.grrfMatricula;\n\ndadosGrrfMatricula = fonteGrrfMatricula.buscarTodos(campos: \"id, situacaoArquivoGrrf\",ordenacao: \"id asc\")\n\npercorrer (dadosGrrfMatricula) { itemGrrfMatricula ->\n\n}\n\nKeywords: busca, grrfmatricula, ordenacao, v2, folha, campo, dados",
+  "search_text": "grrfMatricula_buscarTodos GrrfFonteDados GrrfMatricula GrrfPessoaFisica grrfMatricula CodigoMatriculaFonteDadosMinhaFolha GrrfMatriculaFonteDados buscarTodos GrrfMatriculaDto Dados.folha.v2.grrfMatricula busca grrfmatricula ordenacao v2 folha campo dados groovy\nfonteGrrfMatricula = Dados.folha.v2.grrfMatricula;\n\ndadosGrrfMatricula = fonteGrrfMatricula.buscarTodos(campos: \"id, situacaoArquivoGrrf\",ordenacao: \"id asc\")\n\npercorrer (dadosGrrfMatricula) { itemGrrfMatricula ->\n\n}"
+}

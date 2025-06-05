@@ -1,0 +1,47 @@
+{
+  "content": "- grupoTrabalhador: Grupo de trabalhador (Type: )\n- codigoESocial: Código do eSocial (Type: String)\n- id: Id (Type: Long)\n- descricao: descricao (Type: String)",
+  "metadata": {
+    "chunk_id": "vinculoEmpregaticio_buscaCategoriasTrabalhador_4_0eedb897",
+    "section_name": "vinculoEmpregaticio_buscaCategoriasTrabalhador",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 49,
+    "char_count": 159,
+    "overlap_with_previous": 8,
+    "overlap_with_next": 28,
+    "keywords": [
+      "codigoesocial",
+      "id",
+      "descricao",
+      "grupotrabalhador",
+      "vinculoempregaticio"
+    ],
+    "entities": [
+      "buscaCategoriasTrabalhador",
+      "VinculoEmpregaticioMotivoRescisaoFonteDados",
+      "vinculoEmpregaticio",
+      "VinculoEmpregaticioCategoriaTrabalhadorFonteDados",
+      "VinculoEmpregaticioFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.201776",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "0eedb8972758deb3c0782a4c25ea2a80",
+    "related_chunks": [
+      "vinculoEmpregaticio_busca_2_802b9c15",
+      "vinculoEmpregaticio_buscaCategoriasTrabalhador_3_934e4e28",
+      "cargo_busca_3_b8c35b40",
+      "cargo_buscaTodos_3_e9113024",
+      "cargo_buscaTodos_1_9c0edd5b"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: vinculoEmpregaticio_buscaCategoriasTrabalhador\nType: reference\nRelated to: buscaCategoriasTrabalhador, VinculoEmpregaticioMotivoRescisaoFonteDados, vinculoEmpregaticio\n\n- grupoTrabalhador: Grupo de trabalhador (Type: )\n- codigoESocial: Código do eSocial (Type: String)\n- id: Id (Type: Long)\n- descricao: descricao (Type: String)\n\nKeywords: codigoesocial, id, descricao, grupotrabalhador, vinculoempregaticio",
+  "search_text": "vinculoEmpregaticio_buscaCategoriasTrabalhador buscaCategoriasTrabalhador VinculoEmpregaticioMotivoRescisaoFonteDados vinculoEmpregaticio VinculoEmpregaticioCategoriaTrabalhadorFonteDados VinculoEmpregaticioFonteDados codigoesocial id descricao grupotrabalhador vinculoempregaticio - grupoTrabalhador: Grupo de trabalhador (Type: )\n- codigoESocial: Código do eSocial (Type: String)\n- id: Id (Type: Long)\n- descricao: descricao (Type: String)"
+}

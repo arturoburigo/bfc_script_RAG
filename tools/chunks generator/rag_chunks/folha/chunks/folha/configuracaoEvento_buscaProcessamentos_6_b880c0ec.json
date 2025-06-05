@@ -1,0 +1,57 @@
+{
+  "content": "groovy\nfonteConfiguracaoEvento = Dados.folha.v2.configuracaoEvento;\n\nfiltroConfiguracaoEvento = \"tipoProcessamento = RESCISAO\"\n\ndadosConfiguracaoEvento = fonteConfiguracaoEvento.buscaProcessamentos(criterio: filtroConfiguracaoEvento,campos: \"id, tipoProcessamento, subTipos\",ordenacao: \"tipoProcessamento,configuracaoEvento.id asc\")\n\npercorrer (dadosConfiguracaoEvento) { itemConfiguracaoEvento ->\n\n}",
+  "metadata": {
+    "chunk_id": "configuracaoEvento_buscaProcessamentos_6_b880c0ec",
+    "section_name": "configuracaoEvento_buscaProcessamentos",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 112,
+    "char_count": 400,
+    "overlap_with_previous": 17,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "configuracaoevento",
+      "tipo",
+      "filtro",
+      "ordenacao",
+      "folha",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Dados.folha.v2.configuracaoEvento",
+      "buscaProcessamentos",
+      "MotivoRescisaoConfiguracaoEvento",
+      "AtoConfiguracaoEvento",
+      "configuracaoEvento",
+      "Base",
+      "dependenciasFonteDados",
+      "ConfiguracaoEventoFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoProcessamentoFonteDados",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.227793",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "b880c0ec557ab659a1b6575329aabf58",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_buscaMotivosRescisao_1_0ae38fb7",
+      "configuracaoRais_buscaResponsavel_2_fd676cfc",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: configuracaoEvento_buscaProcessamentos\nType: example\nRelated to: Dados.folha.v2.configuracaoEvento, buscaProcessamentos, MotivoRescisaoConfiguracaoEvento\n\ngroovy\nfonteConfiguracaoEvento = Dados.folha.v2.configuracaoEvento;\n\nfiltroConfiguracaoEvento = \"tipoProcessamento = RESCISAO\"\n\ndadosConfiguracaoEvento = fonteConfiguracaoEvento.buscaProcessamentos(criterio: filtroConfiguracaoEvento,campos: \"id, tipoProcessamento, subTipos\",ordenacao: \"tipoProcessamento,configuracaoEvento.id asc\")\n\npercorrer (dadosConfiguracaoEvento) { itemConfiguracaoEvento ->\n\n}\n\nKeywords: busca, configuracaoevento, tipo, filtro, ordenacao, folha, v2, campo, dados",
+  "search_text": "configuracaoEvento_buscaProcessamentos Dados.folha.v2.configuracaoEvento buscaProcessamentos MotivoRescisaoConfiguracaoEvento AtoConfiguracaoEvento configuracaoEvento Base dependenciasFonteDados ConfiguracaoEventoFonteDados ScriptFonteDados ConfiguracaoProcessamentoFonteDados ConfiguracaoEventoAssociacaoFonteDados busca configuracaoevento tipo filtro ordenacao folha v2 campo dados groovy\nfonteConfiguracaoEvento = Dados.folha.v2.configuracaoEvento;\n\nfiltroConfiguracaoEvento = \"tipoProcessamento = RESCISAO\"\n\ndadosConfiguracaoEvento = fonteConfiguracaoEvento.buscaProcessamentos(criterio: filtroConfiguracaoEvento,campos: \"id, tipoProcessamento, subTipos\",ordenacao: \"tipoProcessamento,configuracaoEvento.id asc\")\n\npercorrer (dadosConfiguracaoEvento) { itemConfiguracaoEvento ->\n\n}"
+}

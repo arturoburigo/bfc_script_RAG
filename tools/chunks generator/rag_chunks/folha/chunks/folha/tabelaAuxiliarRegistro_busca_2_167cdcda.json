@@ -1,0 +1,47 @@
+{
+  "content": "Listagem de registro das tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliarRegistro",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliarRegistro_busca_2_167cdcda",
+    "section_name": "tabelaAuxiliarRegistro_busca",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 19,
+    "char_count": 88,
+    "overlap_with_previous": 18,
+    "overlap_with_next": 19,
+    "keywords": [
+      "tabelaauxiliarregistro"
+    ],
+    "entities": [
+      "busca",
+      "TabelaAuxiliarCampoSemValores",
+      "TabelaAuxiliarAssociacao",
+      "TabelaAuxiliarRegistro",
+      "TabelaAuxiliarRegistroImportacao",
+      "tabelaAuxiliarRegistro",
+      "TabelaAuxiliarCampoAssociacao",
+      "TabelaAuxiliarValorSemRegistro",
+      "TabelaAuxiliarValorAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.506858",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "167cdcda1c37cf7a833e8fc290cb56a6",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "tabelaAuxiliar_exclui_1_469039d5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: tabelaAuxiliarRegistro_busca\nType: definition\nRelated to: busca, TabelaAuxiliarCampoSemValores, TabelaAuxiliarAssociacao\n\nListagem de registro das tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliarRegistro\n\nKeywords: tabelaauxiliarregistro",
+  "search_text": "tabelaAuxiliarRegistro_busca busca TabelaAuxiliarCampoSemValores TabelaAuxiliarAssociacao TabelaAuxiliarRegistro TabelaAuxiliarRegistroImportacao tabelaAuxiliarRegistro TabelaAuxiliarCampoAssociacao TabelaAuxiliarValorSemRegistro TabelaAuxiliarValorAssociacao tabelaauxiliarregistro Listagem de registro das tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliarRegistro"
+}

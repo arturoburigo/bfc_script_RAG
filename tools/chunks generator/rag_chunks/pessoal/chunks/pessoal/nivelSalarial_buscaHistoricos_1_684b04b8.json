@@ -1,0 +1,52 @@
+{
+  "content": "buscaHistoricos (GET)\nMethod Description: Listagem de históricos de níveis salariais\n\nRepresentation Type: NivelSalarialCompletaComHistorico",
+  "metadata": {
+    "chunk_id": "nivelSalarial_buscaHistoricos_1_684b04b8",
+    "section_name": "nivelSalarial_buscaHistoricos",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 36,
+    "char_count": 140,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 24,
+    "keywords": [
+      "nivelsalarial",
+      "busca"
+    ],
+    "entities": [
+      "NivelSalarialAtoTipoFonteDados",
+      "NivelSalarialClasseReferenciaFonteDados",
+      "ClasseReferenciaFonteDados",
+      "NivelSalarialCompletaFonteDados",
+      "MotivoAlteracaoSalarial",
+      "NivelSalarialAtoFonteDados",
+      "NivelSalarialPlanoCargoSalarioFonteDados",
+      "NivelSalarialAssociacao",
+      "buscaHistoricos",
+      "NivelSalarialReajusteSalarialFonteDados",
+      "nivelSalarial",
+      "NivelSalarialCompletaComHistorico",
+      "CargoRemuneracaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.564945",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "684b04b89aa42735851ef1840e492fcb",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: nivelSalarial_buscaHistoricos\nType: definition\nRelated to: NivelSalarialAtoTipoFonteDados, NivelSalarialClasseReferenciaFonteDados, ClasseReferenciaFonteDados\n\nbuscaHistoricos (GET)\nMethod Description: Listagem de históricos de níveis salariais\n\nRepresentation Type: NivelSalarialCompletaComHistorico\n\nKeywords: nivelsalarial, busca",
+  "search_text": "nivelSalarial_buscaHistoricos NivelSalarialAtoTipoFonteDados NivelSalarialClasseReferenciaFonteDados ClasseReferenciaFonteDados NivelSalarialCompletaFonteDados MotivoAlteracaoSalarial NivelSalarialAtoFonteDados NivelSalarialPlanoCargoSalarioFonteDados NivelSalarialAssociacao buscaHistoricos NivelSalarialReajusteSalarialFonteDados nivelSalarial NivelSalarialCompletaComHistorico CargoRemuneracaoFonteDados nivelsalarial busca buscaHistoricos (GET)\nMethod Description: Listagem de históricos de níveis salariais\n\nRepresentation Type: NivelSalarialCompletaComHistorico"
+}

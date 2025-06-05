@@ -1,0 +1,46 @@
+{
+  "content": "atualiza (PUT)\n\nRepresentation Type: TabelaAuxiliarValorImportacao",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliarValor_atualiza_1_5fa373e9",
+    "section_name": "tabelaAuxiliarValor_atualiza",
+    "chunk_index": 1,
+    "total_chunks": 5,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 16,
+    "char_count": 66,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 2,
+    "keywords": [
+      "tabelaauxiliarvalor"
+    ],
+    "entities": [
+      "TabelaAuxiliarRegistroSemValores",
+      "TabelaAuxiliarCampoSemValores",
+      "TabelaAuxiliarRegistroAssociacao",
+      "TabelaAuxiliarValorImportacao",
+      "atualiza",
+      "TabelaAuxiliarCampoAssociacao",
+      "tabelaAuxiliarValor",
+      "TabelaAuxiliarValorSemRegistro"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.441529",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "5fa373e9b459c89b67ee6c9c67f940f5",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "tabelaAuxiliar_exclui_1_469039d5",
+      "tabelaAuxiliarValor_busca_0_9b03df81",
+      "tabelaAuxiliarCampo_busca_4_9f589243",
+      "tabelaAuxiliarCampo_exclui_1_469039d5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tabelaAuxiliarValor_atualiza\nType: definition\nRelated to: TabelaAuxiliarRegistroSemValores, TabelaAuxiliarCampoSemValores, TabelaAuxiliarRegistroAssociacao\n\natualiza (PUT)\n\nRepresentation Type: TabelaAuxiliarValorImportacao\n\nKeywords: tabelaauxiliarvalor",
+  "search_text": "tabelaAuxiliarValor_atualiza TabelaAuxiliarRegistroSemValores TabelaAuxiliarCampoSemValores TabelaAuxiliarRegistroAssociacao TabelaAuxiliarValorImportacao atualiza TabelaAuxiliarCampoAssociacao tabelaAuxiliarValor TabelaAuxiliarValorSemRegistro tabelaauxiliarvalor atualiza (PUT)\n\nRepresentation Type: TabelaAuxiliarValorImportacao"
+}

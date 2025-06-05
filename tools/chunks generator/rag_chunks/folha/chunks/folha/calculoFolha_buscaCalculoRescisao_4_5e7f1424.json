@@ -1,0 +1,49 @@
+{
+  "content": "- motivoRescisao.descricao: Descrição do motivo de rescisão (Type: String)\n- motivoRescisao.id: Identificador do motivo de rescisão (Type: Long)\n- id: Identificador (Type: Long)",
+  "metadata": {
+    "chunk_id": "calculoFolha_buscaCalculoRescisao_4_5e7f1424",
+    "section_name": "calculoFolha_buscaCalculoRescisao",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 52,
+    "char_count": 177,
+    "overlap_with_previous": 8,
+    "overlap_with_next": 21,
+    "keywords": [
+      "id",
+      "calculofolha"
+    ],
+    "entities": [
+      "AvisoPrevioCalculoFolhaRescisao",
+      "buscaCalculoRescisao",
+      "NaturezaTextoJuridico",
+      "SindicatoFuncionario",
+      "PessoaJuridica",
+      "calculoFolha",
+      "TipoAto",
+      "CalculoFolhaRescisaoFonteDados",
+      "AtoFonteDados",
+      "MotivoRescisaoCalculoFolhaRescisao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.645492",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "5e7f1424a8cf5b2f64c1354d8cd80018",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: calculoFolha_buscaCalculoRescisao\nType: reference\nRelated to: AvisoPrevioCalculoFolhaRescisao, buscaCalculoRescisao, NaturezaTextoJuridico\n\n- motivoRescisao.descricao: Descrição do motivo de rescisão (Type: String)\n- motivoRescisao.id: Identificador do motivo de rescisão (Type: Long)\n- id: Identificador (Type: Long)\n\nKeywords: id, calculofolha",
+  "search_text": "calculoFolha_buscaCalculoRescisao AvisoPrevioCalculoFolhaRescisao buscaCalculoRescisao NaturezaTextoJuridico SindicatoFuncionario PessoaJuridica calculoFolha TipoAto CalculoFolhaRescisaoFonteDados AtoFonteDados MotivoRescisaoCalculoFolhaRescisao id calculofolha - motivoRescisao.descricao: Descrição do motivo de rescisão (Type: String)\n- motivoRescisao.id: Identificador do motivo de rescisão (Type: Long)\n- id: Identificador (Type: Long)"
+}

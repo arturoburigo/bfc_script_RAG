@@ -1,0 +1,52 @@
+{
+  "content": "groovy\nfonteMediasVantagens = Dados.folha.v2.mediasVantagens;\n\nfiltroMediasVantagens = \"id = null and configuracaoEvento.codigo = null\"\n\ndadosMediasVantagens = fonteMediasVantagens.busca(criterio: filtroMediasVantagens,campos: \"id, tipoMediaVantagem, configuracaoEvento(id, codigo, descricao), eventosComposicao(configuracaoEvento(id, codigo, descricao), id, periodo, abrangencia, valor, integralizar)\",ordenacao: \"grupoMediaVantagem asc\")\n\npercorrer (dadosMediasVantagens) { itemMediasVantagens ->\n\n}",
+  "metadata": {
+    "chunk_id": "mediasVantagens_busca_6_7a1576c1",
+    "section_name": "mediasVantagens_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 150,
+    "char_count": 501,
+    "overlap_with_previous": 29,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "tipo",
+      "mediasvantagens",
+      "filtro",
+      "ordenacao",
+      "folha",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Dados.folha.v2.mediasVantagens",
+      "mediasVantagens",
+      "busca",
+      "EventosAssociacaoFonteDados",
+      "EventosComposicaoAssociacaoFonteDados",
+      "MediaVantagemFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.288940",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "7a1576c1595049839928ab8fca88310f",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: mediasVantagens_busca\nType: example\nRelated to: Dados.folha.v2.mediasVantagens, mediasVantagens, busca\n\ngroovy\nfonteMediasVantagens = Dados.folha.v2.mediasVantagens;\n\nfiltroMediasVantagens = \"id = null and configuracaoEvento.codigo = null\"\n\ndadosMediasVantagens = fonteMediasVantagens.busca(criterio: filtroMediasVantagens,campos: \"id, tipoMediaVantagem, configuracaoEvento(id, codigo, descricao), eventosComposicao(configuracaoEvento(id, codigo, descricao), id, periodo, abrangencia, valor, integralizar)\",ordenacao: \"grupoMediaVantagem asc\")\n\npercorrer (dadosMediasVantagens) { itemMediasVantagens ->\n\n}\n\nKeywords: busca, tipo, mediasvantagens, filtro, ordenacao, folha, v2, campo, dados",
+  "search_text": "mediasVantagens_busca Dados.folha.v2.mediasVantagens mediasVantagens busca EventosAssociacaoFonteDados EventosComposicaoAssociacaoFonteDados MediaVantagemFonteDados busca tipo mediasvantagens filtro ordenacao folha v2 campo dados groovy\nfonteMediasVantagens = Dados.folha.v2.mediasVantagens;\n\nfiltroMediasVantagens = \"id = null and configuracaoEvento.codigo = null\"\n\ndadosMediasVantagens = fonteMediasVantagens.busca(criterio: filtroMediasVantagens,campos: \"id, tipoMediaVantagem, configuracaoEvento(id, codigo, descricao), eventosComposicao(configuracaoEvento(id, codigo, descricao), id, periodo, abrangencia, valor, integralizar)\",ordenacao: \"grupoMediaVantagem asc\")\n\npercorrer (dadosMediasVantagens) { itemMediasVantagens ->\n\n}"
+}

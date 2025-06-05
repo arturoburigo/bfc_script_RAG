@@ -1,0 +1,48 @@
+{
+  "content": "groovy\nfonteAreaAtuacao = Dados.pessoal.v2.areaAtuacao;\n\nfiltroAreaAtuacao = \"id = null\"\n\ndadosAreaAtuacao = fonteAreaAtuacao.areaatuacao(criterio: filtroAreaAtuacao,campos: \"cbo(id, descricao, codigoClassificacao), id, descricao\")\n\npercorrer (dadosAreaAtuacao) { itemAreaAtuacao ->\n\n}",
+  "metadata": {
+    "chunk_id": "areaAtuacao_areaatuacao_6_135d9d4b",
+    "section_name": "areaAtuacao_areaatuacao",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 96,
+    "char_count": 285,
+    "overlap_with_previous": 13,
+    "overlap_with_next": 0,
+    "keywords": [
+      "areaatuacao",
+      "pessoal",
+      "filtro",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "areaatuacao",
+      "Cbo",
+      "Dados.pessoal.v2.areaAtuacao",
+      "AreaAtuacao",
+      "buscatodos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.379969",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "135d9d4bffdc87420c9c9f9ecc84ffef",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "cbos_busca_2_eda9679d"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: areaAtuacao_areaatuacao\nType: example\nRelated to: areaatuacao, Cbo, Dados.pessoal.v2.areaAtuacao\n\ngroovy\nfonteAreaAtuacao = Dados.pessoal.v2.areaAtuacao;\n\nfiltroAreaAtuacao = \"id = null\"\n\ndadosAreaAtuacao = fonteAreaAtuacao.areaatuacao(criterio: filtroAreaAtuacao,campos: \"cbo(id, descricao, codigoClassificacao), id, descricao\")\n\npercorrer (dadosAreaAtuacao) { itemAreaAtuacao ->\n\n}\n\nKeywords: areaatuacao, pessoal, filtro, v2, campo, dados",
+  "search_text": "areaAtuacao_areaatuacao areaatuacao Cbo Dados.pessoal.v2.areaAtuacao AreaAtuacao buscatodos areaatuacao pessoal filtro v2 campo dados groovy\nfonteAreaAtuacao = Dados.pessoal.v2.areaAtuacao;\n\nfiltroAreaAtuacao = \"id = null\"\n\ndadosAreaAtuacao = fonteAreaAtuacao.areaatuacao(criterio: filtroAreaAtuacao,campos: \"cbo(id, descricao, codigoClassificacao), id, descricao\")\n\npercorrer (dadosAreaAtuacao) { itemAreaAtuacao ->\n\n}"
+}

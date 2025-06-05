@@ -1,0 +1,47 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de campos das tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliarCampo",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliarCampo_busca_1_cfb58bee",
+    "section_name": "tabelaAuxiliarCampo_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 27,
+    "char_count": 115,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 18,
+    "keywords": [
+      "busca",
+      "campo",
+      "tabelaauxiliarcampo"
+    ],
+    "entities": [
+      "TabelaAuxiliarCampoImportacao",
+      "TabelaAuxiliarRegistroSemValores",
+      "TabelaAuxiliarValorSemCampo",
+      "busca",
+      "TabelaAuxiliarAssociacao",
+      "tabelaAuxiliarCampo",
+      "TabelaAuxiliarCampo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.142534",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "cfb58bee3fb28fc56109a681d585be48",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "tabelaAuxiliar_exclui_1_469039d5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tabelaAuxiliarCampo_busca\nType: definition\nRelated to: TabelaAuxiliarCampoImportacao, TabelaAuxiliarRegistroSemValores, TabelaAuxiliarValorSemCampo\n\nbusca (GET)\nMethod Description: Listagem de campos das tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliarCampo\n\nKeywords: busca, campo, tabelaauxiliarcampo",
+  "search_text": "tabelaAuxiliarCampo_busca TabelaAuxiliarCampoImportacao TabelaAuxiliarRegistroSemValores TabelaAuxiliarValorSemCampo busca TabelaAuxiliarAssociacao tabelaAuxiliarCampo TabelaAuxiliarCampo busca campo tabelaauxiliarcampo busca (GET)\nMethod Description: Listagem de campos das tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliarCampo"
+}

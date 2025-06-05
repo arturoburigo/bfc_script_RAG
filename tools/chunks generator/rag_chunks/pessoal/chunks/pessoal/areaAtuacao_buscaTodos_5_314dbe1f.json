@@ -1,0 +1,47 @@
+{
+  "content": "## Cbo\n- id:  (Type: Long)\n- descricao: Descrição (Type: String)\n- codigoClassificacao: Código de classificação (Type: String)\n\n## AreaAtuacao\n- id: Id (Type: Long)\n- descricao: descricao (Type: String)\n- habilitacao:  (Type: String)\n- cbo:  (Type: Cbo)\n- requisitos:  (Type: String)\n- atividades:  (Type: String)\n- cursos:  (Type: Set)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)",
+  "metadata": {
+    "chunk_id": "areaAtuacao_buscaTodos_5_314dbe1f",
+    "section_name": "areaAtuacao_buscaTodos",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 131,
+    "char_count": 397,
+    "overlap_with_previous": 11,
+    "overlap_with_next": 15,
+    "keywords": [
+      "areaatuacao",
+      "cbo",
+      "id",
+      "descricao",
+      "campo",
+      "codigoclassificacao"
+    ],
+    "entities": [
+      "areaatuacao",
+      "Cbo",
+      "buscatodos",
+      "AreaAtuacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.212825",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "314dbe1fd70591093b9e8f66a99ee781",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "cbos_busca_2_eda9679d"
+    ],
+    "quality_score": 0.8
+  },
+  "embeddings_text": "Section: areaAtuacao_buscaTodos\nType: reference\nRelated to: areaatuacao, Cbo, buscatodos\n\n## Cbo\n- id:  (Type: Long)\n- descricao: Descrição (Type: String)\n- codigoClassificacao: Código de classificação (Type: String)\n\n## AreaAtuacao\n- id: Id (Type: Long)\n- descricao: descricao (Type: String)\n- habilitacao:  (Type: String)\n- cbo:  (Type: Cbo)\n- requisitos:  (Type: String)\n- atividades:  (Type: String)\n- cursos:  (Type: Set)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)\n\nKeywords: areaatuacao, cbo, id, descricao, campo, codigoclassificacao",
+  "search_text": "areaAtuacao_buscaTodos areaatuacao Cbo buscatodos AreaAtuacao areaatuacao cbo id descricao campo codigoclassificacao ## Cbo\n- id:  (Type: Long)\n- descricao: Descrição (Type: String)\n- codigoClassificacao: Código de classificação (Type: String)\n\n## AreaAtuacao\n- id: Id (Type: Long)\n- descricao: descricao (Type: String)\n- habilitacao:  (Type: String)\n- cbo:  (Type: Cbo)\n- requisitos:  (Type: String)\n- atividades:  (Type: String)\n- cursos:  (Type: Set)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)"
+}

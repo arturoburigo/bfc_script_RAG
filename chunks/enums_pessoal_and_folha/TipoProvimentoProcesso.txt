@@ -1,4 +1,0 @@
-# TipoProvimentoProcesso
-Enum: TipoProvimentoProcesso
-- 11 - Remuneração mensal (Key: REMUNERACAO_MENSAL, Value: 11)
-- 12 - 13º salário (Key: DECIMO_TERCEIRO_SALARIO, Value: 12)

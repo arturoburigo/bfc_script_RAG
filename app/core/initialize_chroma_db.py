@@ -261,9 +261,9 @@ class CollectionManager:
             name=collection_name,
             metadata={
                 "hnsw:space": config.get("distance_metric", "cosine"),
-                "hnsw:M": 16,  # Number of bi-directional links for each node (higher = better quality, more memory)
-                "hnsw:ef_construction": 200,  # Size of dynamic candidate list (higher = better quality, slower build)
-                "hnsw:ef": 10,  # Size of dynamic candidate list for search (higher = better quality, slower search)
+                "hnsw:construction_ef": 200,  # Changed from ef_construction
+                "hnsw:search_ef": 10,  # Changed from ef
+                "hnsw:M": 16,
                 "description": config.get("description", ""),
                 "created_timestamp": time.time(),
                 "content_types": ",".join(config.get("expected_content_types", []))
@@ -435,9 +435,9 @@ class DocumentProcessor:
                     self.processing_stats["processing_errors"] += 1
     
     def process_function_collection(self, data: Dict[str, List], collection_name: str) -> Generator[Tuple[str, str, List[float], Dict], None, None]:
-        """Processa coleções de funções (folha/pessoal)"""
+        """Processa coleções de funções (folha/pessoal) com o novo formato"""
         for function_name, function_chunks in data.items():
-            for chunk_idx, chunk in enumerate(function_chunks):
+            for chunk in function_chunks:
                 try:
                     content = chunk.get("content", "")
                     embedding = chunk.get("embedding", [])
@@ -457,36 +457,50 @@ class DocumentProcessor:
                         self.processing_stats["skipped_invalid_embedding"] += 1
                         continue
                     
-                    # Enhanced metadata for functions
+                    # Convert extracted_headers to string if it's a dictionary
+                    extracted_headers = chunk.get("extracted_headers", {})
+                    if isinstance(extracted_headers, dict):
+                        extracted_headers = json.dumps(extracted_headers)
+                    
+                    # Convert keywords list to string if it's a list
+                    keywords = chunk.get("keywords", [])
+                    if isinstance(keywords, list):
+                        keywords = json.dumps(keywords)
+                    
+                    # Enhanced metadata for functions with new format
                     metadata = {
                         'collection': collection_name,
                         'function_name': function_name,
-                        'content_type': self._classify_function_content_type(content),
+                        'chunk_key': chunk.get("chunk_key", ""),
+                        'source_document_id': chunk.get("source_document_id", ""),
+                        'original_section_name': chunk.get("original_section_name", ""),
+                        'langchain_doc_index': chunk.get("langchain_doc_index", 0),
+                        'chunk_index_in_lc_doc': chunk.get("chunk_index_in_lc_doc", 0),
+                        'total_chunks_in_lc_doc': chunk.get("total_chunks_in_lc_doc", 0),
+                        'extracted_headers': extracted_headers,
+                        'title': chunk.get("title", ""),
+                        'code_block_count': chunk.get("code_block_count", 0),
+                        'keywords': keywords,
+                        'token_count': chunk.get("token_count", 0),
+                        'embedding_dimensions': chunk.get("embedding_dimensions", 512),
+                        'chunk_file_path': chunk.get("chunk_file_path", ""),
+                        'processing_timestamp': chunk.get("processing_timestamp", time.time()),
+                        'has_code': chunk.get("has_code", False),
+                        'content_type': chunk.get("content_type", "code_example"),
+                        'semantic_level': chunk.get("semantic_level", "fragment"),
+                        'part_number': chunk.get("part_number", 0),
                         'content_length': len(content),
-                        'processing_timestamp': time.time(),
-                        'chunk_index': chunk_idx,
-                        'filename': chunk.get("filename", ""),
                         'domain': collection_name  # folha or pessoal
                     }
                     
-                    # Add additional metadata if available
-                    if chunk.get("part_number"):
-                        metadata['part_number'] = chunk["part_number"]
-                    if chunk.get("is_sub_chunk"):
-                        metadata['is_sub_chunk'] = True
-                        metadata['parent_chunk'] = chunk.get("parent_chunk", "")
-                    if chunk.get("is_type_definition"):
-                        metadata['is_type_definition'] = True
-                        metadata['type_name'] = chunk.get("type_name", "")
-                    
-                    # Generate deterministic ID
-                    doc_id = self._generate_document_id(collection_name, content, metadata)
+                    # Generate deterministic ID using chunk_key if available
+                    doc_id = chunk.get("chunk_key", self._generate_document_id(collection_name, content, metadata))
                     
                     self.processing_stats["processed_successfully"] += 1
                     yield doc_id, content, normalized_embedding, metadata
                     
                 except Exception as e:
-                    logger.error(f"Error processing function {function_name} chunk {chunk_idx}: {e}")
+                    logger.error(f"Error processing function {function_name}: {e}")
                     self.processing_stats["processing_errors"] += 1
     
     def _classify_content_type(self, content: str) -> str:

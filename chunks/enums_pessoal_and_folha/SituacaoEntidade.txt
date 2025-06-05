@@ -1,7 +1,0 @@
-# SituacaoEntidade
-Enum: SituacaoEntidade
-- Situação Normal (Key: SITUACAO_NORMAL, Value: 1)
-- Extinção (Key: EXTINCAO, Value: 2)
-- Fusão (Key: FUSAO, Value: 3)
-- Cisão (Key: CISAO, Value: 4)
-- Incorporação (Key: INCORPORACAO, Value: 5)

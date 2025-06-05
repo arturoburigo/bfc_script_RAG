@@ -1,4 +1,0 @@
-# TipoInscricaoRais
-Enum: TipoInscricaoRais
-- Pessoa Física (Key: PESSOA_FISICA, Value: 1)
-- Pessoa Jurídica (Key: PESSOA_JURIDICA, Value: 2)

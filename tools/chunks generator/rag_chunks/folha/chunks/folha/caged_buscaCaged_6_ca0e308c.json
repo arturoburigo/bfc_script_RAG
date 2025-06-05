@@ -1,0 +1,54 @@
+{
+  "content": "groovy\nfonteCaged = Dados.folha.v2.caged;\n\nfiltroCaged = \"id = 213123 or situacaoEnvioMatricula = ENVIO_VALIDADO\"\n\ndadosCaged = fonteCaged.buscaCaged(criterio: filtroCaged,campos: \"municipio(estado(id, nome, uf), id, nome), cagedMatriculas(matricula(id), id, situacaoMatricula, situacaoEnvioMatricula), id, dataEnvio, situacaoEnvioMatricula, entidade\",ordenacao: \"entidade,id asc\")\n\npercorrer (dadosCaged) { itemCaged ->\n\n}",
+  "metadata": {
+    "chunk_id": "caged_buscaCaged_6_ca0e308c",
+    "section_name": "caged_buscaCaged",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 142,
+    "char_count": 423,
+    "overlap_with_previous": 21,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "filtro",
+      "ordenacao",
+      "folha",
+      "v2",
+      "cagedmatricula",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Caged",
+      "CagedMatricula",
+      "buscaCaged",
+      "MatriculaMatricula",
+      "Dados.folha.v2.caged",
+      "EstadoMunicipioCaged",
+      "cagedMatricula",
+      "CagedMatriculaDto",
+      "MunicipioCaged"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.158154",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "ca0e308c9b7266e66de052c395a0d918",
+    "related_chunks": [
+      "cagedMatricula_importa_3_44189c69",
+      "caged_buscaCaged_1_7758de71",
+      "caged_buscaCaged_5_b9d32e1c",
+      "cagedMatricula_importa_2_e612514e",
+      "caged_buscaCaged_3_d49e7fac"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: caged_buscaCaged\nType: example\nRelated to: Caged, CagedMatricula, buscaCaged\n\ngroovy\nfonteCaged = Dados.folha.v2.caged;\n\nfiltroCaged = \"id = 213123 or situacaoEnvioMatricula = ENVIO_VALIDADO\"\n\ndadosCaged = fonteCaged.buscaCaged(criterio: filtroCaged,campos: \"municipio(estado(id, nome, uf), id, nome), cagedMatriculas(matricula(id), id, situacaoMatricula, situacaoEnvioMatricula), id, dataEnvio, situacaoEnvioMatricula, entidade\",ordenacao: \"entidade,id asc\")\n\npercorrer (dadosCaged) { itemCaged ->\n\n}\n\nKeywords: busca, filtro, ordenacao, folha, v2, cagedmatricula, campo, dados",
+  "search_text": "caged_buscaCaged Caged CagedMatricula buscaCaged MatriculaMatricula Dados.folha.v2.caged EstadoMunicipioCaged cagedMatricula CagedMatriculaDto MunicipioCaged busca filtro ordenacao folha v2 cagedmatricula campo dados groovy\nfonteCaged = Dados.folha.v2.caged;\n\nfiltroCaged = \"id = 213123 or situacaoEnvioMatricula = ENVIO_VALIDADO\"\n\ndadosCaged = fonteCaged.buscaCaged(criterio: filtroCaged,campos: \"municipio(estado(id, nome, uf), id, nome), cagedMatriculas(matricula(id), id, situacaoMatricula, situacaoEnvioMatricula), id, dataEnvio, situacaoEnvioMatricula, entidade\",ordenacao: \"entidade,id asc\")\n\npercorrer (dadosCaged) { itemCaged ->\n\n}"
+}

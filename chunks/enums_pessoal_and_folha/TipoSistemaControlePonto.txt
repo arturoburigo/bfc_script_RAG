@@ -1,8 +1,0 @@
-# TipoSistemaControlePonto
-Enum: TipoSistemaControlePonto
-- 1 - Estabelecimento não adotou sistema de controle de ponto porque em nenhum mês do ano-base possuía mais de 10 trabalhadores celetistas ativos. (Key: ESTABELECIMENTO_NAO_ADOTOU_SISTEMA_NENHUM_MES_DEZ_CELETISTAS, Value: 1)
-- 2 - Estabelecimento adotou sistema manual (Key: ESTABELECIMENTO_ADOTOU_SISTEMA_MANUAL, Value: 2)
-- 3 - Estabelecimento adotou sistema mecânico (Key: ESTABELECIMENTO_ADOTOU_SISTEMA_MECANICO, Value: 3)
-- 4 - Estabelecimento adotou Sistema de Registro Eletrônico de Ponto - SREP (Portaria 1.510/2009) (Key: ESTABELECIMENTO_ADOTOU_SREP_PORTARIA_1510, Value: 4)
-- 5 - Estabelecimento adotou sistema não eletrônico alternativo previsto no art.1º da Portaria 373/2011 (Key: ESTABELECIMENTO_ADOTOU_SISTEMA_NAO_ELETRONICO_ALTERNATIVO_PORTARIA_373, Value: 5)
-- 6 - Estabelecimento adotou sistema eletrônico alternativo previsto na Portaria 373/2011 (Key: ESTABELECIMENTO_ADOTOU_SISTEMA_ELETRONICO_ALTERNATIVO_PORTARIA_373, Value: 6)

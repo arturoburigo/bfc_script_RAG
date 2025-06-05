@@ -1,0 +1,47 @@
+{
+  "content": "buscaBairrosLogradouro (GET)\nMethod Description: Listagem de bairros do logradouro\n\nRepresentation Type: Bairro",
+  "metadata": {
+    "chunk_id": "logradouros_buscaBairrosLogradouro_1_6b439437",
+    "section_name": "logradouros_buscaBairrosLogradouro",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 28,
+    "char_count": 111,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 14,
+    "keywords": [
+      "logradouros",
+      "busca"
+    ],
+    "entities": [
+      "logradouros",
+      "Estado",
+      "TipoLogradouro",
+      "Municipio",
+      "buscaBairrosLogradouro",
+      "Logradouro",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.086772",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "6b4394373096b3f5967d9b6dbdc4fcc9",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "agenciasBancarias_busca_1_ef251772",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "logradouros_buscaBairrosLogradouro_5_4f5931c1"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: logradouros_buscaBairrosLogradouro\nType: definition\nRelated to: logradouros, Estado, TipoLogradouro\n\nbuscaBairrosLogradouro (GET)\nMethod Description: Listagem de bairros do logradouro\n\nRepresentation Type: Bairro\n\nKeywords: logradouros, busca",
+  "search_text": "logradouros_buscaBairrosLogradouro logradouros Estado TipoLogradouro Municipio buscaBairrosLogradouro Logradouro Bairro Pais logradouros busca buscaBairrosLogradouro (GET)\nMethod Description: Listagem de bairros do logradouro\n\nRepresentation Type: Bairro"
+}

@@ -1,0 +1,43 @@
+{
+  "content": "Quadro de cargos",
+  "metadata": {
+    "chunk_id": "quardoCargos_buscaTodos_0_9eedb33e",
+    "section_name": "quardoCargos_buscaTodos",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 5,
+    "char_count": 16,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 1,
+    "keywords": [
+      "quadrocargos"
+    ],
+    "entities": [
+      "AtoMatriculaAssociacao",
+      "QuadroCargo",
+      "TipoAto",
+      "buscaTodos",
+      "quadroCargos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.634226",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "9eedb33e066308503a5d9a0c4adfe418",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: quardoCargos_buscaTodos\nType: definition\nRelated to: AtoMatriculaAssociacao, QuadroCargo, TipoAto\n\nQuadro de cargos\n\nKeywords: quadrocargos",
+  "search_text": "quardoCargos_buscaTodos AtoMatriculaAssociacao QuadroCargo TipoAto buscaTodos quadroCargos quadrocargos Quadro de cargos"
+}

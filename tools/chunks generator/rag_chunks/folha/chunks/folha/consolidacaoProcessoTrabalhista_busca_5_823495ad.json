@@ -1,0 +1,57 @@
+{
+  "content": "## FonteDadosAssociacao\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n\n## FonteDadosConsolidacaoProcessoTrabalhistaAssociacao\n- id: Id (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- dataInicioContrato: Data de admissão (Type: LocalDate)\n- eSocial: eSocial (Type: String)\n- situacao: Situação (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n- pessoa: Pessoa (Type: FonteDadosAssociacao)\n\n## PessoaFisicaAssociacao\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- cpf: CPF (Type: String)\n- dataNascimento: Data de nascimento (Type: LocalDate)\n\n## ProcessoTrabalhistaAssociacao\n- id: Identificador (Type: Long)\n- tipoProcesso: Tipo do processo (Type: )\n- dataProcesso: Data do processo (Type: LocalDate)\n- numeroProcesso: Número do processo (Type: String)\n- matricula: Matrícula (Type: FonteDadosConsolidacaoProcessoTrabalhistaAssociacao)\n- pessoaFisica: Pessoa física (Type: PessoaFisicaAssociacao)\n\n## DadosTributacaoAssociacao\n- id: Identificador (Type: Long)\n- competenciaInicial: Competência inicial (Type: YearMonth)\n- competenciaFinal: Competência final (Type: YearMonth)\n- sequencial: Sequencial (Type: Integer)\n- processoTrabalhista:  (Type: ProcessoTrabalhistaAssociacao)\n\n## ConsolidacaoProcessoTrabalhistaFonteDados\n- id: Identificador (Type: Long)\n- numeroProcesso: Número do processo trabalhista (Type: String)\n- competenciaPagamento: Competência de pagamentos dos encargos (Type: YearMonth)\n- quantidade: Quantidade de consolidações de processos trabalhistas (Type: Integer)\n- encargosConsolidados: Encargos consolidados (Type: DadosTributacaoAssociacao)",
+  "metadata": {
+    "chunk_id": "consolidacaoProcessoTrabalhista_busca_5_823495ad",
+    "section_name": "consolidacaoProcessoTrabalhista_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 468,
+    "char_count": 1596,
+    "overlap_with_previous": 19,
+    "overlap_with_next": 37,
+    "keywords": [
+      "fontedadosassociacao",
+      "consolidacaoprocessotrabalhistafontedados",
+      "nome",
+      "datainiciocontrato",
+      "consolidacaoprocessotrabalhista",
+      "id",
+      "pessoafisicaassociacao",
+      "dadostributacaoassociacao",
+      "fontedadosconsolidacaoprocessotrabalhistaassociacao",
+      "tipo",
+      "dados",
+      "processotrabalhistaassociacao"
+    ],
+    "entities": [
+      "ProcessoTrabalhistaAssociacao",
+      "busca",
+      "FonteDadosAssociacao",
+      "ConsolidacaoProcessoTrabalhistaFonteDados",
+      "DadosTributacaoAssociacao",
+      "consolidacaoProcessoTrabalhista",
+      "FonteDadosConsolidacaoProcessoTrabalhistaAssociacao",
+      "PessoaFisicaAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.146065",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "823495adc64a90600fc256db2feda52c",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: consolidacaoProcessoTrabalhista_busca\nType: reference\nRelated to: ProcessoTrabalhistaAssociacao, busca, FonteDadosAssociacao\n\n## FonteDadosAssociacao\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n\n## FonteDadosConsolidacaoProcessoTrabalhistaAssociacao\n- id: Id (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- dataInicioContrato: Data de admissão (Type: LocalDate)\n- eSocial: eSocial (Type: String)\n- situacao: Situação (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n- pessoa: Pessoa (Type: FonteDadosAssociacao)\n\n## PessoaFisicaAssociacao\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- cpf: CPF (Type: String)\n- dataNascimento: Data de nascimento (Type: LocalDate)\n\n## ProcessoTrabalhistaAssociacao\n- id: Identificador (Type: Long)\n- tipoProcesso: Tipo do processo (Type: )\n- dataProcesso: Data do processo (Type: LocalDate)\n- numeroProcesso: Número do processo (Type: String)\n- matricula: Matrícula (Type: FonteDadosConsolidacaoProcessoTrabalhistaAssociacao)\n- pessoaFisica: Pessoa física (Type: PessoaFisicaAssociacao)\n\n## DadosTributacaoAssociacao\n- id: Identificador (Type: Long)\n- competenciaInicial: Competência inicial (Type: YearMonth)\n- competenciaFinal: Competência final (Type: YearMonth)\n- sequencial: Sequencial (Type: Integer)\n- processoTrabalhista:  (Type: ProcessoTrabalhistaAssociacao)\n\n## ConsolidacaoProcessoTrabalhistaFonteDados\n- id: Identificador (Type: Long)\n- numeroProcesso: Número do processo trabalhista (Type: String)\n- competenciaPagamento: Competência de pagamentos dos encargos (Type: YearMonth)\n- quantidade: Quantidade de consolidações de processos trabalhistas (Type: Integer)\n- encargosConsolidados: Encargos consolidados (Type: DadosTributacaoAssociacao)\n\nKeywords: fontedadosassociacao, consolidacaoprocessotrabalhistafontedados, nome, datainiciocontrato, consolidacaoprocessotrabalhista, id, pessoafisicaassociacao, dadostributacaoassociacao, fontedadosconsolidacaoprocessotrabalhistaassociacao, tipo, dados, processotrabalhistaassociacao",
+  "search_text": "consolidacaoProcessoTrabalhista_busca ProcessoTrabalhistaAssociacao busca FonteDadosAssociacao ConsolidacaoProcessoTrabalhistaFonteDados DadosTributacaoAssociacao consolidacaoProcessoTrabalhista FonteDadosConsolidacaoProcessoTrabalhistaAssociacao PessoaFisicaAssociacao fontedadosassociacao consolidacaoprocessotrabalhistafontedados nome datainiciocontrato consolidacaoprocessotrabalhista id pessoafisicaassociacao dadostributacaoassociacao fontedadosconsolidacaoprocessotrabalhistaassociacao tipo dados processotrabalhistaassociacao ## FonteDadosAssociacao\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n\n## FonteDadosConsolidacaoProcessoTrabalhistaAssociacao\n- id: Id (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- dataInicioContrato: Data de admissão (Type: LocalDate)\n- eSocial: eSocial (Type: String)\n- situacao: Situação (Type: )\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n- pessoa: Pessoa (Type: FonteDadosAssociacao)\n\n## PessoaFisicaAssociacao\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- cpf: CPF (Type: String)\n- dataNascimento: Data de nascimento (Type: LocalDate)\n\n## ProcessoTrabalhistaAssociacao\n- id: Identificador (Type: Long)\n- tipoProcesso: Tipo do processo (Type: )\n- dataProcesso: Data do processo (Type: LocalDate)\n- numeroProcesso: Número do processo (Type: String)\n- matricula: Matrícula (Type: FonteDadosConsolidacaoProcessoTrabalhistaAssociacao)\n- pessoaFisica: Pessoa física (Type: PessoaFisicaAssociacao)\n\n## DadosTributacaoAssociacao\n- id: Identificador (Type: Long)\n- competenciaInicial: Competência inicial (Type: YearMonth)\n- competenciaFinal: Competência final (Type: YearMonth)\n- sequencial: Sequencial (Type: Integer)\n- processoTrabalhista:  (Type: ProcessoTrabalhistaAssociacao)\n\n## ConsolidacaoProcessoTrabalhistaFonteDados\n- id: Identificador (Type: Long)\n- numeroProcesso: Número do processo trabalhista (Type: String)\n- competenciaPagamento: Competência de pagamentos dos encargos (Type: YearMonth)\n- quantidade: Quantidade de consolidações de processos trabalhistas (Type: Integer)\n- encargosConsolidados: Encargos consolidados (Type: DadosTributacaoAssociacao)"
+}

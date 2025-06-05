@@ -1,0 +1,47 @@
+{
+  "content": "Listagem de dados de Controle de Modalidades do CAGED\n\nRepresentation Type: Caged",
+  "metadata": {
+    "chunk_id": "caged_buscaCaged_2_d49e7fac",
+    "section_name": "caged_buscaCaged",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 19,
+    "char_count": 81,
+    "overlap_with_previous": 15,
+    "overlap_with_next": 16,
+    "keywords": [
+      "dados",
+      "cagedmatricula"
+    ],
+    "entities": [
+      "Caged",
+      "CagedMatricula",
+      "buscaCaged",
+      "MatriculaMatricula",
+      "EstadoMunicipioCaged",
+      "cagedMatricula",
+      "CagedMatriculaDto",
+      "MunicipioCaged"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.157302",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "d49e7fac995f3cc66b5721a6a7d3e6a8",
+    "related_chunks": [
+      "cagedMatricula_importa_3_44189c69",
+      "caged_buscaCaged_1_7758de71",
+      "caged_buscaCaged_5_b9d32e1c",
+      "cagedMatricula_importa_2_e612514e",
+      "caged_buscaCaged_3_d49e7fac"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: caged_buscaCaged\nType: definition\nRelated to: Caged, CagedMatricula, buscaCaged\n\nListagem de dados de Controle de Modalidades do CAGED\n\nRepresentation Type: Caged\n\nKeywords: dados, cagedmatricula",
+  "search_text": "caged_buscaCaged Caged CagedMatricula buscaCaged MatriculaMatricula EstadoMunicipioCaged cagedMatricula CagedMatriculaDto MunicipioCaged dados cagedmatricula Listagem de dados de Controle de Modalidades do CAGED\n\nRepresentation Type: Caged"
+}

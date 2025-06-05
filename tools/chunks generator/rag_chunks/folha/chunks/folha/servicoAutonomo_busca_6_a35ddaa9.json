@@ -1,0 +1,49 @@
+{
+  "content": "groovy\nfonteServicoAutonomo = Dados.folha.v2.servicoAutonomo;\n\ndadosServicoAutonomo = fonteServicoAutonomo.busca(campos: \"cbo(id, codigoClassificacao, descricao, nivel), id, matriculaId, descricao, dataLancamento, valor\",ordenacao: \"matriculaId asc\")\n\npercorrer (dadosServicoAutonomo) { itemServicoAutonomo ->\n\n}",
+  "metadata": {
+    "chunk_id": "servicoAutonomo_busca_6_a35ddaa9",
+    "section_name": "servicoAutonomo_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 102,
+    "char_count": 312,
+    "overlap_with_previous": 25,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "ordenacao",
+      "v2",
+      "folha",
+      "campo",
+      "dados",
+      "servicoautonomo"
+    ],
+    "entities": [
+      "Cbo",
+      "busca",
+      "ServicoAutonomoFonteDados",
+      "servicoAutonomo",
+      "Dados.folha.v2.servicoAutonomo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.219496",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "a35ddaa9ed86090a3c67dbbb9f6a429c",
+    "related_chunks": [
+      "cargo_buscaTodos_6_d5626417",
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19",
+      "remuneracoes_buscaComposicoesBasesFolha_3_3f265087"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: servicoAutonomo_busca\nType: example\nRelated to: Cbo, busca, ServicoAutonomoFonteDados\n\ngroovy\nfonteServicoAutonomo = Dados.folha.v2.servicoAutonomo;\n\ndadosServicoAutonomo = fonteServicoAutonomo.busca(campos: \"cbo(id, codigoClassificacao, descricao, nivel), id, matriculaId, descricao, dataLancamento, valor\",ordenacao: \"matriculaId asc\")\n\npercorrer (dadosServicoAutonomo) { itemServicoAutonomo ->\n\n}\n\nKeywords: busca, ordenacao, v2, folha, campo, dados, servicoautonomo",
+  "search_text": "servicoAutonomo_busca Cbo busca ServicoAutonomoFonteDados servicoAutonomo Dados.folha.v2.servicoAutonomo busca ordenacao v2 folha campo dados servicoautonomo groovy\nfonteServicoAutonomo = Dados.folha.v2.servicoAutonomo;\n\ndadosServicoAutonomo = fonteServicoAutonomo.busca(campos: \"cbo(id, codigoClassificacao, descricao, nivel), id, matriculaId, descricao, dataLancamento, valor\",ordenacao: \"matriculaId asc\")\n\npercorrer (dadosServicoAutonomo) { itemServicoAutonomo ->\n\n}"
+}

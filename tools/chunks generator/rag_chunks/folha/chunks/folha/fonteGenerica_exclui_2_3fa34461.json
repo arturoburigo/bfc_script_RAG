@@ -1,0 +1,46 @@
+{
+  "content": "## FonteGenerica\n- id:  (Type: Long)\n- identificador:  (Type: String)\n- tipoRegistro:  (Type: String)\n- conteudo:  (Type: String)",
+  "metadata": {
+    "chunk_id": "fonteGenerica_exclui_2_3fa34461",
+    "section_name": "fonteGenerica_exclui",
+    "chunk_index": 2,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 45,
+    "char_count": 129,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 0,
+    "keywords": [
+      "id",
+      "tiporegistro",
+      "conteudo",
+      "identificador",
+      "fontegenerica",
+      "tipo"
+    ],
+    "entities": [
+      "exclui",
+      "FonteGenerica",
+      "fonteGenerica"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.235657",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "3fa34461671aede12bb9b4d5b0da971d",
+    "related_chunks": [
+      "fonteGenerica_atualiza_2_77ecbcf3",
+      "fonteGenerica_exclui_3_5f202e7a",
+      "tabelaAuxiliarValor_exclui_1_469039d5",
+      "tabelaAuxiliar_exclui_1_469039d5",
+      "fonteGenerica_busca_4_c8dc2d69"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: fonteGenerica_exclui\nType: reference\nRelated to: exclui, FonteGenerica, fonteGenerica\n\n## FonteGenerica\n- id:  (Type: Long)\n- identificador:  (Type: String)\n- tipoRegistro:  (Type: String)\n- conteudo:  (Type: String)\n\nKeywords: id, tiporegistro, conteudo, identificador, fontegenerica, tipo",
+  "search_text": "fonteGenerica_exclui exclui FonteGenerica fonteGenerica id tiporegistro conteudo identificador fontegenerica tipo ## FonteGenerica\n- id:  (Type: Long)\n- identificador:  (Type: String)\n- tipoRegistro:  (Type: String)\n- conteudo:  (Type: String)"
+}

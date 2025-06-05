@@ -1,8 +1,0 @@
-# MotivoMovimentacaoPeriodoAquisitivoDecimoTerceiro
-Enum: MotivoMovimentacaoPeriodoAquisitivoDecimoTerceiro
-- Adiantamento no 13º (Key: ADIANTAMENTO_DECIMO_TERCEIRO, Value: 1)
-- Adiantamento nas Férias (Key: ADIANTAMENTO_FERIAS, Value: 2)
-- Complementar (Key: COMPLEMENTAR, Value: 3)
-- Gratificação natalina (Key: GRATIFICACAO_NATALINA, Value: 4)
-- Rescisão (Key: RESCISAO, Value: 5)
-- Rescisão Complementar (Key: RESCISAO_COMPLEMENTAR, Value: 6)

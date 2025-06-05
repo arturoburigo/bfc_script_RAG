@@ -1,5 +1,0 @@
-# TempoContrato
-Enum: TempoContrato
-- 1 - Prazo indeterminado (Key: PRAZO_INDETERMINADO, Value: 1)
-- 2 - Prazo determinado, definido em dias (Key: PRAZO_DETERMINADO_DEFINIDO_EM_DIAS, Value: 2)
-- 3 - Prazo determinado, vinculado à ocorrência de um fato (Key: PRAZO_DETERMINADO_VINCULADO_A_OCORRENCIA_DE_UM_FATO, Value: 3)

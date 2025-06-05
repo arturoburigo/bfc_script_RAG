@@ -1,0 +1,45 @@
+{
+  "content": "## Regiao\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- campoAdicional:  (Type: CampoAdicionalDto)",
+  "metadata": {
+    "chunk_id": "regiao_busca_4_2a20c916",
+    "section_name": "regiao_busca",
+    "chunk_index": 4,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 39,
+    "char_count": 125,
+    "overlap_with_previous": 3,
+    "overlap_with_next": 9,
+    "keywords": [
+      "id",
+      "descricao",
+      "regiao",
+      "campoadicional",
+      "campo"
+    ],
+    "entities": [
+      "Regiao",
+      "regiao",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.295610",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "2a20c916aac056a1fdd9912bb3d5f081",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: regiao_busca\nType: reference\nRelated to: Regiao, regiao, busca\n\n## Regiao\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- campoAdicional:  (Type: CampoAdicionalDto)\n\nKeywords: id, descricao, regiao, campoadicional, campo",
+  "search_text": "regiao_busca Regiao regiao busca id descricao regiao campoadicional campo ## Regiao\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- campoAdicional:  (Type: CampoAdicionalDto)"
+}

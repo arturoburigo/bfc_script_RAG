@@ -1,0 +1,50 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de programações de férias\n\nRepresentation Type: ProgramacaoFeriasListagemRepresentation",
+  "metadata": {
+    "chunk_id": "programacaoFerias_busca_1_c2382b9d",
+    "section_name": "programacaoFerias_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 29,
+    "char_count": 128,
+    "overlap_with_previous": 3,
+    "overlap_with_next": 17,
+    "keywords": [
+      "busca",
+      "programacaoferias"
+    ],
+    "entities": [
+      "CalculoMensagemAssociacaoRepresentation",
+      "TipoMovimentacaoPessoalTipoAfastamento",
+      "TipoAfastamentoFonteDados",
+      "AtoMatriculaAssociacao",
+      "busca",
+      "PeriodoAquisitivo",
+      "TipoAto",
+      "ProgramacaoFeriasListagemRepresentation",
+      "MatriculaAssociacao",
+      "ConfiguracaoMovimentoPeriodoAquisitivo",
+      "programacaoFerias"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.236105",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "c2382b9d30cceceabf26b6e6138d935e",
+    "related_chunks": [
+      "calculoFolha_buscaCalculoRescisao_6_6473e96c",
+      "cargo_buscaTodos_6_d5626417",
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: programacaoFerias_busca\nType: definition\nRelated to: CalculoMensagemAssociacaoRepresentation, TipoMovimentacaoPessoalTipoAfastamento, TipoAfastamentoFonteDados\n\nbusca (GET)\nMethod Description: Listagem de programações de férias\n\nRepresentation Type: ProgramacaoFeriasListagemRepresentation\n\nKeywords: busca, programacaoferias",
+  "search_text": "programacaoFerias_busca CalculoMensagemAssociacaoRepresentation TipoMovimentacaoPessoalTipoAfastamento TipoAfastamentoFonteDados AtoMatriculaAssociacao busca PeriodoAquisitivo TipoAto ProgramacaoFeriasListagemRepresentation MatriculaAssociacao ConfiguracaoMovimentoPeriodoAquisitivo programacaoFerias busca programacaoferias busca (GET)\nMethod Description: Listagem de programações de férias\n\nRepresentation Type: ProgramacaoFeriasListagemRepresentation"
+}

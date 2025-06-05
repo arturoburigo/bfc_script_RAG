@@ -1,0 +1,51 @@
+{
+  "content": "- numeroOficial: Número oficial (Type: String)\n- naturezaTextoJuridico: Id da natureza de texto jurídico (Type: Long)\n- numeroDiarioOficial: Número do diário oficial (Type: Long)\n- ementa: Ementa (Type: String)\n- dataPublicacao: Data de publicação (Type: LocalDate)\n- dataResolucao: Data de resolução (Type: LocalDate)\n- id: Id (Type: Long)\n- dataVigorar: Data a vigorar (Type: LocalDate)\n- dataCriacao: Data de criação (Type: LocalDate)",
+  "metadata": {
+    "chunk_id": "atos_buscaAtos_4_083f0ddd",
+    "section_name": "atos_buscaAtos",
+    "chunk_index": 4,
+    "total_chunks": 8,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 133,
+    "char_count": 437,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 55,
+    "keywords": [
+      "numerooficial",
+      "naturezatextojuridico",
+      "ementa",
+      "atos",
+      "numerodiariooficial",
+      "datapublicacao"
+    ],
+    "entities": [
+      "buscaAtos",
+      "AtoFonteDados",
+      "ArquivoAto",
+      "NaturezaTextoJuridico",
+      "AtoFonteDivulgacao",
+      "TipoAto",
+      "atos",
+      "FonteDivulgacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.666257",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "083f0ddde88b608cc5fa101d2b536344",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "fontesDivulgacao_busca_2_58920ed9"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: atos_buscaAtos\nType: reference\nRelated to: buscaAtos, AtoFonteDados, ArquivoAto\n\n- numeroOficial: Número oficial (Type: String)\n- naturezaTextoJuridico: Id da natureza de texto jurídico (Type: Long)\n- numeroDiarioOficial: Número do diário oficial (Type: Long)\n- ementa: Ementa (Type: String)\n- dataPublicacao: Data de publicação (Type: LocalDate)\n- dataResolucao: Data de resolução (Type: LocalDate)\n- id: Id (Type: Long)\n- dataVigorar: Data a vigorar (Type: LocalDate)\n- dataCriacao: Data de criação (Type: LocalDate)\n\nKeywords: numerooficial, naturezatextojuridico, ementa, atos, numerodiariooficial, datapublicacao",
+  "search_text": "atos_buscaAtos buscaAtos AtoFonteDados ArquivoAto NaturezaTextoJuridico AtoFonteDivulgacao TipoAto atos FonteDivulgacao numerooficial naturezatextojuridico ementa atos numerodiariooficial datapublicacao - numeroOficial: Número oficial (Type: String)\n- naturezaTextoJuridico: Id da natureza de texto jurídico (Type: Long)\n- numeroDiarioOficial: Número do diário oficial (Type: Long)\n- ementa: Ementa (Type: String)\n- dataPublicacao: Data de publicação (Type: LocalDate)\n- dataResolucao: Data de resolução (Type: LocalDate)\n- id: Id (Type: Long)\n- dataVigorar: Data a vigorar (Type: LocalDate)\n- dataCriacao: Data de criação (Type: LocalDate)"
+}

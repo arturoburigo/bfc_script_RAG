@@ -1,0 +1,50 @@
+{
+  "content": "groovy\nfonteTabelaAuxiliarValor = Dados.folha.v2.tabelaAuxiliarValor;\n\ndadosTabelaAuxiliarValor = fonteTabelaAuxiliarValor.exclui(parametros:[\"id\":null])\n\npercorrer (dadosTabelaAuxiliarValor) { itemTabelaAuxiliarValor ->\n\n}",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliarValor_exclui_3_c8cecadc",
+    "section_name": "tabelaAuxiliarValor_exclui",
+    "chunk_index": 3,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 69,
+    "char_count": 223,
+    "overlap_with_previous": 7,
+    "overlap_with_next": 0,
+    "keywords": [
+      "v2",
+      "tabelaauxiliarvalor",
+      "dados",
+      "folha"
+    ],
+    "entities": [
+      "exclui",
+      "Dados.folha.v2.tabelaAuxiliarValor",
+      "TabelaAuxiliarRegistroSemValores",
+      "TabelaAuxiliarCampoSemValores",
+      "TabelaAuxiliarRegistroAssociacao",
+      "TabelaAuxiliarValorImportacao",
+      "TabelaAuxiliarCampoAssociacao",
+      "tabelaAuxiliarValor",
+      "TabelaAuxiliarValorSemRegistro"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.287998",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "c8cecadcbdc00593745eecb0841ed8bd",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "tabelaAuxiliar_exclui_1_469039d5",
+      "tabelaAuxiliarValor_busca_0_9b03df81",
+      "fonteGenerica_exclui_2_3fa34461",
+      "tabelaAuxiliarCampo_busca_4_9f589243"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: tabelaAuxiliarValor_exclui\nType: example\nRelated to: exclui, Dados.folha.v2.tabelaAuxiliarValor, TabelaAuxiliarRegistroSemValores\n\ngroovy\nfonteTabelaAuxiliarValor = Dados.folha.v2.tabelaAuxiliarValor;\n\ndadosTabelaAuxiliarValor = fonteTabelaAuxiliarValor.exclui(parametros:[\"id\":null])\n\npercorrer (dadosTabelaAuxiliarValor) { itemTabelaAuxiliarValor ->\n\n}\n\nKeywords: v2, tabelaauxiliarvalor, dados, folha",
+  "search_text": "tabelaAuxiliarValor_exclui exclui Dados.folha.v2.tabelaAuxiliarValor TabelaAuxiliarRegistroSemValores TabelaAuxiliarCampoSemValores TabelaAuxiliarRegistroAssociacao TabelaAuxiliarValorImportacao TabelaAuxiliarCampoAssociacao tabelaAuxiliarValor TabelaAuxiliarValorSemRegistro v2 tabelaauxiliarvalor dados folha groovy\nfonteTabelaAuxiliarValor = Dados.folha.v2.tabelaAuxiliarValor;\n\ndadosTabelaAuxiliarValor = fonteTabelaAuxiliarValor.exclui(parametros:[\"id\":null])\n\npercorrer (dadosTabelaAuxiliarValor) { itemTabelaAuxiliarValor ->\n\n}"
+}

@@ -1,0 +1,60 @@
+{
+  "content": "- inicioVigencia: Início da vigência (Type: LocalDateTime)\n- numero: Número da lotação física (Type: String)\n- profissional.id: Identificador de profissional (Type: Long)\n- profissional.nome: Nome do profissional (Type: String)\n- id: Identificador (Type: Long)\n- nivel: Nível da lotação física (Type: Integer)\n- configuracao.emUso: Lotação física em uso (Type: Boolean)\n- localAmbiente: Tipo de estabelecimento (Type: )\n- descricao: Descrição da lotação física (Type: String)",
+  "metadata": {
+    "chunk_id": "lotacaoFisica_busca_4_bc83e6b9",
+    "section_name": "lotacaoFisica_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 135,
+    "char_count": 475,
+    "overlap_with_previous": 6,
+    "overlap_with_next": 56,
+    "keywords": [
+      "localambiente",
+      "iniciovigencia",
+      "nivel",
+      "lotacoesfisicas",
+      "numero",
+      "id",
+      "tipo"
+    ],
+    "entities": [
+      "EmpresaResponsavelLotacaoFisica",
+      "BairroLotacaoFisica",
+      "busca",
+      "EnderecoLotacaoFisica",
+      "ProfissionalLocatacaoFisica",
+      "TelefonesLotacaoFisica",
+      "ResponsavelLotacaoFisica",
+      "LotacaoFisica",
+      "NiveisConfiguracaoLotacaoFisica",
+      "ConfiguracaoLotacaoFisicaFonteDados",
+      "PaisLotacaoFisica",
+      "ConfiguracaoLotacaoFisica",
+      "EstadoLotacaoFisica",
+      "LogradouroLotacaoFisica",
+      "MunicipioLotacaoFisica",
+      "lotacoesFisicas"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.196278",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "bc83e6b9ead1bf64026ce6874070f70a",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: lotacaoFisica_busca\nType: reference\nRelated to: EmpresaResponsavelLotacaoFisica, BairroLotacaoFisica, busca\n\n- inicioVigencia: Início da vigência (Type: LocalDateTime)\n- numero: Número da lotação física (Type: String)\n- profissional.id: Identificador de profissional (Type: Long)\n- profissional.nome: Nome do profissional (Type: String)\n- id: Identificador (Type: Long)\n- nivel: Nível da lotação física (Type: Integer)\n- configuracao.emUso: Lotação física em uso (Type: Boolean)\n- localAmbiente: Tipo de estabelecimento (Type: )\n- descricao: Descrição da lotação física (Type: String)\n\nKeywords: localambiente, iniciovigencia, nivel, lotacoesfisicas, numero, id, tipo",
+  "search_text": "lotacaoFisica_busca EmpresaResponsavelLotacaoFisica BairroLotacaoFisica busca EnderecoLotacaoFisica ProfissionalLocatacaoFisica TelefonesLotacaoFisica ResponsavelLotacaoFisica LotacaoFisica NiveisConfiguracaoLotacaoFisica ConfiguracaoLotacaoFisicaFonteDados PaisLotacaoFisica ConfiguracaoLotacaoFisica EstadoLotacaoFisica LogradouroLotacaoFisica MunicipioLotacaoFisica lotacoesFisicas localambiente iniciovigencia nivel lotacoesfisicas numero id tipo - inicioVigencia: Início da vigência (Type: LocalDateTime)\n- numero: Número da lotação física (Type: String)\n- profissional.id: Identificador de profissional (Type: Long)\n- profissional.nome: Nome do profissional (Type: String)\n- id: Identificador (Type: Long)\n- nivel: Nível da lotação física (Type: Integer)\n- configuracao.emUso: Lotação física em uso (Type: Boolean)\n- localAmbiente: Tipo de estabelecimento (Type: )\n- descricao: Descrição da lotação física (Type: String)"
+}

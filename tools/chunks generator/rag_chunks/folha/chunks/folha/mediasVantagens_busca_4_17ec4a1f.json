@@ -1,0 +1,50 @@
+{
+  "content": "- tipoMediaVantagem:  (Type: )\n- configuracaoEvento.codigo:  (Type: Long)\n- configuracaoEvento.descricao:  (Type: String)\n- configuracaoCalculoMediaVantagem: Calcular a partir de (Type: )\n- grupoMediaVantagem: Grupo (Type: )\n- exibirEmFolha: Exibir em folha? (Type: )\n- id: Id (Type: Long)",
+  "metadata": {
+    "chunk_id": "mediasVantagens_busca_4_17ec4a1f",
+    "section_name": "mediasVantagens_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 95,
+    "char_count": 289,
+    "overlap_with_previous": 5,
+    "overlap_with_next": 39,
+    "keywords": [
+      "tipo",
+      "id",
+      "exibiremfolha",
+      "configuracaocalculomediavantagem",
+      "mediasvantagens",
+      "folha",
+      "tipomediavantagem",
+      "grupomediavantagem"
+    ],
+    "entities": [
+      "mediasVantagens",
+      "busca",
+      "EventosAssociacaoFonteDados",
+      "EventosComposicaoAssociacaoFonteDados",
+      "MediaVantagemFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.288432",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "17ec4a1f1331ec6b18bd89b90caee7b2",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: mediasVantagens_busca\nType: reference\nRelated to: mediasVantagens, busca, EventosAssociacaoFonteDados\n\n- tipoMediaVantagem:  (Type: )\n- configuracaoEvento.codigo:  (Type: Long)\n- configuracaoEvento.descricao:  (Type: String)\n- configuracaoCalculoMediaVantagem: Calcular a partir de (Type: )\n- grupoMediaVantagem: Grupo (Type: )\n- exibirEmFolha: Exibir em folha? (Type: )\n- id: Id (Type: Long)\n\nKeywords: tipo, id, exibiremfolha, configuracaocalculomediavantagem, mediasvantagens, folha, tipomediavantagem, grupomediavantagem",
+  "search_text": "mediasVantagens_busca mediasVantagens busca EventosAssociacaoFonteDados EventosComposicaoAssociacaoFonteDados MediaVantagemFonteDados tipo id exibiremfolha configuracaocalculomediavantagem mediasvantagens folha tipomediavantagem grupomediavantagem - tipoMediaVantagem:  (Type: )\n- configuracaoEvento.codigo:  (Type: Long)\n- configuracaoEvento.descricao:  (Type: String)\n- configuracaoCalculoMediaVantagem: Calcular a partir de (Type: )\n- grupoMediaVantagem: Grupo (Type: )\n- exibirEmFolha: Exibir em folha? (Type: )\n- id: Id (Type: Long)"
+}

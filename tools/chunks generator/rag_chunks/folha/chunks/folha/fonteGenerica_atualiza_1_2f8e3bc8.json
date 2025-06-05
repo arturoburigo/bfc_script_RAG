@@ -1,0 +1,41 @@
+{
+  "content": "atualiza (PUT)\n\nRepresentation Type: FonteGenerica",
+  "metadata": {
+    "chunk_id": "fonteGenerica_atualiza_1_2f8e3bc8",
+    "section_name": "fonteGenerica_atualiza",
+    "chunk_index": 1,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 13,
+    "char_count": 50,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 6,
+    "keywords": [
+      "fontegenerica"
+    ],
+    "entities": [
+      "FonteGenerica",
+      "fonteGenerica",
+      "atualiza"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.235248",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "2f8e3bc8b6d3733347dd152a824d4435",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "fonteGenerica_atualiza_2_77ecbcf3",
+      "fonteGenerica_exclui_3_5f202e7a",
+      "fonteGenerica_busca_4_c8dc2d69",
+      "fonteGenerica_busca_6_ac1c78af"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: fonteGenerica_atualiza\nType: definition\nRelated to: FonteGenerica, fonteGenerica, atualiza\n\natualiza (PUT)\n\nRepresentation Type: FonteGenerica\n\nKeywords: fontegenerica",
+  "search_text": "fonteGenerica_atualiza FonteGenerica fonteGenerica atualiza fontegenerica atualiza (PUT)\n\nRepresentation Type: FonteGenerica"
+}

@@ -1,4 +1,0 @@
-# TipoPlano
-Enum: TipoPlano
-- Previdência (Key: PREVIDENCIA, Value: 1)
-- Assistência (Key: ASSISTENCIA, Value: 2)

@@ -1,0 +1,60 @@
+{
+  "content": "groovy\nfonteNivelSalarial = Dados.pessoal.v2.nivelSalarial;\n\nfiltroNivelSalarial = \"dataHoraCriacao = null\"\n\ndadosNivelSalarial = fonteNivelSalarial.buscaHistoricos(criterio: filtroNivelSalarial,campos: \"id, descricao, cargaHoraria, dataHoraCriacao, situacao, valor, origem(id, descricao, valor), atoCriacao(tipo(id, descricao, classificacao), id, numeroOficial), motivoAlteracao(id, descricao), reajusteSalarial(id, dataAlteracao, truncarValor, correcao, tipo, situacao, valor, totalReajuste)\",ordenacao: \"descricao asc\")\n\npercorrer (dadosNivelSalarial) { itemNivelSalarial ->\n\n}",
+  "metadata": {
+    "chunk_id": "nivelSalarial_buscaHistoricos_6_cee4212c",
+    "section_name": "nivelSalarial_buscaHistoricos",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 184,
+    "char_count": 580,
+    "overlap_with_previous": 45,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "tipo",
+      "filtro",
+      "ordenacao",
+      "v2",
+      "nivelsalarial",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "NivelSalarialAtoTipoFonteDados",
+      "NivelSalarialClasseReferenciaFonteDados",
+      "ClasseReferenciaFonteDados",
+      "NivelSalarialCompletaFonteDados",
+      "MotivoAlteracaoSalarial",
+      "NivelSalarialAtoFonteDados",
+      "NivelSalarialPlanoCargoSalarioFonteDados",
+      "NivelSalarialAssociacao",
+      "buscaHistoricos",
+      "NivelSalarialReajusteSalarialFonteDados",
+      "Dados.pessoal.v2.nivelSalarial",
+      "nivelSalarial",
+      "NivelSalarialCompletaComHistorico",
+      "CargoRemuneracaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.566940",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "cee4212c7394de4b091ccc70b6bd0a57",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: nivelSalarial_buscaHistoricos\nType: example\nRelated to: NivelSalarialAtoTipoFonteDados, NivelSalarialClasseReferenciaFonteDados, ClasseReferenciaFonteDados\n\ngroovy\nfonteNivelSalarial = Dados.pessoal.v2.nivelSalarial;\n\nfiltroNivelSalarial = \"dataHoraCriacao = null\"\n\ndadosNivelSalarial = fonteNivelSalarial.buscaHistoricos(criterio: filtroNivelSalarial,campos: \"id, descricao, cargaHoraria, dataHoraCriacao, situacao, valor, origem(id, descricao, valor), atoCriacao(tipo(id, descricao, classificacao), id, numeroOficial), motivoAlteracao(id, descricao), reajusteSalarial(id, dataAlteracao, truncarValor, correcao, tipo, situacao, valor, totalReajuste)\",ordenacao: \"descricao asc\")\n\npercorrer (dadosNivelSalarial) { itemNivelSalarial ->\n\n}\n\nKeywords: pessoal, busca, tipo, filtro, ordenacao, v2, nivelsalarial, campo, dados",
+  "search_text": "nivelSalarial_buscaHistoricos NivelSalarialAtoTipoFonteDados NivelSalarialClasseReferenciaFonteDados ClasseReferenciaFonteDados NivelSalarialCompletaFonteDados MotivoAlteracaoSalarial NivelSalarialAtoFonteDados NivelSalarialPlanoCargoSalarioFonteDados NivelSalarialAssociacao buscaHistoricos NivelSalarialReajusteSalarialFonteDados Dados.pessoal.v2.nivelSalarial nivelSalarial NivelSalarialCompletaComHistorico CargoRemuneracaoFonteDados pessoal busca tipo filtro ordenacao v2 nivelsalarial campo dados groovy\nfonteNivelSalarial = Dados.pessoal.v2.nivelSalarial;\n\nfiltroNivelSalarial = \"dataHoraCriacao = null\"\n\ndadosNivelSalarial = fonteNivelSalarial.buscaHistoricos(criterio: filtroNivelSalarial,campos: \"id, descricao, cargaHoraria, dataHoraCriacao, situacao, valor, origem(id, descricao, valor), atoCriacao(tipo(id, descricao, classificacao), id, numeroOficial), motivoAlteracao(id, descricao), reajusteSalarial(id, dataAlteracao, truncarValor, correcao, tipo, situacao, valor, totalReajuste)\",ordenacao: \"descricao asc\")\n\npercorrer (dadosNivelSalarial) { itemNivelSalarial ->\n\n}"
+}

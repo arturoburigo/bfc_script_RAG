@@ -1,0 +1,44 @@
+{
+  "content": "Listagem de tipo de movimentos pessoal\n\nRepresentation Type: TipoMovimentacaoPessaolFonteDados",
+  "metadata": {
+    "chunk_id": "tipoMovimentacaoPessoal_busca_3_18cdf676",
+    "section_name": "tipoMovimentacaoPessoal_busca",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 23,
+    "char_count": 94,
+    "overlap_with_previous": 22,
+    "overlap_with_next": 2,
+    "keywords": [
+      "pessoal",
+      "tipomovimentacaopessoal",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "tipoMovimentacaoPessoal",
+      "TipoMovimentacaoPessaolFonteDados",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.791593",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "18cdf676a55ef4681f6c614a0f7a5944",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: tipoMovimentacaoPessoal_busca\nType: definition\nRelated to: tipoMovimentacaoPessoal, TipoMovimentacaoPessaolFonteDados, busca\n\nListagem de tipo de movimentos pessoal\n\nRepresentation Type: TipoMovimentacaoPessaolFonteDados\n\nKeywords: pessoal, tipomovimentacaopessoal, tipo, dados",
+  "search_text": "tipoMovimentacaoPessoal_busca tipoMovimentacaoPessoal TipoMovimentacaoPessaolFonteDados busca pessoal tipomovimentacaopessoal tipo dados Listagem de tipo de movimentos pessoal\n\nRepresentation Type: TipoMovimentacaoPessaolFonteDados"
+}

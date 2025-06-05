@@ -1,0 +1,49 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliar",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliar_busca_1_d9fe44a9",
+    "section_name": "tabelaAuxiliar_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 24,
+    "char_count": 99,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 15,
+    "keywords": [
+      "tabelaauxiliar",
+      "busca"
+    ],
+    "entities": [
+      "TabelaAuxiliarRegistroSemValores",
+      "TabelaAuxiliarValorSemCampo",
+      "busca",
+      "TabelaAuxiliarCampoSemValores",
+      "TabelaAuxiliar",
+      "TabelaAuxiliarRegistro",
+      "TabelaAuxiliarCampo",
+      "tabelaAuxiliar",
+      "TabelaAuxiliarValorSemRegistro",
+      "TabelaAuxiliarImportacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.217746",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "d9fe44a9cfa157b97a314725feb247d6",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "tabelaAuxiliar_exclui_1_469039d5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tabelaAuxiliar_busca\nType: definition\nRelated to: TabelaAuxiliarRegistroSemValores, TabelaAuxiliarValorSemCampo, busca\n\nbusca (GET)\nMethod Description: Listagem de tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliar\n\nKeywords: tabelaauxiliar, busca",
+  "search_text": "tabelaAuxiliar_busca TabelaAuxiliarRegistroSemValores TabelaAuxiliarValorSemCampo busca TabelaAuxiliarCampoSemValores TabelaAuxiliar TabelaAuxiliarRegistro TabelaAuxiliarCampo tabelaAuxiliar TabelaAuxiliarValorSemRegistro TabelaAuxiliarImportacao tabelaauxiliar busca busca (GET)\nMethod Description: Listagem de tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliar"
+}

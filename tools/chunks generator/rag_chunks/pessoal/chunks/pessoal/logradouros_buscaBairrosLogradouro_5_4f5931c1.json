@@ -1,0 +1,58 @@
+{
+  "content": "## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)\n\n## Estado\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla: Sigla (Type: String)\n- codigoIbge: Código no IBGE (Type: Integer)\n- pais: País (Type: Pais)\n\n## Municipio\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: Estado)\n- codigoIbge: Código no IBGE (Type: Long)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- cep: CEP geral (Type: Long)\n\n## Bairro\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- municipio: Município (Type: Municipio)\n- zonaRural: Zona rural (Type: Boolean)\n\n## TipoLogradouro\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- abreviatura: Abreviatura (Type: String)\n\n## Logradouro\n- id: Id (Type: Long)\n- municipio: Município (Type: Municipio)\n- tipoLogradouro: Tipo (Type: TipoLogradouro)\n- descricao: Descrição (Type: String)\n- cep: CEP principal (Type: String)",
+  "metadata": {
+    "chunk_id": "logradouros_buscaBairrosLogradouro_5_4f5931c1",
+    "section_name": "logradouros_buscaBairrosLogradouro",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 387,
+    "char_count": 1104,
+    "overlap_with_previous": 24,
+    "overlap_with_next": 9,
+    "keywords": [
+      "municipio",
+      "logradouros",
+      "estado",
+      "bairro",
+      "logradouro",
+      "nome",
+      "sigla3d",
+      "tipologradouro",
+      "pais",
+      "id",
+      "sigla2c",
+      "sigla3c",
+      "tipo"
+    ],
+    "entities": [
+      "logradouros",
+      "Estado",
+      "TipoLogradouro",
+      "Municipio",
+      "buscaBairrosLogradouro",
+      "Logradouro",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.087319",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "4f5931c12b2c45d3370ac42a017a5334",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "agenciasBancarias_busca_1_ef251772",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: logradouros_buscaBairrosLogradouro\nType: reference\nRelated to: logradouros, Estado, TipoLogradouro\n\n## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)\n\n## Estado\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla: Sigla (Type: String)\n- codigoIbge: Código no IBGE (Type: Integer)\n- pais: País (Type: Pais)\n\n## Municipio\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: Estado)\n- codigoIbge: Código no IBGE (Type: Long)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- cep: CEP geral (Type: Long)\n\n## Bairro\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- municipio: Município (Type: Municipio)\n- zonaRural: Zona rural (Type: Boolean)\n\n## TipoLogradouro\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- abreviatura: Abreviatura (Type: String)\n\n## Logradouro\n- id: Id (Type: Long)\n- municipio: Município (Type: Municipio)\n- tipoLogradouro: Tipo (Type: TipoLogradouro)\n- descricao: Descrição (Type: String)\n- cep: CEP principal (Type: String)\n\nKeywords: municipio, logradouros, estado, bairro, logradouro, nome, sigla3d, tipologradouro, pais, id, sigla2c, sigla3c, tipo",
+  "search_text": "logradouros_buscaBairrosLogradouro logradouros Estado TipoLogradouro Municipio buscaBairrosLogradouro Logradouro Bairro Pais municipio logradouros estado bairro logradouro nome sigla3d tipologradouro pais id sigla2c sigla3c tipo ## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)\n\n## Estado\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla: Sigla (Type: String)\n- codigoIbge: Código no IBGE (Type: Integer)\n- pais: País (Type: Pais)\n\n## Municipio\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: Estado)\n- codigoIbge: Código no IBGE (Type: Long)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- cep: CEP geral (Type: Long)\n\n## Bairro\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- municipio: Município (Type: Municipio)\n- zonaRural: Zona rural (Type: Boolean)\n\n## TipoLogradouro\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- abreviatura: Abreviatura (Type: String)\n\n## Logradouro\n- id: Id (Type: Long)\n- municipio: Município (Type: Municipio)\n- tipoLogradouro: Tipo (Type: TipoLogradouro)\n- descricao: Descrição (Type: String)\n- cep: CEP principal (Type: String)"
+}

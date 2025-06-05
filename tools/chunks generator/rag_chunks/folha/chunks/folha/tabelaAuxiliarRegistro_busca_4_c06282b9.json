@@ -1,0 +1,49 @@
+{
+  "content": "- id: Id (Type: Long)\n- identificador: Identificador do registro (Type: Long)",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliarRegistro_busca_4_c06282b9",
+    "section_name": "tabelaAuxiliarRegistro_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 22,
+    "char_count": 77,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 14,
+    "keywords": [
+      "identificador",
+      "tabelaauxiliarregistro",
+      "id"
+    ],
+    "entities": [
+      "busca",
+      "TabelaAuxiliarCampoSemValores",
+      "TabelaAuxiliarAssociacao",
+      "TabelaAuxiliarRegistro",
+      "TabelaAuxiliarRegistroImportacao",
+      "tabelaAuxiliarRegistro",
+      "TabelaAuxiliarCampoAssociacao",
+      "TabelaAuxiliarValorSemRegistro",
+      "TabelaAuxiliarValorAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.506944",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "c06282b9a059a24f6b8119d322992350",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "tabelaAuxiliar_exclui_1_469039d5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tabelaAuxiliarRegistro_busca\nType: reference\nRelated to: busca, TabelaAuxiliarCampoSemValores, TabelaAuxiliarAssociacao\n\n- id: Id (Type: Long)\n- identificador: Identificador do registro (Type: Long)\n\nKeywords: identificador, tabelaauxiliarregistro, id",
+  "search_text": "tabelaAuxiliarRegistro_busca busca TabelaAuxiliarCampoSemValores TabelaAuxiliarAssociacao TabelaAuxiliarRegistro TabelaAuxiliarRegistroImportacao tabelaAuxiliarRegistro TabelaAuxiliarCampoAssociacao TabelaAuxiliarValorSemRegistro TabelaAuxiliarValorAssociacao identificador tabelaauxiliarregistro id - id: Id (Type: Long)\n- identificador: Identificador do registro (Type: Long)"
+}

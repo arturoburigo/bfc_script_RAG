@@ -1,0 +1,45 @@
+{
+  "content": "Configuração Integração Contábil\n\nRepresentation Type: ConfiguracaoIntegracaoContabilFonteDados",
+  "metadata": {
+    "chunk_id": "configuracaoIntegracaoContabil_busca_2_00f94b2e",
+    "section_name": "configuracaoIntegracaoContabil_busca",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 24,
+    "char_count": 95,
+    "overlap_with_previous": 21,
+    "overlap_with_next": 22,
+    "keywords": [
+      "configuracaointegracaocontabil",
+      "dados"
+    ],
+    "entities": [
+      "ConfiguracaoOrganograma",
+      "OrganogramasConfiguracaoIntegracaoContabilFonteDados",
+      "busca",
+      "ConfiguracaoIntegracaoContabilFonteDados",
+      "EventosConfiguracaoIntegracaoContabilFonteDados",
+      "configuracaoIntegracaoContabil"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.976219",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "00f94b2ecf291f64d1645cd04c1af1e8",
+    "related_chunks": [
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19",
+      "remuneracoes_buscaComposicoesBasesFolha_3_3f265087",
+      "remuneracoes_buscaEventosDeFolhas_0_f817d7f1"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracaoIntegracaoContabil_busca\nType: definition\nRelated to: ConfiguracaoOrganograma, OrganogramasConfiguracaoIntegracaoContabilFonteDados, busca\n\nConfiguração Integração Contábil\n\nRepresentation Type: ConfiguracaoIntegracaoContabilFonteDados\n\nKeywords: configuracaointegracaocontabil, dados",
+  "search_text": "configuracaoIntegracaoContabil_busca ConfiguracaoOrganograma OrganogramasConfiguracaoIntegracaoContabilFonteDados busca ConfiguracaoIntegracaoContabilFonteDados EventosConfiguracaoIntegracaoContabilFonteDados configuracaoIntegracaoContabil configuracaointegracaocontabil dados Configuração Integração Contábil\n\nRepresentation Type: ConfiguracaoIntegracaoContabilFonteDados"
+}

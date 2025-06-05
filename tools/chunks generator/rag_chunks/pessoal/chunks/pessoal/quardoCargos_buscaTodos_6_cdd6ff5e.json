@@ -1,0 +1,50 @@
+{
+  "content": "groovy\nfonteQuardoCargos = Dados.pessoal.v2.quardoCargos;\n\ndadosQuardoCargos = fonteQuardoCargos.buscaTodos(campos: \"id, descricao, inicioVigencia, percentualMinimo, extinto, campoAdicional\",ordenacao: \"inicioVigencia asc\")\n\npercorrer (dadosQuardoCargos) { itemQuardoCargos ->\n\n}",
+  "metadata": {
+    "chunk_id": "quardoCargos_buscaTodos_6_cdd6ff5e",
+    "section_name": "quardoCargos_buscaTodos",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 97,
+    "char_count": 279,
+    "overlap_with_previous": 19,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "ordenacao",
+      "v2",
+      "quadrocargos",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "AtoMatriculaAssociacao",
+      "Dados.pessoal.v2.quardoCargos",
+      "QuadroCargo",
+      "TipoAto",
+      "buscaTodos",
+      "quadroCargos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.634954",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "cdd6ff5e354e12270c0c723207d6f7f2",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: quardoCargos_buscaTodos\nType: example\nRelated to: AtoMatriculaAssociacao, Dados.pessoal.v2.quardoCargos, QuadroCargo\n\ngroovy\nfonteQuardoCargos = Dados.pessoal.v2.quardoCargos;\n\ndadosQuardoCargos = fonteQuardoCargos.buscaTodos(campos: \"id, descricao, inicioVigencia, percentualMinimo, extinto, campoAdicional\",ordenacao: \"inicioVigencia asc\")\n\npercorrer (dadosQuardoCargos) { itemQuardoCargos ->\n\n}\n\nKeywords: pessoal, busca, ordenacao, v2, quadrocargos, campo, dados",
+  "search_text": "quardoCargos_buscaTodos AtoMatriculaAssociacao Dados.pessoal.v2.quardoCargos QuadroCargo TipoAto buscaTodos quadroCargos pessoal busca ordenacao v2 quadrocargos campo dados groovy\nfonteQuardoCargos = Dados.pessoal.v2.quardoCargos;\n\ndadosQuardoCargos = fonteQuardoCargos.buscaTodos(campos: \"id, descricao, inicioVigencia, percentualMinimo, extinto, campoAdicional\",ordenacao: \"inicioVigencia asc\")\n\npercorrer (dadosQuardoCargos) { itemQuardoCargos ->\n\n}"
+}

@@ -1,0 +1,48 @@
+{
+  "content": "busca (GET)\nMethod Description: Integração Contábil\n\nRepresentation Type: IntegracaoContabilFonteDados",
+  "metadata": {
+    "chunk_id": "integracaoContabil_busca_1_b75e5e51",
+    "section_name": "integracaoContabil_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 25,
+    "char_count": 102,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 16,
+    "keywords": [
+      "busca",
+      "dados",
+      "integracaocontabil"
+    ],
+    "entities": [
+      "SelecaoAvancadaFonteDados",
+      "IntegracaoContabilFonteDados",
+      "busca",
+      "integracaoContabil",
+      "MatriculaAssociacao",
+      "integracaoContabilInconsitencia",
+      "integracaoContabilAssociacao",
+      "ConfiguracaoIntegracaoContabilAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.548085",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "b75e5e515120a1efd441c5696e90297d",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: integracaoContabil_busca\nType: definition\nRelated to: SelecaoAvancadaFonteDados, IntegracaoContabilFonteDados, busca\n\nbusca (GET)\nMethod Description: Integração Contábil\n\nRepresentation Type: IntegracaoContabilFonteDados\n\nKeywords: busca, dados, integracaocontabil",
+  "search_text": "integracaoContabil_busca SelecaoAvancadaFonteDados IntegracaoContabilFonteDados busca integracaoContabil MatriculaAssociacao integracaoContabilInconsitencia integracaoContabilAssociacao ConfiguracaoIntegracaoContabilAssociacao busca dados integracaocontabil busca (GET)\nMethod Description: Integração Contábil\n\nRepresentation Type: IntegracaoContabilFonteDados"
+}

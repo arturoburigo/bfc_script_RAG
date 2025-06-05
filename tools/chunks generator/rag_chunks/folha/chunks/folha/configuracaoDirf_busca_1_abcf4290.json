@@ -1,0 +1,45 @@
+{
+  "content": "busca (GET)\nMethod Description: Configuração DIRF\n\nRepresentation Type: ConfiguracaoDirfFonteDados",
+  "metadata": {
+    "chunk_id": "configuracaoDirf_busca_1_abcf4290",
+    "section_name": "configuracaoDirf_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 25,
+    "char_count": 98,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 16,
+    "keywords": [
+      "configuracaodirf",
+      "dados",
+      "busca"
+    ],
+    "entities": [
+      "busca",
+      "ConfiguracaoDirfConfiguracaoEvento",
+      "ConfiguracaoDirfFonteDados",
+      "configuracaoDirf",
+      "ConfiguracaoDirfEventoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.229143",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "abcf4290a4522bc54ba82f459d8634a9",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracaoDirf_busca\nType: definition\nRelated to: busca, ConfiguracaoDirfConfiguracaoEvento, ConfiguracaoDirfFonteDados\n\nbusca (GET)\nMethod Description: Configuração DIRF\n\nRepresentation Type: ConfiguracaoDirfFonteDados\n\nKeywords: configuracaodirf, dados, busca",
+  "search_text": "configuracaoDirf_busca busca ConfiguracaoDirfConfiguracaoEvento ConfiguracaoDirfFonteDados configuracaoDirf ConfiguracaoDirfEventoFonteDados configuracaodirf dados busca busca (GET)\nMethod Description: Configuração DIRF\n\nRepresentation Type: ConfiguracaoDirfFonteDados"
+}

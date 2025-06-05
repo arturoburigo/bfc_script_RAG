@@ -1,0 +1,56 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de organogramas\n\nRepresentation Type: OrganogramaFonteDados",
+  "metadata": {
+    "chunk_id": "organogramas_busca_1_ce25ac99",
+    "section_name": "organogramas_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 24,
+    "char_count": 100,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 14,
+    "keywords": [
+      "organogramas",
+      "dados",
+      "busca"
+    ],
+    "entities": [
+      "ConfiguracaoOrganograma",
+      "organogramas",
+      "TipoLogradouroOrganograma",
+      "Endereco",
+      "CargoOrganograma",
+      "busca",
+      "FuncaoOrganograma",
+      "LogradouroOrganograma",
+      "BairroOrganograma",
+      "EstadoPessoaFisica",
+      "AtoOrganograma",
+      "ConfiguracaoNivelOrganograma",
+      "MunicipioPessoaFisica",
+      "OrganogramaResponsavelFonteDados",
+      "OrganogramaFonteDados",
+      "TipoAdministracao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.273067",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "ce25ac999713377aef5c16ac42a1b288",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "pessoaFisica_buscaFiliacao_4_0a7e85dc",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: organogramas_busca\nType: definition\nRelated to: ConfiguracaoOrganograma, organogramas, TipoLogradouroOrganograma\n\nbusca (GET)\nMethod Description: Listagem de organogramas\n\nRepresentation Type: OrganogramaFonteDados\n\nKeywords: organogramas, dados, busca",
+  "search_text": "organogramas_busca ConfiguracaoOrganograma organogramas TipoLogradouroOrganograma Endereco CargoOrganograma busca FuncaoOrganograma LogradouroOrganograma BairroOrganograma EstadoPessoaFisica AtoOrganograma ConfiguracaoNivelOrganograma MunicipioPessoaFisica OrganogramaResponsavelFonteDados OrganogramaFonteDados TipoAdministracao organogramas dados busca busca (GET)\nMethod Description: Listagem de organogramas\n\nRepresentation Type: OrganogramaFonteDados"
+}

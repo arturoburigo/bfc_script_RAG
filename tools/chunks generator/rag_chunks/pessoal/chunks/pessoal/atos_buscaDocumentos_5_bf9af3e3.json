@@ -1,0 +1,54 @@
+{
+  "content": "Descrição do arquivo (Type: String)\n- type: Tipo de arquivo (Type: String)\n- size: Tamanho de arquivo (Type: Long)\n- url: URL para baixar o arquivo (Type: String)\n\n## FonteDivulgacao\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n- meioComunicacao: Meio de comunicação (Type: )\n\n## AtoFonteDivulgacao\n- id: id (Type: Long)\n- fonteDivulgacao: Fonte de divulgação (Type: FonteDivulgacao)\n- dataPublicacao: Data publicação (Type: LocalDate)\n- numeroPublicacao: Número publicação (Type: String)",
+  "metadata": {
+    "chunk_id": "atos_buscaDocumentos_5_bf9af3e3",
+    "section_name": "atos_buscaDocumentos",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 156,
+    "char_count": 503,
+    "overlap_with_previous": 59,
+    "overlap_with_next": 9,
+    "keywords": [
+      "fontedivulgacao",
+      "type",
+      "atofontedivulgacao",
+      "url",
+      "size",
+      "id",
+      "descricao",
+      "atos",
+      "tipo"
+    ],
+    "entities": [
+      "atos",
+      "ArquivoAto",
+      "NaturezaTextoJuridico",
+      "buscaDocumentos",
+      "AtoFonteDivulgacao",
+      "TipoAto",
+      "AtoFonteDados",
+      "FonteDivulgacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.192753",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "bf9af3e389d02ef4c052d1e3ccab1516",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "fontesDivulgacao_busca_2_58920ed9"
+    ],
+    "quality_score": 0.45
+  },
+  "embeddings_text": "Section: atos_buscaDocumentos\nType: definition\nRelated to: atos, ArquivoAto, NaturezaTextoJuridico\n\nDescrição do arquivo (Type: String)\n- type: Tipo de arquivo (Type: String)\n- size: Tamanho de arquivo (Type: Long)\n- url: URL para baixar o arquivo (Type: String)\n\n## FonteDivulgacao\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n- meioComunicacao: Meio de comunicação (Type: )\n\n## AtoFonteDivulgacao\n- id: id (Type: Long)\n- fonteDivulgacao: Fonte de divulgação (Type: FonteDivulgacao)\n- dataPublicacao: Data publicação (Type: LocalDate)\n- numeroPublicacao: Número publicação (Type: String)\n\nKeywords: fontedivulgacao, type, atofontedivulgacao, url, size, id, descricao, atos, tipo",
+  "search_text": "atos_buscaDocumentos atos ArquivoAto NaturezaTextoJuridico buscaDocumentos AtoFonteDivulgacao TipoAto AtoFonteDados FonteDivulgacao fontedivulgacao type atofontedivulgacao url size id descricao atos tipo Descrição do arquivo (Type: String)\n- type: Tipo de arquivo (Type: String)\n- size: Tamanho de arquivo (Type: Long)\n- url: URL para baixar o arquivo (Type: String)\n\n## FonteDivulgacao\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n- meioComunicacao: Meio de comunicação (Type: )\n\n## AtoFonteDivulgacao\n- id: id (Type: Long)\n- fonteDivulgacao: Fonte de divulgação (Type: FonteDivulgacao)\n- dataPublicacao: Data publicação (Type: LocalDate)\n- numeroPublicacao: Número publicação (Type: String)"
+}

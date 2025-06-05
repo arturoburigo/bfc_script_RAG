@@ -1,0 +1,49 @@
+{
+  "content": "- reduz13Salario: Reduz 13º salário? (Type: Boolean)\n- perdeTempoServico: Perde tempo de serviço? (Type: Boolean)\n- consideraVencimento: Considera vencimentos? (Type: Boolean)\n- reduzFgts: Reduz FGTS? (Type: Boolean)\n- reduzFerias: Reduz férias? (Type: Boolean)\n- tipoMovimentacaoPessoal.id: Id do tipo de movimentação pessoal (Type: Long)\n- classificacao: Classificação (Type: )\n- id: Identificador (Type: Long)\n- tipoMovimentacaoPessoal.descricao: Descrição do tipo de movimentação pessoal (Type: String)\n- diasPrevistos: Dias previstos (Type: Integer)\n- tipoMovimentacaoPessoal.classificacao: Classificação do tipo de movimentação pessoal (Type: )\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "tipoAfastamento_busca_4_8ab79104",
+    "section_name": "tipoAfastamento_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 216,
+    "char_count": 688,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 77,
+    "keywords": [
+      "pessoal",
+      "reduzfgts",
+      "reduz13salario",
+      "tipo",
+      "reduzferias",
+      "consideravencimento",
+      "tipoafastamento",
+      "perdetemposervico"
+    ],
+    "entities": [
+      "TipoMovimentacaoPessoalTipoAfastamento",
+      "tipoAfastamento",
+      "TipoAfastamentoFonteDados",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.384857",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "8ab791044e58a5fac674a21d52a53ed5",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.65
+  },
+  "embeddings_text": "Section: tipoAfastamento_busca\nType: reference\nRelated to: TipoMovimentacaoPessoalTipoAfastamento, tipoAfastamento, TipoAfastamentoFonteDados\n\n- reduz13Salario: Reduz 13º salário? (Type: Boolean)\n- perdeTempoServico: Perde tempo de serviço? (Type: Boolean)\n- consideraVencimento: Considera vencimentos? (Type: Boolean)\n- reduzFgts: Reduz FGTS? (Type: Boolean)\n- reduzFerias: Reduz férias? (Type: Boolean)\n- tipoMovimentacaoPessoal.id: Id do tipo de movimentação pessoal (Type: Long)\n- classificacao: Classificação (Type: )\n- id: Identificador (Type: Long)\n- tipoMovimentacaoPessoal.descricao: Descrição do tipo de movimentação pessoal (Type: String)\n- diasPrevistos: Dias previstos (Type: Integer)\n- tipoMovimentacaoPessoal.classificacao: Classificação do tipo de movimentação pessoal (Type: )\n- descricao: Descrição (Type: String)\n\nKeywords: pessoal, reduzfgts, reduz13salario, tipo, reduzferias, consideravencimento, tipoafastamento, perdetemposervico",
+  "search_text": "tipoAfastamento_busca TipoMovimentacaoPessoalTipoAfastamento tipoAfastamento TipoAfastamentoFonteDados busca pessoal reduzfgts reduz13salario tipo reduzferias consideravencimento tipoafastamento perdetemposervico - reduz13Salario: Reduz 13º salário? (Type: Boolean)\n- perdeTempoServico: Perde tempo de serviço? (Type: Boolean)\n- consideraVencimento: Considera vencimentos? (Type: Boolean)\n- reduzFgts: Reduz FGTS? (Type: Boolean)\n- reduzFerias: Reduz férias? (Type: Boolean)\n- tipoMovimentacaoPessoal.id: Id do tipo de movimentação pessoal (Type: Long)\n- classificacao: Classificação (Type: )\n- id: Identificador (Type: Long)\n- tipoMovimentacaoPessoal.descricao: Descrição do tipo de movimentação pessoal (Type: String)\n- diasPrevistos: Dias previstos (Type: Integer)\n- tipoMovimentacaoPessoal.classificacao: Classificação do tipo de movimentação pessoal (Type: )\n- descricao: Descrição (Type: String)"
+}

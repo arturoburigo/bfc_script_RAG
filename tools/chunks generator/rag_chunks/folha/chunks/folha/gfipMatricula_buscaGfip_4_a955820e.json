@@ -1,0 +1,50 @@
+{
+  "content": "- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- tipoRecolhimento: Tipo de recolhimento utilizado na geração da GFIP (Type: )\n- situacaoEnvioMatricula: Situação do envio da GFIP (Type: )\n- gfipMatriculas.matricula.id: Matrícula do empregado (Type: Long)\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- id: Código da GFIP (Type: Long)\n- competencia: Competência (Type: YearMonth)\n- gfipMatriculas.id: Id Matrícula GFIP (Type: Long)\n- modalidade: Modalidade (Type: )",
+  "metadata": {
+    "chunk_id": "gfipMatricula_buscaGfip_4_a955820e",
+    "section_name": "gfipMatricula_buscaGfip",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 158,
+    "char_count": 503,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 66,
+    "keywords": [
+      "tipoprocessamento",
+      "subtipoprocessamento",
+      "tiporecolhimento",
+      "situacaoenviomatricula",
+      "id",
+      "gfipmatricula",
+      "tipo"
+    ],
+    "entities": [
+      "GfipMatriculaDto",
+      "gfipMatricula",
+      "GfipFonteDados",
+      "buscaGfip",
+      "GfipMatriculaFonteDados",
+      "MatriculaGfipFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.228368",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "a955820edaa823815b0ee27f7ecdcd63",
+    "related_chunks": [
+      "gfipMatricula_buscaGfip_0_a7181776",
+      "gfipMatricula_buscaGfip_6_b21e5052",
+      "gfipMatricula_buscaGfip_1_1a48576c",
+      "gfipMatricula_importa_0_a7181776",
+      "gfipMatricula_importa_3_ad915c0f"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: gfipMatricula_buscaGfip\nType: reference\nRelated to: GfipMatriculaDto, gfipMatricula, GfipFonteDados\n\n- subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- tipoRecolhimento: Tipo de recolhimento utilizado na geração da GFIP (Type: )\n- situacaoEnvioMatricula: Situação do envio da GFIP (Type: )\n- gfipMatriculas.matricula.id: Matrícula do empregado (Type: Long)\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- id: Código da GFIP (Type: Long)\n- competencia: Competência (Type: YearMonth)\n- gfipMatriculas.id: Id Matrícula GFIP (Type: Long)\n- modalidade: Modalidade (Type: )\n\nKeywords: tipoprocessamento, subtipoprocessamento, tiporecolhimento, situacaoenviomatricula, id, gfipmatricula, tipo",
+  "search_text": "gfipMatricula_buscaGfip GfipMatriculaDto gfipMatricula GfipFonteDados buscaGfip GfipMatriculaFonteDados MatriculaGfipFonteDados tipoprocessamento subtipoprocessamento tiporecolhimento situacaoenviomatricula id gfipmatricula tipo - subTipoProcessamento: Subtipo de processamento de cálculo (Type: )\n- tipoRecolhimento: Tipo de recolhimento utilizado na geração da GFIP (Type: )\n- situacaoEnvioMatricula: Situação do envio da GFIP (Type: )\n- gfipMatriculas.matricula.id: Matrícula do empregado (Type: Long)\n- tipoProcessamento: Tipo de processamento de cálculo (Type: )\n- id: Código da GFIP (Type: Long)\n- competencia: Competência (Type: YearMonth)\n- gfipMatriculas.id: Id Matrícula GFIP (Type: Long)\n- modalidade: Modalidade (Type: )"
+}

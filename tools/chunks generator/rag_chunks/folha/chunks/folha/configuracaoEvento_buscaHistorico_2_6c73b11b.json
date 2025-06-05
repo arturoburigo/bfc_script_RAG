@@ -1,0 +1,49 @@
+{
+  "content": "Listagem de histórico das configurações de eventos\n\nRepresentation Type: ConfiguracaoEventoFonteDados",
+  "metadata": {
+    "chunk_id": "configuracaoEvento_buscaHistorico_2_6c73b11b",
+    "section_name": "configuracaoEvento_buscaHistorico",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 22,
+    "char_count": 101,
+    "overlap_with_previous": 20,
+    "overlap_with_next": 21,
+    "keywords": [
+      "configuracaoevento",
+      "dados"
+    ],
+    "entities": [
+      "buscaHistorico",
+      "AtoConfiguracaoEvento",
+      "MotivoRescisaoConfiguracaoEvento",
+      "configuracaoEvento",
+      "Base",
+      "dependenciasFonteDados",
+      "ConfiguracaoEventoFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoProcessamentoFonteDados",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.083398",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "6c73b11b568bad5e1d1eda2d5cc5d746",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_buscaMotivosRescisao_1_0ae38fb7",
+      "configuracaoRais_buscaResponsavel_2_fd676cfc",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracaoEvento_buscaHistorico\nType: definition\nRelated to: buscaHistorico, AtoConfiguracaoEvento, MotivoRescisaoConfiguracaoEvento\n\nListagem de histórico das configurações de eventos\n\nRepresentation Type: ConfiguracaoEventoFonteDados\n\nKeywords: configuracaoevento, dados",
+  "search_text": "configuracaoEvento_buscaHistorico buscaHistorico AtoConfiguracaoEvento MotivoRescisaoConfiguracaoEvento configuracaoEvento Base dependenciasFonteDados ConfiguracaoEventoFonteDados ScriptFonteDados ConfiguracaoProcessamentoFonteDados ConfiguracaoEventoAssociacaoFonteDados configuracaoevento dados Listagem de histórico das configurações de eventos\n\nRepresentation Type: ConfiguracaoEventoFonteDados"
+}

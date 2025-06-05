@@ -1,0 +1,63 @@
+{
+  "content": "## PessoaFisica\n- id: Identificador da pessoa (Type: Long)\n- nome: Nome (Type: String)\n\n## CodigoMatriculaAssociacaoErroCalculo\n- numero: Número (Type: Long)\n- contrato: Contrato (Type: Integer)\n- digitoVerificador: Digito verificador (Type: Integer)\n\n## ConfiguracaoNivelOrganogramaAssociacao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- nivelSecretaria: Nível secretaria? (Type: Boolean)\n- nivel: Nível da secretaria (Type: Integer)\n\n## ConfiguracaoOrganogramaAssociacao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- niveis: Níveis (Type: ConfiguracaoNivelOrganogramaAssociacao)\n\n## OrganogramaAssociacao\n- id: Id (Type: Long)\n- configuracao: Configuração de organograma (Type: ConfiguracaoOrganogramaAssociacao)\n- descricao: Descrição (Type: String)\n- numero: Número (Type: String)\n- nivel: Nível (Type: Integer)\n\n## GrupoFuncional\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## MatriculaAssociacaoErroCalculo\n- id: Identificador da matrícula (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- pessoa: Pessoa (Type: PessoaFisica)\n- codigoMatricula: Código da matrícula (Type: CodigoMatriculaAssociacaoErroCalculo)\n- organograma: Organograma (Type: OrganogramaAssociacao)\n- grupoFuncional: Grupo funcional (Type: GrupoFuncional)\n\n## CalculoFolhaMensagem\n- id: Identificador (Type: Long)\n- matricula: Matrícula (Type: MatriculaAssociacaoErroCalculo)\n- tipoProcessamento: Tipo de processamento (Type: )\n- subTipoProcessamento: Sub tipo de processamento (Type: )\n- competencia: Competência (Type: YearMonth)\n- tipo: Tipo mensagem (Type: )\n- mensagem: Mensagem (Type: String)\n- dataCalculo: Data do cálculo (Type: LocalDateTime)\n- usuarioCalculo: Usuário do cálculo (Type: LocalDateTime)",
+  "metadata": {
+    "chunk_id": "logs_buscaLogs_5_749cb733",
+    "section_name": "logs_buscaLogs",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 513,
+    "char_count": 1734,
+    "overlap_with_previous": 31,
+    "overlap_with_next": 22,
+    "keywords": [
+      "nome",
+      "organogramaassociacao",
+      "calculofolhamensagem",
+      "id",
+      "configuracaoorganogramaassociacao",
+      "numero",
+      "pessoafisica",
+      "configuracaonivelorganogramaassociacao",
+      "grupofuncional",
+      "matriculaassociacaoerrocalculo",
+      "digitoverificador",
+      "folha",
+      "logs",
+      "codigomatriculaassociacaoerrocalculo",
+      "tipo",
+      "contrato"
+    ],
+    "entities": [
+      "OrganogramaAssociacao",
+      "ConfiguracaoNivelOrganogramaAssociacao",
+      "CodigoMatriculaAssociacaoErroCalculo",
+      "busca",
+      "GrupoFuncional",
+      "ConfiguracaoOrganogramaAssociacao",
+      "CalculoFolhaMensagem",
+      "PessoaFisica",
+      "logs",
+      "MatriculaAssociacaoErroCalculo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.296866",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "749cb7331e150e37b7941f643b60f2bd",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 1.0
+  },
+  "embeddings_text": "Section: logs_buscaLogs\nType: reference\nRelated to: OrganogramaAssociacao, ConfiguracaoNivelOrganogramaAssociacao, CodigoMatriculaAssociacaoErroCalculo\n\n## PessoaFisica\n- id: Identificador da pessoa (Type: Long)\n- nome: Nome (Type: String)\n\n## CodigoMatriculaAssociacaoErroCalculo\n- numero: Número (Type: Long)\n- contrato: Contrato (Type: Integer)\n- digitoVerificador: Digito verificador (Type: Integer)\n\n## ConfiguracaoNivelOrganogramaAssociacao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- nivelSecretaria: Nível secretaria? (Type: Boolean)\n- nivel: Nível da secretaria (Type: Integer)\n\n## ConfiguracaoOrganogramaAssociacao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- niveis: Níveis (Type: ConfiguracaoNivelOrganogramaAssociacao)\n\n## OrganogramaAssociacao\n- id: Id (Type: Long)\n- configuracao: Configuração de organograma (Type: ConfiguracaoOrganogramaAssociacao)\n- descricao: Descrição (Type: String)\n- numero: Número (Type: String)\n- nivel: Nível (Type: Integer)\n\n## GrupoFuncional\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## MatriculaAssociacaoErroCalculo\n- id: Identificador da matrícula (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- pessoa: Pessoa (Type: PessoaFisica)\n- codigoMatricula: Código da matrícula (Type: CodigoMatriculaAssociacaoErroCalculo)\n- organograma: Organograma (Type: OrganogramaAssociacao)\n- grupoFuncional: Grupo funcional (Type: GrupoFuncional)\n\n## CalculoFolhaMensagem\n- id: Identificador (Type: Long)\n- matricula: Matrícula (Type: MatriculaAssociacaoErroCalculo)\n- tipoProcessamento: Tipo de processamento (Type: )\n- subTipoProcessamento: Sub tipo de processamento (Type: )\n- competencia: Competência (Type: YearMonth)\n- tipo: Tipo mensagem (Type: )\n- mensagem: Mensagem (Type: String)\n- dataCalculo: Data do cálculo (Type: LocalDateTime)\n- usuarioCalculo: Usuário do cálculo (Type: LocalDateTime)\n\nKeywords: nome, organogramaassociacao, calculofolhamensagem, id, configuracaoorganogramaassociacao, numero, pessoafisica, configuracaonivelorganogramaassociacao, grupofuncional, matriculaassociacaoerrocalculo, digitoverificador, folha, logs, codigomatriculaassociacaoerrocalculo, tipo, contrato",
+  "search_text": "logs_buscaLogs OrganogramaAssociacao ConfiguracaoNivelOrganogramaAssociacao CodigoMatriculaAssociacaoErroCalculo busca GrupoFuncional ConfiguracaoOrganogramaAssociacao CalculoFolhaMensagem PessoaFisica logs MatriculaAssociacaoErroCalculo nome organogramaassociacao calculofolhamensagem id configuracaoorganogramaassociacao numero pessoafisica configuracaonivelorganogramaassociacao grupofuncional matriculaassociacaoerrocalculo digitoverificador folha logs codigomatriculaassociacaoerrocalculo tipo contrato ## PessoaFisica\n- id: Identificador da pessoa (Type: Long)\n- nome: Nome (Type: String)\n\n## CodigoMatriculaAssociacaoErroCalculo\n- numero: Número (Type: Long)\n- contrato: Contrato (Type: Integer)\n- digitoVerificador: Digito verificador (Type: Integer)\n\n## ConfiguracaoNivelOrganogramaAssociacao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- nivelSecretaria: Nível secretaria? (Type: Boolean)\n- nivel: Nível da secretaria (Type: Integer)\n\n## ConfiguracaoOrganogramaAssociacao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- niveis: Níveis (Type: ConfiguracaoNivelOrganogramaAssociacao)\n\n## OrganogramaAssociacao\n- id: Id (Type: Long)\n- configuracao: Configuração de organograma (Type: ConfiguracaoOrganogramaAssociacao)\n- descricao: Descrição (Type: String)\n- numero: Número (Type: String)\n- nivel: Nível (Type: Integer)\n\n## GrupoFuncional\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## MatriculaAssociacaoErroCalculo\n- id: Identificador da matrícula (Type: Long)\n- tipo: Tipo de matrícula (Type: )\n- pessoa: Pessoa (Type: PessoaFisica)\n- codigoMatricula: Código da matrícula (Type: CodigoMatriculaAssociacaoErroCalculo)\n- organograma: Organograma (Type: OrganogramaAssociacao)\n- grupoFuncional: Grupo funcional (Type: GrupoFuncional)\n\n## CalculoFolhaMensagem\n- id: Identificador (Type: Long)\n- matricula: Matrícula (Type: MatriculaAssociacaoErroCalculo)\n- tipoProcessamento: Tipo de processamento (Type: )\n- subTipoProcessamento: Sub tipo de processamento (Type: )\n- competencia: Competência (Type: YearMonth)\n- tipo: Tipo mensagem (Type: )\n- mensagem: Mensagem (Type: String)\n- dataCalculo: Data do cálculo (Type: LocalDateTime)\n- usuarioCalculo: Usuário do cálculo (Type: LocalDateTime)"
+}

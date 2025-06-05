@@ -1,0 +1,50 @@
+{
+  "content": "groovy\nfonteVinculoEmpregaticio = Dados.pessoal.v2.vinculoEmpregaticio;\n\ndadosVinculoEmpregaticio = fonteVinculoEmpregaticio.buscaCategoriasTrabalhador(campos: \"id, descricao, grupoTrabalhador, codigoESocial\",ordenacao: \"grupoTrabalhador asc\")\n\npercorrer (dadosVinculoEmpregaticio) { itemVinculoEmpregaticio ->\n\n}",
+  "metadata": {
+    "chunk_id": "vinculoEmpregaticio_buscaCategoriasTrabalhador_6_341d283e",
+    "section_name": "vinculoEmpregaticio_buscaCategoriasTrabalhador",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 108,
+    "char_count": 313,
+    "overlap_with_previous": 23,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "ordenacao",
+      "v2",
+      "campo",
+      "vinculoempregaticio",
+      "dados"
+    ],
+    "entities": [
+      "Dados.pessoal.v2.vinculoEmpregaticio",
+      "buscaCategoriasTrabalhador",
+      "VinculoEmpregaticioMotivoRescisaoFonteDados",
+      "vinculoEmpregaticio",
+      "VinculoEmpregaticioCategoriaTrabalhadorFonteDados",
+      "VinculoEmpregaticioFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.202409",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "341d283e2002251e283157f451b55d89",
+    "related_chunks": [
+      "vinculoEmpregaticio_busca_2_802b9c15",
+      "vinculoEmpregaticio_buscaCategoriasTrabalhador_3_934e4e28",
+      "cargo_busca_3_b8c35b40",
+      "cargo_buscaTodos_3_e9113024",
+      "vinculoEmpregaticio_buscaCategoriasTrabalhador_4_0eedb897"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: vinculoEmpregaticio_buscaCategoriasTrabalhador\nType: example\nRelated to: Dados.pessoal.v2.vinculoEmpregaticio, buscaCategoriasTrabalhador, VinculoEmpregaticioMotivoRescisaoFonteDados\n\ngroovy\nfonteVinculoEmpregaticio = Dados.pessoal.v2.vinculoEmpregaticio;\n\ndadosVinculoEmpregaticio = fonteVinculoEmpregaticio.buscaCategoriasTrabalhador(campos: \"id, descricao, grupoTrabalhador, codigoESocial\",ordenacao: \"grupoTrabalhador asc\")\n\npercorrer (dadosVinculoEmpregaticio) { itemVinculoEmpregaticio ->\n\n}\n\nKeywords: pessoal, busca, ordenacao, v2, campo, vinculoempregaticio, dados",
+  "search_text": "vinculoEmpregaticio_buscaCategoriasTrabalhador Dados.pessoal.v2.vinculoEmpregaticio buscaCategoriasTrabalhador VinculoEmpregaticioMotivoRescisaoFonteDados vinculoEmpregaticio VinculoEmpregaticioCategoriaTrabalhadorFonteDados VinculoEmpregaticioFonteDados pessoal busca ordenacao v2 campo vinculoempregaticio dados groovy\nfonteVinculoEmpregaticio = Dados.pessoal.v2.vinculoEmpregaticio;\n\ndadosVinculoEmpregaticio = fonteVinculoEmpregaticio.buscaCategoriasTrabalhador(campos: \"id, descricao, grupoTrabalhador, codigoESocial\",ordenacao: \"grupoTrabalhador asc\")\n\npercorrer (dadosVinculoEmpregaticio) { itemVinculoEmpregaticio ->\n\n}"
+}

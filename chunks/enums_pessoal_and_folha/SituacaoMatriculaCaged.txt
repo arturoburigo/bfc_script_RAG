@@ -1,4 +1,0 @@
-# SituacaoMatriculaCaged
-Enum: SituacaoMatriculaCaged
-- Admitido (Key: ADMITIDO, Value: 1)
-- Demitido (Key: DEMITIDO, Value: 2)

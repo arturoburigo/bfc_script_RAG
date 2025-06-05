@@ -1,4 +1,0 @@
-# Sexo
-Enum: Sexo
-- Masculino (Key: MASCULINO, Value: M)
-- Feminino (Key: FEMININO, Value: F)

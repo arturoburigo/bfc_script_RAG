@@ -1,4 +1,0 @@
-# SituacaoConta
-Enum: SituacaoConta
-- Aberta (Key: ABERTA, Value: A)
-- Encerrada (Key: ENCERRADA, Value: E)

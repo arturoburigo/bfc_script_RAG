@@ -1,0 +1,50 @@
+{
+  "content": "- entidade: Entidade (Type: Long)\n- cagedMatriculas.matricula.codigoMatricula.id: Código matrícula (Type: Long)\n- situacaoEnvioMatricula: Situação do CAGED (Type: )\n- cagedMatriculas.situacaoMatricula: Situação da matrícula no CAGED (Type: )\n- id: Código do caged (Type: Long)\n- dataEnvio: Competência (Type: LocalDate)",
+  "metadata": {
+    "chunk_id": "caged_buscaCaged_4_84b7901a",
+    "section_name": "caged_buscaCaged",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 103,
+    "char_count": 319,
+    "overlap_with_previous": 5,
+    "overlap_with_next": 36,
+    "keywords": [
+      "situacaoenviomatricula",
+      "id",
+      "entidade",
+      "cagedmatricula",
+      "dataenvio"
+    ],
+    "entities": [
+      "Caged",
+      "CagedMatricula",
+      "buscaCaged",
+      "MatriculaMatricula",
+      "EstadoMunicipioCaged",
+      "cagedMatricula",
+      "CagedMatriculaDto",
+      "MunicipioCaged"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.157490",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "84b7901ae3ea5a507f5cbba740fb5548",
+    "related_chunks": [
+      "cagedMatricula_importa_3_44189c69",
+      "caged_buscaCaged_1_7758de71",
+      "caged_buscaCaged_5_b9d32e1c",
+      "cagedMatricula_importa_2_e612514e",
+      "caged_buscaCaged_3_d49e7fac"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: caged_buscaCaged\nType: reference\nRelated to: Caged, CagedMatricula, buscaCaged\n\n- entidade: Entidade (Type: Long)\n- cagedMatriculas.matricula.codigoMatricula.id: Código matrícula (Type: Long)\n- situacaoEnvioMatricula: Situação do CAGED (Type: )\n- cagedMatriculas.situacaoMatricula: Situação da matrícula no CAGED (Type: )\n- id: Código do caged (Type: Long)\n- dataEnvio: Competência (Type: LocalDate)\n\nKeywords: situacaoenviomatricula, id, entidade, cagedmatricula, dataenvio",
+  "search_text": "caged_buscaCaged Caged CagedMatricula buscaCaged MatriculaMatricula EstadoMunicipioCaged cagedMatricula CagedMatriculaDto MunicipioCaged situacaoenviomatricula id entidade cagedmatricula dataenvio - entidade: Entidade (Type: Long)\n- cagedMatriculas.matricula.codigoMatricula.id: Código matrícula (Type: Long)\n- situacaoEnvioMatricula: Situação do CAGED (Type: )\n- cagedMatriculas.situacaoMatricula: Situação da matrícula no CAGED (Type: )\n- id: Código do caged (Type: Long)\n- dataEnvio: Competência (Type: LocalDate)"
+}

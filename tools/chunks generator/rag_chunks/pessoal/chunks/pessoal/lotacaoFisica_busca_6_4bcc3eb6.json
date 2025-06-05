@@ -1,0 +1,60 @@
+{
+  "content": "groovy\nfonteLotacaoFisica = Dados.pessoal.v2.lotacaoFisica;\n\ndadosLotacaoFisica = fonteLotacaoFisica.busca(campos: \"responsaveis(profissional(id, nome), id, dataInicio, dataTermino, substituto), numero, id, descricao, inicioVigencia\")\n\npercorrer (dadosLotacaoFisica) { itemLotacaoFisica ->\n\n}",
+  "metadata": {
+    "chunk_id": "lotacaoFisica_busca_6_4bcc3eb6",
+    "section_name": "lotacaoFisica_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 98,
+    "char_count": 292,
+    "overlap_with_previous": 27,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "lotacoesfisicas",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "EmpresaResponsavelLotacaoFisica",
+      "Dados.pessoal.v2.lotacaoFisica",
+      "BairroLotacaoFisica",
+      "busca",
+      "EnderecoLotacaoFisica",
+      "ProfissionalLocatacaoFisica",
+      "TelefonesLotacaoFisica",
+      "ResponsavelLotacaoFisica",
+      "LotacaoFisica",
+      "NiveisConfiguracaoLotacaoFisica",
+      "ConfiguracaoLotacaoFisicaFonteDados",
+      "PaisLotacaoFisica",
+      "ConfiguracaoLotacaoFisica",
+      "EstadoLotacaoFisica",
+      "LogradouroLotacaoFisica",
+      "MunicipioLotacaoFisica",
+      "lotacoesFisicas"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.197674",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "4bcc3eb6d3aa1eb08f84b8ff065c34e1",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: lotacaoFisica_busca\nType: example\nRelated to: EmpresaResponsavelLotacaoFisica, Dados.pessoal.v2.lotacaoFisica, BairroLotacaoFisica\n\ngroovy\nfonteLotacaoFisica = Dados.pessoal.v2.lotacaoFisica;\n\ndadosLotacaoFisica = fonteLotacaoFisica.busca(campos: \"responsaveis(profissional(id, nome), id, dataInicio, dataTermino, substituto), numero, id, descricao, inicioVigencia\")\n\npercorrer (dadosLotacaoFisica) { itemLotacaoFisica ->\n\n}\n\nKeywords: pessoal, busca, lotacoesfisicas, v2, campo, dados",
+  "search_text": "lotacaoFisica_busca EmpresaResponsavelLotacaoFisica Dados.pessoal.v2.lotacaoFisica BairroLotacaoFisica busca EnderecoLotacaoFisica ProfissionalLocatacaoFisica TelefonesLotacaoFisica ResponsavelLotacaoFisica LotacaoFisica NiveisConfiguracaoLotacaoFisica ConfiguracaoLotacaoFisicaFonteDados PaisLotacaoFisica ConfiguracaoLotacaoFisica EstadoLotacaoFisica LogradouroLotacaoFisica MunicipioLotacaoFisica lotacoesFisicas pessoal busca lotacoesfisicas v2 campo dados groovy\nfonteLotacaoFisica = Dados.pessoal.v2.lotacaoFisica;\n\ndadosLotacaoFisica = fonteLotacaoFisica.busca(campos: \"responsaveis(profissional(id, nome), id, dataInicio, dataTermino, substituto), numero, id, descricao, inicioVigencia\")\n\npercorrer (dadosLotacaoFisica) { itemLotacaoFisica ->\n\n}"
+}

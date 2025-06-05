@@ -1,0 +1,49 @@
+{
+  "content": "Listagem de programações de férias\n\nRepresentation Type: ProgramacaoFeriasListagemRepresentation",
+  "metadata": {
+    "chunk_id": "programacaoFerias_busca_3_5652848f",
+    "section_name": "programacaoFerias_busca",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 21,
+    "char_count": 96,
+    "overlap_with_previous": 17,
+    "overlap_with_next": 4,
+    "keywords": [
+      "programacaoferias"
+    ],
+    "entities": [
+      "CalculoMensagemAssociacaoRepresentation",
+      "TipoMovimentacaoPessoalTipoAfastamento",
+      "TipoAfastamentoFonteDados",
+      "AtoMatriculaAssociacao",
+      "busca",
+      "PeriodoAquisitivo",
+      "TipoAto",
+      "ProgramacaoFeriasListagemRepresentation",
+      "MatriculaAssociacao",
+      "ConfiguracaoMovimentoPeriodoAquisitivo",
+      "programacaoFerias"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.236194",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "5652848f587a5e1446f7de88db0524e4",
+    "related_chunks": [
+      "calculoFolha_buscaCalculoRescisao_6_6473e96c",
+      "cargo_buscaTodos_6_d5626417",
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: programacaoFerias_busca\nType: definition\nRelated to: CalculoMensagemAssociacaoRepresentation, TipoMovimentacaoPessoalTipoAfastamento, TipoAfastamentoFonteDados\n\nListagem de programações de férias\n\nRepresentation Type: ProgramacaoFeriasListagemRepresentation\n\nKeywords: programacaoferias",
+  "search_text": "programacaoFerias_busca CalculoMensagemAssociacaoRepresentation TipoMovimentacaoPessoalTipoAfastamento TipoAfastamentoFonteDados AtoMatriculaAssociacao busca PeriodoAquisitivo TipoAto ProgramacaoFeriasListagemRepresentation MatriculaAssociacao ConfiguracaoMovimentoPeriodoAquisitivo programacaoFerias programacaoferias Listagem de programações de férias\n\nRepresentation Type: ProgramacaoFeriasListagemRepresentation"
+}

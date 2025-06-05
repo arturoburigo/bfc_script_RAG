@@ -1,0 +1,44 @@
+{
+  "content": "GFIP matrícula",
+  "metadata": {
+    "chunk_id": "gfipMatricula_importa_0_a7181776",
+    "section_name": "gfipMatricula_importa",
+    "chunk_index": 0,
+    "total_chunks": 4,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 6,
+    "char_count": 14,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 1,
+    "keywords": [
+      "gfipmatricula"
+    ],
+    "entities": [
+      "GfipMatriculaDto",
+      "GfipFonteDados",
+      "gfipMatricula",
+      "importa",
+      "GfipMatriculaFonteDados",
+      "MatriculaGfipFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.443603",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "a7181776f828b91419209e8d1ed1b63f",
+    "related_chunks": [
+      "gfipMatricula_importa_3_ad915c0f",
+      "gfipMatricula_buscaGfip_2_55cb00d6",
+      "tabelaAuxiliarValor_importa_3_3648ed36",
+      "gfipMatricula_importa_1_f700bf51",
+      "tabelaAuxiliarValor_importa_0_9b03df81"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: gfipMatricula_importa\nType: definition\nRelated to: GfipMatriculaDto, GfipFonteDados, gfipMatricula\n\nGFIP matrícula\n\nKeywords: gfipmatricula",
+  "search_text": "gfipMatricula_importa GfipMatriculaDto GfipFonteDados gfipMatricula importa GfipMatriculaFonteDados MatriculaGfipFonteDados gfipmatricula GFIP matrícula"
+}

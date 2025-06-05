@@ -1,0 +1,41 @@
+{
+  "content": "Regiões",
+  "metadata": {
+    "chunk_id": "regiao_busca_0_49de0f8f",
+    "section_name": "regiao_busca",
+    "chunk_index": 0,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 3,
+    "char_count": 7,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 0,
+    "keywords": [
+      "regiao"
+    ],
+    "entities": [
+      "Regiao",
+      "regiao",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.295435",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "49de0f8f8519629d41c589b0f118e7a3",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: regiao_busca\nType: definition\nRelated to: Regiao, regiao, busca\n\nRegiões\n\nKeywords: regiao",
+  "search_text": "regiao_busca Regiao regiao busca regiao Regiões"
+}

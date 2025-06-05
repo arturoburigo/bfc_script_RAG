@@ -1,0 +1,49 @@
+{
+  "content": "- exibir: Deve exibir o campo? (Type: Boolean)\n- id: Id (Type: Long)\n- identificador: Identificador do campo (Type: String)",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliarCampo_busca_4_9f589243",
+    "section_name": "tabelaAuxiliarCampo_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 38,
+    "char_count": 123,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 22,
+    "keywords": [
+      "tabelaauxiliarcampo",
+      "id",
+      "identificador",
+      "exibir",
+      "campo"
+    ],
+    "entities": [
+      "TabelaAuxiliarCampoImportacao",
+      "TabelaAuxiliarRegistroSemValores",
+      "TabelaAuxiliarValorSemCampo",
+      "busca",
+      "TabelaAuxiliarAssociacao",
+      "tabelaAuxiliarCampo",
+      "TabelaAuxiliarCampo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.142733",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "9f5892439ac44631755320a8e319a473",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "tabelaAuxiliar_exclui_1_469039d5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tabelaAuxiliarCampo_busca\nType: reference\nRelated to: TabelaAuxiliarCampoImportacao, TabelaAuxiliarRegistroSemValores, TabelaAuxiliarValorSemCampo\n\n- exibir: Deve exibir o campo? (Type: Boolean)\n- id: Id (Type: Long)\n- identificador: Identificador do campo (Type: String)\n\nKeywords: tabelaauxiliarcampo, id, identificador, exibir, campo",
+  "search_text": "tabelaAuxiliarCampo_busca TabelaAuxiliarCampoImportacao TabelaAuxiliarRegistroSemValores TabelaAuxiliarValorSemCampo busca TabelaAuxiliarAssociacao tabelaAuxiliarCampo TabelaAuxiliarCampo tabelaauxiliarcampo id identificador exibir campo - exibir: Deve exibir o campo? (Type: Boolean)\n- id: Id (Type: Long)\n- identificador: Identificador do campo (Type: String)"
+}

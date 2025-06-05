@@ -1,0 +1,52 @@
+{
+  "content": "## TipoAfastamentoMotivoRescisao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## TipoMovimentacaoPessoalMotivoRescisao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## MotivoRescisaoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo (Type: )\n- classificacao: Classificação (Type: )\n- continuidadeVinculo: Continuidade do vínculo (Type: Boolean)\n- motivoeSocial: Motivo eSocial (Type: )\n- tipoGeracao: Tipo de geração (Type: )\n- classificacaoSefip: Classificação SEFIP (Type: )\n- classificacaoSaqueFgts: Classificação do saque FGTS (Type: )\n- classificacaoHomolognet: Classificação Homolognet (Type: )\n- classificacaoRais: Classificação RAIS (Type: )\n- classificacaoCaged: Classificação CAGED (Type: )\n- seguroDesemprego: Seguro desemprego (Type: Boolean)\n- tipoAfastamento: Tipo de afastamento (Type: TipoAfastamentoMotivoRescisao)\n- tipoMovimentacaoPessoal: Tipo de movimentação pessoal (Type: TipoMovimentacaoPessoalMotivoRescisao)",
+  "metadata": {
+    "chunk_id": "motivosRescisao_busca_5_d95d186c",
+    "section_name": "motivosRescisao_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 339,
+    "char_count": 1077,
+    "overlap_with_previous": 36,
+    "overlap_with_next": 22,
+    "keywords": [
+      "pessoal",
+      "tipomovimentacaopessoalmotivorescisao",
+      "motivosrescisao",
+      "tipoafastamentomotivorescisao",
+      "motivorescisaofontedados",
+      "id",
+      "descricao",
+      "classificacao",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "motivosRescisao",
+      "TipoMovimentacaoPessoalMotivoRescisao",
+      "busca",
+      "TipoAfastamentoMotivoRescisao",
+      "MotivoRescisaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.095655",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "d95d186cf3012aaf97af517670bba4e7",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: motivosRescisao_busca\nType: reference\nRelated to: motivosRescisao, TipoMovimentacaoPessoalMotivoRescisao, busca\n\n## TipoAfastamentoMotivoRescisao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## TipoMovimentacaoPessoalMotivoRescisao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## MotivoRescisaoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo (Type: )\n- classificacao: Classificação (Type: )\n- continuidadeVinculo: Continuidade do vínculo (Type: Boolean)\n- motivoeSocial: Motivo eSocial (Type: )\n- tipoGeracao: Tipo de geração (Type: )\n- classificacaoSefip: Classificação SEFIP (Type: )\n- classificacaoSaqueFgts: Classificação do saque FGTS (Type: )\n- classificacaoHomolognet: Classificação Homolognet (Type: )\n- classificacaoRais: Classificação RAIS (Type: )\n- classificacaoCaged: Classificação CAGED (Type: )\n- seguroDesemprego: Seguro desemprego (Type: Boolean)\n- tipoAfastamento: Tipo de afastamento (Type: TipoAfastamentoMotivoRescisao)\n- tipoMovimentacaoPessoal: Tipo de movimentação pessoal (Type: TipoMovimentacaoPessoalMotivoRescisao)\n\nKeywords: pessoal, tipomovimentacaopessoalmotivorescisao, motivosrescisao, tipoafastamentomotivorescisao, motivorescisaofontedados, id, descricao, classificacao, tipo, dados",
+  "search_text": "motivosRescisao_busca motivosRescisao TipoMovimentacaoPessoalMotivoRescisao busca TipoAfastamentoMotivoRescisao MotivoRescisaoFonteDados pessoal tipomovimentacaopessoalmotivorescisao motivosrescisao tipoafastamentomotivorescisao motivorescisaofontedados id descricao classificacao tipo dados ## TipoAfastamentoMotivoRescisao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## TipoMovimentacaoPessoalMotivoRescisao\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## MotivoRescisaoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- tipo: Tipo (Type: )\n- classificacao: Classificação (Type: )\n- continuidadeVinculo: Continuidade do vínculo (Type: Boolean)\n- motivoeSocial: Motivo eSocial (Type: )\n- tipoGeracao: Tipo de geração (Type: )\n- classificacaoSefip: Classificação SEFIP (Type: )\n- classificacaoSaqueFgts: Classificação do saque FGTS (Type: )\n- classificacaoHomolognet: Classificação Homolognet (Type: )\n- classificacaoRais: Classificação RAIS (Type: )\n- classificacaoCaged: Classificação CAGED (Type: )\n- seguroDesemprego: Seguro desemprego (Type: Boolean)\n- tipoAfastamento: Tipo de afastamento (Type: TipoAfastamentoMotivoRescisao)\n- tipoMovimentacaoPessoal: Tipo de movimentação pessoal (Type: TipoMovimentacaoPessoalMotivoRescisao)"
+}

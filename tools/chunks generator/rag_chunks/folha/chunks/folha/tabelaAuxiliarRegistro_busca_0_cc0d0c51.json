@@ -1,0 +1,47 @@
+{
+  "content": "Tabela auxíliar registro",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliarRegistro_busca_0_cc0d0c51",
+    "section_name": "tabelaAuxiliarRegistro_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 7,
+    "char_count": 24,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 3,
+    "keywords": [
+      "tabelaauxiliarregistro"
+    ],
+    "entities": [
+      "busca",
+      "TabelaAuxiliarCampoSemValores",
+      "TabelaAuxiliarAssociacao",
+      "TabelaAuxiliarRegistro",
+      "TabelaAuxiliarRegistroImportacao",
+      "tabelaAuxiliarRegistro",
+      "TabelaAuxiliarCampoAssociacao",
+      "TabelaAuxiliarValorSemRegistro",
+      "TabelaAuxiliarValorAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.506759",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "cc0d0c51a44cb09550eeb6aeeabef297",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "tabelaAuxiliar_exclui_1_469039d5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: tabelaAuxiliarRegistro_busca\nType: definition\nRelated to: busca, TabelaAuxiliarCampoSemValores, TabelaAuxiliarAssociacao\n\nTabela auxíliar registro\n\nKeywords: tabelaauxiliarregistro",
+  "search_text": "tabelaAuxiliarRegistro_busca busca TabelaAuxiliarCampoSemValores TabelaAuxiliarAssociacao TabelaAuxiliarRegistro TabelaAuxiliarRegistroImportacao tabelaAuxiliarRegistro TabelaAuxiliarCampoAssociacao TabelaAuxiliarValorSemRegistro TabelaAuxiliarValorAssociacao tabelaauxiliarregistro Tabela auxíliar registro"
+}

@@ -1,0 +1,45 @@
+{
+  "content": "- classe: Classe (Type: String)\n- classeTce: Classe TCE (Type: String)\n- referenciaTce: Referência TCE (Type: String)\n- referencia: Referência (Type: String)",
+  "metadata": {
+    "chunk_id": "classeReferencia_busca_4_827f3aa7",
+    "section_name": "classeReferencia_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 46,
+    "char_count": 157,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 16,
+    "keywords": [
+      "referenciatce",
+      "referencia",
+      "classereferencia",
+      "classe",
+      "classetce"
+    ],
+    "entities": [
+      "classeReferencia",
+      "ClasseReferenciaDadosRepresentation",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.081630",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "827f3aa79d5929ed1ca8758f986d80c6",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: classeReferencia_busca\nType: reference\nRelated to: classeReferencia, ClasseReferenciaDadosRepresentation, busca\n\n- classe: Classe (Type: String)\n- classeTce: Classe TCE (Type: String)\n- referenciaTce: Referência TCE (Type: String)\n- referencia: Referência (Type: String)\n\nKeywords: referenciatce, referencia, classereferencia, classe, classetce",
+  "search_text": "classeReferencia_busca classeReferencia ClasseReferenciaDadosRepresentation busca referenciatce referencia classereferencia classe classetce - classe: Classe (Type: String)\n- classeTce: Classe TCE (Type: String)\n- referenciaTce: Referência TCE (Type: String)\n- referencia: Referência (Type: String)"
+}

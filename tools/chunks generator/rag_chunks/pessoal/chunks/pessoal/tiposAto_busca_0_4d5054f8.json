@@ -1,0 +1,42 @@
+{
+  "content": "Tipo de ato",
+  "metadata": {
+    "chunk_id": "tiposAto_busca_0_4d5054f8",
+    "section_name": "tiposAto_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 4,
+    "char_count": 11,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 3,
+    "keywords": [
+      "tiposato",
+      "tipo"
+    ],
+    "entities": [
+      "TipoAto",
+      "tiposAto",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.197808",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "4d5054f8f9c6604806d16dc3f8bd2003",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: tiposAto_busca\nType: definition\nRelated to: TipoAto, tiposAto, busca\n\nTipo de ato\n\nKeywords: tiposato, tipo",
+  "search_text": "tiposAto_busca TipoAto tiposAto busca tiposato tipo Tipo de ato"
+}

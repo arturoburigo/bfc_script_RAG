@@ -1,0 +1,43 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de tipos de bases\n\nRepresentation Type: Base",
+  "metadata": {
+    "chunk_id": "tipoBase_busca_1_e4631e82",
+    "section_name": "tipoBase_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 19,
+    "char_count": 85,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 9,
+    "keywords": [
+      "busca",
+      "tipo",
+      "tipobase"
+    ],
+    "entities": [
+      "busca",
+      "Base",
+      "tipoBase"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.294982",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "e4631e821d0f9ad414339a0f9dfb9598",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tipoBase_busca\nType: definition\nRelated to: busca, Base, tipoBase\n\nbusca (GET)\nMethod Description: Listagem de tipos de bases\n\nRepresentation Type: Base\n\nKeywords: busca, tipo, tipobase",
+  "search_text": "tipoBase_busca busca Base tipoBase busca tipo tipobase busca (GET)\nMethod Description: Listagem de tipos de bases\n\nRepresentation Type: Base"
+}

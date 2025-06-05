@@ -1,0 +1,57 @@
+{
+  "content": "groovy\nfonteTabelaAuxiliar = Dados.folha.v2.tabelaAuxiliar;\n\nfiltroTabelaAuxiliar = \"id = null\"\n\ndadosTabelaAuxiliar = fonteTabelaAuxiliar.busca(criterio: filtroTabelaAuxiliar,campos: \"campos(id, valores(id, valor), tipo, descricao), id, descricao\",ordenacao: \"id asc\")\n\npercorrer (dadosTabelaAuxiliar) { itemTabelaAuxiliar ->\n\n}",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliar_busca_6_b71a4d4a",
+    "section_name": "tabelaAuxiliar_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 104,
+    "char_count": 329,
+    "overlap_with_previous": 13,
+    "overlap_with_next": 0,
+    "keywords": [
+      "tabelaauxiliar",
+      "busca",
+      "tipo",
+      "filtro",
+      "ordenacao",
+      "folha",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "TabelaAuxiliarRegistroSemValores",
+      "TabelaAuxiliarValorSemCampo",
+      "busca",
+      "TabelaAuxiliarCampoSemValores",
+      "TabelaAuxiliar",
+      "TabelaAuxiliarRegistro",
+      "TabelaAuxiliarCampo",
+      "Dados.folha.v2.tabelaAuxiliar",
+      "tabelaAuxiliar",
+      "TabelaAuxiliarValorSemRegistro",
+      "TabelaAuxiliarImportacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.218719",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "b71a4d4aa8de1dab3288cc7bcd3a3b12",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "tabelaAuxiliar_exclui_1_469039d5"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: tabelaAuxiliar_busca\nType: example\nRelated to: TabelaAuxiliarRegistroSemValores, TabelaAuxiliarValorSemCampo, busca\n\ngroovy\nfonteTabelaAuxiliar = Dados.folha.v2.tabelaAuxiliar;\n\nfiltroTabelaAuxiliar = \"id = null\"\n\ndadosTabelaAuxiliar = fonteTabelaAuxiliar.busca(criterio: filtroTabelaAuxiliar,campos: \"campos(id, valores(id, valor), tipo, descricao), id, descricao\",ordenacao: \"id asc\")\n\npercorrer (dadosTabelaAuxiliar) { itemTabelaAuxiliar ->\n\n}\n\nKeywords: tabelaauxiliar, busca, tipo, filtro, ordenacao, folha, v2, campo, dados",
+  "search_text": "tabelaAuxiliar_busca TabelaAuxiliarRegistroSemValores TabelaAuxiliarValorSemCampo busca TabelaAuxiliarCampoSemValores TabelaAuxiliar TabelaAuxiliarRegistro TabelaAuxiliarCampo Dados.folha.v2.tabelaAuxiliar tabelaAuxiliar TabelaAuxiliarValorSemRegistro TabelaAuxiliarImportacao tabelaauxiliar busca tipo filtro ordenacao folha v2 campo dados groovy\nfonteTabelaAuxiliar = Dados.folha.v2.tabelaAuxiliar;\n\nfiltroTabelaAuxiliar = \"id = null\"\n\ndadosTabelaAuxiliar = fonteTabelaAuxiliar.busca(criterio: filtroTabelaAuxiliar,campos: \"campos(id, valores(id, valor), tipo, descricao), id, descricao\",ordenacao: \"id asc\")\n\npercorrer (dadosTabelaAuxiliar) { itemTabelaAuxiliar ->\n\n}"
+}

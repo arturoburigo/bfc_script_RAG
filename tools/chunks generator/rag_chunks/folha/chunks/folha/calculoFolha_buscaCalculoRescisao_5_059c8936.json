@@ -1,0 +1,62 @@
+{
+  "content": "## MotivoRescisaoCalculoFolhaRescisao\n- id: Id (Type: Long)\n- descricao: Descrição motivo de rescisão (Type: String)\n\n## AvisoPrevioCalculoFolhaRescisao\n- id: Id (Type: Long)\n- dataAviso: Data aviso prévio (Type: LocalDate)\n\n## SindicatoFuncionario\n- tipo: Tipo (Type: )\n- mesContribuicao: Mês contribuição (Type: )\n- numero: Número (Type: String)\n- diasAviso: Dias de aviso (Type: Integer)\n- dataBase: Data base (Type: MonthDay)\n\n## PessoaJuridica\n- id: Id (Type: Long)\n- tipo: Tipo (Type: )\n- razaoSocial: Razão social (Type: String)\n- nomeFantasia: Nome fantasia (Type: String)\n- cnpj: CNPJ (Type: String)\n- codigoInstFinanceira: Código Inst. Financeira (Type: String)\n- sindicato: Sindicato (Type: SindicatoFuncionario)\n\n## TipoAto\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## NaturezaTextoJuridico\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## AtoFonteDados\n- id: Id (Type: Long)\n- numeroOficial: Número oficial (Type: String)\n- tipo: Tipo (Type: TipoAto)\n- ementa: Ementa (Type: String)\n- naturezaTextoJuridico: Natureza do texto jurídico (Type: NaturezaTextoJuridico)\n- dataCriacao: Data de criação (Type: LocalDate)\n- dataVigorar: Data a vigorar (Type: LocalDate)\n- dataPublicacao: Data de publicação (Type: LocalDate)\n- dataResolucao: Data de resolução (Type: LocalDate)\n- numeroDiarioOficial: Número do diário oficial (Type: Long)\n\n## CalculoFolhaRescisaoFonteDados\n- id: Id (Type: Long)\n- dataPagamento: Data de pagamento (Type: LocalDate)\n- motivoRescisao: Motivo de rescisão (Type: MotivoRescisaoCalculoFolhaRescisao)\n- avisoPrevio: Aviso prévio (Type: AvisoPrevioCalculoFolhaRescisao)\n- dataRescisao: Data desligamento (Type: LocalDate)\n- numeroProcessoTrabalhista: Numero do processo trabalhista (Type: String)\n- observacao: Observação (Type: String)\n- trabalhouDiaRescisao: Trabalhou no dia da rescisão (Type: Boolean)\n- reporVaga: Repor vaga (Type: Boolean)\n- dataDesligamentoRetroativo: Data desligamento retroativo eSocial (Type: LocalDate)\n- indicativoRemuneracao: Indicativo de remuneração após o desligamento (Type: )\n- pdv: Desligamento PDV (Type: Boolean)\n- empresaSucessora: Empresa sucessora (Type: PessoaJuridica)\n- ato: Ato da Rescisão (Type: AtoFonteDados)\n- depositoMesAnterior: Depósito mês anterior (Type: Boolean)\n- consideraAvosPerdidosDecimoTerceiro: Considera avos perdidos (Type: Boolean)",
+  "metadata": {
+    "chunk_id": "calculoFolha_buscaCalculoRescisao_5_059c8936",
+    "section_name": "calculoFolha_buscaCalculoRescisao",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 765,
+    "char_count": 2402,
+    "overlap_with_previous": 21,
+    "overlap_with_next": 46,
+    "keywords": [
+      "naturezatextojuridico",
+      "avisopreviocalculofolharescisao",
+      "calculofolharescisaofontedados",
+      "atofontedados",
+      "tipoato",
+      "id",
+      "descricao",
+      "dataaviso",
+      "calculofolha",
+      "folha",
+      "sindicatofuncionario",
+      "motivorescisaocalculofolharescisao",
+      "tipo",
+      "dados",
+      "pessoajuridica"
+    ],
+    "entities": [
+      "AvisoPrevioCalculoFolhaRescisao",
+      "buscaCalculoRescisao",
+      "NaturezaTextoJuridico",
+      "SindicatoFuncionario",
+      "PessoaJuridica",
+      "calculoFolha",
+      "TipoAto",
+      "CalculoFolhaRescisaoFonteDados",
+      "AtoFonteDados",
+      "MotivoRescisaoCalculoFolhaRescisao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.646246",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "059c89369dbcb930bfef89846016b394",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "remuneracoes_buscaEventosDeFolhas_0_b776712c",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 1.0
+  },
+  "embeddings_text": "Section: calculoFolha_buscaCalculoRescisao\nType: reference\nRelated to: AvisoPrevioCalculoFolhaRescisao, buscaCalculoRescisao, NaturezaTextoJuridico\n\n## MotivoRescisaoCalculoFolhaRescisao\n- id: Id (Type: Long)\n- descricao: Descrição motivo de rescisão (Type: String)\n\n## AvisoPrevioCalculoFolhaRescisao\n- id: Id (Type: Long)\n- dataAviso: Data aviso prévio (Type: LocalDate)\n\n## SindicatoFuncionario\n- tipo: Tipo (Type: )\n- mesContribuicao: Mês contribuição (Type: )\n- numero: Número (Type: String)\n- diasAviso: Dias de aviso (Type: Integer)\n- dataBase: Data base (Type: MonthDay)\n\n## PessoaJuridica\n- id: Id (Type: Long)\n- tipo: Tipo (Type: )\n- razaoSocial: Razão social (Type: String)\n- nomeFantasia: Nome fantasia (Type: String)\n- cnpj: CNPJ (Type: String)\n- codigoInstFinanceira: Código Inst. Financeira (Type: String)\n- sindicato: Sindicato (Type: SindicatoFuncionario)\n\n## TipoAto\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## NaturezaTextoJuridico\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## AtoFonteDados\n- id: Id (Type: Long)\n- numeroOficial: Número oficial (Type: String)\n- tipo: Tipo (Type: TipoAto)\n- ementa: Ementa (Type: String)\n- naturezaTextoJuridico: Natureza do texto jurídico (Type: NaturezaTextoJuridico)\n- dataCriacao: Data de criação (Type: LocalDate)\n- dataVigorar: Data a vigorar (Type: LocalDate)\n- dataPublicacao: Data de publicação (Type: LocalDate)\n- dataResolucao: Data de resolução (Type: LocalDate)\n- numeroDiarioOficial: Número do diário oficial (Type: Long)\n\n## CalculoFolhaRescisaoFonteDados\n- id: Id (Type: Long)\n- dataPagamento: Data de pagamento (Type: LocalDate)\n- motivoRescisao: Motivo de rescisão (Type: MotivoRescisaoCalculoFolhaRescisao)\n- avisoPrevio: Aviso prévio (Type: AvisoPrevioCalculoFolhaRescisao)\n- dataRescisao: Data desligamento (Type: LocalDate)\n- numeroProcessoTrabalhista: Numero do processo trabalhista (Type: String)\n- observacao: Observação (Type: String)\n- trabalhouDiaRescisao: Trabalhou no dia da rescisão (Type: Boolean)\n- reporVaga: Repor vaga (Type: Boolean)\n- dataDesligamentoRetroativo: Data desligamento retroativo eSocial (Type: LocalDate)\n- indicativoRemuneracao: Indicativo de remuneração após o desligamento (Type: )\n- pdv: Desligamento PDV (Type: Boolean)\n- empresaSucessora: Empresa sucessora (Type: PessoaJuridica)\n- ato: Ato da Rescisão (Type: AtoFonteDados)\n- depositoMesAnterior: Depósito mês anterior (Type: Boolean)\n- consideraAvosPerdidosDecimoTerceiro: Considera avos perdidos (Type: Boolean)\n\nKeywords: naturezatextojuridico, avisopreviocalculofolharescisao, calculofolharescisaofontedados, atofontedados, tipoato, id, descricao, dataaviso, calculofolha, folha, sindicatofuncionario, motivorescisaocalculofolharescisao, tipo, dados, pessoajuridica",
+  "search_text": "calculoFolha_buscaCalculoRescisao AvisoPrevioCalculoFolhaRescisao buscaCalculoRescisao NaturezaTextoJuridico SindicatoFuncionario PessoaJuridica calculoFolha TipoAto CalculoFolhaRescisaoFonteDados AtoFonteDados MotivoRescisaoCalculoFolhaRescisao naturezatextojuridico avisopreviocalculofolharescisao calculofolharescisaofontedados atofontedados tipoato id descricao dataaviso calculofolha folha sindicatofuncionario motivorescisaocalculofolharescisao tipo dados pessoajuridica ## MotivoRescisaoCalculoFolhaRescisao\n- id: Id (Type: Long)\n- descricao: Descrição motivo de rescisão (Type: String)\n\n## AvisoPrevioCalculoFolhaRescisao\n- id: Id (Type: Long)\n- dataAviso: Data aviso prévio (Type: LocalDate)\n\n## SindicatoFuncionario\n- tipo: Tipo (Type: )\n- mesContribuicao: Mês contribuição (Type: )\n- numero: Número (Type: String)\n- diasAviso: Dias de aviso (Type: Integer)\n- dataBase: Data base (Type: MonthDay)\n\n## PessoaJuridica\n- id: Id (Type: Long)\n- tipo: Tipo (Type: )\n- razaoSocial: Razão social (Type: String)\n- nomeFantasia: Nome fantasia (Type: String)\n- cnpj: CNPJ (Type: String)\n- codigoInstFinanceira: Código Inst. Financeira (Type: String)\n- sindicato: Sindicato (Type: SindicatoFuncionario)\n\n## TipoAto\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## NaturezaTextoJuridico\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## AtoFonteDados\n- id: Id (Type: Long)\n- numeroOficial: Número oficial (Type: String)\n- tipo: Tipo (Type: TipoAto)\n- ementa: Ementa (Type: String)\n- naturezaTextoJuridico: Natureza do texto jurídico (Type: NaturezaTextoJuridico)\n- dataCriacao: Data de criação (Type: LocalDate)\n- dataVigorar: Data a vigorar (Type: LocalDate)\n- dataPublicacao: Data de publicação (Type: LocalDate)\n- dataResolucao: Data de resolução (Type: LocalDate)\n- numeroDiarioOficial: Número do diário oficial (Type: Long)\n\n## CalculoFolhaRescisaoFonteDados\n- id: Id (Type: Long)\n- dataPagamento: Data de pagamento (Type: LocalDate)\n- motivoRescisao: Motivo de rescisão (Type: MotivoRescisaoCalculoFolhaRescisao)\n- avisoPrevio: Aviso prévio (Type: AvisoPrevioCalculoFolhaRescisao)\n- dataRescisao: Data desligamento (Type: LocalDate)\n- numeroProcessoTrabalhista: Numero do processo trabalhista (Type: String)\n- observacao: Observação (Type: String)\n- trabalhouDiaRescisao: Trabalhou no dia da rescisão (Type: Boolean)\n- reporVaga: Repor vaga (Type: Boolean)\n- dataDesligamentoRetroativo: Data desligamento retroativo eSocial (Type: LocalDate)\n- indicativoRemuneracao: Indicativo de remuneração após o desligamento (Type: )\n- pdv: Desligamento PDV (Type: Boolean)\n- empresaSucessora: Empresa sucessora (Type: PessoaJuridica)\n- ato: Ato da Rescisão (Type: AtoFonteDados)\n- depositoMesAnterior: Depósito mês anterior (Type: Boolean)\n- consideraAvosPerdidosDecimoTerceiro: Considera avos perdidos (Type: Boolean)"
+}

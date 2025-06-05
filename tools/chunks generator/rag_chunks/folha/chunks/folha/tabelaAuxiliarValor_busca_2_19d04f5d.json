@@ -1,0 +1,46 @@
+{
+  "content": "Listagem de valores das tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliarValorSemRegistro",
+  "metadata": {
+    "chunk_id": "tabelaAuxiliarValor_busca_2_19d04f5d",
+    "section_name": "tabelaAuxiliarValor_busca",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 21,
+    "char_count": 95,
+    "overlap_with_previous": 20,
+    "overlap_with_next": 21,
+    "keywords": [
+      "tabelaauxiliarvalor"
+    ],
+    "entities": [
+      "TabelaAuxiliarRegistroSemValores",
+      "busca",
+      "TabelaAuxiliarCampoSemValores",
+      "TabelaAuxiliarRegistroAssociacao",
+      "TabelaAuxiliarValorImportacao",
+      "TabelaAuxiliarCampoAssociacao",
+      "tabelaAuxiliarValor",
+      "TabelaAuxiliarValorSemRegistro"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.144629",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "19d04f5dd94bed60d21e21cabc1b67c7",
+    "related_chunks": [
+      "tabelaAuxiliarCampo_atualiza_3_25e3f223",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "tabelaAuxiliar_exclui_1_469039d5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: tabelaAuxiliarValor_busca\nType: definition\nRelated to: TabelaAuxiliarRegistroSemValores, busca, TabelaAuxiliarCampoSemValores\n\nListagem de valores das tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliarValorSemRegistro\n\nKeywords: tabelaauxiliarvalor",
+  "search_text": "tabelaAuxiliarValor_busca TabelaAuxiliarRegistroSemValores busca TabelaAuxiliarCampoSemValores TabelaAuxiliarRegistroAssociacao TabelaAuxiliarValorImportacao TabelaAuxiliarCampoAssociacao tabelaAuxiliarValor TabelaAuxiliarValorSemRegistro tabelaauxiliarvalor Listagem de valores das tabelas auxíliares\n\nRepresentation Type: TabelaAuxiliarValorSemRegistro"
+}

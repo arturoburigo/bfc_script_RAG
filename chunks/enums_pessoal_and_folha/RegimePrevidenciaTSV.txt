@@ -1,4 +1,0 @@
-# RegimePrevidenciaTSV
-Enum: RegimePrevidenciaTSV
-- 1 - Regime Geral de Previdência Social - RGPS (Key: REGIME_GERAL_DE_PREVIDENCIA_SOCIAL_RGPS, Value: 1)
-- 2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares (Key: REGIME_PROPRIO_DE_PREVIDENCIA_SOCIAL_RPPS_OU_SISTEMA_DE_PROTECAO_SOCIAL_DOS_MILITARES, Value: 2)

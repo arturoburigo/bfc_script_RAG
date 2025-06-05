@@ -1,5 +1,0 @@
-# TipoClassificacaoPeriodo
-Enum: TipoClassificacaoPeriodo
-- Normal (Key: NORMAL, Value: 1)
-- Compensado (Key: COMPENSADO, Value: 2)
-- Folga (Key: FOLGA, Value: 3)

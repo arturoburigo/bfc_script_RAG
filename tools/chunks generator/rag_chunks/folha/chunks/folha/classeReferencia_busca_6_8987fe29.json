@@ -1,0 +1,48 @@
+{
+  "content": "groovy\nfonteClasseReferencia = Dados.folha.v2.classeReferencia;\n\ndadosClasseReferencia = fonteClasseReferencia.busca(campos: \"id, classe, referencia, classeTce, referenciaTce, fatorValor, ordem\",ordenacao: \"classe asc\")\n\npercorrer (dadosClasseReferencia) { itemClasseReferencia ->\n\n}",
+  "metadata": {
+    "chunk_id": "classeReferencia_busca_6_8987fe29",
+    "section_name": "classeReferencia_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 88,
+    "char_count": 283,
+    "overlap_with_previous": 15,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "classereferencia",
+      "ordenacao",
+      "v2",
+      "folha",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "classeReferencia",
+      "Dados.folha.v2.classeReferencia",
+      "ClasseReferenciaDadosRepresentation",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.081871",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "8987fe29834af7f4dbf1b51f2b292c91",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: classeReferencia_busca\nType: example\nRelated to: classeReferencia, Dados.folha.v2.classeReferencia, ClasseReferenciaDadosRepresentation\n\ngroovy\nfonteClasseReferencia = Dados.folha.v2.classeReferencia;\n\ndadosClasseReferencia = fonteClasseReferencia.busca(campos: \"id, classe, referencia, classeTce, referenciaTce, fatorValor, ordem\",ordenacao: \"classe asc\")\n\npercorrer (dadosClasseReferencia) { itemClasseReferencia ->\n\n}\n\nKeywords: busca, classereferencia, ordenacao, v2, folha, campo, dados",
+  "search_text": "classeReferencia_busca classeReferencia Dados.folha.v2.classeReferencia ClasseReferenciaDadosRepresentation busca busca classereferencia ordenacao v2 folha campo dados groovy\nfonteClasseReferencia = Dados.folha.v2.classeReferencia;\n\ndadosClasseReferencia = fonteClasseReferencia.busca(campos: \"id, classe, referencia, classeTce, referenciaTce, fatorValor, ordem\",ordenacao: \"classe asc\")\n\npercorrer (dadosClasseReferencia) { itemClasseReferencia ->\n\n}"
+}

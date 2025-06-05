@@ -1,0 +1,41 @@
+{
+  "content": "Listagem de naturezas de texto jurídicos de atos\n\nRepresentation Type: NaturezaTextoJuridico",
+  "metadata": {
+    "chunk_id": "naturezasTextoJuridicos_busca_3_8d782dbd",
+    "section_name": "naturezasTextoJuridicos_busca",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 23,
+    "char_count": 92,
+    "overlap_with_previous": 21,
+    "overlap_with_next": 1,
+    "keywords": [
+      "naturezastextojuridicos"
+    ],
+    "entities": [
+      "naturezasTextoJuridicos",
+      "NaturezaTextoJuridico",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.141423",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "8d782dbdd3e0c7e548f865f72def37c4",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "historicoEntidade_buscaHistoricoEntidade_6_fec108ce"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: naturezasTextoJuridicos_busca\nType: definition\nRelated to: naturezasTextoJuridicos, NaturezaTextoJuridico, busca\n\nListagem de naturezas de texto jurídicos de atos\n\nRepresentation Type: NaturezaTextoJuridico\n\nKeywords: naturezastextojuridicos",
+  "search_text": "naturezasTextoJuridicos_busca naturezasTextoJuridicos NaturezaTextoJuridico busca naturezastextojuridicos Listagem de naturezas de texto jurídicos de atos\n\nRepresentation Type: NaturezaTextoJuridico"
+}

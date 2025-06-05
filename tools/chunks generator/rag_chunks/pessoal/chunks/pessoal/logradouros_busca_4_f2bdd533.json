@@ -1,0 +1,50 @@
+{
+  "content": "- tipoLogradouro.id: Id do tipo de logradouro (Type: Long)\n- municipio.id: Id do município (Type: Long)\n- id: Id (Type: Long)\n- cep: CEP principal (Type: String)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "logradouros_busca_4_f2bdd533",
+    "section_name": "logradouros_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 64,
+    "char_count": 199,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 26,
+    "keywords": [
+      "logradouros",
+      "id",
+      "descricao",
+      "cep",
+      "tipo"
+    ],
+    "entities": [
+      "logradouros",
+      "Estado",
+      "busca",
+      "TipoLogradouro",
+      "Municipio",
+      "Logradouro",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.567370",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "f2bdd533229a63f8fb508de804ee1fbe",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: logradouros_busca\nType: reference\nRelated to: logradouros, Estado, busca\n\n- tipoLogradouro.id: Id do tipo de logradouro (Type: Long)\n- municipio.id: Id do município (Type: Long)\n- id: Id (Type: Long)\n- cep: CEP principal (Type: String)\n- descricao: Descrição (Type: String)\n\nKeywords: logradouros, id, descricao, cep, tipo",
+  "search_text": "logradouros_busca logradouros Estado busca TipoLogradouro Municipio Logradouro Bairro Pais logradouros id descricao cep tipo - tipoLogradouro.id: Id do tipo de logradouro (Type: Long)\n- municipio.id: Id do município (Type: Long)\n- id: Id (Type: Long)\n- cep: CEP principal (Type: String)\n- descricao: Descrição (Type: String)"
+}

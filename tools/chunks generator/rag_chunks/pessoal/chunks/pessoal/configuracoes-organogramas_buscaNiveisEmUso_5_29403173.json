@@ -1,0 +1,49 @@
+{
+  "content": "## ConfiguracaoNivelOrganograma\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- nivel: Nível (Type: Integer)\n- quantidadeDigitos: Quantidade de dígitos (Type: Integer)\n- separador: Separador de nível (Type: )\n- responsavelControleVagas: É responsável pelo controle de vagas? (Type: Boolean)\n\n## ConfiguracaoOrganograma\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- emUso: Configuração está em uso? (Type: Boolean)\n- niveis: Níveis (Type: ConfiguracaoNivelOrganograma)",
+  "metadata": {
+    "chunk_id": "configuracoes-organogramas_buscaNiveisEmUso_5_29403173",
+    "section_name": "configuracoes-organogramas_buscaNiveisEmUso",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 155,
+    "char_count": 497,
+    "overlap_with_previous": 55,
+    "overlap_with_next": 14,
+    "keywords": [
+      "configuracaonivelorganograma",
+      "configuracaoorganograma",
+      "nivel",
+      "separador",
+      "id",
+      "descricao",
+      "quantidadedigitos",
+      "configuracoes-organogramas"
+    ],
+    "entities": [
+      "configuracoes-organogramas",
+      "buscaNiveisEmUso",
+      "ConfiguracaoOrganograma",
+      "ConfiguracaoNivelOrganograma"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.665411",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "2940317369575f29a3fb5e50cf1fac1f",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f"
+    ],
+    "quality_score": 0.8
+  },
+  "embeddings_text": "Section: configuracoes-organogramas_buscaNiveisEmUso\nType: reference\nRelated to: configuracoes-organogramas, buscaNiveisEmUso, ConfiguracaoOrganograma\n\n## ConfiguracaoNivelOrganograma\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- nivel: Nível (Type: Integer)\n- quantidadeDigitos: Quantidade de dígitos (Type: Integer)\n- separador: Separador de nível (Type: )\n- responsavelControleVagas: É responsável pelo controle de vagas? (Type: Boolean)\n\n## ConfiguracaoOrganograma\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- emUso: Configuração está em uso? (Type: Boolean)\n- niveis: Níveis (Type: ConfiguracaoNivelOrganograma)\n\nKeywords: configuracaonivelorganograma, configuracaoorganograma, nivel, separador, id, descricao, quantidadedigitos, configuracoes-organogramas",
+  "search_text": "configuracoes-organogramas_buscaNiveisEmUso configuracoes-organogramas buscaNiveisEmUso ConfiguracaoOrganograma ConfiguracaoNivelOrganograma configuracaonivelorganograma configuracaoorganograma nivel separador id descricao quantidadedigitos configuracoes-organogramas ## ConfiguracaoNivelOrganograma\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- nivel: Nível (Type: Integer)\n- quantidadeDigitos: Quantidade de dígitos (Type: Integer)\n- separador: Separador de nível (Type: )\n- responsavelControleVagas: É responsável pelo controle de vagas? (Type: Boolean)\n\n## ConfiguracaoOrganograma\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- emUso: Configuração está em uso? (Type: Boolean)\n- niveis: Níveis (Type: ConfiguracaoNivelOrganograma)"
+}

@@ -1,4 +1,0 @@
-# TipoAplicacaoDesconto
-Enum: TipoAplicacaoDesconto
-- Valor fixo (Key: VALOR_FIXO, Value: 1)
-- Valor percentual (Key: VALOR_PERCENTUAL, Value: 2)

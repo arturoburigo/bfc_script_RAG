@@ -1,5 +1,0 @@
-# TipoProcessoRetificacao
-Enum: TipoProcessoRetificacao
-- Administrativo (Key: ADMINISTRATIVO, Value: 1)
-- Judicial (Key: JUDICIAL, Value: 2)
-- Benefício NB INSS (Key: BENEFICIO_NB_INSS, Value: 3)

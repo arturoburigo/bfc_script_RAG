@@ -1,0 +1,46 @@
+{
+  "content": "buscaSelecaoAvancada (GET)\nMethod Description: Listagem de seleção avançada\n\nRepresentation Type: MatriculaFiltroSelecaoAvancadaFonteDados",
+  "metadata": {
+    "chunk_id": "selecaoAvancada_buscaSelecaoAvancada_1_1808bf1c",
+    "section_name": "selecaoAvancada_buscaSelecaoAvancada",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 38,
+    "char_count": 138,
+    "overlap_with_previous": 5,
+    "overlap_with_next": 23,
+    "keywords": [
+      "selecaoavancada",
+      "dados",
+      "filtro",
+      "busca"
+    ],
+    "entities": [
+      "buscaSelecaoAvancada",
+      "CargoSelecaoAvacanda",
+      "EntidadeFiltravelSelecaoDtoAssociacao",
+      "MatriculaFiltroSelecaoAvancadaFonteDados",
+      "selecaoAvancada"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.140050",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "1808bf1c171ce7b45a0493ec621b2d36",
+    "related_chunks": [
+      "selecaoAvancada_buscaSelecaoAvancada_6_8e2914c1",
+      "selecaoAvancada_buscaSelecaoAvancada_3_0409ec37",
+      "selecaoAvancada_buscaSelecaoAvancada_2_0409ec37",
+      "selecaoAvancada_buscaSelecaoAvancada_5_d65533f5",
+      "selecaoAvancada_buscaSelecaoAvancada_0_f759a958"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: selecaoAvancada_buscaSelecaoAvancada\nType: definition\nRelated to: buscaSelecaoAvancada, CargoSelecaoAvacanda, EntidadeFiltravelSelecaoDtoAssociacao\n\nbuscaSelecaoAvancada (GET)\nMethod Description: Listagem de seleção avançada\n\nRepresentation Type: MatriculaFiltroSelecaoAvancadaFonteDados\n\nKeywords: selecaoavancada, dados, filtro, busca",
+  "search_text": "selecaoAvancada_buscaSelecaoAvancada buscaSelecaoAvancada CargoSelecaoAvacanda EntidadeFiltravelSelecaoDtoAssociacao MatriculaFiltroSelecaoAvancadaFonteDados selecaoAvancada selecaoavancada dados filtro busca buscaSelecaoAvancada (GET)\nMethod Description: Listagem de seleção avançada\n\nRepresentation Type: MatriculaFiltroSelecaoAvancadaFonteDados"
+}

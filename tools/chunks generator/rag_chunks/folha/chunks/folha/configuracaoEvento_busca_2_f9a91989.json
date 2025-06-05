@@ -1,0 +1,49 @@
+{
+  "content": "Listagem de configurações de eventos\n\nRepresentation Type: ConfiguracaoEventoFonteDados",
+  "metadata": {
+    "chunk_id": "configuracaoEvento_busca_2_f9a91989",
+    "section_name": "configuracaoEvento_busca",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 19,
+    "char_count": 87,
+    "overlap_with_previous": 17,
+    "overlap_with_next": 18,
+    "keywords": [
+      "configuracaoevento",
+      "dados"
+    ],
+    "entities": [
+      "busca",
+      "AtoConfiguracaoEvento",
+      "MotivoRescisaoConfiguracaoEvento",
+      "configuracaoEvento",
+      "Base",
+      "dependenciasFonteDados",
+      "ConfiguracaoEventoFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoProcessamentoFonteDados",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.231909",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "f9a91989436408c4cf62fc39e6206bb5",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracaoEvento_busca\nType: definition\nRelated to: busca, AtoConfiguracaoEvento, MotivoRescisaoConfiguracaoEvento\n\nListagem de configurações de eventos\n\nRepresentation Type: ConfiguracaoEventoFonteDados\n\nKeywords: configuracaoevento, dados",
+  "search_text": "configuracaoEvento_busca busca AtoConfiguracaoEvento MotivoRescisaoConfiguracaoEvento configuracaoEvento Base dependenciasFonteDados ConfiguracaoEventoFonteDados ScriptFonteDados ConfiguracaoProcessamentoFonteDados ConfiguracaoEventoAssociacaoFonteDados configuracaoevento dados Listagem de configurações de eventos\n\nRepresentation Type: ConfiguracaoEventoFonteDados"
+}

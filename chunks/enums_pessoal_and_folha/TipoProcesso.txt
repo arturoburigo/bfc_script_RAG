@@ -1,4 +1,0 @@
-# TipoProcesso
-Enum: TipoProcesso
-- 1 - Judicial trabalhista (Key: JUDICIAL_TRABALHISTA, Value: 1)
-- 2 - Demanda submetida à CCP ou ao NINTER (Key: DEMANDA_SUBMETIDA_A_CCP_OU_NINTER, Value: 2)

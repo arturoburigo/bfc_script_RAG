@@ -1,0 +1,41 @@
+{
+  "content": "GrupoFuncional",
+  "metadata": {
+    "chunk_id": "grupoFuncional_busca_0_34a7a4ef",
+    "section_name": "grupoFuncional_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 3,
+    "char_count": 14,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 2,
+    "keywords": [
+      "grupofuncional"
+    ],
+    "entities": [
+      "grupoFuncional",
+      "GrupoFuncional",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.370659",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "34a7a4ef23ab7e971e320af7babb60ef",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: grupoFuncional_busca\nType: definition\nRelated to: grupoFuncional, GrupoFuncional, busca\n\nGrupoFuncional\n\nKeywords: grupofuncional",
+  "search_text": "grupoFuncional_busca grupoFuncional GrupoFuncional busca grupofuncional GrupoFuncional"
+}

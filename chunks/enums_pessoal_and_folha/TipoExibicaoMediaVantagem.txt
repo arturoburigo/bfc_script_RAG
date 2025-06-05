@@ -1,4 +1,0 @@
-# TipoExibicaoMediaVantagem
-Enum: TipoExibicaoMediaVantagem
-- Evento de média (Key: EVENTO_MEDIA, Value: 1)
-- Evento de composição (Key: EVENTO_COMPOSICAO, Value: 2)

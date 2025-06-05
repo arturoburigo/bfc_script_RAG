@@ -1,0 +1,49 @@
+{
+  "content": "Programação de Férias",
+  "metadata": {
+    "chunk_id": "programacaoFerias_busca_0_cee6d2c8",
+    "section_name": "programacaoFerias_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 6,
+    "char_count": 21,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 3,
+    "keywords": [
+      "programacaoferias"
+    ],
+    "entities": [
+      "CalculoMensagemAssociacaoRepresentation",
+      "TipoMovimentacaoPessoalTipoAfastamento",
+      "TipoAfastamentoFonteDados",
+      "AtoMatriculaAssociacao",
+      "busca",
+      "PeriodoAquisitivo",
+      "TipoAto",
+      "ProgramacaoFeriasListagemRepresentation",
+      "MatriculaAssociacao",
+      "ConfiguracaoMovimentoPeriodoAquisitivo",
+      "programacaoFerias"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.236053",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "cee6d2c84c8e45754aff1445603a3de8",
+    "related_chunks": [
+      "calculoFolha_buscaCalculoRescisao_6_6473e96c",
+      "cargo_buscaTodos_6_d5626417",
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: programacaoFerias_busca\nType: definition\nRelated to: CalculoMensagemAssociacaoRepresentation, TipoMovimentacaoPessoalTipoAfastamento, TipoAfastamentoFonteDados\n\nProgramação de Férias\n\nKeywords: programacaoferias",
+  "search_text": "programacaoFerias_busca CalculoMensagemAssociacaoRepresentation TipoMovimentacaoPessoalTipoAfastamento TipoAfastamentoFonteDados AtoMatriculaAssociacao busca PeriodoAquisitivo TipoAto ProgramacaoFeriasListagemRepresentation MatriculaAssociacao ConfiguracaoMovimentoPeriodoAquisitivo programacaoFerias programacaoferias Programação de Férias"
+}

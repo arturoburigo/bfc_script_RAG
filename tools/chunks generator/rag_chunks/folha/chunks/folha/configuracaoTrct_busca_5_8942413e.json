@@ -1,0 +1,52 @@
+{
+  "content": "## ConfiguracaoEventoFonteDados\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação Evento (Type: )\n- codigoEvento: Código do evento (Type: Long)\n\n## ConfiguracaoTrctEventoFonteDados\n- id: Identificador (Type: Long)\n- configuracaoEvento: Configuração evento (Type: ConfiguracaoEventoFonteDados)\n\n## ConfiguracaoTrctFontDados\n- id: Identificador (Type: Long)\n- tipoProvento: Proventos (Type: )\n- tipoDesconto: Desconto (Type: )\n- eventos: Eventos (Type: ConfiguracaoTrctEventoFonteDados)",
+  "metadata": {
+    "chunk_id": "configuracaoTrct_busca_5_8942413e",
+    "section_name": "configuracaoTrct_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 158,
+    "char_count": 536,
+    "overlap_with_previous": 21,
+    "overlap_with_next": 22,
+    "keywords": [
+      "configuracaotrct",
+      "classificacao",
+      "codigoevento",
+      "configuracaoeventofontedados",
+      "id",
+      "descricao",
+      "configuracaotrctfontdados",
+      "configuracaotrcteventofontedados",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "configuracaoTrct",
+      "ConfiguracaoTrctFontDados",
+      "busca",
+      "ConfiguracaoEventoFonteDados",
+      "ConfiguracaoTrctEventoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.979813",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "8942413e4c9bd6113cafa853d5a9c711",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5"
+    ],
+    "quality_score": 0.8
+  },
+  "embeddings_text": "Section: configuracaoTrct_busca\nType: reference\nRelated to: configuracaoTrct, ConfiguracaoTrctFontDados, busca\n\n## ConfiguracaoEventoFonteDados\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação Evento (Type: )\n- codigoEvento: Código do evento (Type: Long)\n\n## ConfiguracaoTrctEventoFonteDados\n- id: Identificador (Type: Long)\n- configuracaoEvento: Configuração evento (Type: ConfiguracaoEventoFonteDados)\n\n## ConfiguracaoTrctFontDados\n- id: Identificador (Type: Long)\n- tipoProvento: Proventos (Type: )\n- tipoDesconto: Desconto (Type: )\n- eventos: Eventos (Type: ConfiguracaoTrctEventoFonteDados)\n\nKeywords: configuracaotrct, classificacao, codigoevento, configuracaoeventofontedados, id, descricao, configuracaotrctfontdados, configuracaotrcteventofontedados, tipo, dados",
+  "search_text": "configuracaoTrct_busca configuracaoTrct ConfiguracaoTrctFontDados busca ConfiguracaoEventoFonteDados ConfiguracaoTrctEventoFonteDados configuracaotrct classificacao codigoevento configuracaoeventofontedados id descricao configuracaotrctfontdados configuracaotrcteventofontedados tipo dados ## ConfiguracaoEventoFonteDados\n- id: Identificador (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação Evento (Type: )\n- codigoEvento: Código do evento (Type: Long)\n\n## ConfiguracaoTrctEventoFonteDados\n- id: Identificador (Type: Long)\n- configuracaoEvento: Configuração evento (Type: ConfiguracaoEventoFonteDados)\n\n## ConfiguracaoTrctFontDados\n- id: Identificador (Type: Long)\n- tipoProvento: Proventos (Type: )\n- tipoDesconto: Desconto (Type: )\n- eventos: Eventos (Type: ConfiguracaoTrctEventoFonteDados)"
+}

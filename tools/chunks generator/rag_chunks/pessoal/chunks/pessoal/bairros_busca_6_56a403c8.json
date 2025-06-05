@@ -1,0 +1,51 @@
+{
+  "content": "groovy\nfonteBairros = Dados.pessoal.v2.bairros;\n\ndadosBairros = fonteBairros.busca(campos: \"municipio(estado(nome, codigoIbge), nome, id, codigoIbge), id, nome\",ordenacao: \"nome asc\")\n\npercorrer (dadosBairros) { itemBairros ->\n\n}",
+  "metadata": {
+    "chunk_id": "bairros_busca_6_56a403c8",
+    "section_name": "bairros_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 84,
+    "char_count": 229,
+    "overlap_with_previous": 12,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "bairros",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Estado",
+      "busca",
+      "bairros",
+      "Dados.pessoal.v2.bairros",
+      "Municipio",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.576263",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "56a403c849f4ad60f294c3ffa0afe094",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: bairros_busca\nType: example\nRelated to: Estado, busca, bairros\n\ngroovy\nfonteBairros = Dados.pessoal.v2.bairros;\n\ndadosBairros = fonteBairros.busca(campos: \"municipio(estado(nome, codigoIbge), nome, id, codigoIbge), id, nome\",ordenacao: \"nome asc\")\n\npercorrer (dadosBairros) { itemBairros ->\n\n}\n\nKeywords: pessoal, busca, bairros, ordenacao, v2, campo, dados",
+  "search_text": "bairros_busca Estado busca bairros Dados.pessoal.v2.bairros Municipio Bairro Pais pessoal busca bairros ordenacao v2 campo dados groovy\nfonteBairros = Dados.pessoal.v2.bairros;\n\ndadosBairros = fonteBairros.busca(campos: \"municipio(estado(nome, codigoIbge), nome, id, codigoIbge), id, nome\",ordenacao: \"nome asc\")\n\npercorrer (dadosBairros) { itemBairros ->\n\n}"
+}

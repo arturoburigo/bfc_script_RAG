@@ -1,7 +1,0 @@
-# TipoFundoPrevidencia
-Enum: TipoFundoPrevidencia
-- Assistência Municipal (Key: ASSISTENCIA_MUNICIPAL, Value: 1)
-- Fundo financeiro (Key: FUNDO_FINANCEIRO, Value: 2)
-- Previdência própria (Key: PREVIDENCIA_PROPRIA, Value: 3)
-- Previdência estadual (Key: PREVIDENCIA_ESTADUAL, Value: 4)
-- Complementar (Key: COMPLEMENTAR, Value: 5)

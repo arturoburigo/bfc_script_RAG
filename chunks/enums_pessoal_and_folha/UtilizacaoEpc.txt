@@ -1,6 +1,0 @@
-# UtilizacaoEpc
-Enum: UtilizacaoEpc
-- Não se aplica (Key: NAO_SE_APLICA, Value: 1)
-- Não utilizado (Key: NAO_UTILIZADO, Value: 2)
-- Eficaz (Key: EFICAZ, Value: 3)
-- Não eficaz (Key: NAO_EFICAZ, Value: 4)

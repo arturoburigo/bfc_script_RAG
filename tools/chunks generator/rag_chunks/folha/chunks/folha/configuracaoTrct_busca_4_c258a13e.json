@@ -1,0 +1,46 @@
+{
+  "content": "- eventos.configuracaoEvento.id: Id evento (Type: Long)\n- tipoProvento: Proventos (Type: )\n- tipoDesconto: Desconto (Type: )",
+  "metadata": {
+    "chunk_id": "configuracaoTrct_busca_4_c258a13e",
+    "section_name": "configuracaoTrct_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 39,
+    "char_count": 124,
+    "overlap_with_previous": 3,
+    "overlap_with_next": 21,
+    "keywords": [
+      "configuracaotrct",
+      "tipodesconto",
+      "tipo",
+      "tipoprovento"
+    ],
+    "entities": [
+      "configuracaoTrct",
+      "ConfiguracaoTrctFontDados",
+      "busca",
+      "ConfiguracaoEventoFonteDados",
+      "ConfiguracaoTrctEventoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.979625",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "c258a13edaf0d6bd7cd6eb2599b8850e",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracaoTrct_busca\nType: reference\nRelated to: configuracaoTrct, ConfiguracaoTrctFontDados, busca\n\n- eventos.configuracaoEvento.id: Id evento (Type: Long)\n- tipoProvento: Proventos (Type: )\n- tipoDesconto: Desconto (Type: )\n\nKeywords: configuracaotrct, tipodesconto, tipo, tipoprovento",
+  "search_text": "configuracaoTrct_busca configuracaoTrct ConfiguracaoTrctFontDados busca ConfiguracaoEventoFonteDados ConfiguracaoTrctEventoFonteDados configuracaotrct tipodesconto tipo tipoprovento - eventos.configuracaoEvento.id: Id evento (Type: Long)\n- tipoProvento: Proventos (Type: )\n- tipoDesconto: Desconto (Type: )"
+}

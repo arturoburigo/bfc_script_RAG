@@ -1,0 +1,53 @@
+{
+  "content": "## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)\n\n## Estado\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla: Sigla (Type: String)\n- codigoIbge: Código no IBGE (Type: Integer)\n- pais: País (Type: Pais)\n\n## Municipio\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: Estado)\n- codigoIbge: Código no IBGE (Type: Long)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- cep: CEP geral (Type: Long)\n\n## Bairro\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- municipio: Município (Type: Municipio)\n- zonaRural: Zona rural (Type: Boolean)",
+  "metadata": {
+    "chunk_id": "bairros_busca_5_d7092318",
+    "section_name": "bairros_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 285,
+    "char_count": 785,
+    "overlap_with_previous": 24,
+    "overlap_with_next": 12,
+    "keywords": [
+      "municipio",
+      "estado",
+      "bairro",
+      "nome",
+      "bairros",
+      "sigla3d",
+      "pais",
+      "id",
+      "sigla2c",
+      "sigla3c"
+    ],
+    "entities": [
+      "Estado",
+      "busca",
+      "bairros",
+      "Municipio",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.576061",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "d70923186d51c3fdf028b300ee95cd84",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: bairros_busca\nType: reference\nRelated to: Estado, busca, bairros\n\n## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)\n\n## Estado\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla: Sigla (Type: String)\n- codigoIbge: Código no IBGE (Type: Integer)\n- pais: País (Type: Pais)\n\n## Municipio\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: Estado)\n- codigoIbge: Código no IBGE (Type: Long)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- cep: CEP geral (Type: Long)\n\n## Bairro\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- municipio: Município (Type: Municipio)\n- zonaRural: Zona rural (Type: Boolean)\n\nKeywords: municipio, estado, bairro, nome, bairros, sigla3d, pais, id, sigla2c, sigla3c",
+  "search_text": "bairros_busca Estado busca bairros Municipio Bairro Pais municipio estado bairro nome bairros sigla3d pais id sigla2c sigla3c ## Pais\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla2C: Sigla ISO-2 (Type: String)\n- sigla3C: Sigla ISO-3 (Type: String)\n- sigla3D: Sigla 3D (Type: String)\n- codigoBacen: Código no BACEN/IBGE (Type: String)\n- codigoEsocial: Código no eSocial (Type: String)\n\n## Estado\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- sigla: Sigla (Type: String)\n- codigoIbge: Código no IBGE (Type: Integer)\n- pais: País (Type: Pais)\n\n## Municipio\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- estado: Estado (Type: Estado)\n- codigoIbge: Código no IBGE (Type: Long)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- cep: CEP geral (Type: Long)\n\n## Bairro\n- id: Id (Type: Long)\n- nome: Nome (Type: String)\n- municipio: Município (Type: Municipio)\n- zonaRural: Zona rural (Type: Boolean)"
+}

@@ -1,0 +1,51 @@
+{
+  "content": "- subTipoProcessamento: Subtipo processamento (Type: )\n- situacao: Situação (Type: )\n- folha.matricula.lotacaoFisicaPrincipal.numero: Número da lotação física (Type: Long)\n- matricula.codigoMatricula.numero: Código da matrícula (Type: Long)\n- totalDesconto: Total desconto (Type: BigDecimal)\n- matricula.pessoa.nome: Nome da pessoa (Type: String)\n- competencia: Competência (Type: YearMonth)\n- isOrigemConversao: É origem de conversão? (Type: Boolean)\n- matricula.cargo.descricao: Descrição do cargo (Type: String)\n- matricula.cargo.id: Id do cargo (Type: Long)\n- id: Identificador (Type: Long)\n- totalLiquido: Total líquido (Type: BigDecimal)\n- dataCalculo: Data cálculo (Type: LocalDate)\n- matricula.organograma.descricao: Descrição do organograma (Type: String)\n- matricula.grupoFuncional.descricao: Descrição do grupo funcional (Type: String)\n- matricula.lotacaoFisicaPrincipal.id: Id da lotação física (Type: Long)\n- dataPagamento: Data pagamento (Type: LocalDate)\n- matricula.organograma.id: Id do organograma (Type: Long)\n- totalBruto: Total bruto (Type: BigDecimal)\n- dataFechamento: Data fechamento (Type: LocalDate)\n- isMovimentoAnterior: Movimento anterior (Type: Boolean)\n- matricula.lotacaoFisicaPrincipal.descricao: Descrição da lotação física (Type: String)\n- dataLiberacao: Data liberação (Type: LocalDate)\n- tipoProcessamento: Tipo processamento (Type: )\n- matricula.vinculoEmpregaticio.descricao: Descrição do cargo (Type: String)\n- matricula.id: Id da matrícula (Type: Long)\n- matricula.vinculoEmpregaticio.id: Id do cargo (Type: Long)\n- matricula.grupoFuncional.id: Id do grupo funcional (Type: Long)",
+  "metadata": {
+    "chunk_id": "encargosIrrf_busca_4_80541a5b",
+    "section_name": "encargosIrrf_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 468,
+    "char_count": 1620,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 101,
+    "keywords": [
+      "situacao",
+      "subtipoprocessamento",
+      "isorigemconversao",
+      "totaldesconto",
+      "folha",
+      "tipo",
+      "encargosirrf",
+      "competencia"
+    ],
+    "entities": [
+      "busca",
+      "encargosIrrf",
+      "EncargosIrrfMatricula",
+      "PessoaFisicaEncargosIrrf",
+      "EncargosIrrf",
+      "CodigoMatricula"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.982172",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "80541a5b46d96afbfa9ee09754e53862",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.65
+  },
+  "embeddings_text": "Section: encargosIrrf_busca\nType: reference\nRelated to: busca, encargosIrrf, EncargosIrrfMatricula\n\n- subTipoProcessamento: Subtipo processamento (Type: )\n- situacao: Situação (Type: )\n- folha.matricula.lotacaoFisicaPrincipal.numero: Número da lotação física (Type: Long)\n- matricula.codigoMatricula.numero: Código da matrícula (Type: Long)\n- totalDesconto: Total desconto (Type: BigDecimal)\n- matricula.pessoa.nome: Nome da pessoa (Type: String)\n- competencia: Competência (Type: YearMonth)\n- isOrigemConversao: É origem de conversão? (Type: Boolean)\n- matricula.cargo.descricao: Descrição do cargo (Type: String)\n- matricula.cargo.id: Id do cargo (Type: Long)\n- id: Identificador (Type: Long)\n- totalLiquido: Total líquido (Type: BigDecimal)\n- dataCalculo: Data cálculo (Type: LocalDate)\n- matricula.organograma.descricao: Descrição do organograma (Type: String)\n- matricula.grupoFuncional.descricao: Descrição do grupo funcional (Type: String)\n- matricula.lotacaoFisicaPrincipal.id: Id da lotação física (Type: Long)\n- dataPagamento: Data pagamento (Type: LocalDate)\n- matricula.organograma.id: Id do organograma (Type: Long)\n- totalBruto: Total bruto (Type: BigDecimal)\n- dataFechamento: Data fechamento (Type: LocalDate)\n- isMovimentoAnterior: Movimento anterior (Type: Boolean)\n- matricula.lotacaoFisicaPrincipal.descricao: Descrição da lotação física (Type: String)\n- dataLiberacao: Data liberação (Type: LocalDate)\n- tipoProcessamento: Tipo processamento (Type: )\n- matricula.vinculoEmpregaticio.descricao: Descrição do cargo (Type: String)\n- matricula.id: Id da matrícula (Type: Long)\n- matricula.vinculoEmpregaticio.id: Id do cargo (Type: Long)\n- matricula.grupoFuncional.id: Id do grupo funcional (Type: Long)\n\nKeywords: situacao, subtipoprocessamento, isorigemconversao, totaldesconto, folha, tipo, encargosirrf, competencia",
+  "search_text": "encargosIrrf_busca busca encargosIrrf EncargosIrrfMatricula PessoaFisicaEncargosIrrf EncargosIrrf CodigoMatricula situacao subtipoprocessamento isorigemconversao totaldesconto folha tipo encargosirrf competencia - subTipoProcessamento: Subtipo processamento (Type: )\n- situacao: Situação (Type: )\n- folha.matricula.lotacaoFisicaPrincipal.numero: Número da lotação física (Type: Long)\n- matricula.codigoMatricula.numero: Código da matrícula (Type: Long)\n- totalDesconto: Total desconto (Type: BigDecimal)\n- matricula.pessoa.nome: Nome da pessoa (Type: String)\n- competencia: Competência (Type: YearMonth)\n- isOrigemConversao: É origem de conversão? (Type: Boolean)\n- matricula.cargo.descricao: Descrição do cargo (Type: String)\n- matricula.cargo.id: Id do cargo (Type: Long)\n- id: Identificador (Type: Long)\n- totalLiquido: Total líquido (Type: BigDecimal)\n- dataCalculo: Data cálculo (Type: LocalDate)\n- matricula.organograma.descricao: Descrição do organograma (Type: String)\n- matricula.grupoFuncional.descricao: Descrição do grupo funcional (Type: String)\n- matricula.lotacaoFisicaPrincipal.id: Id da lotação física (Type: Long)\n- dataPagamento: Data pagamento (Type: LocalDate)\n- matricula.organograma.id: Id do organograma (Type: Long)\n- totalBruto: Total bruto (Type: BigDecimal)\n- dataFechamento: Data fechamento (Type: LocalDate)\n- isMovimentoAnterior: Movimento anterior (Type: Boolean)\n- matricula.lotacaoFisicaPrincipal.descricao: Descrição da lotação física (Type: String)\n- dataLiberacao: Data liberação (Type: LocalDate)\n- tipoProcessamento: Tipo processamento (Type: )\n- matricula.vinculoEmpregaticio.descricao: Descrição do cargo (Type: String)\n- matricula.id: Id da matrícula (Type: Long)\n- matricula.vinculoEmpregaticio.id: Id do cargo (Type: Long)\n- matricula.grupoFuncional.id: Id do grupo funcional (Type: Long)"
+}

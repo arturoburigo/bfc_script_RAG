@@ -1,0 +1,51 @@
+{
+  "content": "groovy\nfontePeriodoAquisitivo = Dados.folha.v2.periodoAquisitivo;\n\ndadosPeriodoAquisitivo = fontePeriodoAquisitivo.buscaPeriodoDecimoTerceiro(campos: \"movimentacoes(cessacao(id, tipoSuspensao, dataInicial, motivoSuspensaoCessacao, descricao, cnpjOrgaoSucessor, dataTermino, dataEfeitoFinanceiro), id, motivo, consideraAvosPerdidos, competencia, valor), id, configuracao, situacao, dataInicial, dataFinal, avosAdquiridos, avosAdquiridosFgts, avosDireito, avosPerdidos, anoExercicio\",ordenacao: \"id asc\")\n\npercorrer (dadosPeriodoAquisitivo) { itemPeriodoAquisitivo ->\n\n}",
+  "metadata": {
+    "chunk_id": "periodoAquisitivo_buscaPeriodoDecimoTerceiro_6_5a21a385",
+    "section_name": "periodoAquisitivo_buscaPeriodoDecimoTerceiro",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 190,
+    "char_count": 568,
+    "overlap_with_previous": 63,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "tipo",
+      "periodoaquisitivo",
+      "ordenacao",
+      "v2",
+      "folha",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "PeriodoAquisitivoDecimoTerceiro",
+      "buscaPeriodoDecimoTerceiro",
+      "SuspensaoCessacaoPeriodoAquisitivoRepresentation",
+      "periodoAquisitivo",
+      "Dados.folha.v2.periodoAquisitivo",
+      "ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.443409",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "5a21a385c8abb77361fdebe18d817d47",
+    "related_chunks": [
+      "provisao_buscaBases_5_e3986e07",
+      "provisao_busca_6_0cee3b39",
+      "provisao_buscaBases_1_b10fac4c",
+      "provisao_busca_1_a6c8a2b0",
+      "provisao_buscaBases_4_f5cc4ecd"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: periodoAquisitivo_buscaPeriodoDecimoTerceiro\nType: example\nRelated to: PeriodoAquisitivoDecimoTerceiro, buscaPeriodoDecimoTerceiro, SuspensaoCessacaoPeriodoAquisitivoRepresentation\n\ngroovy\nfontePeriodoAquisitivo = Dados.folha.v2.periodoAquisitivo;\n\ndadosPeriodoAquisitivo = fontePeriodoAquisitivo.buscaPeriodoDecimoTerceiro(campos: \"movimentacoes(cessacao(id, tipoSuspensao, dataInicial, motivoSuspensaoCessacao, descricao, cnpjOrgaoSucessor, dataTermino, dataEfeitoFinanceiro), id, motivo, consideraAvosPerdidos, competencia, valor), id, configuracao, situacao, dataInicial, dataFinal, avosAdquiridos, avosAdquiridosFgts, avosDireito, avosPerdidos, anoExercicio\",ordenacao: \"id asc\")\n\npercorrer (dadosPeriodoAquisitivo) { itemPeriodoAquisitivo ->\n\n}\n\nKeywords: busca, tipo, periodoaquisitivo, ordenacao, v2, folha, campo, dados",
+  "search_text": "periodoAquisitivo_buscaPeriodoDecimoTerceiro PeriodoAquisitivoDecimoTerceiro buscaPeriodoDecimoTerceiro SuspensaoCessacaoPeriodoAquisitivoRepresentation periodoAquisitivo Dados.folha.v2.periodoAquisitivo ConfiguracaoMovimentoPeriodoAquisitivoDecimoTerceiro busca tipo periodoaquisitivo ordenacao v2 folha campo dados groovy\nfontePeriodoAquisitivo = Dados.folha.v2.periodoAquisitivo;\n\ndadosPeriodoAquisitivo = fontePeriodoAquisitivo.buscaPeriodoDecimoTerceiro(campos: \"movimentacoes(cessacao(id, tipoSuspensao, dataInicial, motivoSuspensaoCessacao, descricao, cnpjOrgaoSucessor, dataTermino, dataEfeitoFinanceiro), id, motivo, consideraAvosPerdidos, competencia, valor), id, configuracao, situacao, dataInicial, dataFinal, avosAdquiridos, avosAdquiridosFgts, avosDireito, avosPerdidos, anoExercicio\",ordenacao: \"id asc\")\n\npercorrer (dadosPeriodoAquisitivo) { itemPeriodoAquisitivo ->\n\n}"
+}

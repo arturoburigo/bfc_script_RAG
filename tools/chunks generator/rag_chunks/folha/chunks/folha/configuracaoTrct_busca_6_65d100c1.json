@@ -1,0 +1,51 @@
+{
+  "content": "groovy\nfonteConfiguracaoTrct = Dados.folha.v2.configuracaoTrct;\n\ndadosConfiguracaoTrct = fonteConfiguracaoTrct.busca(campos: \"eventos(configuracaoEvento(id, descricao, classificacao, codigoEvento), id), id, tipoProvento, tipoDesconto\",ordenacao: \"eventos.configuracaoEvento.id asc\")\n\npercorrer (dadosConfiguracaoTrct) { itemConfiguracaoTrct ->\n\n}",
+  "metadata": {
+    "chunk_id": "configuracaoTrct_busca_6_65d100c1",
+    "section_name": "configuracaoTrct_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 108,
+    "char_count": 346,
+    "overlap_with_previous": 22,
+    "overlap_with_next": 0,
+    "keywords": [
+      "configuracaotrct",
+      "busca",
+      "tipo",
+      "ordenacao",
+      "v2",
+      "folha",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "configuracaoTrct",
+      "ConfiguracaoTrctFontDados",
+      "busca",
+      "Dados.folha.v2.configuracaoTrct",
+      "ConfiguracaoEventoFonteDados",
+      "ConfiguracaoTrctEventoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.979987",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "65d100c17519d0a25b9f799a2a9cb998",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: configuracaoTrct_busca\nType: example\nRelated to: configuracaoTrct, ConfiguracaoTrctFontDados, busca\n\ngroovy\nfonteConfiguracaoTrct = Dados.folha.v2.configuracaoTrct;\n\ndadosConfiguracaoTrct = fonteConfiguracaoTrct.busca(campos: \"eventos(configuracaoEvento(id, descricao, classificacao, codigoEvento), id), id, tipoProvento, tipoDesconto\",ordenacao: \"eventos.configuracaoEvento.id asc\")\n\npercorrer (dadosConfiguracaoTrct) { itemConfiguracaoTrct ->\n\n}\n\nKeywords: configuracaotrct, busca, tipo, ordenacao, v2, folha, campo, dados",
+  "search_text": "configuracaoTrct_busca configuracaoTrct ConfiguracaoTrctFontDados busca Dados.folha.v2.configuracaoTrct ConfiguracaoEventoFonteDados ConfiguracaoTrctEventoFonteDados configuracaotrct busca tipo ordenacao v2 folha campo dados groovy\nfonteConfiguracaoTrct = Dados.folha.v2.configuracaoTrct;\n\ndadosConfiguracaoTrct = fonteConfiguracaoTrct.busca(campos: \"eventos(configuracaoEvento(id, descricao, classificacao, codigoEvento), id), id, tipoProvento, tipoDesconto\",ordenacao: \"eventos.configuracaoEvento.id asc\")\n\npercorrer (dadosConfiguracaoTrct) { itemConfiguracaoTrct ->\n\n}"
+}

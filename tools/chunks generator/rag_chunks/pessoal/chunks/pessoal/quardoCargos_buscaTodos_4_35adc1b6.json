@@ -1,0 +1,45 @@
+{
+  "content": "- inicioVigencia:  (Type: LocalDateTime)\n- descricao:  (Type: String)",
+  "metadata": {
+    "chunk_id": "quardoCargos_buscaTodos_4_35adc1b6",
+    "section_name": "quardoCargos_buscaTodos",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 21,
+    "char_count": 69,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 14,
+    "keywords": [
+      "iniciovigencia",
+      "quadrocargos",
+      "descricao"
+    ],
+    "entities": [
+      "AtoMatriculaAssociacao",
+      "QuadroCargo",
+      "TipoAto",
+      "buscaTodos",
+      "quadroCargos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.634443",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "35adc1b62596d264385121d012755955",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: quardoCargos_buscaTodos\nType: reference\nRelated to: AtoMatriculaAssociacao, QuadroCargo, TipoAto\n\n- inicioVigencia:  (Type: LocalDateTime)\n- descricao:  (Type: String)\n\nKeywords: iniciovigencia, quadrocargos, descricao",
+  "search_text": "quardoCargos_buscaTodos AtoMatriculaAssociacao QuadroCargo TipoAto buscaTodos quadroCargos iniciovigencia quadrocargos descricao - inicioVigencia:  (Type: LocalDateTime)\n- descricao:  (Type: String)"
+}

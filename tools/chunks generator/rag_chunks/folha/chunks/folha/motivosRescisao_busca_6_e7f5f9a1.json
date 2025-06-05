@@ -1,0 +1,52 @@
+{
+  "content": "groovy\nfonteMotivosRescisao = Dados.folha.v2.motivosRescisao;\n\ndadosMotivosRescisao = fonteMotivosRescisao.busca(campos: \"id, tipoAfastamento(id, descricao, classificacao), tipoMovimentacaoPessoal(id, descricao, classificacao), tipo, descricao, classificacao\",ordenacao: \"classificacao,tipoAfastamento.descricao asc\")\n\npercorrer (dadosMotivosRescisao) { itemMotivosRescisao ->\n\n}",
+  "metadata": {
+    "chunk_id": "motivosRescisao_busca_6_e7f5f9a1",
+    "section_name": "motivosRescisao_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 119,
+    "char_count": 379,
+    "overlap_with_previous": 22,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "motivosrescisao",
+      "tipo",
+      "ordenacao",
+      "v2",
+      "folha",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "motivosRescisao",
+      "TipoMovimentacaoPessoalMotivoRescisao",
+      "busca",
+      "TipoAfastamentoMotivoRescisao",
+      "Dados.folha.v2.motivosRescisao",
+      "MotivoRescisaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.095891",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "e7f5f9a1a33883bf8424e04909bf65c4",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: motivosRescisao_busca\nType: example\nRelated to: motivosRescisao, TipoMovimentacaoPessoalMotivoRescisao, busca\n\ngroovy\nfonteMotivosRescisao = Dados.folha.v2.motivosRescisao;\n\ndadosMotivosRescisao = fonteMotivosRescisao.busca(campos: \"id, tipoAfastamento(id, descricao, classificacao), tipoMovimentacaoPessoal(id, descricao, classificacao), tipo, descricao, classificacao\",ordenacao: \"classificacao,tipoAfastamento.descricao asc\")\n\npercorrer (dadosMotivosRescisao) { itemMotivosRescisao ->\n\n}\n\nKeywords: pessoal, busca, motivosrescisao, tipo, ordenacao, v2, folha, campo, dados",
+  "search_text": "motivosRescisao_busca motivosRescisao TipoMovimentacaoPessoalMotivoRescisao busca TipoAfastamentoMotivoRescisao Dados.folha.v2.motivosRescisao MotivoRescisaoFonteDados pessoal busca motivosrescisao tipo ordenacao v2 folha campo dados groovy\nfonteMotivosRescisao = Dados.folha.v2.motivosRescisao;\n\ndadosMotivosRescisao = fonteMotivosRescisao.busca(campos: \"id, tipoAfastamento(id, descricao, classificacao), tipoMovimentacaoPessoal(id, descricao, classificacao), tipo, descricao, classificacao\",ordenacao: \"classificacao,tipoAfastamento.descricao asc\")\n\npercorrer (dadosMotivosRescisao) { itemMotivosRescisao ->\n\n}"
+}

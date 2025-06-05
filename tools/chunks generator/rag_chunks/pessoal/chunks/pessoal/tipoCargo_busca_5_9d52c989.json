@@ -1,0 +1,51 @@
+{
+  "content": "## TipoMovimentacaoPessoalTipoCargo\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## TipoCargoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n- tipoMovimentacao: Tipo movimentação (Type: TipoMovimentacaoPessoalTipoCargo)\n- tipoMovimentacaoSaida: Tipo movimentação de saída (Type: TipoMovimentacaoPessoalTipoCargo)\n- tipoMovimentacaoSubstituto: Tipo movimentação do substituto (Type: TipoMovimentacaoPessoalTipoCargo)\n- tipoMovimentacaoSaidaSubstituto: Tipo movimentação de saída do substituto (Type: TipoMovimentacaoPessoalTipoCargo)\n- camposAdicionais: Campos Adicionais (Type: CamposAdicionais)",
+  "metadata": {
+    "chunk_id": "tipoCargo_busca_5_9d52c989",
+    "section_name": "tipoCargo_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 212,
+    "char_count": 714,
+    "overlap_with_previous": 35,
+    "overlap_with_next": 13,
+    "keywords": [
+      "tipocargo",
+      "pessoal",
+      "tipocargofontedados",
+      "tipo",
+      "id",
+      "descricao",
+      "tipomovimentacaopessoaltipocargo",
+      "classificacao",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "busca",
+      "TipoCargoFonteDados",
+      "TipoMovimentacaoPessoalTipoCargo",
+      "tipoCargo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.578000",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "9d52c98984ee502126cca5d52cccfd3d",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.8999999999999999
+  },
+  "embeddings_text": "Section: tipoCargo_busca\nType: reference\nRelated to: busca, TipoCargoFonteDados, TipoMovimentacaoPessoalTipoCargo\n\n## TipoMovimentacaoPessoalTipoCargo\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## TipoCargoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n- tipoMovimentacao: Tipo movimentação (Type: TipoMovimentacaoPessoalTipoCargo)\n- tipoMovimentacaoSaida: Tipo movimentação de saída (Type: TipoMovimentacaoPessoalTipoCargo)\n- tipoMovimentacaoSubstituto: Tipo movimentação do substituto (Type: TipoMovimentacaoPessoalTipoCargo)\n- tipoMovimentacaoSaidaSubstituto: Tipo movimentação de saída do substituto (Type: TipoMovimentacaoPessoalTipoCargo)\n- camposAdicionais: Campos Adicionais (Type: CamposAdicionais)\n\nKeywords: tipocargo, pessoal, tipocargofontedados, tipo, id, descricao, tipomovimentacaopessoaltipocargo, classificacao, campo, dados",
+  "search_text": "tipoCargo_busca busca TipoCargoFonteDados TipoMovimentacaoPessoalTipoCargo tipoCargo tipocargo pessoal tipocargofontedados tipo id descricao tipomovimentacaopessoaltipocargo classificacao campo dados ## TipoMovimentacaoPessoalTipoCargo\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## TipoCargoFonteDados\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n- tipoMovimentacao: Tipo movimentação (Type: TipoMovimentacaoPessoalTipoCargo)\n- tipoMovimentacaoSaida: Tipo movimentação de saída (Type: TipoMovimentacaoPessoalTipoCargo)\n- tipoMovimentacaoSubstituto: Tipo movimentação do substituto (Type: TipoMovimentacaoPessoalTipoCargo)\n- tipoMovimentacaoSaidaSubstituto: Tipo movimentação de saída do substituto (Type: TipoMovimentacaoPessoalTipoCargo)\n- camposAdicionais: Campos Adicionais (Type: CamposAdicionais)"
+}

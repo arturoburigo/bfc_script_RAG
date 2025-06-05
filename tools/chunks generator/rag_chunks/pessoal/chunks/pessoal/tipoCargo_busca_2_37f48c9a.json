@@ -1,0 +1,44 @@
+{
+  "content": "Listagem de tipos de cargos\n\nRepresentation Type: TipoCargoFonteDados",
+  "metadata": {
+    "chunk_id": "tipoCargo_busca_2_37f48c9a",
+    "section_name": "tipoCargo_busca",
+    "chunk_index": 2,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 16,
+    "char_count": 69,
+    "overlap_with_previous": 14,
+    "overlap_with_next": 15,
+    "keywords": [
+      "tipocargo",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "busca",
+      "TipoCargoFonteDados",
+      "TipoMovimentacaoPessoalTipoCargo",
+      "tipoCargo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.577411",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "37f48c9af87d605c405664c2c072d2bc",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: tipoCargo_busca\nType: definition\nRelated to: busca, TipoCargoFonteDados, TipoMovimentacaoPessoalTipoCargo\n\nListagem de tipos de cargos\n\nRepresentation Type: TipoCargoFonteDados\n\nKeywords: tipocargo, tipo, dados",
+  "search_text": "tipoCargo_busca busca TipoCargoFonteDados TipoMovimentacaoPessoalTipoCargo tipoCargo tipocargo tipo dados Listagem de tipos de cargos\n\nRepresentation Type: TipoCargoFonteDados"
+}

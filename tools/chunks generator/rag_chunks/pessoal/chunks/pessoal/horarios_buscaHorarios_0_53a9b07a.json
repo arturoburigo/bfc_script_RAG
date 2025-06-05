@@ -1,0 +1,43 @@
+{
+  "content": "Horários",
+  "metadata": {
+    "chunk_id": "horarios_buscaHorarios_0_53a9b07a",
+    "section_name": "horarios_buscaHorarios",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 2,
+    "char_count": 8,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 2,
+    "keywords": [
+      "horarios"
+    ],
+    "entities": [
+      "HorarioIntervalo",
+      "HorarioFonteDados",
+      "horarios",
+      "buscaHorarios",
+      "HorarioMarcacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.578357",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "53a9b07a73b4998a5c0551155842e623",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "horarios_buscaHorarios_4_86131741"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: horarios_buscaHorarios\nType: definition\nRelated to: HorarioIntervalo, HorarioFonteDados, horarios\n\nHorários\n\nKeywords: horarios",
+  "search_text": "horarios_buscaHorarios HorarioIntervalo HorarioFonteDados horarios buscaHorarios HorarioMarcacao horarios Horários"
+}

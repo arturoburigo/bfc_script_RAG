@@ -1,0 +1,63 @@
+{
+  "content": "groovy\nfonteEntidadesDatabase = Dados.pessoal.v2.entidadesDatabase;\n\ndadosEntidadesDatabase = fonteEntidadesDatabase.buscaEntidadesMesmoDatabase(campos: \"nome, cnpj, nomeResponsavel, cpfResponsavel, emailResponsavel, pisResponsavel, telefoneResponsavel\")\n\npercorrer (dadosEntidadesDatabase) { itemEntidadesDatabase ->\n\n}",
+  "metadata": {
+    "chunk_id": "entidadesDatabase_buscaEntidadesMesmoDatabase_6_2b8fffe3",
+    "section_name": "entidadesDatabase_buscaEntidadesMesmoDatabase",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 83,
+    "char_count": 320,
+    "overlap_with_previous": 18,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "busca",
+      "entidade",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Dados.pessoal.v2.entidadesDatabase",
+      "buscaEntidadesMesmoDatabase",
+      "entidade",
+      "AtoFonteDados",
+      "Pais",
+      "Estado",
+      "EmailEntidade",
+      "Endereco",
+      "NaturezaTextoJuridico",
+      "TipoAto",
+      "SindicatoFuncionario",
+      "Bairro",
+      "TipoLogradouro",
+      "Logradouro",
+      "PessoaJuridica",
+      "EntidadeEncargosInssFgts",
+      "Entidade",
+      "TelefonesEntidadeEncargosInssFgts",
+      "Municipio",
+      "EntidadeSoftwareHouseEncargosInssFgts"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.671758",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "2b8fffe38ac25e5988e8281819a759b6",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: entidadesDatabase_buscaEntidadesMesmoDatabase\nType: example\nRelated to: Dados.pessoal.v2.entidadesDatabase, buscaEntidadesMesmoDatabase, entidade\n\ngroovy\nfonteEntidadesDatabase = Dados.pessoal.v2.entidadesDatabase;\n\ndadosEntidadesDatabase = fonteEntidadesDatabase.buscaEntidadesMesmoDatabase(campos: \"nome, cnpj, nomeResponsavel, cpfResponsavel, emailResponsavel, pisResponsavel, telefoneResponsavel\")\n\npercorrer (dadosEntidadesDatabase) { itemEntidadesDatabase ->\n\n}\n\nKeywords: pessoal, busca, entidade, v2, campo, dados",
+  "search_text": "entidadesDatabase_buscaEntidadesMesmoDatabase Dados.pessoal.v2.entidadesDatabase buscaEntidadesMesmoDatabase entidade AtoFonteDados Pais Estado EmailEntidade Endereco NaturezaTextoJuridico TipoAto SindicatoFuncionario Bairro TipoLogradouro Logradouro PessoaJuridica EntidadeEncargosInssFgts Entidade TelefonesEntidadeEncargosInssFgts Municipio EntidadeSoftwareHouseEncargosInssFgts pessoal busca entidade v2 campo dados groovy\nfonteEntidadesDatabase = Dados.pessoal.v2.entidadesDatabase;\n\ndadosEntidadesDatabase = fonteEntidadesDatabase.buscaEntidadesMesmoDatabase(campos: \"nome, cnpj, nomeResponsavel, cpfResponsavel, emailResponsavel, pisResponsavel, telefoneResponsavel\")\n\npercorrer (dadosEntidadesDatabase) { itemEntidadesDatabase ->\n\n}"
+}

@@ -1,6 +1,0 @@
-# FormacaoPeriodo
-Enum: FormacaoPeriodo
-- Matutino (Key: MATUTINO, Value: 1)
-- Vespertino (Key: VESPERTINO, Value: 2)
-- Noturno (Key: NOTURNO, Value: 3)
-- Integral (Key: INTEGRAL, Value: 4)

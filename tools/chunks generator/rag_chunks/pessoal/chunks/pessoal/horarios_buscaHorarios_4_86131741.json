@@ -1,0 +1,48 @@
+{
+  "content": "- codigo: Código (Type: String)\n- inicioVigencia: Vigência (Type: LocalDateTime)\n- id: Id (Type: Long)\n- desabilitado: Horário desabilitado? (Type: Boolean)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "horarios_buscaHorarios_4_86131741",
+    "section_name": "horarios_buscaHorarios",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 59,
+    "char_count": 194,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 31,
+    "keywords": [
+      "desabilitado",
+      "iniciovigencia",
+      "horarios",
+      "id",
+      "descricao",
+      "codigo"
+    ],
+    "entities": [
+      "HorarioIntervalo",
+      "HorarioFonteDados",
+      "horarios",
+      "buscaHorarios",
+      "HorarioMarcacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.578550",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "861317418e6f085899cf9b756c187786",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: horarios_buscaHorarios\nType: reference\nRelated to: HorarioIntervalo, HorarioFonteDados, horarios\n\n- codigo: Código (Type: String)\n- inicioVigencia: Vigência (Type: LocalDateTime)\n- id: Id (Type: Long)\n- desabilitado: Horário desabilitado? (Type: Boolean)\n- descricao: Descrição (Type: String)\n\nKeywords: desabilitado, iniciovigencia, horarios, id, descricao, codigo",
+  "search_text": "horarios_buscaHorarios HorarioIntervalo HorarioFonteDados horarios buscaHorarios HorarioMarcacao desabilitado iniciovigencia horarios id descricao codigo - codigo: Código (Type: String)\n- inicioVigencia: Vigência (Type: LocalDateTime)\n- id: Id (Type: Long)\n- desabilitado: Horário desabilitado? (Type: Boolean)\n- descricao: Descrição (Type: String)"
+}

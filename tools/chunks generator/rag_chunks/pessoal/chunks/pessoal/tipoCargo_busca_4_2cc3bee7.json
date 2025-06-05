@@ -1,0 +1,46 @@
+{
+  "content": "- tipoMovimentacaoSubstituto.descricao: Descrição do tipo de movimentação do substituto (Type: String)\n- tipoMovimentacaoSaida.descricao: Descrição do tipo de movimentação de saída (Type: String)\n- tipoMovimentacaoSaidaSubstituto.classificacao: Classificação do tipo de movimentação de saída do substituto (Type: )\n- tipoMovimentacao.descricao: Descrição do tipo de movimentação (Type: String)\n- tipoMovimentacaoSaidaSubstituto.descricao: Descrição do tipo de movimentação de saída do substituto (Type: String)\n- tipoMovimentacaoSaida.classificacao: Classificação do tipo de movimentação de saída (Type: )\n- tipoMovimentacao.classificacao: Classificação do tipo de movimentação (Type: )\n- classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- tipoMovimentacaoSubstituto.classificacao: Classificação do tipo de movimentação do substituto (Type: )\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "tipoCargo_busca_4_2cc3bee7",
+    "section_name": "tipoCargo_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 247,
+    "char_count": 891,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 35,
+    "keywords": [
+      "tipocargo",
+      "id",
+      "descricao",
+      "classificacao",
+      "tipo"
+    ],
+    "entities": [
+      "busca",
+      "TipoCargoFonteDados",
+      "TipoMovimentacaoPessoalTipoCargo",
+      "tipoCargo"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.577709",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "2cc3bee7327284fa993fb52c34e6ce4a",
+    "related_chunks": [
+      "agenciasBancarias_busca_1_ef251772",
+      "cbos_busca_2_eda9679d",
+      "estados_busca_4_82c4be38",
+      "fontesDivulgacao_busca_2_58920ed9",
+      "ocorrenciasDisciplinar_busca_5_2519c1f0"
+    ],
+    "quality_score": 0.65
+  },
+  "embeddings_text": "Section: tipoCargo_busca\nType: reference\nRelated to: busca, TipoCargoFonteDados, TipoMovimentacaoPessoalTipoCargo\n\n- tipoMovimentacaoSubstituto.descricao: Descrição do tipo de movimentação do substituto (Type: String)\n- tipoMovimentacaoSaida.descricao: Descrição do tipo de movimentação de saída (Type: String)\n- tipoMovimentacaoSaidaSubstituto.classificacao: Classificação do tipo de movimentação de saída do substituto (Type: )\n- tipoMovimentacao.descricao: Descrição do tipo de movimentação (Type: String)\n- tipoMovimentacaoSaidaSubstituto.descricao: Descrição do tipo de movimentação de saída do substituto (Type: String)\n- tipoMovimentacaoSaida.classificacao: Classificação do tipo de movimentação de saída (Type: )\n- tipoMovimentacao.classificacao: Classificação do tipo de movimentação (Type: )\n- classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- tipoMovimentacaoSubstituto.classificacao: Classificação do tipo de movimentação do substituto (Type: )\n- descricao: Descrição (Type: String)\n\nKeywords: tipocargo, id, descricao, classificacao, tipo",
+  "search_text": "tipoCargo_busca busca TipoCargoFonteDados TipoMovimentacaoPessoalTipoCargo tipoCargo tipocargo id descricao classificacao tipo - tipoMovimentacaoSubstituto.descricao: Descrição do tipo de movimentação do substituto (Type: String)\n- tipoMovimentacaoSaida.descricao: Descrição do tipo de movimentação de saída (Type: String)\n- tipoMovimentacaoSaidaSubstituto.classificacao: Classificação do tipo de movimentação de saída do substituto (Type: )\n- tipoMovimentacao.descricao: Descrição do tipo de movimentação (Type: String)\n- tipoMovimentacaoSaidaSubstituto.descricao: Descrição do tipo de movimentação de saída do substituto (Type: String)\n- tipoMovimentacaoSaida.classificacao: Classificação do tipo de movimentação de saída (Type: )\n- tipoMovimentacao.classificacao: Classificação do tipo de movimentação (Type: )\n- classificacao: Classificação (Type: )\n- id: Id (Type: Long)\n- tipoMovimentacaoSubstituto.classificacao: Classificação do tipo de movimentação do substituto (Type: )\n- descricao: Descrição (Type: String)"
+}

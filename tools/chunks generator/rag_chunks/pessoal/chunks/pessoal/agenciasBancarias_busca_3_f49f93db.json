@@ -1,0 +1,48 @@
+{
+  "content": "Listagem de agências bancárias\n\nRepresentation Type: AgenciaBancaria",
+  "metadata": {
+    "chunk_id": "agenciasBancarias_busca_3_f49f93db",
+    "section_name": "agenciasBancarias_busca",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 17,
+    "char_count": 68,
+    "overlap_with_previous": 17,
+    "overlap_with_next": 1,
+    "keywords": [
+      "agenciasbancarias"
+    ],
+    "entities": [
+      "agenciasBancarias",
+      "Estado",
+      "Banco",
+      "busca",
+      "TipoLogradouro",
+      "AgenciaBancaria",
+      "Municipio",
+      "Logradouro",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.203570",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "f49f93db2a6ef9fb2ad8545f3e10affd",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: agenciasBancarias_busca\nType: definition\nRelated to: agenciasBancarias, Estado, Banco\n\nListagem de agências bancárias\n\nRepresentation Type: AgenciaBancaria\n\nKeywords: agenciasbancarias",
+  "search_text": "agenciasBancarias_busca agenciasBancarias Estado Banco busca TipoLogradouro AgenciaBancaria Municipio Logradouro Bairro Pais agenciasbancarias Listagem de agências bancárias\n\nRepresentation Type: AgenciaBancaria"
+}

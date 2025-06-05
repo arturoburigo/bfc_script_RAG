@@ -1,4 +1,0 @@
-# TipoProcessamentoTrabalhista
-Enum: TipoProcessamentoTrabalhista
-- Mensal (Key: MENSAL, Value: 1)
-- 13º salário (Key: SALARIO_13, Value: 2)

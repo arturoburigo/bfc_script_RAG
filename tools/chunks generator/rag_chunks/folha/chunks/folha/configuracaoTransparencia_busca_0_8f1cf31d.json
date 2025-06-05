@@ -1,0 +1,41 @@
+{
+  "content": "ConfiguracaoTransparencia",
+  "metadata": {
+    "chunk_id": "configuracaoTransparencia_busca_0_8f1cf31d",
+    "section_name": "configuracaoTransparencia_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 6,
+    "char_count": 25,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 5,
+    "keywords": [
+      "configuracaotransparencia"
+    ],
+    "entities": [
+      "configuracaoTransparencia",
+      "ConfiguracaoTransparencia",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.444287",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "8f1cf31d5cf8159d055b5ef1283d0694",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracaoTransparencia_busca\nType: definition\nRelated to: configuracaoTransparencia, ConfiguracaoTransparencia, busca\n\nConfiguracaoTransparencia\n\nKeywords: configuracaotransparencia",
+  "search_text": "configuracaoTransparencia_busca configuracaoTransparencia ConfiguracaoTransparencia busca configuracaotransparencia ConfiguracaoTransparencia"
+}

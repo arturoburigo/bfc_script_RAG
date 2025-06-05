@@ -1,0 +1,48 @@
+{
+  "content": "Configuração de evento",
+  "metadata": {
+    "chunk_id": "configuracaoEvento_buscaProcessamentos_0_1398f122",
+    "section_name": "configuracaoEvento_buscaProcessamentos",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 5,
+    "char_count": 22,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 4,
+    "keywords": [
+      "configuracaoevento"
+    ],
+    "entities": [
+      "buscaProcessamentos",
+      "MotivoRescisaoConfiguracaoEvento",
+      "AtoConfiguracaoEvento",
+      "configuracaoEvento",
+      "Base",
+      "dependenciasFonteDados",
+      "ConfiguracaoEventoFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoProcessamentoFonteDados",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.225272",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "1398f122f6282bfebe8d351fc51c2eb2",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_buscaMotivosRescisao_1_0ae38fb7",
+      "configuracaoRais_buscaResponsavel_2_fd676cfc",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracaoEvento_buscaProcessamentos\nType: definition\nRelated to: buscaProcessamentos, MotivoRescisaoConfiguracaoEvento, AtoConfiguracaoEvento\n\nConfiguração de evento\n\nKeywords: configuracaoevento",
+  "search_text": "configuracaoEvento_buscaProcessamentos buscaProcessamentos MotivoRescisaoConfiguracaoEvento AtoConfiguracaoEvento configuracaoEvento Base dependenciasFonteDados ConfiguracaoEventoFonteDados ScriptFonteDados ConfiguracaoProcessamentoFonteDados ConfiguracaoEventoAssociacaoFonteDados configuracaoevento Configuração de evento"
+}

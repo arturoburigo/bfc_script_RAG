@@ -1,0 +1,44 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de serviços de autônomos\n\nRepresentation Type: ServicoAutonomoFonteDados",
+  "metadata": {
+    "chunk_id": "servicoAutonomo_busca_1_94f588d2",
+    "section_name": "servicoAutonomo_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 29,
+    "char_count": 113,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 19,
+    "keywords": [
+      "dados",
+      "servicoautonomo",
+      "busca"
+    ],
+    "entities": [
+      "servicoAutonomo",
+      "Cbo",
+      "ServicoAutonomoFonteDados",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.218951",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "94f588d2b9f56b32e7e15841656a9bff",
+    "related_chunks": [
+      "cargo_buscaTodos_6_d5626417",
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19",
+      "remuneracoes_buscaComposicoesBasesFolha_3_3f265087"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: servicoAutonomo_busca\nType: definition\nRelated to: servicoAutonomo, Cbo, ServicoAutonomoFonteDados\n\nbusca (GET)\nMethod Description: Listagem de serviços de autônomos\n\nRepresentation Type: ServicoAutonomoFonteDados\n\nKeywords: dados, servicoautonomo, busca",
+  "search_text": "servicoAutonomo_busca servicoAutonomo Cbo ServicoAutonomoFonteDados busca dados servicoautonomo busca busca (GET)\nMethod Description: Listagem de serviços de autônomos\n\nRepresentation Type: ServicoAutonomoFonteDados"
+}

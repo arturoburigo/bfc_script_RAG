@@ -1,5 +1,0 @@
-# TipoContratoParcial
-Enum: TipoContratoParcial
-- Limitado à 25 horas semanais (Key: LIMITADO_A_25_HORAS_SEMANAIS, Value: 1)
-- Limitado à 30 horas semanais (Key: LIMITADO_A_30_HORAS_SEMANAIS, Value: 2)
-- Limitado à 26 horas semanais (Key: LIMITADO_A_26_HORAS_SEMANAIS, Value: 3)

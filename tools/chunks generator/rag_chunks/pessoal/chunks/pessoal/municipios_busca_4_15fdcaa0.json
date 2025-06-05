@@ -1,0 +1,48 @@
+{
+  "content": "- municipio.estado.siglaEstado: Sigla do estado (Type: String)\n- estado.pais.id: Id do pais (Type: Long)\n- estado.id: Id do estado (Type: Long)\n- codigoIbge: Código no IBGE (Type: Long)\n- nome: Nome (Type: String)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- id: Id (Type: Long)\n- cep: CEP geral (Type: Long)",
+  "metadata": {
+    "chunk_id": "municipios_busca_4_15fdcaa0",
+    "section_name": "municipios_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 105,
+    "char_count": 309,
+    "overlap_with_previous": 2,
+    "overlap_with_next": 35,
+    "keywords": [
+      "codigosiafi",
+      "nome",
+      "codigoibge",
+      "id",
+      "municipios",
+      "cep"
+    ],
+    "entities": [
+      "Estado",
+      "busca",
+      "Municipio",
+      "municipios",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.656449",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "15fdcaa06dfa3996f0203bea296a7a60",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: municipios_busca\nType: reference\nRelated to: Estado, busca, Municipio\n\n- municipio.estado.siglaEstado: Sigla do estado (Type: String)\n- estado.pais.id: Id do pais (Type: Long)\n- estado.id: Id do estado (Type: Long)\n- codigoIbge: Código no IBGE (Type: Long)\n- nome: Nome (Type: String)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- id: Id (Type: Long)\n- cep: CEP geral (Type: Long)\n\nKeywords: codigosiafi, nome, codigoibge, id, municipios, cep",
+  "search_text": "municipios_busca Estado busca Municipio municipios Pais codigosiafi nome codigoibge id municipios cep - municipio.estado.siglaEstado: Sigla do estado (Type: String)\n- estado.pais.id: Id do pais (Type: Long)\n- estado.id: Id do estado (Type: Long)\n- codigoIbge: Código no IBGE (Type: Long)\n- nome: Nome (Type: String)\n- codigoSiafi: Código no SIAFI (Type: Long)\n- id: Id (Type: Long)\n- cep: CEP geral (Type: Long)"
+}

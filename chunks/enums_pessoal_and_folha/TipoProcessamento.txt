@@ -1,7 +1,0 @@
-# TipoProcessamento
-Enum: TipoProcessamento
-- Mensal (Key: MENSAL, Value: 1)
-- 13° Salário (Key: DECIMO_TERCEIRO_SALARIO, Value: 2)
-- Rescisão (Key: RESCISAO, Value: 3)
-- Férias (Key: FERIAS, Value: 4)
-- Pagamentos anteriores (Key: PAGAMENTO_ANTERIOR, Value: 5)

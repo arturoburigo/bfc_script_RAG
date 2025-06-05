@@ -1,0 +1,44 @@
+{
+  "content": "EncargosIrrf",
+  "metadata": {
+    "chunk_id": "encargosIrrf_busca_0_9b218e7f",
+    "section_name": "encargosIrrf_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 6,
+    "char_count": 12,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 5,
+    "keywords": [
+      "encargosirrf"
+    ],
+    "entities": [
+      "busca",
+      "encargosIrrf",
+      "EncargosIrrfMatricula",
+      "PessoaFisicaEncargosIrrf",
+      "EncargosIrrf",
+      "CodigoMatricula"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.981581",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "9b218e7f36cad5d50d80606289a18343",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: encargosIrrf_busca\nType: definition\nRelated to: busca, encargosIrrf, EncargosIrrfMatricula\n\nEncargosIrrf\n\nKeywords: encargosirrf",
+  "search_text": "encargosIrrf_busca busca encargosIrrf EncargosIrrfMatricula PessoaFisicaEncargosIrrf EncargosIrrf CodigoMatricula encargosirrf EncargosIrrf"
+}

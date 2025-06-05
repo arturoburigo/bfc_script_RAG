@@ -1,0 +1,60 @@
+{
+  "content": "groovy\nfonteOrganogramas = Dados.pessoal.v2.organogramas;\n\ndadosOrganogramas = fonteOrganogramas.busca(campos: \"id, descricao\")\n\npercorrer (dadosOrganogramas) { itemOrganogramas ->\n\n}",
+  "metadata": {
+    "chunk_id": "organogramas_busca_6_0459cb0c",
+    "section_name": "organogramas_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 57,
+    "char_count": 183,
+    "overlap_with_previous": 9,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "organogramas",
+      "busca",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "ConfiguracaoOrganograma",
+      "organogramas",
+      "TipoLogradouroOrganograma",
+      "Endereco",
+      "CargoOrganograma",
+      "busca",
+      "FuncaoOrganograma",
+      "LogradouroOrganograma",
+      "BairroOrganograma",
+      "EstadoPessoaFisica",
+      "AtoOrganograma",
+      "ConfiguracaoNivelOrganograma",
+      "MunicipioPessoaFisica",
+      "OrganogramaResponsavelFonteDados",
+      "Dados.pessoal.v2.organogramas",
+      "OrganogramaFonteDados",
+      "TipoAdministracao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.275113",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "0459cb0cd7faedb05c86bb5bdc007d79",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "pessoaFisica_buscaFiliacao_4_0a7e85dc",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: organogramas_busca\nType: example\nRelated to: ConfiguracaoOrganograma, organogramas, TipoLogradouroOrganograma\n\ngroovy\nfonteOrganogramas = Dados.pessoal.v2.organogramas;\n\ndadosOrganogramas = fonteOrganogramas.busca(campos: \"id, descricao\")\n\npercorrer (dadosOrganogramas) { itemOrganogramas ->\n\n}\n\nKeywords: pessoal, organogramas, busca, v2, campo, dados",
+  "search_text": "organogramas_busca ConfiguracaoOrganograma organogramas TipoLogradouroOrganograma Endereco CargoOrganograma busca FuncaoOrganograma LogradouroOrganograma BairroOrganograma EstadoPessoaFisica AtoOrganograma ConfiguracaoNivelOrganograma MunicipioPessoaFisica OrganogramaResponsavelFonteDados Dados.pessoal.v2.organogramas OrganogramaFonteDados TipoAdministracao pessoal organogramas busca v2 campo dados groovy\nfonteOrganogramas = Dados.pessoal.v2.organogramas;\n\ndadosOrganogramas = fonteOrganogramas.busca(campos: \"id, descricao\")\n\npercorrer (dadosOrganogramas) { itemOrganogramas ->\n\n}"
+}

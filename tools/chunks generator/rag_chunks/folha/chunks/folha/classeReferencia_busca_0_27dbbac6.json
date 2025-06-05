@@ -1,0 +1,41 @@
+{
+  "content": "ClasseReferencia",
+  "metadata": {
+    "chunk_id": "classeReferencia_busca_0_27dbbac6",
+    "section_name": "classeReferencia_busca",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 4,
+    "char_count": 16,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 2,
+    "keywords": [
+      "classereferencia"
+    ],
+    "entities": [
+      "classeReferencia",
+      "ClasseReferenciaDadosRepresentation",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.081405",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "27dbbac6db08f670ba407fc82753fc10",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: classeReferencia_busca\nType: definition\nRelated to: classeReferencia, ClasseReferenciaDadosRepresentation, busca\n\nClasseReferencia\n\nKeywords: classereferencia",
+  "search_text": "classeReferencia_busca classeReferencia ClasseReferenciaDadosRepresentation busca classereferencia ClasseReferencia"
+}

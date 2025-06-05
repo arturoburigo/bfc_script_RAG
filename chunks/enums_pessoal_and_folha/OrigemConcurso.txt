@@ -1,4 +1,0 @@
-# OrigemConcurso
-Enum: OrigemConcurso
-- RH (Key: RH, Value: 1)
-- Folha (Key: FOLHA, Value: 2)

@@ -1,4 +1,0 @@
-# TipoReajuste
-Enum: TipoReajuste
-- Matrícula (Key: MATRICULA, Value: 1)
-- Nível salarial (Key: NIVEL, Value: 2)

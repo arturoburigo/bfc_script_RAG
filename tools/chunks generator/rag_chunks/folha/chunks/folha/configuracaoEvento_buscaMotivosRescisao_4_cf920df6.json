@@ -1,0 +1,50 @@
+{
+  "content": "- id: Id (Type: Long)\n- descricao: Descrição (Type: String)",
+  "metadata": {
+    "chunk_id": "configuracaoEvento_buscaMotivosRescisao_4_cf920df6",
+    "section_name": "configuracaoEvento_buscaMotivosRescisao",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 20,
+    "char_count": 59,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 14,
+    "keywords": [
+      "configuracaoevento",
+      "id",
+      "descricao"
+    ],
+    "entities": [
+      "AtoConfiguracaoEvento",
+      "MotivoRescisaoConfiguracaoEvento",
+      "configuracaoEvento",
+      "Base",
+      "dependenciasFonteDados",
+      "ConfiguracaoEventoFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoProcessamentoFonteDados",
+      "ConfiguracaoEventoAssociacaoFonteDados",
+      "buscaMotivosRescisao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.508116",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "cf920df6ecc262b2e2d4dbee4d44f53e",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_buscaMotivosRescisao_1_0ae38fb7",
+      "configuracaoRais_buscaResponsavel_2_fd676cfc",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: configuracaoEvento_buscaMotivosRescisao\nType: reference\nRelated to: AtoConfiguracaoEvento, MotivoRescisaoConfiguracaoEvento, configuracaoEvento\n\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n\nKeywords: configuracaoevento, id, descricao",
+  "search_text": "configuracaoEvento_buscaMotivosRescisao AtoConfiguracaoEvento MotivoRescisaoConfiguracaoEvento configuracaoEvento Base dependenciasFonteDados ConfiguracaoEventoFonteDados ScriptFonteDados ConfiguracaoProcessamentoFonteDados ConfiguracaoEventoAssociacaoFonteDados buscaMotivosRescisao configuracaoevento id descricao - id: Id (Type: Long)\n- descricao: Descrição (Type: String)"
+}

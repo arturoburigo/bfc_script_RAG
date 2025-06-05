@@ -1,0 +1,48 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de consolidações de processos trabalhistas\n\nRepresentation Type: ConsolidacaoProcessoTrabalhistaFonteDados",
+  "metadata": {
+    "chunk_id": "consolidacaoProcessoTrabalhista_busca_1_0403ee86",
+    "section_name": "consolidacaoProcessoTrabalhista_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 36,
+    "char_count": 147,
+    "overlap_with_previous": 5,
+    "overlap_with_next": 26,
+    "keywords": [
+      "dados",
+      "consolidacaoprocessotrabalhista",
+      "busca"
+    ],
+    "entities": [
+      "ProcessoTrabalhistaAssociacao",
+      "busca",
+      "FonteDadosAssociacao",
+      "ConsolidacaoProcessoTrabalhistaFonteDados",
+      "DadosTributacaoAssociacao",
+      "consolidacaoProcessoTrabalhista",
+      "FonteDadosConsolidacaoProcessoTrabalhistaAssociacao",
+      "PessoaFisicaAssociacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.145449",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "0403ee867b3f929069732f3a326d6ed8",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: consolidacaoProcessoTrabalhista_busca\nType: definition\nRelated to: ProcessoTrabalhistaAssociacao, busca, FonteDadosAssociacao\n\nbusca (GET)\nMethod Description: Listagem de consolidações de processos trabalhistas\n\nRepresentation Type: ConsolidacaoProcessoTrabalhistaFonteDados\n\nKeywords: dados, consolidacaoprocessotrabalhista, busca",
+  "search_text": "consolidacaoProcessoTrabalhista_busca ProcessoTrabalhistaAssociacao busca FonteDadosAssociacao ConsolidacaoProcessoTrabalhistaFonteDados DadosTributacaoAssociacao consolidacaoProcessoTrabalhista FonteDadosConsolidacaoProcessoTrabalhistaAssociacao PessoaFisicaAssociacao dados consolidacaoprocessotrabalhista busca busca (GET)\nMethod Description: Listagem de consolidações de processos trabalhistas\n\nRepresentation Type: ConsolidacaoProcessoTrabalhistaFonteDados"
+}

@@ -1,6 +1,0 @@
-# PlanoSegregacao
-Enum: PlanoSegregacao
-- Sem segregação da massa (Key: SEM_SEGREGACAO_DA_MASSA, Value: 1)
-- Fundo em capitalização (Key: FUNDO_EM_CAPITALIZACAO, Value: 2)
-- Fundo em repartição (Key: FUNDO_EM_REPARTICAO, Value: 3)
-- Mantido pelo tesouro (Key: MANTIDO_PELO_TESOURO, Value: 4)

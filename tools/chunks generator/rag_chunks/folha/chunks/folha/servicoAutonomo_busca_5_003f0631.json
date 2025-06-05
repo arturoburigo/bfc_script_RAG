@@ -1,0 +1,50 @@
+{
+  "content": "## Cbo\n- id: Id (Type: Long)\n- codigoClassificacao: Código de classificação (Type: String)\n- descricao: Descrição (Type: String)\n- nivel: Tipo/Nível (Type: )\n\n## ServicoAutonomoFonteDados\n- id: Id (Type: Long)\n- matriculaId: Id da matrícula (Type: Long)\n- descricao: Descrição (Type: String)\n- dataLancamento: Data de lançamento (Type: LocalDate)\n- numeroDocumento: Número do documento (Type: String)\n- cbo: Cbo (Type: Cbo)\n- valor: Valor (Type: BigDecimal)\n- competencia: Competência (Type: YearMonth)",
+  "metadata": {
+    "chunk_id": "servicoAutonomo_busca_5_003f0631",
+    "section_name": "servicoAutonomo_busca",
+    "chunk_index": 5,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "types",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 156,
+    "char_count": 502,
+    "overlap_with_previous": 32,
+    "overlap_with_next": 25,
+    "keywords": [
+      "servicoautonomofontedados",
+      "cbo",
+      "nivel",
+      "id",
+      "descricao",
+      "codigoclassificacao",
+      "tipo",
+      "dados",
+      "servicoautonomo"
+    ],
+    "entities": [
+      "servicoAutonomo",
+      "Cbo",
+      "ServicoAutonomoFonteDados",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.219328",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "003f06312c71d49d01b4b2bfc11c3ac3",
+    "related_chunks": [
+      "cargo_buscaTodos_6_d5626417",
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19",
+      "remuneracoes_buscaComposicoesBasesFolha_3_3f265087"
+    ],
+    "quality_score": 0.8
+  },
+  "embeddings_text": "Section: servicoAutonomo_busca\nType: reference\nRelated to: servicoAutonomo, Cbo, ServicoAutonomoFonteDados\n\n## Cbo\n- id: Id (Type: Long)\n- codigoClassificacao: Código de classificação (Type: String)\n- descricao: Descrição (Type: String)\n- nivel: Tipo/Nível (Type: )\n\n## ServicoAutonomoFonteDados\n- id: Id (Type: Long)\n- matriculaId: Id da matrícula (Type: Long)\n- descricao: Descrição (Type: String)\n- dataLancamento: Data de lançamento (Type: LocalDate)\n- numeroDocumento: Número do documento (Type: String)\n- cbo: Cbo (Type: Cbo)\n- valor: Valor (Type: BigDecimal)\n- competencia: Competência (Type: YearMonth)\n\nKeywords: servicoautonomofontedados, cbo, nivel, id, descricao, codigoclassificacao, tipo, dados, servicoautonomo",
+  "search_text": "servicoAutonomo_busca servicoAutonomo Cbo ServicoAutonomoFonteDados busca servicoautonomofontedados cbo nivel id descricao codigoclassificacao tipo dados servicoautonomo ## Cbo\n- id: Id (Type: Long)\n- codigoClassificacao: Código de classificação (Type: String)\n- descricao: Descrição (Type: String)\n- nivel: Tipo/Nível (Type: )\n\n## ServicoAutonomoFonteDados\n- id: Id (Type: Long)\n- matriculaId: Id da matrícula (Type: Long)\n- descricao: Descrição (Type: String)\n- dataLancamento: Data de lançamento (Type: LocalDate)\n- numeroDocumento: Número do documento (Type: String)\n- cbo: Cbo (Type: Cbo)\n- valor: Valor (Type: BigDecimal)\n- competencia: Competência (Type: YearMonth)"
+}

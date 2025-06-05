@@ -1,0 +1,56 @@
+{
+  "content": "groovy\nfonteConfiguracaoEvento = Dados.folha.v2.configuracaoEvento;\n\nfiltroConfiguracaoEvento = \"enviaEsocial = true\"\n\ndadosConfiguracaoEvento = fonteConfiguracaoEvento.busca(criterio: filtroConfiguracaoEvento,campos: \"script(id, content), id, codigo, descricao, naturezaRubrica\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracaoEvento) { itemConfiguracaoEvento ->\n\n}",
+  "metadata": {
+    "chunk_id": "configuracaoEvento_busca_6_76cdd292",
+    "section_name": "configuracaoEvento_busca",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 106,
+    "char_count": 368,
+    "overlap_with_previous": 21,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "configuracaoevento",
+      "filtro",
+      "ordenacao",
+      "folha",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Dados.folha.v2.configuracaoEvento",
+      "busca",
+      "AtoConfiguracaoEvento",
+      "MotivoRescisaoConfiguracaoEvento",
+      "configuracaoEvento",
+      "Base",
+      "dependenciasFonteDados",
+      "ConfiguracaoEventoFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoProcessamentoFonteDados",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.234952",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "76cdd292e8ee04741121885b82ba5db5",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: configuracaoEvento_busca\nType: example\nRelated to: Dados.folha.v2.configuracaoEvento, busca, AtoConfiguracaoEvento\n\ngroovy\nfonteConfiguracaoEvento = Dados.folha.v2.configuracaoEvento;\n\nfiltroConfiguracaoEvento = \"enviaEsocial = true\"\n\ndadosConfiguracaoEvento = fonteConfiguracaoEvento.busca(criterio: filtroConfiguracaoEvento,campos: \"script(id, content), id, codigo, descricao, naturezaRubrica\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracaoEvento) { itemConfiguracaoEvento ->\n\n}\n\nKeywords: busca, configuracaoevento, filtro, ordenacao, folha, v2, campo, dados",
+  "search_text": "configuracaoEvento_busca Dados.folha.v2.configuracaoEvento busca AtoConfiguracaoEvento MotivoRescisaoConfiguracaoEvento configuracaoEvento Base dependenciasFonteDados ConfiguracaoEventoFonteDados ScriptFonteDados ConfiguracaoProcessamentoFonteDados ConfiguracaoEventoAssociacaoFonteDados busca configuracaoevento filtro ordenacao folha v2 campo dados groovy\nfonteConfiguracaoEvento = Dados.folha.v2.configuracaoEvento;\n\nfiltroConfiguracaoEvento = \"enviaEsocial = true\"\n\ndadosConfiguracaoEvento = fonteConfiguracaoEvento.busca(criterio: filtroConfiguracaoEvento,campos: \"script(id, content), id, codigo, descricao, naturezaRubrica\",ordenacao: \"id asc\")\n\npercorrer (dadosConfiguracaoEvento) { itemConfiguracaoEvento ->\n\n}"
+}

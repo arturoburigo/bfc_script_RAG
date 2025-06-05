@@ -1,0 +1,44 @@
+{
+  "content": "buscaParametroCalculo (GET)\nMethod Description: Exibe a configurações de cálculo do parâmetro geral\n\nRepresentation Type: ConfiguracaoCalculo",
+  "metadata": {
+    "chunk_id": "parametrosGerais_buscaParametroCalculo_1_4a5ce4de",
+    "section_name": "parametrosGerais_buscaParametroCalculo",
+    "chunk_index": 1,
+    "total_chunks": 6,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 36,
+    "char_count": 141,
+    "overlap_with_previous": 1,
+    "overlap_with_next": 23,
+    "keywords": [
+      "busca",
+      "parametrosgerais"
+    ],
+    "entities": [
+      "TipoEventoMensalFerias",
+      "buscaParametroCalculo",
+      "TipoAfastamentoParametrosGerais",
+      "ConfiguracaoCalculo",
+      "parametrosGerais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:03.977350",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "4a5ce4de48dfb6fa3267c3352e0dd80a",
+    "related_chunks": [
+      "parametrosGerais_buscaParametroCalculo_5_8088740d",
+      "parametrosGerais_buscaParametroCalculo_2_1d339291",
+      "parametrosGerais_buscaParametroCalculo_0_56175d3f",
+      "parametrosGerais_buscaParametroCalculo_3_1d339291",
+      "parametrosGerais_buscaParametroCalculo_4_2aaaf06b"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: parametrosGerais_buscaParametroCalculo\nType: definition\nRelated to: TipoEventoMensalFerias, buscaParametroCalculo, TipoAfastamentoParametrosGerais\n\nbuscaParametroCalculo (GET)\nMethod Description: Exibe a configurações de cálculo do parâmetro geral\n\nRepresentation Type: ConfiguracaoCalculo\n\nKeywords: busca, parametrosgerais",
+  "search_text": "parametrosGerais_buscaParametroCalculo TipoEventoMensalFerias buscaParametroCalculo TipoAfastamentoParametrosGerais ConfiguracaoCalculo parametrosGerais busca parametrosgerais buscaParametroCalculo (GET)\nMethod Description: Exibe a configurações de cálculo do parâmetro geral\n\nRepresentation Type: ConfiguracaoCalculo"
+}

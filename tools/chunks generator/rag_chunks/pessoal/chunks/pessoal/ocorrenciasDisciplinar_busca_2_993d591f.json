@@ -1,0 +1,61 @@
+{
+  "content": "Listagem de ocorrências disciplinares\n\nRepresentation Type: OcorrenciaDisciplinar",
+  "metadata": {
+    "chunk_id": "ocorrenciasDisciplinar_busca_2_993d591f",
+    "section_name": "ocorrenciasDisciplinar_busca",
+    "chunk_index": 2,
+    "total_chunks": 8,
+    "parent_section": null,
+    "chunk_type": "method_description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 20,
+    "char_count": 81,
+    "overlap_with_previous": 19,
+    "overlap_with_next": 20,
+    "keywords": [
+      "ocorrenciasdisciplinar"
+    ],
+    "entities": [
+      "PessoaFisicaAfastamento",
+      "TipoCargoFuncionario",
+      "AtestadoAfastamento",
+      "PessoaFisicaAssociacaoRepresentation",
+      "CodigoMatriculaFonteDadosMinhaFolha",
+      "AtoAfastamento",
+      "AfastamentoFonteDados",
+      "Funcionario",
+      "TipoAto",
+      "MatriculaAfastamento",
+      "SindicatoFuncionario",
+      "Ato",
+      "busca",
+      "OcorrenciaDisciplinar",
+      "PessoaJuridica",
+      "MotivoOcorrenciaDisciplinar",
+      "Cbo",
+      "ocorrenciasDisciplinar",
+      "CargoFuncionario",
+      "TipoAfastamentoAfastamento",
+      "FotoPessoaFisica",
+      "AfastamentoOrigem",
+      "PessoaFisica"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.366445",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "993d591fcf3bbbc656665cbb14ba82e8",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "pessoaFisica_buscaFiliacao_4_0a7e85dc",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "pessoaFisica_buscaBaseOutraEmpresa_4_a5171bb7"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: ocorrenciasDisciplinar_busca\nType: definition\nRelated to: PessoaFisicaAfastamento, TipoCargoFuncionario, AtestadoAfastamento\n\nListagem de ocorrências disciplinares\n\nRepresentation Type: OcorrenciaDisciplinar\n\nKeywords: ocorrenciasdisciplinar",
+  "search_text": "ocorrenciasDisciplinar_busca PessoaFisicaAfastamento TipoCargoFuncionario AtestadoAfastamento PessoaFisicaAssociacaoRepresentation CodigoMatriculaFonteDadosMinhaFolha AtoAfastamento AfastamentoFonteDados Funcionario TipoAto MatriculaAfastamento SindicatoFuncionario Ato busca OcorrenciaDisciplinar PessoaJuridica MotivoOcorrenciaDisciplinar Cbo ocorrenciasDisciplinar CargoFuncionario TipoAfastamentoAfastamento FotoPessoaFisica AfastamentoOrigem PessoaFisica ocorrenciasdisciplinar Listagem de ocorrências disciplinares\n\nRepresentation Type: OcorrenciaDisciplinar"
+}

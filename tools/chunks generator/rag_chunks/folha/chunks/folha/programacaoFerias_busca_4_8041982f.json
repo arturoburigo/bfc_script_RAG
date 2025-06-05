@@ -1,0 +1,54 @@
+{
+  "content": "- matricula.contrato:  (Type: Integer)\n- pessoa.nome:  (Type: String)\n- matricula.codigoMatricula.contrato:  (Type: String)\n- matricula.numero:  (Type: Long)\n- dataPagamento:  (Type: LocalDate)\n- folhaFeriasExcluida:  (Type: Boolean)\n- dataAgendamento:  (Type: LocalDate)\n- matricula.codigoMatricula.numero:  (Type: String)\n- competencia:  (Type: YearMonth)\n- pessoa.cpf:  (Type: String)",
+  "metadata": {
+    "chunk_id": "programacaoFerias_busca_4_8041982f",
+    "section_name": "programacaoFerias_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 125,
+    "char_count": 387,
+    "overlap_with_previous": 4,
+    "overlap_with_next": 33,
+    "keywords": [
+      "datapagamento",
+      "folhaferiasexcluida",
+      "folha",
+      "dataagendamento",
+      "competencia",
+      "programacaoferias"
+    ],
+    "entities": [
+      "CalculoMensagemAssociacaoRepresentation",
+      "TipoMovimentacaoPessoalTipoAfastamento",
+      "TipoAfastamentoFonteDados",
+      "AtoMatriculaAssociacao",
+      "busca",
+      "PeriodoAquisitivo",
+      "TipoAto",
+      "ProgramacaoFeriasListagemRepresentation",
+      "MatriculaAssociacao",
+      "ConfiguracaoMovimentoPeriodoAquisitivo",
+      "programacaoFerias"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.236343",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "8041982fb01cdb87cf4dd1a87affe9fd",
+    "related_chunks": [
+      "calculoFolha_buscaCalculoRescisao_6_6473e96c",
+      "cargo_buscaTodos_6_d5626417",
+      "remuneracoes_buscaPagamentosAnterioresPrincipal_6_f20156e4",
+      "mediasVantagens_busca_2_01670a89",
+      "encargosInssFgts_busca_0_42badd19"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: programacaoFerias_busca\nType: reference\nRelated to: CalculoMensagemAssociacaoRepresentation, TipoMovimentacaoPessoalTipoAfastamento, TipoAfastamentoFonteDados\n\n- matricula.contrato:  (Type: Integer)\n- pessoa.nome:  (Type: String)\n- matricula.codigoMatricula.contrato:  (Type: String)\n- matricula.numero:  (Type: Long)\n- dataPagamento:  (Type: LocalDate)\n- folhaFeriasExcluida:  (Type: Boolean)\n- dataAgendamento:  (Type: LocalDate)\n- matricula.codigoMatricula.numero:  (Type: String)\n- competencia:  (Type: YearMonth)\n- pessoa.cpf:  (Type: String)\n\nKeywords: datapagamento, folhaferiasexcluida, folha, dataagendamento, competencia, programacaoferias",
+  "search_text": "programacaoFerias_busca CalculoMensagemAssociacaoRepresentation TipoMovimentacaoPessoalTipoAfastamento TipoAfastamentoFonteDados AtoMatriculaAssociacao busca PeriodoAquisitivo TipoAto ProgramacaoFeriasListagemRepresentation MatriculaAssociacao ConfiguracaoMovimentoPeriodoAquisitivo programacaoFerias datapagamento folhaferiasexcluida folha dataagendamento competencia programacaoferias - matricula.contrato:  (Type: Integer)\n- pessoa.nome:  (Type: String)\n- matricula.codigoMatricula.contrato:  (Type: String)\n- matricula.numero:  (Type: Long)\n- dataPagamento:  (Type: LocalDate)\n- folhaFeriasExcluida:  (Type: Boolean)\n- dataAgendamento:  (Type: LocalDate)\n- matricula.codigoMatricula.numero:  (Type: String)\n- competencia:  (Type: YearMonth)\n- pessoa.cpf:  (Type: String)"
+}

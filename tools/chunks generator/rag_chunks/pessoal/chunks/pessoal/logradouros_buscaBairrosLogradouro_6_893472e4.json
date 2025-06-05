@@ -1,0 +1,53 @@
+{
+  "content": "groovy\nfonteLogradouros = Dados.pessoal.v2.logradouros;\n\ndadosLogradouros = fonteLogradouros.buscaBairrosLogradouro(campos: \"id, nome\",ordenacao: \"id asc\",parametros:[\"logradouroId\":null])\n\npercorrer (dadosLogradouros) { itemLogradouros ->\n\n}",
+  "metadata": {
+    "chunk_id": "logradouros_buscaBairrosLogradouro_6_893472e4",
+    "section_name": "logradouros_buscaBairrosLogradouro",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 83,
+    "char_count": 242,
+    "overlap_with_previous": 9,
+    "overlap_with_next": 0,
+    "keywords": [
+      "pessoal",
+      "logradouros",
+      "busca",
+      "ordenacao",
+      "v2",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Dados.pessoal.v2.logradouros",
+      "logradouros",
+      "Estado",
+      "TipoLogradouro",
+      "Municipio",
+      "buscaBairrosLogradouro",
+      "Logradouro",
+      "Bairro",
+      "Pais"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.087565",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "893472e4d222d1a184fd2540d8a4c2a8",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "agenciasBancarias_busca_1_ef251772",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "logradouros_buscaBairrosLogradouro_5_4f5931c1"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: logradouros_buscaBairrosLogradouro\nType: example\nRelated to: Dados.pessoal.v2.logradouros, logradouros, Estado\n\ngroovy\nfonteLogradouros = Dados.pessoal.v2.logradouros;\n\ndadosLogradouros = fonteLogradouros.buscaBairrosLogradouro(campos: \"id, nome\",ordenacao: \"id asc\",parametros:[\"logradouroId\":null])\n\npercorrer (dadosLogradouros) { itemLogradouros ->\n\n}\n\nKeywords: pessoal, logradouros, busca, ordenacao, v2, campo, dados",
+  "search_text": "logradouros_buscaBairrosLogradouro Dados.pessoal.v2.logradouros logradouros Estado TipoLogradouro Municipio buscaBairrosLogradouro Logradouro Bairro Pais pessoal logradouros busca ordenacao v2 campo dados groovy\nfonteLogradouros = Dados.pessoal.v2.logradouros;\n\ndadosLogradouros = fonteLogradouros.buscaBairrosLogradouro(campos: \"id, nome\",ordenacao: \"id asc\",parametros:[\"logradouroId\":null])\n\npercorrer (dadosLogradouros) { itemLogradouros ->\n\n}"
+}

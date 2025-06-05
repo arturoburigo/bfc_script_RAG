@@ -1,0 +1,56 @@
+{
+  "content": "- quantidadeAbono: Quantidade de abono (Type: BigDecimal)\n- tipoAfastamento.descricao: Descrição do tipo de afastamento (Type: String)\n- matricula.grupoFuncional.descricao: Descrição do grupo funcional (Type: String)\n- matricula.organograma.descricao: Descrição do organograma (Type: String)\n- motivo: Motivo (Type: String)\n- matricula.organograma.id: Id do organograma (Type: Long)\n- matricula.situacao: Situação da matrícula (Type: )\n- competenciaAbono: Competência de abono (Type: YearMonth)\n- unidade: Unidade (Type: )\n- descontar: Descontar (Type: Boolean)\n- abonar: Abonar (Type: Boolean)\n- decorrente: Decorrente (Type: )\n- fimAfastamento: Fim do afastamento (Type: LocalDate)\n- matricula.tipo: Tipo da matrícula (Type: )\n- competenciaDesconto: Competência de desconto (Type: YearMonth)\n- retornoTrabalho: Data de retorno ao trabalho (Type: LocalDate)\n- inicioAfastamento: Início do afastamento (Type: LocalDate)\n- id: Id (Type: Long)\n- tipoAfastamento.classificacao: Classificação do tipo de afastamento (Type: )\n- quantidade: Quantidade (Type: BigDecimal)\n- matricula.id: Id da matrícula (Type: Long)\n- matricula.grupoFuncional.id: Id do grupo funcional (Type: Long)",
+  "metadata": {
+    "chunk_id": "afastamentos_busca_4_719b8c57",
+    "section_name": "afastamentos_busca",
+    "chunk_index": 4,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "expressions",
+    "semantic_type": "reference",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 346,
+    "char_count": 1175,
+    "overlap_with_previous": 6,
+    "overlap_with_next": 79,
+    "keywords": [
+      "motivo",
+      "descontar",
+      "unidade",
+      "competenciaabono",
+      "quantidadeabono",
+      "afastamentos",
+      "tipo"
+    ],
+    "entities": [
+      "PessoaFisicaAfastamento",
+      "CodigoMatriculaFonteDadosMinhaFolha",
+      "busca",
+      "AtoAfastamento",
+      "SindicatoFuncionario",
+      "TipoAfastamentoAfastamento",
+      "PessoaJuridica",
+      "AfastamentoFonteDados",
+      "AfastamentoOrigem",
+      "AtestadoAfastamento",
+      "MatriculaAfastamento",
+      "afastamentos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.193849",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "719b8c57c4f024136fc88b6b3217627f",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_e7796baa",
+      "municipios_busca_5_9962dfee",
+      "historicoMatricula_buscaHistoricoMatriculaRelatorioFuncionario_2_69ee722a",
+      "matriculas_buscaMatriculasLotacoesFisicas_3_fa9bd2a5"
+    ],
+    "quality_score": 0.65
+  },
+  "embeddings_text": "Section: afastamentos_busca\nType: reference\nRelated to: PessoaFisicaAfastamento, CodigoMatriculaFonteDadosMinhaFolha, busca\n\n- quantidadeAbono: Quantidade de abono (Type: BigDecimal)\n- tipoAfastamento.descricao: Descrição do tipo de afastamento (Type: String)\n- matricula.grupoFuncional.descricao: Descrição do grupo funcional (Type: String)\n- matricula.organograma.descricao: Descrição do organograma (Type: String)\n- motivo: Motivo (Type: String)\n- matricula.organograma.id: Id do organograma (Type: Long)\n- matricula.situacao: Situação da matrícula (Type: )\n- competenciaAbono: Competência de abono (Type: YearMonth)\n- unidade: Unidade (Type: )\n- descontar: Descontar (Type: Boolean)\n- abonar: Abonar (Type: Boolean)\n- decorrente: Decorrente (Type: )\n- fimAfastamento: Fim do afastamento (Type: LocalDate)\n- matricula.tipo: Tipo da matrícula (Type: )\n- competenciaDesconto: Competência de desconto (Type: YearMonth)\n- retornoTrabalho: Data de retorno ao trabalho (Type: LocalDate)\n- inicioAfastamento: Início do afastamento (Type: LocalDate)\n- id: Id (Type: Long)\n- tipoAfastamento.classificacao: Classificação do tipo de afastamento (Type: )\n- quantidade: Quantidade (Type: BigDecimal)\n- matricula.id: Id da matrícula (Type: Long)\n- matricula.grupoFuncional.id: Id do grupo funcional (Type: Long)\n\nKeywords: motivo, descontar, unidade, competenciaabono, quantidadeabono, afastamentos, tipo",
+  "search_text": "afastamentos_busca PessoaFisicaAfastamento CodigoMatriculaFonteDadosMinhaFolha busca AtoAfastamento SindicatoFuncionario TipoAfastamentoAfastamento PessoaJuridica AfastamentoFonteDados AfastamentoOrigem AtestadoAfastamento MatriculaAfastamento afastamentos motivo descontar unidade competenciaabono quantidadeabono afastamentos tipo - quantidadeAbono: Quantidade de abono (Type: BigDecimal)\n- tipoAfastamento.descricao: Descrição do tipo de afastamento (Type: String)\n- matricula.grupoFuncional.descricao: Descrição do grupo funcional (Type: String)\n- matricula.organograma.descricao: Descrição do organograma (Type: String)\n- motivo: Motivo (Type: String)\n- matricula.organograma.id: Id do organograma (Type: Long)\n- matricula.situacao: Situação da matrícula (Type: )\n- competenciaAbono: Competência de abono (Type: YearMonth)\n- unidade: Unidade (Type: )\n- descontar: Descontar (Type: Boolean)\n- abonar: Abonar (Type: Boolean)\n- decorrente: Decorrente (Type: )\n- fimAfastamento: Fim do afastamento (Type: LocalDate)\n- matricula.tipo: Tipo da matrícula (Type: )\n- competenciaDesconto: Competência de desconto (Type: YearMonth)\n- retornoTrabalho: Data de retorno ao trabalho (Type: LocalDate)\n- inicioAfastamento: Início do afastamento (Type: LocalDate)\n- id: Id (Type: Long)\n- tipoAfastamento.classificacao: Classificação do tipo de afastamento (Type: )\n- quantidade: Quantidade (Type: BigDecimal)\n- matricula.id: Id da matrícula (Type: Long)\n- matricula.grupoFuncional.id: Id do grupo funcional (Type: Long)"
+}

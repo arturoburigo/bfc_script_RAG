@@ -1,9 +1,0 @@
-# OpcaoRegistroPonto
-Enum: OpcaoRegistroPonto
-- Não utiliza (Key: NAO_UTILZA, Value: 1)
-- Manual (Key: MANUAL, Value: 2)
-- Mecânico (Key: MECANICO, Value: 3)
-- Eletrônico (Portaria MTE 1.510/2009) (Key: ELETRONICO, Value: 4)
-- Não eletrônico alternativo (art. 1° da Portaria MTE 373/2011) (Key: NAO_ELETRONICO, Value: 5)
-- Eletrônivo alternativo ( art. 2° da Portaria MTE 373/2011) (Key: ELETRONICO_ALTERNATIVO, Value: 6)
-- Eletrônico - outros (Key: ELETRONICO_OUTROS, Value: 7)

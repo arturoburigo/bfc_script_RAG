@@ -1,0 +1,42 @@
+{
+  "content": "Listagem de nível da configuração de organograma\n\nRepresentation Type: ConfiguracaoNivelOrganograma",
+  "metadata": {
+    "chunk_id": "configuracoes-organogramas_buscaNiveis_3_c45b674d",
+    "section_name": "configuracoes-organogramas_buscaNiveis",
+    "chunk_index": 3,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 25,
+    "char_count": 99,
+    "overlap_with_previous": 22,
+    "overlap_with_next": 11,
+    "keywords": [
+      "configuracoes-organogramas"
+    ],
+    "entities": [
+      "ConfiguracaoOrganograma",
+      "configuracoes-organogramas",
+      "buscaNiveis",
+      "ConfiguracaoNivelOrganograma"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.648835",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "c45b674d6ec2d0b23af9b2e41924a162",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "configuracoes-organogramas_buscaNiveis_0_6e659e6b",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: configuracoes-organogramas_buscaNiveis\nType: definition\nRelated to: ConfiguracaoOrganograma, configuracoes-organogramas, buscaNiveis\n\nListagem de nível da configuração de organograma\n\nRepresentation Type: ConfiguracaoNivelOrganograma\n\nKeywords: configuracoes-organogramas",
+  "search_text": "configuracoes-organogramas_buscaNiveis ConfiguracaoOrganograma configuracoes-organogramas buscaNiveis ConfiguracaoNivelOrganograma configuracoes-organogramas Listagem de nível da configuração de organograma\n\nRepresentation Type: ConfiguracaoNivelOrganograma"
+}

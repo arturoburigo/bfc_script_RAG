@@ -1,0 +1,61 @@
+{
+  "content": "groovy\nfonteConfiguracaoRais = Dados.folha.v2.configuracaoRais;\n\ndadosConfiguracaoRais = fonteConfiguracaoRais.buscaResponsavel(campos: \"pessoaFisica(id, nome, cpf), id, mesDataBase\")\n\npercorrer (dadosConfiguracaoRais) { itemConfiguracaoRais ->\n\n}",
+  "metadata": {
+    "chunk_id": "configuracaoRais_buscaResponsavel_6_cd7e2aec",
+    "section_name": "configuracaoRais_buscaResponsavel",
+    "chunk_index": 6,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "code_example",
+    "semantic_type": "example",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 83,
+    "char_count": 247,
+    "overlap_with_previous": 22,
+    "overlap_with_next": 0,
+    "keywords": [
+      "busca",
+      "configuracaorais",
+      "v2",
+      "folha",
+      "campo",
+      "dados"
+    ],
+    "entities": [
+      "Dados.folha.v2.configuracaoRais",
+      "DeficienciaPessoaFisica",
+      "PessoaOrigem",
+      "ConfiguracaoRaisCampo",
+      "buscaResponsavel",
+      "AtoConfiguracaoEvento",
+      "Base",
+      "ConfiguracaoEventoFonteDados",
+      "configuracaoRais",
+      "dependenciasFonteDados",
+      "ScriptFonteDados",
+      "ConfiguracaoRaisCampoEvento",
+      "PessoaJuridica",
+      "ConfiguracaoRais",
+      "ProcessoJudicial",
+      "SindicatoFuncionario",
+      "PessoaFisicaRepresentation",
+      "ConfiguracaoEventoAssociacaoFonteDados"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.215770",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "cd7e2aecb87bed7d41d161fc0e6031d3",
+    "related_chunks": [
+      "configuracaoRais_buscaConfiguracaoCampos_5_2f8aaae6",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "configuracaoRais_buscaResponsavel_5_cb8e9020",
+      "tipoBase_busca_4_747dfed5",
+      "remuneracoes_buscaComEventosResumidos_3_dbad4770"
+    ],
+    "quality_score": 0.6000000000000001
+  },
+  "embeddings_text": "Section: configuracaoRais_buscaResponsavel\nType: example\nRelated to: Dados.folha.v2.configuracaoRais, DeficienciaPessoaFisica, PessoaOrigem\n\ngroovy\nfonteConfiguracaoRais = Dados.folha.v2.configuracaoRais;\n\ndadosConfiguracaoRais = fonteConfiguracaoRais.buscaResponsavel(campos: \"pessoaFisica(id, nome, cpf), id, mesDataBase\")\n\npercorrer (dadosConfiguracaoRais) { itemConfiguracaoRais ->\n\n}\n\nKeywords: busca, configuracaorais, v2, folha, campo, dados",
+  "search_text": "configuracaoRais_buscaResponsavel Dados.folha.v2.configuracaoRais DeficienciaPessoaFisica PessoaOrigem ConfiguracaoRaisCampo buscaResponsavel AtoConfiguracaoEvento Base ConfiguracaoEventoFonteDados configuracaoRais dependenciasFonteDados ScriptFonteDados ConfiguracaoRaisCampoEvento PessoaJuridica ConfiguracaoRais ProcessoJudicial SindicatoFuncionario PessoaFisicaRepresentation ConfiguracaoEventoAssociacaoFonteDados busca configuracaorais v2 folha campo dados groovy\nfonteConfiguracaoRais = Dados.folha.v2.configuracaoRais;\n\ndadosConfiguracaoRais = fonteConfiguracaoRais.buscaResponsavel(campos: \"pessoaFisica(id, nome, cpf), id, mesDataBase\")\n\npercorrer (dadosConfiguracaoRais) { itemConfiguracaoRais ->\n\n}"
+}

@@ -1,9 +1,0 @@
-# EnviarESocial
-Enum: EnviarESocial
-- Revezamento 12 x 36 (Key: REVEZAMENTO, Value: 1)
-- Horário fixo e folga variável (Key: HORARIO_FIXO_FOLGA_VARIAVEL, Value: 2)
-- Horário fixo e folga domingo (Key: HORARIO_FIXO_FOLGA_DOMINGO, Value: 3)
-- Horário fixo e folga fixa, exceto domingo (Key: HORARIO_FIXO_FOLGA_FIXA_EX_CDOMINGO, Value: 4)
-- Horário fixo e folga fixa na semana, periódica no domingo (Key: HORARIO_FIXO_FOLGA_SEMANA_PERI_DOMINGO, Value: 5)
-- Turno ininterrupto de revezamento (Key: TURNO_ININTERRUPTO, Value: 6)
-- Demais tipos de jornada (Key: DEMAIS_TIPOS, Value: 7)

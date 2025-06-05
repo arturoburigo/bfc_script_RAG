@@ -1,0 +1,57 @@
+{
+  "content": "Descrição do arquivo (Type: String)\n- type: Tipo de arquivo (Type: String)\n- size: Tamanho de arquivo (Type: Long)\n- url: URL para baixar o arquivo (Type: String)\n\n## TipoAto\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## NaturezaTextoJuridico\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## AtoFonteDados\n- id: Id (Type: Long)\n- numeroOficial: Número oficial (Type: String)\n- tipo: Tipo (Type: TipoAto)\n- ementa: Ementa (Type: String)\n- naturezaTextoJuridico: Natureza do texto jurídico (Type: NaturezaTextoJuridico)\n- dataCriacao: Data de criação (Type: LocalDate)\n- dataVigorar: Data a vigorar (Type: LocalDate)\n- dataPublicacao: Data de publicação (Type: LocalDate)\n- dataResolucao: Data de resolução (Type: LocalDate)\n- numeroDiarioOficial: Número do diário oficial (Type: Long)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)",
+  "metadata": {
+    "chunk_id": "atos_buscaAtos_6_85a3a3e6",
+    "section_name": "atos_buscaAtos",
+    "chunk_index": 6,
+    "total_chunks": 8,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 282,
+    "char_count": 917,
+    "overlap_with_previous": 94,
+    "overlap_with_next": 27,
+    "keywords": [
+      "naturezatextojuridico",
+      "type",
+      "url",
+      "tipoato",
+      "size",
+      "id",
+      "descricao",
+      "atos",
+      "atofontedados",
+      "campo",
+      "tipo",
+      "dados"
+    ],
+    "entities": [
+      "buscaAtos",
+      "AtoFonteDados",
+      "ArquivoAto",
+      "NaturezaTextoJuridico",
+      "AtoFonteDivulgacao",
+      "TipoAto",
+      "atos",
+      "FonteDivulgacao"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.667173",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "85a3a3e667bba2c3397dd4ee6c41014b",
+    "related_chunks": [
+      "matriculas_buscaMatriculasLotacoesFisicas_1_743b2c69",
+      "matriculas_buscaMatriculaMinhaFolha_3_16adf921",
+      "historicoMatricula_buscaJornadasTrabalho_4_5b8232d9",
+      "historicoMatricula_buscaHistoricoMatricula_2_5337a82f",
+      "fontesDivulgacao_busca_2_58920ed9"
+    ],
+    "quality_score": 0.55
+  },
+  "embeddings_text": "Section: atos_buscaAtos\nType: definition\nRelated to: buscaAtos, AtoFonteDados, ArquivoAto\n\nDescrição do arquivo (Type: String)\n- type: Tipo de arquivo (Type: String)\n- size: Tamanho de arquivo (Type: Long)\n- url: URL para baixar o arquivo (Type: String)\n\n## TipoAto\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## NaturezaTextoJuridico\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## AtoFonteDados\n- id: Id (Type: Long)\n- numeroOficial: Número oficial (Type: String)\n- tipo: Tipo (Type: TipoAto)\n- ementa: Ementa (Type: String)\n- naturezaTextoJuridico: Natureza do texto jurídico (Type: NaturezaTextoJuridico)\n- dataCriacao: Data de criação (Type: LocalDate)\n- dataVigorar: Data a vigorar (Type: LocalDate)\n- dataPublicacao: Data de publicação (Type: LocalDate)\n- dataResolucao: Data de resolução (Type: LocalDate)\n- numeroDiarioOficial: Número do diário oficial (Type: Long)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)\n\nKeywords: naturezatextojuridico, type, url, tipoato, size, id, descricao, atos, atofontedados, campo, tipo, dados",
+  "search_text": "atos_buscaAtos buscaAtos AtoFonteDados ArquivoAto NaturezaTextoJuridico AtoFonteDivulgacao TipoAto atos FonteDivulgacao naturezatextojuridico type url tipoato size id descricao atos atofontedados campo tipo dados Descrição do arquivo (Type: String)\n- type: Tipo de arquivo (Type: String)\n- size: Tamanho de arquivo (Type: Long)\n- url: URL para baixar o arquivo (Type: String)\n\n## TipoAto\n- id: Id (Type: Long)\n- descricao: Descrição (Type: String)\n- classificacao: Classificação (Type: )\n\n## NaturezaTextoJuridico\n- id: id (Type: Long)\n- descricao: Descrição (Type: String)\n\n## AtoFonteDados\n- id: Id (Type: Long)\n- numeroOficial: Número oficial (Type: String)\n- tipo: Tipo (Type: TipoAto)\n- ementa: Ementa (Type: String)\n- naturezaTextoJuridico: Natureza do texto jurídico (Type: NaturezaTextoJuridico)\n- dataCriacao: Data de criação (Type: LocalDate)\n- dataVigorar: Data a vigorar (Type: LocalDate)\n- dataPublicacao: Data de publicação (Type: LocalDate)\n- dataResolucao: Data de resolução (Type: LocalDate)\n- numeroDiarioOficial: Número do diário oficial (Type: Long)\n- camposAdicionais: Campo adicional (Type: CamposAdicionais)"
+}

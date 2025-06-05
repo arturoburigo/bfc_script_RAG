@@ -1,0 +1,44 @@
+{
+  "content": "busca (GET)\nMethod Description: Listagem de tipos de administração\n\nRepresentation Type: TipoAdministraçãoDadosRepresentation",
+  "metadata": {
+    "chunk_id": "tipoAdministracao_busca_1_ddbb9dcc",
+    "section_name": "tipoAdministracao_busca",
+    "chunk_index": 1,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "method",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 26,
+    "char_count": 125,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 13,
+    "keywords": [
+      "tipoadministracao",
+      "tipo",
+      "dados",
+      "busca"
+    ],
+    "entities": [
+      "TipoAdministraçãoDadosRepresentation",
+      "tipoAdministracao",
+      "busca"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:04.239313",
+    "source_file": "folha.json",
+    "domain": "folha",
+    "hash": "ddbb9dcc14ee13ef825f0d8d4e101791",
+    "related_chunks": [
+      "configuracaoIntegracaoContabil_busca_3_00f94b2e",
+      "configuracaoEvento_busca_5_dcfc6bdb",
+      "tipoBase_busca_4_747dfed5",
+      "configuracaoIntegracaoContabil_busca_4_71856f66",
+      "remuneracoes_busca_3_50779bfc"
+    ],
+    "quality_score": 0.35
+  },
+  "embeddings_text": "Section: tipoAdministracao_busca\nType: definition\nRelated to: TipoAdministraçãoDadosRepresentation, tipoAdministracao, busca\n\nbusca (GET)\nMethod Description: Listagem de tipos de administração\n\nRepresentation Type: TipoAdministraçãoDadosRepresentation\n\nKeywords: tipoadministracao, tipo, dados, busca",
+  "search_text": "tipoAdministracao_busca TipoAdministraçãoDadosRepresentation tipoAdministracao busca tipoadministracao tipo dados busca busca (GET)\nMethod Description: Listagem de tipos de administração\n\nRepresentation Type: TipoAdministraçãoDadosRepresentation"
+}

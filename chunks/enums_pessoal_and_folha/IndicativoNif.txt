@@ -1,5 +1,0 @@
-# IndicativoNif
-Enum: IndicativoNif
-- Beneficiário com NIF (Key: BENEFICIARIO_COM_NIF, Value: 1)
-- Beneficiário dispensado do NIF (Key: BENEFICIARIO_DISPENSADO_DO_NIF, Value: 2)
-- País não exige NIF (Key: PAIS_NAO_EXIGE_NIF, Value: 3)

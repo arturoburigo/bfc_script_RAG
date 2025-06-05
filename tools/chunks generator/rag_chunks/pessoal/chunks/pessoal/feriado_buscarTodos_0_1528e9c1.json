@@ -1,0 +1,41 @@
+{
+  "content": "feriado",
+  "metadata": {
+    "chunk_id": "feriado_buscarTodos_0_1528e9c1",
+    "section_name": "feriado_buscarTodos",
+    "chunk_index": 0,
+    "total_chunks": 7,
+    "parent_section": null,
+    "chunk_type": "description",
+    "semantic_type": "definition",
+    "contains_code": false,
+    "code_language": null,
+    "token_count": 2,
+    "char_count": 7,
+    "overlap_with_previous": 0,
+    "overlap_with_next": 1,
+    "keywords": [
+      "feriado"
+    ],
+    "entities": [
+      "feriado",
+      "FeriadoDadosRepresentation",
+      "buscarTodos"
+    ],
+    "hierarchy_level": 0,
+    "timestamp": "2025-06-03T23:15:05.202566",
+    "source_file": "pessoal.json",
+    "domain": "pessoal",
+    "hash": "1528e9c1918c3b5652391760bd7dc029",
+    "related_chunks": [
+      "feriado_buscarTodos_3_ae2a9086",
+      "feriado_buscarTodos_5_020d3034",
+      "feriado_buscarTodos_2_ae2a9086",
+      "cargo_buscaTodos_4_e2a05bd8",
+      "cargo_buscaTodos_1_9c0edd5b"
+    ],
+    "quality_score": 0.25
+  },
+  "embeddings_text": "Section: feriado_buscarTodos\nType: definition\nRelated to: feriado, FeriadoDadosRepresentation, buscarTodos\n\nferiado\n\nKeywords: feriado",
+  "search_text": "feriado_buscarTodos feriado FeriadoDadosRepresentation buscarTodos feriado feriado"
+}
