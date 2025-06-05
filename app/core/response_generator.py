@@ -2,7 +2,7 @@ import os
 import logging
 from typing import List, Dict, Any, Optional
 from openai import OpenAI
-from ..utils.prompts import RAG_SYSTEM_PROMPT, RAG_USER_PROMPT, REPORT_GENERATION_PROMPT
+from ..utils.prompts import RAG_SYSTEM_PROMPT
 
 class ResponseGenerator:
     """Response generator using GPT-4o-mini."""
@@ -40,7 +40,7 @@ class ResponseGenerator:
             
             context = "\n\n".join(context_parts)
             
-            # Build the messages based on query type
+            # Build the messages
             messages = []
             
             # Add conversation history if available
@@ -51,25 +51,12 @@ class ResponseGenerator:
                         {"role": "assistant", "content": assistant}
                     ])
             
-            # Add system message
-            if query_analysis and isinstance(query_analysis, dict):
-                intents = query_analysis.get('intents', {})
-                if isinstance(intents, dict) and intents.get('report_query'):
-                    system_message = REPORT_GENERATION_PROMPT
-                else:
-                    system_message = RAG_SYSTEM_PROMPT
-            else:
-                system_message = RAG_SYSTEM_PROMPT
-            
+            # Always use the new RAG_SYSTEM_PROMPT, formatted with query and context
+            system_message = RAG_SYSTEM_PROMPT.format(query=query, context=context)
             messages.append({"role": "system", "content": system_message})
             
-            # Add user message with context and query
-            user_message = f"""CONTEXTO DA DOCUMENTAÇÃO:
-{context}
-
-PERGUNTA: {query}"""
-            
-            messages.append({"role": "user", "content": user_message})
+            # User message is just a repeat of the query for clarity (optional)
+            messages.append({"role": "user", "content": query})
             
             logging.info(f"Generated messages count: {len(messages)}")
             return messages
@@ -97,7 +84,7 @@ PERGUNTA: {query}"""
             response = self.client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=messages,
-                temperature=0.7,
+                temperature=0.3,
                 max_tokens=4096,
                 top_p=0.95,
                 frequency_penalty=0.1,

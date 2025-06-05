@@ -15,6 +15,7 @@ import numpy as np
 from .config import setup_logging, is_dev_mode, log_debug, log_function_call, log_function_return
 from dataclasses import dataclass
 from collections import defaultdict
+import chromadb.errors
 
 # Configure logging
 logger = setup_logging(__name__, "logs/chroma_initialization.log")
@@ -250,7 +251,7 @@ class CollectionManager:
             try:
                 self.client.delete_collection(collection_name)
                 logger.info(f"Deleted existing collection: {collection_name}")
-            except ValueError:
+            except (ValueError, chromadb.errors.NotFoundError):
                 pass  # Collection doesn't exist
         
         # Get configuration

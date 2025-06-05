@@ -9,6 +9,7 @@ import uuid
 # Import components
 from .semantic_search import SemanticSearch
 from .initialize_chroma_db import initialize_chroma_db
+from .response_generator import ResponseGenerator
 
 @dataclass
 class SearchResponse:
@@ -30,6 +31,7 @@ class OptimizedSearchSystem:
         self._initialize_components()
         self.is_initialized = False  # Should be set to True after successful DB init
         self.initialization_time = 0.0
+        self.response_generator = ResponseGenerator(api_key=self.api_key)
         logging.info("OptimizedSearchSystem created. Call initialize_database() to prepare for queries.")
     
     def _initialize_components(self):
@@ -130,6 +132,20 @@ class OptimizedSearchSystem:
                     "query_analysis": query_analysis if 'query_analysis' in locals() else {"error": "failed before analysis"}
                 }
             )
+
+    def generate_llm_response(self, query_text: str, top_k: int = 10, conversation_history: Optional[list] = None):
+        """Run search and generate LLM response using the response generator."""
+        search_response = self.search(query_text, top_k=top_k)
+        llm_response = self.response_generator.generate_response(
+            query=query_text,
+            search_results=search_response.results,
+            query_analysis=search_response.metadata.get('query_analysis', {}),
+            conversation_history=conversation_history
+        )
+        return {
+            "search_response": search_response,
+            "llm_response": llm_response
+        }
 
 def create_search_system(api_key: Optional[str] = None) -> OptimizedSearchSystem:
     """Factory function to create and initialize a search system."""

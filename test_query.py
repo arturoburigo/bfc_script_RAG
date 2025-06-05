@@ -148,6 +148,13 @@ def test_query():
         # Análise detalhada dos resultados
         analyze_search_results(search_response.results, query, search_response.metadata['query_analysis'])
         
+        # Gerar resposta da LLM
+        print("\n🤖 Gerando resposta da LLM (GPT-4o-mini)...")
+        llm_result = search_system.generate_llm_response(query, top_k=10)
+        print("\n================ LLM RESPONSE ================")
+        print(llm_result["llm_response"])
+        print("==============================================")
+        
     except Exception as e:
         print(f"❌ Erro ao executar a busca: {e}")
         return
