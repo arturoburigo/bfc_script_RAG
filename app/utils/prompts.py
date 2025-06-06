@@ -27,30 +27,29 @@ Analise a pergunta do usuário e a documentação recuperada seguindo estas regr
 - **Code Example**: exemplos de uso
 
 ## INSTRUÇÕES DE EXECUÇÃO:
-1. **VERIFICAÇÃO DE MÉTODO**: 
+1. **PRIORIDADE DE CONTEXTO**: O contexto recuperado é ordenado por relevância. Múltiplos métodos com nomes similares podem ser retornados. **Você DEVE priorizar e basear sua resposta no bloco de informação (`Related Information Group`) cujo `Title` corresponda EXATAMENTE ao método ou fonte solicitada na query do usuário**, mesmo que outros blocos tenham um score de relevância maior. Ignore blocos de informação que não sejam diretamente relevantes para a pergunta.
+2. **VERIFICAÇÃO DE MÉTODO**: 
    - Procure primeiro por métodos genéricos terminados em "_busca"
    - Se não existir, use métodos específicos
-   - Se múltiplas opções, priorice sempre o mais genérico
-
-2. **CAMPOS/TYPES**: Procure "Types:" e liste APENAS os campos documentados
-
-3. **FONTES**: Verifique se a fonte existe no contexto antes de usá-la
-
-4. **SEM INFORMAÇÃO**: Se não houver no contexto:
+   - Se múltiplas opções, priorize sempre o mais genérico
+3. **CAMPOS/TYPES**: Procure "Types:" e liste APENAS os campos documentados
+4. **FONTES**: Verifique se a fonte existe no contexto antes de usá-la
+5. **SEM INFORMAÇÃO**: Se não houver no contexto:
    - Para parâmetros simples (datas, nomes, ids): crie com nome solicitado na query
    - Para métodos, campos ou fontes: diga "O contexto não contém informações sobre [tópico]"
-
-5. **FORMATAÇÃO DE DATAS**: 
+6. **FORMATAÇÃO DE DATAS**: 
    - Para parâmetros de data: dataInicial.format("yyyy-MM-dd")
    - Para comparações: dataInicioContrato >= ${{dataInicial.format("yyyy-MM-dd")}}
-   
-6. **RETORNO**: Sempre explique brevemente o que foi feito.
+7. **RETORNO**: Sempre explique brevemente o que foi feito.
 
 ATENÇÃO: Utilize esta instrução abaixo SOMENTE quando na query for solicitado um relatório.
 
-## ESTRUTURA DE RELATÓRIO OBRIGATÓRIA:
 
-// 1. Esquema (aceita somente tipos: caracter, inteiro, numero, data, objeto, lista)
+## ESTRUTURA DE RELATÓRIO OBRIGATÓRIA (note que parametros podem variar, se no contexto fornecido não houver, não use):
+
+1 - O esquema aceita somente tipos: caracter, inteiro, numero, data, objeto, lista
+
+// 1. Esquema 
 esquema = [
   campo1: Esquema.caracter,
   campo2: Esquema.numero,
@@ -60,14 +59,14 @@ esquema = [
 // 2. Fonte dinâmica
 fonte = Dados.dinamico.v2.novo(esquema)
 
-// 3. Parâmetros (SEMPRE formate datas)
+// 3. Parâmetros
 dataInicial = parametros.dataInicial.valor.format("yyyy-MM-dd")
 dataFinal = parametros.dataFinal.valor.format("yyyy-MM-dd")
 
 // 4. Fonte de dados (use APENAS as que existem no contexto)
 fonteDados = Dados.[dominio].v2.[entidade]
 
-// 5. Busca (PRIORIZE métodos genéricos terminados em 'busca')
+// 5. Busca 
 dados = fonteDados.busca(criterio: "campo >= ${{dataInicial}} and campo <= ${{dataFinal}}", campos: "[campos]")
 
 // 6. Processamento
