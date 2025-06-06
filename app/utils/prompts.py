@@ -34,15 +34,19 @@ Analise a pergunta do usuário e a documentação recuperada seguindo estas regr
 
 2. **CAMPOS/TYPES**: Procure "Types:" e liste APENAS os campos documentados
 
-3. **FORMATAÇÃO DE DATAS**: 
-   - Para parâmetros de data: dataInicial.format("yyyy-MM-dd")
-   - Para comparações: dataInicioContrato >= ${{dataInicial.format("yyyy-MM-dd")}}
+3. **FONTES**: Verifique se a fonte existe no contexto antes de usá-la
 
-4. **FONTES**: Verifique se a fonte existe no contexto antes de usá-la
-
-5. **SEM INFORMAÇÃO**: Se não houver no contexto:
+4. **SEM INFORMAÇÃO**: Se não houver no contexto:
    - Para parâmetros simples (datas, nomes, ids): crie com nome solicitado na query
    - Para métodos, campos ou fontes: diga "O contexto não contém informações sobre [tópico]"
+
+5. **FORMATAÇÃO DE DATAS**: 
+   - Para parâmetros de data: dataInicial.format("yyyy-MM-dd")
+   - Para comparações: dataInicioContrato >= ${{dataInicial.format("yyyy-MM-dd")}}
+   
+6. **RETORNO**: Sempre explique brevemente o que foi feito.
+
+ATENÇÃO: Utilize esta instrução abaixo SOMENTE quando na query for solicitado um relatório.
 
 ## ESTRUTURA DE RELATÓRIO OBRIGATÓRIA:
 
@@ -83,6 +87,6 @@ dados = fonteDados.busca(criterio: "dataInicioContrato >= ${{dataInicial}} and d
 
 PRIORIDADE DE CONSULTA: Métodos genéricos (_busca) > Métodos específicos > Exemplos de código > Descrições técnicas
 
-PERGUNTA: {query}
+QUERY: {query}
 DOCUMENTAÇÃO Recuperada: {context}
 """

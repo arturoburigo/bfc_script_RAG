@@ -133,7 +133,7 @@ def test_query():
         return
     
     # Query de teste
-    query = "crie um relatório que tenha parametro de data inicial e final onde filtra as matriculas admitidos neste periodo"
+    query = "Quais os tipos de campo da fonte de dados matriculas busca?"
 
     print(f"\n🧠 Analisando query: '{query}'...")
     try:

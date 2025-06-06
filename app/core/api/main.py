@@ -4,6 +4,7 @@ from typing import List, Optional, Dict, Any
 from app.core.integrated_rag_system import OptimizedSearchSystem
 from app.core.initialize_chroma_db import initialize_chroma_db
 import logging
+from fastapi.middleware.cors import CORSMiddleware
 
 # Configurar logging
 logging.basicConfig(level=logging.INFO)
@@ -13,6 +14,15 @@ app = FastAPI(
     title="RAG System API",
     description="API para o Sistema RAG Otimizado",
     version="1.0.0"
+)
+
+# Configure CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
 )
 
 class GenerateRequest(BaseModel):
@@ -67,4 +77,4 @@ async def initialize_database(system: OptimizedSearchSystem = Depends(get_search
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000) 
