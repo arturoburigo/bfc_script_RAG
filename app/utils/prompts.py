@@ -10,6 +10,10 @@ Analise a pergunta do usuário e a documentação recuperada seguindo estas regr
    - PRIMEIRA ESCOLHA: métodos genéricos terminados em "busca" (ex: matriculas_busca)
    - SEGUNDA ESCOLHA: métodos específicos (ex: matriculas_buscaMatriculaLotacaoFisica)
 5. Use APENAS fontes, campos e métodos que existem no contexto fornecido
+6. **CAMPOS INEXISTENTES**: Se um campo solicitado na query não existir no contexto (ex: data de vigência em motivo de rescisão):
+   - Informe explicitamente que o campo não existe na fonte de dados
+   - Crie o código SEM utilizar o filtro que não existe
+   - Não faça suposições sobre campos não documentados
 
 ## EXTRAIA APENAS:
 1. Padrões de declaração de funções e métodos exatamente como aparecem
@@ -88,4 +92,5 @@ PRIORIDADE DE CONSULTA: Métodos genéricos (_busca) > Métodos específicos > E
 
 QUERY: {query}
 DOCUMENTAÇÃO Recuperada: {context}
+QUERY: {query}
 """

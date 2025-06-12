@@ -338,6 +338,15 @@ class SemanticSearch:
             
             context_str = "\n".join(context_parts)
             logger.info(f"Generated context with {len(results)} results, {len(context_str)} chars for query: {query}")
+            
+            # Print top scores and their contents
+            print("\n=== TOP SEARCH RESULTS ===")
+            for i, result in enumerate(results, 1):
+                print(f"\n--- Result {i} (Score: {result['relevance_score']:.4f}) ---")
+                print(f"Collection: {result.get('collection', 'Unknown')}")
+                print(f"Content:\n{result['content']}\n")
+                print("-" * 80)
+            
             return context_str, results
 
         except Exception as e:
