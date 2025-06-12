@@ -4,7 +4,7 @@ run.py - Ponto de entrada para o Sistema RAG Otimizado
 
 Este arquivo inicializa todos os componentes do sistema:
 1. Banco de dados ChromaDB
-2. Sistema RAG Integrado
+2. Sistema RAG  Integrado
 3. API FastAPI
 """
 

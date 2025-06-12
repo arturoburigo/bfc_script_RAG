@@ -9,3 +9,4 @@ chroma_db/
 .venv/
 *.log
 .DS_Store
+logs/

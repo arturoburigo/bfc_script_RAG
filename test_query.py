@@ -133,7 +133,7 @@ def test_query():
         return
     
     # Query de teste
-    query = "Quais os tipos de campo da fonte de dados matriculas busca?"
+    query = "   "
 
     print(f"\n🧠 Analisando query: '{query}'...")
     try:

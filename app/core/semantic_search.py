@@ -175,22 +175,32 @@ class SemanticSearch:
         for res_list in results_by_collection.values():
             all_results.extend(res_list)
         
-        # First sort by relevance score
+        # ================== IMPLEMENTAÇÃO DA CORREÇÃO ==================
+        # Normaliza a query substituindo espaços por underscores para corresponder ao formato do título.
+        query_normalized_for_title_check = query.lower().replace(" ", "_")
+
+        for result in all_results:
+            title = result.get("metadata", {}).get("title", "")
+            if title and title.lower() in query_normalized_for_title_check:
+                result["relevance_score"] = result.get("relevance_score", 0.0) + 1.0
+                logging.info(f"Score impulsionado para o título correspondente: '{title}'")
+        # ================== FIM DA CORREÇÃO ==================
+
+        # Ordena os resultados com base no score (que agora pode estar impulsionado)
         all_results.sort(key=lambda x: x.get("relevance_score", 0.0), reverse=True)
         
-        # Get initial top results
+        # Pega os resultados iniciais do topo para encontrar chunks relacionados
         initial_top_results = all_results[:top_k]
         
-        # Find related chunks for each top result
         related_chunks = set()
         for result in initial_top_results:
             metadata = result.get("metadata", {})
             chunk_key = metadata.get("chunk_key", "")
             
-            # Extract base chunk_key by removing the part number
+            # Extrai a chave base do chunk para agrupar todas as suas partes
             base_key = re.sub(r'_part\d+_\d+$', '', chunk_key)
             
-            # Find all related chunks in all_results
+            # Encontra todos os chunks relacionados nos resultados
             for other_result in all_results:
                 other_metadata = other_result.get("metadata", {})
                 other_chunk_key = other_metadata.get("chunk_key", "")
@@ -199,7 +209,7 @@ class SemanticSearch:
                 if base_key == other_base_key:
                     related_chunks.add(other_chunk_key)
         
-        # Get all related chunks
+        # Coleta todos os chunks que foram marcados como relacionados
         final_results = []
         for result in all_results:
             metadata = result.get("metadata", {})
@@ -208,10 +218,18 @@ class SemanticSearch:
             if chunk_key in related_chunks:
                 final_results.append(result)
         
-        # Sort final results by relevance score again
+        # Ordena os resultados finais pelo score de relevância novamente para garantir
         final_results.sort(key=lambda x: x.get("relevance_score", 0.0), reverse=True)
         
-        return final_results[:top_k]
+        # Remove duplicados baseados no conteúdo exato
+        unique_final_results = []
+        seen_content = set()
+        for result in final_results:
+            if result["content"] not in seen_content:
+                unique_final_results.append(result)
+                seen_content.add(result["content"])
+
+        return unique_final_results[:top_k]
     
     def search(self, query: str, query_analysis: Dict[str, Any], top_k: int = 5) -> List[Dict]:
         try:
@@ -303,7 +321,8 @@ class SemanticSearch:
                 # Add content from all parts
                 context_parts.append("\n### Content\n")
                 for i, result in enumerate(group, 1):
-                    part_num = re.search(r'_part\d+_(\d+)$', result.get("metadata", {}).get("chunk_key", "")).group(1) if re.search(r'_part\d+_(\d+)$', result.get("metadata", {}).get("chunk_key", "")) else str(i)
+                    part_num_match = re.search(r'_part\d+_(\d+)$', result.get("metadata", {}).get("chunk_key", ""))
+                    part_num = part_num_match.group(1) if part_num_match else str(i)
                     context_parts.append(f"Part {part_num} (Score: {result['relevance_score']:.4f}):\n{result['content']}\n")
                 
                 # Add relevance indicators
@@ -319,6 +338,15 @@ class SemanticSearch:
             
             context_str = "\n".join(context_parts)
             logger.info(f"Generated context with {len(results)} results, {len(context_str)} chars for query: {query}")
+            
+            # Print top scores and their contents
+            print("\n=== TOP SEARCH RESULTS ===")
+            for i, result in enumerate(results, 1):
+                print(f"\n--- Result {i} (Score: {result['relevance_score']:.4f}) ---")
+                print(f"Collection: {result.get('collection', 'Unknown')}")
+                print(f"Content:\n{result['content']}\n")
+                print("-" * 80)
+            
             return context_str, results
 
         except Exception as e:
