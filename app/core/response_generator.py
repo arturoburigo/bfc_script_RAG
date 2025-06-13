@@ -20,49 +20,57 @@ class ResponseGenerator:
                        search_results: List[Dict[str, Any]], 
                        query_analysis: Dict[str, Any],
                        conversation_history: Optional[List[tuple]] = None) -> List[Dict[str, str]]:
-        """Prepare the messages for the model."""
+        """
+        Prepara as mensagens para o modelo com uma estrutura clara:
+        1. Histórico da Conversa (se houver).
+        2. Mensagem de Sistema: Contém apenas as regras (RAG_SYSTEM_PROMPT).
+        3. Mensagem de Usuário: Contém o contexto recuperado e a query atual.
+        """
         try:
-            # Log input data for debugging
-            logging.info(f"Preparing prompt for query: {query}")
-            logging.info(f"Number of search results: {len(search_results)}")
-            logging.info(f"Query analysis: {query_analysis}")
-            
-            # Format context from search results
+            # Formata o contexto dos resultados da busca
             context_parts = []
             for result in search_results:
                 if isinstance(result, dict):
                     collection = result.get('collection', 'unknown')
                     content = result.get('content', '')
-                    context_parts.append(f"Source: {collection}\nContent: {content}")
+                    # Adiciona uma formatação clara para cada parte do contexto
+                    context_parts.append(f"### Bloco de Documentação (Fonte: {collection})\n{content}")
                 else:
-                    logging.warning(f"Unexpected result type: {type(result)}")
                     context_parts.append(str(result))
             
             context = "\n\n".join(context_parts)
             
-            # Build the messages
+            # Monta o conteúdo da mensagem de usuário com o contexto e a query
+            user_prompt_content = (
+                f"## DOCUMENTAÇÃO Recuperada:\n"
+                f"{context}\n\n"
+                f"---------------------\n\n"
+                f"## QUERY DO USUÁRIO:\n"
+                f"{query}"
+            )
+
+            # Inicia a lista de mensagens
             messages = []
             
-            # Add conversation history if available
+            # Adiciona o histórico da conversa (se disponível)
             if conversation_history:
-                for user, assistant in conversation_history[-3:]:  # Last 3 exchanges
+                for user, assistant in conversation_history[-3:]:
                     messages.extend([
                         {"role": "user", "content": user},
                         {"role": "assistant", "content": assistant}
                     ])
             
-            # Always use the new RAG_SYSTEM_PROMPT, formatted with query and context
-            system_message = RAG_SYSTEM_PROMPT.format(query=query, context=context)
-            messages.append({"role": "system", "content": system_message})
+            # Adiciona a mensagem de sistema (APENAS as regras)
+            messages.append({"role": "system", "content": RAG_SYSTEM_PROMPT})
             
-            # User message is just a repeat of the query for clarity (optional)
-            messages.append({"role": "user", "content": query})
+            # Adiciona a mensagem de usuário (Contexto + Query)
+            messages.append({"role": "user", "content": user_prompt_content})
             
-            logging.info(f"Generated messages count: {len(messages)}")
+            logging.info("Prompt preparado com sucesso, separando regras do conteúdo.")
             return messages
             
         except Exception as e:
-            logging.error(f"Error preparing prompt: {e}", exc_info=True)
+            logging.error(f"Erro ao preparar o prompt: {e}", exc_info=True)
             raise
     
     def generate_response(self,
@@ -70,9 +78,9 @@ class ResponseGenerator:
                          search_results: List[Dict[str, Any]],
                          query_analysis: Dict[str, Any],
                          conversation_history: Optional[List[tuple]] = None) -> str:
-        """Generate a response using GPT-4o-mini."""
+        """Gera uma resposta usando o GPT-4o-mini."""
         try:
-            # Prepare the messages
+            # Prepara as mensagens com a nova estrutura
             messages = self._prepare_prompt(
                 query=query,
                 search_results=search_results,
@@ -80,20 +88,20 @@ class ResponseGenerator:
                 conversation_history=conversation_history
             )
             
-            # Generate response
+            # Gera a resposta
             response = self.client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=messages,
-                temperature=0.3,
+                temperature=0.2, # Um pouco mais baixo para seguir regras estritas
                 max_tokens=4096,
                 top_p=0.4,
                 frequency_penalty=0.0,
                 presence_penalty=0.0
             )
             
-            # Extract and return the response
+            # Extrai e retorna o conteúdo da resposta
             return response.choices[0].message.content.strip()
             
         except Exception as e:
-            logging.error(f"Error generating response: {e}", exc_info=True)
-            return f"Desculpe, ocorreu um erro ao gerar a resposta: {str(e)}" 
+            logging.error(f"Erro ao gerar a resposta: {e}", exc_info=True)
+            return f"Desculpe, ocorreu um erro ao gerar a resposta: {str(e)}"

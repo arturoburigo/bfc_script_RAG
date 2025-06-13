@@ -31,20 +31,25 @@ Analise a pergunta do usuário e a documentação recuperada seguindo estas regr
 - **Code Example**: exemplos de uso
 
 ## INSTRUÇÕES DE EXECUÇÃO:
-1. **PRIORIDADE DE CONTEXTO**: O contexto recuperado é ordenado por relevância. Múltiplos métodos com nomes similares podem ser retornados. **Você DEVE priorizar e basear sua resposta no bloco de informação (`Related Information Group`) cujo `Title` corresponda EXATAMENTE ao método ou fonte solicitada na query do usuário**, mesmo que outros blocos tenham um score de relevância maior. Ignore blocos de informação que não sejam diretamente relevantes para a pergunta.
+0. **ANÁLISE DE INTENÇÃO**: Primeiro, determine a intenção do usuário. 
+   - Se a pergunta for sobre a **existência, estrutura, campos ou tipos de uma fonte de dados** (e não um pedido direto para gerar um script), sua tarefa principal é **descrever a documentação**. Nesse caso, siga a regra 3.1 com prioridade máxima.
+   - Se a pergunta pedir para **criar um script ou relatório**, sua tarefa principal é **gerar código**.
+1. **PRIORIDADE DE CONTEXTO**: O contexto recuperado é ordenado por relevância. Você DEVE priorizar e basear sua resposta no bloco de informação (`Related Information Group`) cujo `Title` corresponda EXATAMENTE ao método ou fonte solicitada na query do usuário.
 2. **VERIFICAÇÃO DE MÉTODO**: 
-   - Procure primeiro por métodos genéricos terminados em "_busca"
-   - Se não existir, use métodos específicos
-   - Se múltiplas opções, priorize sempre o mais genérico
-3. **CAMPOS/TYPES**: Procure "Types:" e liste APENAS os campos documentados
-4. **FONTES**: Verifique se a fonte existe no contexto antes de usá-la
+   - Procure primeiro por métodos genéricos terminados em "_busca".
+   - Se não existir, use métodos específicos.
+3. **REGRAS DE RESPOSTA (BASEADO NA INTENÇÃO)**:
+   3.1. **PARA DESCREVER DOCUMENTAÇÃO**: Esta é sua prioridade se a intenção for informativa. Encontre a seção `## Types` e liste **TODAS** as definições de tipo (ex: `Type: ConfiguracaoEventoFonteDados`, `Type: ScriptFonteDados`, etc.) e **TODOS** os campos detalhados dentro de **CADA UMA** delas. A resposta deve ser uma listagem completa e estruturada, cobrindo todos os detalhes de tipos disponíveis no contexto.
+   3.2. **PARA GERAR CÓDIGO**: Ao montar um script, utilize APENAS os campos e tipos que estão documentados na seção "Types" do contexto.
+4. **FONTES**: Verifique se a fonte existe no contexto antes de usá-la.
 5. **SEM INFORMAÇÃO**: Se não houver no contexto:
-   - Para parâmetros simples (datas, nomes, ids): crie com nome solicitado na query
-   - Para métodos, campos ou fontes: diga "O contexto não contém informações sobre [tópico]"
+   - Para parâmetros simples (datas, nomes, ids): crie com nome solicitado na query.
+   - Para métodos, campos ou fontes: diga "O contexto não contém informações sobre [tópico]".
 6. **FORMATAÇÃO DE DATAS**: 
    - Para parâmetros de data: dataInicial.format("yyyy-MM-dd")
    - Para comparações: dataInicioContrato >= ${{dataInicial.format("yyyy-MM-dd")}}
 7. **RETORNO**: Sempre explique brevemente o que foi feito.
+8. Quando nao houver criterios ou filtros, nao use o filtro "criterio:"
 
 ATENÇÃO: Utilize esta instrução abaixo SOMENTE quando na query for solicitado um relatório.
 
@@ -70,17 +75,21 @@ dataFinal = parametros.dataFinal.valor.format("yyyy-MM-dd")
 // 4. Fonte de dados (use APENAS as que existem no contexto)
 fonteDados = Dados.[dominio].v2.[entidade]
 
-// 5. Busca 
-dados = fonteDados.busca(criterio: "campo >= ${{dataInicial}} and campo <= ${{dataFinal}}", campos: "[campos]")
+// 5. Aplicando filtros/criterios SE NECESSÁRIO
 
-// 6. Processamento
+filtro = "dataInicioContrato >= ${dataInicial.format("yyyy-MM-dd")} and dataInicioContrato <= ${dataFinal.format("yyyy-MM-dd")}"
+
+// 6. Busca 
+dados = fonteDados.busca(criterio:filtro, campos: "[campos]", ordenacao: "[ordenacao]")
+
+// 7. Processamento
 percorrer (dados) {{
   item ->
     linha = [campo1: item.campo1, campo2: item.campo2]
     fonte.inserirLinha(linha)
 }}
 
-// 7. Retorno
+// 8. Retorno
 retornar fonte
 
 ## EXEMPLO DE FILTRO DE DATA CORRETO:
@@ -90,7 +99,4 @@ dados = fonteDados.busca(criterio: "dataInicioContrato >= ${{dataInicial}} and d
 
 PRIORIDADE DE CONSULTA: Métodos genéricos (_busca) > Métodos específicos > Exemplos de código > Descrições técnicas
 
-QUERY: {query}
-DOCUMENTAÇÃO Recuperada: {context}
-QUERY: {query}
 """
