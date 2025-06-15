@@ -92,7 +92,7 @@ class ResponseGenerator:
             response = self.client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=messages,
-                temperature=0.2, # Um pouco mais baixo para seguir regras estritas
+                temperature=0.4, # Um pouco mais baixo para seguir regras estritas
                 max_tokens=4096,
                 top_p=0.4,
                 frequency_penalty=0.0,

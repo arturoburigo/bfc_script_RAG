@@ -4,7 +4,7 @@ Analise a pergunta do usuário e a documentação recuperada seguindo estas regr
 
 ## REGRAS FUNDAMENTAIS (SEMPRE SEGUIR):
 1. **DATAS**: Sempre use .format("yyyy-MM-dd") para formatar datas em filtros
-2. **VARIÁVEIS EM FILTROS**: Use ${{variavel}} (sem aspas) para variáveis em critérios
+2. **VARIÁVEIS EM FILTROS**: Use ${variavel} (sem aspas) para variáveis em critérios
 3. **OPERADORES**: Sempre em minúsculo (and, or, not)
 4. **PRIORIZAÇÃO DE MÉTODOS**: 
    - PRIMEIRA ESCOLHA: métodos genéricos terminados em "busca" (ex: matriculas_busca)
@@ -51,7 +51,8 @@ Analise a pergunta do usuário e a documentação recuperada seguindo estas regr
 7. **RETORNO**: Sempre explique brevemente o que foi feito.
 8. Quando nao houver criterios ou filtros, nao use o filtro "criterio:"
 
-ATENÇÃO: Utilize esta instrução abaixo SOMENTE quando na query for solicitado um relatório.
+
+ATENÇÃO: Utilize a instrução abaixo SOMENTE quando  for solicitado um relatório.
 
 
 ## ESTRUTURA DE RELATÓRIO OBRIGATÓRIA (note que parametros podem variar, se no contexto fornecido não houver, não use):
@@ -69,8 +70,8 @@ esquema = [
 fonte = Dados.dinamico.v2.novo(esquema)
 
 // 3. Parâmetros
-dataInicial = parametros.dataInicial.valor.format("yyyy-MM-dd")
-dataFinal = parametros.dataFinal.valor.format("yyyy-MM-dd")
+dataInicial = parametros.dataInicial.valor
+dataFinal = parametros.dataFinal.valor
 
 // 4. Fonte de dados (use APENAS as que existem no contexto)
 fonteDados = Dados.[dominio].v2.[entidade]
@@ -83,19 +84,20 @@ filtro = "dataInicioContrato >= ${dataInicial.format("yyyy-MM-dd")} and dataInic
 dados = fonteDados.busca(criterio:filtro, campos: "[campos]", ordenacao: "[ordenacao]")
 
 // 7. Processamento
-percorrer (dados) {{
-  item ->
-    linha = [campo1: item.campo1, campo2: item.campo2]
-    fonte.inserirLinha(linha)
-}}
+percorrer (dados) { item ->
+linha = [
+    id: item.id,
+    nome: item.pessoa.nome,
+    dataInicioContrato: item.dataInicioContrato,
+    situacao: item.situacao,
+    rendimentoMensal: item.rendimentoMensal
+  ]
+  fonte.inserirLinha(linha)
+  imprimir linha
+}
 
 // 8. Retorno
 retornar fonte
-
-## EXEMPLO DE FILTRO DE DATA CORRETO:
-dataInicial = parametros.dataInicial.valor.format("yyyy-MM-dd")
-dataFinal = parametros.dataFinal.valor.format("yyyy-MM-dd")
-dados = fonteDados.busca(criterio: "dataInicioContrato >= ${{dataInicial}} and dataInicioContrato <= ${{dataFinal}}", campos: "...")
 
 PRIORIDADE DE CONSULTA: Métodos genéricos (_busca) > Métodos específicos > Exemplos de código > Descrições técnicas
 
