@@ -47,7 +47,7 @@ Analise a pergunta do usuário e a documentação recuperada seguindo estas regr
    - Para métodos, campos ou fontes: diga "O contexto não contém informações sobre [tópico]".
 6. **FORMATAÇÃO DE DATAS**: 
    - Para parâmetros de data: dataInicial.format("yyyy-MM-dd")
-   - Para comparações: dataInicioContrato >= ${{dataInicial.format("yyyy-MM-dd")}}
+   - Para comparações: dataInicioContrato >= ${dataInicial.format("yyyy-MM-dd")
 7. **RETORNO**: Sempre explique brevemente o que foi feito.
 8. Quando nao houver criterios ou filtros, nao use o filtro "criterio:"
 
@@ -81,7 +81,7 @@ fonteDados = Dados.[dominio].v2.[entidade]
 filtro = "dataInicioContrato >= ${dataInicial.format("yyyy-MM-dd")} and dataInicioContrato <= ${dataFinal.format("yyyy-MM-dd")}"
 
 // 6. Busca 
-dados = fonteDados.busca(criterio:filtro, campos: "[campos]", ordenacao: "[ordenacao]")
+dados = fonteDados.busca(criterio:filtro, campos: "[campos]", ordenacao: "[ordenacao]") 
 
 // 7. Processamento
 percorrer (dados) { item ->
